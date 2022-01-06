@@ -16,4 +16,3 @@ app.listen(app.get('port'), () => {
 app.get('/api/v1/users', (request, response) => {
     response.status(200).json(app.locals.users)
 })
-

@@ -1,30005 +1,25004 @@
-const sleepData = [
+const hydrationData = [
     {
       "userID": 1,
       "date": "2019/06/15",
-      "hoursSlept": 6.1,
-      "sleepQuality": 2.2
+      "numOunces": 37
     },
     {
       "userID": 2,
       "date": "2019/06/15",
-      "hoursSlept": 7,
-      "sleepQuality": 4.7
+      "numOunces": 75
     },
     {
       "userID": 3,
       "date": "2019/06/15",
-      "hoursSlept": 10.8,
-      "sleepQuality": 4.7
+      "numOunces": 47
     },
     {
       "userID": 4,
       "date": "2019/06/15",
-      "hoursSlept": 5.4,
-      "sleepQuality": 3
+      "numOunces": 85
     },
     {
       "userID": 5,
       "date": "2019/06/15",
-      "hoursSlept": 4.1,
-      "sleepQuality": 3.6
+      "numOunces": 42
     },
     {
       "userID": 6,
       "date": "2019/06/15",
-      "hoursSlept": 9.6,
-      "sleepQuality": 2.9
+      "numOunces": 87
     },
     {
       "userID": 7,
       "date": "2019/06/15",
-      "hoursSlept": 5.1,
-      "sleepQuality": 2.6
+      "numOunces": 94
     },
     {
       "userID": 8,
       "date": "2019/06/15",
-      "hoursSlept": 8.1,
-      "sleepQuality": 3.5
+      "numOunces": 84
     },
     {
       "userID": 9,
       "date": "2019/06/15",
-      "hoursSlept": 8.9,
-      "sleepQuality": 2.2
+      "numOunces": 39
     },
     {
       "userID": 10,
       "date": "2019/06/15",
-      "hoursSlept": 4.4,
-      "sleepQuality": 1.6
+      "numOunces": 75
     },
     {
       "userID": 11,
       "date": "2019/06/15",
-      "hoursSlept": 4.9,
-      "sleepQuality": 3.9
+      "numOunces": 51
     },
     {
       "userID": 12,
       "date": "2019/06/15",
-      "hoursSlept": 8,
-      "sleepQuality": 3.4
+      "numOunces": 100
     },
     {
       "userID": 13,
       "date": "2019/06/15",
-      "hoursSlept": 10.1,
-      "sleepQuality": 1.8
+      "numOunces": 30
     },
     {
       "userID": 14,
       "date": "2019/06/15",
-      "hoursSlept": 6.9,
-      "sleepQuality": 1.2
+      "numOunces": 98
     },
     {
       "userID": 15,
       "date": "2019/06/15",
-      "hoursSlept": 4.6,
-      "sleepQuality": 2.9
+      "numOunces": 85
     },
     {
       "userID": 16,
       "date": "2019/06/15",
-      "hoursSlept": 6.1,
-      "sleepQuality": 3.5
+      "numOunces": 40
     },
     {
       "userID": 17,
       "date": "2019/06/15",
-      "hoursSlept": 4.7,
-      "sleepQuality": 4
+      "numOunces": 60
     },
     {
       "userID": 18,
       "date": "2019/06/15",
-      "hoursSlept": 10.1,
-      "sleepQuality": 1.3
+      "numOunces": 30
     },
     {
       "userID": 19,
       "date": "2019/06/15",
-      "hoursSlept": 7.9,
-      "sleepQuality": 1.6
+      "numOunces": 62
     },
     {
       "userID": 20,
       "date": "2019/06/15",
-      "hoursSlept": 5.9,
-      "sleepQuality": 1.6
+      "numOunces": 23
     },
     {
       "userID": 21,
       "date": "2019/06/15",
-      "hoursSlept": 9.6,
-      "sleepQuality": 1
+      "numOunces": 23
     },
     {
       "userID": 22,
       "date": "2019/06/15",
-      "hoursSlept": 9,
-      "sleepQuality": 3.1
+      "numOunces": 54
     },
     {
       "userID": 23,
       "date": "2019/06/15",
-      "hoursSlept": 10.4,
-      "sleepQuality": 2.8
+      "numOunces": 32
     },
     {
       "userID": 24,
       "date": "2019/06/15",
-      "hoursSlept": 10.4,
-      "sleepQuality": 3.1
+      "numOunces": 52
     },
     {
       "userID": 25,
       "date": "2019/06/15",
-      "hoursSlept": 4.6,
-      "sleepQuality": 1.2
+      "numOunces": 40
     },
     {
       "userID": 26,
       "date": "2019/06/15",
-      "hoursSlept": 6.2,
-      "sleepQuality": 3.9
+      "numOunces": 56
     },
     {
       "userID": 27,
       "date": "2019/06/15",
-      "hoursSlept": 5,
-      "sleepQuality": 3.4
+      "numOunces": 87
     },
     {
       "userID": 28,
       "date": "2019/06/15",
-      "hoursSlept": 6.4,
-      "sleepQuality": 2.6
+      "numOunces": 98
     },
     {
       "userID": 29,
       "date": "2019/06/15",
-      "hoursSlept": 6.9,
-      "sleepQuality": 3.5
+      "numOunces": 44
     },
     {
       "userID": 30,
       "date": "2019/06/15",
-      "hoursSlept": 5.7,
-      "sleepQuality": 2.4
+      "numOunces": 42
     },
     {
       "userID": 31,
       "date": "2019/06/15",
-      "hoursSlept": 5,
-      "sleepQuality": 3.6
+      "numOunces": 97
     },
     {
       "userID": 32,
       "date": "2019/06/15",
-      "hoursSlept": 6.6,
-      "sleepQuality": 4.4
+      "numOunces": 56
     },
     {
       "userID": 33,
       "date": "2019/06/15",
-      "hoursSlept": 9.5,
-      "sleepQuality": 4.2
+      "numOunces": 51
     },
     {
       "userID": 34,
       "date": "2019/06/15",
-      "hoursSlept": 9.4,
-      "sleepQuality": 4.4
+      "numOunces": 22
     },
     {
       "userID": 35,
       "date": "2019/06/15",
-      "hoursSlept": 7.5,
-      "sleepQuality": 4.7
+      "numOunces": 64
     },
     {
       "userID": 36,
       "date": "2019/06/15",
-      "hoursSlept": 5,
-      "sleepQuality": 2.5
+      "numOunces": 24
     },
     {
       "userID": 37,
       "date": "2019/06/15",
-      "hoursSlept": 10.1,
-      "sleepQuality": 4.7
+      "numOunces": 75
     },
     {
       "userID": 38,
       "date": "2019/06/15",
-      "hoursSlept": 6,
-      "sleepQuality": 2.9
+      "numOunces": 36
     },
     {
       "userID": 39,
       "date": "2019/06/15",
-      "hoursSlept": 9.3,
-      "sleepQuality": 1.5
+      "numOunces": 83
     },
     {
       "userID": 40,
       "date": "2019/06/15",
-      "hoursSlept": 7.5,
-      "sleepQuality": 2.5
+      "numOunces": 54
     },
     {
       "userID": 41,
       "date": "2019/06/15",
-      "hoursSlept": 4.6,
-      "sleepQuality": 4.6
+      "numOunces": 32
     },
     {
       "userID": 42,
       "date": "2019/06/15",
-      "hoursSlept": 8.2,
-      "sleepQuality": 2.8
+      "numOunces": 48
     },
     {
       "userID": 43,
       "date": "2019/06/15",
-      "hoursSlept": 4.6,
-      "sleepQuality": 2.1
+      "numOunces": 47
     },
     {
       "userID": 44,
       "date": "2019/06/15",
-      "hoursSlept": 7.3,
-      "sleepQuality": 4.3
+      "numOunces": 44
     },
     {
       "userID": 45,
       "date": "2019/06/15",
-      "hoursSlept": 9.9,
-      "sleepQuality": 3
+      "numOunces": 24
     },
     {
       "userID": 46,
       "date": "2019/06/15",
-      "hoursSlept": 10.6,
-      "sleepQuality": 1.4
+      "numOunces": 89
     },
     {
       "userID": 47,
       "date": "2019/06/15",
-      "hoursSlept": 4.7,
-      "sleepQuality": 4.5
+      "numOunces": 62
     },
     {
       "userID": 48,
       "date": "2019/06/15",
-      "hoursSlept": 4.5,
-      "sleepQuality": 1.2
+      "numOunces": 79
     },
     {
       "userID": 49,
       "date": "2019/06/15",
-      "hoursSlept": 4.6,
-      "sleepQuality": 1.7
+      "numOunces": 57
     },
     {
       "userID": 50,
       "date": "2019/06/15",
-      "hoursSlept": 8.5,
-      "sleepQuality": 4.1
+      "numOunces": 66
     },
     {
       "userID": 1,
       "date": "2019/06/16",
-      "hoursSlept": 4.1,
-      "sleepQuality": 3.8
+      "numOunces": 69
     },
     {
       "userID": 2,
       "date": "2019/06/16",
-      "hoursSlept": 7.5,
-      "sleepQuality": 3.8
+      "numOunces": 91
     },
     {
       "userID": 3,
       "date": "2019/06/16",
-      "hoursSlept": 10.7,
-      "sleepQuality": 3.4
+      "numOunces": 99
     },
     {
       "userID": 4,
       "date": "2019/06/16",
-      "hoursSlept": 8.3,
-      "sleepQuality": 4.5
+      "numOunces": 95
     },
     {
       "userID": 5,
       "date": "2019/06/16",
-      "hoursSlept": 7.4,
-      "sleepQuality": 2.4
+      "numOunces": 79
     },
     {
       "userID": 6,
       "date": "2019/06/16",
-      "hoursSlept": 5.3,
-      "sleepQuality": 4.3
+      "numOunces": 57
     },
     {
       "userID": 7,
       "date": "2019/06/16",
-      "hoursSlept": 10,
-      "sleepQuality": 4.5
+      "numOunces": 49
     },
     {
       "userID": 8,
       "date": "2019/06/16",
-      "hoursSlept": 6.8,
-      "sleepQuality": 3
+      "numOunces": 26
     },
     {
       "userID": 9,
       "date": "2019/06/16",
-      "hoursSlept": 9.1,
-      "sleepQuality": 1.2
+      "numOunces": 98
     },
     {
       "userID": 10,
       "date": "2019/06/16",
-      "hoursSlept": 8,
-      "sleepQuality": 4.4
+      "numOunces": 68
     },
     {
       "userID": 11,
       "date": "2019/06/16",
-      "hoursSlept": 8.2,
-      "sleepQuality": 2
+      "numOunces": 21
     },
     {
       "userID": 12,
       "date": "2019/06/16",
-      "hoursSlept": 7.5,
-      "sleepQuality": 1.3
+      "numOunces": 56
     },
     {
       "userID": 13,
       "date": "2019/06/16",
-      "hoursSlept": 5.1,
-      "sleepQuality": 3.8
+      "numOunces": 35
     },
     {
       "userID": 14,
       "date": "2019/06/16",
-      "hoursSlept": 5.9,
-      "sleepQuality": 2.9
+      "numOunces": 75
     },
     {
       "userID": 15,
       "date": "2019/06/16",
-      "hoursSlept": 9,
-      "sleepQuality": 3.2
+      "numOunces": 33
     },
     {
       "userID": 16,
       "date": "2019/06/16",
-      "hoursSlept": 8.7,
-      "sleepQuality": 4.1
+      "numOunces": 55
     },
     {
       "userID": 17,
       "date": "2019/06/16",
-      "hoursSlept": 5.9,
-      "sleepQuality": 2.1
+      "numOunces": 43
     },
     {
       "userID": 18,
       "date": "2019/06/16",
-      "hoursSlept": 5.3,
-      "sleepQuality": 4.5
+      "numOunces": 39
     },
     {
       "userID": 19,
       "date": "2019/06/16",
-      "hoursSlept": 5.5,
-      "sleepQuality": 1.2
+      "numOunces": 73
     },
     {
       "userID": 20,
       "date": "2019/06/16",
-      "hoursSlept": 4.3,
-      "sleepQuality": 1.4
+      "numOunces": 80
     },
     {
       "userID": 21,
       "date": "2019/06/16",
-      "hoursSlept": 4.8,
-      "sleepQuality": 1.3
+      "numOunces": 36
     },
     {
       "userID": 22,
       "date": "2019/06/16",
-      "hoursSlept": 5,
-      "sleepQuality": 3.2
+      "numOunces": 41
     },
     {
       "userID": 23,
       "date": "2019/06/16",
-      "hoursSlept": 9.5,
-      "sleepQuality": 4.7
+      "numOunces": 25
     },
     {
       "userID": 24,
       "date": "2019/06/16",
-      "hoursSlept": 7.6,
-      "sleepQuality": 4.1
+      "numOunces": 69
     },
     {
       "userID": 25,
       "date": "2019/06/16",
-      "hoursSlept": 6.9,
-      "sleepQuality": 3.1
+      "numOunces": 20
     },
     {
       "userID": 26,
       "date": "2019/06/16",
-      "hoursSlept": 7.8,
-      "sleepQuality": 1.5
+      "numOunces": 48
     },
     {
       "userID": 27,
       "date": "2019/06/16",
-      "hoursSlept": 6.3,
-      "sleepQuality": 2.7
+      "numOunces": 88
     },
     {
       "userID": 28,
       "date": "2019/06/16",
-      "hoursSlept": 6,
-      "sleepQuality": 4.4
+      "numOunces": 66
     },
     {
       "userID": 29,
       "date": "2019/06/16",
-      "hoursSlept": 10.9,
-      "sleepQuality": 2
+      "numOunces": 31
     },
     {
       "userID": 30,
       "date": "2019/06/16",
-      "hoursSlept": 10.8,
-      "sleepQuality": 2.5
+      "numOunces": 50
     },
     {
       "userID": 31,
       "date": "2019/06/16",
-      "hoursSlept": 9.7,
-      "sleepQuality": 1.5
+      "numOunces": 48
     },
     {
       "userID": 32,
       "date": "2019/06/16",
-      "hoursSlept": 7,
-      "sleepQuality": 4.8
+      "numOunces": 36
     },
     {
       "userID": 33,
       "date": "2019/06/16",
-      "hoursSlept": 10.1,
-      "sleepQuality": 3.8
+      "numOunces": 89
     },
     {
       "userID": 34,
       "date": "2019/06/16",
-      "hoursSlept": 4.9,
-      "sleepQuality": 1.8
+      "numOunces": 76
     },
     {
       "userID": 35,
       "date": "2019/06/16",
-      "hoursSlept": 6.3,
-      "sleepQuality": 4.5
+      "numOunces": 98
     },
     {
       "userID": 36,
       "date": "2019/06/16",
-      "hoursSlept": 8,
-      "sleepQuality": 1.5
+      "numOunces": 62
     },
     {
       "userID": 37,
       "date": "2019/06/16",
-      "hoursSlept": 10.4,
-      "sleepQuality": 3.8
+      "numOunces": 35
     },
     {
       "userID": 38,
       "date": "2019/06/16",
-      "hoursSlept": 8.6,
-      "sleepQuality": 4.4
+      "numOunces": 54
     },
     {
       "userID": 39,
       "date": "2019/06/16",
-      "hoursSlept": 10.7,
-      "sleepQuality": 2.3
+      "numOunces": 39
     },
     {
       "userID": 40,
       "date": "2019/06/16",
-      "hoursSlept": 5.1,
-      "sleepQuality": 3.2
+      "numOunces": 52
     },
     {
       "userID": 41,
       "date": "2019/06/16",
-      "hoursSlept": 9.8,
-      "sleepQuality": 1.5
+      "numOunces": 100
     },
     {
       "userID": 42,
       "date": "2019/06/16",
-      "hoursSlept": 10.3,
-      "sleepQuality": 4.8
+      "numOunces": 72
     },
     {
       "userID": 43,
       "date": "2019/06/16",
-      "hoursSlept": 11,
-      "sleepQuality": 2.3
+      "numOunces": 32
     },
     {
       "userID": 44,
       "date": "2019/06/16",
-      "hoursSlept": 10.1,
-      "sleepQuality": 1.2
+      "numOunces": 53
     },
     {
       "userID": 45,
       "date": "2019/06/16",
-      "hoursSlept": 8.1,
-      "sleepQuality": 2.3
+      "numOunces": 77
     },
     {
       "userID": 46,
       "date": "2019/06/16",
-      "hoursSlept": 8.4,
-      "sleepQuality": 2.2
+      "numOunces": 70
     },
     {
       "userID": 47,
       "date": "2019/06/16",
-      "hoursSlept": 6.7,
-      "sleepQuality": 4.9
+      "numOunces": 96
     },
     {
       "userID": 48,
       "date": "2019/06/16",
-      "hoursSlept": 7.4,
-      "sleepQuality": 4.9
+      "numOunces": 52
     },
     {
       "userID": 49,
       "date": "2019/06/16",
-      "hoursSlept": 7.1,
-      "sleepQuality": 1.1
+      "numOunces": 78
     },
     {
       "userID": 50,
       "date": "2019/06/16",
-      "hoursSlept": 7.2,
-      "sleepQuality": 1.5
+      "numOunces": 39
     },
     {
       "userID": 1,
       "date": "2019/06/17",
-      "hoursSlept": 8,
-      "sleepQuality": 2.6
+      "numOunces": 96
     },
     {
       "userID": 2,
       "date": "2019/06/17",
-      "hoursSlept": 5.7,
-      "sleepQuality": 3
+      "numOunces": 96
     },
     {
       "userID": 3,
       "date": "2019/06/17",
-      "hoursSlept": 5.3,
-      "sleepQuality": 4.9
+      "numOunces": 28
     },
     {
       "userID": 4,
       "date": "2019/06/17",
-      "hoursSlept": 5.7,
-      "sleepQuality": 1.1
+      "numOunces": 82
     },
     {
       "userID": 5,
       "date": "2019/06/17",
-      "hoursSlept": 10.5,
-      "sleepQuality": 3.7
+      "numOunces": 99
     },
     {
       "userID": 6,
       "date": "2019/06/17",
-      "hoursSlept": 9.7,
-      "sleepQuality": 1.4
+      "numOunces": 57
     },
     {
       "userID": 7,
       "date": "2019/06/17",
-      "hoursSlept": 9.9,
-      "sleepQuality": 4.1
+      "numOunces": 50
     },
     {
       "userID": 8,
       "date": "2019/06/17",
-      "hoursSlept": 9.2,
-      "sleepQuality": 2.2
+      "numOunces": 47
     },
     {
       "userID": 9,
       "date": "2019/06/17",
-      "hoursSlept": 7.2,
-      "sleepQuality": 2.2
+      "numOunces": 86
     },
     {
       "userID": 10,
       "date": "2019/06/17",
-      "hoursSlept": 4.3,
-      "sleepQuality": 3.6
+      "numOunces": 49
     },
     {
       "userID": 11,
       "date": "2019/06/17",
-      "hoursSlept": 7.7,
-      "sleepQuality": 1.9
+      "numOunces": 88
     },
     {
       "userID": 12,
       "date": "2019/06/17",
-      "hoursSlept": 10.4,
-      "sleepQuality": 1
+      "numOunces": 88
     },
     {
       "userID": 13,
       "date": "2019/06/17",
-      "hoursSlept": 4.5,
-      "sleepQuality": 1.2
+      "numOunces": 57
     },
     {
       "userID": 14,
       "date": "2019/06/17",
-      "hoursSlept": 9.3,
-      "sleepQuality": 4.8
+      "numOunces": 39
     },
     {
       "userID": 15,
       "date": "2019/06/17",
-      "hoursSlept": 8.6,
-      "sleepQuality": 4.1
+      "numOunces": 78
     },
     {
       "userID": 16,
       "date": "2019/06/17",
-      "hoursSlept": 6.7,
-      "sleepQuality": 4.8
+      "numOunces": 68
     },
     {
       "userID": 17,
       "date": "2019/06/17",
-      "hoursSlept": 8,
-      "sleepQuality": 3.6
+      "numOunces": 59
     },
     {
       "userID": 18,
       "date": "2019/06/17",
-      "hoursSlept": 7.9,
-      "sleepQuality": 1.5
+      "numOunces": 76
     },
     {
       "userID": 19,
       "date": "2019/06/17",
-      "hoursSlept": 9.5,
-      "sleepQuality": 2
+      "numOunces": 62
     },
     {
       "userID": 20,
       "date": "2019/06/17",
-      "hoursSlept": 6.3,
-      "sleepQuality": 2.4
+      "numOunces": 51
     },
     {
       "userID": 21,
       "date": "2019/06/17",
-      "hoursSlept": 8.4,
-      "sleepQuality": 2.8
+      "numOunces": 73
     },
     {
       "userID": 22,
       "date": "2019/06/17",
-      "hoursSlept": 9.6,
-      "sleepQuality": 1.5
+      "numOunces": 42
     },
     {
       "userID": 23,
       "date": "2019/06/17",
-      "hoursSlept": 9.5,
-      "sleepQuality": 2.8
+      "numOunces": 63
     },
     {
       "userID": 24,
       "date": "2019/06/17",
-      "hoursSlept": 10.5,
-      "sleepQuality": 3.7
+      "numOunces": 70
     },
     {
       "userID": 25,
       "date": "2019/06/17",
-      "hoursSlept": 6.1,
-      "sleepQuality": 1.3
+      "numOunces": 39
     },
     {
       "userID": 26,
       "date": "2019/06/17",
-      "hoursSlept": 4.4,
-      "sleepQuality": 2.3
+      "numOunces": 37
     },
     {
       "userID": 27,
       "date": "2019/06/17",
-      "hoursSlept": 7.3,
-      "sleepQuality": 2.2
+      "numOunces": 99
     },
     {
       "userID": 28,
       "date": "2019/06/17",
-      "hoursSlept": 9.1,
-      "sleepQuality": 4.8
+      "numOunces": 79
     },
     {
       "userID": 29,
       "date": "2019/06/17",
-      "hoursSlept": 10.3,
-      "sleepQuality": 4.1
+      "numOunces": 59
     },
     {
       "userID": 30,
       "date": "2019/06/17",
-      "hoursSlept": 4.3,
-      "sleepQuality": 2.6
+      "numOunces": 90
     },
     {
       "userID": 31,
       "date": "2019/06/17",
-      "hoursSlept": 9.8,
-      "sleepQuality": 1.4
+      "numOunces": 69
     },
     {
       "userID": 32,
       "date": "2019/06/17",
-      "hoursSlept": 9.1,
-      "sleepQuality": 1.9
+      "numOunces": 96
     },
     {
       "userID": 33,
       "date": "2019/06/17",
-      "hoursSlept": 4.5,
-      "sleepQuality": 3.7
+      "numOunces": 23
     },
     {
       "userID": 34,
       "date": "2019/06/17",
-      "hoursSlept": 9.5,
-      "sleepQuality": 1.2
+      "numOunces": 34
     },
     {
       "userID": 35,
       "date": "2019/06/17",
-      "hoursSlept": 8.9,
-      "sleepQuality": 4.9
+      "numOunces": 97
     },
     {
       "userID": 36,
       "date": "2019/06/17",
-      "hoursSlept": 5.6,
-      "sleepQuality": 4.5
+      "numOunces": 83
     },
     {
       "userID": 37,
       "date": "2019/06/17",
-      "hoursSlept": 9.9,
-      "sleepQuality": 4.8
+      "numOunces": 84
     },
     {
       "userID": 38,
       "date": "2019/06/17",
-      "hoursSlept": 6.7,
-      "sleepQuality": 3.6
+      "numOunces": 40
     },
     {
       "userID": 39,
       "date": "2019/06/17",
-      "hoursSlept": 8.3,
-      "sleepQuality": 4.6
+      "numOunces": 62
     },
     {
       "userID": 40,
       "date": "2019/06/17",
-      "hoursSlept": 4.6,
-      "sleepQuality": 3.6
+      "numOunces": 48
     },
     {
       "userID": 41,
       "date": "2019/06/17",
-      "hoursSlept": 7.3,
-      "sleepQuality": 1.1
+      "numOunces": 82
     },
     {
       "userID": 42,
       "date": "2019/06/17",
-      "hoursSlept": 10.3,
-      "sleepQuality": 1.4
+      "numOunces": 60
     },
     {
       "userID": 43,
       "date": "2019/06/17",
-      "hoursSlept": 8.1,
-      "sleepQuality": 2
+      "numOunces": 43
     },
     {
       "userID": 44,
       "date": "2019/06/17",
-      "hoursSlept": 4.9,
-      "sleepQuality": 2.9
+      "numOunces": 99
     },
     {
       "userID": 45,
       "date": "2019/06/17",
-      "hoursSlept": 9.1,
-      "sleepQuality": 1.5
+      "numOunces": 65
     },
     {
       "userID": 46,
       "date": "2019/06/17",
-      "hoursSlept": 6.8,
-      "sleepQuality": 1.3
+      "numOunces": 36
     },
     {
       "userID": 47,
       "date": "2019/06/17",
-      "hoursSlept": 7.4,
-      "sleepQuality": 1.4
+      "numOunces": 76
     },
     {
       "userID": 48,
       "date": "2019/06/17",
-      "hoursSlept": 7.1,
-      "sleepQuality": 1.7
+      "numOunces": 99
     },
     {
       "userID": 49,
       "date": "2019/06/17",
-      "hoursSlept": 5.1,
-      "sleepQuality": 3.2
+      "numOunces": 77
     },
     {
       "userID": 50,
       "date": "2019/06/17",
-      "hoursSlept": 7.6,
-      "sleepQuality": 4
+      "numOunces": 54
     },
     {
       "userID": 1,
       "date": "2019/06/18",
-      "hoursSlept": 10.4,
-      "sleepQuality": 3.1
+      "numOunces": 61
     },
     {
       "userID": 2,
       "date": "2019/06/18",
-      "hoursSlept": 10.8,
-      "sleepQuality": 3.2
+      "numOunces": 70
     },
     {
       "userID": 3,
       "date": "2019/06/18",
-      "hoursSlept": 9.8,
-      "sleepQuality": 2.6
+      "numOunces": 40
     },
     {
       "userID": 4,
       "date": "2019/06/18",
-      "hoursSlept": 5.9,
-      "sleepQuality": 2.5
+      "numOunces": 93
     },
     {
       "userID": 5,
       "date": "2019/06/18",
-      "hoursSlept": 5.2,
-      "sleepQuality": 4.1
+      "numOunces": 39
     },
     {
       "userID": 6,
       "date": "2019/06/18",
-      "hoursSlept": 5.5,
-      "sleepQuality": 4
+      "numOunces": 61
     },
     {
       "userID": 7,
       "date": "2019/06/18",
-      "hoursSlept": 5.5,
-      "sleepQuality": 1.4
+      "numOunces": 58
     },
     {
       "userID": 8,
       "date": "2019/06/18",
-      "hoursSlept": 8.2,
-      "sleepQuality": 2.4
+      "numOunces": 90
     },
     {
       "userID": 9,
       "date": "2019/06/18",
-      "hoursSlept": 5.5,
-      "sleepQuality": 2.4
+      "numOunces": 22
     },
     {
       "userID": 10,
       "date": "2019/06/18",
-      "hoursSlept": 7,
-      "sleepQuality": 3.8
+      "numOunces": 97
     },
     {
       "userID": 11,
       "date": "2019/06/18",
-      "hoursSlept": 6.3,
-      "sleepQuality": 4.5
+      "numOunces": 69
     },
     {
       "userID": 12,
       "date": "2019/06/18",
-      "hoursSlept": 7.4,
-      "sleepQuality": 1.6
+      "numOunces": 29
     },
     {
       "userID": 13,
       "date": "2019/06/18",
-      "hoursSlept": 5,
-      "sleepQuality": 1.9
+      "numOunces": 47
     },
     {
       "userID": 14,
       "date": "2019/06/18",
-      "hoursSlept": 8.4,
-      "sleepQuality": 2
+      "numOunces": 43
     },
     {
       "userID": 15,
       "date": "2019/06/18",
-      "hoursSlept": 6.3,
-      "sleepQuality": 2.9
+      "numOunces": 52
     },
     {
       "userID": 16,
       "date": "2019/06/18",
-      "hoursSlept": 6.5,
-      "sleepQuality": 1.1
+      "numOunces": 53
     },
     {
       "userID": 17,
       "date": "2019/06/18",
-      "hoursSlept": 9.7,
-      "sleepQuality": 1.2
+      "numOunces": 52
     },
     {
       "userID": 18,
       "date": "2019/06/18",
-      "hoursSlept": 10.3,
-      "sleepQuality": 2.6
+      "numOunces": 66
     },
     {
       "userID": 19,
       "date": "2019/06/18",
-      "hoursSlept": 10.6,
-      "sleepQuality": 4.3
+      "numOunces": 58
     },
     {
       "userID": 20,
       "date": "2019/06/18",
-      "hoursSlept": 8.1,
-      "sleepQuality": 1.4
+      "numOunces": 82
     },
     {
       "userID": 21,
       "date": "2019/06/18",
-      "hoursSlept": 7.7,
-      "sleepQuality": 4.2
+      "numOunces": 26
     },
     {
       "userID": 22,
       "date": "2019/06/18",
-      "hoursSlept": 5.8,
-      "sleepQuality": 1.3
+      "numOunces": 38
     },
     {
       "userID": 23,
       "date": "2019/06/18",
-      "hoursSlept": 6.7,
-      "sleepQuality": 2.5
+      "numOunces": 52
     },
     {
       "userID": 24,
       "date": "2019/06/18",
-      "hoursSlept": 10.4,
-      "sleepQuality": 4.9
+      "numOunces": 89
     },
     {
       "userID": 25,
       "date": "2019/06/18",
-      "hoursSlept": 9.7,
-      "sleepQuality": 3.6
+      "numOunces": 96
     },
     {
       "userID": 26,
       "date": "2019/06/18",
-      "hoursSlept": 5.1,
-      "sleepQuality": 4.9
+      "numOunces": 66
     },
     {
       "userID": 27,
       "date": "2019/06/18",
-      "hoursSlept": 7.9,
-      "sleepQuality": 4
+      "numOunces": 59
     },
     {
       "userID": 28,
       "date": "2019/06/18",
-      "hoursSlept": 5.6,
-      "sleepQuality": 2.4
+      "numOunces": 83
     },
     {
       "userID": 29,
       "date": "2019/06/18",
-      "hoursSlept": 7.6,
-      "sleepQuality": 1.1
+      "numOunces": 39
     },
     {
       "userID": 30,
       "date": "2019/06/18",
-      "hoursSlept": 6.3,
-      "sleepQuality": 2.6
+      "numOunces": 44
     },
     {
       "userID": 31,
       "date": "2019/06/18",
-      "hoursSlept": 7.6,
-      "sleepQuality": 4.9
+      "numOunces": 80
     },
     {
       "userID": 32,
       "date": "2019/06/18",
-      "hoursSlept": 7.7,
-      "sleepQuality": 2.7
+      "numOunces": 63
     },
     {
       "userID": 33,
       "date": "2019/06/18",
-      "hoursSlept": 5.4,
-      "sleepQuality": 3.2
+      "numOunces": 26
     },
     {
       "userID": 34,
       "date": "2019/06/18",
-      "hoursSlept": 4.2,
-      "sleepQuality": 4.5
+      "numOunces": 36
     },
     {
       "userID": 35,
       "date": "2019/06/18",
-      "hoursSlept": 5.5,
-      "sleepQuality": 3.1
+      "numOunces": 37
     },
     {
       "userID": 36,
       "date": "2019/06/18",
-      "hoursSlept": 6.3,
-      "sleepQuality": 2.9
+      "numOunces": 73
     },
     {
       "userID": 37,
       "date": "2019/06/18",
-      "hoursSlept": 9.5,
-      "sleepQuality": 2.1
+      "numOunces": 68
     },
     {
       "userID": 38,
       "date": "2019/06/18",
-      "hoursSlept": 4.8,
-      "sleepQuality": 4.5
+      "numOunces": 46
     },
     {
       "userID": 39,
       "date": "2019/06/18",
-      "hoursSlept": 6.5,
-      "sleepQuality": 4.7
+      "numOunces": 50
     },
     {
       "userID": 40,
       "date": "2019/06/18",
-      "hoursSlept": 8,
-      "sleepQuality": 2.4
+      "numOunces": 51
     },
     {
       "userID": 41,
       "date": "2019/06/18",
-      "hoursSlept": 8.1,
-      "sleepQuality": 2.3
+      "numOunces": 35
     },
     {
       "userID": 42,
       "date": "2019/06/18",
-      "hoursSlept": 5.1,
-      "sleepQuality": 2.7
+      "numOunces": 52
     },
     {
       "userID": 43,
       "date": "2019/06/18",
-      "hoursSlept": 7.5,
-      "sleepQuality": 1.8
+      "numOunces": 44
     },
     {
       "userID": 44,
       "date": "2019/06/18",
-      "hoursSlept": 9.3,
-      "sleepQuality": 1.3
+      "numOunces": 30
     },
     {
       "userID": 45,
       "date": "2019/06/18",
-      "hoursSlept": 9.7,
-      "sleepQuality": 2.3
+      "numOunces": 93
     },
     {
       "userID": 46,
       "date": "2019/06/18",
-      "hoursSlept": 10.4,
-      "sleepQuality": 3.3
+      "numOunces": 78
     },
     {
       "userID": 47,
       "date": "2019/06/18",
-      "hoursSlept": 10.5,
-      "sleepQuality": 4.3
+      "numOunces": 100
     },
     {
       "userID": 48,
       "date": "2019/06/18",
-      "hoursSlept": 6.2,
-      "sleepQuality": 1.4
+      "numOunces": 73
     },
     {
       "userID": 49,
       "date": "2019/06/18",
-      "hoursSlept": 9,
-      "sleepQuality": 4
+      "numOunces": 77
     },
     {
       "userID": 50,
       "date": "2019/06/18",
-      "hoursSlept": 5.7,
-      "sleepQuality": 1.8
+      "numOunces": 25
     },
     {
       "userID": 1,
       "date": "2019/06/19",
-      "hoursSlept": 10.7,
-      "sleepQuality": 1.2
+      "numOunces": 91
     },
     {
       "userID": 2,
       "date": "2019/06/19",
-      "hoursSlept": 9.6,
-      "sleepQuality": 2.5
+      "numOunces": 76
     },
     {
       "userID": 3,
       "date": "2019/06/19",
-      "hoursSlept": 7.2,
-      "sleepQuality": 3.4
+      "numOunces": 85
     },
     {
       "userID": 4,
       "date": "2019/06/19",
-      "hoursSlept": 5.2,
-      "sleepQuality": 2.3
+      "numOunces": 21
     },
     {
       "userID": 5,
       "date": "2019/06/19",
-      "hoursSlept": 4.8,
-      "sleepQuality": 3.4
+      "numOunces": 69
     },
     {
       "userID": 6,
       "date": "2019/06/19",
-      "hoursSlept": 9.3,
-      "sleepQuality": 2
+      "numOunces": 41
     },
     {
       "userID": 7,
       "date": "2019/06/19",
-      "hoursSlept": 5.1,
-      "sleepQuality": 4.4
+      "numOunces": 41
     },
     {
       "userID": 8,
       "date": "2019/06/19",
-      "hoursSlept": 10.8,
-      "sleepQuality": 4.3
+      "numOunces": 79
     },
     {
       "userID": 9,
       "date": "2019/06/19",
-      "hoursSlept": 10.4,
-      "sleepQuality": 2.6
+      "numOunces": 82
     },
     {
       "userID": 10,
       "date": "2019/06/19",
-      "hoursSlept": 5.3,
-      "sleepQuality": 3.1
+      "numOunces": 38
     },
     {
       "userID": 11,
       "date": "2019/06/19",
-      "hoursSlept": 5.6,
-      "sleepQuality": 1.1
+      "numOunces": 76
     },
     {
       "userID": 12,
       "date": "2019/06/19",
-      "hoursSlept": 8.3,
-      "sleepQuality": 1.4
+      "numOunces": 46
     },
     {
       "userID": 13,
       "date": "2019/06/19",
-      "hoursSlept": 4.9,
-      "sleepQuality": 1.1
+      "numOunces": 21
     },
     {
       "userID": 14,
       "date": "2019/06/19",
-      "hoursSlept": 5.8,
-      "sleepQuality": 2.6
+      "numOunces": 26
     },
     {
       "userID": 15,
       "date": "2019/06/19",
-      "hoursSlept": 4.1,
-      "sleepQuality": 2.5
+      "numOunces": 35
     },
     {
       "userID": 16,
       "date": "2019/06/19",
-      "hoursSlept": 10.9,
-      "sleepQuality": 3.5
+      "numOunces": 41
     },
     {
       "userID": 17,
       "date": "2019/06/19",
-      "hoursSlept": 4.3,
-      "sleepQuality": 1.6
+      "numOunces": 50
     },
     {
       "userID": 18,
       "date": "2019/06/19",
-      "hoursSlept": 5,
-      "sleepQuality": 1.8
+      "numOunces": 100
     },
     {
       "userID": 19,
       "date": "2019/06/19",
-      "hoursSlept": 6.7,
-      "sleepQuality": 2.5
+      "numOunces": 92
     },
     {
       "userID": 20,
       "date": "2019/06/19",
-      "hoursSlept": 9.9,
-      "sleepQuality": 3.6
+      "numOunces": 72
     },
     {
       "userID": 21,
       "date": "2019/06/19",
-      "hoursSlept": 8.9,
-      "sleepQuality": 4
+      "numOunces": 89
     },
     {
       "userID": 22,
       "date": "2019/06/19",
-      "hoursSlept": 9.4,
-      "sleepQuality": 4.5
+      "numOunces": 77
     },
     {
       "userID": 23,
       "date": "2019/06/19",
-      "hoursSlept": 10,
-      "sleepQuality": 4.7
+      "numOunces": 37
     },
     {
       "userID": 24,
       "date": "2019/06/19",
-      "hoursSlept": 9.6,
-      "sleepQuality": 4.5
+      "numOunces": 88
     },
     {
       "userID": 25,
       "date": "2019/06/19",
-      "hoursSlept": 7.6,
-      "sleepQuality": 4.7
+      "numOunces": 43
     },
     {
       "userID": 26,
       "date": "2019/06/19",
-      "hoursSlept": 9,
-      "sleepQuality": 1.7
+      "numOunces": 55
     },
     {
       "userID": 27,
       "date": "2019/06/19",
-      "hoursSlept": 8.1,
-      "sleepQuality": 4.9
+      "numOunces": 68
     },
     {
       "userID": 28,
       "date": "2019/06/19",
-      "hoursSlept": 9.5,
-      "sleepQuality": 4.4
+      "numOunces": 94
     },
     {
       "userID": 29,
       "date": "2019/06/19",
-      "hoursSlept": 9.3,
-      "sleepQuality": 2.1
+      "numOunces": 56
     },
     {
       "userID": 30,
       "date": "2019/06/19",
-      "hoursSlept": 7.7,
-      "sleepQuality": 1.1
+      "numOunces": 81
     },
     {
       "userID": 31,
       "date": "2019/06/19",
-      "hoursSlept": 10.7,
-      "sleepQuality": 2.8
+      "numOunces": 48
     },
     {
       "userID": 32,
       "date": "2019/06/19",
-      "hoursSlept": 7.7,
-      "sleepQuality": 4.1
+      "numOunces": 38
     },
     {
       "userID": 33,
       "date": "2019/06/19",
-      "hoursSlept": 4.2,
-      "sleepQuality": 2.6
+      "numOunces": 47
     },
     {
       "userID": 34,
       "date": "2019/06/19",
-      "hoursSlept": 4.1,
-      "sleepQuality": 2.7
+      "numOunces": 91
     },
     {
       "userID": 35,
       "date": "2019/06/19",
-      "hoursSlept": 5,
-      "sleepQuality": 2.3
+      "numOunces": 62
     },
     {
       "userID": 36,
       "date": "2019/06/19",
-      "hoursSlept": 8.4,
-      "sleepQuality": 1.1
+      "numOunces": 62
     },
     {
       "userID": 37,
       "date": "2019/06/19",
-      "hoursSlept": 9.2,
-      "sleepQuality": 1.9
+      "numOunces": 64
     },
     {
       "userID": 38,
       "date": "2019/06/19",
-      "hoursSlept": 4.3,
-      "sleepQuality": 3.1
+      "numOunces": 48
     },
     {
       "userID": 39,
       "date": "2019/06/19",
-      "hoursSlept": 4.5,
-      "sleepQuality": 3.7
+      "numOunces": 43
     },
     {
       "userID": 40,
       "date": "2019/06/19",
-      "hoursSlept": 10.5,
-      "sleepQuality": 2.4
+      "numOunces": 55
     },
     {
       "userID": 41,
       "date": "2019/06/19",
-      "hoursSlept": 7.4,
-      "sleepQuality": 4.6
+      "numOunces": 70
     },
     {
       "userID": 42,
       "date": "2019/06/19",
-      "hoursSlept": 9.4,
-      "sleepQuality": 1.6
+      "numOunces": 29
     },
     {
       "userID": 43,
       "date": "2019/06/19",
-      "hoursSlept": 4.3,
-      "sleepQuality": 4.4
+      "numOunces": 51
     },
     {
       "userID": 44,
       "date": "2019/06/19",
-      "hoursSlept": 9.2,
-      "sleepQuality": 3.6
+      "numOunces": 94
     },
     {
       "userID": 45,
       "date": "2019/06/19",
-      "hoursSlept": 7.6,
-      "sleepQuality": 2.9
+      "numOunces": 97
     },
     {
       "userID": 46,
       "date": "2019/06/19",
-      "hoursSlept": 10.6,
-      "sleepQuality": 3.3
+      "numOunces": 86
     },
     {
       "userID": 47,
       "date": "2019/06/19",
-      "hoursSlept": 10.8,
-      "sleepQuality": 4.8
+      "numOunces": 87
     },
     {
       "userID": 48,
       "date": "2019/06/19",
-      "hoursSlept": 8.2,
-      "sleepQuality": 3.7
+      "numOunces": 58
     },
     {
       "userID": 49,
       "date": "2019/06/19",
-      "hoursSlept": 8.3,
-      "sleepQuality": 4.3
+      "numOunces": 59
     },
     {
       "userID": 50,
       "date": "2019/06/19",
-      "hoursSlept": 9.6,
-      "sleepQuality": 1
+      "numOunces": 48
     },
     {
       "userID": 1,
       "date": "2019/06/20",
-      "hoursSlept": 9.3,
-      "sleepQuality": 1.2
+      "numOunces": 50
     },
     {
       "userID": 2,
       "date": "2019/06/20",
-      "hoursSlept": 10.1,
-      "sleepQuality": 2.4
+      "numOunces": 71
     },
     {
       "userID": 3,
       "date": "2019/06/20",
-      "hoursSlept": 9.4,
-      "sleepQuality": 1.2
+      "numOunces": 51
     },
     {
       "userID": 4,
       "date": "2019/06/20",
-      "hoursSlept": 8.3,
-      "sleepQuality": 1.9
+      "numOunces": 95
     },
     {
       "userID": 5,
       "date": "2019/06/20",
-      "hoursSlept": 10.1,
-      "sleepQuality": 3.5
+      "numOunces": 89
     },
     {
       "userID": 6,
       "date": "2019/06/20",
-      "hoursSlept": 8.9,
-      "sleepQuality": 1.8
+      "numOunces": 85
     },
     {
       "userID": 7,
       "date": "2019/06/20",
-      "hoursSlept": 7.1,
-      "sleepQuality": 4.9
+      "numOunces": 80
     },
     {
       "userID": 8,
       "date": "2019/06/20",
-      "hoursSlept": 6.8,
-      "sleepQuality": 2.8
+      "numOunces": 89
     },
     {
       "userID": 9,
       "date": "2019/06/20",
-      "hoursSlept": 9.8,
-      "sleepQuality": 3.9
+      "numOunces": 58
     },
     {
       "userID": 10,
       "date": "2019/06/20",
-      "hoursSlept": 5.5,
-      "sleepQuality": 1.1
+      "numOunces": 78
     },
     {
       "userID": 11,
       "date": "2019/06/20",
-      "hoursSlept": 6.9,
-      "sleepQuality": 2.2
+      "numOunces": 68
     },
     {
       "userID": 12,
       "date": "2019/06/20",
-      "hoursSlept": 9,
-      "sleepQuality": 3.8
+      "numOunces": 31
     },
     {
       "userID": 13,
       "date": "2019/06/20",
-      "hoursSlept": 7.5,
-      "sleepQuality": 4.1
+      "numOunces": 86
     },
     {
       "userID": 14,
       "date": "2019/06/20",
-      "hoursSlept": 5.4,
-      "sleepQuality": 2.5
+      "numOunces": 52
     },
     {
       "userID": 15,
       "date": "2019/06/20",
-      "hoursSlept": 4.4,
-      "sleepQuality": 3.7
+      "numOunces": 50
     },
     {
       "userID": 16,
       "date": "2019/06/20",
-      "hoursSlept": 9.4,
-      "sleepQuality": 2.6
+      "numOunces": 53
     },
     {
       "userID": 17,
       "date": "2019/06/20",
-      "hoursSlept": 10,
-      "sleepQuality": 3.8
+      "numOunces": 24
     },
     {
       "userID": 18,
       "date": "2019/06/20",
-      "hoursSlept": 7.1,
-      "sleepQuality": 3
+      "numOunces": 22
     },
     {
       "userID": 19,
       "date": "2019/06/20",
-      "hoursSlept": 11,
-      "sleepQuality": 2.8
+      "numOunces": 42
     },
     {
       "userID": 20,
       "date": "2019/06/20",
-      "hoursSlept": 4,
-      "sleepQuality": 3.2
+      "numOunces": 28
     },
     {
       "userID": 21,
       "date": "2019/06/20",
-      "hoursSlept": 5.2,
-      "sleepQuality": 1.2
+      "numOunces": 79
     },
     {
       "userID": 22,
       "date": "2019/06/20",
-      "hoursSlept": 5.8,
-      "sleepQuality": 3.6
+      "numOunces": 22
     },
     {
       "userID": 23,
       "date": "2019/06/20",
-      "hoursSlept": 4.4,
-      "sleepQuality": 2.1
+      "numOunces": 59
     },
     {
       "userID": 24,
       "date": "2019/06/20",
-      "hoursSlept": 4.8,
-      "sleepQuality": 1.8
+      "numOunces": 66
     },
     {
       "userID": 25,
       "date": "2019/06/20",
-      "hoursSlept": 8,
-      "sleepQuality": 1.3
+      "numOunces": 69
     },
     {
       "userID": 26,
       "date": "2019/06/20",
-      "hoursSlept": 8.9,
-      "sleepQuality": 4.6
+      "numOunces": 60
     },
     {
       "userID": 27,
       "date": "2019/06/20",
-      "hoursSlept": 8.2,
-      "sleepQuality": 1.4
+      "numOunces": 58
     },
     {
       "userID": 28,
       "date": "2019/06/20",
-      "hoursSlept": 6.5,
-      "sleepQuality": 1.8
+      "numOunces": 21
     },
     {
       "userID": 29,
       "date": "2019/06/20",
-      "hoursSlept": 8.4,
-      "sleepQuality": 1.1
+      "numOunces": 95
     },
     {
       "userID": 30,
       "date": "2019/06/20",
-      "hoursSlept": 10.5,
-      "sleepQuality": 2.5
+      "numOunces": 95
     },
     {
       "userID": 31,
       "date": "2019/06/20",
-      "hoursSlept": 10.3,
-      "sleepQuality": 2.9
+      "numOunces": 85
     },
     {
       "userID": 32,
       "date": "2019/06/20",
-      "hoursSlept": 11,
-      "sleepQuality": 2.3
+      "numOunces": 50
     },
     {
       "userID": 33,
       "date": "2019/06/20",
-      "hoursSlept": 4,
-      "sleepQuality": 1.8
+      "numOunces": 54
     },
     {
       "userID": 34,
       "date": "2019/06/20",
-      "hoursSlept": 6.4,
-      "sleepQuality": 2.2
+      "numOunces": 54
     },
     {
       "userID": 35,
       "date": "2019/06/20",
-      "hoursSlept": 5,
-      "sleepQuality": 1.9
+      "numOunces": 23
     },
     {
       "userID": 36,
       "date": "2019/06/20",
-      "hoursSlept": 7.3,
-      "sleepQuality": 3.1
+      "numOunces": 53
     },
     {
       "userID": 37,
       "date": "2019/06/20",
-      "hoursSlept": 4.7,
-      "sleepQuality": 3.1
+      "numOunces": 60
     },
     {
       "userID": 38,
       "date": "2019/06/20",
-      "hoursSlept": 4.3,
-      "sleepQuality": 2.1
+      "numOunces": 28
     },
     {
       "userID": 39,
       "date": "2019/06/20",
-      "hoursSlept": 10.4,
-      "sleepQuality": 4.9
+      "numOunces": 38
     },
     {
       "userID": 40,
       "date": "2019/06/20",
-      "hoursSlept": 6.7,
-      "sleepQuality": 3.7
+      "numOunces": 31
     },
     {
       "userID": 41,
       "date": "2019/06/20",
-      "hoursSlept": 7.7,
-      "sleepQuality": 4.1
+      "numOunces": 26
     },
     {
       "userID": 42,
       "date": "2019/06/20",
-      "hoursSlept": 10,
-      "sleepQuality": 2.3
+      "numOunces": 99
     },
     {
       "userID": 43,
       "date": "2019/06/20",
-      "hoursSlept": 5.5,
-      "sleepQuality": 4.9
+      "numOunces": 49
     },
     {
       "userID": 44,
       "date": "2019/06/20",
-      "hoursSlept": 5.1,
-      "sleepQuality": 3.7
+      "numOunces": 59
     },
     {
       "userID": 45,
       "date": "2019/06/20",
-      "hoursSlept": 4.3,
-      "sleepQuality": 4.2
+      "numOunces": 51
     },
     {
       "userID": 46,
       "date": "2019/06/20",
-      "hoursSlept": 4.3,
-      "sleepQuality": 1.1
+      "numOunces": 96
     },
     {
       "userID": 47,
       "date": "2019/06/20",
-      "hoursSlept": 8,
-      "sleepQuality": 1.2
+      "numOunces": 21
     },
     {
       "userID": 48,
       "date": "2019/06/20",
-      "hoursSlept": 5.4,
-      "sleepQuality": 4
+      "numOunces": 74
     },
     {
       "userID": 49,
       "date": "2019/06/20",
-      "hoursSlept": 9.2,
-      "sleepQuality": 3.1
+      "numOunces": 50
     },
     {
       "userID": 50,
       "date": "2019/06/20",
-      "hoursSlept": 7.8,
-      "sleepQuality": 1.1
+      "numOunces": 71
     },
     {
       "userID": 1,
       "date": "2019/06/21",
-      "hoursSlept": 7.8,
-      "sleepQuality": 4.2
+      "numOunces": 50
     },
     {
       "userID": 2,
       "date": "2019/06/21",
-      "hoursSlept": 4.3,
-      "sleepQuality": 4.8
+      "numOunces": 27
     },
     {
       "userID": 3,
       "date": "2019/06/21",
-      "hoursSlept": 8.9,
-      "sleepQuality": 3.7
+      "numOunces": 41
     },
     {
       "userID": 4,
       "date": "2019/06/21",
-      "hoursSlept": 10.6,
-      "sleepQuality": 2.7
+      "numOunces": 91
     },
     {
       "userID": 5,
       "date": "2019/06/21",
-      "hoursSlept": 9.6,
-      "sleepQuality": 4.1
+      "numOunces": 73
     },
     {
       "userID": 6,
       "date": "2019/06/21",
-      "hoursSlept": 5.6,
-      "sleepQuality": 3.2
+      "numOunces": 90
     },
     {
       "userID": 7,
       "date": "2019/06/21",
-      "hoursSlept": 7.5,
-      "sleepQuality": 3.3
+      "numOunces": 95
     },
     {
       "userID": 8,
       "date": "2019/06/21",
-      "hoursSlept": 10.2,
-      "sleepQuality": 3
+      "numOunces": 37
     },
     {
       "userID": 9,
       "date": "2019/06/21",
-      "hoursSlept": 7.7,
-      "sleepQuality": 2.9
+      "numOunces": 83
     },
     {
       "userID": 10,
       "date": "2019/06/21",
-      "hoursSlept": 4.5,
-      "sleepQuality": 2.5
+      "numOunces": 95
     },
     {
       "userID": 11,
       "date": "2019/06/21",
-      "hoursSlept": 10.9,
-      "sleepQuality": 4.2
+      "numOunces": 25
     },
     {
       "userID": 12,
       "date": "2019/06/21",
-      "hoursSlept": 4.6,
-      "sleepQuality": 2.6
+      "numOunces": 20
     },
     {
       "userID": 13,
       "date": "2019/06/21",
-      "hoursSlept": 10.2,
-      "sleepQuality": 3.2
+      "numOunces": 55
     },
     {
       "userID": 14,
       "date": "2019/06/21",
-      "hoursSlept": 4.9,
-      "sleepQuality": 1.5
+      "numOunces": 32
     },
     {
       "userID": 15,
       "date": "2019/06/21",
-      "hoursSlept": 9.5,
-      "sleepQuality": 2
+      "numOunces": 86
     },
     {
       "userID": 16,
       "date": "2019/06/21",
-      "hoursSlept": 5.2,
-      "sleepQuality": 3
+      "numOunces": 61
     },
     {
       "userID": 17,
       "date": "2019/06/21",
-      "hoursSlept": 7.1,
-      "sleepQuality": 3.3
+      "numOunces": 99
     },
     {
       "userID": 18,
       "date": "2019/06/21",
-      "hoursSlept": 9.7,
-      "sleepQuality": 2.8
+      "numOunces": 30
     },
     {
       "userID": 19,
       "date": "2019/06/21",
-      "hoursSlept": 8,
-      "sleepQuality": 4.1
+      "numOunces": 55
     },
     {
       "userID": 20,
       "date": "2019/06/21",
-      "hoursSlept": 4.6,
-      "sleepQuality": 2.4
+      "numOunces": 60
     },
     {
       "userID": 21,
       "date": "2019/06/21",
-      "hoursSlept": 8.7,
-      "sleepQuality": 4.2
+      "numOunces": 93
     },
     {
       "userID": 22,
       "date": "2019/06/21",
-      "hoursSlept": 8.6,
-      "sleepQuality": 1.7
+      "numOunces": 73
     },
     {
       "userID": 23,
       "date": "2019/06/21",
-      "hoursSlept": 9.1,
-      "sleepQuality": 4.5
+      "numOunces": 54
     },
     {
       "userID": 24,
       "date": "2019/06/21",
-      "hoursSlept": 9.1,
-      "sleepQuality": 3.7
+      "numOunces": 71
     },
     {
       "userID": 25,
       "date": "2019/06/21",
-      "hoursSlept": 9.3,
-      "sleepQuality": 3.5
+      "numOunces": 22
     },
     {
       "userID": 26,
       "date": "2019/06/21",
-      "hoursSlept": 4.6,
-      "sleepQuality": 1.5
+      "numOunces": 51
     },
     {
       "userID": 27,
       "date": "2019/06/21",
-      "hoursSlept": 7.5,
-      "sleepQuality": 4.6
+      "numOunces": 20
     },
     {
       "userID": 28,
       "date": "2019/06/21",
-      "hoursSlept": 6,
-      "sleepQuality": 2.8
+      "numOunces": 27
     },
     {
       "userID": 29,
       "date": "2019/06/21",
-      "hoursSlept": 10.6,
-      "sleepQuality": 4.2
+      "numOunces": 29
     },
     {
       "userID": 30,
       "date": "2019/06/21",
-      "hoursSlept": 7.1,
-      "sleepQuality": 4.4
+      "numOunces": 98
     },
     {
       "userID": 31,
       "date": "2019/06/21",
-      "hoursSlept": 7.6,
-      "sleepQuality": 1.7
+      "numOunces": 94
     },
     {
       "userID": 32,
       "date": "2019/06/21",
-      "hoursSlept": 9,
-      "sleepQuality": 4.4
+      "numOunces": 84
     },
     {
       "userID": 33,
       "date": "2019/06/21",
-      "hoursSlept": 10.1,
-      "sleepQuality": 4.6
+      "numOunces": 84
     },
     {
       "userID": 34,
       "date": "2019/06/21",
-      "hoursSlept": 6.3,
-      "sleepQuality": 3.3
+      "numOunces": 81
     },
     {
       "userID": 35,
       "date": "2019/06/21",
-      "hoursSlept": 7.5,
-      "sleepQuality": 1.9
+      "numOunces": 20
     },
     {
       "userID": 36,
       "date": "2019/06/21",
-      "hoursSlept": 8,
-      "sleepQuality": 3.3
+      "numOunces": 38
     },
     {
       "userID": 37,
       "date": "2019/06/21",
-      "hoursSlept": 8.3,
-      "sleepQuality": 3.3
+      "numOunces": 86
     },
     {
       "userID": 38,
       "date": "2019/06/21",
-      "hoursSlept": 4.5,
-      "sleepQuality": 1.2
+      "numOunces": 46
     },
     {
       "userID": 39,
       "date": "2019/06/21",
-      "hoursSlept": 4.5,
-      "sleepQuality": 2.8
+      "numOunces": 39
     },
     {
       "userID": 40,
       "date": "2019/06/21",
-      "hoursSlept": 5.2,
-      "sleepQuality": 4.6
+      "numOunces": 36
     },
     {
       "userID": 41,
       "date": "2019/06/21",
-      "hoursSlept": 5,
-      "sleepQuality": 2.4
+      "numOunces": 49
     },
     {
       "userID": 42,
       "date": "2019/06/21",
-      "hoursSlept": 10.9,
-      "sleepQuality": 4.1
+      "numOunces": 52
     },
     {
       "userID": 43,
       "date": "2019/06/21",
-      "hoursSlept": 8.5,
-      "sleepQuality": 4.8
+      "numOunces": 75
     },
     {
       "userID": 44,
       "date": "2019/06/21",
-      "hoursSlept": 6.2,
-      "sleepQuality": 3.9
+      "numOunces": 96
     },
     {
       "userID": 45,
       "date": "2019/06/21",
-      "hoursSlept": 6.9,
-      "sleepQuality": 2.2
+      "numOunces": 27
     },
     {
       "userID": 46,
       "date": "2019/06/21",
-      "hoursSlept": 6.9,
-      "sleepQuality": 1.5
+      "numOunces": 57
     },
     {
       "userID": 47,
       "date": "2019/06/21",
-      "hoursSlept": 10,
-      "sleepQuality": 1
+      "numOunces": 85
     },
     {
       "userID": 48,
       "date": "2019/06/21",
-      "hoursSlept": 4.8,
-      "sleepQuality": 3.6
+      "numOunces": 30
     },
     {
       "userID": 49,
       "date": "2019/06/21",
-      "hoursSlept": 10.8,
-      "sleepQuality": 1.2
+      "numOunces": 64
     },
     {
       "userID": 50,
       "date": "2019/06/21",
-      "hoursSlept": 9.1,
-      "sleepQuality": 1.2
+      "numOunces": 36
     },
     {
       "userID": 1,
       "date": "2019/06/22",
-      "hoursSlept": 7,
-      "sleepQuality": 3
+      "numOunces": 43
     },
     {
       "userID": 2,
       "date": "2019/06/22",
-      "hoursSlept": 4.8,
-      "sleepQuality": 3.3
+      "numOunces": 58
     },
     {
       "userID": 3,
       "date": "2019/06/22",
-      "hoursSlept": 9.8,
-      "sleepQuality": 2.1
+      "numOunces": 78
     },
     {
       "userID": 4,
       "date": "2019/06/22",
-      "hoursSlept": 7.7,
-      "sleepQuality": 1.5
+      "numOunces": 34
     },
     {
       "userID": 5,
       "date": "2019/06/22",
-      "hoursSlept": 8.1,
-      "sleepQuality": 1.3
+      "numOunces": 97
     },
     {
       "userID": 6,
       "date": "2019/06/22",
-      "hoursSlept": 9.3,
-      "sleepQuality": 4.9
+      "numOunces": 73
     },
     {
       "userID": 7,
       "date": "2019/06/22",
-      "hoursSlept": 7.5,
-      "sleepQuality": 4.3
+      "numOunces": 74
     },
     {
       "userID": 8,
       "date": "2019/06/22",
-      "hoursSlept": 8.3,
-      "sleepQuality": 4.5
+      "numOunces": 40
     },
     {
       "userID": 9,
       "date": "2019/06/22",
-      "hoursSlept": 7.2,
-      "sleepQuality": 2.5
+      "numOunces": 25
     },
     {
       "userID": 10,
       "date": "2019/06/22",
-      "hoursSlept": 9,
-      "sleepQuality": 1.7
+      "numOunces": 72
     },
     {
       "userID": 11,
       "date": "2019/06/22",
-      "hoursSlept": 10.2,
-      "sleepQuality": 1.2
+      "numOunces": 93
     },
     {
       "userID": 12,
       "date": "2019/06/22",
-      "hoursSlept": 4.5,
-      "sleepQuality": 4.9
+      "numOunces": 76
     },
     {
       "userID": 13,
       "date": "2019/06/22",
-      "hoursSlept": 6,
-      "sleepQuality": 1.9
+      "numOunces": 83
     },
     {
       "userID": 14,
       "date": "2019/06/22",
-      "hoursSlept": 4.7,
-      "sleepQuality": 3.6
+      "numOunces": 53
     },
     {
       "userID": 15,
       "date": "2019/06/22",
-      "hoursSlept": 9.1,
-      "sleepQuality": 2.4
+      "numOunces": 57
     },
     {
       "userID": 16,
       "date": "2019/06/22",
-      "hoursSlept": 4.9,
-      "sleepQuality": 1.2
+      "numOunces": 58
     },
     {
       "userID": 17,
       "date": "2019/06/22",
-      "hoursSlept": 9.8,
-      "sleepQuality": 3.9
+      "numOunces": 54
     },
     {
       "userID": 18,
       "date": "2019/06/22",
-      "hoursSlept": 8.9,
-      "sleepQuality": 4
+      "numOunces": 26
     },
     {
       "userID": 19,
       "date": "2019/06/22",
-      "hoursSlept": 7.6,
-      "sleepQuality": 3.9
+      "numOunces": 95
     },
     {
       "userID": 20,
       "date": "2019/06/22",
-      "hoursSlept": 5.1,
-      "sleepQuality": 4.3
+      "numOunces": 77
     },
     {
       "userID": 21,
       "date": "2019/06/22",
-      "hoursSlept": 5.2,
-      "sleepQuality": 1.1
+      "numOunces": 60
     },
     {
       "userID": 22,
       "date": "2019/06/22",
-      "hoursSlept": 4.3,
-      "sleepQuality": 3.5
+      "numOunces": 36
     },
     {
       "userID": 23,
       "date": "2019/06/22",
-      "hoursSlept": 6.1,
-      "sleepQuality": 4
+      "numOunces": 69
     },
     {
       "userID": 24,
       "date": "2019/06/22",
-      "hoursSlept": 7.1,
-      "sleepQuality": 4.4
+      "numOunces": 78
     },
     {
       "userID": 25,
       "date": "2019/06/22",
-      "hoursSlept": 5.9,
-      "sleepQuality": 1.9
+      "numOunces": 30
     },
     {
       "userID": 26,
       "date": "2019/06/22",
-      "hoursSlept": 9.2,
-      "sleepQuality": 4
+      "numOunces": 79
     },
     {
       "userID": 27,
       "date": "2019/06/22",
-      "hoursSlept": 10.6,
-      "sleepQuality": 1.8
+      "numOunces": 35
     },
     {
       "userID": 28,
       "date": "2019/06/22",
-      "hoursSlept": 8.5,
-      "sleepQuality": 4.1
+      "numOunces": 97
     },
     {
       "userID": 29,
       "date": "2019/06/22",
-      "hoursSlept": 10.7,
-      "sleepQuality": 3.6
+      "numOunces": 80
     },
     {
       "userID": 30,
       "date": "2019/06/22",
-      "hoursSlept": 4.8,
-      "sleepQuality": 3.5
+      "numOunces": 30
     },
     {
       "userID": 31,
       "date": "2019/06/22",
-      "hoursSlept": 6,
-      "sleepQuality": 3.4
+      "numOunces": 50
     },
     {
       "userID": 32,
       "date": "2019/06/22",
-      "hoursSlept": 9,
-      "sleepQuality": 3.1
+      "numOunces": 66
     },
     {
       "userID": 33,
       "date": "2019/06/22",
-      "hoursSlept": 8,
-      "sleepQuality": 1.4
+      "numOunces": 69
     },
     {
       "userID": 34,
       "date": "2019/06/22",
-      "hoursSlept": 4.1,
-      "sleepQuality": 3.3
+      "numOunces": 47
     },
     {
       "userID": 35,
       "date": "2019/06/22",
-      "hoursSlept": 8.9,
-      "sleepQuality": 4.4
+      "numOunces": 83
     },
     {
       "userID": 36,
       "date": "2019/06/22",
-      "hoursSlept": 6.2,
-      "sleepQuality": 3
+      "numOunces": 36
     },
     {
       "userID": 37,
       "date": "2019/06/22",
-      "hoursSlept": 10.8,
-      "sleepQuality": 2.5
+      "numOunces": 81
     },
     {
       "userID": 38,
       "date": "2019/06/22",
-      "hoursSlept": 8.2,
-      "sleepQuality": 4.2
+      "numOunces": 40
     },
     {
       "userID": 39,
       "date": "2019/06/22",
-      "hoursSlept": 7.9,
-      "sleepQuality": 2.6
+      "numOunces": 22
     },
     {
       "userID": 40,
       "date": "2019/06/22",
-      "hoursSlept": 7.8,
-      "sleepQuality": 3.8
+      "numOunces": 78
     },
     {
       "userID": 41,
       "date": "2019/06/22",
-      "hoursSlept": 10.9,
-      "sleepQuality": 3.8
+      "numOunces": 64
     },
     {
       "userID": 42,
       "date": "2019/06/22",
-      "hoursSlept": 6.5,
-      "sleepQuality": 1
+      "numOunces": 99
     },
     {
       "userID": 43,
       "date": "2019/06/22",
-      "hoursSlept": 10,
-      "sleepQuality": 2.3
+      "numOunces": 65
     },
     {
       "userID": 44,
       "date": "2019/06/22",
-      "hoursSlept": 4.9,
-      "sleepQuality": 1.1
+      "numOunces": 58
     },
     {
       "userID": 45,
       "date": "2019/06/22",
-      "hoursSlept": 10.1,
-      "sleepQuality": 2.3
+      "numOunces": 25
     },
     {
       "userID": 46,
       "date": "2019/06/22",
-      "hoursSlept": 9.8,
-      "sleepQuality": 1.9
+      "numOunces": 64
     },
     {
       "userID": 47,
       "date": "2019/06/22",
-      "hoursSlept": 4.4,
-      "sleepQuality": 4.5
+      "numOunces": 22
     },
     {
       "userID": 48,
       "date": "2019/06/22",
-      "hoursSlept": 10,
-      "sleepQuality": 4.1
+      "numOunces": 34
     },
     {
       "userID": 49,
       "date": "2019/06/22",
-      "hoursSlept": 7.7,
-      "sleepQuality": 3.8
+      "numOunces": 61
     },
     {
       "userID": 50,
       "date": "2019/06/22",
-      "hoursSlept": 4.7,
-      "sleepQuality": 3
+      "numOunces": 43
     },
     {
       "userID": 1,
       "date": "2019/06/23",
-      "hoursSlept": 7.8,
-      "sleepQuality": 1.5
+      "numOunces": 39
     },
     {
       "userID": 2,
       "date": "2019/06/23",
-      "hoursSlept": 8,
-      "sleepQuality": 4.9
+      "numOunces": 44
     },
     {
       "userID": 3,
       "date": "2019/06/23",
-      "hoursSlept": 4.7,
-      "sleepQuality": 3.9
+      "numOunces": 35
     },
     {
       "userID": 4,
       "date": "2019/06/23",
-      "hoursSlept": 9.9,
-      "sleepQuality": 2.6
+      "numOunces": 62
     },
     {
       "userID": 5,
       "date": "2019/06/23",
-      "hoursSlept": 5.1,
-      "sleepQuality": 1.6
+      "numOunces": 73
     },
     {
       "userID": 6,
       "date": "2019/06/23",
-      "hoursSlept": 8.5,
-      "sleepQuality": 4.2
+      "numOunces": 71
     },
     {
       "userID": 7,
       "date": "2019/06/23",
-      "hoursSlept": 9,
-      "sleepQuality": 3.6
+      "numOunces": 94
     },
     {
       "userID": 8,
       "date": "2019/06/23",
-      "hoursSlept": 4.6,
-      "sleepQuality": 1.8
+      "numOunces": 38
     },
     {
       "userID": 9,
       "date": "2019/06/23",
-      "hoursSlept": 4.1,
-      "sleepQuality": 3.8
+      "numOunces": 24
     },
     {
       "userID": 10,
       "date": "2019/06/23",
-      "hoursSlept": 7.8,
-      "sleepQuality": 4.7
+      "numOunces": 81
     },
     {
       "userID": 11,
       "date": "2019/06/23",
-      "hoursSlept": 6,
-      "sleepQuality": 3.2
+      "numOunces": 95
     },
     {
       "userID": 12,
       "date": "2019/06/23",
-      "hoursSlept": 5.8,
-      "sleepQuality": 4.9
+      "numOunces": 83
     },
     {
       "userID": 13,
       "date": "2019/06/23",
-      "hoursSlept": 7.3,
-      "sleepQuality": 4.7
+      "numOunces": 74
     },
     {
       "userID": 14,
       "date": "2019/06/23",
-      "hoursSlept": 8.1,
-      "sleepQuality": 2
+      "numOunces": 42
     },
     {
       "userID": 15,
       "date": "2019/06/23",
-      "hoursSlept": 6.4,
-      "sleepQuality": 2
+      "numOunces": 56
     },
     {
       "userID": 16,
       "date": "2019/06/23",
-      "hoursSlept": 6.9,
-      "sleepQuality": 1.7
+      "numOunces": 65
     },
     {
       "userID": 17,
       "date": "2019/06/23",
-      "hoursSlept": 8.9,
-      "sleepQuality": 4.7
+      "numOunces": 86
     },
     {
       "userID": 18,
       "date": "2019/06/23",
-      "hoursSlept": 9,
-      "sleepQuality": 3.4
+      "numOunces": 73
     },
     {
       "userID": 19,
       "date": "2019/06/23",
-      "hoursSlept": 4.1,
-      "sleepQuality": 4.3
+      "numOunces": 81
     },
     {
       "userID": 20,
       "date": "2019/06/23",
-      "hoursSlept": 7.1,
-      "sleepQuality": 2.6
+      "numOunces": 30
     },
     {
       "userID": 21,
       "date": "2019/06/23",
-      "hoursSlept": 10.4,
-      "sleepQuality": 4.7
+      "numOunces": 92
     },
     {
       "userID": 22,
       "date": "2019/06/23",
-      "hoursSlept": 9.5,
-      "sleepQuality": 2.1
+      "numOunces": 83
     },
     {
       "userID": 23,
       "date": "2019/06/23",
-      "hoursSlept": 6.7,
-      "sleepQuality": 1
+      "numOunces": 35
     },
     {
       "userID": 24,
       "date": "2019/06/23",
-      "hoursSlept": 6.4,
-      "sleepQuality": 1.4
+      "numOunces": 65
     },
     {
       "userID": 25,
       "date": "2019/06/23",
-      "hoursSlept": 9.9,
-      "sleepQuality": 2.9
+      "numOunces": 53
     },
     {
       "userID": 26,
       "date": "2019/06/23",
-      "hoursSlept": 8.1,
-      "sleepQuality": 1.3
+      "numOunces": 62
     },
     {
       "userID": 27,
       "date": "2019/06/23",
-      "hoursSlept": 9.3,
-      "sleepQuality": 2.5
+      "numOunces": 20
     },
     {
       "userID": 28,
       "date": "2019/06/23",
-      "hoursSlept": 10.4,
-      "sleepQuality": 1.5
+      "numOunces": 48
     },
     {
       "userID": 29,
       "date": "2019/06/23",
-      "hoursSlept": 8,
-      "sleepQuality": 1.3
+      "numOunces": 42
     },
     {
       "userID": 30,
       "date": "2019/06/23",
-      "hoursSlept": 5,
-      "sleepQuality": 4.3
+      "numOunces": 41
     },
     {
       "userID": 31,
       "date": "2019/06/23",
-      "hoursSlept": 6.2,
-      "sleepQuality": 2.9
+      "numOunces": 59
     },
     {
       "userID": 32,
       "date": "2019/06/23",
-      "hoursSlept": 5.1,
-      "sleepQuality": 4
+      "numOunces": 33
     },
     {
       "userID": 33,
       "date": "2019/06/23",
-      "hoursSlept": 10.3,
-      "sleepQuality": 1
+      "numOunces": 94
     },
     {
       "userID": 34,
       "date": "2019/06/23",
-      "hoursSlept": 6.4,
-      "sleepQuality": 2.8
+      "numOunces": 75
     },
     {
       "userID": 35,
       "date": "2019/06/23",
-      "hoursSlept": 6.1,
-      "sleepQuality": 1.5
+      "numOunces": 60
     },
     {
       "userID": 36,
       "date": "2019/06/23",
-      "hoursSlept": 8.8,
-      "sleepQuality": 4.9
+      "numOunces": 27
     },
     {
       "userID": 37,
       "date": "2019/06/23",
-      "hoursSlept": 10.7,
-      "sleepQuality": 5
+      "numOunces": 55
     },
     {
       "userID": 38,
       "date": "2019/06/23",
-      "hoursSlept": 7.7,
-      "sleepQuality": 4
+      "numOunces": 29
     },
     {
       "userID": 39,
       "date": "2019/06/23",
-      "hoursSlept": 10.1,
-      "sleepQuality": 1.8
+      "numOunces": 79
     },
     {
       "userID": 40,
       "date": "2019/06/23",
-      "hoursSlept": 5.7,
-      "sleepQuality": 1.1
+      "numOunces": 97
     },
     {
       "userID": 41,
       "date": "2019/06/23",
-      "hoursSlept": 7.8,
-      "sleepQuality": 2.8
+      "numOunces": 77
     },
     {
       "userID": 42,
       "date": "2019/06/23",
-      "hoursSlept": 10.4,
-      "sleepQuality": 2.2
+      "numOunces": 40
     },
     {
       "userID": 43,
       "date": "2019/06/23",
-      "hoursSlept": 10.5,
-      "sleepQuality": 3.9
+      "numOunces": 37
     },
     {
       "userID": 44,
       "date": "2019/06/23",
-      "hoursSlept": 7.2,
-      "sleepQuality": 4.8
+      "numOunces": 39
     },
     {
       "userID": 45,
       "date": "2019/06/23",
-      "hoursSlept": 9.4,
-      "sleepQuality": 2.5
+      "numOunces": 60
     },
     {
       "userID": 46,
       "date": "2019/06/23",
-      "hoursSlept": 7.2,
-      "sleepQuality": 4
+      "numOunces": 79
     },
     {
       "userID": 47,
       "date": "2019/06/23",
-      "hoursSlept": 8.5,
-      "sleepQuality": 4.6
+      "numOunces": 40
     },
     {
       "userID": 48,
       "date": "2019/06/23",
-      "hoursSlept": 5.1,
-      "sleepQuality": 4.7
+      "numOunces": 22
     },
     {
       "userID": 49,
       "date": "2019/06/23",
-      "hoursSlept": 11,
-      "sleepQuality": 4.3
+      "numOunces": 90
     },
     {
       "userID": 50,
       "date": "2019/06/23",
-      "hoursSlept": 7,
-      "sleepQuality": 2.7
+      "numOunces": 26
     },
     {
       "userID": 1,
       "date": "2019/06/24",
-      "hoursSlept": 8,
-      "sleepQuality": 1.3
+      "numOunces": 61
     },
     {
       "userID": 2,
       "date": "2019/06/24",
-      "hoursSlept": 10.8,
-      "sleepQuality": 1
+      "numOunces": 33
     },
     {
       "userID": 3,
       "date": "2019/06/24",
-      "hoursSlept": 9.3,
-      "sleepQuality": 1.8
+      "numOunces": 40
     },
     {
       "userID": 4,
       "date": "2019/06/24",
-      "hoursSlept": 5,
-      "sleepQuality": 3.5
+      "numOunces": 66
     },
     {
       "userID": 5,
       "date": "2019/06/24",
-      "hoursSlept": 6.8,
-      "sleepQuality": 2.1
+      "numOunces": 30
     },
     {
       "userID": 6,
       "date": "2019/06/24",
-      "hoursSlept": 4.4,
-      "sleepQuality": 2.1
+      "numOunces": 45
     },
     {
       "userID": 7,
       "date": "2019/06/24",
-      "hoursSlept": 10,
-      "sleepQuality": 2.4
+      "numOunces": 54
     },
     {
       "userID": 8,
       "date": "2019/06/24",
-      "hoursSlept": 5.6,
-      "sleepQuality": 3.8
+      "numOunces": 58
     },
     {
       "userID": 9,
       "date": "2019/06/24",
-      "hoursSlept": 7.2,
-      "sleepQuality": 1.4
+      "numOunces": 79
     },
     {
       "userID": 10,
       "date": "2019/06/24",
-      "hoursSlept": 4.2,
-      "sleepQuality": 5
+      "numOunces": 72
     },
     {
       "userID": 11,
       "date": "2019/06/24",
-      "hoursSlept": 7.7,
-      "sleepQuality": 2.3
+      "numOunces": 31
     },
     {
       "userID": 12,
       "date": "2019/06/24",
-      "hoursSlept": 7.9,
-      "sleepQuality": 2
+      "numOunces": 39
     },
     {
       "userID": 13,
       "date": "2019/06/24",
-      "hoursSlept": 7.4,
-      "sleepQuality": 2.1
+      "numOunces": 82
     },
     {
       "userID": 14,
       "date": "2019/06/24",
-      "hoursSlept": 4.5,
-      "sleepQuality": 1.7
+      "numOunces": 63
     },
     {
       "userID": 15,
       "date": "2019/06/24",
-      "hoursSlept": 6.1,
-      "sleepQuality": 3.4
+      "numOunces": 27
     },
     {
       "userID": 16,
       "date": "2019/06/24",
-      "hoursSlept": 7.3,
-      "sleepQuality": 1
+      "numOunces": 100
     },
     {
       "userID": 17,
       "date": "2019/06/24",
-      "hoursSlept": 8,
-      "sleepQuality": 2.6
+      "numOunces": 21
     },
     {
       "userID": 18,
       "date": "2019/06/24",
-      "hoursSlept": 5.9,
-      "sleepQuality": 3.9
+      "numOunces": 72
     },
     {
       "userID": 19,
       "date": "2019/06/24",
-      "hoursSlept": 7.1,
-      "sleepQuality": 4.4
+      "numOunces": 60
     },
     {
       "userID": 20,
       "date": "2019/06/24",
-      "hoursSlept": 6,
-      "sleepQuality": 2.6
+      "numOunces": 77
     },
     {
       "userID": 21,
       "date": "2019/06/24",
-      "hoursSlept": 6.5,
-      "sleepQuality": 4.3
+      "numOunces": 73
     },
     {
       "userID": 22,
       "date": "2019/06/24",
-      "hoursSlept": 5.3,
-      "sleepQuality": 1.2
+      "numOunces": 74
     },
     {
       "userID": 23,
       "date": "2019/06/24",
-      "hoursSlept": 8.3,
-      "sleepQuality": 3.7
+      "numOunces": 32
     },
     {
       "userID": 24,
       "date": "2019/06/24",
-      "hoursSlept": 7.8,
-      "sleepQuality": 2.8
+      "numOunces": 71
     },
     {
       "userID": 25,
       "date": "2019/06/24",
-      "hoursSlept": 5.6,
-      "sleepQuality": 2.1
+      "numOunces": 82
     },
     {
       "userID": 26,
       "date": "2019/06/24",
-      "hoursSlept": 5.7,
-      "sleepQuality": 1.8
+      "numOunces": 45
     },
     {
       "userID": 27,
       "date": "2019/06/24",
-      "hoursSlept": 4.1,
-      "sleepQuality": 1.4
+      "numOunces": 73
     },
     {
       "userID": 28,
       "date": "2019/06/24",
-      "hoursSlept": 6.2,
-      "sleepQuality": 1.8
+      "numOunces": 63
     },
     {
       "userID": 29,
       "date": "2019/06/24",
-      "hoursSlept": 6.5,
-      "sleepQuality": 4.6
+      "numOunces": 88
     },
     {
       "userID": 30,
       "date": "2019/06/24",
-      "hoursSlept": 6.3,
-      "sleepQuality": 1.7
+      "numOunces": 59
     },
     {
       "userID": 31,
       "date": "2019/06/24",
-      "hoursSlept": 4.1,
-      "sleepQuality": 3.1
+      "numOunces": 22
     },
     {
       "userID": 32,
       "date": "2019/06/24",
-      "hoursSlept": 8.7,
-      "sleepQuality": 4.5
+      "numOunces": 53
     },
     {
       "userID": 33,
       "date": "2019/06/24",
-      "hoursSlept": 5,
-      "sleepQuality": 1.9
+      "numOunces": 29
     },
     {
       "userID": 34,
       "date": "2019/06/24",
-      "hoursSlept": 8.7,
-      "sleepQuality": 1.1
+      "numOunces": 21
     },
     {
       "userID": 35,
       "date": "2019/06/24",
-      "hoursSlept": 5.9,
-      "sleepQuality": 4
+      "numOunces": 89
     },
     {
       "userID": 36,
       "date": "2019/06/24",
-      "hoursSlept": 6.2,
-      "sleepQuality": 1.3
+      "numOunces": 50
     },
     {
       "userID": 37,
       "date": "2019/06/24",
-      "hoursSlept": 8,
-      "sleepQuality": 4.9
+      "numOunces": 70
     },
     {
       "userID": 38,
       "date": "2019/06/24",
-      "hoursSlept": 8.3,
-      "sleepQuality": 2.5
+      "numOunces": 24
     },
     {
       "userID": 39,
       "date": "2019/06/24",
-      "hoursSlept": 4.7,
-      "sleepQuality": 4.4
+      "numOunces": 74
     },
     {
       "userID": 40,
       "date": "2019/06/24",
-      "hoursSlept": 10.4,
-      "sleepQuality": 2.1
+      "numOunces": 35
     },
     {
       "userID": 41,
       "date": "2019/06/24",
-      "hoursSlept": 9.3,
-      "sleepQuality": 1.4
+      "numOunces": 73
     },
     {
       "userID": 42,
       "date": "2019/06/24",
-      "hoursSlept": 6.2,
-      "sleepQuality": 1.2
+      "numOunces": 90
     },
     {
       "userID": 43,
       "date": "2019/06/24",
-      "hoursSlept": 5.9,
-      "sleepQuality": 4.9
+      "numOunces": 43
     },
     {
       "userID": 44,
       "date": "2019/06/24",
-      "hoursSlept": 10.7,
-      "sleepQuality": 4.8
+      "numOunces": 45
     },
     {
       "userID": 45,
       "date": "2019/06/24",
-      "hoursSlept": 5,
-      "sleepQuality": 3.9
+      "numOunces": 45
     },
     {
       "userID": 46,
       "date": "2019/06/24",
-      "hoursSlept": 9.1,
-      "sleepQuality": 1.5
+      "numOunces": 28
     },
     {
       "userID": 47,
       "date": "2019/06/24",
-      "hoursSlept": 8.3,
-      "sleepQuality": 3
+      "numOunces": 39
     },
     {
       "userID": 48,
       "date": "2019/06/24",
-      "hoursSlept": 8,
-      "sleepQuality": 3.9
+      "numOunces": 46
     },
     {
       "userID": 49,
       "date": "2019/06/24",
-      "hoursSlept": 7.3,
-      "sleepQuality": 3.8
+      "numOunces": 42
     },
     {
       "userID": 50,
       "date": "2019/06/24",
-      "hoursSlept": 7.7,
-      "sleepQuality": 3
+      "numOunces": 28
     },
     {
       "userID": 1,
       "date": "2019/06/25",
-      "hoursSlept": 5.1,
-      "sleepQuality": 3.7
+      "numOunces": 51
     },
     {
       "userID": 2,
       "date": "2019/06/25",
-      "hoursSlept": 9.7,
-      "sleepQuality": 1.3
+      "numOunces": 67
     },
     {
       "userID": 3,
       "date": "2019/06/25",
-      "hoursSlept": 6.4,
-      "sleepQuality": 4.9
+      "numOunces": 47
     },
     {
       "userID": 4,
       "date": "2019/06/25",
-      "hoursSlept": 7.2,
-      "sleepQuality": 2.4
+      "numOunces": 27
     },
     {
       "userID": 5,
       "date": "2019/06/25",
-      "hoursSlept": 6.3,
-      "sleepQuality": 4.4
+      "numOunces": 76
     },
     {
       "userID": 6,
       "date": "2019/06/25",
-      "hoursSlept": 8.7,
-      "sleepQuality": 4.9
+      "numOunces": 63
     },
     {
       "userID": 7,
       "date": "2019/06/25",
-      "hoursSlept": 8.4,
-      "sleepQuality": 2.9
+      "numOunces": 23
     },
     {
       "userID": 8,
       "date": "2019/06/25",
-      "hoursSlept": 7.1,
-      "sleepQuality": 1.6
+      "numOunces": 74
     },
     {
       "userID": 9,
       "date": "2019/06/25",
-      "hoursSlept": 4.5,
-      "sleepQuality": 1.1
+      "numOunces": 90
     },
     {
       "userID": 10,
       "date": "2019/06/25",
-      "hoursSlept": 6.2,
-      "sleepQuality": 3.2
+      "numOunces": 70
     },
     {
       "userID": 11,
       "date": "2019/06/25",
-      "hoursSlept": 4.9,
-      "sleepQuality": 3
+      "numOunces": 21
     },
     {
       "userID": 12,
       "date": "2019/06/25",
-      "hoursSlept": 10.6,
-      "sleepQuality": 4.5
+      "numOunces": 47
     },
     {
       "userID": 13,
       "date": "2019/06/25",
-      "hoursSlept": 8.9,
-      "sleepQuality": 2.4
+      "numOunces": 52
     },
     {
       "userID": 14,
       "date": "2019/06/25",
-      "hoursSlept": 7.5,
-      "sleepQuality": 1.1
+      "numOunces": 42
     },
     {
       "userID": 15,
       "date": "2019/06/25",
-      "hoursSlept": 6.1,
-      "sleepQuality": 3.9
+      "numOunces": 58
     },
     {
       "userID": 16,
       "date": "2019/06/25",
-      "hoursSlept": 4.6,
-      "sleepQuality": 4.5
+      "numOunces": 34
     },
     {
       "userID": 17,
       "date": "2019/06/25",
-      "hoursSlept": 6.4,
-      "sleepQuality": 3.4
+      "numOunces": 29
     },
     {
       "userID": 18,
       "date": "2019/06/25",
-      "hoursSlept": 10.9,
-      "sleepQuality": 2.1
+      "numOunces": 69
     },
     {
       "userID": 19,
       "date": "2019/06/25",
-      "hoursSlept": 5.7,
-      "sleepQuality": 2.4
+      "numOunces": 88
     },
     {
       "userID": 20,
       "date": "2019/06/25",
-      "hoursSlept": 7.5,
-      "sleepQuality": 3.7
+      "numOunces": 36
     },
     {
       "userID": 21,
       "date": "2019/06/25",
-      "hoursSlept": 4.3,
-      "sleepQuality": 3.3
+      "numOunces": 90
     },
     {
       "userID": 22,
       "date": "2019/06/25",
-      "hoursSlept": 6.8,
-      "sleepQuality": 4.3
+      "numOunces": 46
     },
     {
       "userID": 23,
       "date": "2019/06/25",
-      "hoursSlept": 7,
-      "sleepQuality": 4.4
+      "numOunces": 59
     },
     {
       "userID": 24,
       "date": "2019/06/25",
-      "hoursSlept": 4.8,
-      "sleepQuality": 1.7
+      "numOunces": 63
     },
     {
       "userID": 25,
       "date": "2019/06/25",
-      "hoursSlept": 6.5,
-      "sleepQuality": 1.8
+      "numOunces": 81
     },
     {
       "userID": 26,
       "date": "2019/06/25",
-      "hoursSlept": 8,
-      "sleepQuality": 2.6
+      "numOunces": 82
     },
     {
       "userID": 27,
       "date": "2019/06/25",
-      "hoursSlept": 10.5,
-      "sleepQuality": 1.6
+      "numOunces": 97
     },
     {
       "userID": 28,
       "date": "2019/06/25",
-      "hoursSlept": 9.2,
-      "sleepQuality": 2.7
+      "numOunces": 24
     },
     {
       "userID": 29,
       "date": "2019/06/25",
-      "hoursSlept": 8.6,
-      "sleepQuality": 1.4
+      "numOunces": 67
     },
     {
       "userID": 30,
       "date": "2019/06/25",
-      "hoursSlept": 7.5,
-      "sleepQuality": 2.9
+      "numOunces": 47
     },
     {
       "userID": 31,
       "date": "2019/06/25",
-      "hoursSlept": 7.2,
-      "sleepQuality": 4.4
+      "numOunces": 56
     },
     {
       "userID": 32,
       "date": "2019/06/25",
-      "hoursSlept": 5.2,
-      "sleepQuality": 4.1
+      "numOunces": 61
     },
     {
       "userID": 33,
       "date": "2019/06/25",
-      "hoursSlept": 10,
-      "sleepQuality": 1.4
+      "numOunces": 24
     },
     {
       "userID": 34,
       "date": "2019/06/25",
-      "hoursSlept": 9.8,
-      "sleepQuality": 3.2
+      "numOunces": 27
     },
     {
       "userID": 35,
       "date": "2019/06/25",
-      "hoursSlept": 6.5,
-      "sleepQuality": 2.8
+      "numOunces": 30
     },
     {
       "userID": 36,
       "date": "2019/06/25",
-      "hoursSlept": 7.6,
-      "sleepQuality": 3.8
+      "numOunces": 40
     },
     {
       "userID": 37,
       "date": "2019/06/25",
-      "hoursSlept": 10.9,
-      "sleepQuality": 3.9
+      "numOunces": 20
     },
     {
       "userID": 38,
       "date": "2019/06/25",
-      "hoursSlept": 5.5,
-      "sleepQuality": 1.1
+      "numOunces": 45
     },
     {
       "userID": 39,
       "date": "2019/06/25",
-      "hoursSlept": 10.2,
-      "sleepQuality": 1.4
+      "numOunces": 49
     },
     {
       "userID": 40,
       "date": "2019/06/25",
-      "hoursSlept": 5.4,
-      "sleepQuality": 2.8
+      "numOunces": 32
     },
     {
       "userID": 41,
       "date": "2019/06/25",
-      "hoursSlept": 7.9,
-      "sleepQuality": 1.8
+      "numOunces": 53
     },
     {
       "userID": 42,
       "date": "2019/06/25",
-      "hoursSlept": 9.3,
-      "sleepQuality": 1.5
+      "numOunces": 52
     },
     {
       "userID": 43,
       "date": "2019/06/25",
-      "hoursSlept": 6.3,
-      "sleepQuality": 2.9
+      "numOunces": 76
     },
     {
       "userID": 44,
       "date": "2019/06/25",
-      "hoursSlept": 4.5,
-      "sleepQuality": 4.6
+      "numOunces": 23
     },
     {
       "userID": 45,
       "date": "2019/06/25",
-      "hoursSlept": 4.6,
-      "sleepQuality": 1.1
+      "numOunces": 51
     },
     {
       "userID": 46,
       "date": "2019/06/25",
-      "hoursSlept": 7.8,
-      "sleepQuality": 2.8
+      "numOunces": 68
     },
     {
       "userID": 47,
       "date": "2019/06/25",
-      "hoursSlept": 7.6,
-      "sleepQuality": 2.3
+      "numOunces": 83
     },
     {
       "userID": 48,
       "date": "2019/06/25",
-      "hoursSlept": 7.3,
-      "sleepQuality": 3.1
+      "numOunces": 81
     },
     {
       "userID": 49,
       "date": "2019/06/25",
-      "hoursSlept": 10,
-      "sleepQuality": 3.2
+      "numOunces": 37
     },
     {
       "userID": 50,
       "date": "2019/06/25",
-      "hoursSlept": 8.9,
-      "sleepQuality": 4.3
+      "numOunces": 89
     },
     {
       "userID": 1,
       "date": "2019/06/26",
-      "hoursSlept": 7.7,
-      "sleepQuality": 2.4
+      "numOunces": 52
     },
     {
       "userID": 2,
       "date": "2019/06/26",
-      "hoursSlept": 9.3,
-      "sleepQuality": 2.6
+      "numOunces": 27
     },
     {
       "userID": 3,
       "date": "2019/06/26",
-      "hoursSlept": 6.1,
-      "sleepQuality": 1.5
+      "numOunces": 48
     },
     {
       "userID": 4,
       "date": "2019/06/26",
-      "hoursSlept": 10.5,
-      "sleepQuality": 5
+      "numOunces": 44
     },
     {
       "userID": 5,
       "date": "2019/06/26",
-      "hoursSlept": 9.9,
-      "sleepQuality": 1.8
+      "numOunces": 26
     },
     {
       "userID": 6,
       "date": "2019/06/26",
-      "hoursSlept": 9,
-      "sleepQuality": 2
+      "numOunces": 44
     },
     {
       "userID": 7,
       "date": "2019/06/26",
-      "hoursSlept": 9.7,
-      "sleepQuality": 2.8
+      "numOunces": 23
     },
     {
       "userID": 8,
       "date": "2019/06/26",
-      "hoursSlept": 6.5,
-      "sleepQuality": 4.2
+      "numOunces": 72
     },
     {
       "userID": 9,
       "date": "2019/06/26",
-      "hoursSlept": 4.3,
-      "sleepQuality": 1
+      "numOunces": 96
     },
     {
       "userID": 10,
       "date": "2019/06/26",
-      "hoursSlept": 9.4,
-      "sleepQuality": 2.3
+      "numOunces": 91
     },
     {
       "userID": 11,
       "date": "2019/06/26",
-      "hoursSlept": 10.8,
-      "sleepQuality": 2
+      "numOunces": 90
     },
     {
       "userID": 12,
       "date": "2019/06/26",
-      "hoursSlept": 4.1,
-      "sleepQuality": 1.9
+      "numOunces": 69
     },
     {
       "userID": 13,
       "date": "2019/06/26",
-      "hoursSlept": 9.4,
-      "sleepQuality": 1
+      "numOunces": 34
     },
     {
       "userID": 14,
       "date": "2019/06/26",
-      "hoursSlept": 5.6,
-      "sleepQuality": 3.1
+      "numOunces": 74
     },
     {
       "userID": 15,
       "date": "2019/06/26",
-      "hoursSlept": 6.9,
-      "sleepQuality": 1.3
+      "numOunces": 51
     },
     {
       "userID": 16,
       "date": "2019/06/26",
-      "hoursSlept": 10.7,
-      "sleepQuality": 4.3
+      "numOunces": 90
     },
     {
       "userID": 17,
       "date": "2019/06/26",
-      "hoursSlept": 9.7,
-      "sleepQuality": 3.9
+      "numOunces": 35
     },
     {
       "userID": 18,
       "date": "2019/06/26",
-      "hoursSlept": 9.5,
-      "sleepQuality": 4.5
+      "numOunces": 47
     },
     {
       "userID": 19,
       "date": "2019/06/26",
-      "hoursSlept": 5.8,
-      "sleepQuality": 1.8
+      "numOunces": 65
     },
     {
       "userID": 20,
       "date": "2019/06/26",
-      "hoursSlept": 6.7,
-      "sleepQuality": 3.6
+      "numOunces": 78
     },
     {
       "userID": 21,
       "date": "2019/06/26",
-      "hoursSlept": 7.7,
-      "sleepQuality": 1.5
+      "numOunces": 93
     },
     {
       "userID": 22,
       "date": "2019/06/26",
-      "hoursSlept": 10.7,
-      "sleepQuality": 2.3
+      "numOunces": 37
     },
     {
       "userID": 23,
       "date": "2019/06/26",
-      "hoursSlept": 7.1,
-      "sleepQuality": 1.5
+      "numOunces": 80
     },
     {
       "userID": 24,
       "date": "2019/06/26",
-      "hoursSlept": 4.2,
-      "sleepQuality": 2
+      "numOunces": 35
     },
     {
       "userID": 25,
       "date": "2019/06/26",
-      "hoursSlept": 10.9,
-      "sleepQuality": 3.6
+      "numOunces": 56
     },
     {
       "userID": 26,
       "date": "2019/06/26",
-      "hoursSlept": 9.3,
-      "sleepQuality": 4.9
+      "numOunces": 47
     },
     {
       "userID": 27,
       "date": "2019/06/26",
-      "hoursSlept": 8.3,
-      "sleepQuality": 2.1
+      "numOunces": 48
     },
     {
       "userID": 28,
       "date": "2019/06/26",
-      "hoursSlept": 9,
-      "sleepQuality": 4.3
+      "numOunces": 64
     },
     {
       "userID": 29,
       "date": "2019/06/26",
-      "hoursSlept": 7,
-      "sleepQuality": 3.6
+      "numOunces": 22
     },
     {
       "userID": 30,
       "date": "2019/06/26",
-      "hoursSlept": 4.5,
-      "sleepQuality": 1.2
+      "numOunces": 66
     },
     {
       "userID": 31,
       "date": "2019/06/26",
-      "hoursSlept": 9.6,
-      "sleepQuality": 1.1
+      "numOunces": 58
     },
     {
       "userID": 32,
       "date": "2019/06/26",
-      "hoursSlept": 6.6,
-      "sleepQuality": 1.6
+      "numOunces": 28
     },
     {
       "userID": 33,
       "date": "2019/06/26",
-      "hoursSlept": 5.6,
-      "sleepQuality": 2.4
+      "numOunces": 38
     },
     {
       "userID": 34,
       "date": "2019/06/26",
-      "hoursSlept": 4.7,
-      "sleepQuality": 1.1
+      "numOunces": 78
     },
     {
       "userID": 35,
       "date": "2019/06/26",
-      "hoursSlept": 6.8,
-      "sleepQuality": 4
+      "numOunces": 84
     },
     {
       "userID": 36,
       "date": "2019/06/26",
-      "hoursSlept": 4.7,
-      "sleepQuality": 3.6
+      "numOunces": 23
     },
     {
       "userID": 37,
       "date": "2019/06/26",
-      "hoursSlept": 7.8,
-      "sleepQuality": 4.3
+      "numOunces": 98
     },
     {
       "userID": 38,
       "date": "2019/06/26",
-      "hoursSlept": 5.3,
-      "sleepQuality": 1.5
+      "numOunces": 36
     },
     {
       "userID": 39,
       "date": "2019/06/26",
-      "hoursSlept": 4.8,
-      "sleepQuality": 2.5
+      "numOunces": 83
     },
     {
       "userID": 40,
       "date": "2019/06/26",
-      "hoursSlept": 6.9,
-      "sleepQuality": 2
+      "numOunces": 64
     },
     {
       "userID": 41,
       "date": "2019/06/26",
-      "hoursSlept": 9.8,
-      "sleepQuality": 1.7
+      "numOunces": 52
     },
     {
       "userID": 42,
       "date": "2019/06/26",
-      "hoursSlept": 9.7,
-      "sleepQuality": 3.2
+      "numOunces": 67
     },
     {
       "userID": 43,
       "date": "2019/06/26",
-      "hoursSlept": 9.2,
-      "sleepQuality": 2.5
+      "numOunces": 28
     },
     {
       "userID": 44,
       "date": "2019/06/26",
-      "hoursSlept": 8.8,
-      "sleepQuality": 3.7
+      "numOunces": 75
     },
     {
       "userID": 45,
       "date": "2019/06/26",
-      "hoursSlept": 10.5,
-      "sleepQuality": 4.7
+      "numOunces": 57
     },
     {
       "userID": 46,
       "date": "2019/06/26",
-      "hoursSlept": 10.4,
-      "sleepQuality": 3
+      "numOunces": 98
     },
     {
       "userID": 47,
       "date": "2019/06/26",
-      "hoursSlept": 7.3,
-      "sleepQuality": 1.2
+      "numOunces": 73
     },
     {
       "userID": 48,
       "date": "2019/06/26",
-      "hoursSlept": 8.3,
-      "sleepQuality": 4.4
+      "numOunces": 76
     },
     {
       "userID": 49,
       "date": "2019/06/26",
-      "hoursSlept": 8.6,
-      "sleepQuality": 3.1
+      "numOunces": 65
     },
     {
       "userID": 50,
       "date": "2019/06/26",
-      "hoursSlept": 5.4,
-      "sleepQuality": 1.3
+      "numOunces": 44
     },
     {
       "userID": 1,
       "date": "2019/06/27",
-      "hoursSlept": 9.4,
-      "sleepQuality": 4.6
+      "numOunces": 29
     },
     {
       "userID": 2,
       "date": "2019/06/27",
-      "hoursSlept": 9,
-      "sleepQuality": 1.3
+      "numOunces": 70
     },
     {
       "userID": 3,
       "date": "2019/06/27",
-      "hoursSlept": 4.3,
-      "sleepQuality": 4.2
+      "numOunces": 89
     },
     {
       "userID": 4,
       "date": "2019/06/27",
-      "hoursSlept": 4.3,
-      "sleepQuality": 2.9
+      "numOunces": 83
     },
     {
       "userID": 5,
       "date": "2019/06/27",
-      "hoursSlept": 4.5,
-      "sleepQuality": 3.9
+      "numOunces": 52
     },
     {
       "userID": 6,
       "date": "2019/06/27",
-      "hoursSlept": 5.5,
-      "sleepQuality": 2
+      "numOunces": 30
     },
     {
       "userID": 7,
       "date": "2019/06/27",
-      "hoursSlept": 5.1,
-      "sleepQuality": 2.8
+      "numOunces": 30
     },
     {
       "userID": 8,
       "date": "2019/06/27",
-      "hoursSlept": 10.3,
-      "sleepQuality": 4.6
+      "numOunces": 65
     },
     {
       "userID": 9,
       "date": "2019/06/27",
-      "hoursSlept": 5.2,
-      "sleepQuality": 2.5
+      "numOunces": 91
     },
     {
       "userID": 10,
       "date": "2019/06/27",
-      "hoursSlept": 7.1,
-      "sleepQuality": 4.7
+      "numOunces": 29
     },
     {
       "userID": 11,
       "date": "2019/06/27",
-      "hoursSlept": 10.7,
-      "sleepQuality": 2.2
+      "numOunces": 90
     },
     {
       "userID": 12,
       "date": "2019/06/27",
-      "hoursSlept": 5.1,
-      "sleepQuality": 1.7
+      "numOunces": 50
     },
     {
       "userID": 13,
       "date": "2019/06/27",
-      "hoursSlept": 7.6,
-      "sleepQuality": 4.5
+      "numOunces": 47
     },
     {
       "userID": 14,
       "date": "2019/06/27",
-      "hoursSlept": 8.1,
-      "sleepQuality": 2.6
+      "numOunces": 23
     },
     {
       "userID": 15,
       "date": "2019/06/27",
-      "hoursSlept": 8.8,
-      "sleepQuality": 3.4
+      "numOunces": 100
     },
     {
       "userID": 16,
       "date": "2019/06/27",
-      "hoursSlept": 10.5,
-      "sleepQuality": 2.5
+      "numOunces": 34
     },
     {
       "userID": 17,
       "date": "2019/06/27",
-      "hoursSlept": 7.1,
-      "sleepQuality": 1.9
+      "numOunces": 82
     },
     {
       "userID": 18,
       "date": "2019/06/27",
-      "hoursSlept": 4.5,
-      "sleepQuality": 4.4
+      "numOunces": 48
     },
     {
       "userID": 19,
       "date": "2019/06/27",
-      "hoursSlept": 4.1,
-      "sleepQuality": 4.6
+      "numOunces": 72
     },
     {
       "userID": 20,
       "date": "2019/06/27",
-      "hoursSlept": 6.6,
-      "sleepQuality": 3.3
+      "numOunces": 27
     },
     {
       "userID": 21,
       "date": "2019/06/27",
-      "hoursSlept": 8.1,
-      "sleepQuality": 3.2
+      "numOunces": 34
     },
     {
       "userID": 22,
       "date": "2019/06/27",
-      "hoursSlept": 6.5,
-      "sleepQuality": 4.9
+      "numOunces": 41
     },
     {
       "userID": 23,
       "date": "2019/06/27",
-      "hoursSlept": 5,
-      "sleepQuality": 2.4
+      "numOunces": 86
     },
     {
       "userID": 24,
       "date": "2019/06/27",
-      "hoursSlept": 9.7,
-      "sleepQuality": 3.3
+      "numOunces": 61
     },
     {
       "userID": 25,
       "date": "2019/06/27",
-      "hoursSlept": 4.1,
-      "sleepQuality": 3.4
+      "numOunces": 84
     },
     {
       "userID": 26,
       "date": "2019/06/27",
-      "hoursSlept": 8.1,
-      "sleepQuality": 3.9
+      "numOunces": 95
     },
     {
       "userID": 27,
       "date": "2019/06/27",
-      "hoursSlept": 8.1,
-      "sleepQuality": 4.6
+      "numOunces": 78
     },
     {
       "userID": 28,
       "date": "2019/06/27",
-      "hoursSlept": 6.1,
-      "sleepQuality": 4.7
+      "numOunces": 72
     },
     {
       "userID": 29,
       "date": "2019/06/27",
-      "hoursSlept": 4.7,
-      "sleepQuality": 1.6
+      "numOunces": 38
     },
     {
       "userID": 30,
       "date": "2019/06/27",
-      "hoursSlept": 7.7,
-      "sleepQuality": 2.5
+      "numOunces": 76
     },
     {
       "userID": 31,
       "date": "2019/06/27",
-      "hoursSlept": 6.1,
-      "sleepQuality": 1.1
+      "numOunces": 54
     },
     {
       "userID": 32,
       "date": "2019/06/27",
-      "hoursSlept": 7.8,
-      "sleepQuality": 3.7
+      "numOunces": 78
     },
     {
       "userID": 33,
       "date": "2019/06/27",
-      "hoursSlept": 5.1,
-      "sleepQuality": 2.3
+      "numOunces": 39
     },
     {
       "userID": 34,
       "date": "2019/06/27",
-      "hoursSlept": 9.6,
-      "sleepQuality": 4.8
+      "numOunces": 48
     },
     {
       "userID": 35,
       "date": "2019/06/27",
-      "hoursSlept": 7.5,
-      "sleepQuality": 1.2
+      "numOunces": 97
     },
     {
       "userID": 36,
       "date": "2019/06/27",
-      "hoursSlept": 7.9,
-      "sleepQuality": 2.7
+      "numOunces": 100
     },
     {
       "userID": 37,
       "date": "2019/06/27",
-      "hoursSlept": 6.1,
-      "sleepQuality": 3.7
+      "numOunces": 91
     },
     {
       "userID": 38,
       "date": "2019/06/27",
-      "hoursSlept": 10.2,
-      "sleepQuality": 1.2
+      "numOunces": 40
     },
     {
       "userID": 39,
       "date": "2019/06/27",
-      "hoursSlept": 4.6,
-      "sleepQuality": 2.9
+      "numOunces": 70
     },
     {
       "userID": 40,
       "date": "2019/06/27",
-      "hoursSlept": 10,
-      "sleepQuality": 3.3
+      "numOunces": 36
     },
     {
       "userID": 41,
       "date": "2019/06/27",
-      "hoursSlept": 9.7,
-      "sleepQuality": 3.3
+      "numOunces": 35
     },
     {
       "userID": 42,
       "date": "2019/06/27",
-      "hoursSlept": 5.6,
-      "sleepQuality": 1.1
+      "numOunces": 27
     },
     {
       "userID": 43,
       "date": "2019/06/27",
-      "hoursSlept": 7.4,
-      "sleepQuality": 2.1
+      "numOunces": 43
     },
     {
       "userID": 44,
       "date": "2019/06/27",
-      "hoursSlept": 6,
-      "sleepQuality": 2.5
+      "numOunces": 45
     },
     {
       "userID": 45,
       "date": "2019/06/27",
-      "hoursSlept": 4.5,
-      "sleepQuality": 1.5
+      "numOunces": 32
     },
     {
       "userID": 46,
       "date": "2019/06/27",
-      "hoursSlept": 6.2,
-      "sleepQuality": 4.9
+      "numOunces": 69
     },
     {
       "userID": 47,
       "date": "2019/06/27",
-      "hoursSlept": 7.8,
-      "sleepQuality": 3.4
+      "numOunces": 25
     },
     {
       "userID": 48,
       "date": "2019/06/27",
-      "hoursSlept": 8.5,
-      "sleepQuality": 1.5
+      "numOunces": 49
     },
     {
       "userID": 49,
       "date": "2019/06/27",
-      "hoursSlept": 7.4,
-      "sleepQuality": 2.2
+      "numOunces": 38
     },
     {
       "userID": 50,
       "date": "2019/06/27",
-      "hoursSlept": 5.8,
-      "sleepQuality": 1.4
+      "numOunces": 46
     },
     {
       "userID": 1,
       "date": "2019/06/28",
-      "hoursSlept": 7.6,
-      "sleepQuality": 4.7
+      "numOunces": 57
     },
     {
       "userID": 2,
       "date": "2019/06/28",
-      "hoursSlept": 5.2,
-      "sleepQuality": 4.9
+      "numOunces": 56
     },
     {
       "userID": 3,
       "date": "2019/06/28",
-      "hoursSlept": 4.3,
-      "sleepQuality": 3.7
+      "numOunces": 66
     },
     {
       "userID": 4,
       "date": "2019/06/28",
-      "hoursSlept": 6.4,
-      "sleepQuality": 4.2
+      "numOunces": 47
     },
     {
       "userID": 5,
       "date": "2019/06/28",
-      "hoursSlept": 5.5,
-      "sleepQuality": 1.5
+      "numOunces": 97
     },
     {
       "userID": 6,
       "date": "2019/06/28",
-      "hoursSlept": 8.3,
-      "sleepQuality": 2.7
+      "numOunces": 70
     },
     {
       "userID": 7,
       "date": "2019/06/28",
-      "hoursSlept": 5.9,
-      "sleepQuality": 2.4
+      "numOunces": 95
     },
     {
       "userID": 8,
       "date": "2019/06/28",
-      "hoursSlept": 6.1,
-      "sleepQuality": 1.7
+      "numOunces": 36
     },
     {
       "userID": 9,
       "date": "2019/06/28",
-      "hoursSlept": 7.2,
-      "sleepQuality": 1.4
+      "numOunces": 29
     },
     {
       "userID": 10,
       "date": "2019/06/28",
-      "hoursSlept": 5.5,
-      "sleepQuality": 2
+      "numOunces": 40
     },
     {
       "userID": 11,
       "date": "2019/06/28",
-      "hoursSlept": 8.1,
-      "sleepQuality": 3.6
+      "numOunces": 33
     },
     {
       "userID": 12,
       "date": "2019/06/28",
-      "hoursSlept": 5.8,
-      "sleepQuality": 1.5
+      "numOunces": 70
     },
     {
       "userID": 13,
       "date": "2019/06/28",
-      "hoursSlept": 9.5,
-      "sleepQuality": 3.6
+      "numOunces": 56
     },
     {
       "userID": 14,
       "date": "2019/06/28",
-      "hoursSlept": 4.8,
-      "sleepQuality": 1.4
+      "numOunces": 27
     },
     {
       "userID": 15,
       "date": "2019/06/28",
-      "hoursSlept": 4.2,
-      "sleepQuality": 4
+      "numOunces": 82
     },
     {
       "userID": 16,
       "date": "2019/06/28",
-      "hoursSlept": 7.2,
-      "sleepQuality": 3.3
+      "numOunces": 49
     },
     {
       "userID": 17,
       "date": "2019/06/28",
-      "hoursSlept": 5.1,
-      "sleepQuality": 3.3
+      "numOunces": 80
     },
     {
       "userID": 18,
       "date": "2019/06/28",
-      "hoursSlept": 4.1,
-      "sleepQuality": 2.5
+      "numOunces": 93
     },
     {
       "userID": 19,
       "date": "2019/06/28",
-      "hoursSlept": 9.2,
-      "sleepQuality": 3
+      "numOunces": 52
     },
     {
       "userID": 20,
       "date": "2019/06/28",
-      "hoursSlept": 7.9,
-      "sleepQuality": 4.9
+      "numOunces": 78
     },
     {
       "userID": 21,
       "date": "2019/06/28",
-      "hoursSlept": 8.9,
-      "sleepQuality": 3.7
+      "numOunces": 92
     },
     {
       "userID": 22,
       "date": "2019/06/28",
-      "hoursSlept": 9,
-      "sleepQuality": 3.7
+      "numOunces": 89
     },
     {
       "userID": 23,
       "date": "2019/06/28",
-      "hoursSlept": 8.9,
-      "sleepQuality": 2.5
+      "numOunces": 21
     },
     {
       "userID": 24,
       "date": "2019/06/28",
-      "hoursSlept": 9.4,
-      "sleepQuality": 5
+      "numOunces": 46
     },
     {
       "userID": 25,
       "date": "2019/06/28",
-      "hoursSlept": 4.8,
-      "sleepQuality": 3.2
+      "numOunces": 59
     },
     {
       "userID": 26,
       "date": "2019/06/28",
-      "hoursSlept": 6.5,
-      "sleepQuality": 3.8
+      "numOunces": 84
     },
     {
       "userID": 27,
       "date": "2019/06/28",
-      "hoursSlept": 5,
-      "sleepQuality": 4.8
+      "numOunces": 24
     },
     {
       "userID": 28,
       "date": "2019/06/28",
-      "hoursSlept": 10.1,
-      "sleepQuality": 4.3
+      "numOunces": 65
     },
     {
       "userID": 29,
       "date": "2019/06/28",
-      "hoursSlept": 9.4,
-      "sleepQuality": 3
+      "numOunces": 22
     },
     {
       "userID": 30,
       "date": "2019/06/28",
-      "hoursSlept": 6.8,
-      "sleepQuality": 1.9
+      "numOunces": 74
     },
     {
       "userID": 31,
       "date": "2019/06/28",
-      "hoursSlept": 8.8,
-      "sleepQuality": 1.6
+      "numOunces": 70
     },
     {
       "userID": 32,
       "date": "2019/06/28",
-      "hoursSlept": 6.5,
-      "sleepQuality": 4.8
+      "numOunces": 47
     },
     {
       "userID": 33,
       "date": "2019/06/28",
-      "hoursSlept": 7.1,
-      "sleepQuality": 2.6
+      "numOunces": 45
     },
     {
       "userID": 34,
       "date": "2019/06/28",
-      "hoursSlept": 9.7,
-      "sleepQuality": 3.5
+      "numOunces": 79
     },
     {
       "userID": 35,
       "date": "2019/06/28",
-      "hoursSlept": 7.6,
-      "sleepQuality": 3.3
+      "numOunces": 92
     },
     {
       "userID": 36,
       "date": "2019/06/28",
-      "hoursSlept": 4.7,
-      "sleepQuality": 2.2
+      "numOunces": 53
     },
     {
       "userID": 37,
       "date": "2019/06/28",
-      "hoursSlept": 5.4,
-      "sleepQuality": 4.2
+      "numOunces": 25
     },
     {
       "userID": 38,
       "date": "2019/06/28",
-      "hoursSlept": 5.3,
-      "sleepQuality": 1.6
+      "numOunces": 36
     },
     {
       "userID": 39,
       "date": "2019/06/28",
-      "hoursSlept": 10.5,
-      "sleepQuality": 3.2
+      "numOunces": 63
     },
     {
       "userID": 40,
       "date": "2019/06/28",
-      "hoursSlept": 7,
-      "sleepQuality": 3.3
+      "numOunces": 47
     },
     {
       "userID": 41,
       "date": "2019/06/28",
-      "hoursSlept": 10.2,
-      "sleepQuality": 2.8
+      "numOunces": 91
     },
     {
       "userID": 42,
       "date": "2019/06/28",
-      "hoursSlept": 7.4,
-      "sleepQuality": 2.4
+      "numOunces": 90
     },
     {
       "userID": 43,
       "date": "2019/06/28",
-      "hoursSlept": 5.2,
-      "sleepQuality": 5
+      "numOunces": 95
     },
     {
       "userID": 44,
       "date": "2019/06/28",
-      "hoursSlept": 5.9,
-      "sleepQuality": 1
+      "numOunces": 51
     },
     {
       "userID": 45,
       "date": "2019/06/28",
-      "hoursSlept": 6.6,
-      "sleepQuality": 2.1
+      "numOunces": 98
     },
     {
       "userID": 46,
       "date": "2019/06/28",
-      "hoursSlept": 8.3,
-      "sleepQuality": 2.4
+      "numOunces": 47
     },
     {
       "userID": 47,
       "date": "2019/06/28",
-      "hoursSlept": 6,
-      "sleepQuality": 4.6
+      "numOunces": 20
     },
     {
       "userID": 48,
       "date": "2019/06/28",
-      "hoursSlept": 6.9,
-      "sleepQuality": 2.1
+      "numOunces": 59
     },
     {
       "userID": 49,
       "date": "2019/06/28",
-      "hoursSlept": 6.1,
-      "sleepQuality": 3.3
+      "numOunces": 52
     },
     {
       "userID": 50,
       "date": "2019/06/28",
-      "hoursSlept": 7.8,
-      "sleepQuality": 2
+      "numOunces": 67
     },
     {
       "userID": 1,
       "date": "2019/06/29",
-      "hoursSlept": 5.3,
-      "sleepQuality": 1.2
+      "numOunces": 99
     },
     {
       "userID": 2,
       "date": "2019/06/29",
-      "hoursSlept": 5.1,
-      "sleepQuality": 3.6
+      "numOunces": 35
     },
     {
       "userID": 3,
       "date": "2019/06/29",
-      "hoursSlept": 6.6,
-      "sleepQuality": 4
+      "numOunces": 41
     },
     {
       "userID": 4,
       "date": "2019/06/29",
-      "hoursSlept": 5.2,
-      "sleepQuality": 4.6
+      "numOunces": 68
     },
     {
       "userID": 5,
       "date": "2019/06/29",
-      "hoursSlept": 7.3,
-      "sleepQuality": 4.8
+      "numOunces": 86
     },
     {
       "userID": 6,
       "date": "2019/06/29",
-      "hoursSlept": 8.1,
-      "sleepQuality": 2.4
+      "numOunces": 70
     },
     {
       "userID": 7,
       "date": "2019/06/29",
-      "hoursSlept": 7.1,
-      "sleepQuality": 1.8
+      "numOunces": 52
     },
     {
       "userID": 8,
       "date": "2019/06/29",
-      "hoursSlept": 4.7,
-      "sleepQuality": 3.6
+      "numOunces": 53
     },
     {
       "userID": 9,
       "date": "2019/06/29",
-      "hoursSlept": 9.7,
-      "sleepQuality": 3.5
+      "numOunces": 77
     },
     {
       "userID": 10,
       "date": "2019/06/29",
-      "hoursSlept": 4.3,
-      "sleepQuality": 4.6
+      "numOunces": 54
     },
     {
       "userID": 11,
       "date": "2019/06/29",
-      "hoursSlept": 9.9,
-      "sleepQuality": 4.7
+      "numOunces": 59
     },
     {
       "userID": 12,
       "date": "2019/06/29",
-      "hoursSlept": 9.9,
-      "sleepQuality": 5
+      "numOunces": 72
     },
     {
       "userID": 13,
       "date": "2019/06/29",
-      "hoursSlept": 7.8,
-      "sleepQuality": 4.9
+      "numOunces": 71
     },
     {
       "userID": 14,
       "date": "2019/06/29",
-      "hoursSlept": 10.7,
-      "sleepQuality": 4
+      "numOunces": 32
     },
     {
       "userID": 15,
       "date": "2019/06/29",
-      "hoursSlept": 9.1,
-      "sleepQuality": 3.6
+      "numOunces": 92
     },
     {
       "userID": 16,
       "date": "2019/06/29",
-      "hoursSlept": 5.2,
-      "sleepQuality": 4.6
+      "numOunces": 53
     },
     {
       "userID": 17,
       "date": "2019/06/29",
-      "hoursSlept": 5.9,
-      "sleepQuality": 3
+      "numOunces": 41
     },
     {
       "userID": 18,
       "date": "2019/06/29",
-      "hoursSlept": 7.3,
-      "sleepQuality": 1.2
+      "numOunces": 30
     },
     {
       "userID": 19,
       "date": "2019/06/29",
-      "hoursSlept": 6.2,
-      "sleepQuality": 4.3
+      "numOunces": 34
     },
     {
       "userID": 20,
       "date": "2019/06/29",
-      "hoursSlept": 6.2,
-      "sleepQuality": 2.2
+      "numOunces": 86
     },
     {
       "userID": 21,
       "date": "2019/06/29",
-      "hoursSlept": 5.7,
-      "sleepQuality": 3.4
+      "numOunces": 95
     },
     {
       "userID": 22,
       "date": "2019/06/29",
-      "hoursSlept": 9.8,
-      "sleepQuality": 2.8
+      "numOunces": 23
     },
     {
       "userID": 23,
       "date": "2019/06/29",
-      "hoursSlept": 6.1,
-      "sleepQuality": 1.4
+      "numOunces": 75
     },
     {
       "userID": 24,
       "date": "2019/06/29",
-      "hoursSlept": 5.8,
-      "sleepQuality": 2.2
+      "numOunces": 65
     },
     {
       "userID": 25,
       "date": "2019/06/29",
-      "hoursSlept": 4.7,
-      "sleepQuality": 4.6
+      "numOunces": 64
     },
     {
       "userID": 26,
       "date": "2019/06/29",
-      "hoursSlept": 8.9,
-      "sleepQuality": 3.4
+      "numOunces": 55
     },
     {
       "userID": 27,
       "date": "2019/06/29",
-      "hoursSlept": 10.5,
-      "sleepQuality": 4.4
+      "numOunces": 62
     },
     {
       "userID": 28,
       "date": "2019/06/29",
-      "hoursSlept": 9.8,
-      "sleepQuality": 2.5
+      "numOunces": 72
     },
     {
       "userID": 29,
       "date": "2019/06/29",
-      "hoursSlept": 6.7,
-      "sleepQuality": 3.5
+      "numOunces": 65
     },
     {
       "userID": 30,
       "date": "2019/06/29",
-      "hoursSlept": 11,
-      "sleepQuality": 1.4
+      "numOunces": 54
     },
     {
       "userID": 31,
       "date": "2019/06/29",
-      "hoursSlept": 10.5,
-      "sleepQuality": 1.1
+      "numOunces": 86
     },
     {
       "userID": 32,
       "date": "2019/06/29",
-      "hoursSlept": 10.2,
-      "sleepQuality": 3.9
+      "numOunces": 79
     },
     {
       "userID": 33,
       "date": "2019/06/29",
-      "hoursSlept": 10.6,
-      "sleepQuality": 3.9
+      "numOunces": 48
     },
     {
       "userID": 34,
       "date": "2019/06/29",
-      "hoursSlept": 8.2,
-      "sleepQuality": 2.9
+      "numOunces": 36
     },
     {
       "userID": 35,
       "date": "2019/06/29",
-      "hoursSlept": 10.3,
-      "sleepQuality": 3.1
+      "numOunces": 89
     },
     {
       "userID": 36,
       "date": "2019/06/29",
-      "hoursSlept": 9.4,
-      "sleepQuality": 3.1
+      "numOunces": 41
     },
     {
       "userID": 37,
       "date": "2019/06/29",
-      "hoursSlept": 4.7,
-      "sleepQuality": 4
+      "numOunces": 85
     },
     {
       "userID": 38,
       "date": "2019/06/29",
-      "hoursSlept": 9.3,
-      "sleepQuality": 4.9
+      "numOunces": 66
     },
     {
       "userID": 39,
       "date": "2019/06/29",
-      "hoursSlept": 7.1,
-      "sleepQuality": 3.5
+      "numOunces": 96
     },
     {
       "userID": 40,
       "date": "2019/06/29",
-      "hoursSlept": 9.6,
-      "sleepQuality": 4.7
+      "numOunces": 39
     },
     {
       "userID": 41,
       "date": "2019/06/29",
-      "hoursSlept": 9.9,
-      "sleepQuality": 1.5
+      "numOunces": 50
     },
     {
       "userID": 42,
       "date": "2019/06/29",
-      "hoursSlept": 5.6,
-      "sleepQuality": 3.1
+      "numOunces": 91
     },
     {
       "userID": 43,
       "date": "2019/06/29",
-      "hoursSlept": 6.5,
-      "sleepQuality": 4.5
+      "numOunces": 93
     },
     {
       "userID": 44,
       "date": "2019/06/29",
-      "hoursSlept": 4.3,
-      "sleepQuality": 1.2
+      "numOunces": 81
     },
     {
       "userID": 45,
       "date": "2019/06/29",
-      "hoursSlept": 4.5,
-      "sleepQuality": 3.2
+      "numOunces": 70
     },
     {
       "userID": 46,
       "date": "2019/06/29",
-      "hoursSlept": 9,
-      "sleepQuality": 4.4
+      "numOunces": 89
     },
     {
       "userID": 47,
       "date": "2019/06/29",
-      "hoursSlept": 4.2,
-      "sleepQuality": 1.1
+      "numOunces": 32
     },
     {
       "userID": 48,
       "date": "2019/06/29",
-      "hoursSlept": 10.8,
-      "sleepQuality": 2.2
+      "numOunces": 80
     },
     {
       "userID": 49,
       "date": "2019/06/29",
-      "hoursSlept": 8,
-      "sleepQuality": 4.4
+      "numOunces": 46
     },
     {
       "userID": 50,
       "date": "2019/06/29",
-      "hoursSlept": 7,
-      "sleepQuality": 3.3
+      "numOunces": 36
     },
     {
       "userID": 1,
       "date": "2019/06/30",
-      "hoursSlept": 6.9,
-      "sleepQuality": 2.5
+      "numOunces": 64
     },
     {
       "userID": 2,
       "date": "2019/06/30",
-      "hoursSlept": 9.5,
-      "sleepQuality": 2.9
+      "numOunces": 92
     },
     {
       "userID": 3,
       "date": "2019/06/30",
-      "hoursSlept": 6.7,
-      "sleepQuality": 1.1
+      "numOunces": 29
     },
     {
       "userID": 4,
       "date": "2019/06/30",
-      "hoursSlept": 4.9,
-      "sleepQuality": 2.9
+      "numOunces": 71
     },
     {
       "userID": 5,
       "date": "2019/06/30",
-      "hoursSlept": 6.9,
-      "sleepQuality": 1.4
+      "numOunces": 90
     },
     {
       "userID": 6,
       "date": "2019/06/30",
-      "hoursSlept": 4.4,
-      "sleepQuality": 2.2
+      "numOunces": 73
     },
     {
       "userID": 7,
       "date": "2019/06/30",
-      "hoursSlept": 10.9,
-      "sleepQuality": 4.1
+      "numOunces": 28
     },
     {
       "userID": 8,
       "date": "2019/06/30",
-      "hoursSlept": 7.4,
-      "sleepQuality": 4.1
+      "numOunces": 38
     },
     {
       "userID": 9,
       "date": "2019/06/30",
-      "hoursSlept": 4.9,
-      "sleepQuality": 1.3
+      "numOunces": 45
     },
     {
       "userID": 10,
       "date": "2019/06/30",
-      "hoursSlept": 4.8,
-      "sleepQuality": 3.1
+      "numOunces": 67
     },
     {
       "userID": 11,
       "date": "2019/06/30",
-      "hoursSlept": 7.8,
-      "sleepQuality": 1.2
+      "numOunces": 37
     },
     {
       "userID": 12,
       "date": "2019/06/30",
-      "hoursSlept": 5.9,
-      "sleepQuality": 4.5
+      "numOunces": 45
     },
     {
       "userID": 13,
       "date": "2019/06/30",
-      "hoursSlept": 5.4,
-      "sleepQuality": 4.5
+      "numOunces": 92
     },
     {
       "userID": 14,
       "date": "2019/06/30",
-      "hoursSlept": 6.7,
-      "sleepQuality": 4.9
+      "numOunces": 53
     },
     {
       "userID": 15,
       "date": "2019/06/30",
-      "hoursSlept": 6.3,
-      "sleepQuality": 4.4
+      "numOunces": 35
     },
     {
       "userID": 16,
       "date": "2019/06/30",
-      "hoursSlept": 6.1,
-      "sleepQuality": 3.1
+      "numOunces": 41
     },
     {
       "userID": 17,
       "date": "2019/06/30",
-      "hoursSlept": 5.5,
-      "sleepQuality": 2.2
+      "numOunces": 98
     },
     {
       "userID": 18,
       "date": "2019/06/30",
-      "hoursSlept": 9.5,
-      "sleepQuality": 5
+      "numOunces": 56
     },
     {
       "userID": 19,
       "date": "2019/06/30",
-      "hoursSlept": 10.5,
-      "sleepQuality": 4.4
+      "numOunces": 51
     },
     {
       "userID": 20,
       "date": "2019/06/30",
-      "hoursSlept": 6.6,
-      "sleepQuality": 2.2
+      "numOunces": 35
     },
     {
       "userID": 21,
       "date": "2019/06/30",
-      "hoursSlept": 6.9,
-      "sleepQuality": 2.3
+      "numOunces": 69
     },
     {
       "userID": 22,
       "date": "2019/06/30",
-      "hoursSlept": 6.2,
-      "sleepQuality": 2.7
+      "numOunces": 28
     },
     {
       "userID": 23,
       "date": "2019/06/30",
-      "hoursSlept": 10.6,
-      "sleepQuality": 2.9
+      "numOunces": 87
     },
     {
       "userID": 24,
       "date": "2019/06/30",
-      "hoursSlept": 9.3,
-      "sleepQuality": 3.6
+      "numOunces": 25
     },
     {
       "userID": 25,
       "date": "2019/06/30",
-      "hoursSlept": 5.6,
-      "sleepQuality": 2
+      "numOunces": 94
     },
     {
       "userID": 26,
       "date": "2019/06/30",
-      "hoursSlept": 5.9,
-      "sleepQuality": 2.1
+      "numOunces": 22
     },
     {
       "userID": 27,
       "date": "2019/06/30",
-      "hoursSlept": 10.5,
-      "sleepQuality": 3.1
+      "numOunces": 33
     },
     {
       "userID": 28,
       "date": "2019/06/30",
-      "hoursSlept": 4.4,
-      "sleepQuality": 2.8
+      "numOunces": 65
     },
     {
       "userID": 29,
       "date": "2019/06/30",
-      "hoursSlept": 8.3,
-      "sleepQuality": 2.3
+      "numOunces": 70
     },
     {
       "userID": 30,
       "date": "2019/06/30",
-      "hoursSlept": 9.4,
-      "sleepQuality": 4.2
+      "numOunces": 53
     },
     {
       "userID": 31,
       "date": "2019/06/30",
-      "hoursSlept": 9.1,
-      "sleepQuality": 4.4
+      "numOunces": 36
     },
     {
       "userID": 32,
       "date": "2019/06/30",
-      "hoursSlept": 10,
-      "sleepQuality": 1.4
+      "numOunces": 81
     },
     {
       "userID": 33,
       "date": "2019/06/30",
-      "hoursSlept": 4.8,
-      "sleepQuality": 4.4
+      "numOunces": 87
     },
     {
       "userID": 34,
       "date": "2019/06/30",
-      "hoursSlept": 5.7,
-      "sleepQuality": 1.8
+      "numOunces": 47
     },
     {
       "userID": 35,
       "date": "2019/06/30",
-      "hoursSlept": 7,
-      "sleepQuality": 3.3
+      "numOunces": 62
     },
     {
       "userID": 36,
       "date": "2019/06/30",
-      "hoursSlept": 10.6,
-      "sleepQuality": 2.9
+      "numOunces": 31
     },
     {
       "userID": 37,
       "date": "2019/06/30",
-      "hoursSlept": 4.9,
-      "sleepQuality": 4.7
+      "numOunces": 28
     },
     {
       "userID": 38,
       "date": "2019/06/30",
-      "hoursSlept": 6.4,
-      "sleepQuality": 1.5
+      "numOunces": 94
     },
     {
       "userID": 39,
       "date": "2019/06/30",
-      "hoursSlept": 7.8,
-      "sleepQuality": 1.1
+      "numOunces": 82
     },
     {
       "userID": 40,
       "date": "2019/06/30",
-      "hoursSlept": 7.6,
-      "sleepQuality": 2.5
+      "numOunces": 57
     },
     {
       "userID": 41,
       "date": "2019/06/30",
-      "hoursSlept": 7.5,
-      "sleepQuality": 3.5
+      "numOunces": 43
     },
     {
       "userID": 42,
       "date": "2019/06/30",
-      "hoursSlept": 10.3,
-      "sleepQuality": 3.5
+      "numOunces": 73
     },
     {
       "userID": 43,
       "date": "2019/06/30",
-      "hoursSlept": 9.9,
-      "sleepQuality": 4.3
+      "numOunces": 27
     },
     {
       "userID": 44,
       "date": "2019/06/30",
-      "hoursSlept": 8.6,
-      "sleepQuality": 3.8
+      "numOunces": 42
     },
     {
       "userID": 45,
       "date": "2019/06/30",
-      "hoursSlept": 8.5,
-      "sleepQuality": 2.4
+      "numOunces": 74
     },
     {
       "userID": 46,
       "date": "2019/06/30",
-      "hoursSlept": 5.2,
-      "sleepQuality": 4.9
+      "numOunces": 79
     },
     {
       "userID": 47,
       "date": "2019/06/30",
-      "hoursSlept": 4.6,
-      "sleepQuality": 3.3
+      "numOunces": 20
     },
     {
       "userID": 48,
       "date": "2019/06/30",
-      "hoursSlept": 8.6,
-      "sleepQuality": 2
+      "numOunces": 82
     },
     {
       "userID": 49,
       "date": "2019/06/30",
-      "hoursSlept": 9.9,
-      "sleepQuality": 1
+      "numOunces": 29
     },
     {
       "userID": 50,
       "date": "2019/06/30",
-      "hoursSlept": 4.9,
-      "sleepQuality": 3.7
+      "numOunces": 22
     },
     {
       "userID": 1,
       "date": "2019/07/01",
-      "hoursSlept": 4.8,
-      "sleepQuality": 4.3
+      "numOunces": 82
     },
     {
       "userID": 2,
       "date": "2019/07/01",
-      "hoursSlept": 9,
-      "sleepQuality": 4.7
+      "numOunces": 31
     },
     {
       "userID": 3,
       "date": "2019/07/01",
-      "hoursSlept": 8.1,
-      "sleepQuality": 1.8
+      "numOunces": 52
     },
     {
       "userID": 4,
       "date": "2019/07/01",
-      "hoursSlept": 4.3,
-      "sleepQuality": 3
+      "numOunces": 27
     },
     {
       "userID": 5,
       "date": "2019/07/01",
-      "hoursSlept": 7.2,
-      "sleepQuality": 4.7
+      "numOunces": 53
     },
     {
       "userID": 6,
       "date": "2019/07/01",
-      "hoursSlept": 7,
-      "sleepQuality": 3
+      "numOunces": 49
     },
     {
       "userID": 7,
       "date": "2019/07/01",
-      "hoursSlept": 6.1,
-      "sleepQuality": 4.6
+      "numOunces": 20
     },
     {
       "userID": 8,
       "date": "2019/07/01",
-      "hoursSlept": 8.7,
-      "sleepQuality": 4.8
+      "numOunces": 62
     },
     {
       "userID": 9,
       "date": "2019/07/01",
-      "hoursSlept": 10.7,
-      "sleepQuality": 1.1
+      "numOunces": 21
     },
     {
       "userID": 10,
       "date": "2019/07/01",
-      "hoursSlept": 7.1,
-      "sleepQuality": 1.1
+      "numOunces": 52
     },
     {
       "userID": 11,
       "date": "2019/07/01",
-      "hoursSlept": 7.6,
-      "sleepQuality": 3.8
+      "numOunces": 95
     },
     {
       "userID": 12,
       "date": "2019/07/01",
-      "hoursSlept": 5,
-      "sleepQuality": 4.5
+      "numOunces": 42
     },
     {
       "userID": 13,
       "date": "2019/07/01",
-      "hoursSlept": 4.1,
-      "sleepQuality": 1.6
+      "numOunces": 99
     },
     {
       "userID": 14,
       "date": "2019/07/01",
-      "hoursSlept": 4.1,
-      "sleepQuality": 2.2
+      "numOunces": 61
     },
     {
       "userID": 15,
       "date": "2019/07/01",
-      "hoursSlept": 5,
-      "sleepQuality": 2.7
+      "numOunces": 25
     },
     {
       "userID": 16,
       "date": "2019/07/01",
-      "hoursSlept": 5.9,
-      "sleepQuality": 1.3
+      "numOunces": 82
     },
     {
       "userID": 17,
       "date": "2019/07/01",
-      "hoursSlept": 9.1,
-      "sleepQuality": 3.2
+      "numOunces": 27
     },
     {
       "userID": 18,
       "date": "2019/07/01",
-      "hoursSlept": 4.9,
-      "sleepQuality": 2.1
+      "numOunces": 73
     },
     {
       "userID": 19,
       "date": "2019/07/01",
-      "hoursSlept": 5.7,
-      "sleepQuality": 2
+      "numOunces": 31
     },
     {
       "userID": 20,
       "date": "2019/07/01",
-      "hoursSlept": 6,
-      "sleepQuality": 1.5
+      "numOunces": 90
     },
     {
       "userID": 21,
       "date": "2019/07/01",
-      "hoursSlept": 7.1,
-      "sleepQuality": 4.9
+      "numOunces": 90
     },
     {
       "userID": 22,
       "date": "2019/07/01",
-      "hoursSlept": 5.4,
-      "sleepQuality": 4
+      "numOunces": 26
     },
     {
       "userID": 23,
       "date": "2019/07/01",
-      "hoursSlept": 5.2,
-      "sleepQuality": 2.4
+      "numOunces": 38
     },
     {
       "userID": 24,
       "date": "2019/07/01",
-      "hoursSlept": 9.2,
-      "sleepQuality": 4.8
+      "numOunces": 59
     },
     {
       "userID": 25,
       "date": "2019/07/01",
-      "hoursSlept": 10.8,
-      "sleepQuality": 4.5
+      "numOunces": 55
     },
     {
       "userID": 26,
       "date": "2019/07/01",
-      "hoursSlept": 7.1,
-      "sleepQuality": 3.3
+      "numOunces": 52
     },
     {
       "userID": 27,
       "date": "2019/07/01",
-      "hoursSlept": 4.7,
-      "sleepQuality": 3.9
+      "numOunces": 97
     },
     {
       "userID": 28,
       "date": "2019/07/01",
-      "hoursSlept": 8.1,
-      "sleepQuality": 3.8
+      "numOunces": 82
     },
     {
       "userID": 29,
       "date": "2019/07/01",
-      "hoursSlept": 10.4,
-      "sleepQuality": 4.2
+      "numOunces": 95
     },
     {
       "userID": 30,
       "date": "2019/07/01",
-      "hoursSlept": 9.7,
-      "sleepQuality": 3.7
+      "numOunces": 64
     },
     {
       "userID": 31,
       "date": "2019/07/01",
-      "hoursSlept": 7.4,
-      "sleepQuality": 4.4
+      "numOunces": 24
     },
     {
       "userID": 32,
       "date": "2019/07/01",
-      "hoursSlept": 9.1,
-      "sleepQuality": 2.4
+      "numOunces": 68
     },
     {
       "userID": 33,
       "date": "2019/07/01",
-      "hoursSlept": 8.4,
-      "sleepQuality": 3
+      "numOunces": 95
     },
     {
       "userID": 34,
       "date": "2019/07/01",
-      "hoursSlept": 8,
-      "sleepQuality": 4.7
+      "numOunces": 32
     },
     {
       "userID": 35,
       "date": "2019/07/01",
-      "hoursSlept": 9.2,
-      "sleepQuality": 2.8
+      "numOunces": 92
     },
     {
       "userID": 36,
       "date": "2019/07/01",
-      "hoursSlept": 10,
-      "sleepQuality": 3.7
+      "numOunces": 69
     },
     {
       "userID": 37,
       "date": "2019/07/01",
-      "hoursSlept": 7.4,
-      "sleepQuality": 2.1
+      "numOunces": 77
     },
     {
       "userID": 38,
       "date": "2019/07/01",
-      "hoursSlept": 10,
-      "sleepQuality": 3.5
+      "numOunces": 75
     },
     {
       "userID": 39,
       "date": "2019/07/01",
-      "hoursSlept": 9,
-      "sleepQuality": 1
+      "numOunces": 64
     },
     {
       "userID": 40,
       "date": "2019/07/01",
-      "hoursSlept": 6.6,
-      "sleepQuality": 4
+      "numOunces": 23
     },
     {
       "userID": 41,
       "date": "2019/07/01",
-      "hoursSlept": 5,
-      "sleepQuality": 3.5
+      "numOunces": 54
     },
     {
       "userID": 42,
       "date": "2019/07/01",
-      "hoursSlept": 8.1,
-      "sleepQuality": 4.7
+      "numOunces": 52
     },
     {
       "userID": 43,
       "date": "2019/07/01",
-      "hoursSlept": 7,
-      "sleepQuality": 1.8
+      "numOunces": 34
     },
     {
       "userID": 44,
       "date": "2019/07/01",
-      "hoursSlept": 9.8,
-      "sleepQuality": 4.4
+      "numOunces": 56
     },
     {
       "userID": 45,
       "date": "2019/07/01",
-      "hoursSlept": 9.3,
-      "sleepQuality": 4.8
+      "numOunces": 76
     },
     {
       "userID": 46,
       "date": "2019/07/01",
-      "hoursSlept": 5.9,
-      "sleepQuality": 2.3
+      "numOunces": 57
     },
     {
       "userID": 47,
       "date": "2019/07/01",
-      "hoursSlept": 6.2,
-      "sleepQuality": 2.8
+      "numOunces": 90
     },
     {
       "userID": 48,
       "date": "2019/07/01",
-      "hoursSlept": 8.6,
-      "sleepQuality": 1.7
+      "numOunces": 48
     },
     {
       "userID": 49,
       "date": "2019/07/01",
-      "hoursSlept": 10.9,
-      "sleepQuality": 4.7
+      "numOunces": 62
     },
     {
       "userID": 50,
       "date": "2019/07/01",
-      "hoursSlept": 5.7,
-      "sleepQuality": 4.5
+      "numOunces": 21
     },
     {
       "userID": 1,
       "date": "2019/07/02",
-      "hoursSlept": 5.7,
-      "sleepQuality": 4.7
+      "numOunces": 53
     },
     {
       "userID": 2,
       "date": "2019/07/02",
-      "hoursSlept": 9,
-      "sleepQuality": 3.4
+      "numOunces": 91
     },
     {
       "userID": 3,
       "date": "2019/07/02",
-      "hoursSlept": 4.3,
-      "sleepQuality": 3.9
+      "numOunces": 94
     },
     {
       "userID": 4,
       "date": "2019/07/02",
-      "hoursSlept": 8.8,
-      "sleepQuality": 3
+      "numOunces": 66
     },
     {
       "userID": 5,
       "date": "2019/07/02",
-      "hoursSlept": 10,
-      "sleepQuality": 1.5
+      "numOunces": 94
     },
     {
       "userID": 6,
       "date": "2019/07/02",
-      "hoursSlept": 10.1,
-      "sleepQuality": 4.5
+      "numOunces": 47
     },
     {
       "userID": 7,
       "date": "2019/07/02",
-      "hoursSlept": 9.1,
-      "sleepQuality": 3.1
+      "numOunces": 64
     },
     {
       "userID": 8,
       "date": "2019/07/02",
-      "hoursSlept": 5.5,
-      "sleepQuality": 4.1
+      "numOunces": 88
     },
     {
       "userID": 9,
       "date": "2019/07/02",
-      "hoursSlept": 10.3,
-      "sleepQuality": 4.1
+      "numOunces": 93
     },
     {
       "userID": 10,
       "date": "2019/07/02",
-      "hoursSlept": 5.2,
-      "sleepQuality": 2.8
+      "numOunces": 59
     },
     {
       "userID": 11,
       "date": "2019/07/02",
-      "hoursSlept": 6.6,
-      "sleepQuality": 2.3
+      "numOunces": 57
     },
     {
       "userID": 12,
       "date": "2019/07/02",
-      "hoursSlept": 10.9,
-      "sleepQuality": 3.1
+      "numOunces": 74
     },
     {
       "userID": 13,
       "date": "2019/07/02",
-      "hoursSlept": 6.4,
-      "sleepQuality": 4.2
+      "numOunces": 66
     },
     {
       "userID": 14,
       "date": "2019/07/02",
-      "hoursSlept": 7.4,
-      "sleepQuality": 2.6
+      "numOunces": 28
     },
     {
       "userID": 15,
       "date": "2019/07/02",
-      "hoursSlept": 6.7,
-      "sleepQuality": 3.8
+      "numOunces": 26
     },
     {
       "userID": 16,
       "date": "2019/07/02",
-      "hoursSlept": 10.7,
-      "sleepQuality": 4.7
+      "numOunces": 34
     },
     {
       "userID": 17,
       "date": "2019/07/02",
-      "hoursSlept": 8.7,
-      "sleepQuality": 2.9
+      "numOunces": 34
     },
     {
       "userID": 18,
       "date": "2019/07/02",
-      "hoursSlept": 6.3,
-      "sleepQuality": 3
+      "numOunces": 70
     },
     {
       "userID": 19,
       "date": "2019/07/02",
-      "hoursSlept": 7.2,
-      "sleepQuality": 2.1
+      "numOunces": 86
     },
     {
       "userID": 20,
       "date": "2019/07/02",
-      "hoursSlept": 10.4,
-      "sleepQuality": 2
+      "numOunces": 90
     },
     {
       "userID": 21,
       "date": "2019/07/02",
-      "hoursSlept": 10.6,
-      "sleepQuality": 1
+      "numOunces": 81
     },
     {
       "userID": 22,
       "date": "2019/07/02",
-      "hoursSlept": 10.3,
-      "sleepQuality": 1.3
+      "numOunces": 35
     },
     {
       "userID": 23,
       "date": "2019/07/02",
-      "hoursSlept": 8.3,
-      "sleepQuality": 2.5
+      "numOunces": 87
     },
     {
       "userID": 24,
       "date": "2019/07/02",
-      "hoursSlept": 7.1,
-      "sleepQuality": 3.1
+      "numOunces": 74
     },
     {
       "userID": 25,
       "date": "2019/07/02",
-      "hoursSlept": 8.9,
-      "sleepQuality": 2.7
+      "numOunces": 83
     },
     {
       "userID": 26,
       "date": "2019/07/02",
-      "hoursSlept": 7.5,
-      "sleepQuality": 4.5
+      "numOunces": 97
     },
     {
       "userID": 27,
       "date": "2019/07/02",
-      "hoursSlept": 10.5,
-      "sleepQuality": 1.8
+      "numOunces": 52
     },
     {
       "userID": 28,
       "date": "2019/07/02",
-      "hoursSlept": 8.3,
-      "sleepQuality": 3.2
+      "numOunces": 96
     },
     {
       "userID": 29,
       "date": "2019/07/02",
-      "hoursSlept": 5.8,
-      "sleepQuality": 1.1
+      "numOunces": 53
     },
     {
       "userID": 30,
       "date": "2019/07/02",
-      "hoursSlept": 8.5,
-      "sleepQuality": 4.9
+      "numOunces": 33
     },
     {
       "userID": 31,
       "date": "2019/07/02",
-      "hoursSlept": 5.1,
-      "sleepQuality": 2.7
+      "numOunces": 71
     },
     {
       "userID": 32,
       "date": "2019/07/02",
-      "hoursSlept": 4.5,
-      "sleepQuality": 4.5
+      "numOunces": 88
     },
     {
       "userID": 33,
       "date": "2019/07/02",
-      "hoursSlept": 9.1,
-      "sleepQuality": 2.3
+      "numOunces": 45
     },
     {
       "userID": 34,
       "date": "2019/07/02",
-      "hoursSlept": 7,
-      "sleepQuality": 4.1
+      "numOunces": 75
     },
     {
       "userID": 35,
       "date": "2019/07/02",
-      "hoursSlept": 7.2,
-      "sleepQuality": 3.6
+      "numOunces": 93
     },
     {
       "userID": 36,
       "date": "2019/07/02",
-      "hoursSlept": 6.5,
-      "sleepQuality": 3.8
+      "numOunces": 85
     },
     {
       "userID": 37,
       "date": "2019/07/02",
-      "hoursSlept": 5.9,
-      "sleepQuality": 2.2
+      "numOunces": 78
     },
     {
       "userID": 38,
       "date": "2019/07/02",
-      "hoursSlept": 5.5,
-      "sleepQuality": 1.7
+      "numOunces": 56
     },
     {
       "userID": 39,
       "date": "2019/07/02",
-      "hoursSlept": 6.6,
-      "sleepQuality": 1.4
+      "numOunces": 30
     },
     {
       "userID": 40,
       "date": "2019/07/02",
-      "hoursSlept": 7.7,
-      "sleepQuality": 3.2
+      "numOunces": 63
     },
     {
       "userID": 41,
       "date": "2019/07/02",
-      "hoursSlept": 6.7,
-      "sleepQuality": 3.7
+      "numOunces": 100
     },
     {
       "userID": 42,
       "date": "2019/07/02",
-      "hoursSlept": 5.4,
-      "sleepQuality": 1.3
+      "numOunces": 99
     },
     {
       "userID": 43,
       "date": "2019/07/02",
-      "hoursSlept": 8.7,
-      "sleepQuality": 1.6
+      "numOunces": 48
     },
     {
       "userID": 44,
       "date": "2019/07/02",
-      "hoursSlept": 4.4,
-      "sleepQuality": 4.6
+      "numOunces": 95
     },
     {
       "userID": 45,
       "date": "2019/07/02",
-      "hoursSlept": 8.3,
-      "sleepQuality": 4.3
+      "numOunces": 77
     },
     {
       "userID": 46,
       "date": "2019/07/02",
-      "hoursSlept": 10.9,
-      "sleepQuality": 3.1
+      "numOunces": 97
     },
     {
       "userID": 47,
       "date": "2019/07/02",
-      "hoursSlept": 5.8,
-      "sleepQuality": 4.4
+      "numOunces": 55
     },
     {
       "userID": 48,
       "date": "2019/07/02",
-      "hoursSlept": 7.1,
-      "sleepQuality": 3.2
+      "numOunces": 24
     },
     {
       "userID": 49,
       "date": "2019/07/02",
-      "hoursSlept": 10.5,
-      "sleepQuality": 3.2
+      "numOunces": 29
     },
     {
       "userID": 50,
       "date": "2019/07/02",
-      "hoursSlept": 7,
-      "sleepQuality": 1.2
+      "numOunces": 38
     },
     {
       "userID": 1,
       "date": "2019/07/03",
-      "hoursSlept": 10.1,
-      "sleepQuality": 2.1
+      "numOunces": 26
     },
     {
       "userID": 2,
       "date": "2019/07/03",
-      "hoursSlept": 4.2,
-      "sleepQuality": 4.7
+      "numOunces": 55
     },
     {
       "userID": 3,
       "date": "2019/07/03",
-      "hoursSlept": 9.2,
-      "sleepQuality": 1.3
+      "numOunces": 91
     },
     {
       "userID": 4,
       "date": "2019/07/03",
-      "hoursSlept": 11,
-      "sleepQuality": 4.4
+      "numOunces": 29
     },
     {
       "userID": 5,
       "date": "2019/07/03",
-      "hoursSlept": 10.6,
-      "sleepQuality": 1.9
+      "numOunces": 63
     },
     {
       "userID": 6,
       "date": "2019/07/03",
-      "hoursSlept": 5.8,
-      "sleepQuality": 4.8
+      "numOunces": 98
     },
     {
       "userID": 7,
       "date": "2019/07/03",
-      "hoursSlept": 6.2,
-      "sleepQuality": 2.3
+      "numOunces": 72
     },
     {
       "userID": 8,
       "date": "2019/07/03",
-      "hoursSlept": 9.9,
-      "sleepQuality": 4.8
+      "numOunces": 24
     },
     {
       "userID": 9,
       "date": "2019/07/03",
-      "hoursSlept": 8.3,
-      "sleepQuality": 3
+      "numOunces": 83
     },
     {
       "userID": 10,
       "date": "2019/07/03",
-      "hoursSlept": 6.9,
-      "sleepQuality": 2.2
+      "numOunces": 90
     },
     {
       "userID": 11,
       "date": "2019/07/03",
-      "hoursSlept": 9.2,
-      "sleepQuality": 4.2
+      "numOunces": 98
     },
     {
       "userID": 12,
       "date": "2019/07/03",
-      "hoursSlept": 5.7,
-      "sleepQuality": 4.7
+      "numOunces": 93
     },
     {
       "userID": 13,
       "date": "2019/07/03",
-      "hoursSlept": 8.7,
-      "sleepQuality": 3.1
+      "numOunces": 60
     },
     {
       "userID": 14,
       "date": "2019/07/03",
-      "hoursSlept": 8.9,
-      "sleepQuality": 1.3
+      "numOunces": 21
     },
     {
       "userID": 15,
       "date": "2019/07/03",
-      "hoursSlept": 8.7,
-      "sleepQuality": 4.8
+      "numOunces": 55
     },
     {
       "userID": 16,
       "date": "2019/07/03",
-      "hoursSlept": 7.3,
-      "sleepQuality": 2.6
+      "numOunces": 92
     },
     {
       "userID": 17,
       "date": "2019/07/03",
-      "hoursSlept": 8.3,
-      "sleepQuality": 2.5
+      "numOunces": 77
     },
     {
       "userID": 18,
       "date": "2019/07/03",
-      "hoursSlept": 9.2,
-      "sleepQuality": 4.5
+      "numOunces": 73
     },
     {
       "userID": 19,
       "date": "2019/07/03",
-      "hoursSlept": 4.6,
-      "sleepQuality": 3.2
+      "numOunces": 23
     },
     {
       "userID": 20,
       "date": "2019/07/03",
-      "hoursSlept": 4.3,
-      "sleepQuality": 1.8
+      "numOunces": 95
     },
     {
       "userID": 21,
       "date": "2019/07/03",
-      "hoursSlept": 9.5,
-      "sleepQuality": 4.5
+      "numOunces": 46
     },
     {
       "userID": 22,
       "date": "2019/07/03",
-      "hoursSlept": 11,
-      "sleepQuality": 1.4
+      "numOunces": 63
     },
     {
       "userID": 23,
       "date": "2019/07/03",
-      "hoursSlept": 10.4,
-      "sleepQuality": 2.7
+      "numOunces": 23
     },
     {
       "userID": 24,
       "date": "2019/07/03",
-      "hoursSlept": 8.8,
-      "sleepQuality": 3.5
+      "numOunces": 46
     },
     {
       "userID": 25,
       "date": "2019/07/03",
-      "hoursSlept": 6.8,
-      "sleepQuality": 3.2
+      "numOunces": 61
     },
     {
       "userID": 26,
       "date": "2019/07/03",
-      "hoursSlept": 9.1,
-      "sleepQuality": 3.9
+      "numOunces": 79
     },
     {
       "userID": 27,
       "date": "2019/07/03",
-      "hoursSlept": 8.1,
-      "sleepQuality": 3.3
+      "numOunces": 35
     },
     {
       "userID": 28,
       "date": "2019/07/03",
-      "hoursSlept": 9.9,
-      "sleepQuality": 1.1
+      "numOunces": 23
     },
     {
       "userID": 29,
       "date": "2019/07/03",
-      "hoursSlept": 10.9,
-      "sleepQuality": 3.5
+      "numOunces": 63
     },
     {
       "userID": 30,
       "date": "2019/07/03",
-      "hoursSlept": 4.3,
-      "sleepQuality": 2.1
+      "numOunces": 71
     },
     {
       "userID": 31,
       "date": "2019/07/03",
-      "hoursSlept": 10.2,
-      "sleepQuality": 4.4
+      "numOunces": 40
     },
     {
       "userID": 32,
       "date": "2019/07/03",
-      "hoursSlept": 10.6,
-      "sleepQuality": 1.9
+      "numOunces": 31
     },
     {
       "userID": 33,
       "date": "2019/07/03",
-      "hoursSlept": 8.4,
-      "sleepQuality": 2.9
+      "numOunces": 85
     },
     {
       "userID": 34,
       "date": "2019/07/03",
-      "hoursSlept": 8.5,
-      "sleepQuality": 3
+      "numOunces": 71
     },
     {
       "userID": 35,
       "date": "2019/07/03",
-      "hoursSlept": 5.5,
-      "sleepQuality": 4.3
+      "numOunces": 62
     },
     {
       "userID": 36,
       "date": "2019/07/03",
-      "hoursSlept": 10.2,
-      "sleepQuality": 4.4
+      "numOunces": 72
     },
     {
       "userID": 37,
       "date": "2019/07/03",
-      "hoursSlept": 6.6,
-      "sleepQuality": 4.5
+      "numOunces": 45
     },
     {
       "userID": 38,
       "date": "2019/07/03",
-      "hoursSlept": 6.1,
-      "sleepQuality": 3.4
+      "numOunces": 54
     },
     {
       "userID": 39,
       "date": "2019/07/03",
-      "hoursSlept": 4.4,
-      "sleepQuality": 4.1
+      "numOunces": 35
     },
     {
       "userID": 40,
       "date": "2019/07/03",
-      "hoursSlept": 4.3,
-      "sleepQuality": 1.4
+      "numOunces": 51
     },
     {
       "userID": 41,
       "date": "2019/07/03",
-      "hoursSlept": 9.1,
-      "sleepQuality": 2.9
+      "numOunces": 36
     },
     {
       "userID": 42,
       "date": "2019/07/03",
-      "hoursSlept": 9.6,
-      "sleepQuality": 1.2
+      "numOunces": 66
     },
     {
       "userID": 43,
       "date": "2019/07/03",
-      "hoursSlept": 5.9,
-      "sleepQuality": 4.9
+      "numOunces": 51
     },
     {
       "userID": 44,
       "date": "2019/07/03",
-      "hoursSlept": 4.9,
-      "sleepQuality": 4.3
+      "numOunces": 37
     },
     {
       "userID": 45,
       "date": "2019/07/03",
-      "hoursSlept": 7.1,
-      "sleepQuality": 4.7
+      "numOunces": 94
     },
     {
       "userID": 46,
       "date": "2019/07/03",
-      "hoursSlept": 4.4,
-      "sleepQuality": 1.3
+      "numOunces": 22
     },
     {
       "userID": 47,
       "date": "2019/07/03",
-      "hoursSlept": 5.2,
-      "sleepQuality": 2.2
+      "numOunces": 98
     },
     {
       "userID": 48,
       "date": "2019/07/03",
-      "hoursSlept": 8.1,
-      "sleepQuality": 3.3
+      "numOunces": 31
     },
     {
       "userID": 49,
       "date": "2019/07/03",
-      "hoursSlept": 4.9,
-      "sleepQuality": 3.4
+      "numOunces": 37
     },
     {
       "userID": 50,
       "date": "2019/07/03",
-      "hoursSlept": 10.8,
-      "sleepQuality": 2.3
+      "numOunces": 56
     },
     {
       "userID": 1,
       "date": "2019/07/04",
-      "hoursSlept": 6.9,
-      "sleepQuality": 3.5
+      "numOunces": 30
     },
     {
       "userID": 2,
       "date": "2019/07/04",
-      "hoursSlept": 10.6,
-      "sleepQuality": 3
+      "numOunces": 47
     },
     {
       "userID": 3,
       "date": "2019/07/04",
-      "hoursSlept": 5.3,
-      "sleepQuality": 4.1
+      "numOunces": 27
     },
     {
       "userID": 4,
       "date": "2019/07/04",
-      "hoursSlept": 5.5,
-      "sleepQuality": 4.7
+      "numOunces": 99
     },
     {
       "userID": 5,
       "date": "2019/07/04",
-      "hoursSlept": 10.4,
-      "sleepQuality": 3.8
+      "numOunces": 61
     },
     {
       "userID": 6,
       "date": "2019/07/04",
-      "hoursSlept": 8.7,
-      "sleepQuality": 3.7
+      "numOunces": 98
     },
     {
       "userID": 7,
       "date": "2019/07/04",
-      "hoursSlept": 10.5,
-      "sleepQuality": 2.2
+      "numOunces": 89
     },
     {
       "userID": 8,
       "date": "2019/07/04",
-      "hoursSlept": 7.8,
-      "sleepQuality": 3.1
+      "numOunces": 98
     },
     {
       "userID": 9,
       "date": "2019/07/04",
-      "hoursSlept": 9.3,
-      "sleepQuality": 2.9
+      "numOunces": 32
     },
     {
       "userID": 10,
       "date": "2019/07/04",
-      "hoursSlept": 6.9,
-      "sleepQuality": 4.5
+      "numOunces": 78
     },
     {
       "userID": 11,
       "date": "2019/07/04",
-      "hoursSlept": 7.9,
-      "sleepQuality": 1.8
+      "numOunces": 40
     },
     {
       "userID": 12,
       "date": "2019/07/04",
-      "hoursSlept": 10.4,
-      "sleepQuality": 4.9
+      "numOunces": 95
     },
     {
       "userID": 13,
       "date": "2019/07/04",
-      "hoursSlept": 10.9,
-      "sleepQuality": 1.8
+      "numOunces": 79
     },
     {
       "userID": 14,
       "date": "2019/07/04",
-      "hoursSlept": 5.1,
-      "sleepQuality": 3.5
+      "numOunces": 49
     },
     {
       "userID": 15,
       "date": "2019/07/04",
-      "hoursSlept": 9.1,
-      "sleepQuality": 2.4
+      "numOunces": 77
     },
     {
       "userID": 16,
       "date": "2019/07/04",
-      "hoursSlept": 6.6,
-      "sleepQuality": 4.2
+      "numOunces": 27
     },
     {
       "userID": 17,
       "date": "2019/07/04",
-      "hoursSlept": 6.9,
-      "sleepQuality": 2.4
+      "numOunces": 69
     },
     {
       "userID": 18,
       "date": "2019/07/04",
-      "hoursSlept": 6.7,
-      "sleepQuality": 3.8
+      "numOunces": 90
     },
     {
       "userID": 19,
       "date": "2019/07/04",
-      "hoursSlept": 4.8,
-      "sleepQuality": 2.1
+      "numOunces": 60
     },
     {
       "userID": 20,
       "date": "2019/07/04",
-      "hoursSlept": 6.5,
-      "sleepQuality": 4.2
+      "numOunces": 57
     },
     {
       "userID": 21,
       "date": "2019/07/04",
-      "hoursSlept": 9.2,
-      "sleepQuality": 3.9
+      "numOunces": 71
     },
     {
       "userID": 22,
       "date": "2019/07/04",
-      "hoursSlept": 6.7,
-      "sleepQuality": 4.7
+      "numOunces": 90
     },
     {
       "userID": 23,
       "date": "2019/07/04",
-      "hoursSlept": 9.2,
-      "sleepQuality": 4.4
+      "numOunces": 85
     },
     {
       "userID": 24,
       "date": "2019/07/04",
-      "hoursSlept": 9.8,
-      "sleepQuality": 4.6
+      "numOunces": 55
     },
     {
       "userID": 25,
       "date": "2019/07/04",
-      "hoursSlept": 7.6,
-      "sleepQuality": 2.5
+      "numOunces": 77
     },
     {
       "userID": 26,
       "date": "2019/07/04",
-      "hoursSlept": 5.4,
-      "sleepQuality": 1.6
+      "numOunces": 21
     },
     {
       "userID": 27,
       "date": "2019/07/04",
-      "hoursSlept": 8,
-      "sleepQuality": 1.1
+      "numOunces": 41
     },
     {
       "userID": 28,
       "date": "2019/07/04",
-      "hoursSlept": 10.1,
-      "sleepQuality": 3.1
+      "numOunces": 48
     },
     {
       "userID": 29,
       "date": "2019/07/04",
-      "hoursSlept": 10.1,
-      "sleepQuality": 1.2
+      "numOunces": 71
     },
     {
       "userID": 30,
       "date": "2019/07/04",
-      "hoursSlept": 5.1,
-      "sleepQuality": 2.8
+      "numOunces": 38
     },
     {
       "userID": 31,
       "date": "2019/07/04",
-      "hoursSlept": 8.5,
-      "sleepQuality": 2.7
+      "numOunces": 57
     },
     {
       "userID": 32,
       "date": "2019/07/04",
-      "hoursSlept": 9,
-      "sleepQuality": 2.1
+      "numOunces": 43
     },
     {
       "userID": 33,
       "date": "2019/07/04",
-      "hoursSlept": 10.4,
-      "sleepQuality": 4.9
+      "numOunces": 38
     },
     {
       "userID": 34,
       "date": "2019/07/04",
-      "hoursSlept": 6.2,
-      "sleepQuality": 3.8
+      "numOunces": 41
     },
     {
       "userID": 35,
       "date": "2019/07/04",
-      "hoursSlept": 4.8,
-      "sleepQuality": 4.3
+      "numOunces": 62
     },
     {
       "userID": 36,
       "date": "2019/07/04",
-      "hoursSlept": 7.5,
-      "sleepQuality": 3.1
+      "numOunces": 62
     },
     {
       "userID": 37,
       "date": "2019/07/04",
-      "hoursSlept": 4.3,
-      "sleepQuality": 2.6
+      "numOunces": 54
     },
     {
       "userID": 38,
       "date": "2019/07/04",
-      "hoursSlept": 6.5,
-      "sleepQuality": 2.8
+      "numOunces": 88
     },
     {
       "userID": 39,
       "date": "2019/07/04",
-      "hoursSlept": 9.5,
-      "sleepQuality": 1.5
+      "numOunces": 82
     },
     {
       "userID": 40,
       "date": "2019/07/04",
-      "hoursSlept": 7.1,
-      "sleepQuality": 4.6
+      "numOunces": 40
     },
     {
       "userID": 41,
       "date": "2019/07/04",
-      "hoursSlept": 8.4,
-      "sleepQuality": 3.9
+      "numOunces": 61
     },
     {
       "userID": 42,
       "date": "2019/07/04",
-      "hoursSlept": 10.2,
-      "sleepQuality": 1
+      "numOunces": 32
     },
     {
       "userID": 43,
       "date": "2019/07/04",
-      "hoursSlept": 10.6,
-      "sleepQuality": 3.7
+      "numOunces": 96
     },
     {
       "userID": 44,
       "date": "2019/07/04",
-      "hoursSlept": 5.1,
-      "sleepQuality": 2.2
+      "numOunces": 43
     },
     {
       "userID": 45,
       "date": "2019/07/04",
-      "hoursSlept": 10,
-      "sleepQuality": 3.6
+      "numOunces": 75
     },
     {
       "userID": 46,
       "date": "2019/07/04",
-      "hoursSlept": 6.9,
-      "sleepQuality": 3.1
+      "numOunces": 90
     },
     {
       "userID": 47,
       "date": "2019/07/04",
-      "hoursSlept": 9.9,
-      "sleepQuality": 4.5
+      "numOunces": 71
     },
     {
       "userID": 48,
       "date": "2019/07/04",
-      "hoursSlept": 8.1,
-      "sleepQuality": 3.8
+      "numOunces": 79
     },
     {
       "userID": 49,
       "date": "2019/07/04",
-      "hoursSlept": 7,
-      "sleepQuality": 3.8
+      "numOunces": 23
     },
     {
       "userID": 50,
       "date": "2019/07/04",
-      "hoursSlept": 9.1,
-      "sleepQuality": 1.1
+      "numOunces": 31
     },
     {
       "userID": 1,
       "date": "2019/07/05",
-      "hoursSlept": 8.8,
-      "sleepQuality": 1.7
+      "numOunces": 46
     },
     {
       "userID": 2,
       "date": "2019/07/05",
-      "hoursSlept": 7.9,
-      "sleepQuality": 2.2
+      "numOunces": 81
     },
     {
       "userID": 3,
       "date": "2019/07/05",
-      "hoursSlept": 6.1,
-      "sleepQuality": 2.3
+      "numOunces": 86
     },
     {
       "userID": 4,
       "date": "2019/07/05",
-      "hoursSlept": 5.3,
-      "sleepQuality": 4.1
+      "numOunces": 55
     },
     {
       "userID": 5,
       "date": "2019/07/05",
-      "hoursSlept": 5.5,
-      "sleepQuality": 2.8
+      "numOunces": 92
     },
     {
       "userID": 6,
       "date": "2019/07/05",
-      "hoursSlept": 7.1,
-      "sleepQuality": 2.3
+      "numOunces": 29
     },
     {
       "userID": 7,
       "date": "2019/07/05",
-      "hoursSlept": 8.2,
-      "sleepQuality": 4.2
+      "numOunces": 89
     },
     {
       "userID": 8,
       "date": "2019/07/05",
-      "hoursSlept": 7.2,
-      "sleepQuality": 3.2
+      "numOunces": 29
     },
     {
       "userID": 9,
       "date": "2019/07/05",
-      "hoursSlept": 8.2,
-      "sleepQuality": 2.4
+      "numOunces": 92
     },
     {
       "userID": 10,
       "date": "2019/07/05",
-      "hoursSlept": 6.3,
-      "sleepQuality": 1.1
+      "numOunces": 48
     },
     {
       "userID": 11,
       "date": "2019/07/05",
-      "hoursSlept": 4.7,
-      "sleepQuality": 2.9
+      "numOunces": 99
     },
     {
       "userID": 12,
       "date": "2019/07/05",
-      "hoursSlept": 5.7,
-      "sleepQuality": 2.1
+      "numOunces": 91
     },
     {
       "userID": 13,
       "date": "2019/07/05",
-      "hoursSlept": 6.2,
-      "sleepQuality": 2.7
+      "numOunces": 62
     },
     {
       "userID": 14,
       "date": "2019/07/05",
-      "hoursSlept": 6.6,
-      "sleepQuality": 4.7
+      "numOunces": 83
     },
     {
       "userID": 15,
       "date": "2019/07/05",
-      "hoursSlept": 7.6,
-      "sleepQuality": 1.4
+      "numOunces": 97
     },
     {
       "userID": 16,
       "date": "2019/07/05",
-      "hoursSlept": 6.1,
-      "sleepQuality": 4.2
+      "numOunces": 99
     },
     {
       "userID": 17,
       "date": "2019/07/05",
-      "hoursSlept": 6,
-      "sleepQuality": 4.4
+      "numOunces": 29
     },
     {
       "userID": 18,
       "date": "2019/07/05",
-      "hoursSlept": 5.2,
-      "sleepQuality": 4.2
+      "numOunces": 28
     },
     {
       "userID": 19,
       "date": "2019/07/05",
-      "hoursSlept": 7,
-      "sleepQuality": 2.5
+      "numOunces": 77
     },
     {
       "userID": 20,
       "date": "2019/07/05",
-      "hoursSlept": 8.5,
-      "sleepQuality": 4.7
+      "numOunces": 80
     },
     {
       "userID": 21,
       "date": "2019/07/05",
-      "hoursSlept": 7.7,
-      "sleepQuality": 3.4
+      "numOunces": 64
     },
     {
       "userID": 22,
       "date": "2019/07/05",
-      "hoursSlept": 7.9,
-      "sleepQuality": 3.6
+      "numOunces": 92
     },
     {
       "userID": 23,
       "date": "2019/07/05",
-      "hoursSlept": 4.4,
-      "sleepQuality": 1.1
+      "numOunces": 51
     },
     {
       "userID": 24,
       "date": "2019/07/05",
-      "hoursSlept": 10.8,
-      "sleepQuality": 3
+      "numOunces": 54
     },
     {
       "userID": 25,
       "date": "2019/07/05",
-      "hoursSlept": 6.5,
-      "sleepQuality": 4.7
+      "numOunces": 97
     },
     {
       "userID": 26,
       "date": "2019/07/05",
-      "hoursSlept": 10.1,
-      "sleepQuality": 4.3
+      "numOunces": 40
     },
     {
       "userID": 27,
       "date": "2019/07/05",
-      "hoursSlept": 5.1,
-      "sleepQuality": 3.3
+      "numOunces": 94
     },
     {
       "userID": 28,
       "date": "2019/07/05",
-      "hoursSlept": 10.7,
-      "sleepQuality": 3.2
+      "numOunces": 98
     },
     {
       "userID": 29,
       "date": "2019/07/05",
-      "hoursSlept": 7.8,
-      "sleepQuality": 1.4
+      "numOunces": 78
     },
     {
       "userID": 30,
       "date": "2019/07/05",
-      "hoursSlept": 4.2,
-      "sleepQuality": 1.8
+      "numOunces": 61
     },
     {
       "userID": 31,
       "date": "2019/07/05",
-      "hoursSlept": 10.1,
-      "sleepQuality": 1.6
+      "numOunces": 98
     },
     {
       "userID": 32,
       "date": "2019/07/05",
-      "hoursSlept": 5,
-      "sleepQuality": 3.6
+      "numOunces": 87
     },
     {
       "userID": 33,
       "date": "2019/07/05",
-      "hoursSlept": 9.3,
-      "sleepQuality": 1.3
+      "numOunces": 51
     },
     {
       "userID": 34,
       "date": "2019/07/05",
-      "hoursSlept": 4.1,
-      "sleepQuality": 2.5
+      "numOunces": 45
     },
     {
       "userID": 35,
       "date": "2019/07/05",
-      "hoursSlept": 8,
-      "sleepQuality": 1.6
+      "numOunces": 42
     },
     {
       "userID": 36,
       "date": "2019/07/05",
-      "hoursSlept": 8,
-      "sleepQuality": 3.1
+      "numOunces": 40
     },
     {
       "userID": 37,
       "date": "2019/07/05",
-      "hoursSlept": 8.9,
-      "sleepQuality": 2.7
+      "numOunces": 33
     },
     {
       "userID": 38,
       "date": "2019/07/05",
-      "hoursSlept": 6.5,
-      "sleepQuality": 1
+      "numOunces": 35
     },
     {
       "userID": 39,
       "date": "2019/07/05",
-      "hoursSlept": 5.8,
-      "sleepQuality": 1.5
+      "numOunces": 82
     },
     {
       "userID": 40,
       "date": "2019/07/05",
-      "hoursSlept": 4.4,
-      "sleepQuality": 1.5
+      "numOunces": 75
     },
     {
       "userID": 41,
       "date": "2019/07/05",
-      "hoursSlept": 8.8,
-      "sleepQuality": 2
+      "numOunces": 83
     },
     {
       "userID": 42,
       "date": "2019/07/05",
-      "hoursSlept": 11,
-      "sleepQuality": 3.5
+      "numOunces": 92
     },
     {
       "userID": 43,
       "date": "2019/07/05",
-      "hoursSlept": 4.8,
-      "sleepQuality": 1.1
+      "numOunces": 70
     },
     {
       "userID": 44,
       "date": "2019/07/05",
-      "hoursSlept": 5.9,
-      "sleepQuality": 1.5
+      "numOunces": 91
     },
     {
       "userID": 45,
       "date": "2019/07/05",
-      "hoursSlept": 6.5,
-      "sleepQuality": 1.8
+      "numOunces": 61
     },
     {
       "userID": 46,
       "date": "2019/07/05",
-      "hoursSlept": 7.7,
-      "sleepQuality": 3.6
+      "numOunces": 43
     },
     {
       "userID": 47,
       "date": "2019/07/05",
-      "hoursSlept": 7.1,
-      "sleepQuality": 4.2
+      "numOunces": 70
     },
     {
       "userID": 48,
       "date": "2019/07/05",
-      "hoursSlept": 8.9,
-      "sleepQuality": 3.3
+      "numOunces": 64
     },
     {
       "userID": 49,
       "date": "2019/07/05",
-      "hoursSlept": 9.5,
-      "sleepQuality": 1.5
+      "numOunces": 76
     },
     {
       "userID": 50,
       "date": "2019/07/05",
-      "hoursSlept": 4.3,
-      "sleepQuality": 4.6
+      "numOunces": 98
     },
     {
       "userID": 1,
       "date": "2019/07/06",
-      "hoursSlept": 6.5,
-      "sleepQuality": 1.4
+      "numOunces": 26
     },
     {
       "userID": 2,
       "date": "2019/07/06",
-      "hoursSlept": 7.7,
-      "sleepQuality": 2.5
+      "numOunces": 47
     },
     {
       "userID": 3,
       "date": "2019/07/06",
-      "hoursSlept": 8.1,
-      "sleepQuality": 2.8
+      "numOunces": 50
     },
     {
       "userID": 4,
       "date": "2019/07/06",
-      "hoursSlept": 7.6,
-      "sleepQuality": 4
+      "numOunces": 80
     },
     {
       "userID": 5,
       "date": "2019/07/06",
-      "hoursSlept": 10.9,
-      "sleepQuality": 1.9
+      "numOunces": 53
     },
     {
       "userID": 6,
       "date": "2019/07/06",
-      "hoursSlept": 10.1,
-      "sleepQuality": 4.3
+      "numOunces": 98
     },
     {
       "userID": 7,
       "date": "2019/07/06",
-      "hoursSlept": 4.4,
-      "sleepQuality": 2
+      "numOunces": 53
     },
     {
       "userID": 8,
       "date": "2019/07/06",
-      "hoursSlept": 5.8,
-      "sleepQuality": 4.7
+      "numOunces": 24
     },
     {
       "userID": 9,
       "date": "2019/07/06",
-      "hoursSlept": 4.5,
-      "sleepQuality": 1.6
+      "numOunces": 65
     },
     {
       "userID": 10,
       "date": "2019/07/06",
-      "hoursSlept": 4.5,
-      "sleepQuality": 4.2
+      "numOunces": 40
     },
     {
       "userID": 11,
       "date": "2019/07/06",
-      "hoursSlept": 5.5,
-      "sleepQuality": 3.2
+      "numOunces": 59
     },
     {
       "userID": 12,
       "date": "2019/07/06",
-      "hoursSlept": 6.1,
-      "sleepQuality": 1
+      "numOunces": 44
     },
     {
       "userID": 13,
       "date": "2019/07/06",
-      "hoursSlept": 8,
-      "sleepQuality": 1.3
+      "numOunces": 94
     },
     {
       "userID": 14,
       "date": "2019/07/06",
-      "hoursSlept": 8.7,
-      "sleepQuality": 1.6
+      "numOunces": 56
     },
     {
       "userID": 15,
       "date": "2019/07/06",
-      "hoursSlept": 5.4,
-      "sleepQuality": 4.1
+      "numOunces": 92
     },
     {
       "userID": 16,
       "date": "2019/07/06",
-      "hoursSlept": 4.1,
-      "sleepQuality": 1.3
+      "numOunces": 56
     },
     {
       "userID": 17,
       "date": "2019/07/06",
-      "hoursSlept": 5.1,
-      "sleepQuality": 3
+      "numOunces": 94
     },
     {
       "userID": 18,
       "date": "2019/07/06",
-      "hoursSlept": 10.8,
-      "sleepQuality": 2.9
+      "numOunces": 60
     },
     {
       "userID": 19,
       "date": "2019/07/06",
-      "hoursSlept": 10.9,
-      "sleepQuality": 1
+      "numOunces": 79
     },
     {
       "userID": 20,
       "date": "2019/07/06",
-      "hoursSlept": 10.3,
-      "sleepQuality": 2.8
+      "numOunces": 46
     },
     {
       "userID": 21,
       "date": "2019/07/06",
-      "hoursSlept": 6.9,
-      "sleepQuality": 2.5
+      "numOunces": 94
     },
     {
       "userID": 22,
       "date": "2019/07/06",
-      "hoursSlept": 10.1,
-      "sleepQuality": 1.7
+      "numOunces": 90
     },
     {
       "userID": 23,
       "date": "2019/07/06",
-      "hoursSlept": 8.7,
-      "sleepQuality": 4.5
+      "numOunces": 45
     },
     {
       "userID": 24,
       "date": "2019/07/06",
-      "hoursSlept": 10.2,
-      "sleepQuality": 4.7
+      "numOunces": 91
     },
     {
       "userID": 25,
       "date": "2019/07/06",
-      "hoursSlept": 10.7,
-      "sleepQuality": 3.6
+      "numOunces": 62
     },
     {
       "userID": 26,
       "date": "2019/07/06",
-      "hoursSlept": 10.3,
-      "sleepQuality": 2.1
+      "numOunces": 62
     },
     {
       "userID": 27,
       "date": "2019/07/06",
-      "hoursSlept": 8.7,
-      "sleepQuality": 2.2
+      "numOunces": 82
     },
     {
       "userID": 28,
       "date": "2019/07/06",
-      "hoursSlept": 10.8,
-      "sleepQuality": 1.4
+      "numOunces": 92
     },
     {
       "userID": 29,
       "date": "2019/07/06",
-      "hoursSlept": 5.5,
-      "sleepQuality": 4.2
+      "numOunces": 38
     },
     {
       "userID": 30,
       "date": "2019/07/06",
-      "hoursSlept": 6.4,
-      "sleepQuality": 3.5
+      "numOunces": 90
     },
     {
       "userID": 31,
       "date": "2019/07/06",
-      "hoursSlept": 8.8,
-      "sleepQuality": 1.8
+      "numOunces": 53
     },
     {
       "userID": 32,
       "date": "2019/07/06",
-      "hoursSlept": 8.3,
-      "sleepQuality": 1.5
+      "numOunces": 92
     },
     {
       "userID": 33,
       "date": "2019/07/06",
-      "hoursSlept": 10,
-      "sleepQuality": 4.9
+      "numOunces": 36
     },
     {
       "userID": 34,
       "date": "2019/07/06",
-      "hoursSlept": 7.3,
-      "sleepQuality": 2.9
+      "numOunces": 85
     },
     {
       "userID": 35,
       "date": "2019/07/06",
-      "hoursSlept": 6.3,
-      "sleepQuality": 1.3
+      "numOunces": 80
     },
     {
       "userID": 36,
       "date": "2019/07/06",
-      "hoursSlept": 4.9,
-      "sleepQuality": 4.8
+      "numOunces": 99
     },
     {
       "userID": 37,
       "date": "2019/07/06",
-      "hoursSlept": 10,
-      "sleepQuality": 1.8
+      "numOunces": 35
     },
     {
       "userID": 38,
       "date": "2019/07/06",
-      "hoursSlept": 7,
-      "sleepQuality": 4.3
+      "numOunces": 69
     },
     {
       "userID": 39,
       "date": "2019/07/06",
-      "hoursSlept": 8.1,
-      "sleepQuality": 1.3
+      "numOunces": 55
     },
     {
       "userID": 40,
       "date": "2019/07/06",
-      "hoursSlept": 9.5,
-      "sleepQuality": 2.8
+      "numOunces": 73
     },
     {
       "userID": 41,
       "date": "2019/07/06",
-      "hoursSlept": 10.2,
-      "sleepQuality": 3.7
+      "numOunces": 92
     },
     {
       "userID": 42,
       "date": "2019/07/06",
-      "hoursSlept": 4.5,
-      "sleepQuality": 2.5
+      "numOunces": 80
     },
     {
       "userID": 43,
       "date": "2019/07/06",
-      "hoursSlept": 5.1,
-      "sleepQuality": 3
+      "numOunces": 97
     },
     {
       "userID": 44,
       "date": "2019/07/06",
-      "hoursSlept": 7.6,
-      "sleepQuality": 1.7
+      "numOunces": 27
     },
     {
       "userID": 45,
       "date": "2019/07/06",
-      "hoursSlept": 10.1,
-      "sleepQuality": 1.6
+      "numOunces": 49
     },
     {
       "userID": 46,
       "date": "2019/07/06",
-      "hoursSlept": 6.3,
-      "sleepQuality": 4.3
+      "numOunces": 94
     },
     {
       "userID": 47,
       "date": "2019/07/06",
-      "hoursSlept": 6.4,
-      "sleepQuality": 1.2
+      "numOunces": 76
     },
     {
       "userID": 48,
       "date": "2019/07/06",
-      "hoursSlept": 8,
-      "sleepQuality": 3.8
+      "numOunces": 63
     },
     {
       "userID": 49,
       "date": "2019/07/06",
-      "hoursSlept": 9.5,
-      "sleepQuality": 4.4
+      "numOunces": 27
     },
     {
       "userID": 50,
       "date": "2019/07/06",
-      "hoursSlept": 6.5,
-      "sleepQuality": 2.5
+      "numOunces": 98
     },
     {
       "userID": 1,
       "date": "2019/07/07",
-      "hoursSlept": 5.9,
-      "sleepQuality": 4.8
+      "numOunces": 34
     },
     {
       "userID": 2,
       "date": "2019/07/07",
-      "hoursSlept": 4.3,
-      "sleepQuality": 2.3
+      "numOunces": 26
     },
     {
       "userID": 3,
       "date": "2019/07/07",
-      "hoursSlept": 9.2,
-      "sleepQuality": 3.5
+      "numOunces": 32
     },
     {
       "userID": 4,
       "date": "2019/07/07",
-      "hoursSlept": 10.6,
-      "sleepQuality": 2.7
+      "numOunces": 91
     },
     {
       "userID": 5,
       "date": "2019/07/07",
-      "hoursSlept": 6.4,
-      "sleepQuality": 1.8
+      "numOunces": 42
     },
     {
       "userID": 6,
       "date": "2019/07/07",
-      "hoursSlept": 5.7,
-      "sleepQuality": 3.8
+      "numOunces": 67
     },
     {
       "userID": 7,
       "date": "2019/07/07",
-      "hoursSlept": 9.1,
-      "sleepQuality": 2.5
+      "numOunces": 44
     },
     {
       "userID": 8,
       "date": "2019/07/07",
-      "hoursSlept": 8.8,
-      "sleepQuality": 4.4
+      "numOunces": 41
     },
     {
       "userID": 9,
       "date": "2019/07/07",
-      "hoursSlept": 6.2,
-      "sleepQuality": 1.6
+      "numOunces": 76
     },
     {
       "userID": 10,
       "date": "2019/07/07",
-      "hoursSlept": 8.7,
-      "sleepQuality": 4
+      "numOunces": 63
     },
     {
       "userID": 11,
       "date": "2019/07/07",
-      "hoursSlept": 6,
-      "sleepQuality": 2.8
+      "numOunces": 69
     },
     {
       "userID": 12,
       "date": "2019/07/07",
-      "hoursSlept": 5.8,
-      "sleepQuality": 1.6
+      "numOunces": 33
     },
     {
       "userID": 13,
       "date": "2019/07/07",
-      "hoursSlept": 6.9,
-      "sleepQuality": 1.7
+      "numOunces": 30
     },
     {
       "userID": 14,
       "date": "2019/07/07",
-      "hoursSlept": 4.4,
-      "sleepQuality": 3.6
+      "numOunces": 73
     },
     {
       "userID": 15,
       "date": "2019/07/07",
-      "hoursSlept": 10,
-      "sleepQuality": 2.2
+      "numOunces": 90
     },
     {
       "userID": 16,
       "date": "2019/07/07",
-      "hoursSlept": 8.5,
-      "sleepQuality": 4.3
+      "numOunces": 50
     },
     {
       "userID": 17,
       "date": "2019/07/07",
-      "hoursSlept": 5,
-      "sleepQuality": 2.4
+      "numOunces": 57
     },
     {
       "userID": 18,
       "date": "2019/07/07",
-      "hoursSlept": 10.2,
-      "sleepQuality": 2.5
+      "numOunces": 55
     },
     {
       "userID": 19,
       "date": "2019/07/07",
-      "hoursSlept": 10,
-      "sleepQuality": 2.2
+      "numOunces": 88
     },
     {
       "userID": 20,
       "date": "2019/07/07",
-      "hoursSlept": 10.6,
-      "sleepQuality": 4.1
+      "numOunces": 25
     },
     {
       "userID": 21,
       "date": "2019/07/07",
-      "hoursSlept": 8.2,
-      "sleepQuality": 3
+      "numOunces": 23
     },
     {
       "userID": 22,
       "date": "2019/07/07",
-      "hoursSlept": 4.7,
-      "sleepQuality": 4.8
+      "numOunces": 79
     },
     {
       "userID": 23,
       "date": "2019/07/07",
-      "hoursSlept": 10.2,
-      "sleepQuality": 2.3
+      "numOunces": 96
     },
     {
       "userID": 24,
       "date": "2019/07/07",
-      "hoursSlept": 6.7,
-      "sleepQuality": 4.8
+      "numOunces": 24
     },
     {
       "userID": 25,
       "date": "2019/07/07",
-      "hoursSlept": 8.4,
-      "sleepQuality": 4.6
+      "numOunces": 91
     },
     {
       "userID": 26,
       "date": "2019/07/07",
-      "hoursSlept": 8.6,
-      "sleepQuality": 1.3
+      "numOunces": 26
     },
     {
       "userID": 27,
       "date": "2019/07/07",
-      "hoursSlept": 5.8,
-      "sleepQuality": 2.8
+      "numOunces": 84
     },
     {
       "userID": 28,
       "date": "2019/07/07",
-      "hoursSlept": 6.5,
-      "sleepQuality": 3.7
+      "numOunces": 21
     },
     {
       "userID": 29,
       "date": "2019/07/07",
-      "hoursSlept": 7.5,
-      "sleepQuality": 2.3
+      "numOunces": 25
     },
     {
       "userID": 30,
       "date": "2019/07/07",
-      "hoursSlept": 8.4,
-      "sleepQuality": 1.9
+      "numOunces": 27
     },
     {
       "userID": 31,
       "date": "2019/07/07",
-      "hoursSlept": 5.9,
-      "sleepQuality": 4.6
+      "numOunces": 81
     },
     {
       "userID": 32,
       "date": "2019/07/07",
-      "hoursSlept": 5.8,
-      "sleepQuality": 1.4
+      "numOunces": 67
     },
     {
       "userID": 33,
       "date": "2019/07/07",
-      "hoursSlept": 10.7,
-      "sleepQuality": 4.9
+      "numOunces": 62
     },
     {
       "userID": 34,
       "date": "2019/07/07",
-      "hoursSlept": 6.8,
-      "sleepQuality": 4.9
+      "numOunces": 40
     },
     {
       "userID": 35,
       "date": "2019/07/07",
-      "hoursSlept": 10,
-      "sleepQuality": 3.2
+      "numOunces": 73
     },
     {
       "userID": 36,
       "date": "2019/07/07",
-      "hoursSlept": 10.1,
-      "sleepQuality": 3.4
+      "numOunces": 55
     },
     {
       "userID": 37,
       "date": "2019/07/07",
-      "hoursSlept": 10.4,
-      "sleepQuality": 5
+      "numOunces": 88
     },
     {
       "userID": 38,
       "date": "2019/07/07",
-      "hoursSlept": 10.8,
-      "sleepQuality": 1.4
+      "numOunces": 76
     },
     {
       "userID": 39,
       "date": "2019/07/07",
-      "hoursSlept": 7.9,
-      "sleepQuality": 3.2
+      "numOunces": 31
     },
     {
       "userID": 40,
       "date": "2019/07/07",
-      "hoursSlept": 9.3,
-      "sleepQuality": 4.1
+      "numOunces": 55
     },
     {
       "userID": 41,
       "date": "2019/07/07",
-      "hoursSlept": 8.2,
-      "sleepQuality": 2.7
+      "numOunces": 72
     },
     {
       "userID": 42,
       "date": "2019/07/07",
-      "hoursSlept": 8,
-      "sleepQuality": 1.5
+      "numOunces": 39
     },
     {
       "userID": 43,
       "date": "2019/07/07",
-      "hoursSlept": 7.2,
-      "sleepQuality": 3.1
+      "numOunces": 30
     },
     {
       "userID": 44,
       "date": "2019/07/07",
-      "hoursSlept": 9.2,
-      "sleepQuality": 1.8
+      "numOunces": 59
     },
     {
       "userID": 45,
       "date": "2019/07/07",
-      "hoursSlept": 9.4,
-      "sleepQuality": 1.9
+      "numOunces": 57
     },
     {
       "userID": 46,
       "date": "2019/07/07",
-      "hoursSlept": 10,
-      "sleepQuality": 4
+      "numOunces": 68
     },
     {
       "userID": 47,
       "date": "2019/07/07",
-      "hoursSlept": 8.2,
-      "sleepQuality": 1.9
+      "numOunces": 63
     },
     {
       "userID": 48,
       "date": "2019/07/07",
-      "hoursSlept": 4.1,
-      "sleepQuality": 2.1
+      "numOunces": 85
     },
     {
       "userID": 49,
       "date": "2019/07/07",
-      "hoursSlept": 10,
-      "sleepQuality": 4.8
+      "numOunces": 46
     },
     {
       "userID": 50,
       "date": "2019/07/07",
-      "hoursSlept": 7.2,
-      "sleepQuality": 3.5
+      "numOunces": 49
     },
     {
       "userID": 1,
       "date": "2019/07/08",
-      "hoursSlept": 9.8,
-      "sleepQuality": 4.7
+      "numOunces": 24
     },
     {
       "userID": 2,
       "date": "2019/07/08",
-      "hoursSlept": 5.2,
-      "sleepQuality": 3.8
+      "numOunces": 45
     },
     {
       "userID": 3,
       "date": "2019/07/08",
-      "hoursSlept": 5.8,
-      "sleepQuality": 3.1
+      "numOunces": 73
     },
     {
       "userID": 4,
       "date": "2019/07/08",
-      "hoursSlept": 8.8,
-      "sleepQuality": 4.8
+      "numOunces": 92
     },
     {
       "userID": 5,
       "date": "2019/07/08",
-      "hoursSlept": 9.1,
-      "sleepQuality": 1.9
+      "numOunces": 97
     },
     {
       "userID": 6,
       "date": "2019/07/08",
-      "hoursSlept": 9.2,
-      "sleepQuality": 3.3
+      "numOunces": 92
     },
     {
       "userID": 7,
       "date": "2019/07/08",
-      "hoursSlept": 6.6,
-      "sleepQuality": 3.8
+      "numOunces": 81
     },
     {
       "userID": 8,
       "date": "2019/07/08",
-      "hoursSlept": 8.6,
-      "sleepQuality": 1.7
+      "numOunces": 23
     },
     {
       "userID": 9,
       "date": "2019/07/08",
-      "hoursSlept": 7.6,
-      "sleepQuality": 4.4
+      "numOunces": 93
     },
     {
       "userID": 10,
       "date": "2019/07/08",
-      "hoursSlept": 10.1,
-      "sleepQuality": 4.8
+      "numOunces": 59
     },
     {
       "userID": 11,
       "date": "2019/07/08",
-      "hoursSlept": 5.2,
-      "sleepQuality": 1.4
+      "numOunces": 72
     },
     {
       "userID": 12,
       "date": "2019/07/08",
-      "hoursSlept": 6.4,
-      "sleepQuality": 4.3
+      "numOunces": 51
     },
     {
       "userID": 13,
       "date": "2019/07/08",
-      "hoursSlept": 8,
-      "sleepQuality": 1.7
+      "numOunces": 93
     },
     {
       "userID": 14,
       "date": "2019/07/08",
-      "hoursSlept": 9.9,
-      "sleepQuality": 1.3
+      "numOunces": 37
     },
     {
       "userID": 15,
       "date": "2019/07/08",
-      "hoursSlept": 7.2,
-      "sleepQuality": 2.3
+      "numOunces": 75
     },
     {
       "userID": 16,
       "date": "2019/07/08",
-      "hoursSlept": 6.3,
-      "sleepQuality": 1.5
+      "numOunces": 31
     },
     {
       "userID": 17,
       "date": "2019/07/08",
-      "hoursSlept": 9.1,
-      "sleepQuality": 2.6
+      "numOunces": 30
     },
     {
       "userID": 18,
       "date": "2019/07/08",
-      "hoursSlept": 7.1,
-      "sleepQuality": 3.9
+      "numOunces": 22
     },
     {
       "userID": 19,
       "date": "2019/07/08",
-      "hoursSlept": 7.9,
-      "sleepQuality": 3.4
+      "numOunces": 35
     },
     {
       "userID": 20,
       "date": "2019/07/08",
-      "hoursSlept": 8.7,
-      "sleepQuality": 2.4
+      "numOunces": 35
     },
     {
       "userID": 21,
       "date": "2019/07/08",
-      "hoursSlept": 7.2,
-      "sleepQuality": 3.6
+      "numOunces": 77
     },
     {
       "userID": 22,
       "date": "2019/07/08",
-      "hoursSlept": 10.8,
-      "sleepQuality": 3.6
+      "numOunces": 49
     },
     {
       "userID": 23,
       "date": "2019/07/08",
-      "hoursSlept": 7.2,
-      "sleepQuality": 2.2
+      "numOunces": 33
     },
     {
       "userID": 24,
       "date": "2019/07/08",
-      "hoursSlept": 4.1,
-      "sleepQuality": 2.9
+      "numOunces": 21
     },
     {
       "userID": 25,
       "date": "2019/07/08",
-      "hoursSlept": 7.3,
-      "sleepQuality": 3.9
+      "numOunces": 25
     },
     {
       "userID": 26,
       "date": "2019/07/08",
-      "hoursSlept": 5.8,
-      "sleepQuality": 3.8
+      "numOunces": 32
     },
     {
       "userID": 27,
       "date": "2019/07/08",
-      "hoursSlept": 7.3,
-      "sleepQuality": 1.1
+      "numOunces": 30
     },
     {
       "userID": 28,
       "date": "2019/07/08",
-      "hoursSlept": 5.6,
-      "sleepQuality": 1.4
+      "numOunces": 96
     },
     {
       "userID": 29,
       "date": "2019/07/08",
-      "hoursSlept": 10.1,
-      "sleepQuality": 1.7
+      "numOunces": 22
     },
     {
       "userID": 30,
       "date": "2019/07/08",
-      "hoursSlept": 10.3,
-      "sleepQuality": 3.2
+      "numOunces": 40
     },
     {
       "userID": 31,
       "date": "2019/07/08",
-      "hoursSlept": 7.6,
-      "sleepQuality": 3.2
+      "numOunces": 28
     },
     {
       "userID": 32,
       "date": "2019/07/08",
-      "hoursSlept": 5.9,
-      "sleepQuality": 2.8
+      "numOunces": 28
     },
     {
       "userID": 33,
       "date": "2019/07/08",
-      "hoursSlept": 4.5,
-      "sleepQuality": 2.4
+      "numOunces": 66
     },
     {
       "userID": 34,
       "date": "2019/07/08",
-      "hoursSlept": 11,
-      "sleepQuality": 2.6
+      "numOunces": 66
     },
     {
       "userID": 35,
       "date": "2019/07/08",
-      "hoursSlept": 8.4,
-      "sleepQuality": 1.4
+      "numOunces": 66
     },
     {
       "userID": 36,
       "date": "2019/07/08",
-      "hoursSlept": 9.6,
-      "sleepQuality": 4.4
+      "numOunces": 67
     },
     {
       "userID": 37,
       "date": "2019/07/08",
-      "hoursSlept": 8,
-      "sleepQuality": 1.6
+      "numOunces": 50
     },
     {
       "userID": 38,
       "date": "2019/07/08",
-      "hoursSlept": 10.4,
-      "sleepQuality": 4.6
+      "numOunces": 67
     },
     {
       "userID": 39,
       "date": "2019/07/08",
-      "hoursSlept": 8.7,
-      "sleepQuality": 3.2
+      "numOunces": 34
     },
     {
       "userID": 40,
       "date": "2019/07/08",
-      "hoursSlept": 5.9,
-      "sleepQuality": 2.6
+      "numOunces": 65
     },
     {
       "userID": 41,
       "date": "2019/07/08",
-      "hoursSlept": 8.3,
-      "sleepQuality": 1.7
+      "numOunces": 26
     },
     {
       "userID": 42,
       "date": "2019/07/08",
-      "hoursSlept": 7.5,
-      "sleepQuality": 1.3
+      "numOunces": 83
     },
     {
       "userID": 43,
       "date": "2019/07/08",
-      "hoursSlept": 10.1,
-      "sleepQuality": 2
+      "numOunces": 52
     },
     {
       "userID": 44,
       "date": "2019/07/08",
-      "hoursSlept": 5.3,
-      "sleepQuality": 2.1
+      "numOunces": 65
     },
     {
       "userID": 45,
       "date": "2019/07/08",
-      "hoursSlept": 7.3,
-      "sleepQuality": 2.2
+      "numOunces": 49
     },
     {
       "userID": 46,
       "date": "2019/07/08",
-      "hoursSlept": 5.1,
-      "sleepQuality": 3.2
+      "numOunces": 46
     },
     {
       "userID": 47,
       "date": "2019/07/08",
-      "hoursSlept": 9,
-      "sleepQuality": 2.3
+      "numOunces": 29
     },
     {
       "userID": 48,
       "date": "2019/07/08",
-      "hoursSlept": 10.5,
-      "sleepQuality": 4.4
+      "numOunces": 38
     },
     {
       "userID": 49,
       "date": "2019/07/08",
-      "hoursSlept": 8.3,
-      "sleepQuality": 2.2
+      "numOunces": 74
     },
     {
       "userID": 50,
       "date": "2019/07/08",
-      "hoursSlept": 5.1,
-      "sleepQuality": 2.4
+      "numOunces": 97
     },
     {
       "userID": 1,
       "date": "2019/07/09",
-      "hoursSlept": 6.8,
-      "sleepQuality": 4.9
+      "numOunces": 89
     },
     {
       "userID": 2,
       "date": "2019/07/09",
-      "hoursSlept": 4.3,
-      "sleepQuality": 1.8
+      "numOunces": 79
     },
     {
       "userID": 3,
       "date": "2019/07/09",
-      "hoursSlept": 10.6,
-      "sleepQuality": 4.4
+      "numOunces": 73
     },
     {
       "userID": 4,
       "date": "2019/07/09",
-      "hoursSlept": 7.2,
-      "sleepQuality": 4.7
+      "numOunces": 89
     },
     {
       "userID": 5,
       "date": "2019/07/09",
-      "hoursSlept": 10.4,
-      "sleepQuality": 2.7
+      "numOunces": 22
     },
     {
       "userID": 6,
       "date": "2019/07/09",
-      "hoursSlept": 9.6,
-      "sleepQuality": 1.4
+      "numOunces": 91
     },
     {
       "userID": 7,
       "date": "2019/07/09",
-      "hoursSlept": 11,
-      "sleepQuality": 2.8
+      "numOunces": 32
     },
     {
       "userID": 8,
       "date": "2019/07/09",
-      "hoursSlept": 10.8,
-      "sleepQuality": 2.8
+      "numOunces": 48
     },
     {
       "userID": 9,
       "date": "2019/07/09",
-      "hoursSlept": 8.9,
-      "sleepQuality": 3.1
+      "numOunces": 82
     },
     {
       "userID": 10,
       "date": "2019/07/09",
-      "hoursSlept": 5.8,
-      "sleepQuality": 1.2
+      "numOunces": 95
     },
     {
       "userID": 11,
       "date": "2019/07/09",
-      "hoursSlept": 6.8,
-      "sleepQuality": 4.1
+      "numOunces": 61
     },
     {
       "userID": 12,
       "date": "2019/07/09",
-      "hoursSlept": 8.7,
-      "sleepQuality": 2.6
+      "numOunces": 82
     },
     {
       "userID": 13,
       "date": "2019/07/09",
-      "hoursSlept": 4.8,
-      "sleepQuality": 3.1
+      "numOunces": 28
     },
     {
       "userID": 14,
       "date": "2019/07/09",
-      "hoursSlept": 5.6,
-      "sleepQuality": 1.6
+      "numOunces": 39
     },
     {
       "userID": 15,
       "date": "2019/07/09",
-      "hoursSlept": 6.5,
-      "sleepQuality": 3.7
+      "numOunces": 33
     },
     {
       "userID": 16,
       "date": "2019/07/09",
-      "hoursSlept": 8,
-      "sleepQuality": 3.6
+      "numOunces": 33
     },
     {
       "userID": 17,
       "date": "2019/07/09",
-      "hoursSlept": 10.1,
-      "sleepQuality": 2.7
+      "numOunces": 47
     },
     {
       "userID": 18,
       "date": "2019/07/09",
-      "hoursSlept": 4.6,
-      "sleepQuality": 3.9
+      "numOunces": 45
     },
     {
       "userID": 19,
       "date": "2019/07/09",
-      "hoursSlept": 4.2,
-      "sleepQuality": 3.5
+      "numOunces": 51
     },
     {
       "userID": 20,
       "date": "2019/07/09",
-      "hoursSlept": 8.8,
-      "sleepQuality": 4
+      "numOunces": 39
     },
     {
       "userID": 21,
       "date": "2019/07/09",
-      "hoursSlept": 8.4,
-      "sleepQuality": 4.5
+      "numOunces": 76
     },
     {
       "userID": 22,
       "date": "2019/07/09",
-      "hoursSlept": 8.3,
-      "sleepQuality": 2.7
+      "numOunces": 53
     },
     {
       "userID": 23,
       "date": "2019/07/09",
-      "hoursSlept": 7.7,
-      "sleepQuality": 4.4
+      "numOunces": 57
     },
     {
       "userID": 24,
       "date": "2019/07/09",
-      "hoursSlept": 9.4,
-      "sleepQuality": 2.5
+      "numOunces": 98
     },
     {
       "userID": 25,
       "date": "2019/07/09",
-      "hoursSlept": 10.1,
-      "sleepQuality": 2
+      "numOunces": 60
     },
     {
       "userID": 26,
       "date": "2019/07/09",
-      "hoursSlept": 7.2,
-      "sleepQuality": 4.5
+      "numOunces": 33
     },
     {
       "userID": 27,
       "date": "2019/07/09",
-      "hoursSlept": 7.3,
-      "sleepQuality": 3.5
+      "numOunces": 57
     },
     {
       "userID": 28,
       "date": "2019/07/09",
-      "hoursSlept": 4.9,
-      "sleepQuality": 2.7
+      "numOunces": 60
     },
     {
       "userID": 29,
       "date": "2019/07/09",
-      "hoursSlept": 10,
-      "sleepQuality": 3.8
+      "numOunces": 67
     },
     {
       "userID": 30,
       "date": "2019/07/09",
-      "hoursSlept": 5.5,
-      "sleepQuality": 4.2
+      "numOunces": 99
     },
     {
       "userID": 31,
       "date": "2019/07/09",
-      "hoursSlept": 9,
-      "sleepQuality": 3
+      "numOunces": 62
     },
     {
       "userID": 32,
       "date": "2019/07/09",
-      "hoursSlept": 9.7,
-      "sleepQuality": 4.2
+      "numOunces": 45
     },
     {
       "userID": 33,
       "date": "2019/07/09",
-      "hoursSlept": 4.5,
-      "sleepQuality": 3.5
+      "numOunces": 57
     },
     {
       "userID": 34,
       "date": "2019/07/09",
-      "hoursSlept": 6.6,
-      "sleepQuality": 1.9
+      "numOunces": 68
     },
     {
       "userID": 35,
       "date": "2019/07/09",
-      "hoursSlept": 6.7,
-      "sleepQuality": 1.4
+      "numOunces": 98
     },
     {
       "userID": 36,
       "date": "2019/07/09",
-      "hoursSlept": 8.4,
-      "sleepQuality": 2.7
+      "numOunces": 68
     },
     {
       "userID": 37,
       "date": "2019/07/09",
-      "hoursSlept": 6.4,
-      "sleepQuality": 3.9
+      "numOunces": 43
     },
     {
       "userID": 38,
       "date": "2019/07/09",
-      "hoursSlept": 4.8,
-      "sleepQuality": 3.8
+      "numOunces": 26
     },
     {
       "userID": 39,
       "date": "2019/07/09",
-      "hoursSlept": 6.8,
-      "sleepQuality": 2.2
+      "numOunces": 70
     },
     {
       "userID": 40,
       "date": "2019/07/09",
-      "hoursSlept": 8,
-      "sleepQuality": 1
+      "numOunces": 64
     },
     {
       "userID": 41,
       "date": "2019/07/09",
-      "hoursSlept": 5.4,
-      "sleepQuality": 2.8
+      "numOunces": 85
     },
     {
       "userID": 42,
       "date": "2019/07/09",
-      "hoursSlept": 5.5,
-      "sleepQuality": 3.6
+      "numOunces": 44
     },
     {
       "userID": 43,
       "date": "2019/07/09",
-      "hoursSlept": 4.2,
-      "sleepQuality": 1.1
+      "numOunces": 86
     },
     {
       "userID": 44,
       "date": "2019/07/09",
-      "hoursSlept": 8.6,
-      "sleepQuality": 2
+      "numOunces": 98
     },
     {
       "userID": 45,
       "date": "2019/07/09",
-      "hoursSlept": 4,
-      "sleepQuality": 4.2
+      "numOunces": 96
     },
     {
       "userID": 46,
       "date": "2019/07/09",
-      "hoursSlept": 4.8,
-      "sleepQuality": 1.1
+      "numOunces": 54
     },
     {
       "userID": 47,
       "date": "2019/07/09",
-      "hoursSlept": 6.4,
-      "sleepQuality": 5
+      "numOunces": 34
     },
     {
       "userID": 48,
       "date": "2019/07/09",
-      "hoursSlept": 6.2,
-      "sleepQuality": 1.5
+      "numOunces": 94
     },
     {
       "userID": 49,
       "date": "2019/07/09",
-      "hoursSlept": 6.6,
-      "sleepQuality": 3.2
+      "numOunces": 49
     },
     {
       "userID": 50,
       "date": "2019/07/09",
-      "hoursSlept": 4.5,
-      "sleepQuality": 3.4
+      "numOunces": 89
     },
     {
       "userID": 1,
       "date": "2019/07/10",
-      "hoursSlept": 5.3,
-      "sleepQuality": 3.2
+      "numOunces": 42
     },
     {
       "userID": 2,
       "date": "2019/07/10",
-      "hoursSlept": 8.8,
-      "sleepQuality": 1.8
+      "numOunces": 43
     },
     {
       "userID": 3,
       "date": "2019/07/10",
-      "hoursSlept": 7.3,
-      "sleepQuality": 4.5
+      "numOunces": 73
     },
     {
       "userID": 4,
       "date": "2019/07/10",
-      "hoursSlept": 4.7,
-      "sleepQuality": 4.6
+      "numOunces": 49
     },
     {
       "userID": 5,
       "date": "2019/07/10",
-      "hoursSlept": 5.7,
-      "sleepQuality": 4.7
+      "numOunces": 41
     },
     {
       "userID": 6,
       "date": "2019/07/10",
-      "hoursSlept": 5.7,
-      "sleepQuality": 3
+      "numOunces": 44
     },
     {
       "userID": 7,
       "date": "2019/07/10",
-      "hoursSlept": 7.2,
-      "sleepQuality": 2.7
+      "numOunces": 64
     },
     {
       "userID": 8,
       "date": "2019/07/10",
-      "hoursSlept": 5.8,
-      "sleepQuality": 2.4
+      "numOunces": 52
     },
     {
       "userID": 9,
       "date": "2019/07/10",
-      "hoursSlept": 5.3,
-      "sleepQuality": 1.9
+      "numOunces": 71
     },
     {
       "userID": 10,
       "date": "2019/07/10",
-      "hoursSlept": 10.7,
-      "sleepQuality": 2.4
+      "numOunces": 87
     },
     {
       "userID": 11,
       "date": "2019/07/10",
-      "hoursSlept": 9.7,
-      "sleepQuality": 4.4
+      "numOunces": 38
     },
     {
       "userID": 12,
       "date": "2019/07/10",
-      "hoursSlept": 11,
-      "sleepQuality": 1.3
+      "numOunces": 100
     },
     {
       "userID": 13,
       "date": "2019/07/10",
-      "hoursSlept": 6.8,
-      "sleepQuality": 3.8
+      "numOunces": 82
     },
     {
       "userID": 14,
       "date": "2019/07/10",
-      "hoursSlept": 9.7,
-      "sleepQuality": 3.5
+      "numOunces": 80
     },
     {
       "userID": 15,
       "date": "2019/07/10",
-      "hoursSlept": 9.9,
-      "sleepQuality": 4
+      "numOunces": 78
     },
     {
       "userID": 16,
       "date": "2019/07/10",
-      "hoursSlept": 4.2,
-      "sleepQuality": 1
+      "numOunces": 81
     },
     {
       "userID": 17,
       "date": "2019/07/10",
-      "hoursSlept": 5.2,
-      "sleepQuality": 1.7
+      "numOunces": 87
     },
     {
       "userID": 18,
       "date": "2019/07/10",
-      "hoursSlept": 9.4,
-      "sleepQuality": 3.3
+      "numOunces": 29
     },
     {
       "userID": 19,
       "date": "2019/07/10",
-      "hoursSlept": 8.7,
-      "sleepQuality": 2.7
+      "numOunces": 43
     },
     {
       "userID": 20,
       "date": "2019/07/10",
-      "hoursSlept": 10.9,
-      "sleepQuality": 2.4
+      "numOunces": 98
     },
     {
       "userID": 21,
       "date": "2019/07/10",
-      "hoursSlept": 5.6,
-      "sleepQuality": 2.3
+      "numOunces": 63
     },
     {
       "userID": 22,
       "date": "2019/07/10",
-      "hoursSlept": 9.6,
-      "sleepQuality": 3.4
+      "numOunces": 83
     },
     {
       "userID": 23,
       "date": "2019/07/10",
-      "hoursSlept": 5.6,
-      "sleepQuality": 1.7
+      "numOunces": 61
     },
     {
       "userID": 24,
       "date": "2019/07/10",
-      "hoursSlept": 5.3,
-      "sleepQuality": 3.2
+      "numOunces": 62
     },
     {
       "userID": 25,
       "date": "2019/07/10",
-      "hoursSlept": 9.5,
-      "sleepQuality": 1.1
+      "numOunces": 97
     },
     {
       "userID": 26,
       "date": "2019/07/10",
-      "hoursSlept": 7.5,
-      "sleepQuality": 3.7
+      "numOunces": 80
     },
     {
       "userID": 27,
       "date": "2019/07/10",
-      "hoursSlept": 6.2,
-      "sleepQuality": 4.4
+      "numOunces": 29
     },
     {
       "userID": 28,
       "date": "2019/07/10",
-      "hoursSlept": 10.2,
-      "sleepQuality": 4
+      "numOunces": 86
     },
     {
       "userID": 29,
       "date": "2019/07/10",
-      "hoursSlept": 8,
-      "sleepQuality": 4.6
+      "numOunces": 39
     },
     {
       "userID": 30,
       "date": "2019/07/10",
-      "hoursSlept": 10.7,
-      "sleepQuality": 2.2
+      "numOunces": 61
     },
     {
       "userID": 31,
       "date": "2019/07/10",
-      "hoursSlept": 9.2,
-      "sleepQuality": 4.5
+      "numOunces": 39
     },
     {
       "userID": 32,
       "date": "2019/07/10",
-      "hoursSlept": 4.5,
-      "sleepQuality": 2.8
+      "numOunces": 34
     },
     {
       "userID": 33,
       "date": "2019/07/10",
-      "hoursSlept": 5.3,
-      "sleepQuality": 3.7
+      "numOunces": 95
     },
     {
       "userID": 34,
       "date": "2019/07/10",
-      "hoursSlept": 6.6,
-      "sleepQuality": 2.4
+      "numOunces": 88
     },
     {
       "userID": 35,
       "date": "2019/07/10",
-      "hoursSlept": 5,
-      "sleepQuality": 2.3
+      "numOunces": 86
     },
     {
       "userID": 36,
       "date": "2019/07/10",
-      "hoursSlept": 8.1,
-      "sleepQuality": 3.6
+      "numOunces": 54
     },
     {
       "userID": 37,
       "date": "2019/07/10",
-      "hoursSlept": 4,
-      "sleepQuality": 2.4
+      "numOunces": 24
     },
     {
       "userID": 38,
       "date": "2019/07/10",
-      "hoursSlept": 5,
-      "sleepQuality": 4.8
+      "numOunces": 87
     },
     {
       "userID": 39,
       "date": "2019/07/10",
-      "hoursSlept": 4.1,
-      "sleepQuality": 3.7
+      "numOunces": 28
     },
     {
       "userID": 40,
       "date": "2019/07/10",
-      "hoursSlept": 9.1,
-      "sleepQuality": 3.1
+      "numOunces": 23
     },
     {
       "userID": 41,
       "date": "2019/07/10",
-      "hoursSlept": 5.9,
-      "sleepQuality": 1.6
+      "numOunces": 83
     },
     {
       "userID": 42,
       "date": "2019/07/10",
-      "hoursSlept": 5.9,
-      "sleepQuality": 1.8
+      "numOunces": 80
     },
     {
       "userID": 43,
       "date": "2019/07/10",
-      "hoursSlept": 5.7,
-      "sleepQuality": 1.4
+      "numOunces": 31
     },
     {
       "userID": 44,
       "date": "2019/07/10",
-      "hoursSlept": 9.1,
-      "sleepQuality": 4.5
+      "numOunces": 73
     },
     {
       "userID": 45,
       "date": "2019/07/10",
-      "hoursSlept": 8.7,
-      "sleepQuality": 2.1
+      "numOunces": 60
     },
     {
       "userID": 46,
       "date": "2019/07/10",
-      "hoursSlept": 5.7,
-      "sleepQuality": 2
+      "numOunces": 92
     },
     {
       "userID": 47,
       "date": "2019/07/10",
-      "hoursSlept": 5,
-      "sleepQuality": 4.4
+      "numOunces": 23
     },
     {
       "userID": 48,
       "date": "2019/07/10",
-      "hoursSlept": 6.9,
-      "sleepQuality": 3.5
+      "numOunces": 43
     },
     {
       "userID": 49,
       "date": "2019/07/10",
-      "hoursSlept": 10.8,
-      "sleepQuality": 3.8
+      "numOunces": 97
     },
     {
       "userID": 50,
       "date": "2019/07/10",
-      "hoursSlept": 10.9,
-      "sleepQuality": 1.8
+      "numOunces": 89
     },
     {
       "userID": 1,
       "date": "2019/07/11",
-      "hoursSlept": 5,
-      "sleepQuality": 2.8
+      "numOunces": 88
     },
     {
       "userID": 2,
       "date": "2019/07/11",
-      "hoursSlept": 8.3,
-      "sleepQuality": 1.2
+      "numOunces": 75
     },
     {
       "userID": 3,
       "date": "2019/07/11",
-      "hoursSlept": 9.3,
-      "sleepQuality": 3.5
+      "numOunces": 84
     },
     {
       "userID": 4,
       "date": "2019/07/11",
-      "hoursSlept": 9.6,
-      "sleepQuality": 4.6
+      "numOunces": 96
     },
     {
       "userID": 5,
       "date": "2019/07/11",
-      "hoursSlept": 7.1,
-      "sleepQuality": 4.1
+      "numOunces": 75
     },
     {
       "userID": 6,
       "date": "2019/07/11",
-      "hoursSlept": 4.1,
-      "sleepQuality": 3.1
+      "numOunces": 32
     },
     {
       "userID": 7,
       "date": "2019/07/11",
-      "hoursSlept": 6.3,
-      "sleepQuality": 3.6
+      "numOunces": 82
     },
     {
       "userID": 8,
       "date": "2019/07/11",
-      "hoursSlept": 8.8,
-      "sleepQuality": 1
+      "numOunces": 97
     },
     {
       "userID": 9,
       "date": "2019/07/11",
-      "hoursSlept": 6.6,
-      "sleepQuality": 2.5
+      "numOunces": 81
     },
     {
       "userID": 10,
       "date": "2019/07/11",
-      "hoursSlept": 10.9,
-      "sleepQuality": 3.3
+      "numOunces": 75
     },
     {
       "userID": 11,
       "date": "2019/07/11",
-      "hoursSlept": 7.5,
-      "sleepQuality": 4.2
+      "numOunces": 27
     },
     {
       "userID": 12,
       "date": "2019/07/11",
-      "hoursSlept": 4.3,
-      "sleepQuality": 4.4
+      "numOunces": 60
     },
     {
       "userID": 13,
       "date": "2019/07/11",
-      "hoursSlept": 10.5,
-      "sleepQuality": 3.5
+      "numOunces": 86
     },
     {
       "userID": 14,
       "date": "2019/07/11",
-      "hoursSlept": 5.6,
-      "sleepQuality": 4.2
+      "numOunces": 85
     },
     {
       "userID": 15,
       "date": "2019/07/11",
-      "hoursSlept": 9.3,
-      "sleepQuality": 2.5
+      "numOunces": 71
     },
     {
       "userID": 16,
       "date": "2019/07/11",
-      "hoursSlept": 9.4,
-      "sleepQuality": 1.7
+      "numOunces": 63
     },
     {
       "userID": 17,
       "date": "2019/07/11",
-      "hoursSlept": 4.5,
-      "sleepQuality": 2.1
+      "numOunces": 72
     },
     {
       "userID": 18,
       "date": "2019/07/11",
-      "hoursSlept": 6.2,
-      "sleepQuality": 4.8
+      "numOunces": 85
     },
     {
       "userID": 19,
       "date": "2019/07/11",
-      "hoursSlept": 10.9,
-      "sleepQuality": 1.1
+      "numOunces": 59
     },
     {
       "userID": 20,
       "date": "2019/07/11",
-      "hoursSlept": 8.7,
-      "sleepQuality": 3.3
+      "numOunces": 48
     },
     {
       "userID": 21,
       "date": "2019/07/11",
-      "hoursSlept": 5.7,
-      "sleepQuality": 2.6
+      "numOunces": 51
     },
     {
       "userID": 22,
       "date": "2019/07/11",
-      "hoursSlept": 7.9,
-      "sleepQuality": 2.8
+      "numOunces": 57
     },
     {
       "userID": 23,
       "date": "2019/07/11",
-      "hoursSlept": 4.9,
-      "sleepQuality": 1.5
+      "numOunces": 100
     },
     {
       "userID": 24,
       "date": "2019/07/11",
-      "hoursSlept": 10.1,
-      "sleepQuality": 3.8
+      "numOunces": 79
     },
     {
       "userID": 25,
       "date": "2019/07/11",
-      "hoursSlept": 9.3,
-      "sleepQuality": 3.1
+      "numOunces": 23
     },
     {
       "userID": 26,
       "date": "2019/07/11",
-      "hoursSlept": 7.4,
-      "sleepQuality": 3.6
+      "numOunces": 84
     },
     {
       "userID": 27,
       "date": "2019/07/11",
-      "hoursSlept": 6.7,
-      "sleepQuality": 3.8
+      "numOunces": 31
     },
     {
       "userID": 28,
       "date": "2019/07/11",
-      "hoursSlept": 9.7,
-      "sleepQuality": 2.7
+      "numOunces": 79
     },
     {
       "userID": 29,
       "date": "2019/07/11",
-      "hoursSlept": 5.1,
-      "sleepQuality": 4.6
+      "numOunces": 33
     },
     {
       "userID": 30,
       "date": "2019/07/11",
-      "hoursSlept": 6.6,
-      "sleepQuality": 2.9
+      "numOunces": 43
     },
     {
       "userID": 31,
       "date": "2019/07/11",
-      "hoursSlept": 8.7,
-      "sleepQuality": 3.9
+      "numOunces": 32
     },
     {
       "userID": 32,
       "date": "2019/07/11",
-      "hoursSlept": 10.8,
-      "sleepQuality": 3.4
+      "numOunces": 35
     },
     {
       "userID": 33,
       "date": "2019/07/11",
-      "hoursSlept": 4.4,
-      "sleepQuality": 1.5
+      "numOunces": 94
     },
     {
       "userID": 34,
       "date": "2019/07/11",
-      "hoursSlept": 9.9,
-      "sleepQuality": 2.4
+      "numOunces": 61
     },
     {
       "userID": 35,
       "date": "2019/07/11",
-      "hoursSlept": 10.1,
-      "sleepQuality": 4.6
+      "numOunces": 62
     },
     {
       "userID": 36,
       "date": "2019/07/11",
-      "hoursSlept": 4.3,
-      "sleepQuality": 4.1
+      "numOunces": 40
     },
     {
       "userID": 37,
       "date": "2019/07/11",
-      "hoursSlept": 7.3,
-      "sleepQuality": 3.2
+      "numOunces": 79
     },
     {
       "userID": 38,
       "date": "2019/07/11",
-      "hoursSlept": 4.6,
-      "sleepQuality": 4.4
+      "numOunces": 91
     },
     {
       "userID": 39,
       "date": "2019/07/11",
-      "hoursSlept": 5.3,
-      "sleepQuality": 2.1
+      "numOunces": 41
     },
     {
       "userID": 40,
       "date": "2019/07/11",
-      "hoursSlept": 9.4,
-      "sleepQuality": 2
+      "numOunces": 22
     },
     {
       "userID": 41,
       "date": "2019/07/11",
-      "hoursSlept": 4.2,
-      "sleepQuality": 2.6
+      "numOunces": 49
     },
     {
       "userID": 42,
       "date": "2019/07/11",
-      "hoursSlept": 4.5,
-      "sleepQuality": 1.5
+      "numOunces": 90
     },
     {
       "userID": 43,
       "date": "2019/07/11",
-      "hoursSlept": 10.5,
-      "sleepQuality": 3.3
+      "numOunces": 39
     },
     {
       "userID": 44,
       "date": "2019/07/11",
-      "hoursSlept": 5.2,
-      "sleepQuality": 1.8
+      "numOunces": 83
     },
     {
       "userID": 45,
       "date": "2019/07/11",
-      "hoursSlept": 5.8,
-      "sleepQuality": 3
+      "numOunces": 86
     },
     {
       "userID": 46,
       "date": "2019/07/11",
-      "hoursSlept": 9,
-      "sleepQuality": 4.4
+      "numOunces": 71
     },
     {
       "userID": 47,
       "date": "2019/07/11",
-      "hoursSlept": 5.9,
-      "sleepQuality": 2.8
+      "numOunces": 46
     },
     {
       "userID": 48,
       "date": "2019/07/11",
-      "hoursSlept": 5,
-      "sleepQuality": 4.9
+      "numOunces": 79
     },
     {
       "userID": 49,
       "date": "2019/07/11",
-      "hoursSlept": 6.9,
-      "sleepQuality": 3.8
+      "numOunces": 80
     },
     {
       "userID": 50,
       "date": "2019/07/11",
-      "hoursSlept": 9.7,
-      "sleepQuality": 2.6
+      "numOunces": 27
     },
     {
       "userID": 1,
       "date": "2019/07/12",
-      "hoursSlept": 10.6,
-      "sleepQuality": 2.6
+      "numOunces": 88
     },
     {
       "userID": 2,
       "date": "2019/07/12",
-      "hoursSlept": 5.5,
-      "sleepQuality": 4.1
+      "numOunces": 43
     },
     {
       "userID": 3,
       "date": "2019/07/12",
-      "hoursSlept": 4.7,
-      "sleepQuality": 3.4
+      "numOunces": 77
     },
     {
       "userID": 4,
       "date": "2019/07/12",
-      "hoursSlept": 7.8,
-      "sleepQuality": 3
+      "numOunces": 53
     },
     {
       "userID": 5,
       "date": "2019/07/12",
-      "hoursSlept": 4.4,
-      "sleepQuality": 4.3
+      "numOunces": 93
     },
     {
       "userID": 6,
       "date": "2019/07/12",
-      "hoursSlept": 10,
-      "sleepQuality": 2.6
+      "numOunces": 21
     },
     {
       "userID": 7,
       "date": "2019/07/12",
-      "hoursSlept": 5.3,
-      "sleepQuality": 1.7
+      "numOunces": 64
     },
     {
       "userID": 8,
       "date": "2019/07/12",
-      "hoursSlept": 10.2,
-      "sleepQuality": 4.7
+      "numOunces": 29
     },
     {
       "userID": 9,
       "date": "2019/07/12",
-      "hoursSlept": 9,
-      "sleepQuality": 2.7
+      "numOunces": 42
     },
     {
       "userID": 10,
       "date": "2019/07/12",
-      "hoursSlept": 10.5,
-      "sleepQuality": 2.5
+      "numOunces": 92
     },
     {
       "userID": 11,
       "date": "2019/07/12",
-      "hoursSlept": 7.6,
-      "sleepQuality": 1.5
+      "numOunces": 90
     },
     {
       "userID": 12,
       "date": "2019/07/12",
-      "hoursSlept": 8.9,
-      "sleepQuality": 1.7
+      "numOunces": 71
     },
     {
       "userID": 13,
       "date": "2019/07/12",
-      "hoursSlept": 6.8,
-      "sleepQuality": 2
+      "numOunces": 78
     },
     {
       "userID": 14,
       "date": "2019/07/12",
-      "hoursSlept": 10.4,
-      "sleepQuality": 4.4
+      "numOunces": 91
     },
     {
       "userID": 15,
       "date": "2019/07/12",
-      "hoursSlept": 4.3,
-      "sleepQuality": 4.3
+      "numOunces": 22
     },
     {
       "userID": 16,
       "date": "2019/07/12",
-      "hoursSlept": 6.5,
-      "sleepQuality": 3.4
+      "numOunces": 26
     },
     {
       "userID": 17,
       "date": "2019/07/12",
-      "hoursSlept": 7,
-      "sleepQuality": 1.8
+      "numOunces": 85
     },
     {
       "userID": 18,
       "date": "2019/07/12",
-      "hoursSlept": 4.3,
-      "sleepQuality": 3.3
+      "numOunces": 74
     },
     {
       "userID": 19,
       "date": "2019/07/12",
-      "hoursSlept": 6.1,
-      "sleepQuality": 2.6
+      "numOunces": 51
     },
     {
       "userID": 20,
       "date": "2019/07/12",
-      "hoursSlept": 4.2,
-      "sleepQuality": 4.5
+      "numOunces": 26
     },
     {
       "userID": 21,
       "date": "2019/07/12",
-      "hoursSlept": 7.8,
-      "sleepQuality": 2.4
+      "numOunces": 85
     },
     {
       "userID": 22,
       "date": "2019/07/12",
-      "hoursSlept": 9.9,
-      "sleepQuality": 4.9
+      "numOunces": 29
     },
     {
       "userID": 23,
       "date": "2019/07/12",
-      "hoursSlept": 7.7,
-      "sleepQuality": 4.8
+      "numOunces": 55
     },
     {
       "userID": 24,
       "date": "2019/07/12",
-      "hoursSlept": 7.4,
-      "sleepQuality": 4.2
+      "numOunces": 33
     },
     {
       "userID": 25,
       "date": "2019/07/12",
-      "hoursSlept": 6.7,
-      "sleepQuality": 4
+      "numOunces": 75
     },
     {
       "userID": 26,
       "date": "2019/07/12",
-      "hoursSlept": 9.4,
-      "sleepQuality": 3.9
+      "numOunces": 34
     },
     {
       "userID": 27,
       "date": "2019/07/12",
-      "hoursSlept": 9.3,
-      "sleepQuality": 3.4
+      "numOunces": 40
     },
     {
       "userID": 28,
       "date": "2019/07/12",
-      "hoursSlept": 4.2,
-      "sleepQuality": 4.8
+      "numOunces": 68
     },
     {
       "userID": 29,
       "date": "2019/07/12",
-      "hoursSlept": 10.6,
-      "sleepQuality": 4.7
+      "numOunces": 57
     },
     {
       "userID": 30,
       "date": "2019/07/12",
-      "hoursSlept": 5.6,
-      "sleepQuality": 1.6
+      "numOunces": 35
     },
     {
       "userID": 31,
       "date": "2019/07/12",
-      "hoursSlept": 4.7,
-      "sleepQuality": 2.1
+      "numOunces": 49
     },
     {
       "userID": 32,
       "date": "2019/07/12",
-      "hoursSlept": 10,
-      "sleepQuality": 2.4
+      "numOunces": 53
     },
     {
       "userID": 33,
       "date": "2019/07/12",
-      "hoursSlept": 7.3,
-      "sleepQuality": 3.1
+      "numOunces": 43
     },
     {
       "userID": 34,
       "date": "2019/07/12",
-      "hoursSlept": 7.7,
-      "sleepQuality": 1.4
+      "numOunces": 71
     },
     {
       "userID": 35,
       "date": "2019/07/12",
-      "hoursSlept": 9.8,
-      "sleepQuality": 2.7
+      "numOunces": 45
     },
     {
       "userID": 36,
       "date": "2019/07/12",
-      "hoursSlept": 8.5,
-      "sleepQuality": 3.4
+      "numOunces": 89
     },
     {
       "userID": 37,
       "date": "2019/07/12",
-      "hoursSlept": 10.3,
-      "sleepQuality": 2.2
+      "numOunces": 22
     },
     {
       "userID": 38,
       "date": "2019/07/12",
-      "hoursSlept": 7.8,
-      "sleepQuality": 2.1
+      "numOunces": 29
     },
     {
       "userID": 39,
       "date": "2019/07/12",
-      "hoursSlept": 6.1,
-      "sleepQuality": 4.4
+      "numOunces": 99
     },
     {
       "userID": 40,
       "date": "2019/07/12",
-      "hoursSlept": 6,
-      "sleepQuality": 2
+      "numOunces": 65
     },
     {
       "userID": 41,
       "date": "2019/07/12",
-      "hoursSlept": 5.7,
-      "sleepQuality": 3.3
+      "numOunces": 21
     },
     {
       "userID": 42,
       "date": "2019/07/12",
-      "hoursSlept": 4.1,
-      "sleepQuality": 4.6
+      "numOunces": 96
     },
     {
       "userID": 43,
       "date": "2019/07/12",
-      "hoursSlept": 6.7,
-      "sleepQuality": 2.7
+      "numOunces": 55
     },
     {
       "userID": 44,
       "date": "2019/07/12",
-      "hoursSlept": 9.4,
-      "sleepQuality": 4
+      "numOunces": 80
     },
     {
       "userID": 45,
       "date": "2019/07/12",
-      "hoursSlept": 5.6,
-      "sleepQuality": 1.1
+      "numOunces": 22
     },
     {
       "userID": 46,
       "date": "2019/07/12",
-      "hoursSlept": 7.7,
-      "sleepQuality": 4.2
+      "numOunces": 40
     },
     {
       "userID": 47,
       "date": "2019/07/12",
-      "hoursSlept": 9.4,
-      "sleepQuality": 4.4
+      "numOunces": 82
     },
     {
       "userID": 48,
       "date": "2019/07/12",
-      "hoursSlept": 8.4,
-      "sleepQuality": 2.4
+      "numOunces": 36
     },
     {
       "userID": 49,
       "date": "2019/07/12",
-      "hoursSlept": 7.5,
-      "sleepQuality": 4.5
+      "numOunces": 91
     },
     {
       "userID": 50,
       "date": "2019/07/12",
-      "hoursSlept": 6.8,
-      "sleepQuality": 4.1
+      "numOunces": 37
     },
     {
       "userID": 1,
       "date": "2019/07/13",
-      "hoursSlept": 10.3,
-      "sleepQuality": 3.1
+      "numOunces": 54
     },
     {
       "userID": 2,
       "date": "2019/07/13",
-      "hoursSlept": 9.4,
-      "sleepQuality": 4
+      "numOunces": 23
     },
     {
       "userID": 3,
       "date": "2019/07/13",
-      "hoursSlept": 9.5,
-      "sleepQuality": 1.4
+      "numOunces": 31
     },
     {
       "userID": 4,
       "date": "2019/07/13",
-      "hoursSlept": 10.6,
-      "sleepQuality": 1.5
+      "numOunces": 50
     },
     {
       "userID": 5,
       "date": "2019/07/13",
-      "hoursSlept": 8.9,
-      "sleepQuality": 2.2
+      "numOunces": 32
     },
     {
       "userID": 6,
       "date": "2019/07/13",
-      "hoursSlept": 4.9,
-      "sleepQuality": 2.4
+      "numOunces": 90
     },
     {
       "userID": 7,
       "date": "2019/07/13",
-      "hoursSlept": 9.3,
-      "sleepQuality": 2.6
+      "numOunces": 59
     },
     {
       "userID": 8,
       "date": "2019/07/13",
-      "hoursSlept": 7.6,
-      "sleepQuality": 1.6
+      "numOunces": 47
     },
     {
       "userID": 9,
       "date": "2019/07/13",
-      "hoursSlept": 10.1,
-      "sleepQuality": 2.7
+      "numOunces": 41
     },
     {
       "userID": 10,
       "date": "2019/07/13",
-      "hoursSlept": 7.6,
-      "sleepQuality": 3.1
+      "numOunces": 62
     },
     {
       "userID": 11,
       "date": "2019/07/13",
-      "hoursSlept": 9.6,
-      "sleepQuality": 4.1
+      "numOunces": 45
     },
     {
       "userID": 12,
       "date": "2019/07/13",
-      "hoursSlept": 7.3,
-      "sleepQuality": 4
+      "numOunces": 37
     },
     {
       "userID": 13,
       "date": "2019/07/13",
-      "hoursSlept": 6.9,
-      "sleepQuality": 4.4
+      "numOunces": 68
     },
     {
       "userID": 14,
       "date": "2019/07/13",
-      "hoursSlept": 9.9,
-      "sleepQuality": 1.5
+      "numOunces": 53
     },
     {
       "userID": 15,
       "date": "2019/07/13",
-      "hoursSlept": 9.1,
-      "sleepQuality": 3.7
+      "numOunces": 96
     },
     {
       "userID": 16,
       "date": "2019/07/13",
-      "hoursSlept": 4.3,
-      "sleepQuality": 4.1
+      "numOunces": 95
     },
     {
       "userID": 17,
       "date": "2019/07/13",
-      "hoursSlept": 4.7,
-      "sleepQuality": 3
+      "numOunces": 77
     },
     {
       "userID": 18,
       "date": "2019/07/13",
-      "hoursSlept": 4.8,
-      "sleepQuality": 1.2
+      "numOunces": 74
     },
     {
       "userID": 19,
       "date": "2019/07/13",
-      "hoursSlept": 10.2,
-      "sleepQuality": 4
+      "numOunces": 74
     },
     {
       "userID": 20,
       "date": "2019/07/13",
-      "hoursSlept": 9.4,
-      "sleepQuality": 4.9
+      "numOunces": 45
     },
     {
       "userID": 21,
       "date": "2019/07/13",
-      "hoursSlept": 6.3,
-      "sleepQuality": 1.5
+      "numOunces": 63
     },
     {
       "userID": 22,
       "date": "2019/07/13",
-      "hoursSlept": 9.2,
-      "sleepQuality": 1.7
+      "numOunces": 58
     },
     {
       "userID": 23,
       "date": "2019/07/13",
-      "hoursSlept": 9.7,
-      "sleepQuality": 2.5
+      "numOunces": 99
     },
     {
       "userID": 24,
       "date": "2019/07/13",
-      "hoursSlept": 9,
-      "sleepQuality": 4.5
+      "numOunces": 47
     },
     {
       "userID": 25,
       "date": "2019/07/13",
-      "hoursSlept": 10.1,
-      "sleepQuality": 3.9
+      "numOunces": 63
     },
     {
       "userID": 26,
       "date": "2019/07/13",
-      "hoursSlept": 5.8,
-      "sleepQuality": 4.5
+      "numOunces": 99
     },
     {
       "userID": 27,
       "date": "2019/07/13",
-      "hoursSlept": 9.7,
-      "sleepQuality": 2.5
+      "numOunces": 64
     },
     {
       "userID": 28,
       "date": "2019/07/13",
-      "hoursSlept": 5.9,
-      "sleepQuality": 2.2
+      "numOunces": 53
     },
     {
       "userID": 29,
       "date": "2019/07/13",
-      "hoursSlept": 7.6,
-      "sleepQuality": 1.7
+      "numOunces": 51
     },
     {
       "userID": 30,
       "date": "2019/07/13",
-      "hoursSlept": 8.3,
-      "sleepQuality": 4.2
+      "numOunces": 84
     },
     {
       "userID": 31,
       "date": "2019/07/13",
-      "hoursSlept": 10.6,
-      "sleepQuality": 4.6
+      "numOunces": 86
     },
     {
       "userID": 32,
       "date": "2019/07/13",
-      "hoursSlept": 9.5,
-      "sleepQuality": 2.4
+      "numOunces": 68
     },
     {
       "userID": 33,
       "date": "2019/07/13",
-      "hoursSlept": 9.9,
-      "sleepQuality": 1.8
+      "numOunces": 32
     },
     {
       "userID": 34,
       "date": "2019/07/13",
-      "hoursSlept": 4.2,
-      "sleepQuality": 4.5
+      "numOunces": 63
     },
     {
       "userID": 35,
       "date": "2019/07/13",
-      "hoursSlept": 7.8,
-      "sleepQuality": 4.3
+      "numOunces": 42
     },
     {
       "userID": 36,
       "date": "2019/07/13",
-      "hoursSlept": 6.1,
-      "sleepQuality": 3.6
+      "numOunces": 52
     },
     {
       "userID": 37,
       "date": "2019/07/13",
-      "hoursSlept": 7.7,
-      "sleepQuality": 4.2
+      "numOunces": 66
     },
     {
       "userID": 38,
       "date": "2019/07/13",
-      "hoursSlept": 10.1,
-      "sleepQuality": 2.1
+      "numOunces": 29
     },
     {
       "userID": 39,
       "date": "2019/07/13",
-      "hoursSlept": 4.6,
-      "sleepQuality": 2.3
+      "numOunces": 89
     },
     {
       "userID": 40,
       "date": "2019/07/13",
-      "hoursSlept": 9.4,
-      "sleepQuality": 3.5
+      "numOunces": 54
     },
     {
       "userID": 41,
       "date": "2019/07/13",
-      "hoursSlept": 8.2,
-      "sleepQuality": 1.5
+      "numOunces": 59
     },
     {
       "userID": 42,
       "date": "2019/07/13",
-      "hoursSlept": 9.8,
-      "sleepQuality": 3
+      "numOunces": 61
     },
     {
       "userID": 43,
       "date": "2019/07/13",
-      "hoursSlept": 6.7,
-      "sleepQuality": 3.9
+      "numOunces": 77
     },
     {
       "userID": 44,
       "date": "2019/07/13",
-      "hoursSlept": 6.8,
-      "sleepQuality": 4.3
+      "numOunces": 26
     },
     {
       "userID": 45,
       "date": "2019/07/13",
-      "hoursSlept": 5.5,
-      "sleepQuality": 4.4
+      "numOunces": 24
     },
     {
       "userID": 46,
       "date": "2019/07/13",
-      "hoursSlept": 9.8,
-      "sleepQuality": 3.2
+      "numOunces": 83
     },
     {
       "userID": 47,
       "date": "2019/07/13",
-      "hoursSlept": 9.8,
-      "sleepQuality": 1.9
+      "numOunces": 98
     },
     {
       "userID": 48,
       "date": "2019/07/13",
-      "hoursSlept": 9.3,
-      "sleepQuality": 1
+      "numOunces": 51
     },
     {
       "userID": 49,
       "date": "2019/07/13",
-      "hoursSlept": 9.5,
-      "sleepQuality": 3.7
+      "numOunces": 26
     },
     {
       "userID": 50,
       "date": "2019/07/13",
-      "hoursSlept": 5.3,
-      "sleepQuality": 4.9
+      "numOunces": 78
     },
     {
       "userID": 1,
       "date": "2019/07/14",
-      "hoursSlept": 10.6,
-      "sleepQuality": 2.6
+      "numOunces": 27
     },
     {
       "userID": 2,
       "date": "2019/07/14",
-      "hoursSlept": 4.9,
-      "sleepQuality": 2.7
+      "numOunces": 58
     },
     {
       "userID": 3,
       "date": "2019/07/14",
-      "hoursSlept": 4.6,
-      "sleepQuality": 2.9
+      "numOunces": 47
     },
     {
       "userID": 4,
       "date": "2019/07/14",
-      "hoursSlept": 4.3,
-      "sleepQuality": 3.6
+      "numOunces": 63
     },
     {
       "userID": 5,
       "date": "2019/07/14",
-      "hoursSlept": 9.2,
-      "sleepQuality": 2.5
+      "numOunces": 85
     },
     {
       "userID": 6,
       "date": "2019/07/14",
-      "hoursSlept": 8.4,
-      "sleepQuality": 4.2
+      "numOunces": 32
     },
     {
       "userID": 7,
       "date": "2019/07/14",
-      "hoursSlept": 8.5,
-      "sleepQuality": 2.9
+      "numOunces": 45
     },
     {
       "userID": 8,
       "date": "2019/07/14",
-      "hoursSlept": 7.7,
-      "sleepQuality": 4.9
+      "numOunces": 48
     },
     {
       "userID": 9,
       "date": "2019/07/14",
-      "hoursSlept": 9.6,
-      "sleepQuality": 3.4
+      "numOunces": 45
     },
     {
       "userID": 10,
       "date": "2019/07/14",
-      "hoursSlept": 9.5,
-      "sleepQuality": 2.8
+      "numOunces": 25
     },
     {
       "userID": 11,
       "date": "2019/07/14",
-      "hoursSlept": 10.6,
-      "sleepQuality": 3.2
+      "numOunces": 72
     },
     {
       "userID": 12,
       "date": "2019/07/14",
-      "hoursSlept": 8.2,
-      "sleepQuality": 4.8
+      "numOunces": 97
     },
     {
       "userID": 13,
       "date": "2019/07/14",
-      "hoursSlept": 11,
-      "sleepQuality": 4.2
+      "numOunces": 99
     },
     {
       "userID": 14,
       "date": "2019/07/14",
-      "hoursSlept": 10.4,
-      "sleepQuality": 1.6
+      "numOunces": 56
     },
     {
       "userID": 15,
       "date": "2019/07/14",
-      "hoursSlept": 8,
-      "sleepQuality": 3.8
+      "numOunces": 83
     },
     {
       "userID": 16,
       "date": "2019/07/14",
-      "hoursSlept": 10.7,
-      "sleepQuality": 3.2
+      "numOunces": 38
     },
     {
       "userID": 17,
       "date": "2019/07/14",
-      "hoursSlept": 9.2,
-      "sleepQuality": 4
+      "numOunces": 30
     },
     {
       "userID": 18,
       "date": "2019/07/14",
-      "hoursSlept": 8.7,
-      "sleepQuality": 1.3
+      "numOunces": 24
     },
     {
       "userID": 19,
       "date": "2019/07/14",
-      "hoursSlept": 10.9,
-      "sleepQuality": 3
+      "numOunces": 54
     },
     {
       "userID": 20,
       "date": "2019/07/14",
-      "hoursSlept": 6.1,
-      "sleepQuality": 3.8
+      "numOunces": 46
     },
     {
       "userID": 21,
       "date": "2019/07/14",
-      "hoursSlept": 11,
-      "sleepQuality": 3.5
+      "numOunces": 23
     },
     {
       "userID": 22,
       "date": "2019/07/14",
-      "hoursSlept": 6.2,
-      "sleepQuality": 4.8
+      "numOunces": 23
     },
     {
       "userID": 23,
       "date": "2019/07/14",
-      "hoursSlept": 8.3,
-      "sleepQuality": 4.4
+      "numOunces": 85
     },
     {
       "userID": 24,
       "date": "2019/07/14",
-      "hoursSlept": 9.9,
-      "sleepQuality": 3.6
+      "numOunces": 40
     },
     {
       "userID": 25,
       "date": "2019/07/14",
-      "hoursSlept": 5.3,
-      "sleepQuality": 3.6
+      "numOunces": 84
     },
     {
       "userID": 26,
       "date": "2019/07/14",
-      "hoursSlept": 10.1,
-      "sleepQuality": 2.2
+      "numOunces": 83
     },
     {
       "userID": 27,
       "date": "2019/07/14",
-      "hoursSlept": 8.9,
-      "sleepQuality": 2.2
+      "numOunces": 95
     },
     {
       "userID": 28,
       "date": "2019/07/14",
-      "hoursSlept": 6.9,
-      "sleepQuality": 2.2
+      "numOunces": 66
     },
     {
       "userID": 29,
       "date": "2019/07/14",
-      "hoursSlept": 6.5,
-      "sleepQuality": 4
+      "numOunces": 26
     },
     {
       "userID": 30,
       "date": "2019/07/14",
-      "hoursSlept": 10.8,
-      "sleepQuality": 1.3
+      "numOunces": 46
     },
     {
       "userID": 31,
       "date": "2019/07/14",
-      "hoursSlept": 7.8,
-      "sleepQuality": 1.4
+      "numOunces": 64
     },
     {
       "userID": 32,
       "date": "2019/07/14",
-      "hoursSlept": 7.2,
-      "sleepQuality": 4.4
+      "numOunces": 24
     },
     {
       "userID": 33,
       "date": "2019/07/14",
-      "hoursSlept": 8.9,
-      "sleepQuality": 3.2
+      "numOunces": 29
     },
     {
       "userID": 34,
       "date": "2019/07/14",
-      "hoursSlept": 9.9,
-      "sleepQuality": 3.9
+      "numOunces": 58
     },
     {
       "userID": 35,
       "date": "2019/07/14",
-      "hoursSlept": 7.6,
-      "sleepQuality": 2.5
+      "numOunces": 51
     },
     {
       "userID": 36,
       "date": "2019/07/14",
-      "hoursSlept": 8.7,
-      "sleepQuality": 4.4
+      "numOunces": 49
     },
     {
       "userID": 37,
       "date": "2019/07/14",
-      "hoursSlept": 5.7,
-      "sleepQuality": 2.6
+      "numOunces": 58
     },
     {
       "userID": 38,
       "date": "2019/07/14",
-      "hoursSlept": 10,
-      "sleepQuality": 1.1
+      "numOunces": 61
     },
     {
       "userID": 39,
       "date": "2019/07/14",
-      "hoursSlept": 6,
-      "sleepQuality": 3.4
+      "numOunces": 25
     },
     {
       "userID": 40,
       "date": "2019/07/14",
-      "hoursSlept": 8.4,
-      "sleepQuality": 3
+      "numOunces": 66
     },
     {
       "userID": 41,
       "date": "2019/07/14",
-      "hoursSlept": 10.5,
-      "sleepQuality": 1.6
+      "numOunces": 26
     },
     {
       "userID": 42,
       "date": "2019/07/14",
-      "hoursSlept": 4.3,
-      "sleepQuality": 1.8
+      "numOunces": 95
     },
     {
       "userID": 43,
       "date": "2019/07/14",
-      "hoursSlept": 8.9,
-      "sleepQuality": 3.3
+      "numOunces": 32
     },
     {
       "userID": 44,
       "date": "2019/07/14",
-      "hoursSlept": 9.5,
-      "sleepQuality": 4.9
+      "numOunces": 35
     },
     {
       "userID": 45,
       "date": "2019/07/14",
-      "hoursSlept": 8.2,
-      "sleepQuality": 3.2
+      "numOunces": 89
     },
     {
       "userID": 46,
       "date": "2019/07/14",
-      "hoursSlept": 5,
-      "sleepQuality": 2.7
+      "numOunces": 55
     },
     {
       "userID": 47,
       "date": "2019/07/14",
-      "hoursSlept": 8.3,
-      "sleepQuality": 3.4
+      "numOunces": 67
     },
     {
       "userID": 48,
       "date": "2019/07/14",
-      "hoursSlept": 10,
-      "sleepQuality": 2.6
+      "numOunces": 44
     },
     {
       "userID": 49,
       "date": "2019/07/14",
-      "hoursSlept": 8.6,
-      "sleepQuality": 1.5
+      "numOunces": 73
     },
     {
       "userID": 50,
       "date": "2019/07/14",
-      "hoursSlept": 9.3,
-      "sleepQuality": 4.5
+      "numOunces": 96
     },
     {
       "userID": 1,
       "date": "2019/07/15",
-      "hoursSlept": 9.2,
-      "sleepQuality": 1.7
+      "numOunces": 84
     },
     {
       "userID": 2,
       "date": "2019/07/15",
-      "hoursSlept": 9.3,
-      "sleepQuality": 4.6
+      "numOunces": 60
     },
     {
       "userID": 3,
       "date": "2019/07/15",
-      "hoursSlept": 8.5,
-      "sleepQuality": 1.1
+      "numOunces": 70
     },
     {
       "userID": 4,
       "date": "2019/07/15",
-      "hoursSlept": 6.4,
-      "sleepQuality": 3.6
+      "numOunces": 23
     },
     {
       "userID": 5,
       "date": "2019/07/15",
-      "hoursSlept": 10.9,
-      "sleepQuality": 3.7
+      "numOunces": 38
     },
     {
       "userID": 6,
       "date": "2019/07/15",
-      "hoursSlept": 7.2,
-      "sleepQuality": 4.2
+      "numOunces": 98
     },
     {
       "userID": 7,
       "date": "2019/07/15",
-      "hoursSlept": 10.5,
-      "sleepQuality": 3.9
+      "numOunces": 21
     },
     {
       "userID": 8,
       "date": "2019/07/15",
-      "hoursSlept": 4.8,
-      "sleepQuality": 3.3
+      "numOunces": 63
     },
     {
       "userID": 9,
       "date": "2019/07/15",
-      "hoursSlept": 9.3,
-      "sleepQuality": 3
+      "numOunces": 94
     },
     {
       "userID": 10,
       "date": "2019/07/15",
-      "hoursSlept": 6.1,
-      "sleepQuality": 1.3
+      "numOunces": 54
     },
     {
       "userID": 11,
       "date": "2019/07/15",
-      "hoursSlept": 6.4,
-      "sleepQuality": 2.9
+      "numOunces": 79
     },
     {
       "userID": 12,
       "date": "2019/07/15",
-      "hoursSlept": 6.8,
-      "sleepQuality": 4.5
+      "numOunces": 62
     },
     {
       "userID": 13,
       "date": "2019/07/15",
-      "hoursSlept": 9.1,
-      "sleepQuality": 2.3
+      "numOunces": 41
     },
     {
       "userID": 14,
       "date": "2019/07/15",
-      "hoursSlept": 6,
-      "sleepQuality": 1
+      "numOunces": 72
     },
     {
       "userID": 15,
       "date": "2019/07/15",
-      "hoursSlept": 9,
-      "sleepQuality": 2.6
+      "numOunces": 68
     },
     {
       "userID": 16,
       "date": "2019/07/15",
-      "hoursSlept": 6.9,
-      "sleepQuality": 4.7
+      "numOunces": 35
     },
     {
       "userID": 17,
       "date": "2019/07/15",
-      "hoursSlept": 4.6,
-      "sleepQuality": 1.5
+      "numOunces": 21
     },
     {
       "userID": 18,
       "date": "2019/07/15",
-      "hoursSlept": 4.8,
-      "sleepQuality": 4.3
+      "numOunces": 40
     },
     {
       "userID": 19,
       "date": "2019/07/15",
-      "hoursSlept": 5.7,
-      "sleepQuality": 1.7
+      "numOunces": 75
     },
     {
       "userID": 20,
       "date": "2019/07/15",
-      "hoursSlept": 6.7,
-      "sleepQuality": 3.6
+      "numOunces": 68
     },
     {
       "userID": 21,
       "date": "2019/07/15",
-      "hoursSlept": 10.1,
-      "sleepQuality": 2.4
+      "numOunces": 43
     },
     {
       "userID": 22,
       "date": "2019/07/15",
-      "hoursSlept": 7.9,
-      "sleepQuality": 3.6
+      "numOunces": 74
     },
     {
       "userID": 23,
       "date": "2019/07/15",
-      "hoursSlept": 10.5,
-      "sleepQuality": 4.5
+      "numOunces": 45
     },
     {
       "userID": 24,
       "date": "2019/07/15",
-      "hoursSlept": 10.6,
-      "sleepQuality": 1.4
+      "numOunces": 91
     },
     {
       "userID": 25,
       "date": "2019/07/15",
-      "hoursSlept": 8.8,
-      "sleepQuality": 1.2
+      "numOunces": 84
     },
     {
       "userID": 26,
       "date": "2019/07/15",
-      "hoursSlept": 9,
-      "sleepQuality": 4.6
+      "numOunces": 33
     },
     {
       "userID": 27,
       "date": "2019/07/15",
-      "hoursSlept": 9.7,
-      "sleepQuality": 2.1
+      "numOunces": 77
     },
     {
       "userID": 28,
       "date": "2019/07/15",
-      "hoursSlept": 8.7,
-      "sleepQuality": 2.8
+      "numOunces": 28
     },
     {
       "userID": 29,
       "date": "2019/07/15",
-      "hoursSlept": 7,
-      "sleepQuality": 2.2
+      "numOunces": 23
     },
     {
       "userID": 30,
       "date": "2019/07/15",
-      "hoursSlept": 7.7,
-      "sleepQuality": 4.6
+      "numOunces": 52
     },
     {
       "userID": 31,
       "date": "2019/07/15",
-      "hoursSlept": 7.7,
-      "sleepQuality": 4.6
+      "numOunces": 45
     },
     {
       "userID": 32,
       "date": "2019/07/15",
-      "hoursSlept": 8.1,
-      "sleepQuality": 1.6
+      "numOunces": 34
     },
     {
       "userID": 33,
       "date": "2019/07/15",
-      "hoursSlept": 5,
-      "sleepQuality": 2.2
+      "numOunces": 41
     },
     {
       "userID": 34,
       "date": "2019/07/15",
-      "hoursSlept": 5.9,
-      "sleepQuality": 1.9
+      "numOunces": 84
     },
     {
       "userID": 35,
       "date": "2019/07/15",
-      "hoursSlept": 4.7,
-      "sleepQuality": 4.3
+      "numOunces": 91
     },
     {
       "userID": 36,
       "date": "2019/07/15",
-      "hoursSlept": 7.5,
-      "sleepQuality": 4.8
+      "numOunces": 74
     },
     {
       "userID": 37,
       "date": "2019/07/15",
-      "hoursSlept": 10.1,
-      "sleepQuality": 1.7
+      "numOunces": 30
     },
     {
       "userID": 38,
       "date": "2019/07/15",
-      "hoursSlept": 4.3,
-      "sleepQuality": 2.1
+      "numOunces": 46
     },
     {
       "userID": 39,
       "date": "2019/07/15",
-      "hoursSlept": 10.8,
-      "sleepQuality": 2.2
+      "numOunces": 69
     },
     {
       "userID": 40,
       "date": "2019/07/15",
-      "hoursSlept": 10.2,
-      "sleepQuality": 1
+      "numOunces": 31
     },
     {
       "userID": 41,
       "date": "2019/07/15",
-      "hoursSlept": 11,
-      "sleepQuality": 3.9
+      "numOunces": 94
     },
     {
       "userID": 42,
       "date": "2019/07/15",
-      "hoursSlept": 11,
-      "sleepQuality": 2.3
+      "numOunces": 97
     },
     {
       "userID": 43,
       "date": "2019/07/15",
-      "hoursSlept": 9.7,
-      "sleepQuality": 4
+      "numOunces": 56
     },
     {
       "userID": 44,
       "date": "2019/07/15",
-      "hoursSlept": 4.4,
-      "sleepQuality": 4.3
+      "numOunces": 45
     },
     {
       "userID": 45,
       "date": "2019/07/15",
-      "hoursSlept": 9.9,
-      "sleepQuality": 1.5
+      "numOunces": 80
     },
     {
       "userID": 46,
       "date": "2019/07/15",
-      "hoursSlept": 9.8,
-      "sleepQuality": 1.1
+      "numOunces": 85
     },
     {
       "userID": 47,
       "date": "2019/07/15",
-      "hoursSlept": 8.6,
-      "sleepQuality": 3.5
+      "numOunces": 36
     },
     {
       "userID": 48,
       "date": "2019/07/15",
-      "hoursSlept": 6.8,
-      "sleepQuality": 3.6
+      "numOunces": 98
     },
     {
       "userID": 49,
       "date": "2019/07/15",
-      "hoursSlept": 8.9,
-      "sleepQuality": 2.4
+      "numOunces": 24
     },
     {
       "userID": 50,
       "date": "2019/07/15",
-      "hoursSlept": 8,
-      "sleepQuality": 4.4
+      "numOunces": 98
     },
     {
       "userID": 1,
       "date": "2019/07/16",
-      "hoursSlept": 8.1,
-      "sleepQuality": 4.9
+      "numOunces": 21
     },
     {
       "userID": 2,
       "date": "2019/07/16",
-      "hoursSlept": 8.7,
-      "sleepQuality": 2.2
+      "numOunces": 92
     },
     {
       "userID": 3,
       "date": "2019/07/16",
-      "hoursSlept": 8.5,
-      "sleepQuality": 1.9
+      "numOunces": 71
     },
     {
       "userID": 4,
       "date": "2019/07/16",
-      "hoursSlept": 5.9,
-      "sleepQuality": 2.3
+      "numOunces": 67
     },
     {
       "userID": 5,
       "date": "2019/07/16",
-      "hoursSlept": 6.1,
-      "sleepQuality": 3.6
+      "numOunces": 29
     },
     {
       "userID": 6,
       "date": "2019/07/16",
-      "hoursSlept": 5.8,
-      "sleepQuality": 2.2
+      "numOunces": 77
     },
     {
       "userID": 7,
       "date": "2019/07/16",
-      "hoursSlept": 9.9,
-      "sleepQuality": 2
+      "numOunces": 45
     },
     {
       "userID": 8,
       "date": "2019/07/16",
-      "hoursSlept": 10.3,
-      "sleepQuality": 3.8
+      "numOunces": 40
     },
     {
       "userID": 9,
       "date": "2019/07/16",
-      "hoursSlept": 7.2,
-      "sleepQuality": 4.9
+      "numOunces": 78
     },
     {
       "userID": 10,
       "date": "2019/07/16",
-      "hoursSlept": 8.4,
-      "sleepQuality": 1.4
+      "numOunces": 50
     },
     {
       "userID": 11,
       "date": "2019/07/16",
-      "hoursSlept": 11,
-      "sleepQuality": 4.3
+      "numOunces": 96
     },
     {
       "userID": 12,
       "date": "2019/07/16",
-      "hoursSlept": 7.4,
-      "sleepQuality": 3.3
+      "numOunces": 77
     },
     {
       "userID": 13,
       "date": "2019/07/16",
-      "hoursSlept": 9,
-      "sleepQuality": 1.9
+      "numOunces": 63
     },
     {
       "userID": 14,
       "date": "2019/07/16",
-      "hoursSlept": 9.8,
-      "sleepQuality": 2
+      "numOunces": 26
     },
     {
       "userID": 15,
       "date": "2019/07/16",
-      "hoursSlept": 5.1,
-      "sleepQuality": 4.5
+      "numOunces": 28
     },
     {
       "userID": 16,
       "date": "2019/07/16",
-      "hoursSlept": 5,
-      "sleepQuality": 2.3
+      "numOunces": 85
     },
     {
       "userID": 17,
       "date": "2019/07/16",
-      "hoursSlept": 5,
-      "sleepQuality": 1.9
+      "numOunces": 80
     },
     {
       "userID": 18,
       "date": "2019/07/16",
-      "hoursSlept": 7.6,
-      "sleepQuality": 4
+      "numOunces": 67
     },
     {
       "userID": 19,
       "date": "2019/07/16",
-      "hoursSlept": 5.3,
-      "sleepQuality": 3.5
+      "numOunces": 38
     },
     {
       "userID": 20,
       "date": "2019/07/16",
-      "hoursSlept": 9.5,
-      "sleepQuality": 1.7
+      "numOunces": 27
     },
     {
       "userID": 21,
       "date": "2019/07/16",
-      "hoursSlept": 6.9,
-      "sleepQuality": 2.7
+      "numOunces": 96
     },
     {
       "userID": 22,
       "date": "2019/07/16",
-      "hoursSlept": 6.1,
-      "sleepQuality": 4.7
+      "numOunces": 29
     },
     {
       "userID": 23,
       "date": "2019/07/16",
-      "hoursSlept": 4.8,
-      "sleepQuality": 2.3
+      "numOunces": 50
     },
     {
       "userID": 24,
       "date": "2019/07/16",
-      "hoursSlept": 4.1,
-      "sleepQuality": 3.1
+      "numOunces": 78
     },
     {
       "userID": 25,
       "date": "2019/07/16",
-      "hoursSlept": 9.6,
-      "sleepQuality": 3.2
+      "numOunces": 45
     },
     {
       "userID": 26,
       "date": "2019/07/16",
-      "hoursSlept": 9.8,
-      "sleepQuality": 1.8
+      "numOunces": 87
     },
     {
       "userID": 27,
       "date": "2019/07/16",
-      "hoursSlept": 5.8,
-      "sleepQuality": 1.8
+      "numOunces": 34
     },
     {
       "userID": 28,
       "date": "2019/07/16",
-      "hoursSlept": 6,
-      "sleepQuality": 4.1
+      "numOunces": 36
     },
     {
       "userID": 29,
       "date": "2019/07/16",
-      "hoursSlept": 4.2,
-      "sleepQuality": 2.8
+      "numOunces": 61
     },
     {
       "userID": 30,
       "date": "2019/07/16",
-      "hoursSlept": 10,
-      "sleepQuality": 2.9
+      "numOunces": 65
     },
     {
       "userID": 31,
       "date": "2019/07/16",
-      "hoursSlept": 10.9,
-      "sleepQuality": 4.6
+      "numOunces": 27
     },
     {
       "userID": 32,
       "date": "2019/07/16",
-      "hoursSlept": 7.7,
-      "sleepQuality": 2.8
+      "numOunces": 67
     },
     {
       "userID": 33,
       "date": "2019/07/16",
-      "hoursSlept": 6.1,
-      "sleepQuality": 2.4
+      "numOunces": 32
     },
     {
       "userID": 34,
       "date": "2019/07/16",
-      "hoursSlept": 4.8,
-      "sleepQuality": 4.5
+      "numOunces": 41
     },
     {
       "userID": 35,
       "date": "2019/07/16",
-      "hoursSlept": 8.2,
-      "sleepQuality": 1.3
+      "numOunces": 54
     },
     {
       "userID": 36,
       "date": "2019/07/16",
-      "hoursSlept": 6.6,
-      "sleepQuality": 3.5
+      "numOunces": 98
     },
     {
       "userID": 37,
       "date": "2019/07/16",
-      "hoursSlept": 8.4,
-      "sleepQuality": 4.1
+      "numOunces": 78
     },
     {
       "userID": 38,
       "date": "2019/07/16",
-      "hoursSlept": 4.5,
-      "sleepQuality": 3.5
+      "numOunces": 46
     },
     {
       "userID": 39,
       "date": "2019/07/16",
-      "hoursSlept": 6.4,
-      "sleepQuality": 2.3
+      "numOunces": 43
     },
     {
       "userID": 40,
       "date": "2019/07/16",
-      "hoursSlept": 10.4,
-      "sleepQuality": 2
+      "numOunces": 38
     },
     {
       "userID": 41,
       "date": "2019/07/16",
-      "hoursSlept": 6.4,
-      "sleepQuality": 3.2
+      "numOunces": 43
     },
     {
       "userID": 42,
       "date": "2019/07/16",
-      "hoursSlept": 10.3,
-      "sleepQuality": 3.1
+      "numOunces": 47
     },
     {
       "userID": 43,
       "date": "2019/07/16",
-      "hoursSlept": 5.5,
-      "sleepQuality": 4.1
+      "numOunces": 39
     },
     {
       "userID": 44,
       "date": "2019/07/16",
-      "hoursSlept": 10.2,
-      "sleepQuality": 2.6
+      "numOunces": 60
     },
     {
       "userID": 45,
       "date": "2019/07/16",
-      "hoursSlept": 10.8,
-      "sleepQuality": 4
+      "numOunces": 24
     },
     {
       "userID": 46,
       "date": "2019/07/16",
-      "hoursSlept": 10,
-      "sleepQuality": 2.2
+      "numOunces": 46
     },
     {
       "userID": 47,
       "date": "2019/07/16",
-      "hoursSlept": 5.4,
-      "sleepQuality": 2.4
+      "numOunces": 61
     },
     {
       "userID": 48,
       "date": "2019/07/16",
-      "hoursSlept": 5.7,
-      "sleepQuality": 4.8
+      "numOunces": 92
     },
     {
       "userID": 49,
       "date": "2019/07/16",
-      "hoursSlept": 6.8,
-      "sleepQuality": 1.2
+      "numOunces": 33
     },
     {
       "userID": 50,
       "date": "2019/07/16",
-      "hoursSlept": 9.5,
-      "sleepQuality": 2.1
+      "numOunces": 70
     },
     {
       "userID": 1,
       "date": "2019/07/17",
-      "hoursSlept": 5.1,
-      "sleepQuality": 4.9
+      "numOunces": 56
     },
     {
       "userID": 2,
       "date": "2019/07/17",
-      "hoursSlept": 5.2,
-      "sleepQuality": 2.1
+      "numOunces": 90
     },
     {
       "userID": 3,
       "date": "2019/07/17",
-      "hoursSlept": 10,
-      "sleepQuality": 3.5
+      "numOunces": 40
     },
     {
       "userID": 4,
       "date": "2019/07/17",
-      "hoursSlept": 6.3,
-      "sleepQuality": 4.3
+      "numOunces": 70
     },
     {
       "userID": 5,
       "date": "2019/07/17",
-      "hoursSlept": 7.1,
-      "sleepQuality": 3.6
+      "numOunces": 91
     },
     {
       "userID": 6,
       "date": "2019/07/17",
-      "hoursSlept": 4.5,
-      "sleepQuality": 3.3
+      "numOunces": 89
     },
     {
       "userID": 7,
       "date": "2019/07/17",
-      "hoursSlept": 4.2,
-      "sleepQuality": 4.4
+      "numOunces": 43
     },
     {
       "userID": 8,
       "date": "2019/07/17",
-      "hoursSlept": 5.3,
-      "sleepQuality": 1
+      "numOunces": 37
     },
     {
       "userID": 9,
       "date": "2019/07/17",
-      "hoursSlept": 8.1,
-      "sleepQuality": 1.2
+      "numOunces": 59
     },
     {
       "userID": 10,
       "date": "2019/07/17",
-      "hoursSlept": 5.6,
-      "sleepQuality": 4.1
+      "numOunces": 28
     },
     {
       "userID": 11,
       "date": "2019/07/17",
-      "hoursSlept": 6.6,
-      "sleepQuality": 2.6
+      "numOunces": 56
     },
     {
       "userID": 12,
       "date": "2019/07/17",
-      "hoursSlept": 6.5,
-      "sleepQuality": 4.7
+      "numOunces": 76
     },
     {
       "userID": 13,
       "date": "2019/07/17",
-      "hoursSlept": 10.8,
-      "sleepQuality": 1.9
+      "numOunces": 46
     },
     {
       "userID": 14,
       "date": "2019/07/17",
-      "hoursSlept": 4.7,
-      "sleepQuality": 4.8
+      "numOunces": 100
     },
     {
       "userID": 15,
       "date": "2019/07/17",
-      "hoursSlept": 5.3,
-      "sleepQuality": 4.6
+      "numOunces": 44
     },
     {
       "userID": 16,
       "date": "2019/07/17",
-      "hoursSlept": 9.6,
-      "sleepQuality": 3.6
+      "numOunces": 69
     },
     {
       "userID": 17,
       "date": "2019/07/17",
-      "hoursSlept": 9.2,
-      "sleepQuality": 4
+      "numOunces": 41
     },
     {
       "userID": 18,
       "date": "2019/07/17",
-      "hoursSlept": 9.9,
-      "sleepQuality": 5
+      "numOunces": 83
     },
     {
       "userID": 19,
       "date": "2019/07/17",
-      "hoursSlept": 9.5,
-      "sleepQuality": 1.3
+      "numOunces": 87
     },
     {
       "userID": 20,
       "date": "2019/07/17",
-      "hoursSlept": 7.7,
-      "sleepQuality": 4.9
+      "numOunces": 96
     },
     {
       "userID": 21,
       "date": "2019/07/17",
-      "hoursSlept": 4.6,
-      "sleepQuality": 2.5
+      "numOunces": 33
     },
     {
       "userID": 22,
       "date": "2019/07/17",
-      "hoursSlept": 4.4,
-      "sleepQuality": 4.7
+      "numOunces": 76
     },
     {
       "userID": 23,
       "date": "2019/07/17",
-      "hoursSlept": 5,
-      "sleepQuality": 4.1
+      "numOunces": 74
     },
     {
       "userID": 24,
       "date": "2019/07/17",
-      "hoursSlept": 6.8,
-      "sleepQuality": 1.6
+      "numOunces": 41
     },
     {
       "userID": 25,
       "date": "2019/07/17",
-      "hoursSlept": 9.2,
-      "sleepQuality": 2.3
+      "numOunces": 57
     },
     {
       "userID": 26,
       "date": "2019/07/17",
-      "hoursSlept": 8.2,
-      "sleepQuality": 3.4
+      "numOunces": 28
     },
     {
       "userID": 27,
       "date": "2019/07/17",
-      "hoursSlept": 7.8,
-      "sleepQuality": 1.4
+      "numOunces": 76
     },
     {
       "userID": 28,
       "date": "2019/07/17",
-      "hoursSlept": 4.2,
-      "sleepQuality": 3.3
+      "numOunces": 57
     },
     {
       "userID": 29,
       "date": "2019/07/17",
-      "hoursSlept": 7.1,
-      "sleepQuality": 4.4
+      "numOunces": 24
     },
     {
       "userID": 30,
       "date": "2019/07/17",
-      "hoursSlept": 7.1,
-      "sleepQuality": 1.4
+      "numOunces": 46
     },
     {
       "userID": 31,
       "date": "2019/07/17",
-      "hoursSlept": 7.2,
-      "sleepQuality": 4.1
+      "numOunces": 32
     },
     {
       "userID": 32,
       "date": "2019/07/17",
-      "hoursSlept": 8.7,
-      "sleepQuality": 3.9
+      "numOunces": 81
     },
     {
       "userID": 33,
       "date": "2019/07/17",
-      "hoursSlept": 5.9,
-      "sleepQuality": 3.1
+      "numOunces": 34
     },
     {
       "userID": 34,
       "date": "2019/07/17",
-      "hoursSlept": 10.9,
-      "sleepQuality": 4.2
+      "numOunces": 53
     },
     {
       "userID": 35,
       "date": "2019/07/17",
-      "hoursSlept": 7.2,
-      "sleepQuality": 2.2
+      "numOunces": 44
     },
     {
       "userID": 36,
       "date": "2019/07/17",
-      "hoursSlept": 7.3,
-      "sleepQuality": 1.1
+      "numOunces": 87
     },
     {
       "userID": 37,
       "date": "2019/07/17",
-      "hoursSlept": 10.6,
-      "sleepQuality": 4.2
+      "numOunces": 47
     },
     {
       "userID": 38,
       "date": "2019/07/17",
-      "hoursSlept": 7.2,
-      "sleepQuality": 3.5
+      "numOunces": 63
     },
     {
       "userID": 39,
       "date": "2019/07/17",
-      "hoursSlept": 8.6,
-      "sleepQuality": 1
+      "numOunces": 81
     },
     {
       "userID": 40,
       "date": "2019/07/17",
-      "hoursSlept": 7,
-      "sleepQuality": 3.9
+      "numOunces": 73
     },
     {
       "userID": 41,
       "date": "2019/07/17",
-      "hoursSlept": 8.8,
-      "sleepQuality": 2.5
+      "numOunces": 57
     },
     {
       "userID": 42,
       "date": "2019/07/17",
-      "hoursSlept": 6.6,
-      "sleepQuality": 3.3
+      "numOunces": 65
     },
     {
       "userID": 43,
       "date": "2019/07/17",
-      "hoursSlept": 10.8,
-      "sleepQuality": 3
+      "numOunces": 74
     },
     {
       "userID": 44,
       "date": "2019/07/17",
-      "hoursSlept": 6.8,
-      "sleepQuality": 2.4
+      "numOunces": 44
     },
     {
       "userID": 45,
       "date": "2019/07/17",
-      "hoursSlept": 10.1,
-      "sleepQuality": 1.1
+      "numOunces": 41
     },
     {
       "userID": 46,
       "date": "2019/07/17",
-      "hoursSlept": 6.6,
-      "sleepQuality": 1.4
+      "numOunces": 45
     },
     {
       "userID": 47,
       "date": "2019/07/17",
-      "hoursSlept": 4.8,
-      "sleepQuality": 3.5
+      "numOunces": 74
     },
     {
       "userID": 48,
       "date": "2019/07/17",
-      "hoursSlept": 7.6,
-      "sleepQuality": 3.9
+      "numOunces": 72
     },
     {
       "userID": 49,
       "date": "2019/07/17",
-      "hoursSlept": 8.2,
-      "sleepQuality": 3.6
+      "numOunces": 69
     },
     {
       "userID": 50,
       "date": "2019/07/17",
-      "hoursSlept": 9,
-      "sleepQuality": 3
+      "numOunces": 62
     },
     {
       "userID": 1,
       "date": "2019/07/18",
-      "hoursSlept": 7.3,
-      "sleepQuality": 3.1
+      "numOunces": 56
     },
     {
       "userID": 2,
       "date": "2019/07/18",
-      "hoursSlept": 5.1,
-      "sleepQuality": 1.4
+      "numOunces": 57
     },
     {
       "userID": 3,
       "date": "2019/07/18",
-      "hoursSlept": 6.1,
-      "sleepQuality": 3
+      "numOunces": 51
     },
     {
       "userID": 4,
       "date": "2019/07/18",
-      "hoursSlept": 6.6,
-      "sleepQuality": 4.1
+      "numOunces": 51
     },
     {
       "userID": 5,
       "date": "2019/07/18",
-      "hoursSlept": 5.9,
-      "sleepQuality": 4.1
+      "numOunces": 90
     },
     {
       "userID": 6,
       "date": "2019/07/18",
-      "hoursSlept": 9.5,
-      "sleepQuality": 3.8
+      "numOunces": 47
     },
     {
       "userID": 7,
       "date": "2019/07/18",
-      "hoursSlept": 8.6,
-      "sleepQuality": 2.1
+      "numOunces": 27
     },
     {
       "userID": 8,
       "date": "2019/07/18",
-      "hoursSlept": 10,
-      "sleepQuality": 2.5
+      "numOunces": 74
     },
     {
       "userID": 9,
       "date": "2019/07/18",
-      "hoursSlept": 4.9,
-      "sleepQuality": 2.9
+      "numOunces": 68
     },
     {
       "userID": 10,
       "date": "2019/07/18",
-      "hoursSlept": 6.6,
-      "sleepQuality": 2.6
+      "numOunces": 54
     },
     {
       "userID": 11,
       "date": "2019/07/18",
-      "hoursSlept": 8.2,
-      "sleepQuality": 4.1
+      "numOunces": 58
     },
     {
       "userID": 12,
       "date": "2019/07/18",
-      "hoursSlept": 4.2,
-      "sleepQuality": 3.6
+      "numOunces": 85
     },
     {
       "userID": 13,
       "date": "2019/07/18",
-      "hoursSlept": 6.6,
-      "sleepQuality": 4.3
+      "numOunces": 89
     },
     {
       "userID": 14,
       "date": "2019/07/18",
-      "hoursSlept": 7.5,
-      "sleepQuality": 4.4
+      "numOunces": 62
     },
     {
       "userID": 15,
       "date": "2019/07/18",
-      "hoursSlept": 4.9,
-      "sleepQuality": 2.3
+      "numOunces": 27
     },
     {
       "userID": 16,
       "date": "2019/07/18",
-      "hoursSlept": 4.6,
-      "sleepQuality": 2.7
+      "numOunces": 76
     },
     {
       "userID": 17,
       "date": "2019/07/18",
-      "hoursSlept": 8.8,
-      "sleepQuality": 1.3
+      "numOunces": 24
     },
     {
       "userID": 18,
       "date": "2019/07/18",
-      "hoursSlept": 8.2,
-      "sleepQuality": 2.8
+      "numOunces": 78
     },
     {
       "userID": 19,
       "date": "2019/07/18",
-      "hoursSlept": 9.1,
-      "sleepQuality": 1.3
+      "numOunces": 41
     },
     {
       "userID": 20,
       "date": "2019/07/18",
-      "hoursSlept": 7.5,
-      "sleepQuality": 3.2
+      "numOunces": 97
     },
     {
       "userID": 21,
       "date": "2019/07/18",
-      "hoursSlept": 7.5,
-      "sleepQuality": 4
+      "numOunces": 53
     },
     {
       "userID": 22,
       "date": "2019/07/18",
-      "hoursSlept": 8.3,
-      "sleepQuality": 4.2
+      "numOunces": 59
     },
     {
       "userID": 23,
       "date": "2019/07/18",
-      "hoursSlept": 4.8,
-      "sleepQuality": 4.5
+      "numOunces": 47
     },
     {
       "userID": 24,
       "date": "2019/07/18",
-      "hoursSlept": 10.9,
-      "sleepQuality": 2.2
+      "numOunces": 68
     },
     {
       "userID": 25,
       "date": "2019/07/18",
-      "hoursSlept": 5,
-      "sleepQuality": 3.8
+      "numOunces": 47
     },
     {
       "userID": 26,
       "date": "2019/07/18",
-      "hoursSlept": 4.8,
-      "sleepQuality": 3.8
+      "numOunces": 57
     },
     {
       "userID": 27,
       "date": "2019/07/18",
-      "hoursSlept": 6.3,
-      "sleepQuality": 2.8
+      "numOunces": 88
     },
     {
       "userID": 28,
       "date": "2019/07/18",
-      "hoursSlept": 6,
-      "sleepQuality": 2.9
+      "numOunces": 55
     },
     {
       "userID": 29,
       "date": "2019/07/18",
-      "hoursSlept": 5.5,
-      "sleepQuality": 3.2
+      "numOunces": 93
     },
     {
       "userID": 30,
       "date": "2019/07/18",
-      "hoursSlept": 4.1,
-      "sleepQuality": 1.7
+      "numOunces": 28
     },
     {
       "userID": 31,
       "date": "2019/07/18",
-      "hoursSlept": 6.4,
-      "sleepQuality": 1.4
+      "numOunces": 97
     },
     {
       "userID": 32,
       "date": "2019/07/18",
-      "hoursSlept": 9.7,
-      "sleepQuality": 1.8
+      "numOunces": 23
     },
     {
       "userID": 33,
       "date": "2019/07/18",
-      "hoursSlept": 8.8,
-      "sleepQuality": 2.3
+      "numOunces": 41
     },
     {
       "userID": 34,
       "date": "2019/07/18",
-      "hoursSlept": 7.8,
-      "sleepQuality": 2.6
+      "numOunces": 86
     },
     {
       "userID": 35,
       "date": "2019/07/18",
-      "hoursSlept": 7.2,
-      "sleepQuality": 1.9
+      "numOunces": 81
     },
     {
       "userID": 36,
       "date": "2019/07/18",
-      "hoursSlept": 9.3,
-      "sleepQuality": 3.1
+      "numOunces": 60
     },
     {
       "userID": 37,
       "date": "2019/07/18",
-      "hoursSlept": 6,
-      "sleepQuality": 3.6
+      "numOunces": 76
     },
     {
       "userID": 38,
       "date": "2019/07/18",
-      "hoursSlept": 8.2,
-      "sleepQuality": 1.5
+      "numOunces": 45
     },
     {
       "userID": 39,
       "date": "2019/07/18",
-      "hoursSlept": 4.1,
-      "sleepQuality": 1
+      "numOunces": 22
     },
     {
       "userID": 40,
       "date": "2019/07/18",
-      "hoursSlept": 4.9,
-      "sleepQuality": 1.2
+      "numOunces": 34
     },
     {
       "userID": 41,
       "date": "2019/07/18",
-      "hoursSlept": 9.4,
-      "sleepQuality": 4
+      "numOunces": 99
     },
     {
       "userID": 42,
       "date": "2019/07/18",
-      "hoursSlept": 4.3,
-      "sleepQuality": 4.9
+      "numOunces": 46
     },
     {
       "userID": 43,
       "date": "2019/07/18",
-      "hoursSlept": 9.4,
-      "sleepQuality": 2.4
+      "numOunces": 77
     },
     {
       "userID": 44,
       "date": "2019/07/18",
-      "hoursSlept": 8.8,
-      "sleepQuality": 3.9
+      "numOunces": 44
     },
     {
       "userID": 45,
       "date": "2019/07/18",
-      "hoursSlept": 7.6,
-      "sleepQuality": 2.9
+      "numOunces": 40
     },
     {
       "userID": 46,
       "date": "2019/07/18",
-      "hoursSlept": 9.9,
-      "sleepQuality": 3.6
+      "numOunces": 76
     },
     {
       "userID": 47,
       "date": "2019/07/18",
-      "hoursSlept": 10.2,
-      "sleepQuality": 4.8
+      "numOunces": 85
     },
     {
       "userID": 48,
       "date": "2019/07/18",
-      "hoursSlept": 6.5,
-      "sleepQuality": 2.9
+      "numOunces": 28
     },
     {
       "userID": 49,
       "date": "2019/07/18",
-      "hoursSlept": 8,
-      "sleepQuality": 1.8
+      "numOunces": 77
     },
     {
       "userID": 50,
       "date": "2019/07/18",
-      "hoursSlept": 6.4,
-      "sleepQuality": 2.9
+      "numOunces": 24
     },
     {
       "userID": 1,
       "date": "2019/07/19",
-      "hoursSlept": 5.8,
-      "sleepQuality": 2.1
+      "numOunces": 55
     },
     {
       "userID": 2,
       "date": "2019/07/19",
-      "hoursSlept": 6.8,
-      "sleepQuality": 3.1
+      "numOunces": 64
     },
     {
       "userID": 3,
       "date": "2019/07/19",
-      "hoursSlept": 6.1,
-      "sleepQuality": 2.8
+      "numOunces": 82
     },
     {
       "userID": 4,
       "date": "2019/07/19",
-      "hoursSlept": 9.5,
-      "sleepQuality": 4.4
+      "numOunces": 90
     },
     {
       "userID": 5,
       "date": "2019/07/19",
-      "hoursSlept": 8.1,
-      "sleepQuality": 3.9
+      "numOunces": 29
     },
     {
       "userID": 6,
       "date": "2019/07/19",
-      "hoursSlept": 5.4,
-      "sleepQuality": 1.6
+      "numOunces": 88
     },
     {
       "userID": 7,
       "date": "2019/07/19",
-      "hoursSlept": 7.8,
-      "sleepQuality": 2.1
+      "numOunces": 87
     },
     {
       "userID": 8,
       "date": "2019/07/19",
-      "hoursSlept": 9,
-      "sleepQuality": 1.5
+      "numOunces": 63
     },
     {
       "userID": 9,
       "date": "2019/07/19",
-      "hoursSlept": 7.3,
-      "sleepQuality": 2.4
+      "numOunces": 56
     },
     {
       "userID": 10,
       "date": "2019/07/19",
-      "hoursSlept": 9,
-      "sleepQuality": 4.5
+      "numOunces": 77
     },
     {
       "userID": 11,
       "date": "2019/07/19",
-      "hoursSlept": 8.7,
-      "sleepQuality": 3.6
+      "numOunces": 29
     },
     {
       "userID": 12,
       "date": "2019/07/19",
-      "hoursSlept": 4.4,
-      "sleepQuality": 2.2
+      "numOunces": 58
     },
     {
       "userID": 13,
       "date": "2019/07/19",
-      "hoursSlept": 8.3,
-      "sleepQuality": 3.2
+      "numOunces": 81
     },
     {
       "userID": 14,
       "date": "2019/07/19",
-      "hoursSlept": 5.1,
-      "sleepQuality": 2.9
+      "numOunces": 63
     },
     {
       "userID": 15,
       "date": "2019/07/19",
-      "hoursSlept": 7.1,
-      "sleepQuality": 2.7
+      "numOunces": 86
     },
     {
       "userID": 16,
       "date": "2019/07/19",
-      "hoursSlept": 4.7,
-      "sleepQuality": 3.5
+      "numOunces": 97
     },
     {
       "userID": 17,
       "date": "2019/07/19",
-      "hoursSlept": 9.9,
-      "sleepQuality": 1.9
+      "numOunces": 81
     },
     {
       "userID": 18,
       "date": "2019/07/19",
-      "hoursSlept": 5.8,
-      "sleepQuality": 4.5
+      "numOunces": 58
     },
     {
       "userID": 19,
       "date": "2019/07/19",
-      "hoursSlept": 4.1,
-      "sleepQuality": 4.4
+      "numOunces": 43
     },
     {
       "userID": 20,
       "date": "2019/07/19",
-      "hoursSlept": 8.5,
-      "sleepQuality": 2.6
+      "numOunces": 30
     },
     {
       "userID": 21,
       "date": "2019/07/19",
-      "hoursSlept": 6.8,
-      "sleepQuality": 3.6
+      "numOunces": 52
     },
     {
       "userID": 22,
       "date": "2019/07/19",
-      "hoursSlept": 6.8,
-      "sleepQuality": 1.3
+      "numOunces": 90
     },
     {
       "userID": 23,
       "date": "2019/07/19",
-      "hoursSlept": 4.5,
-      "sleepQuality": 3.8
+      "numOunces": 59
     },
     {
       "userID": 24,
       "date": "2019/07/19",
-      "hoursSlept": 6.4,
-      "sleepQuality": 2.8
+      "numOunces": 32
     },
     {
       "userID": 25,
       "date": "2019/07/19",
-      "hoursSlept": 5.1,
-      "sleepQuality": 3.6
+      "numOunces": 61
     },
     {
       "userID": 26,
       "date": "2019/07/19",
-      "hoursSlept": 9.8,
-      "sleepQuality": 3.4
+      "numOunces": 52
     },
     {
       "userID": 27,
       "date": "2019/07/19",
-      "hoursSlept": 7.8,
-      "sleepQuality": 2
+      "numOunces": 56
     },
     {
       "userID": 28,
       "date": "2019/07/19",
-      "hoursSlept": 9.5,
-      "sleepQuality": 4.7
+      "numOunces": 86
     },
     {
       "userID": 29,
       "date": "2019/07/19",
-      "hoursSlept": 9,
-      "sleepQuality": 2.1
+      "numOunces": 42
     },
     {
       "userID": 30,
       "date": "2019/07/19",
-      "hoursSlept": 5.5,
-      "sleepQuality": 1.5
+      "numOunces": 99
     },
     {
       "userID": 31,
       "date": "2019/07/19",
-      "hoursSlept": 9.1,
-      "sleepQuality": 2
+      "numOunces": 20
     },
     {
       "userID": 32,
       "date": "2019/07/19",
-      "hoursSlept": 8.1,
-      "sleepQuality": 1.3
+      "numOunces": 30
     },
     {
       "userID": 33,
       "date": "2019/07/19",
-      "hoursSlept": 10.9,
-      "sleepQuality": 2.7
+      "numOunces": 29
     },
     {
       "userID": 34,
       "date": "2019/07/19",
-      "hoursSlept": 8.5,
-      "sleepQuality": 2
+      "numOunces": 43
     },
     {
       "userID": 35,
       "date": "2019/07/19",
-      "hoursSlept": 4.5,
-      "sleepQuality": 2.7
+      "numOunces": 48
     },
     {
       "userID": 36,
       "date": "2019/07/19",
-      "hoursSlept": 6.6,
-      "sleepQuality": 4.8
+      "numOunces": 38
     },
     {
       "userID": 37,
       "date": "2019/07/19",
-      "hoursSlept": 4.1,
-      "sleepQuality": 4.2
+      "numOunces": 33
     },
     {
       "userID": 38,
       "date": "2019/07/19",
-      "hoursSlept": 7.2,
-      "sleepQuality": 3.2
+      "numOunces": 82
     },
     {
       "userID": 39,
       "date": "2019/07/19",
-      "hoursSlept": 4.3,
-      "sleepQuality": 2.1
+      "numOunces": 83
     },
     {
       "userID": 40,
       "date": "2019/07/19",
-      "hoursSlept": 7.2,
-      "sleepQuality": 1.3
+      "numOunces": 38
     },
     {
       "userID": 41,
       "date": "2019/07/19",
-      "hoursSlept": 9,
-      "sleepQuality": 3
+      "numOunces": 81
     },
     {
       "userID": 42,
       "date": "2019/07/19",
-      "hoursSlept": 5.1,
-      "sleepQuality": 4.1
+      "numOunces": 35
     },
     {
       "userID": 43,
       "date": "2019/07/19",
-      "hoursSlept": 10.3,
-      "sleepQuality": 2.3
+      "numOunces": 37
     },
     {
       "userID": 44,
       "date": "2019/07/19",
-      "hoursSlept": 10.1,
-      "sleepQuality": 3.9
+      "numOunces": 78
     },
     {
       "userID": 45,
       "date": "2019/07/19",
-      "hoursSlept": 10.2,
-      "sleepQuality": 1.6
+      "numOunces": 46
     },
     {
       "userID": 46,
       "date": "2019/07/19",
-      "hoursSlept": 9.8,
-      "sleepQuality": 3.4
+      "numOunces": 72
     },
     {
       "userID": 47,
       "date": "2019/07/19",
-      "hoursSlept": 4.2,
-      "sleepQuality": 4.2
+      "numOunces": 80
     },
     {
       "userID": 48,
       "date": "2019/07/19",
-      "hoursSlept": 9.3,
-      "sleepQuality": 1.1
+      "numOunces": 63
     },
     {
       "userID": 49,
       "date": "2019/07/19",
-      "hoursSlept": 10.5,
-      "sleepQuality": 3.7
+      "numOunces": 65
     },
     {
       "userID": 50,
       "date": "2019/07/19",
-      "hoursSlept": 6.7,
-      "sleepQuality": 3
+      "numOunces": 98
     },
     {
       "userID": 1,
       "date": "2019/07/20",
-      "hoursSlept": 7.3,
-      "sleepQuality": 1.2
+      "numOunces": 31
     },
     {
       "userID": 2,
       "date": "2019/07/20",
-      "hoursSlept": 4.7,
-      "sleepQuality": 3.6
+      "numOunces": 95
     },
     {
       "userID": 3,
       "date": "2019/07/20",
-      "hoursSlept": 4.9,
-      "sleepQuality": 3.3
+      "numOunces": 61
     },
     {
       "userID": 4,
       "date": "2019/07/20",
-      "hoursSlept": 6.6,
-      "sleepQuality": 2.5
+      "numOunces": 37
     },
     {
       "userID": 5,
       "date": "2019/07/20",
-      "hoursSlept": 10.9,
-      "sleepQuality": 4.9
+      "numOunces": 61
     },
     {
       "userID": 6,
       "date": "2019/07/20",
-      "hoursSlept": 10,
-      "sleepQuality": 3.8
+      "numOunces": 70
     },
     {
       "userID": 7,
       "date": "2019/07/20",
-      "hoursSlept": 6.6,
-      "sleepQuality": 4.8
+      "numOunces": 72
     },
     {
       "userID": 8,
       "date": "2019/07/20",
-      "hoursSlept": 10.8,
-      "sleepQuality": 3
+      "numOunces": 33
     },
     {
       "userID": 9,
       "date": "2019/07/20",
-      "hoursSlept": 9.6,
-      "sleepQuality": 3.3
+      "numOunces": 23
     },
     {
       "userID": 10,
       "date": "2019/07/20",
-      "hoursSlept": 5.9,
-      "sleepQuality": 4.2
+      "numOunces": 89
     },
     {
       "userID": 11,
       "date": "2019/07/20",
-      "hoursSlept": 7.5,
-      "sleepQuality": 4.6
+      "numOunces": 54
     },
     {
       "userID": 12,
       "date": "2019/07/20",
-      "hoursSlept": 9.1,
-      "sleepQuality": 4.1
+      "numOunces": 78
     },
     {
       "userID": 13,
       "date": "2019/07/20",
-      "hoursSlept": 8.6,
-      "sleepQuality": 1.5
+      "numOunces": 21
     },
     {
       "userID": 14,
       "date": "2019/07/20",
-      "hoursSlept": 6.4,
-      "sleepQuality": 1.3
+      "numOunces": 92
     },
     {
       "userID": 15,
       "date": "2019/07/20",
-      "hoursSlept": 10.8,
-      "sleepQuality": 3
+      "numOunces": 74
     },
     {
       "userID": 16,
       "date": "2019/07/20",
-      "hoursSlept": 9.9,
-      "sleepQuality": 1.4
+      "numOunces": 45
     },
     {
       "userID": 17,
       "date": "2019/07/20",
-      "hoursSlept": 4.6,
-      "sleepQuality": 5
+      "numOunces": 44
     },
     {
       "userID": 18,
       "date": "2019/07/20",
-      "hoursSlept": 7,
-      "sleepQuality": 2.8
+      "numOunces": 71
     },
     {
       "userID": 19,
       "date": "2019/07/20",
-      "hoursSlept": 10.4,
-      "sleepQuality": 4.2
+      "numOunces": 59
     },
     {
       "userID": 20,
       "date": "2019/07/20",
-      "hoursSlept": 6.8,
-      "sleepQuality": 4.9
+      "numOunces": 24
     },
     {
       "userID": 21,
       "date": "2019/07/20",
-      "hoursSlept": 5.2,
-      "sleepQuality": 3.8
+      "numOunces": 71
     },
     {
       "userID": 22,
       "date": "2019/07/20",
-      "hoursSlept": 10.1,
-      "sleepQuality": 2.9
+      "numOunces": 45
     },
     {
       "userID": 23,
       "date": "2019/07/20",
-      "hoursSlept": 4.3,
-      "sleepQuality": 2.4
+      "numOunces": 39
     },
     {
       "userID": 24,
       "date": "2019/07/20",
-      "hoursSlept": 8.7,
-      "sleepQuality": 3.2
+      "numOunces": 55
     },
     {
       "userID": 25,
       "date": "2019/07/20",
-      "hoursSlept": 6.8,
-      "sleepQuality": 1.9
+      "numOunces": 78
     },
     {
       "userID": 26,
       "date": "2019/07/20",
-      "hoursSlept": 10.2,
-      "sleepQuality": 1.1
+      "numOunces": 80
     },
     {
       "userID": 27,
       "date": "2019/07/20",
-      "hoursSlept": 5.9,
-      "sleepQuality": 3.7
+      "numOunces": 79
     },
     {
       "userID": 28,
       "date": "2019/07/20",
-      "hoursSlept": 8,
-      "sleepQuality": 2.6
+      "numOunces": 93
     },
     {
       "userID": 29,
       "date": "2019/07/20",
-      "hoursSlept": 9.3,
-      "sleepQuality": 3.9
+      "numOunces": 87
     },
     {
       "userID": 30,
       "date": "2019/07/20",
-      "hoursSlept": 9.5,
-      "sleepQuality": 3
+      "numOunces": 62
     },
     {
       "userID": 31,
       "date": "2019/07/20",
-      "hoursSlept": 8.4,
-      "sleepQuality": 1
+      "numOunces": 32
     },
     {
       "userID": 32,
       "date": "2019/07/20",
-      "hoursSlept": 7.5,
-      "sleepQuality": 4.7
+      "numOunces": 94
     },
     {
       "userID": 33,
       "date": "2019/07/20",
-      "hoursSlept": 10.7,
-      "sleepQuality": 3.5
+      "numOunces": 62
     },
     {
       "userID": 34,
       "date": "2019/07/20",
-      "hoursSlept": 5.6,
-      "sleepQuality": 4.4
+      "numOunces": 47
     },
     {
       "userID": 35,
       "date": "2019/07/20",
-      "hoursSlept": 10.6,
-      "sleepQuality": 2.9
+      "numOunces": 31
     },
     {
       "userID": 36,
       "date": "2019/07/20",
-      "hoursSlept": 10.8,
-      "sleepQuality": 1.6
+      "numOunces": 70
     },
     {
       "userID": 37,
       "date": "2019/07/20",
-      "hoursSlept": 7.7,
-      "sleepQuality": 4.7
+      "numOunces": 36
     },
     {
       "userID": 38,
       "date": "2019/07/20",
-      "hoursSlept": 7.9,
-      "sleepQuality": 3.4
+      "numOunces": 52
     },
     {
       "userID": 39,
       "date": "2019/07/20",
-      "hoursSlept": 9,
-      "sleepQuality": 4.9
+      "numOunces": 61
     },
     {
       "userID": 40,
       "date": "2019/07/20",
-      "hoursSlept": 8.7,
-      "sleepQuality": 3.6
+      "numOunces": 88
     },
     {
       "userID": 41,
       "date": "2019/07/20",
-      "hoursSlept": 4.9,
-      "sleepQuality": 4.2
+      "numOunces": 65
     },
     {
       "userID": 42,
       "date": "2019/07/20",
-      "hoursSlept": 8.3,
-      "sleepQuality": 2.5
+      "numOunces": 65
     },
     {
       "userID": 43,
       "date": "2019/07/20",
-      "hoursSlept": 7.6,
-      "sleepQuality": 1.6
+      "numOunces": 78
     },
     {
       "userID": 44,
       "date": "2019/07/20",
-      "hoursSlept": 6.8,
-      "sleepQuality": 4.2
+      "numOunces": 22
     },
     {
       "userID": 45,
       "date": "2019/07/20",
-      "hoursSlept": 6.4,
-      "sleepQuality": 3
+      "numOunces": 53
     },
     {
       "userID": 46,
       "date": "2019/07/20",
-      "hoursSlept": 10.7,
-      "sleepQuality": 1.1
+      "numOunces": 55
     },
     {
       "userID": 47,
       "date": "2019/07/20",
-      "hoursSlept": 10.1,
-      "sleepQuality": 1.1
+      "numOunces": 89
     },
     {
       "userID": 48,
       "date": "2019/07/20",
-      "hoursSlept": 9.1,
-      "sleepQuality": 1.9
+      "numOunces": 90
     },
     {
       "userID": 49,
       "date": "2019/07/20",
-      "hoursSlept": 5.6,
-      "sleepQuality": 1.8
+      "numOunces": 86
     },
     {
       "userID": 50,
       "date": "2019/07/20",
-      "hoursSlept": 4.3,
-      "sleepQuality": 3.7
+      "numOunces": 57
     },
     {
       "userID": 1,
       "date": "2019/07/21",
-      "hoursSlept": 5.8,
-      "sleepQuality": 4.9
+      "numOunces": 81
     },
     {
       "userID": 2,
       "date": "2019/07/21",
-      "hoursSlept": 9.5,
-      "sleepQuality": 5
+      "numOunces": 21
     },
     {
       "userID": 3,
       "date": "2019/07/21",
-      "hoursSlept": 6.3,
-      "sleepQuality": 2.9
+      "numOunces": 95
     },
     {
       "userID": 4,
       "date": "2019/07/21",
-      "hoursSlept": 8.2,
-      "sleepQuality": 2.8
+      "numOunces": 24
     },
     {
       "userID": 5,
       "date": "2019/07/21",
-      "hoursSlept": 5.9,
-      "sleepQuality": 2.5
+      "numOunces": 52
     },
     {
       "userID": 6,
       "date": "2019/07/21",
-      "hoursSlept": 7.4,
-      "sleepQuality": 4.3
+      "numOunces": 56
     },
     {
       "userID": 7,
       "date": "2019/07/21",
-      "hoursSlept": 10.1,
-      "sleepQuality": 4.3
+      "numOunces": 69
     },
     {
       "userID": 8,
       "date": "2019/07/21",
-      "hoursSlept": 10.4,
-      "sleepQuality": 4.3
+      "numOunces": 79
     },
     {
       "userID": 9,
       "date": "2019/07/21",
-      "hoursSlept": 4.2,
-      "sleepQuality": 2.9
+      "numOunces": 63
     },
     {
       "userID": 10,
       "date": "2019/07/21",
-      "hoursSlept": 5.5,
-      "sleepQuality": 3.5
+      "numOunces": 73
     },
     {
       "userID": 11,
       "date": "2019/07/21",
-      "hoursSlept": 8.6,
-      "sleepQuality": 1.5
+      "numOunces": 44
     },
     {
       "userID": 12,
       "date": "2019/07/21",
-      "hoursSlept": 6,
-      "sleepQuality": 1.2
+      "numOunces": 85
     },
     {
       "userID": 13,
       "date": "2019/07/21",
-      "hoursSlept": 7.3,
-      "sleepQuality": 2.9
+      "numOunces": 81
     },
     {
       "userID": 14,
       "date": "2019/07/21",
-      "hoursSlept": 9.6,
-      "sleepQuality": 1.6
+      "numOunces": 89
     },
     {
       "userID": 15,
       "date": "2019/07/21",
-      "hoursSlept": 9.1,
-      "sleepQuality": 4.9
+      "numOunces": 26
     },
     {
       "userID": 16,
       "date": "2019/07/21",
-      "hoursSlept": 6.5,
-      "sleepQuality": 1.9
+      "numOunces": 77
     },
     {
       "userID": 17,
       "date": "2019/07/21",
-      "hoursSlept": 8.1,
-      "sleepQuality": 3.8
+      "numOunces": 36
     },
     {
       "userID": 18,
       "date": "2019/07/21",
-      "hoursSlept": 10.4,
-      "sleepQuality": 3.9
+      "numOunces": 69
     },
     {
       "userID": 19,
       "date": "2019/07/21",
-      "hoursSlept": 7.1,
-      "sleepQuality": 3.9
+      "numOunces": 34
     },
     {
       "userID": 20,
       "date": "2019/07/21",
-      "hoursSlept": 8.6,
-      "sleepQuality": 1.9
+      "numOunces": 31
     },
     {
       "userID": 21,
       "date": "2019/07/21",
-      "hoursSlept": 6.2,
-      "sleepQuality": 3.5
+      "numOunces": 61
     },
     {
       "userID": 22,
       "date": "2019/07/21",
-      "hoursSlept": 4.5,
-      "sleepQuality": 2.6
+      "numOunces": 38
     },
     {
       "userID": 23,
       "date": "2019/07/21",
-      "hoursSlept": 8.7,
-      "sleepQuality": 3.8
+      "numOunces": 80
     },
     {
       "userID": 24,
       "date": "2019/07/21",
-      "hoursSlept": 10.6,
-      "sleepQuality": 2.6
+      "numOunces": 30
     },
     {
       "userID": 25,
       "date": "2019/07/21",
-      "hoursSlept": 9.9,
-      "sleepQuality": 1.5
+      "numOunces": 48
     },
     {
       "userID": 26,
       "date": "2019/07/21",
-      "hoursSlept": 9.8,
-      "sleepQuality": 2.7
+      "numOunces": 30
     },
     {
       "userID": 27,
       "date": "2019/07/21",
-      "hoursSlept": 5,
-      "sleepQuality": 2.7
+      "numOunces": 52
     },
     {
       "userID": 28,
       "date": "2019/07/21",
-      "hoursSlept": 4.3,
-      "sleepQuality": 3.3
+      "numOunces": 55
     },
     {
       "userID": 29,
       "date": "2019/07/21",
-      "hoursSlept": 6.9,
-      "sleepQuality": 2.4
+      "numOunces": 70
     },
     {
       "userID": 30,
       "date": "2019/07/21",
-      "hoursSlept": 6.8,
-      "sleepQuality": 3
+      "numOunces": 52
     },
     {
       "userID": 31,
       "date": "2019/07/21",
-      "hoursSlept": 6,
-      "sleepQuality": 4.5
+      "numOunces": 91
     },
     {
       "userID": 32,
       "date": "2019/07/21",
-      "hoursSlept": 5.1,
-      "sleepQuality": 2.4
+      "numOunces": 28
     },
     {
       "userID": 33,
       "date": "2019/07/21",
-      "hoursSlept": 10.2,
-      "sleepQuality": 3
+      "numOunces": 92
     },
     {
       "userID": 34,
       "date": "2019/07/21",
-      "hoursSlept": 7.3,
-      "sleepQuality": 3.4
+      "numOunces": 55
     },
     {
       "userID": 35,
       "date": "2019/07/21",
-      "hoursSlept": 8.1,
-      "sleepQuality": 5
+      "numOunces": 72
     },
     {
       "userID": 36,
       "date": "2019/07/21",
-      "hoursSlept": 5.1,
-      "sleepQuality": 4.7
+      "numOunces": 35
     },
     {
       "userID": 37,
       "date": "2019/07/21",
-      "hoursSlept": 5.1,
-      "sleepQuality": 2.8
+      "numOunces": 50
     },
     {
       "userID": 38,
       "date": "2019/07/21",
-      "hoursSlept": 4.1,
-      "sleepQuality": 4.8
+      "numOunces": 98
     },
     {
       "userID": 39,
       "date": "2019/07/21",
-      "hoursSlept": 10.3,
-      "sleepQuality": 4.6
+      "numOunces": 42
     },
     {
       "userID": 40,
       "date": "2019/07/21",
-      "hoursSlept": 7.4,
-      "sleepQuality": 3
+      "numOunces": 61
     },
     {
       "userID": 41,
       "date": "2019/07/21",
-      "hoursSlept": 6.3,
-      "sleepQuality": 4.6
+      "numOunces": 91
     },
     {
       "userID": 42,
       "date": "2019/07/21",
-      "hoursSlept": 6.9,
-      "sleepQuality": 2
+      "numOunces": 70
     },
     {
       "userID": 43,
       "date": "2019/07/21",
-      "hoursSlept": 4.5,
-      "sleepQuality": 1.8
+      "numOunces": 21
     },
     {
       "userID": 44,
       "date": "2019/07/21",
-      "hoursSlept": 6.1,
-      "sleepQuality": 4.4
+      "numOunces": 34
     },
     {
       "userID": 45,
       "date": "2019/07/21",
-      "hoursSlept": 6.8,
-      "sleepQuality": 1.1
+      "numOunces": 44
     },
     {
       "userID": 46,
       "date": "2019/07/21",
-      "hoursSlept": 6.1,
-      "sleepQuality": 4.3
+      "numOunces": 43
     },
     {
       "userID": 47,
       "date": "2019/07/21",
-      "hoursSlept": 8,
-      "sleepQuality": 3.5
+      "numOunces": 23
     },
     {
       "userID": 48,
       "date": "2019/07/21",
-      "hoursSlept": 4.9,
-      "sleepQuality": 1.6
+      "numOunces": 71
     },
     {
       "userID": 49,
       "date": "2019/07/21",
-      "hoursSlept": 6.3,
-      "sleepQuality": 4.8
+      "numOunces": 76
     },
     {
       "userID": 50,
       "date": "2019/07/21",
-      "hoursSlept": 7.6,
-      "sleepQuality": 1.3
+      "numOunces": 42
     },
     {
       "userID": 1,
       "date": "2019/07/22",
-      "hoursSlept": 7.3,
-      "sleepQuality": 5
+      "numOunces": 24
     },
     {
       "userID": 2,
       "date": "2019/07/22",
-      "hoursSlept": 10.7,
-      "sleepQuality": 2.9
+      "numOunces": 74
     },
     {
       "userID": 3,
       "date": "2019/07/22",
-      "hoursSlept": 9.8,
-      "sleepQuality": 1.5
+      "numOunces": 29
     },
     {
       "userID": 4,
       "date": "2019/07/22",
-      "hoursSlept": 7.5,
-      "sleepQuality": 4.2
+      "numOunces": 28
     },
     {
       "userID": 5,
       "date": "2019/07/22",
-      "hoursSlept": 10.8,
-      "sleepQuality": 1.6
+      "numOunces": 76
     },
     {
       "userID": 6,
       "date": "2019/07/22",
-      "hoursSlept": 4.9,
-      "sleepQuality": 2.4
+      "numOunces": 26
     },
     {
       "userID": 7,
       "date": "2019/07/22",
-      "hoursSlept": 4.7,
-      "sleepQuality": 3.9
+      "numOunces": 49
     },
     {
       "userID": 8,
       "date": "2019/07/22",
-      "hoursSlept": 5.5,
-      "sleepQuality": 2.4
+      "numOunces": 58
     },
     {
       "userID": 9,
       "date": "2019/07/22",
-      "hoursSlept": 9,
-      "sleepQuality": 4.5
+      "numOunces": 36
     },
     {
       "userID": 10,
       "date": "2019/07/22",
-      "hoursSlept": 8,
-      "sleepQuality": 4.7
+      "numOunces": 76
     },
     {
       "userID": 11,
       "date": "2019/07/22",
-      "hoursSlept": 9.3,
-      "sleepQuality": 3.8
+      "numOunces": 37
     },
     {
       "userID": 12,
       "date": "2019/07/22",
-      "hoursSlept": 7.5,
-      "sleepQuality": 4.3
+      "numOunces": 99
     },
     {
       "userID": 13,
       "date": "2019/07/22",
-      "hoursSlept": 8.1,
-      "sleepQuality": 4.6
+      "numOunces": 57
     },
     {
       "userID": 14,
       "date": "2019/07/22",
-      "hoursSlept": 10.5,
-      "sleepQuality": 4.2
+      "numOunces": 95
     },
     {
       "userID": 15,
       "date": "2019/07/22",
-      "hoursSlept": 8,
-      "sleepQuality": 3.5
+      "numOunces": 93
     },
     {
       "userID": 16,
       "date": "2019/07/22",
-      "hoursSlept": 8.1,
-      "sleepQuality": 1.7
+      "numOunces": 35
     },
     {
       "userID": 17,
       "date": "2019/07/22",
-      "hoursSlept": 8.8,
-      "sleepQuality": 4.9
+      "numOunces": 42
     },
     {
       "userID": 18,
       "date": "2019/07/22",
-      "hoursSlept": 6.1,
-      "sleepQuality": 4.2
+      "numOunces": 54
     },
     {
       "userID": 19,
       "date": "2019/07/22",
-      "hoursSlept": 10.7,
-      "sleepQuality": 1.8
+      "numOunces": 61
     },
     {
       "userID": 20,
       "date": "2019/07/22",
-      "hoursSlept": 10.7,
-      "sleepQuality": 4.5
+      "numOunces": 43
     },
     {
       "userID": 21,
       "date": "2019/07/22",
-      "hoursSlept": 8.2,
-      "sleepQuality": 1.2
+      "numOunces": 62
     },
     {
       "userID": 22,
       "date": "2019/07/22",
-      "hoursSlept": 7.7,
-      "sleepQuality": 2.8
+      "numOunces": 34
     },
     {
       "userID": 23,
       "date": "2019/07/22",
-      "hoursSlept": 7.5,
-      "sleepQuality": 2.5
+      "numOunces": 21
     },
     {
       "userID": 24,
       "date": "2019/07/22",
-      "hoursSlept": 7,
-      "sleepQuality": 4.9
+      "numOunces": 69
     },
     {
       "userID": 25,
       "date": "2019/07/22",
-      "hoursSlept": 4.7,
-      "sleepQuality": 3.7
+      "numOunces": 35
     },
     {
       "userID": 26,
       "date": "2019/07/22",
-      "hoursSlept": 9,
-      "sleepQuality": 1.8
+      "numOunces": 60
     },
     {
       "userID": 27,
       "date": "2019/07/22",
-      "hoursSlept": 10.2,
-      "sleepQuality": 1.1
+      "numOunces": 91
     },
     {
       "userID": 28,
       "date": "2019/07/22",
-      "hoursSlept": 6.2,
-      "sleepQuality": 2.7
+      "numOunces": 79
     },
     {
       "userID": 29,
       "date": "2019/07/22",
-      "hoursSlept": 6.3,
-      "sleepQuality": 4.3
+      "numOunces": 69
     },
     {
       "userID": 30,
       "date": "2019/07/22",
-      "hoursSlept": 8.1,
-      "sleepQuality": 2.2
+      "numOunces": 35
     },
     {
       "userID": 31,
       "date": "2019/07/22",
-      "hoursSlept": 10.8,
-      "sleepQuality": 2.9
+      "numOunces": 61
     },
     {
       "userID": 32,
       "date": "2019/07/22",
-      "hoursSlept": 8,
-      "sleepQuality": 2.9
+      "numOunces": 54
     },
     {
       "userID": 33,
       "date": "2019/07/22",
-      "hoursSlept": 8.8,
-      "sleepQuality": 2.6
+      "numOunces": 41
     },
     {
       "userID": 34,
       "date": "2019/07/22",
-      "hoursSlept": 8.4,
-      "sleepQuality": 4.7
+      "numOunces": 30
     },
     {
       "userID": 35,
       "date": "2019/07/22",
-      "hoursSlept": 7.3,
-      "sleepQuality": 5
+      "numOunces": 48
     },
     {
       "userID": 36,
       "date": "2019/07/22",
-      "hoursSlept": 4.6,
-      "sleepQuality": 1.4
+      "numOunces": 70
     },
     {
       "userID": 37,
       "date": "2019/07/22",
-      "hoursSlept": 9.8,
-      "sleepQuality": 2.6
+      "numOunces": 72
     },
     {
       "userID": 38,
       "date": "2019/07/22",
-      "hoursSlept": 5.7,
-      "sleepQuality": 4.9
+      "numOunces": 90
     },
     {
       "userID": 39,
       "date": "2019/07/22",
-      "hoursSlept": 9.3,
-      "sleepQuality": 2.1
+      "numOunces": 52
     },
     {
       "userID": 40,
       "date": "2019/07/22",
-      "hoursSlept": 9.2,
-      "sleepQuality": 1
+      "numOunces": 44
     },
     {
       "userID": 41,
       "date": "2019/07/22",
-      "hoursSlept": 7,
-      "sleepQuality": 3.7
+      "numOunces": 86
     },
     {
       "userID": 42,
       "date": "2019/07/22",
-      "hoursSlept": 5.4,
-      "sleepQuality": 3
+      "numOunces": 90
     },
     {
       "userID": 43,
       "date": "2019/07/22",
-      "hoursSlept": 7.4,
-      "sleepQuality": 4
+      "numOunces": 70
     },
     {
       "userID": 44,
       "date": "2019/07/22",
-      "hoursSlept": 5.1,
-      "sleepQuality": 2.9
+      "numOunces": 34
     },
     {
       "userID": 45,
       "date": "2019/07/22",
-      "hoursSlept": 10.7,
-      "sleepQuality": 3.3
+      "numOunces": 55
     },
     {
       "userID": 46,
       "date": "2019/07/22",
-      "hoursSlept": 4.9,
-      "sleepQuality": 4.7
+      "numOunces": 38
     },
     {
       "userID": 47,
       "date": "2019/07/22",
-      "hoursSlept": 8.3,
-      "sleepQuality": 1.9
+      "numOunces": 60
     },
     {
       "userID": 48,
       "date": "2019/07/22",
-      "hoursSlept": 9.7,
-      "sleepQuality": 4.8
+      "numOunces": 84
     },
     {
       "userID": 49,
       "date": "2019/07/22",
-      "hoursSlept": 9.1,
-      "sleepQuality": 2.2
+      "numOunces": 95
     },
     {
       "userID": 50,
       "date": "2019/07/22",
-      "hoursSlept": 6.5,
-      "sleepQuality": 4.3
+      "numOunces": 50
     },
     {
       "userID": 1,
       "date": "2019/07/23",
-      "hoursSlept": 9.6,
-      "sleepQuality": 3.3
+      "numOunces": 85
     },
     {
       "userID": 2,
       "date": "2019/07/23",
-      "hoursSlept": 6.2,
-      "sleepQuality": 1.1
+      "numOunces": 97
     },
     {
       "userID": 3,
       "date": "2019/07/23",
-      "hoursSlept": 8.1,
-      "sleepQuality": 2.2
+      "numOunces": 43
     },
     {
       "userID": 4,
       "date": "2019/07/23",
-      "hoursSlept": 8.8,
-      "sleepQuality": 1.7
+      "numOunces": 69
     },
     {
       "userID": 5,
       "date": "2019/07/23",
-      "hoursSlept": 6.2,
-      "sleepQuality": 3.3
+      "numOunces": 33
     },
     {
       "userID": 6,
       "date": "2019/07/23",
-      "hoursSlept": 9.9,
-      "sleepQuality": 4.9
+      "numOunces": 83
     },
     {
       "userID": 7,
       "date": "2019/07/23",
-      "hoursSlept": 6.5,
-      "sleepQuality": 3.9
+      "numOunces": 58
     },
     {
       "userID": 8,
       "date": "2019/07/23",
-      "hoursSlept": 9,
-      "sleepQuality": 3.5
+      "numOunces": 57
     },
     {
       "userID": 9,
       "date": "2019/07/23",
-      "hoursSlept": 7.8,
-      "sleepQuality": 1.1
+      "numOunces": 30
     },
     {
       "userID": 10,
       "date": "2019/07/23",
-      "hoursSlept": 10.4,
-      "sleepQuality": 3.7
+      "numOunces": 87
     },
     {
       "userID": 11,
       "date": "2019/07/23",
-      "hoursSlept": 7.6,
-      "sleepQuality": 1.8
+      "numOunces": 98
     },
     {
       "userID": 12,
       "date": "2019/07/23",
-      "hoursSlept": 9,
-      "sleepQuality": 1.2
+      "numOunces": 76
     },
     {
       "userID": 13,
       "date": "2019/07/23",
-      "hoursSlept": 8.9,
-      "sleepQuality": 2.6
+      "numOunces": 51
     },
     {
       "userID": 14,
       "date": "2019/07/23",
-      "hoursSlept": 8.2,
-      "sleepQuality": 4.9
+      "numOunces": 47
     },
     {
       "userID": 15,
       "date": "2019/07/23",
-      "hoursSlept": 9.7,
-      "sleepQuality": 3.7
+      "numOunces": 72
     },
     {
       "userID": 16,
       "date": "2019/07/23",
-      "hoursSlept": 7.7,
-      "sleepQuality": 3.5
+      "numOunces": 20
     },
     {
       "userID": 17,
       "date": "2019/07/23",
-      "hoursSlept": 10.3,
-      "sleepQuality": 2.4
+      "numOunces": 89
     },
     {
       "userID": 18,
       "date": "2019/07/23",
-      "hoursSlept": 4.9,
-      "sleepQuality": 4.6
+      "numOunces": 55
     },
     {
       "userID": 19,
       "date": "2019/07/23",
-      "hoursSlept": 7.4,
-      "sleepQuality": 2.4
+      "numOunces": 57
     },
     {
       "userID": 20,
       "date": "2019/07/23",
-      "hoursSlept": 8.7,
-      "sleepQuality": 4.1
+      "numOunces": 23
     },
     {
       "userID": 21,
       "date": "2019/07/23",
-      "hoursSlept": 6.8,
-      "sleepQuality": 2.2
+      "numOunces": 44
     },
     {
       "userID": 22,
       "date": "2019/07/23",
-      "hoursSlept": 7.5,
-      "sleepQuality": 4.9
+      "numOunces": 21
     },
     {
       "userID": 23,
       "date": "2019/07/23",
-      "hoursSlept": 7.4,
-      "sleepQuality": 3.5
+      "numOunces": 74
     },
     {
       "userID": 24,
       "date": "2019/07/23",
-      "hoursSlept": 4.7,
-      "sleepQuality": 3.1
+      "numOunces": 78
     },
     {
       "userID": 25,
       "date": "2019/07/23",
-      "hoursSlept": 4.2,
-      "sleepQuality": 2.3
+      "numOunces": 38
     },
     {
       "userID": 26,
       "date": "2019/07/23",
-      "hoursSlept": 10.2,
-      "sleepQuality": 3.1
+      "numOunces": 58
     },
     {
       "userID": 27,
       "date": "2019/07/23",
-      "hoursSlept": 8.8,
-      "sleepQuality": 1.1
+      "numOunces": 40
     },
     {
       "userID": 28,
       "date": "2019/07/23",
-      "hoursSlept": 10.5,
-      "sleepQuality": 4.5
+      "numOunces": 43
     },
     {
       "userID": 29,
       "date": "2019/07/23",
-      "hoursSlept": 10.3,
-      "sleepQuality": 1.3
+      "numOunces": 83
     },
     {
       "userID": 30,
       "date": "2019/07/23",
-      "hoursSlept": 4.6,
-      "sleepQuality": 2.9
+      "numOunces": 89
     },
     {
       "userID": 31,
       "date": "2019/07/23",
-      "hoursSlept": 7.2,
-      "sleepQuality": 4.9
+      "numOunces": 37
     },
     {
       "userID": 32,
       "date": "2019/07/23",
-      "hoursSlept": 7.6,
-      "sleepQuality": 1.4
+      "numOunces": 82
     },
     {
       "userID": 33,
       "date": "2019/07/23",
-      "hoursSlept": 9.7,
-      "sleepQuality": 4.4
+      "numOunces": 25
     },
     {
       "userID": 34,
       "date": "2019/07/23",
-      "hoursSlept": 7,
-      "sleepQuality": 2
+      "numOunces": 23
     },
     {
       "userID": 35,
       "date": "2019/07/23",
-      "hoursSlept": 7,
-      "sleepQuality": 2.4
+      "numOunces": 79
     },
     {
       "userID": 36,
       "date": "2019/07/23",
-      "hoursSlept": 8.1,
-      "sleepQuality": 1.3
+      "numOunces": 65
     },
     {
       "userID": 37,
       "date": "2019/07/23",
-      "hoursSlept": 8.2,
-      "sleepQuality": 4.1
+      "numOunces": 81
     },
     {
       "userID": 38,
       "date": "2019/07/23",
-      "hoursSlept": 9.8,
-      "sleepQuality": 1.3
+      "numOunces": 50
     },
     {
       "userID": 39,
       "date": "2019/07/23",
-      "hoursSlept": 5,
-      "sleepQuality": 2.2
+      "numOunces": 21
     },
     {
       "userID": 40,
       "date": "2019/07/23",
-      "hoursSlept": 10.1,
-      "sleepQuality": 4.7
+      "numOunces": 67
     },
     {
       "userID": 41,
       "date": "2019/07/23",
-      "hoursSlept": 10.7,
-      "sleepQuality": 2
+      "numOunces": 35
     },
     {
       "userID": 42,
       "date": "2019/07/23",
-      "hoursSlept": 6,
-      "sleepQuality": 3.7
+      "numOunces": 80
     },
     {
       "userID": 43,
       "date": "2019/07/23",
-      "hoursSlept": 5.2,
-      "sleepQuality": 2.6
+      "numOunces": 50
     },
     {
       "userID": 44,
       "date": "2019/07/23",
-      "hoursSlept": 6.6,
-      "sleepQuality": 4
+      "numOunces": 92
     },
     {
       "userID": 45,
       "date": "2019/07/23",
-      "hoursSlept": 4.8,
-      "sleepQuality": 3
+      "numOunces": 33
     },
     {
       "userID": 46,
       "date": "2019/07/23",
-      "hoursSlept": 5.3,
-      "sleepQuality": 2.9
+      "numOunces": 64
     },
     {
       "userID": 47,
       "date": "2019/07/23",
-      "hoursSlept": 10.2,
-      "sleepQuality": 3.3
+      "numOunces": 99
     },
     {
       "userID": 48,
       "date": "2019/07/23",
-      "hoursSlept": 7.8,
-      "sleepQuality": 2.4
+      "numOunces": 91
     },
     {
       "userID": 49,
       "date": "2019/07/23",
-      "hoursSlept": 9,
-      "sleepQuality": 1
+      "numOunces": 39
     },
     {
       "userID": 50,
       "date": "2019/07/23",
-      "hoursSlept": 9.1,
-      "sleepQuality": 2.5
+      "numOunces": 79
     },
     {
       "userID": 1,
       "date": "2019/07/24",
-      "hoursSlept": 7.4,
-      "sleepQuality": 4.9
+      "numOunces": 61
     },
     {
       "userID": 2,
       "date": "2019/07/24",
-      "hoursSlept": 4.4,
-      "sleepQuality": 2.3
+      "numOunces": 44
     },
     {
       "userID": 3,
       "date": "2019/07/24",
-      "hoursSlept": 10.8,
-      "sleepQuality": 3.9
+      "numOunces": 61
     },
     {
       "userID": 4,
       "date": "2019/07/24",
-      "hoursSlept": 6,
-      "sleepQuality": 2.8
+      "numOunces": 24
     },
     {
       "userID": 5,
       "date": "2019/07/24",
-      "hoursSlept": 7,
-      "sleepQuality": 3.3
+      "numOunces": 97
     },
     {
       "userID": 6,
       "date": "2019/07/24",
-      "hoursSlept": 5.4,
-      "sleepQuality": 2.3
+      "numOunces": 95
     },
     {
       "userID": 7,
       "date": "2019/07/24",
-      "hoursSlept": 6.1,
-      "sleepQuality": 4.6
+      "numOunces": 69
     },
     {
       "userID": 8,
       "date": "2019/07/24",
-      "hoursSlept": 9.3,
-      "sleepQuality": 1.1
+      "numOunces": 94
     },
     {
       "userID": 9,
       "date": "2019/07/24",
-      "hoursSlept": 6.1,
-      "sleepQuality": 4.5
+      "numOunces": 61
     },
     {
       "userID": 10,
       "date": "2019/07/24",
-      "hoursSlept": 9.3,
-      "sleepQuality": 3.3
+      "numOunces": 61
     },
     {
       "userID": 11,
       "date": "2019/07/24",
-      "hoursSlept": 10.4,
-      "sleepQuality": 1.9
+      "numOunces": 81
     },
     {
       "userID": 12,
       "date": "2019/07/24",
-      "hoursSlept": 8.7,
-      "sleepQuality": 3.2
+      "numOunces": 73
     },
     {
       "userID": 13,
       "date": "2019/07/24",
-      "hoursSlept": 4.9,
-      "sleepQuality": 1.7
+      "numOunces": 67
     },
     {
       "userID": 14,
       "date": "2019/07/24",
-      "hoursSlept": 6.2,
-      "sleepQuality": 4.3
+      "numOunces": 97
     },
     {
       "userID": 15,
       "date": "2019/07/24",
-      "hoursSlept": 10.1,
-      "sleepQuality": 3.2
+      "numOunces": 77
     },
     {
       "userID": 16,
       "date": "2019/07/24",
-      "hoursSlept": 10.3,
-      "sleepQuality": 4
+      "numOunces": 65
     },
     {
       "userID": 17,
       "date": "2019/07/24",
-      "hoursSlept": 6.2,
-      "sleepQuality": 3.5
+      "numOunces": 100
     },
     {
       "userID": 18,
       "date": "2019/07/24",
-      "hoursSlept": 5.6,
-      "sleepQuality": 1.4
+      "numOunces": 50
     },
     {
       "userID": 19,
       "date": "2019/07/24",
-      "hoursSlept": 4.1,
-      "sleepQuality": 1.7
+      "numOunces": 93
     },
     {
       "userID": 20,
       "date": "2019/07/24",
-      "hoursSlept": 5.1,
-      "sleepQuality": 4.2
+      "numOunces": 31
     },
     {
       "userID": 21,
       "date": "2019/07/24",
-      "hoursSlept": 8.7,
-      "sleepQuality": 3.8
+      "numOunces": 93
     },
     {
       "userID": 22,
       "date": "2019/07/24",
-      "hoursSlept": 7.9,
-      "sleepQuality": 1.1
+      "numOunces": 56
     },
     {
       "userID": 23,
       "date": "2019/07/24",
-      "hoursSlept": 6.5,
-      "sleepQuality": 4.2
+      "numOunces": 98
     },
     {
       "userID": 24,
       "date": "2019/07/24",
-      "hoursSlept": 10.5,
-      "sleepQuality": 1.5
+      "numOunces": 93
     },
     {
       "userID": 25,
       "date": "2019/07/24",
-      "hoursSlept": 4.1,
-      "sleepQuality": 1.3
+      "numOunces": 41
     },
     {
       "userID": 26,
       "date": "2019/07/24",
-      "hoursSlept": 9.6,
-      "sleepQuality": 1.5
+      "numOunces": 22
     },
     {
       "userID": 27,
       "date": "2019/07/24",
-      "hoursSlept": 5.5,
-      "sleepQuality": 2.5
+      "numOunces": 87
     },
     {
       "userID": 28,
       "date": "2019/07/24",
-      "hoursSlept": 9.6,
-      "sleepQuality": 4.3
+      "numOunces": 24
     },
     {
       "userID": 29,
       "date": "2019/07/24",
-      "hoursSlept": 8.9,
-      "sleepQuality": 4.6
+      "numOunces": 90
     },
     {
       "userID": 30,
       "date": "2019/07/24",
-      "hoursSlept": 6.5,
-      "sleepQuality": 3.2
+      "numOunces": 91
     },
     {
       "userID": 31,
       "date": "2019/07/24",
-      "hoursSlept": 8.7,
-      "sleepQuality": 4.5
+      "numOunces": 96
     },
     {
       "userID": 32,
       "date": "2019/07/24",
-      "hoursSlept": 9.5,
-      "sleepQuality": 2.8
+      "numOunces": 29
     },
     {
       "userID": 33,
       "date": "2019/07/24",
-      "hoursSlept": 7.7,
-      "sleepQuality": 4.2
+      "numOunces": 92
     },
     {
       "userID": 34,
       "date": "2019/07/24",
-      "hoursSlept": 5.1,
-      "sleepQuality": 2.9
+      "numOunces": 73
     },
     {
       "userID": 35,
       "date": "2019/07/24",
-      "hoursSlept": 8.3,
-      "sleepQuality": 3.3
+      "numOunces": 80
     },
     {
       "userID": 36,
       "date": "2019/07/24",
-      "hoursSlept": 8,
-      "sleepQuality": 4.2
+      "numOunces": 22
     },
     {
       "userID": 37,
       "date": "2019/07/24",
-      "hoursSlept": 6.6,
-      "sleepQuality": 2.6
+      "numOunces": 42
     },
     {
       "userID": 38,
       "date": "2019/07/24",
-      "hoursSlept": 5.5,
-      "sleepQuality": 4.3
+      "numOunces": 30
     },
     {
       "userID": 39,
       "date": "2019/07/24",
-      "hoursSlept": 7.6,
-      "sleepQuality": 2
+      "numOunces": 38
     },
     {
       "userID": 40,
       "date": "2019/07/24",
-      "hoursSlept": 5.5,
-      "sleepQuality": 3.8
+      "numOunces": 87
     },
     {
       "userID": 41,
       "date": "2019/07/24",
-      "hoursSlept": 4.4,
-      "sleepQuality": 1.2
+      "numOunces": 64
     },
     {
       "userID": 42,
       "date": "2019/07/24",
-      "hoursSlept": 4.7,
-      "sleepQuality": 3.7
+      "numOunces": 44
     },
     {
       "userID": 43,
       "date": "2019/07/24",
-      "hoursSlept": 8.6,
-      "sleepQuality": 4.8
+      "numOunces": 49
     },
     {
       "userID": 44,
       "date": "2019/07/24",
-      "hoursSlept": 5.3,
-      "sleepQuality": 4.2
+      "numOunces": 96
     },
     {
       "userID": 45,
       "date": "2019/07/24",
-      "hoursSlept": 8.5,
-      "sleepQuality": 4.9
+      "numOunces": 98
     },
     {
       "userID": 46,
       "date": "2019/07/24",
-      "hoursSlept": 9.8,
-      "sleepQuality": 2.8
+      "numOunces": 67
     },
     {
       "userID": 47,
       "date": "2019/07/24",
-      "hoursSlept": 9.6,
-      "sleepQuality": 2.9
+      "numOunces": 50
     },
     {
       "userID": 48,
       "date": "2019/07/24",
-      "hoursSlept": 5.6,
-      "sleepQuality": 3.3
+      "numOunces": 21
     },
     {
       "userID": 49,
       "date": "2019/07/24",
-      "hoursSlept": 10.9,
-      "sleepQuality": 3.4
+      "numOunces": 20
     },
     {
       "userID": 50,
       "date": "2019/07/24",
-      "hoursSlept": 6.3,
-      "sleepQuality": 2.2
+      "numOunces": 53
     },
     {
       "userID": 1,
       "date": "2019/07/25",
-      "hoursSlept": 4.5,
-      "sleepQuality": 1.2
+      "numOunces": 75
     },
     {
       "userID": 2,
       "date": "2019/07/25",
-      "hoursSlept": 4.7,
-      "sleepQuality": 4.5
+      "numOunces": 88
     },
     {
       "userID": 3,
       "date": "2019/07/25",
-      "hoursSlept": 4.1,
-      "sleepQuality": 2.4
+      "numOunces": 58
     },
     {
       "userID": 4,
       "date": "2019/07/25",
-      "hoursSlept": 8.4,
-      "sleepQuality": 4.5
+      "numOunces": 85
     },
     {
       "userID": 5,
       "date": "2019/07/25",
-      "hoursSlept": 6.1,
-      "sleepQuality": 1.7
+      "numOunces": 46
     },
     {
       "userID": 6,
       "date": "2019/07/25",
-      "hoursSlept": 10.7,
-      "sleepQuality": 3.7
+      "numOunces": 60
     },
     {
       "userID": 7,
       "date": "2019/07/25",
-      "hoursSlept": 7.4,
-      "sleepQuality": 3.1
+      "numOunces": 56
     },
     {
       "userID": 8,
       "date": "2019/07/25",
-      "hoursSlept": 8.2,
-      "sleepQuality": 4.5
+      "numOunces": 71
     },
     {
       "userID": 9,
       "date": "2019/07/25",
-      "hoursSlept": 7.8,
-      "sleepQuality": 3.4
+      "numOunces": 100
     },
     {
       "userID": 10,
       "date": "2019/07/25",
-      "hoursSlept": 7.9,
-      "sleepQuality": 3
+      "numOunces": 94
     },
     {
       "userID": 11,
       "date": "2019/07/25",
-      "hoursSlept": 7,
-      "sleepQuality": 2.9
+      "numOunces": 28
     },
     {
       "userID": 12,
       "date": "2019/07/25",
-      "hoursSlept": 4.6,
-      "sleepQuality": 2.4
+      "numOunces": 94
     },
     {
       "userID": 13,
       "date": "2019/07/25",
-      "hoursSlept": 5.3,
-      "sleepQuality": 1.1
+      "numOunces": 39
     },
     {
       "userID": 14,
       "date": "2019/07/25",
-      "hoursSlept": 9.5,
-      "sleepQuality": 1.8
+      "numOunces": 26
     },
     {
       "userID": 15,
       "date": "2019/07/25",
-      "hoursSlept": 7,
-      "sleepQuality": 3.8
+      "numOunces": 73
     },
     {
       "userID": 16,
       "date": "2019/07/25",
-      "hoursSlept": 4.7,
-      "sleepQuality": 3.1
+      "numOunces": 30
     },
     {
       "userID": 17,
       "date": "2019/07/25",
-      "hoursSlept": 5.8,
-      "sleepQuality": 1
+      "numOunces": 37
     },
     {
       "userID": 18,
       "date": "2019/07/25",
-      "hoursSlept": 10.3,
-      "sleepQuality": 4.8
+      "numOunces": 58
     },
     {
       "userID": 19,
       "date": "2019/07/25",
-      "hoursSlept": 10.6,
-      "sleepQuality": 1.4
+      "numOunces": 36
     },
     {
       "userID": 20,
       "date": "2019/07/25",
-      "hoursSlept": 8.8,
-      "sleepQuality": 2.8
+      "numOunces": 47
     },
     {
       "userID": 21,
       "date": "2019/07/25",
-      "hoursSlept": 8.1,
-      "sleepQuality": 4.8
+      "numOunces": 27
     },
     {
       "userID": 22,
       "date": "2019/07/25",
-      "hoursSlept": 10.9,
-      "sleepQuality": 4.6
+      "numOunces": 47
     },
     {
       "userID": 23,
       "date": "2019/07/25",
-      "hoursSlept": 4.5,
-      "sleepQuality": 3.4
+      "numOunces": 73
     },
     {
       "userID": 24,
       "date": "2019/07/25",
-      "hoursSlept": 4.8,
-      "sleepQuality": 3.7
+      "numOunces": 76
     },
     {
       "userID": 25,
       "date": "2019/07/25",
-      "hoursSlept": 8.5,
-      "sleepQuality": 2.7
+      "numOunces": 25
     },
     {
       "userID": 26,
       "date": "2019/07/25",
-      "hoursSlept": 10.9,
-      "sleepQuality": 3.4
+      "numOunces": 59
     },
     {
       "userID": 27,
       "date": "2019/07/25",
-      "hoursSlept": 7.3,
-      "sleepQuality": 3.5
+      "numOunces": 95
     },
     {
       "userID": 28,
       "date": "2019/07/25",
-      "hoursSlept": 9.5,
-      "sleepQuality": 2.3
+      "numOunces": 91
     },
     {
       "userID": 29,
       "date": "2019/07/25",
-      "hoursSlept": 10,
-      "sleepQuality": 4.3
+      "numOunces": 38
     },
     {
       "userID": 30,
       "date": "2019/07/25",
-      "hoursSlept": 9.6,
-      "sleepQuality": 1.3
+      "numOunces": 39
     },
     {
       "userID": 31,
       "date": "2019/07/25",
-      "hoursSlept": 5.9,
-      "sleepQuality": 1.2
+      "numOunces": 99
     },
     {
       "userID": 32,
       "date": "2019/07/25",
-      "hoursSlept": 10.1,
-      "sleepQuality": 2.2
+      "numOunces": 36
     },
     {
       "userID": 33,
       "date": "2019/07/25",
-      "hoursSlept": 6.2,
-      "sleepQuality": 2
+      "numOunces": 59
     },
     {
       "userID": 34,
       "date": "2019/07/25",
-      "hoursSlept": 5.2,
-      "sleepQuality": 3.1
+      "numOunces": 26
     },
     {
       "userID": 35,
       "date": "2019/07/25",
-      "hoursSlept": 4.2,
-      "sleepQuality": 1.2
+      "numOunces": 82
     },
     {
       "userID": 36,
       "date": "2019/07/25",
-      "hoursSlept": 5.5,
-      "sleepQuality": 2
+      "numOunces": 55
     },
     {
       "userID": 37,
       "date": "2019/07/25",
-      "hoursSlept": 7,
-      "sleepQuality": 2.5
+      "numOunces": 24
     },
     {
       "userID": 38,
       "date": "2019/07/25",
-      "hoursSlept": 9.9,
-      "sleepQuality": 3.1
+      "numOunces": 73
     },
     {
       "userID": 39,
       "date": "2019/07/25",
-      "hoursSlept": 5.8,
-      "sleepQuality": 2.1
+      "numOunces": 32
     },
     {
       "userID": 40,
       "date": "2019/07/25",
-      "hoursSlept": 5.3,
-      "sleepQuality": 1.6
+      "numOunces": 83
     },
     {
       "userID": 41,
       "date": "2019/07/25",
-      "hoursSlept": 9.9,
-      "sleepQuality": 2.6
+      "numOunces": 50
     },
     {
       "userID": 42,
       "date": "2019/07/25",
-      "hoursSlept": 6.9,
-      "sleepQuality": 1
+      "numOunces": 95
     },
     {
       "userID": 43,
       "date": "2019/07/25",
-      "hoursSlept": 7,
-      "sleepQuality": 2.9
+      "numOunces": 44
     },
     {
       "userID": 44,
       "date": "2019/07/25",
-      "hoursSlept": 10.1,
-      "sleepQuality": 4.4
+      "numOunces": 58
     },
     {
       "userID": 45,
       "date": "2019/07/25",
-      "hoursSlept": 4.1,
-      "sleepQuality": 4.3
+      "numOunces": 51
     },
     {
       "userID": 46,
       "date": "2019/07/25",
-      "hoursSlept": 10.1,
-      "sleepQuality": 2
+      "numOunces": 57
     },
     {
       "userID": 47,
       "date": "2019/07/25",
-      "hoursSlept": 8,
-      "sleepQuality": 4.3
+      "numOunces": 33
     },
     {
       "userID": 48,
       "date": "2019/07/25",
-      "hoursSlept": 7.2,
-      "sleepQuality": 4.7
+      "numOunces": 37
     },
     {
       "userID": 49,
       "date": "2019/07/25",
-      "hoursSlept": 10.7,
-      "sleepQuality": 4.3
+      "numOunces": 44
     },
     {
       "userID": 50,
       "date": "2019/07/25",
-      "hoursSlept": 7.4,
-      "sleepQuality": 2
+      "numOunces": 80
     },
     {
       "userID": 1,
       "date": "2019/07/26",
-      "hoursSlept": 9.4,
-      "sleepQuality": 1.4
+      "numOunces": 53
     },
     {
       "userID": 2,
       "date": "2019/07/26",
-      "hoursSlept": 10,
-      "sleepQuality": 2.9
+      "numOunces": 66
     },
     {
       "userID": 3,
       "date": "2019/07/26",
-      "hoursSlept": 6.7,
-      "sleepQuality": 1.1
+      "numOunces": 83
     },
     {
       "userID": 4,
       "date": "2019/07/26",
-      "hoursSlept": 4.3,
-      "sleepQuality": 1.6
+      "numOunces": 34
     },
     {
       "userID": 5,
       "date": "2019/07/26",
-      "hoursSlept": 5,
-      "sleepQuality": 2.9
+      "numOunces": 93
     },
     {
       "userID": 6,
       "date": "2019/07/26",
-      "hoursSlept": 4.7,
-      "sleepQuality": 1.9
+      "numOunces": 45
     },
     {
       "userID": 7,
       "date": "2019/07/26",
-      "hoursSlept": 8.5,
-      "sleepQuality": 4.6
+      "numOunces": 34
     },
     {
       "userID": 8,
       "date": "2019/07/26",
-      "hoursSlept": 7.5,
-      "sleepQuality": 4.7
+      "numOunces": 20
     },
     {
       "userID": 9,
       "date": "2019/07/26",
-      "hoursSlept": 7.2,
-      "sleepQuality": 3.9
+      "numOunces": 99
     },
     {
       "userID": 10,
       "date": "2019/07/26",
-      "hoursSlept": 4.5,
-      "sleepQuality": 1.5
+      "numOunces": 69
     },
     {
       "userID": 11,
       "date": "2019/07/26",
-      "hoursSlept": 10.3,
-      "sleepQuality": 4.7
+      "numOunces": 60
     },
     {
       "userID": 12,
       "date": "2019/07/26",
-      "hoursSlept": 7,
-      "sleepQuality": 3.9
+      "numOunces": 64
     },
     {
       "userID": 13,
       "date": "2019/07/26",
-      "hoursSlept": 8.9,
-      "sleepQuality": 4.6
+      "numOunces": 27
     },
     {
       "userID": 14,
       "date": "2019/07/26",
-      "hoursSlept": 6.6,
-      "sleepQuality": 1.2
+      "numOunces": 82
     },
     {
       "userID": 15,
       "date": "2019/07/26",
-      "hoursSlept": 4.5,
-      "sleepQuality": 1.9
+      "numOunces": 67
     },
     {
       "userID": 16,
       "date": "2019/07/26",
-      "hoursSlept": 6.3,
-      "sleepQuality": 2.1
+      "numOunces": 33
     },
     {
       "userID": 17,
       "date": "2019/07/26",
-      "hoursSlept": 5.3,
-      "sleepQuality": 4.3
+      "numOunces": 52
     },
     {
       "userID": 18,
       "date": "2019/07/26",
-      "hoursSlept": 5.8,
-      "sleepQuality": 2.6
+      "numOunces": 55
     },
     {
       "userID": 19,
       "date": "2019/07/26",
-      "hoursSlept": 6.8,
-      "sleepQuality": 4.5
+      "numOunces": 75
     },
     {
       "userID": 20,
       "date": "2019/07/26",
-      "hoursSlept": 6.2,
-      "sleepQuality": 3.2
+      "numOunces": 54
     },
     {
       "userID": 21,
       "date": "2019/07/26",
-      "hoursSlept": 7.3,
-      "sleepQuality": 1.8
+      "numOunces": 79
     },
     {
       "userID": 22,
       "date": "2019/07/26",
-      "hoursSlept": 8.3,
-      "sleepQuality": 3.9
+      "numOunces": 69
     },
     {
       "userID": 23,
       "date": "2019/07/26",
-      "hoursSlept": 6,
-      "sleepQuality": 2.5
+      "numOunces": 59
     },
     {
       "userID": 24,
       "date": "2019/07/26",
-      "hoursSlept": 5.7,
-      "sleepQuality": 4.3
+      "numOunces": 48
     },
     {
       "userID": 25,
       "date": "2019/07/26",
-      "hoursSlept": 7.4,
-      "sleepQuality": 3.8
+      "numOunces": 88
     },
     {
       "userID": 26,
       "date": "2019/07/26",
-      "hoursSlept": 7.2,
-      "sleepQuality": 3.5
+      "numOunces": 47
     },
     {
       "userID": 27,
       "date": "2019/07/26",
-      "hoursSlept": 10.3,
-      "sleepQuality": 3.9
+      "numOunces": 46
     },
     {
       "userID": 28,
       "date": "2019/07/26",
-      "hoursSlept": 10.9,
-      "sleepQuality": 3.9
+      "numOunces": 45
     },
     {
       "userID": 29,
       "date": "2019/07/26",
-      "hoursSlept": 8,
-      "sleepQuality": 2.7
+      "numOunces": 43
     },
     {
       "userID": 30,
       "date": "2019/07/26",
-      "hoursSlept": 9.9,
-      "sleepQuality": 1.9
+      "numOunces": 51
     },
     {
       "userID": 31,
       "date": "2019/07/26",
-      "hoursSlept": 7.8,
-      "sleepQuality": 4.7
+      "numOunces": 58
     },
     {
       "userID": 32,
       "date": "2019/07/26",
-      "hoursSlept": 4.3,
-      "sleepQuality": 4.5
+      "numOunces": 35
     },
     {
       "userID": 33,
       "date": "2019/07/26",
-      "hoursSlept": 6.1,
-      "sleepQuality": 2.6
+      "numOunces": 29
     },
     {
       "userID": 34,
       "date": "2019/07/26",
-      "hoursSlept": 10.8,
-      "sleepQuality": 2.5
+      "numOunces": 64
     },
     {
       "userID": 35,
       "date": "2019/07/26",
-      "hoursSlept": 9.9,
-      "sleepQuality": 4.4
+      "numOunces": 57
     },
     {
       "userID": 36,
       "date": "2019/07/26",
-      "hoursSlept": 6,
-      "sleepQuality": 1.9
+      "numOunces": 77
     },
     {
       "userID": 37,
       "date": "2019/07/26",
-      "hoursSlept": 7.6,
-      "sleepQuality": 2.4
+      "numOunces": 25
     },
     {
       "userID": 38,
       "date": "2019/07/26",
-      "hoursSlept": 8,
-      "sleepQuality": 2.5
+      "numOunces": 92
     },
     {
       "userID": 39,
       "date": "2019/07/26",
-      "hoursSlept": 6.3,
-      "sleepQuality": 3.6
+      "numOunces": 96
     },
     {
       "userID": 40,
       "date": "2019/07/26",
-      "hoursSlept": 7.6,
-      "sleepQuality": 4.6
+      "numOunces": 76
     },
     {
       "userID": 41,
       "date": "2019/07/26",
-      "hoursSlept": 6.8,
-      "sleepQuality": 3.6
+      "numOunces": 30
     },
     {
       "userID": 42,
       "date": "2019/07/26",
-      "hoursSlept": 10.7,
-      "sleepQuality": 3.7
+      "numOunces": 59
     },
     {
       "userID": 43,
       "date": "2019/07/26",
-      "hoursSlept": 6.4,
-      "sleepQuality": 1.9
+      "numOunces": 87
     },
     {
       "userID": 44,
       "date": "2019/07/26",
-      "hoursSlept": 10,
-      "sleepQuality": 2.4
+      "numOunces": 39
     },
     {
       "userID": 45,
       "date": "2019/07/26",
-      "hoursSlept": 8.8,
-      "sleepQuality": 1.4
+      "numOunces": 77
     },
     {
       "userID": 46,
       "date": "2019/07/26",
-      "hoursSlept": 6.8,
-      "sleepQuality": 1.4
+      "numOunces": 76
     },
     {
       "userID": 47,
       "date": "2019/07/26",
-      "hoursSlept": 4.9,
-      "sleepQuality": 4.3
+      "numOunces": 95
     },
     {
       "userID": 48,
       "date": "2019/07/26",
-      "hoursSlept": 4.4,
-      "sleepQuality": 1
+      "numOunces": 92
     },
     {
       "userID": 49,
       "date": "2019/07/26",
-      "hoursSlept": 9.2,
-      "sleepQuality": 1.6
+      "numOunces": 57
     },
     {
       "userID": 50,
       "date": "2019/07/26",
-      "hoursSlept": 5.2,
-      "sleepQuality": 3.2
+      "numOunces": 88
     },
     {
       "userID": 1,
       "date": "2019/07/27",
-      "hoursSlept": 7.3,
-      "sleepQuality": 1.4
+      "numOunces": 87
     },
     {
       "userID": 2,
       "date": "2019/07/27",
-      "hoursSlept": 6,
-      "sleepQuality": 1.3
+      "numOunces": 51
     },
     {
       "userID": 3,
       "date": "2019/07/27",
-      "hoursSlept": 8.4,
-      "sleepQuality": 1.8
+      "numOunces": 49
     },
     {
       "userID": 4,
       "date": "2019/07/27",
-      "hoursSlept": 9.7,
-      "sleepQuality": 3.9
+      "numOunces": 59
     },
     {
       "userID": 5,
       "date": "2019/07/27",
-      "hoursSlept": 9.8,
-      "sleepQuality": 1.2
+      "numOunces": 33
     },
     {
       "userID": 6,
       "date": "2019/07/27",
-      "hoursSlept": 5,
-      "sleepQuality": 2.3
+      "numOunces": 36
     },
     {
       "userID": 7,
       "date": "2019/07/27",
-      "hoursSlept": 7.9,
-      "sleepQuality": 3.6
+      "numOunces": 37
     },
     {
       "userID": 8,
       "date": "2019/07/27",
-      "hoursSlept": 10.6,
-      "sleepQuality": 3.5
+      "numOunces": 70
     },
     {
       "userID": 9,
       "date": "2019/07/27",
-      "hoursSlept": 7.9,
-      "sleepQuality": 1.7
+      "numOunces": 51
     },
     {
       "userID": 10,
       "date": "2019/07/27",
-      "hoursSlept": 7.5,
-      "sleepQuality": 1.9
+      "numOunces": 36
     },
     {
       "userID": 11,
       "date": "2019/07/27",
-      "hoursSlept": 7.2,
-      "sleepQuality": 3.2
+      "numOunces": 53
     },
     {
       "userID": 12,
       "date": "2019/07/27",
-      "hoursSlept": 6.6,
-      "sleepQuality": 2.4
+      "numOunces": 59
     },
     {
       "userID": 13,
       "date": "2019/07/27",
-      "hoursSlept": 7.5,
-      "sleepQuality": 1.7
+      "numOunces": 55
     },
     {
       "userID": 14,
       "date": "2019/07/27",
-      "hoursSlept": 8.4,
-      "sleepQuality": 4.1
+      "numOunces": 79
     },
     {
       "userID": 15,
       "date": "2019/07/27",
-      "hoursSlept": 4.4,
-      "sleepQuality": 2.6
+      "numOunces": 43
     },
     {
       "userID": 16,
       "date": "2019/07/27",
-      "hoursSlept": 9.9,
-      "sleepQuality": 2.9
+      "numOunces": 74
     },
     {
       "userID": 17,
       "date": "2019/07/27",
-      "hoursSlept": 5.4,
-      "sleepQuality": 4.8
+      "numOunces": 92
     },
     {
       "userID": 18,
       "date": "2019/07/27",
-      "hoursSlept": 7.6,
-      "sleepQuality": 4.1
+      "numOunces": 24
     },
     {
       "userID": 19,
       "date": "2019/07/27",
-      "hoursSlept": 9.7,
-      "sleepQuality": 2.7
+      "numOunces": 47
     },
     {
       "userID": 20,
       "date": "2019/07/27",
-      "hoursSlept": 6.8,
-      "sleepQuality": 4.8
+      "numOunces": 46
     },
     {
       "userID": 21,
       "date": "2019/07/27",
-      "hoursSlept": 10.7,
-      "sleepQuality": 1.5
+      "numOunces": 40
     },
     {
       "userID": 22,
       "date": "2019/07/27",
-      "hoursSlept": 5.9,
-      "sleepQuality": 3.2
+      "numOunces": 51
     },
     {
       "userID": 23,
       "date": "2019/07/27",
-      "hoursSlept": 5.6,
-      "sleepQuality": 4
+      "numOunces": 49
     },
     {
       "userID": 24,
       "date": "2019/07/27",
-      "hoursSlept": 9.7,
-      "sleepQuality": 2.9
+      "numOunces": 65
     },
     {
       "userID": 25,
       "date": "2019/07/27",
-      "hoursSlept": 8.4,
-      "sleepQuality": 2.3
+      "numOunces": 95
     },
     {
       "userID": 26,
       "date": "2019/07/27",
-      "hoursSlept": 8,
-      "sleepQuality": 1.6
+      "numOunces": 22
     },
     {
       "userID": 27,
       "date": "2019/07/27",
-      "hoursSlept": 10.2,
-      "sleepQuality": 4.5
+      "numOunces": 90
     },
     {
       "userID": 28,
       "date": "2019/07/27",
-      "hoursSlept": 6.3,
-      "sleepQuality": 1.8
+      "numOunces": 76
     },
     {
       "userID": 29,
       "date": "2019/07/27",
-      "hoursSlept": 4.4,
-      "sleepQuality": 4.2
+      "numOunces": 80
     },
     {
       "userID": 30,
       "date": "2019/07/27",
-      "hoursSlept": 7.5,
-      "sleepQuality": 4.1
+      "numOunces": 31
     },
     {
       "userID": 31,
       "date": "2019/07/27",
-      "hoursSlept": 9.2,
-      "sleepQuality": 4.5
+      "numOunces": 29
     },
     {
       "userID": 32,
       "date": "2019/07/27",
-      "hoursSlept": 8.1,
-      "sleepQuality": 3
+      "numOunces": 30
     },
     {
       "userID": 33,
       "date": "2019/07/27",
-      "hoursSlept": 9.7,
-      "sleepQuality": 4.3
+      "numOunces": 36
     },
     {
       "userID": 34,
       "date": "2019/07/27",
-      "hoursSlept": 10,
-      "sleepQuality": 3.4
+      "numOunces": 88
     },
     {
       "userID": 35,
       "date": "2019/07/27",
-      "hoursSlept": 8.1,
-      "sleepQuality": 1.5
+      "numOunces": 74
     },
     {
       "userID": 36,
       "date": "2019/07/27",
-      "hoursSlept": 10.3,
-      "sleepQuality": 3.1
+      "numOunces": 92
     },
     {
       "userID": 37,
       "date": "2019/07/27",
-      "hoursSlept": 6,
-      "sleepQuality": 4.2
+      "numOunces": 63
     },
     {
       "userID": 38,
       "date": "2019/07/27",
-      "hoursSlept": 4.5,
-      "sleepQuality": 1.1
+      "numOunces": 67
     },
     {
       "userID": 39,
       "date": "2019/07/27",
-      "hoursSlept": 6.7,
-      "sleepQuality": 1.6
+      "numOunces": 91
     },
     {
       "userID": 40,
       "date": "2019/07/27",
-      "hoursSlept": 8.7,
-      "sleepQuality": 4.8
+      "numOunces": 90
     },
     {
       "userID": 41,
       "date": "2019/07/27",
-      "hoursSlept": 5,
-      "sleepQuality": 2
+      "numOunces": 33
     },
     {
       "userID": 42,
       "date": "2019/07/27",
-      "hoursSlept": 9.1,
-      "sleepQuality": 2.8
+      "numOunces": 90
     },
     {
       "userID": 43,
       "date": "2019/07/27",
-      "hoursSlept": 7.8,
-      "sleepQuality": 3.8
+      "numOunces": 71
     },
     {
       "userID": 44,
       "date": "2019/07/27",
-      "hoursSlept": 4.6,
-      "sleepQuality": 1.8
+      "numOunces": 73
     },
     {
       "userID": 45,
       "date": "2019/07/27",
-      "hoursSlept": 9.4,
-      "sleepQuality": 2.4
+      "numOunces": 71
     },
     {
       "userID": 46,
       "date": "2019/07/27",
-      "hoursSlept": 8.2,
-      "sleepQuality": 1.9
+      "numOunces": 72
     },
     {
       "userID": 47,
       "date": "2019/07/27",
-      "hoursSlept": 5.9,
-      "sleepQuality": 3.9
+      "numOunces": 34
     },
     {
       "userID": 48,
       "date": "2019/07/27",
-      "hoursSlept": 9.5,
-      "sleepQuality": 2.5
+      "numOunces": 93
     },
     {
       "userID": 49,
       "date": "2019/07/27",
-      "hoursSlept": 7.4,
-      "sleepQuality": 3.5
+      "numOunces": 63
     },
     {
       "userID": 50,
       "date": "2019/07/27",
-      "hoursSlept": 7.6,
-      "sleepQuality": 2.1
+      "numOunces": 91
     },
     {
       "userID": 1,
       "date": "2019/07/28",
-      "hoursSlept": 9,
-      "sleepQuality": 2.6
+      "numOunces": 33
     },
     {
       "userID": 2,
       "date": "2019/07/28",
-      "hoursSlept": 8.8,
-      "sleepQuality": 4
+      "numOunces": 93
     },
     {
       "userID": 3,
       "date": "2019/07/28",
-      "hoursSlept": 5.6,
-      "sleepQuality": 2.5
+      "numOunces": 63
     },
     {
       "userID": 4,
       "date": "2019/07/28",
-      "hoursSlept": 10.3,
-      "sleepQuality": 4.5
+      "numOunces": 65
     },
     {
       "userID": 5,
       "date": "2019/07/28",
-      "hoursSlept": 10.9,
-      "sleepQuality": 4.5
+      "numOunces": 82
     },
     {
       "userID": 6,
       "date": "2019/07/28",
-      "hoursSlept": 7.6,
-      "sleepQuality": 1.3
+      "numOunces": 36
     },
     {
       "userID": 7,
       "date": "2019/07/28",
-      "hoursSlept": 6.3,
-      "sleepQuality": 1.1
+      "numOunces": 59
     },
     {
       "userID": 8,
       "date": "2019/07/28",
-      "hoursSlept": 8.1,
-      "sleepQuality": 1.3
+      "numOunces": 33
     },
     {
       "userID": 9,
       "date": "2019/07/28",
-      "hoursSlept": 9.5,
-      "sleepQuality": 3.3
+      "numOunces": 28
     },
     {
       "userID": 10,
       "date": "2019/07/28",
-      "hoursSlept": 10.4,
-      "sleepQuality": 3.3
+      "numOunces": 88
     },
     {
       "userID": 11,
       "date": "2019/07/28",
-      "hoursSlept": 9.1,
-      "sleepQuality": 1.8
+      "numOunces": 93
     },
     {
       "userID": 12,
       "date": "2019/07/28",
-      "hoursSlept": 8.7,
-      "sleepQuality": 3.3
+      "numOunces": 21
     },
     {
       "userID": 13,
       "date": "2019/07/28",
-      "hoursSlept": 8,
-      "sleepQuality": 3.6
+      "numOunces": 75
     },
     {
       "userID": 14,
       "date": "2019/07/28",
-      "hoursSlept": 6.8,
-      "sleepQuality": 4.7
+      "numOunces": 88
     },
     {
       "userID": 15,
       "date": "2019/07/28",
-      "hoursSlept": 9.6,
-      "sleepQuality": 1.6
+      "numOunces": 50
     },
     {
       "userID": 16,
       "date": "2019/07/28",
-      "hoursSlept": 8,
-      "sleepQuality": 1
+      "numOunces": 61
     },
     {
       "userID": 17,
       "date": "2019/07/28",
-      "hoursSlept": 8.1,
-      "sleepQuality": 4.8
+      "numOunces": 45
     },
     {
       "userID": 18,
       "date": "2019/07/28",
-      "hoursSlept": 7.8,
-      "sleepQuality": 2.4
+      "numOunces": 70
     },
     {
       "userID": 19,
       "date": "2019/07/28",
-      "hoursSlept": 7.4,
-      "sleepQuality": 1.9
+      "numOunces": 63
     },
     {
       "userID": 20,
       "date": "2019/07/28",
-      "hoursSlept": 6.7,
-      "sleepQuality": 1.7
+      "numOunces": 25
     },
     {
       "userID": 21,
       "date": "2019/07/28",
-      "hoursSlept": 7.2,
-      "sleepQuality": 4.9
+      "numOunces": 74
     },
     {
       "userID": 22,
       "date": "2019/07/28",
-      "hoursSlept": 7.7,
-      "sleepQuality": 1.3
+      "numOunces": 61
     },
     {
       "userID": 23,
       "date": "2019/07/28",
-      "hoursSlept": 4.6,
-      "sleepQuality": 2.9
+      "numOunces": 57
     },
     {
       "userID": 24,
       "date": "2019/07/28",
-      "hoursSlept": 6.1,
-      "sleepQuality": 3.1
+      "numOunces": 85
     },
     {
       "userID": 25,
       "date": "2019/07/28",
-      "hoursSlept": 7.8,
-      "sleepQuality": 1.9
+      "numOunces": 52
     },
     {
       "userID": 26,
       "date": "2019/07/28",
-      "hoursSlept": 10,
-      "sleepQuality": 1.2
+      "numOunces": 27
     },
     {
       "userID": 27,
       "date": "2019/07/28",
-      "hoursSlept": 7.5,
-      "sleepQuality": 1.4
+      "numOunces": 55
     },
     {
       "userID": 28,
       "date": "2019/07/28",
-      "hoursSlept": 5.7,
-      "sleepQuality": 2.4
+      "numOunces": 66
     },
     {
       "userID": 29,
       "date": "2019/07/28",
-      "hoursSlept": 9.8,
-      "sleepQuality": 4.6
+      "numOunces": 54
     },
     {
       "userID": 30,
       "date": "2019/07/28",
-      "hoursSlept": 10.7,
-      "sleepQuality": 2.5
+      "numOunces": 79
     },
     {
       "userID": 31,
       "date": "2019/07/28",
-      "hoursSlept": 9.3,
-      "sleepQuality": 3.4
+      "numOunces": 32
     },
     {
       "userID": 32,
       "date": "2019/07/28",
-      "hoursSlept": 10.9,
-      "sleepQuality": 3.6
+      "numOunces": 59
     },
     {
       "userID": 33,
       "date": "2019/07/28",
-      "hoursSlept": 4.4,
-      "sleepQuality": 2.3
+      "numOunces": 44
     },
     {
       "userID": 34,
       "date": "2019/07/28",
-      "hoursSlept": 6.9,
-      "sleepQuality": 2
+      "numOunces": 82
     },
     {
       "userID": 35,
       "date": "2019/07/28",
-      "hoursSlept": 9.5,
-      "sleepQuality": 2.9
+      "numOunces": 67
     },
     {
       "userID": 36,
       "date": "2019/07/28",
-      "hoursSlept": 10.8,
-      "sleepQuality": 4.7
+      "numOunces": 78
     },
     {
       "userID": 37,
       "date": "2019/07/28",
-      "hoursSlept": 4.2,
-      "sleepQuality": 1.9
+      "numOunces": 24
     },
     {
       "userID": 38,
       "date": "2019/07/28",
-      "hoursSlept": 7.9,
-      "sleepQuality": 2.7
+      "numOunces": 94
     },
     {
       "userID": 39,
       "date": "2019/07/28",
-      "hoursSlept": 7.4,
-      "sleepQuality": 1.6
+      "numOunces": 26
     },
     {
       "userID": 40,
       "date": "2019/07/28",
-      "hoursSlept": 7.8,
-      "sleepQuality": 1.8
+      "numOunces": 33
     },
     {
       "userID": 41,
       "date": "2019/07/28",
-      "hoursSlept": 6.1,
-      "sleepQuality": 4.5
+      "numOunces": 36
     },
     {
       "userID": 42,
       "date": "2019/07/28",
-      "hoursSlept": 6.1,
-      "sleepQuality": 4.9
+      "numOunces": 94
     },
     {
       "userID": 43,
       "date": "2019/07/28",
-      "hoursSlept": 10.3,
-      "sleepQuality": 2.7
+      "numOunces": 45
     },
     {
       "userID": 44,
       "date": "2019/07/28",
-      "hoursSlept": 10.4,
-      "sleepQuality": 4.3
+      "numOunces": 28
     },
     {
       "userID": 45,
       "date": "2019/07/28",
-      "hoursSlept": 8.4,
-      "sleepQuality": 1.3
+      "numOunces": 66
     },
     {
       "userID": 46,
       "date": "2019/07/28",
-      "hoursSlept": 8.9,
-      "sleepQuality": 3
+      "numOunces": 35
     },
     {
       "userID": 47,
       "date": "2019/07/28",
-      "hoursSlept": 8.7,
-      "sleepQuality": 4.9
+      "numOunces": 98
     },
     {
       "userID": 48,
       "date": "2019/07/28",
-      "hoursSlept": 7.5,
-      "sleepQuality": 3.6
+      "numOunces": 86
     },
     {
       "userID": 49,
       "date": "2019/07/28",
-      "hoursSlept": 9.1,
-      "sleepQuality": 1.3
+      "numOunces": 97
     },
     {
       "userID": 50,
       "date": "2019/07/28",
-      "hoursSlept": 5.2,
-      "sleepQuality": 2.7
+      "numOunces": 51
     },
     {
       "userID": 1,
       "date": "2019/07/29",
-      "hoursSlept": 7.4,
-      "sleepQuality": 3.8
+      "numOunces": 29
     },
     {
       "userID": 2,
       "date": "2019/07/29",
-      "hoursSlept": 4.6,
-      "sleepQuality": 1.7
+      "numOunces": 85
     },
     {
       "userID": 3,
       "date": "2019/07/29",
-      "hoursSlept": 8.1,
-      "sleepQuality": 1.3
+      "numOunces": 32
     },
     {
       "userID": 4,
       "date": "2019/07/29",
-      "hoursSlept": 9.7,
-      "sleepQuality": 1.5
+      "numOunces": 46
     },
     {
       "userID": 5,
       "date": "2019/07/29",
-      "hoursSlept": 10.8,
-      "sleepQuality": 3
+      "numOunces": 81
     },
     {
       "userID": 6,
       "date": "2019/07/29",
-      "hoursSlept": 8.8,
-      "sleepQuality": 3.5
+      "numOunces": 26
     },
     {
       "userID": 7,
       "date": "2019/07/29",
-      "hoursSlept": 4.6,
-      "sleepQuality": 2.6
+      "numOunces": 45
     },
     {
       "userID": 8,
       "date": "2019/07/29",
-      "hoursSlept": 10.8,
-      "sleepQuality": 4.1
+      "numOunces": 93
     },
     {
       "userID": 9,
       "date": "2019/07/29",
-      "hoursSlept": 9.9,
-      "sleepQuality": 3.7
+      "numOunces": 44
     },
     {
       "userID": 10,
       "date": "2019/07/29",
-      "hoursSlept": 8.4,
-      "sleepQuality": 1.3
+      "numOunces": 87
     },
     {
       "userID": 11,
       "date": "2019/07/29",
-      "hoursSlept": 5.3,
-      "sleepQuality": 2
+      "numOunces": 97
     },
     {
       "userID": 12,
       "date": "2019/07/29",
-      "hoursSlept": 6.5,
-      "sleepQuality": 3.4
+      "numOunces": 36
     },
     {
       "userID": 13,
       "date": "2019/07/29",
-      "hoursSlept": 8,
-      "sleepQuality": 3.9
+      "numOunces": 91
     },
     {
       "userID": 14,
       "date": "2019/07/29",
-      "hoursSlept": 8.8,
-      "sleepQuality": 3.3
+      "numOunces": 49
     },
     {
       "userID": 15,
       "date": "2019/07/29",
-      "hoursSlept": 6.7,
-      "sleepQuality": 4.9
+      "numOunces": 70
     },
     {
       "userID": 16,
       "date": "2019/07/29",
-      "hoursSlept": 7.5,
-      "sleepQuality": 3.3
+      "numOunces": 20
     },
     {
       "userID": 17,
       "date": "2019/07/29",
-      "hoursSlept": 4.2,
-      "sleepQuality": 4.1
+      "numOunces": 58
     },
     {
       "userID": 18,
       "date": "2019/07/29",
-      "hoursSlept": 4.4,
-      "sleepQuality": 5
+      "numOunces": 75
     },
     {
       "userID": 19,
       "date": "2019/07/29",
-      "hoursSlept": 9.5,
-      "sleepQuality": 4.5
+      "numOunces": 20
     },
     {
       "userID": 20,
       "date": "2019/07/29",
-      "hoursSlept": 4.2,
-      "sleepQuality": 2.4
+      "numOunces": 53
     },
     {
       "userID": 21,
       "date": "2019/07/29",
-      "hoursSlept": 8.3,
-      "sleepQuality": 3.7
+      "numOunces": 78
     },
     {
       "userID": 22,
       "date": "2019/07/29",
-      "hoursSlept": 4.1,
-      "sleepQuality": 3.7
+      "numOunces": 63
     },
     {
       "userID": 23,
       "date": "2019/07/29",
-      "hoursSlept": 6.4,
-      "sleepQuality": 4.1
+      "numOunces": 88
     },
     {
       "userID": 24,
       "date": "2019/07/29",
-      "hoursSlept": 9.5,
-      "sleepQuality": 1.6
+      "numOunces": 88
     },
     {
       "userID": 25,
       "date": "2019/07/29",
-      "hoursSlept": 4.3,
-      "sleepQuality": 2.2
+      "numOunces": 50
     },
     {
       "userID": 26,
       "date": "2019/07/29",
-      "hoursSlept": 9.7,
-      "sleepQuality": 2.5
+      "numOunces": 43
     },
     {
       "userID": 27,
       "date": "2019/07/29",
-      "hoursSlept": 6.4,
-      "sleepQuality": 3
+      "numOunces": 90
     },
     {
       "userID": 28,
       "date": "2019/07/29",
-      "hoursSlept": 10.1,
-      "sleepQuality": 1.2
+      "numOunces": 48
     },
     {
       "userID": 29,
       "date": "2019/07/29",
-      "hoursSlept": 7.9,
-      "sleepQuality": 3.8
+      "numOunces": 91
     },
     {
       "userID": 30,
       "date": "2019/07/29",
-      "hoursSlept": 9.9,
-      "sleepQuality": 4.5
+      "numOunces": 84
     },
     {
       "userID": 31,
       "date": "2019/07/29",
-      "hoursSlept": 10.9,
-      "sleepQuality": 2.7
+      "numOunces": 36
     },
     {
       "userID": 32,
       "date": "2019/07/29",
-      "hoursSlept": 6.3,
-      "sleepQuality": 2.8
+      "numOunces": 90
     },
     {
       "userID": 33,
       "date": "2019/07/29",
-      "hoursSlept": 9.7,
-      "sleepQuality": 2.6
+      "numOunces": 58
     },
     {
       "userID": 34,
       "date": "2019/07/29",
-      "hoursSlept": 4.2,
-      "sleepQuality": 2.8
+      "numOunces": 33
     },
     {
       "userID": 35,
       "date": "2019/07/29",
-      "hoursSlept": 9.2,
-      "sleepQuality": 2.1
+      "numOunces": 27
     },
     {
       "userID": 36,
       "date": "2019/07/29",
-      "hoursSlept": 7,
-      "sleepQuality": 2
+      "numOunces": 93
     },
     {
       "userID": 37,
       "date": "2019/07/29",
-      "hoursSlept": 9.7,
-      "sleepQuality": 1.2
+      "numOunces": 67
     },
     {
       "userID": 38,
       "date": "2019/07/29",
-      "hoursSlept": 7.3,
-      "sleepQuality": 4.9
+      "numOunces": 90
     },
     {
       "userID": 39,
       "date": "2019/07/29",
-      "hoursSlept": 8.2,
-      "sleepQuality": 2.6
+      "numOunces": 76
     },
     {
       "userID": 40,
       "date": "2019/07/29",
-      "hoursSlept": 9.3,
-      "sleepQuality": 3.1
+      "numOunces": 75
     },
     {
       "userID": 41,
       "date": "2019/07/29",
-      "hoursSlept": 9.8,
-      "sleepQuality": 4
+      "numOunces": 87
     },
     {
       "userID": 42,
       "date": "2019/07/29",
-      "hoursSlept": 10,
-      "sleepQuality": 2.9
+      "numOunces": 79
     },
     {
       "userID": 43,
       "date": "2019/07/29",
-      "hoursSlept": 10.8,
-      "sleepQuality": 3.6
+      "numOunces": 85
     },
     {
       "userID": 44,
       "date": "2019/07/29",
-      "hoursSlept": 6.8,
-      "sleepQuality": 2.2
+      "numOunces": 53
     },
     {
       "userID": 45,
       "date": "2019/07/29",
-      "hoursSlept": 5.4,
-      "sleepQuality": 4.9
+      "numOunces": 29
     },
     {
       "userID": 46,
       "date": "2019/07/29",
-      "hoursSlept": 8.3,
-      "sleepQuality": 4.3
+      "numOunces": 78
     },
     {
       "userID": 47,
       "date": "2019/07/29",
-      "hoursSlept": 4.7,
-      "sleepQuality": 2.1
+      "numOunces": 31
     },
     {
       "userID": 48,
       "date": "2019/07/29",
-      "hoursSlept": 5.8,
-      "sleepQuality": 4.5
+      "numOunces": 78
     },
     {
       "userID": 49,
       "date": "2019/07/29",
-      "hoursSlept": 4.5,
-      "sleepQuality": 4.4
+      "numOunces": 74
     },
     {
       "userID": 50,
       "date": "2019/07/29",
-      "hoursSlept": 7.7,
-      "sleepQuality": 2.4
+      "numOunces": 38
     },
     {
       "userID": 1,
       "date": "2019/07/30",
-      "hoursSlept": 10.6,
-      "sleepQuality": 3.6
+      "numOunces": 65
     },
     {
       "userID": 2,
       "date": "2019/07/30",
-      "hoursSlept": 5.6,
-      "sleepQuality": 2.4
+      "numOunces": 37
     },
     {
       "userID": 3,
       "date": "2019/07/30",
-      "hoursSlept": 5.5,
-      "sleepQuality": 1.1
+      "numOunces": 55
     },
     {
       "userID": 4,
       "date": "2019/07/30",
-      "hoursSlept": 8.7,
-      "sleepQuality": 3.9
+      "numOunces": 91
     },
     {
       "userID": 5,
       "date": "2019/07/30",
-      "hoursSlept": 6.9,
-      "sleepQuality": 4.7
+      "numOunces": 78
     },
     {
       "userID": 6,
       "date": "2019/07/30",
-      "hoursSlept": 6.4,
-      "sleepQuality": 4.9
+      "numOunces": 59
     },
     {
       "userID": 7,
       "date": "2019/07/30",
-      "hoursSlept": 6.4,
-      "sleepQuality": 1.8
+      "numOunces": 72
     },
     {
       "userID": 8,
       "date": "2019/07/30",
-      "hoursSlept": 9.3,
-      "sleepQuality": 3.6
+      "numOunces": 85
     },
     {
       "userID": 9,
       "date": "2019/07/30",
-      "hoursSlept": 6,
-      "sleepQuality": 4.6
+      "numOunces": 87
     },
     {
       "userID": 10,
       "date": "2019/07/30",
-      "hoursSlept": 5.5,
-      "sleepQuality": 3.2
+      "numOunces": 87
     },
     {
       "userID": 11,
       "date": "2019/07/30",
-      "hoursSlept": 10.6,
-      "sleepQuality": 5
+      "numOunces": 86
     },
     {
       "userID": 12,
       "date": "2019/07/30",
-      "hoursSlept": 4.1,
-      "sleepQuality": 4
+      "numOunces": 60
     },
     {
       "userID": 13,
       "date": "2019/07/30",
-      "hoursSlept": 4.8,
-      "sleepQuality": 2.3
+      "numOunces": 89
     },
     {
       "userID": 14,
       "date": "2019/07/30",
-      "hoursSlept": 8,
-      "sleepQuality": 3.6
+      "numOunces": 58
     },
     {
       "userID": 15,
       "date": "2019/07/30",
-      "hoursSlept": 6,
-      "sleepQuality": 3
+      "numOunces": 78
     },
     {
       "userID": 16,
       "date": "2019/07/30",
-      "hoursSlept": 5.3,
-      "sleepQuality": 3
+      "numOunces": 70
     },
     {
       "userID": 17,
       "date": "2019/07/30",
-      "hoursSlept": 7,
-      "sleepQuality": 1.9
+      "numOunces": 81
     },
     {
       "userID": 18,
       "date": "2019/07/30",
-      "hoursSlept": 4.3,
-      "sleepQuality": 5
+      "numOunces": 71
     },
     {
       "userID": 19,
       "date": "2019/07/30",
-      "hoursSlept": 5.6,
-      "sleepQuality": 3.1
+      "numOunces": 51
     },
     {
       "userID": 20,
       "date": "2019/07/30",
-      "hoursSlept": 9,
-      "sleepQuality": 4.1
+      "numOunces": 40
     },
     {
       "userID": 21,
       "date": "2019/07/30",
-      "hoursSlept": 10.9,
-      "sleepQuality": 4.1
+      "numOunces": 64
     },
     {
       "userID": 22,
       "date": "2019/07/30",
-      "hoursSlept": 5.3,
-      "sleepQuality": 1.6
+      "numOunces": 94
     },
     {
       "userID": 23,
       "date": "2019/07/30",
-      "hoursSlept": 10.1,
-      "sleepQuality": 3.5
+      "numOunces": 85
     },
     {
       "userID": 24,
       "date": "2019/07/30",
-      "hoursSlept": 6.9,
-      "sleepQuality": 2
+      "numOunces": 61
     },
     {
       "userID": 25,
       "date": "2019/07/30",
-      "hoursSlept": 7,
-      "sleepQuality": 1.5
+      "numOunces": 51
     },
     {
       "userID": 26,
       "date": "2019/07/30",
-      "hoursSlept": 9,
-      "sleepQuality": 3.6
+      "numOunces": 95
     },
     {
       "userID": 27,
       "date": "2019/07/30",
-      "hoursSlept": 6.2,
-      "sleepQuality": 4.5
+      "numOunces": 32
     },
     {
       "userID": 28,
       "date": "2019/07/30",
-      "hoursSlept": 7.7,
-      "sleepQuality": 3.9
+      "numOunces": 82
     },
     {
       "userID": 29,
       "date": "2019/07/30",
-      "hoursSlept": 6.4,
-      "sleepQuality": 3.8
+      "numOunces": 32
     },
     {
       "userID": 30,
       "date": "2019/07/30",
-      "hoursSlept": 5,
-      "sleepQuality": 3.6
+      "numOunces": 78
     },
     {
       "userID": 31,
       "date": "2019/07/30",
-      "hoursSlept": 7.4,
-      "sleepQuality": 3
+      "numOunces": 88
     },
     {
       "userID": 32,
       "date": "2019/07/30",
-      "hoursSlept": 8.7,
-      "sleepQuality": 3.2
+      "numOunces": 67
     },
     {
       "userID": 33,
       "date": "2019/07/30",
-      "hoursSlept": 7.6,
-      "sleepQuality": 4.5
+      "numOunces": 93
     },
     {
       "userID": 34,
       "date": "2019/07/30",
-      "hoursSlept": 10.8,
-      "sleepQuality": 2.6
+      "numOunces": 43
     },
     {
       "userID": 35,
       "date": "2019/07/30",
-      "hoursSlept": 6.6,
-      "sleepQuality": 2.4
+      "numOunces": 38
     },
     {
       "userID": 36,
       "date": "2019/07/30",
-      "hoursSlept": 10.1,
-      "sleepQuality": 3.7
+      "numOunces": 98
     },
     {
       "userID": 37,
       "date": "2019/07/30",
-      "hoursSlept": 5,
-      "sleepQuality": 4
+      "numOunces": 42
     },
     {
       "userID": 38,
       "date": "2019/07/30",
-      "hoursSlept": 4.7,
-      "sleepQuality": 2.3
+      "numOunces": 85
     },
     {
       "userID": 39,
       "date": "2019/07/30",
-      "hoursSlept": 9.6,
-      "sleepQuality": 4.9
+      "numOunces": 46
     },
     {
       "userID": 40,
       "date": "2019/07/30",
-      "hoursSlept": 8.2,
-      "sleepQuality": 3.1
+      "numOunces": 100
     },
     {
       "userID": 41,
       "date": "2019/07/30",
-      "hoursSlept": 7.5,
-      "sleepQuality": 1.3
+      "numOunces": 74
     },
     {
       "userID": 42,
       "date": "2019/07/30",
-      "hoursSlept": 5.1,
-      "sleepQuality": 2.4
+      "numOunces": 41
     },
     {
       "userID": 43,
       "date": "2019/07/30",
-      "hoursSlept": 8.3,
-      "sleepQuality": 4.2
+      "numOunces": 35
     },
     {
       "userID": 44,
       "date": "2019/07/30",
-      "hoursSlept": 4.7,
-      "sleepQuality": 1.4
+      "numOunces": 21
     },
     {
       "userID": 45,
       "date": "2019/07/30",
-      "hoursSlept": 8.2,
-      "sleepQuality": 2.3
+      "numOunces": 84
     },
     {
       "userID": 46,
       "date": "2019/07/30",
-      "hoursSlept": 7.8,
-      "sleepQuality": 2.3
+      "numOunces": 65
     },
     {
       "userID": 47,
       "date": "2019/07/30",
-      "hoursSlept": 7.9,
-      "sleepQuality": 3.1
+      "numOunces": 49
     },
     {
       "userID": 48,
       "date": "2019/07/30",
-      "hoursSlept": 6.5,
-      "sleepQuality": 2.5
+      "numOunces": 84
     },
     {
       "userID": 49,
       "date": "2019/07/30",
-      "hoursSlept": 6.6,
-      "sleepQuality": 2.2
+      "numOunces": 28
     },
     {
       "userID": 50,
       "date": "2019/07/30",
-      "hoursSlept": 9.6,
-      "sleepQuality": 1.7
+      "numOunces": 83
     },
     {
       "userID": 1,
       "date": "2019/07/31",
-      "hoursSlept": 10.3,
-      "sleepQuality": 3.5
+      "numOunces": 85
     },
     {
       "userID": 2,
       "date": "2019/07/31",
-      "hoursSlept": 4.9,
-      "sleepQuality": 3.2
+      "numOunces": 68
     },
     {
       "userID": 3,
       "date": "2019/07/31",
-      "hoursSlept": 9.6,
-      "sleepQuality": 4.8
+      "numOunces": 46
     },
     {
       "userID": 4,
       "date": "2019/07/31",
-      "hoursSlept": 7.1,
-      "sleepQuality": 3.1
+      "numOunces": 100
     },
     {
       "userID": 5,
       "date": "2019/07/31",
-      "hoursSlept": 7.9,
-      "sleepQuality": 4.4
+      "numOunces": 43
     },
     {
       "userID": 6,
       "date": "2019/07/31",
-      "hoursSlept": 9.2,
-      "sleepQuality": 4.8
+      "numOunces": 21
     },
     {
       "userID": 7,
       "date": "2019/07/31",
-      "hoursSlept": 9.1,
-      "sleepQuality": 1.8
+      "numOunces": 57
     },
     {
       "userID": 8,
       "date": "2019/07/31",
-      "hoursSlept": 9.7,
-      "sleepQuality": 3.8
+      "numOunces": 80
     },
     {
       "userID": 9,
       "date": "2019/07/31",
-      "hoursSlept": 10.1,
-      "sleepQuality": 3.3
+      "numOunces": 95
     },
     {
       "userID": 10,
       "date": "2019/07/31",
-      "hoursSlept": 9,
-      "sleepQuality": 1.1
+      "numOunces": 22
     },
     {
       "userID": 11,
       "date": "2019/07/31",
-      "hoursSlept": 5.3,
-      "sleepQuality": 2.6
+      "numOunces": 85
     },
     {
       "userID": 12,
       "date": "2019/07/31",
-      "hoursSlept": 6.9,
-      "sleepQuality": 1.1
+      "numOunces": 31
     },
     {
       "userID": 13,
       "date": "2019/07/31",
-      "hoursSlept": 6.3,
-      "sleepQuality": 2.2
+      "numOunces": 66
     },
     {
       "userID": 14,
       "date": "2019/07/31",
-      "hoursSlept": 10.1,
-      "sleepQuality": 3.4
+      "numOunces": 97
     },
     {
       "userID": 15,
       "date": "2019/07/31",
-      "hoursSlept": 9.6,
-      "sleepQuality": 4.3
+      "numOunces": 31
     },
     {
       "userID": 16,
       "date": "2019/07/31",
-      "hoursSlept": 8.9,
-      "sleepQuality": 3.4
+      "numOunces": 67
     },
     {
       "userID": 17,
       "date": "2019/07/31",
-      "hoursSlept": 4,
-      "sleepQuality": 3.3
+      "numOunces": 49
     },
     {
       "userID": 18,
       "date": "2019/07/31",
-      "hoursSlept": 10.9,
-      "sleepQuality": 4.9
+      "numOunces": 75
     },
     {
       "userID": 19,
       "date": "2019/07/31",
-      "hoursSlept": 10.3,
-      "sleepQuality": 4.3
+      "numOunces": 99
     },
     {
       "userID": 20,
       "date": "2019/07/31",
-      "hoursSlept": 8,
-      "sleepQuality": 1.2
+      "numOunces": 76
     },
     {
       "userID": 21,
       "date": "2019/07/31",
-      "hoursSlept": 5.2,
-      "sleepQuality": 1.1
+      "numOunces": 92
     },
     {
       "userID": 22,
       "date": "2019/07/31",
-      "hoursSlept": 7.1,
-      "sleepQuality": 4.6
+      "numOunces": 75
     },
     {
       "userID": 23,
       "date": "2019/07/31",
-      "hoursSlept": 6.8,
-      "sleepQuality": 4.1
+      "numOunces": 53
     },
     {
       "userID": 24,
       "date": "2019/07/31",
-      "hoursSlept": 8.7,
-      "sleepQuality": 1
+      "numOunces": 62
     },
     {
       "userID": 25,
       "date": "2019/07/31",
-      "hoursSlept": 7,
-      "sleepQuality": 2.4
+      "numOunces": 93
     },
     {
       "userID": 26,
       "date": "2019/07/31",
-      "hoursSlept": 5.4,
-      "sleepQuality": 4
+      "numOunces": 30
     },
     {
       "userID": 27,
       "date": "2019/07/31",
-      "hoursSlept": 7.5,
-      "sleepQuality": 4.2
+      "numOunces": 28
     },
     {
       "userID": 28,
       "date": "2019/07/31",
-      "hoursSlept": 6.6,
-      "sleepQuality": 1.2
+      "numOunces": 34
     },
     {
       "userID": 29,
       "date": "2019/07/31",
-      "hoursSlept": 7.9,
-      "sleepQuality": 2.6
+      "numOunces": 93
     },
     {
       "userID": 30,
       "date": "2019/07/31",
-      "hoursSlept": 5.9,
-      "sleepQuality": 3.4
+      "numOunces": 64
     },
     {
       "userID": 31,
       "date": "2019/07/31",
-      "hoursSlept": 10,
-      "sleepQuality": 2.9
+      "numOunces": 24
     },
     {
       "userID": 32,
       "date": "2019/07/31",
-      "hoursSlept": 10.9,
-      "sleepQuality": 3.5
+      "numOunces": 58
     },
     {
       "userID": 33,
       "date": "2019/07/31",
-      "hoursSlept": 4.9,
-      "sleepQuality": 1.3
+      "numOunces": 36
     },
     {
       "userID": 34,
       "date": "2019/07/31",
-      "hoursSlept": 7.4,
-      "sleepQuality": 3.1
+      "numOunces": 66
     },
     {
       "userID": 35,
       "date": "2019/07/31",
-      "hoursSlept": 5,
-      "sleepQuality": 4.4
+      "numOunces": 32
     },
     {
       "userID": 36,
       "date": "2019/07/31",
-      "hoursSlept": 4.2,
-      "sleepQuality": 2.3
+      "numOunces": 51
     },
     {
       "userID": 37,
       "date": "2019/07/31",
-      "hoursSlept": 4.3,
-      "sleepQuality": 1.1
+      "numOunces": 46
     },
     {
       "userID": 38,
       "date": "2019/07/31",
-      "hoursSlept": 10.1,
-      "sleepQuality": 3.6
+      "numOunces": 26
     },
     {
       "userID": 39,
       "date": "2019/07/31",
-      "hoursSlept": 10.9,
-      "sleepQuality": 2.3
+      "numOunces": 98
     },
     {
       "userID": 40,
       "date": "2019/07/31",
-      "hoursSlept": 8.2,
-      "sleepQuality": 4.2
+      "numOunces": 48
     },
     {
       "userID": 41,
       "date": "2019/07/31",
-      "hoursSlept": 6.5,
-      "sleepQuality": 3.1
+      "numOunces": 66
     },
     {
       "userID": 42,
       "date": "2019/07/31",
-      "hoursSlept": 5,
-      "sleepQuality": 3.6
+      "numOunces": 62
     },
     {
       "userID": 43,
       "date": "2019/07/31",
-      "hoursSlept": 10.3,
-      "sleepQuality": 3.6
+      "numOunces": 27
     },
     {
       "userID": 44,
       "date": "2019/07/31",
-      "hoursSlept": 9.9,
-      "sleepQuality": 3.2
+      "numOunces": 28
     },
     {
       "userID": 45,
       "date": "2019/07/31",
-      "hoursSlept": 7.9,
-      "sleepQuality": 2.5
+      "numOunces": 77
     },
     {
       "userID": 46,
       "date": "2019/07/31",
-      "hoursSlept": 6.1,
-      "sleepQuality": 2.6
+      "numOunces": 62
     },
     {
       "userID": 47,
       "date": "2019/07/31",
-      "hoursSlept": 5.7,
-      "sleepQuality": 1.2
+      "numOunces": 54
     },
     {
       "userID": 48,
       "date": "2019/07/31",
-      "hoursSlept": 5.6,
-      "sleepQuality": 1.3
+      "numOunces": 38
     },
     {
       "userID": 49,
       "date": "2019/07/31",
-      "hoursSlept": 8.4,
-      "sleepQuality": 1.3
+      "numOunces": 81
     },
     {
       "userID": 50,
       "date": "2019/07/31",
-      "hoursSlept": 6.8,
-      "sleepQuality": 1.4
+      "numOunces": 26
     },
     {
       "userID": 1,
       "date": "2019/08/01",
-      "hoursSlept": 7.4,
-      "sleepQuality": 3.1
+      "numOunces": 84
     },
     {
       "userID": 2,
       "date": "2019/08/01",
-      "hoursSlept": 8.4,
-      "sleepQuality": 2.7
+      "numOunces": 41
     },
     {
       "userID": 3,
       "date": "2019/08/01",
-      "hoursSlept": 4.3,
-      "sleepQuality": 4.5
+      "numOunces": 83
     },
     {
       "userID": 4,
       "date": "2019/08/01",
-      "hoursSlept": 5.4,
-      "sleepQuality": 2.2
+      "numOunces": 60
     },
     {
       "userID": 5,
       "date": "2019/08/01",
-      "hoursSlept": 10.6,
-      "sleepQuality": 4.5
+      "numOunces": 36
     },
     {
       "userID": 6,
       "date": "2019/08/01",
-      "hoursSlept": 7,
-      "sleepQuality": 1.6
+      "numOunces": 99
     },
     {
       "userID": 7,
       "date": "2019/08/01",
-      "hoursSlept": 8.5,
-      "sleepQuality": 3.3
+      "numOunces": 82
     },
     {
       "userID": 8,
       "date": "2019/08/01",
-      "hoursSlept": 4.4,
-      "sleepQuality": 4.1
+      "numOunces": 52
     },
     {
       "userID": 9,
       "date": "2019/08/01",
-      "hoursSlept": 5.7,
-      "sleepQuality": 3.8
+      "numOunces": 36
     },
     {
       "userID": 10,
       "date": "2019/08/01",
-      "hoursSlept": 6.8,
-      "sleepQuality": 1.9
+      "numOunces": 71
     },
     {
       "userID": 11,
       "date": "2019/08/01",
-      "hoursSlept": 6.4,
-      "sleepQuality": 2.4
+      "numOunces": 82
     },
     {
       "userID": 12,
       "date": "2019/08/01",
-      "hoursSlept": 8.6,
-      "sleepQuality": 3
+      "numOunces": 61
     },
     {
       "userID": 13,
       "date": "2019/08/01",
-      "hoursSlept": 10.7,
-      "sleepQuality": 1
+      "numOunces": 61
     },
     {
       "userID": 14,
       "date": "2019/08/01",
-      "hoursSlept": 4.2,
-      "sleepQuality": 3.8
+      "numOunces": 64
     },
     {
       "userID": 15,
       "date": "2019/08/01",
-      "hoursSlept": 4.5,
-      "sleepQuality": 1.5
+      "numOunces": 94
     },
     {
       "userID": 16,
       "date": "2019/08/01",
-      "hoursSlept": 10.3,
-      "sleepQuality": 4.6
+      "numOunces": 38
     },
     {
       "userID": 17,
       "date": "2019/08/01",
-      "hoursSlept": 7.4,
-      "sleepQuality": 2.9
+      "numOunces": 39
     },
     {
       "userID": 18,
       "date": "2019/08/01",
-      "hoursSlept": 6.5,
-      "sleepQuality": 2.8
+      "numOunces": 66
     },
     {
       "userID": 19,
       "date": "2019/08/01",
-      "hoursSlept": 8.7,
-      "sleepQuality": 4.8
+      "numOunces": 78
     },
     {
       "userID": 20,
       "date": "2019/08/01",
-      "hoursSlept": 4.9,
-      "sleepQuality": 3.9
+      "numOunces": 21
     },
     {
       "userID": 21,
       "date": "2019/08/01",
-      "hoursSlept": 8.7,
-      "sleepQuality": 1.6
+      "numOunces": 26
     },
     {
       "userID": 22,
       "date": "2019/08/01",
-      "hoursSlept": 9,
-      "sleepQuality": 4.6
+      "numOunces": 90
     },
     {
       "userID": 23,
       "date": "2019/08/01",
-      "hoursSlept": 7.6,
-      "sleepQuality": 1.7
+      "numOunces": 92
     },
     {
       "userID": 24,
       "date": "2019/08/01",
-      "hoursSlept": 8.9,
-      "sleepQuality": 4.9
+      "numOunces": 41
     },
     {
       "userID": 25,
       "date": "2019/08/01",
-      "hoursSlept": 7.3,
-      "sleepQuality": 3.1
+      "numOunces": 86
     },
     {
       "userID": 26,
       "date": "2019/08/01",
-      "hoursSlept": 7.9,
-      "sleepQuality": 2.1
+      "numOunces": 95
     },
     {
       "userID": 27,
       "date": "2019/08/01",
-      "hoursSlept": 7.6,
-      "sleepQuality": 2.9
+      "numOunces": 65
     },
     {
       "userID": 28,
       "date": "2019/08/01",
-      "hoursSlept": 10.2,
-      "sleepQuality": 4.6
+      "numOunces": 47
     },
     {
       "userID": 29,
       "date": "2019/08/01",
-      "hoursSlept": 8.6,
-      "sleepQuality": 2.1
+      "numOunces": 66
     },
     {
       "userID": 30,
       "date": "2019/08/01",
-      "hoursSlept": 5.7,
-      "sleepQuality": 3.1
+      "numOunces": 40
     },
     {
       "userID": 31,
       "date": "2019/08/01",
-      "hoursSlept": 10.8,
-      "sleepQuality": 1.7
+      "numOunces": 65
     },
     {
       "userID": 32,
       "date": "2019/08/01",
-      "hoursSlept": 8.7,
-      "sleepQuality": 1.5
+      "numOunces": 96
     },
     {
       "userID": 33,
       "date": "2019/08/01",
-      "hoursSlept": 8.1,
-      "sleepQuality": 2.3
+      "numOunces": 65
     },
     {
       "userID": 34,
       "date": "2019/08/01",
-      "hoursSlept": 5.5,
-      "sleepQuality": 2.2
+      "numOunces": 67
     },
     {
       "userID": 35,
       "date": "2019/08/01",
-      "hoursSlept": 7.3,
-      "sleepQuality": 4.5
+      "numOunces": 97
     },
     {
       "userID": 36,
       "date": "2019/08/01",
-      "hoursSlept": 4.3,
-      "sleepQuality": 5
+      "numOunces": 47
     },
     {
       "userID": 37,
       "date": "2019/08/01",
-      "hoursSlept": 7.7,
-      "sleepQuality": 1
+      "numOunces": 79
     },
     {
       "userID": 38,
       "date": "2019/08/01",
-      "hoursSlept": 9.5,
-      "sleepQuality": 3.9
+      "numOunces": 68
     },
     {
       "userID": 39,
       "date": "2019/08/01",
-      "hoursSlept": 9,
-      "sleepQuality": 1.2
+      "numOunces": 57
     },
     {
       "userID": 40,
       "date": "2019/08/01",
-      "hoursSlept": 8.8,
-      "sleepQuality": 3.5
+      "numOunces": 92
     },
     {
       "userID": 41,
       "date": "2019/08/01",
-      "hoursSlept": 10.8,
-      "sleepQuality": 1
+      "numOunces": 73
     },
     {
       "userID": 42,
       "date": "2019/08/01",
-      "hoursSlept": 6.1,
-      "sleepQuality": 3.5
+      "numOunces": 63
     },
     {
       "userID": 43,
       "date": "2019/08/01",
-      "hoursSlept": 4.5,
-      "sleepQuality": 3.2
+      "numOunces": 66
     },
     {
       "userID": 44,
       "date": "2019/08/01",
-      "hoursSlept": 9.9,
-      "sleepQuality": 2.9
+      "numOunces": 47
     },
     {
       "userID": 45,
       "date": "2019/08/01",
-      "hoursSlept": 5.8,
-      "sleepQuality": 3.4
+      "numOunces": 59
     },
     {
       "userID": 46,
       "date": "2019/08/01",
-      "hoursSlept": 9.4,
-      "sleepQuality": 3
+      "numOunces": 68
     },
     {
       "userID": 47,
       "date": "2019/08/01",
-      "hoursSlept": 5.5,
-      "sleepQuality": 4.9
+      "numOunces": 61
     },
     {
       "userID": 48,
       "date": "2019/08/01",
-      "hoursSlept": 7.1,
-      "sleepQuality": 1.2
+      "numOunces": 35
     },
     {
       "userID": 49,
       "date": "2019/08/01",
-      "hoursSlept": 7.4,
-      "sleepQuality": 3.4
+      "numOunces": 40
     },
     {
       "userID": 50,
       "date": "2019/08/01",
-      "hoursSlept": 6.3,
-      "sleepQuality": 3.5
+      "numOunces": 75
     },
     {
       "userID": 1,
       "date": "2019/08/02",
-      "hoursSlept": 9.7,
-      "sleepQuality": 1.8
+      "numOunces": 64
     },
     {
       "userID": 2,
       "date": "2019/08/02",
-      "hoursSlept": 10,
-      "sleepQuality": 4
+      "numOunces": 23
     },
     {
       "userID": 3,
       "date": "2019/08/02",
-      "hoursSlept": 5.4,
-      "sleepQuality": 2.7
+      "numOunces": 99
     },
     {
       "userID": 4,
       "date": "2019/08/02",
-      "hoursSlept": 8,
-      "sleepQuality": 2.5
+      "numOunces": 48
     },
     {
       "userID": 5,
       "date": "2019/08/02",
-      "hoursSlept": 10.4,
-      "sleepQuality": 2.2
+      "numOunces": 57
     },
     {
       "userID": 6,
       "date": "2019/08/02",
-      "hoursSlept": 6.3,
-      "sleepQuality": 2.6
+      "numOunces": 64
     },
     {
       "userID": 7,
       "date": "2019/08/02",
-      "hoursSlept": 7.9,
-      "sleepQuality": 1.8
+      "numOunces": 75
     },
     {
       "userID": 8,
       "date": "2019/08/02",
-      "hoursSlept": 10,
-      "sleepQuality": 4.2
+      "numOunces": 96
     },
     {
       "userID": 9,
       "date": "2019/08/02",
-      "hoursSlept": 8.2,
-      "sleepQuality": 4.3
+      "numOunces": 80
     },
     {
       "userID": 10,
       "date": "2019/08/02",
-      "hoursSlept": 7.2,
-      "sleepQuality": 1.5
+      "numOunces": 63
     },
     {
       "userID": 11,
       "date": "2019/08/02",
-      "hoursSlept": 7.3,
-      "sleepQuality": 1.5
+      "numOunces": 96
     },
     {
       "userID": 12,
       "date": "2019/08/02",
-      "hoursSlept": 11,
-      "sleepQuality": 4.9
+      "numOunces": 98
     },
     {
       "userID": 13,
       "date": "2019/08/02",
-      "hoursSlept": 4.7,
-      "sleepQuality": 3.4
+      "numOunces": 24
     },
     {
       "userID": 14,
       "date": "2019/08/02",
-      "hoursSlept": 4.8,
-      "sleepQuality": 1.8
+      "numOunces": 43
     },
     {
       "userID": 15,
       "date": "2019/08/02",
-      "hoursSlept": 10.2,
-      "sleepQuality": 4.1
+      "numOunces": 31
     },
     {
       "userID": 16,
       "date": "2019/08/02",
-      "hoursSlept": 8,
-      "sleepQuality": 3.3
+      "numOunces": 34
     },
     {
       "userID": 17,
       "date": "2019/08/02",
-      "hoursSlept": 5.2,
-      "sleepQuality": 3.4
+      "numOunces": 39
     },
     {
       "userID": 18,
       "date": "2019/08/02",
-      "hoursSlept": 6,
-      "sleepQuality": 3.4
+      "numOunces": 97
     },
     {
       "userID": 19,
       "date": "2019/08/02",
-      "hoursSlept": 8.7,
-      "sleepQuality": 3
+      "numOunces": 90
     },
     {
       "userID": 20,
       "date": "2019/08/02",
-      "hoursSlept": 9,
-      "sleepQuality": 3
+      "numOunces": 89
     },
     {
       "userID": 21,
       "date": "2019/08/02",
-      "hoursSlept": 10.5,
-      "sleepQuality": 2
+      "numOunces": 81
     },
     {
       "userID": 22,
       "date": "2019/08/02",
-      "hoursSlept": 4.1,
-      "sleepQuality": 4.2
+      "numOunces": 56
     },
     {
       "userID": 23,
       "date": "2019/08/02",
-      "hoursSlept": 9.9,
-      "sleepQuality": 3.9
+      "numOunces": 58
     },
     {
       "userID": 24,
       "date": "2019/08/02",
-      "hoursSlept": 6.9,
-      "sleepQuality": 3.3
+      "numOunces": 87
     },
     {
       "userID": 25,
       "date": "2019/08/02",
-      "hoursSlept": 6.6,
-      "sleepQuality": 2.5
+      "numOunces": 78
     },
     {
       "userID": 26,
       "date": "2019/08/02",
-      "hoursSlept": 6.7,
-      "sleepQuality": 2.6
+      "numOunces": 58
     },
     {
       "userID": 27,
       "date": "2019/08/02",
-      "hoursSlept": 7.1,
-      "sleepQuality": 4.3
+      "numOunces": 65
     },
     {
       "userID": 28,
       "date": "2019/08/02",
-      "hoursSlept": 8.2,
-      "sleepQuality": 2.1
+      "numOunces": 76
     },
     {
       "userID": 29,
       "date": "2019/08/02",
-      "hoursSlept": 4.1,
-      "sleepQuality": 1.3
+      "numOunces": 28
     },
     {
       "userID": 30,
       "date": "2019/08/02",
-      "hoursSlept": 10.4,
-      "sleepQuality": 3.7
+      "numOunces": 22
     },
     {
       "userID": 31,
       "date": "2019/08/02",
-      "hoursSlept": 9,
-      "sleepQuality": 2.3
+      "numOunces": 48
     },
     {
       "userID": 32,
       "date": "2019/08/02",
-      "hoursSlept": 10,
-      "sleepQuality": 4.7
+      "numOunces": 41
     },
     {
       "userID": 33,
       "date": "2019/08/02",
-      "hoursSlept": 4.3,
-      "sleepQuality": 3.1
+      "numOunces": 55
     },
     {
       "userID": 34,
       "date": "2019/08/02",
-      "hoursSlept": 7.8,
-      "sleepQuality": 4.7
+      "numOunces": 56
     },
     {
       "userID": 35,
       "date": "2019/08/02",
-      "hoursSlept": 8.9,
-      "sleepQuality": 3
+      "numOunces": 50
     },
     {
       "userID": 36,
       "date": "2019/08/02",
-      "hoursSlept": 5,
-      "sleepQuality": 4.9
+      "numOunces": 84
     },
     {
       "userID": 37,
       "date": "2019/08/02",
-      "hoursSlept": 6.5,
-      "sleepQuality": 1.9
+      "numOunces": 35
     },
     {
       "userID": 38,
       "date": "2019/08/02",
-      "hoursSlept": 5,
-      "sleepQuality": 3.4
+      "numOunces": 37
     },
     {
       "userID": 39,
       "date": "2019/08/02",
-      "hoursSlept": 6.3,
-      "sleepQuality": 1.8
+      "numOunces": 79
     },
     {
       "userID": 40,
       "date": "2019/08/02",
-      "hoursSlept": 5.1,
-      "sleepQuality": 2.3
+      "numOunces": 44
     },
     {
       "userID": 41,
       "date": "2019/08/02",
-      "hoursSlept": 9.6,
-      "sleepQuality": 1
+      "numOunces": 34
     },
     {
       "userID": 42,
       "date": "2019/08/02",
-      "hoursSlept": 10.7,
-      "sleepQuality": 2
+      "numOunces": 72
     },
     {
       "userID": 43,
       "date": "2019/08/02",
-      "hoursSlept": 5.1,
-      "sleepQuality": 4.6
+      "numOunces": 53
     },
     {
       "userID": 44,
       "date": "2019/08/02",
-      "hoursSlept": 7.4,
-      "sleepQuality": 2.5
+      "numOunces": 49
     },
     {
       "userID": 45,
       "date": "2019/08/02",
-      "hoursSlept": 7.2,
-      "sleepQuality": 4.9
+      "numOunces": 84
     },
     {
       "userID": 46,
       "date": "2019/08/02",
-      "hoursSlept": 5.4,
-      "sleepQuality": 4.1
+      "numOunces": 67
     },
     {
       "userID": 47,
       "date": "2019/08/02",
-      "hoursSlept": 4.7,
-      "sleepQuality": 4.8
+      "numOunces": 42
     },
     {
       "userID": 48,
       "date": "2019/08/02",
-      "hoursSlept": 10.6,
-      "sleepQuality": 2.4
+      "numOunces": 64
     },
     {
       "userID": 49,
       "date": "2019/08/02",
-      "hoursSlept": 5.3,
-      "sleepQuality": 3.2
+      "numOunces": 99
     },
     {
       "userID": 50,
       "date": "2019/08/02",
-      "hoursSlept": 4.5,
-      "sleepQuality": 3.4
+      "numOunces": 60
     },
     {
       "userID": 1,
       "date": "2019/08/03",
-      "hoursSlept": 8.6,
-      "sleepQuality": 3.9
+      "numOunces": 69
     },
     {
       "userID": 2,
       "date": "2019/08/03",
-      "hoursSlept": 5,
-      "sleepQuality": 2.2
+      "numOunces": 27
     },
     {
       "userID": 3,
       "date": "2019/08/03",
-      "hoursSlept": 5.3,
-      "sleepQuality": 3.7
+      "numOunces": 63
     },
     {
       "userID": 4,
       "date": "2019/08/03",
-      "hoursSlept": 5,
-      "sleepQuality": 1.5
+      "numOunces": 93
     },
     {
       "userID": 5,
       "date": "2019/08/03",
-      "hoursSlept": 6.5,
-      "sleepQuality": 4.1
+      "numOunces": 61
     },
     {
       "userID": 6,
       "date": "2019/08/03",
-      "hoursSlept": 10.9,
-      "sleepQuality": 2.5
+      "numOunces": 58
     },
     {
       "userID": 7,
       "date": "2019/08/03",
-      "hoursSlept": 4.6,
-      "sleepQuality": 2.2
+      "numOunces": 41
     },
     {
       "userID": 8,
       "date": "2019/08/03",
-      "hoursSlept": 5,
-      "sleepQuality": 3.8
+      "numOunces": 50
     },
     {
       "userID": 9,
       "date": "2019/08/03",
-      "hoursSlept": 4.3,
-      "sleepQuality": 1.4
+      "numOunces": 68
     },
     {
       "userID": 10,
       "date": "2019/08/03",
-      "hoursSlept": 4.3,
-      "sleepQuality": 1.2
+      "numOunces": 89
     },
     {
       "userID": 11,
       "date": "2019/08/03",
-      "hoursSlept": 10.5,
-      "sleepQuality": 3.7
+      "numOunces": 49
     },
     {
       "userID": 12,
       "date": "2019/08/03",
-      "hoursSlept": 9.9,
-      "sleepQuality": 1.4
+      "numOunces": 97
     },
     {
       "userID": 13,
       "date": "2019/08/03",
-      "hoursSlept": 5.1,
-      "sleepQuality": 4.1
+      "numOunces": 94
     },
     {
       "userID": 14,
       "date": "2019/08/03",
-      "hoursSlept": 10.9,
-      "sleepQuality": 2.4
+      "numOunces": 68
     },
     {
       "userID": 15,
       "date": "2019/08/03",
-      "hoursSlept": 8.5,
-      "sleepQuality": 3.4
+      "numOunces": 41
     },
     {
       "userID": 16,
       "date": "2019/08/03",
-      "hoursSlept": 7,
-      "sleepQuality": 2.7
+      "numOunces": 48
     },
     {
       "userID": 17,
       "date": "2019/08/03",
-      "hoursSlept": 8.6,
-      "sleepQuality": 1.2
+      "numOunces": 21
     },
     {
       "userID": 18,
       "date": "2019/08/03",
-      "hoursSlept": 9.5,
-      "sleepQuality": 4
+      "numOunces": 77
     },
     {
       "userID": 19,
       "date": "2019/08/03",
-      "hoursSlept": 4.2,
-      "sleepQuality": 4.6
+      "numOunces": 53
     },
     {
       "userID": 20,
       "date": "2019/08/03",
-      "hoursSlept": 10.9,
-      "sleepQuality": 1.9
+      "numOunces": 71
     },
     {
       "userID": 21,
       "date": "2019/08/03",
-      "hoursSlept": 10.9,
-      "sleepQuality": 3.4
+      "numOunces": 44
     },
     {
       "userID": 22,
       "date": "2019/08/03",
-      "hoursSlept": 6.6,
-      "sleepQuality": 2.7
+      "numOunces": 74
     },
     {
       "userID": 23,
       "date": "2019/08/03",
-      "hoursSlept": 7.2,
-      "sleepQuality": 4.7
+      "numOunces": 42
     },
     {
       "userID": 24,
       "date": "2019/08/03",
-      "hoursSlept": 5.1,
-      "sleepQuality": 2.8
+      "numOunces": 89
     },
     {
       "userID": 25,
       "date": "2019/08/03",
-      "hoursSlept": 6.1,
-      "sleepQuality": 4.4
+      "numOunces": 42
     },
     {
       "userID": 26,
       "date": "2019/08/03",
-      "hoursSlept": 7.3,
-      "sleepQuality": 1.2
+      "numOunces": 70
     },
     {
       "userID": 27,
       "date": "2019/08/03",
-      "hoursSlept": 8,
-      "sleepQuality": 3.2
+      "numOunces": 24
     },
     {
       "userID": 28,
       "date": "2019/08/03",
-      "hoursSlept": 6.8,
-      "sleepQuality": 3
+      "numOunces": 77
     },
     {
       "userID": 29,
       "date": "2019/08/03",
-      "hoursSlept": 6.3,
-      "sleepQuality": 2.3
+      "numOunces": 31
     },
     {
       "userID": 30,
       "date": "2019/08/03",
-      "hoursSlept": 8.2,
-      "sleepQuality": 4.4
+      "numOunces": 75
     },
     {
       "userID": 31,
       "date": "2019/08/03",
-      "hoursSlept": 10.6,
-      "sleepQuality": 3.5
+      "numOunces": 33
     },
     {
       "userID": 32,
       "date": "2019/08/03",
-      "hoursSlept": 9.2,
-      "sleepQuality": 1.3
+      "numOunces": 99
     },
     {
       "userID": 33,
       "date": "2019/08/03",
-      "hoursSlept": 8.8,
-      "sleepQuality": 4.3
+      "numOunces": 96
     },
     {
       "userID": 34,
       "date": "2019/08/03",
-      "hoursSlept": 5.3,
-      "sleepQuality": 2.6
+      "numOunces": 20
     },
     {
       "userID": 35,
       "date": "2019/08/03",
-      "hoursSlept": 4.1,
-      "sleepQuality": 3.2
+      "numOunces": 79
     },
     {
       "userID": 36,
       "date": "2019/08/03",
-      "hoursSlept": 6.4,
-      "sleepQuality": 4.8
+      "numOunces": 96
     },
     {
       "userID": 37,
       "date": "2019/08/03",
-      "hoursSlept": 7.7,
-      "sleepQuality": 1.5
+      "numOunces": 56
     },
     {
       "userID": 38,
       "date": "2019/08/03",
-      "hoursSlept": 6.9,
-      "sleepQuality": 3.2
+      "numOunces": 47
     },
     {
       "userID": 39,
       "date": "2019/08/03",
-      "hoursSlept": 7.1,
-      "sleepQuality": 3.5
+      "numOunces": 93
     },
     {
       "userID": 40,
       "date": "2019/08/03",
-      "hoursSlept": 10.9,
-      "sleepQuality": 1.1
+      "numOunces": 76
     },
     {
       "userID": 41,
       "date": "2019/08/03",
-      "hoursSlept": 5,
-      "sleepQuality": 4.5
+      "numOunces": 85
     },
     {
       "userID": 42,
       "date": "2019/08/03",
-      "hoursSlept": 11,
-      "sleepQuality": 1.4
+      "numOunces": 57
     },
     {
       "userID": 43,
       "date": "2019/08/03",
-      "hoursSlept": 7.2,
-      "sleepQuality": 1.3
+      "numOunces": 25
     },
     {
       "userID": 44,
       "date": "2019/08/03",
-      "hoursSlept": 5.1,
-      "sleepQuality": 3.8
+      "numOunces": 49
     },
     {
       "userID": 45,
       "date": "2019/08/03",
-      "hoursSlept": 7,
-      "sleepQuality": 4
+      "numOunces": 42
     },
     {
       "userID": 46,
       "date": "2019/08/03",
-      "hoursSlept": 7,
-      "sleepQuality": 4.9
+      "numOunces": 40
     },
     {
       "userID": 47,
       "date": "2019/08/03",
-      "hoursSlept": 7.7,
-      "sleepQuality": 3.7
+      "numOunces": 93
     },
     {
       "userID": 48,
       "date": "2019/08/03",
-      "hoursSlept": 10.8,
-      "sleepQuality": 2.7
+      "numOunces": 38
     },
     {
       "userID": 49,
       "date": "2019/08/03",
-      "hoursSlept": 10,
-      "sleepQuality": 1.2
+      "numOunces": 39
     },
     {
       "userID": 50,
       "date": "2019/08/03",
-      "hoursSlept": 7,
-      "sleepQuality": 2.9
+      "numOunces": 45
     },
     {
       "userID": 1,
       "date": "2019/08/04",
-      "hoursSlept": 9.8,
-      "sleepQuality": 2.5
+      "numOunces": 39
     },
     {
       "userID": 2,
       "date": "2019/08/04",
-      "hoursSlept": 8.3,
-      "sleepQuality": 3
+      "numOunces": 73
     },
     {
       "userID": 3,
       "date": "2019/08/04",
-      "hoursSlept": 9.7,
-      "sleepQuality": 3.2
+      "numOunces": 50
     },
     {
       "userID": 4,
       "date": "2019/08/04",
-      "hoursSlept": 6,
-      "sleepQuality": 3.9
+      "numOunces": 86
     },
     {
       "userID": 5,
       "date": "2019/08/04",
-      "hoursSlept": 8.2,
-      "sleepQuality": 3.5
+      "numOunces": 27
     },
     {
       "userID": 6,
       "date": "2019/08/04",
-      "hoursSlept": 8.9,
-      "sleepQuality": 2.8
+      "numOunces": 82
     },
     {
       "userID": 7,
       "date": "2019/08/04",
-      "hoursSlept": 6.8,
-      "sleepQuality": 2.5
+      "numOunces": 98
     },
     {
       "userID": 8,
       "date": "2019/08/04",
-      "hoursSlept": 4.7,
-      "sleepQuality": 1.3
+      "numOunces": 49
     },
     {
       "userID": 9,
       "date": "2019/08/04",
-      "hoursSlept": 5,
-      "sleepQuality": 4.5
+      "numOunces": 87
     },
     {
       "userID": 10,
       "date": "2019/08/04",
-      "hoursSlept": 5.3,
-      "sleepQuality": 2.9
+      "numOunces": 76
     },
     {
       "userID": 11,
       "date": "2019/08/04",
-      "hoursSlept": 5.9,
-      "sleepQuality": 4.2
+      "numOunces": 37
     },
     {
       "userID": 12,
       "date": "2019/08/04",
-      "hoursSlept": 9.7,
-      "sleepQuality": 3.3
+      "numOunces": 44
     },
     {
       "userID": 13,
       "date": "2019/08/04",
-      "hoursSlept": 4.8,
-      "sleepQuality": 2.9
+      "numOunces": 67
     },
     {
       "userID": 14,
       "date": "2019/08/04",
-      "hoursSlept": 11,
-      "sleepQuality": 4.3
+      "numOunces": 67
     },
     {
       "userID": 15,
       "date": "2019/08/04",
-      "hoursSlept": 5.2,
-      "sleepQuality": 4.1
+      "numOunces": 59
     },
     {
       "userID": 16,
       "date": "2019/08/04",
-      "hoursSlept": 6.5,
-      "sleepQuality": 1.3
+      "numOunces": 63
     },
     {
       "userID": 17,
       "date": "2019/08/04",
-      "hoursSlept": 4.4,
-      "sleepQuality": 4.8
+      "numOunces": 68
     },
     {
       "userID": 18,
       "date": "2019/08/04",
-      "hoursSlept": 6.2,
-      "sleepQuality": 1.4
+      "numOunces": 53
     },
     {
       "userID": 19,
       "date": "2019/08/04",
-      "hoursSlept": 6,
-      "sleepQuality": 2.3
+      "numOunces": 44
     },
     {
       "userID": 20,
       "date": "2019/08/04",
-      "hoursSlept": 7,
-      "sleepQuality": 4.6
+      "numOunces": 60
     },
     {
       "userID": 21,
       "date": "2019/08/04",
-      "hoursSlept": 8.7,
-      "sleepQuality": 4.6
+      "numOunces": 27
     },
     {
       "userID": 22,
       "date": "2019/08/04",
-      "hoursSlept": 8.9,
-      "sleepQuality": 3.5
+      "numOunces": 39
     },
     {
       "userID": 23,
       "date": "2019/08/04",
-      "hoursSlept": 4.5,
-      "sleepQuality": 3
+      "numOunces": 29
     },
     {
       "userID": 24,
       "date": "2019/08/04",
-      "hoursSlept": 4.6,
-      "sleepQuality": 4.1
+      "numOunces": 60
     },
     {
       "userID": 25,
       "date": "2019/08/04",
-      "hoursSlept": 6.5,
-      "sleepQuality": 1.4
+      "numOunces": 46
     },
     {
       "userID": 26,
       "date": "2019/08/04",
-      "hoursSlept": 4.3,
-      "sleepQuality": 1.4
+      "numOunces": 66
     },
     {
       "userID": 27,
       "date": "2019/08/04",
-      "hoursSlept": 4.8,
-      "sleepQuality": 3.7
+      "numOunces": 98
     },
     {
       "userID": 28,
       "date": "2019/08/04",
-      "hoursSlept": 8.5,
-      "sleepQuality": 3.2
+      "numOunces": 37
     },
     {
       "userID": 29,
       "date": "2019/08/04",
-      "hoursSlept": 8.6,
-      "sleepQuality": 1.9
+      "numOunces": 48
     },
     {
       "userID": 30,
       "date": "2019/08/04",
-      "hoursSlept": 6.8,
-      "sleepQuality": 1.3
+      "numOunces": 36
     },
     {
       "userID": 31,
       "date": "2019/08/04",
-      "hoursSlept": 9.1,
-      "sleepQuality": 3.3
+      "numOunces": 36
     },
     {
       "userID": 32,
       "date": "2019/08/04",
-      "hoursSlept": 7.1,
-      "sleepQuality": 4.3
+      "numOunces": 98
     },
     {
       "userID": 33,
       "date": "2019/08/04",
-      "hoursSlept": 10.3,
-      "sleepQuality": 2.2
+      "numOunces": 55
     },
     {
       "userID": 34,
       "date": "2019/08/04",
-      "hoursSlept": 9.7,
-      "sleepQuality": 4
+      "numOunces": 96
     },
     {
       "userID": 35,
       "date": "2019/08/04",
-      "hoursSlept": 4.9,
-      "sleepQuality": 4.8
+      "numOunces": 26
     },
     {
       "userID": 36,
       "date": "2019/08/04",
-      "hoursSlept": 8.9,
-      "sleepQuality": 4.5
+      "numOunces": 54
     },
     {
       "userID": 37,
       "date": "2019/08/04",
-      "hoursSlept": 5,
-      "sleepQuality": 4.6
+      "numOunces": 65
     },
     {
       "userID": 38,
       "date": "2019/08/04",
-      "hoursSlept": 6.6,
-      "sleepQuality": 3.9
+      "numOunces": 82
     },
     {
       "userID": 39,
       "date": "2019/08/04",
-      "hoursSlept": 9.3,
-      "sleepQuality": 4.5
+      "numOunces": 22
     },
     {
       "userID": 40,
       "date": "2019/08/04",
-      "hoursSlept": 7,
-      "sleepQuality": 1.3
+      "numOunces": 85
     },
     {
       "userID": 41,
       "date": "2019/08/04",
-      "hoursSlept": 9.7,
-      "sleepQuality": 2.2
+      "numOunces": 97
     },
     {
       "userID": 42,
       "date": "2019/08/04",
-      "hoursSlept": 4.1,
-      "sleepQuality": 1.2
+      "numOunces": 75
     },
     {
       "userID": 43,
       "date": "2019/08/04",
-      "hoursSlept": 4.5,
-      "sleepQuality": 2.5
+      "numOunces": 51
     },
     {
       "userID": 44,
       "date": "2019/08/04",
-      "hoursSlept": 9.3,
-      "sleepQuality": 3.5
+      "numOunces": 57
     },
     {
       "userID": 45,
       "date": "2019/08/04",
-      "hoursSlept": 7.7,
-      "sleepQuality": 2.8
+      "numOunces": 68
     },
     {
       "userID": 46,
       "date": "2019/08/04",
-      "hoursSlept": 8.8,
-      "sleepQuality": 2
+      "numOunces": 100
     },
     {
       "userID": 47,
       "date": "2019/08/04",
-      "hoursSlept": 9.7,
-      "sleepQuality": 4.8
+      "numOunces": 84
     },
     {
       "userID": 48,
       "date": "2019/08/04",
-      "hoursSlept": 7.8,
-      "sleepQuality": 1.4
+      "numOunces": 22
     },
     {
       "userID": 49,
       "date": "2019/08/04",
-      "hoursSlept": 7.7,
-      "sleepQuality": 3
+      "numOunces": 33
     },
     {
       "userID": 50,
       "date": "2019/08/04",
-      "hoursSlept": 10,
-      "sleepQuality": 1.9
+      "numOunces": 48
     },
     {
       "userID": 1,
       "date": "2019/08/05",
-      "hoursSlept": 8.1,
-      "sleepQuality": 1.8
+      "numOunces": 92
     },
     {
       "userID": 2,
       "date": "2019/08/05",
-      "hoursSlept": 4.4,
-      "sleepQuality": 2.7
+      "numOunces": 57
     },
     {
       "userID": 3,
       "date": "2019/08/05",
-      "hoursSlept": 9.1,
-      "sleepQuality": 3.6
+      "numOunces": 50
     },
     {
       "userID": 4,
       "date": "2019/08/05",
-      "hoursSlept": 6.4,
-      "sleepQuality": 4.4
+      "numOunces": 31
     },
     {
       "userID": 5,
       "date": "2019/08/05",
-      "hoursSlept": 7.8,
-      "sleepQuality": 1.3
+      "numOunces": 89
     },
     {
       "userID": 6,
       "date": "2019/08/05",
-      "hoursSlept": 5.2,
-      "sleepQuality": 3.7
+      "numOunces": 93
     },
     {
       "userID": 7,
       "date": "2019/08/05",
-      "hoursSlept": 10.9,
-      "sleepQuality": 3.1
+      "numOunces": 38
     },
     {
       "userID": 8,
       "date": "2019/08/05",
-      "hoursSlept": 8.7,
-      "sleepQuality": 3.6
+      "numOunces": 44
     },
     {
       "userID": 9,
       "date": "2019/08/05",
-      "hoursSlept": 7.9,
-      "sleepQuality": 3.7
+      "numOunces": 55
     },
     {
       "userID": 10,
       "date": "2019/08/05",
-      "hoursSlept": 6.3,
-      "sleepQuality": 3
+      "numOunces": 72
     },
     {
       "userID": 11,
       "date": "2019/08/05",
-      "hoursSlept": 9.1,
-      "sleepQuality": 1.8
+      "numOunces": 23
     },
     {
       "userID": 12,
       "date": "2019/08/05",
-      "hoursSlept": 5.4,
-      "sleepQuality": 4.5
+      "numOunces": 25
     },
     {
       "userID": 13,
       "date": "2019/08/05",
-      "hoursSlept": 7.7,
-      "sleepQuality": 3.6
+      "numOunces": 32
     },
     {
       "userID": 14,
       "date": "2019/08/05",
-      "hoursSlept": 10,
-      "sleepQuality": 3.2
+      "numOunces": 73
     },
     {
       "userID": 15,
       "date": "2019/08/05",
-      "hoursSlept": 9.7,
-      "sleepQuality": 1.8
+      "numOunces": 66
     },
     {
       "userID": 16,
       "date": "2019/08/05",
-      "hoursSlept": 6.1,
-      "sleepQuality": 3.6
+      "numOunces": 20
     },
     {
       "userID": 17,
       "date": "2019/08/05",
-      "hoursSlept": 9.9,
-      "sleepQuality": 3
+      "numOunces": 61
     },
     {
       "userID": 18,
       "date": "2019/08/05",
-      "hoursSlept": 6.2,
-      "sleepQuality": 2.1
+      "numOunces": 59
     },
     {
       "userID": 19,
       "date": "2019/08/05",
-      "hoursSlept": 7,
-      "sleepQuality": 3.7
+      "numOunces": 77
     },
     {
       "userID": 20,
       "date": "2019/08/05",
-      "hoursSlept": 10.6,
-      "sleepQuality": 3.7
+      "numOunces": 81
     },
     {
       "userID": 21,
       "date": "2019/08/05",
-      "hoursSlept": 5.1,
-      "sleepQuality": 1.1
+      "numOunces": 93
     },
     {
       "userID": 22,
       "date": "2019/08/05",
-      "hoursSlept": 9.9,
-      "sleepQuality": 1.2
+      "numOunces": 32
     },
     {
       "userID": 23,
       "date": "2019/08/05",
-      "hoursSlept": 10,
-      "sleepQuality": 1.7
+      "numOunces": 58
     },
     {
       "userID": 24,
       "date": "2019/08/05",
-      "hoursSlept": 7.3,
-      "sleepQuality": 2.9
+      "numOunces": 58
     },
     {
       "userID": 25,
       "date": "2019/08/05",
-      "hoursSlept": 10,
-      "sleepQuality": 2.7
+      "numOunces": 88
     },
     {
       "userID": 26,
       "date": "2019/08/05",
-      "hoursSlept": 4.5,
-      "sleepQuality": 3.3
+      "numOunces": 81
     },
     {
       "userID": 27,
       "date": "2019/08/05",
-      "hoursSlept": 6.5,
-      "sleepQuality": 2
+      "numOunces": 24
     },
     {
       "userID": 28,
       "date": "2019/08/05",
-      "hoursSlept": 6,
-      "sleepQuality": 3.8
+      "numOunces": 92
     },
     {
       "userID": 29,
       "date": "2019/08/05",
-      "hoursSlept": 7,
-      "sleepQuality": 1.3
+      "numOunces": 78
     },
     {
       "userID": 30,
       "date": "2019/08/05",
-      "hoursSlept": 10.6,
-      "sleepQuality": 1.3
+      "numOunces": 41
     },
     {
       "userID": 31,
       "date": "2019/08/05",
-      "hoursSlept": 6.9,
-      "sleepQuality": 4.7
+      "numOunces": 70
     },
     {
       "userID": 32,
       "date": "2019/08/05",
-      "hoursSlept": 10,
-      "sleepQuality": 3
+      "numOunces": 37
     },
     {
       "userID": 33,
       "date": "2019/08/05",
-      "hoursSlept": 9.2,
-      "sleepQuality": 1.3
+      "numOunces": 79
     },
     {
       "userID": 34,
       "date": "2019/08/05",
-      "hoursSlept": 10.1,
-      "sleepQuality": 2.3
+      "numOunces": 45
     },
     {
       "userID": 35,
       "date": "2019/08/05",
-      "hoursSlept": 5.8,
-      "sleepQuality": 1.3
+      "numOunces": 79
     },
     {
       "userID": 36,
       "date": "2019/08/05",
-      "hoursSlept": 4.1,
-      "sleepQuality": 1.5
+      "numOunces": 83
     },
     {
       "userID": 37,
       "date": "2019/08/05",
-      "hoursSlept": 8.7,
-      "sleepQuality": 2.4
+      "numOunces": 25
     },
     {
       "userID": 38,
       "date": "2019/08/05",
-      "hoursSlept": 7.5,
-      "sleepQuality": 2.6
+      "numOunces": 43
     },
     {
       "userID": 39,
       "date": "2019/08/05",
-      "hoursSlept": 9.5,
-      "sleepQuality": 3
+      "numOunces": 22
     },
     {
       "userID": 40,
       "date": "2019/08/05",
-      "hoursSlept": 5.6,
-      "sleepQuality": 3.3
+      "numOunces": 63
     },
     {
       "userID": 41,
       "date": "2019/08/05",
-      "hoursSlept": 9.3,
-      "sleepQuality": 2.2
+      "numOunces": 90
     },
     {
       "userID": 42,
       "date": "2019/08/05",
-      "hoursSlept": 6,
-      "sleepQuality": 4.2
+      "numOunces": 42
     },
     {
       "userID": 43,
       "date": "2019/08/05",
-      "hoursSlept": 7.2,
-      "sleepQuality": 1.6
+      "numOunces": 26
     },
     {
       "userID": 44,
       "date": "2019/08/05",
-      "hoursSlept": 9.1,
-      "sleepQuality": 2.8
+      "numOunces": 96
     },
     {
       "userID": 45,
       "date": "2019/08/05",
-      "hoursSlept": 8.8,
-      "sleepQuality": 4.8
+      "numOunces": 71
     },
     {
       "userID": 46,
       "date": "2019/08/05",
-      "hoursSlept": 6.1,
-      "sleepQuality": 1.1
+      "numOunces": 71
     },
     {
       "userID": 47,
       "date": "2019/08/05",
-      "hoursSlept": 8.9,
-      "sleepQuality": 3
+      "numOunces": 79
     },
     {
       "userID": 48,
       "date": "2019/08/05",
-      "hoursSlept": 4.3,
-      "sleepQuality": 2.8
+      "numOunces": 21
     },
     {
       "userID": 49,
       "date": "2019/08/05",
-      "hoursSlept": 6,
-      "sleepQuality": 2.6
+      "numOunces": 52
     },
     {
       "userID": 50,
       "date": "2019/08/05",
-      "hoursSlept": 4.7,
-      "sleepQuality": 1.1
+      "numOunces": 48
     },
     {
       "userID": 1,
       "date": "2019/08/06",
-      "hoursSlept": 10.1,
-      "sleepQuality": 2.3
+      "numOunces": 28
     },
     {
       "userID": 2,
       "date": "2019/08/06",
-      "hoursSlept": 5,
-      "sleepQuality": 3.7
+      "numOunces": 62
     },
     {
       "userID": 3,
       "date": "2019/08/06",
-      "hoursSlept": 8.5,
-      "sleepQuality": 3.2
+      "numOunces": 98
     },
     {
       "userID": 4,
       "date": "2019/08/06",
-      "hoursSlept": 6.6,
-      "sleepQuality": 4.4
+      "numOunces": 97
     },
     {
       "userID": 5,
       "date": "2019/08/06",
-      "hoursSlept": 4.4,
-      "sleepQuality": 2.6
+      "numOunces": 67
     },
     {
       "userID": 6,
       "date": "2019/08/06",
-      "hoursSlept": 7.5,
-      "sleepQuality": 1.6
+      "numOunces": 80
     },
     {
       "userID": 7,
       "date": "2019/08/06",
-      "hoursSlept": 8.2,
-      "sleepQuality": 1.3
+      "numOunces": 49
     },
     {
       "userID": 8,
       "date": "2019/08/06",
-      "hoursSlept": 10.3,
-      "sleepQuality": 3.3
+      "numOunces": 31
     },
     {
       "userID": 9,
       "date": "2019/08/06",
-      "hoursSlept": 8.3,
-      "sleepQuality": 2.9
+      "numOunces": 97
     },
     {
       "userID": 10,
       "date": "2019/08/06",
-      "hoursSlept": 7.5,
-      "sleepQuality": 3.6
+      "numOunces": 88
     },
     {
       "userID": 11,
       "date": "2019/08/06",
-      "hoursSlept": 10.2,
-      "sleepQuality": 3.2
+      "numOunces": 87
     },
     {
       "userID": 12,
       "date": "2019/08/06",
-      "hoursSlept": 5,
-      "sleepQuality": 2.1
+      "numOunces": 82
     },
     {
       "userID": 13,
       "date": "2019/08/06",
-      "hoursSlept": 7.5,
-      "sleepQuality": 1.2
+      "numOunces": 25
     },
     {
       "userID": 14,
       "date": "2019/08/06",
-      "hoursSlept": 8.2,
-      "sleepQuality": 1.5
+      "numOunces": 40
     },
     {
       "userID": 15,
       "date": "2019/08/06",
-      "hoursSlept": 10.9,
-      "sleepQuality": 2.8
+      "numOunces": 72
     },
     {
       "userID": 16,
       "date": "2019/08/06",
-      "hoursSlept": 4.9,
-      "sleepQuality": 2.1
+      "numOunces": 25
     },
     {
       "userID": 17,
       "date": "2019/08/06",
-      "hoursSlept": 6.1,
-      "sleepQuality": 3.8
+      "numOunces": 99
     },
     {
       "userID": 18,
       "date": "2019/08/06",
-      "hoursSlept": 9.7,
-      "sleepQuality": 3.7
+      "numOunces": 62
     },
     {
       "userID": 19,
       "date": "2019/08/06",
-      "hoursSlept": 7.2,
-      "sleepQuality": 2.2
+      "numOunces": 73
     },
     {
       "userID": 20,
       "date": "2019/08/06",
-      "hoursSlept": 6.2,
-      "sleepQuality": 3.6
+      "numOunces": 53
     },
     {
       "userID": 21,
       "date": "2019/08/06",
-      "hoursSlept": 9.5,
-      "sleepQuality": 3.4
+      "numOunces": 79
     },
     {
       "userID": 22,
       "date": "2019/08/06",
-      "hoursSlept": 10.9,
-      "sleepQuality": 4.2
+      "numOunces": 82
     },
     {
       "userID": 23,
       "date": "2019/08/06",
-      "hoursSlept": 10.6,
-      "sleepQuality": 4.8
+      "numOunces": 83
     },
     {
       "userID": 24,
       "date": "2019/08/06",
-      "hoursSlept": 6.5,
-      "sleepQuality": 3.5
+      "numOunces": 29
     },
     {
       "userID": 25,
       "date": "2019/08/06",
-      "hoursSlept": 10.6,
-      "sleepQuality": 1.5
+      "numOunces": 73
     },
     {
       "userID": 26,
       "date": "2019/08/06",
-      "hoursSlept": 10.5,
-      "sleepQuality": 3.6
+      "numOunces": 72
     },
     {
       "userID": 27,
       "date": "2019/08/06",
-      "hoursSlept": 10.6,
-      "sleepQuality": 4
+      "numOunces": 42
     },
     {
       "userID": 28,
       "date": "2019/08/06",
-      "hoursSlept": 9.6,
-      "sleepQuality": 2.1
+      "numOunces": 96
     },
     {
       "userID": 29,
       "date": "2019/08/06",
-      "hoursSlept": 10.5,
-      "sleepQuality": 1
+      "numOunces": 71
     },
     {
       "userID": 30,
       "date": "2019/08/06",
-      "hoursSlept": 5,
-      "sleepQuality": 3.8
+      "numOunces": 42
     },
     {
       "userID": 31,
       "date": "2019/08/06",
-      "hoursSlept": 10.2,
-      "sleepQuality": 2.1
+      "numOunces": 61
     },
     {
       "userID": 32,
       "date": "2019/08/06",
-      "hoursSlept": 7.8,
-      "sleepQuality": 3
+      "numOunces": 78
     },
     {
       "userID": 33,
       "date": "2019/08/06",
-      "hoursSlept": 6.9,
-      "sleepQuality": 2.8
+      "numOunces": 27
     },
     {
       "userID": 34,
       "date": "2019/08/06",
-      "hoursSlept": 8.1,
-      "sleepQuality": 4.8
+      "numOunces": 78
     },
     {
       "userID": 35,
       "date": "2019/08/06",
-      "hoursSlept": 4.8,
-      "sleepQuality": 1.1
+      "numOunces": 37
     },
     {
       "userID": 36,
       "date": "2019/08/06",
-      "hoursSlept": 6.6,
-      "sleepQuality": 2.5
+      "numOunces": 27
     },
     {
       "userID": 37,
       "date": "2019/08/06",
-      "hoursSlept": 4.3,
-      "sleepQuality": 3.8
+      "numOunces": 38
     },
     {
       "userID": 38,
       "date": "2019/08/06",
-      "hoursSlept": 10.6,
-      "sleepQuality": 1.9
+      "numOunces": 52
     },
     {
       "userID": 39,
       "date": "2019/08/06",
-      "hoursSlept": 9.3,
-      "sleepQuality": 4
+      "numOunces": 79
     },
     {
       "userID": 40,
       "date": "2019/08/06",
-      "hoursSlept": 8.4,
-      "sleepQuality": 2.3
+      "numOunces": 78
     },
     {
       "userID": 41,
       "date": "2019/08/06",
-      "hoursSlept": 5.3,
-      "sleepQuality": 3.6
+      "numOunces": 88
     },
     {
       "userID": 42,
       "date": "2019/08/06",
-      "hoursSlept": 4.7,
-      "sleepQuality": 2.8
+      "numOunces": 53
     },
     {
       "userID": 43,
       "date": "2019/08/06",
-      "hoursSlept": 8.3,
-      "sleepQuality": 2.8
+      "numOunces": 45
     },
     {
       "userID": 44,
       "date": "2019/08/06",
-      "hoursSlept": 5.8,
-      "sleepQuality": 1.1
+      "numOunces": 42
     },
     {
       "userID": 45,
       "date": "2019/08/06",
-      "hoursSlept": 5.1,
-      "sleepQuality": 2.1
+      "numOunces": 95
     },
     {
       "userID": 46,
       "date": "2019/08/06",
-      "hoursSlept": 4.5,
-      "sleepQuality": 3.9
+      "numOunces": 23
     },
     {
       "userID": 47,
       "date": "2019/08/06",
-      "hoursSlept": 10.7,
-      "sleepQuality": 3.7
+      "numOunces": 77
     },
     {
       "userID": 48,
       "date": "2019/08/06",
-      "hoursSlept": 6.8,
-      "sleepQuality": 3.6
+      "numOunces": 79
     },
     {
       "userID": 49,
       "date": "2019/08/06",
-      "hoursSlept": 6.3,
-      "sleepQuality": 3.5
+      "numOunces": 29
     },
     {
       "userID": 50,
       "date": "2019/08/06",
-      "hoursSlept": 10.5,
-      "sleepQuality": 1.6
+      "numOunces": 73
     },
     {
       "userID": 1,
       "date": "2019/08/07",
-      "hoursSlept": 5.1,
-      "sleepQuality": 4.1
+      "numOunces": 59
     },
     {
       "userID": 2,
       "date": "2019/08/07",
-      "hoursSlept": 4.7,
-      "sleepQuality": 1.3
+      "numOunces": 88
     },
     {
       "userID": 3,
       "date": "2019/08/07",
-      "hoursSlept": 9.8,
-      "sleepQuality": 2.9
+      "numOunces": 57
     },
     {
       "userID": 4,
       "date": "2019/08/07",
-      "hoursSlept": 9.6,
-      "sleepQuality": 1.2
+      "numOunces": 63
     },
     {
       "userID": 5,
       "date": "2019/08/07",
-      "hoursSlept": 6.8,
-      "sleepQuality": 4.4
+      "numOunces": 64
     },
     {
       "userID": 6,
       "date": "2019/08/07",
-      "hoursSlept": 5.7,
-      "sleepQuality": 1.8
+      "numOunces": 26
     },
     {
       "userID": 7,
       "date": "2019/08/07",
-      "hoursSlept": 10.3,
-      "sleepQuality": 1.1
+      "numOunces": 84
     },
     {
       "userID": 8,
       "date": "2019/08/07",
-      "hoursSlept": 9.4,
-      "sleepQuality": 4.7
+      "numOunces": 93
     },
     {
       "userID": 9,
       "date": "2019/08/07",
-      "hoursSlept": 4.9,
-      "sleepQuality": 3.5
+      "numOunces": 22
     },
     {
       "userID": 10,
       "date": "2019/08/07",
-      "hoursSlept": 9.8,
-      "sleepQuality": 2.2
+      "numOunces": 34
     },
     {
       "userID": 11,
       "date": "2019/08/07",
-      "hoursSlept": 5.8,
-      "sleepQuality": 1.5
+      "numOunces": 56
     },
     {
       "userID": 12,
       "date": "2019/08/07",
-      "hoursSlept": 8.3,
-      "sleepQuality": 3.4
+      "numOunces": 45
     },
     {
       "userID": 13,
       "date": "2019/08/07",
-      "hoursSlept": 5.7,
-      "sleepQuality": 1.7
+      "numOunces": 87
     },
     {
       "userID": 14,
       "date": "2019/08/07",
-      "hoursSlept": 9.7,
-      "sleepQuality": 3.4
+      "numOunces": 77
     },
     {
       "userID": 15,
       "date": "2019/08/07",
-      "hoursSlept": 7.8,
-      "sleepQuality": 2.3
+      "numOunces": 57
     },
     {
       "userID": 16,
       "date": "2019/08/07",
-      "hoursSlept": 6.4,
-      "sleepQuality": 1.2
+      "numOunces": 78
     },
     {
       "userID": 17,
       "date": "2019/08/07",
-      "hoursSlept": 7.6,
-      "sleepQuality": 1.6
+      "numOunces": 78
     },
     {
       "userID": 18,
       "date": "2019/08/07",
-      "hoursSlept": 5.5,
-      "sleepQuality": 2.8
+      "numOunces": 26
     },
     {
       "userID": 19,
       "date": "2019/08/07",
-      "hoursSlept": 6.7,
-      "sleepQuality": 2.9
+      "numOunces": 82
     },
     {
       "userID": 20,
       "date": "2019/08/07",
-      "hoursSlept": 9.5,
-      "sleepQuality": 4.8
+      "numOunces": 67
     },
     {
       "userID": 21,
       "date": "2019/08/07",
-      "hoursSlept": 5.9,
-      "sleepQuality": 1.1
+      "numOunces": 64
     },
     {
       "userID": 22,
       "date": "2019/08/07",
-      "hoursSlept": 7.5,
-      "sleepQuality": 3.8
+      "numOunces": 38
     },
     {
       "userID": 23,
       "date": "2019/08/07",
-      "hoursSlept": 9.7,
-      "sleepQuality": 4.4
+      "numOunces": 90
     },
     {
       "userID": 24,
       "date": "2019/08/07",
-      "hoursSlept": 10.4,
-      "sleepQuality": 1.2
+      "numOunces": 84
     },
     {
       "userID": 25,
       "date": "2019/08/07",
-      "hoursSlept": 9.6,
-      "sleepQuality": 2.7
+      "numOunces": 75
     },
     {
       "userID": 26,
       "date": "2019/08/07",
-      "hoursSlept": 5,
-      "sleepQuality": 3.5
+      "numOunces": 57
     },
     {
       "userID": 27,
       "date": "2019/08/07",
-      "hoursSlept": 8.4,
-      "sleepQuality": 4.2
+      "numOunces": 59
     },
     {
       "userID": 28,
       "date": "2019/08/07",
-      "hoursSlept": 4.5,
-      "sleepQuality": 1.8
+      "numOunces": 71
     },
     {
       "userID": 29,
       "date": "2019/08/07",
-      "hoursSlept": 9.3,
-      "sleepQuality": 3
+      "numOunces": 76
     },
     {
       "userID": 30,
       "date": "2019/08/07",
-      "hoursSlept": 8.7,
-      "sleepQuality": 2.8
+      "numOunces": 86
     },
     {
       "userID": 31,
       "date": "2019/08/07",
-      "hoursSlept": 10.5,
-      "sleepQuality": 1.4
+      "numOunces": 36
     },
     {
       "userID": 32,
       "date": "2019/08/07",
-      "hoursSlept": 5.5,
-      "sleepQuality": 4.9
+      "numOunces": 94
     },
     {
       "userID": 33,
       "date": "2019/08/07",
-      "hoursSlept": 4.8,
-      "sleepQuality": 4.7
+      "numOunces": 88
     },
     {
       "userID": 34,
       "date": "2019/08/07",
-      "hoursSlept": 4.8,
-      "sleepQuality": 3.1
+      "numOunces": 86
     },
     {
       "userID": 35,
       "date": "2019/08/07",
-      "hoursSlept": 4.4,
-      "sleepQuality": 2.9
+      "numOunces": 69
     },
     {
       "userID": 36,
       "date": "2019/08/07",
-      "hoursSlept": 7.2,
-      "sleepQuality": 4.9
+      "numOunces": 91
     },
     {
       "userID": 37,
       "date": "2019/08/07",
-      "hoursSlept": 10.4,
-      "sleepQuality": 4.6
+      "numOunces": 42
     },
     {
       "userID": 38,
       "date": "2019/08/07",
-      "hoursSlept": 5.5,
-      "sleepQuality": 4.2
+      "numOunces": 92
     },
     {
       "userID": 39,
       "date": "2019/08/07",
-      "hoursSlept": 5.4,
-      "sleepQuality": 4.2
+      "numOunces": 33
     },
     {
       "userID": 40,
       "date": "2019/08/07",
-      "hoursSlept": 10,
-      "sleepQuality": 3.7
+      "numOunces": 67
     },
     {
       "userID": 41,
       "date": "2019/08/07",
-      "hoursSlept": 10.3,
-      "sleepQuality": 2.8
+      "numOunces": 49
     },
     {
       "userID": 42,
       "date": "2019/08/07",
-      "hoursSlept": 7,
-      "sleepQuality": 1.9
+      "numOunces": 95
     },
     {
       "userID": 43,
       "date": "2019/08/07",
-      "hoursSlept": 7.4,
-      "sleepQuality": 2
+      "numOunces": 72
     },
     {
       "userID": 44,
       "date": "2019/08/07",
-      "hoursSlept": 8.3,
-      "sleepQuality": 3.7
+      "numOunces": 64
     },
     {
       "userID": 45,
       "date": "2019/08/07",
-      "hoursSlept": 5.7,
-      "sleepQuality": 2.3
+      "numOunces": 40
     },
     {
       "userID": 46,
       "date": "2019/08/07",
-      "hoursSlept": 7.1,
-      "sleepQuality": 2
+      "numOunces": 29
     },
     {
       "userID": 47,
       "date": "2019/08/07",
-      "hoursSlept": 5.5,
-      "sleepQuality": 3.4
+      "numOunces": 24
     },
     {
       "userID": 48,
       "date": "2019/08/07",
-      "hoursSlept": 7.5,
-      "sleepQuality": 4.2
+      "numOunces": 28
     },
     {
       "userID": 49,
       "date": "2019/08/07",
-      "hoursSlept": 4,
-      "sleepQuality": 4.4
+      "numOunces": 86
     },
     {
       "userID": 50,
       "date": "2019/08/07",
-      "hoursSlept": 5.3,
-      "sleepQuality": 4.3
+      "numOunces": 66
     },
     {
       "userID": 1,
       "date": "2019/08/08",
-      "hoursSlept": 4.7,
-      "sleepQuality": 3.4
+      "numOunces": 36
     },
     {
       "userID": 2,
       "date": "2019/08/08",
-      "hoursSlept": 9.8,
-      "sleepQuality": 3.5
+      "numOunces": 74
     },
     {
       "userID": 3,
       "date": "2019/08/08",
-      "hoursSlept": 8.8,
-      "sleepQuality": 2.4
+      "numOunces": 98
     },
     {
       "userID": 4,
       "date": "2019/08/08",
-      "hoursSlept": 6.8,
-      "sleepQuality": 3.8
+      "numOunces": 87
     },
     {
       "userID": 5,
       "date": "2019/08/08",
-      "hoursSlept": 7.3,
-      "sleepQuality": 4.4
+      "numOunces": 27
     },
     {
       "userID": 6,
       "date": "2019/08/08",
-      "hoursSlept": 8,
-      "sleepQuality": 4.4
+      "numOunces": 95
     },
     {
       "userID": 7,
       "date": "2019/08/08",
-      "hoursSlept": 8.9,
-      "sleepQuality": 3.1
+      "numOunces": 63
     },
     {
       "userID": 8,
       "date": "2019/08/08",
-      "hoursSlept": 6.7,
-      "sleepQuality": 1.3
+      "numOunces": 63
     },
     {
       "userID": 9,
       "date": "2019/08/08",
-      "hoursSlept": 5,
-      "sleepQuality": 1.9
+      "numOunces": 78
     },
     {
       "userID": 10,
       "date": "2019/08/08",
-      "hoursSlept": 10.4,
-      "sleepQuality": 4.3
+      "numOunces": 70
     },
     {
       "userID": 11,
       "date": "2019/08/08",
-      "hoursSlept": 7.7,
-      "sleepQuality": 3.2
+      "numOunces": 80
     },
     {
       "userID": 12,
       "date": "2019/08/08",
-      "hoursSlept": 9.7,
-      "sleepQuality": 1.5
+      "numOunces": 34
     },
     {
       "userID": 13,
       "date": "2019/08/08",
-      "hoursSlept": 4.4,
-      "sleepQuality": 2.6
+      "numOunces": 26
     },
     {
       "userID": 14,
       "date": "2019/08/08",
-      "hoursSlept": 7,
-      "sleepQuality": 2.5
+      "numOunces": 91
     },
     {
       "userID": 15,
       "date": "2019/08/08",
-      "hoursSlept": 10.1,
-      "sleepQuality": 2.4
+      "numOunces": 71
     },
     {
       "userID": 16,
       "date": "2019/08/08",
-      "hoursSlept": 4.9,
-      "sleepQuality": 2.7
+      "numOunces": 22
     },
     {
       "userID": 17,
       "date": "2019/08/08",
-      "hoursSlept": 9.2,
-      "sleepQuality": 1.4
+      "numOunces": 33
     },
     {
       "userID": 18,
       "date": "2019/08/08",
-      "hoursSlept": 8.5,
-      "sleepQuality": 2.2
+      "numOunces": 29
     },
     {
       "userID": 19,
       "date": "2019/08/08",
-      "hoursSlept": 5.6,
-      "sleepQuality": 4.7
+      "numOunces": 37
     },
     {
       "userID": 20,
       "date": "2019/08/08",
-      "hoursSlept": 10.8,
-      "sleepQuality": 2.8
+      "numOunces": 55
     },
     {
       "userID": 21,
       "date": "2019/08/08",
-      "hoursSlept": 10.2,
-      "sleepQuality": 4.8
+      "numOunces": 26
     },
     {
       "userID": 22,
       "date": "2019/08/08",
-      "hoursSlept": 6.3,
-      "sleepQuality": 3.2
+      "numOunces": 83
     },
     {
       "userID": 23,
       "date": "2019/08/08",
-      "hoursSlept": 10.1,
-      "sleepQuality": 1.4
+      "numOunces": 68
     },
     {
       "userID": 24,
       "date": "2019/08/08",
-      "hoursSlept": 6.6,
-      "sleepQuality": 2.8
+      "numOunces": 39
     },
     {
       "userID": 25,
       "date": "2019/08/08",
-      "hoursSlept": 7.7,
-      "sleepQuality": 4.8
+      "numOunces": 98
     },
     {
       "userID": 26,
       "date": "2019/08/08",
-      "hoursSlept": 7.3,
-      "sleepQuality": 2.2
+      "numOunces": 70
     },
     {
       "userID": 27,
       "date": "2019/08/08",
-      "hoursSlept": 5.7,
-      "sleepQuality": 3.3
+      "numOunces": 55
     },
     {
       "userID": 28,
       "date": "2019/08/08",
-      "hoursSlept": 9.9,
-      "sleepQuality": 4.9
+      "numOunces": 35
     },
     {
       "userID": 29,
       "date": "2019/08/08",
-      "hoursSlept": 4.9,
-      "sleepQuality": 3.4
+      "numOunces": 67
     },
     {
       "userID": 30,
       "date": "2019/08/08",
-      "hoursSlept": 4.6,
-      "sleepQuality": 2.1
+      "numOunces": 39
     },
     {
       "userID": 31,
       "date": "2019/08/08",
-      "hoursSlept": 4.2,
-      "sleepQuality": 4
+      "numOunces": 92
     },
     {
       "userID": 32,
       "date": "2019/08/08",
-      "hoursSlept": 4.4,
-      "sleepQuality": 1.5
+      "numOunces": 63
     },
     {
       "userID": 33,
       "date": "2019/08/08",
-      "hoursSlept": 5.3,
-      "sleepQuality": 4.2
+      "numOunces": 93
     },
     {
       "userID": 34,
       "date": "2019/08/08",
-      "hoursSlept": 4.3,
-      "sleepQuality": 1.9
+      "numOunces": 63
     },
     {
       "userID": 35,
       "date": "2019/08/08",
-      "hoursSlept": 5.1,
-      "sleepQuality": 3.5
+      "numOunces": 57
     },
     {
       "userID": 36,
       "date": "2019/08/08",
-      "hoursSlept": 7.3,
-      "sleepQuality": 2.4
+      "numOunces": 79
     },
     {
       "userID": 37,
       "date": "2019/08/08",
-      "hoursSlept": 4.2,
-      "sleepQuality": 1.3
+      "numOunces": 56
     },
     {
       "userID": 38,
       "date": "2019/08/08",
-      "hoursSlept": 4.2,
-      "sleepQuality": 1.2
+      "numOunces": 96
     },
     {
       "userID": 39,
       "date": "2019/08/08",
-      "hoursSlept": 10.5,
-      "sleepQuality": 3.5
+      "numOunces": 49
     },
     {
       "userID": 40,
       "date": "2019/08/08",
-      "hoursSlept": 6.1,
-      "sleepQuality": 2.1
+      "numOunces": 91
     },
     {
       "userID": 41,
       "date": "2019/08/08",
-      "hoursSlept": 10.1,
-      "sleepQuality": 3.9
+      "numOunces": 57
     },
     {
       "userID": 42,
       "date": "2019/08/08",
-      "hoursSlept": 10.9,
-      "sleepQuality": 1.2
+      "numOunces": 32
     },
     {
       "userID": 43,
       "date": "2019/08/08",
-      "hoursSlept": 5.3,
-      "sleepQuality": 4.9
+      "numOunces": 96
     },
     {
       "userID": 44,
       "date": "2019/08/08",
-      "hoursSlept": 5.6,
-      "sleepQuality": 2.1
+      "numOunces": 29
     },
     {
       "userID": 45,
       "date": "2019/08/08",
-      "hoursSlept": 5.3,
-      "sleepQuality": 3.3
+      "numOunces": 55
     },
     {
       "userID": 46,
       "date": "2019/08/08",
-      "hoursSlept": 9.9,
-      "sleepQuality": 3.8
+      "numOunces": 52
     },
     {
       "userID": 47,
       "date": "2019/08/08",
-      "hoursSlept": 5,
-      "sleepQuality": 4
+      "numOunces": 49
     },
     {
       "userID": 48,
       "date": "2019/08/08",
-      "hoursSlept": 4.8,
-      "sleepQuality": 2.1
+      "numOunces": 47
     },
     {
       "userID": 49,
       "date": "2019/08/08",
-      "hoursSlept": 10.8,
-      "sleepQuality": 4
+      "numOunces": 44
     },
     {
       "userID": 50,
       "date": "2019/08/08",
-      "hoursSlept": 9.5,
-      "sleepQuality": 1.4
+      "numOunces": 71
     },
     {
       "userID": 1,
       "date": "2019/08/09",
-      "hoursSlept": 8.9,
-      "sleepQuality": 4.3
+      "numOunces": 87
     },
     {
       "userID": 2,
       "date": "2019/08/09",
-      "hoursSlept": 8,
-      "sleepQuality": 2.1
+      "numOunces": 38
     },
     {
       "userID": 3,
       "date": "2019/08/09",
-      "hoursSlept": 6.9,
-      "sleepQuality": 1.9
+      "numOunces": 24
     },
     {
       "userID": 4,
       "date": "2019/08/09",
-      "hoursSlept": 9.2,
-      "sleepQuality": 2.5
+      "numOunces": 27
     },
     {
       "userID": 5,
       "date": "2019/08/09",
-      "hoursSlept": 10.1,
-      "sleepQuality": 2.5
+      "numOunces": 93
     },
     {
       "userID": 6,
       "date": "2019/08/09",
-      "hoursSlept": 5.1,
-      "sleepQuality": 2.2
+      "numOunces": 94
     },
     {
       "userID": 7,
       "date": "2019/08/09",
-      "hoursSlept": 5.2,
-      "sleepQuality": 1.1
+      "numOunces": 94
     },
     {
       "userID": 8,
       "date": "2019/08/09",
-      "hoursSlept": 10.7,
-      "sleepQuality": 3.9
+      "numOunces": 43
     },
     {
       "userID": 9,
       "date": "2019/08/09",
-      "hoursSlept": 8.5,
-      "sleepQuality": 3.8
+      "numOunces": 55
     },
     {
       "userID": 10,
       "date": "2019/08/09",
-      "hoursSlept": 4.5,
-      "sleepQuality": 1.3
+      "numOunces": 94
     },
     {
       "userID": 11,
       "date": "2019/08/09",
-      "hoursSlept": 7.1,
-      "sleepQuality": 1.9
+      "numOunces": 68
     },
     {
       "userID": 12,
       "date": "2019/08/09",
-      "hoursSlept": 7.9,
-      "sleepQuality": 2.7
+      "numOunces": 61
     },
     {
       "userID": 13,
       "date": "2019/08/09",
-      "hoursSlept": 9.2,
-      "sleepQuality": 3
+      "numOunces": 92
     },
     {
       "userID": 14,
       "date": "2019/08/09",
-      "hoursSlept": 7.4,
-      "sleepQuality": 2.8
+      "numOunces": 95
     },
     {
       "userID": 15,
       "date": "2019/08/09",
-      "hoursSlept": 7.5,
-      "sleepQuality": 2.2
+      "numOunces": 47
     },
     {
       "userID": 16,
       "date": "2019/08/09",
-      "hoursSlept": 5.1,
-      "sleepQuality": 1.1
+      "numOunces": 93
     },
     {
       "userID": 17,
       "date": "2019/08/09",
-      "hoursSlept": 9.2,
-      "sleepQuality": 2.4
+      "numOunces": 21
     },
     {
       "userID": 18,
       "date": "2019/08/09",
-      "hoursSlept": 9.9,
-      "sleepQuality": 2
+      "numOunces": 83
     },
     {
       "userID": 19,
       "date": "2019/08/09",
-      "hoursSlept": 5.5,
-      "sleepQuality": 2.9
+      "numOunces": 96
     },
     {
       "userID": 20,
       "date": "2019/08/09",
-      "hoursSlept": 9.2,
-      "sleepQuality": 1.7
+      "numOunces": 86
     },
     {
       "userID": 21,
       "date": "2019/08/09",
-      "hoursSlept": 6.5,
-      "sleepQuality": 4.2
+      "numOunces": 63
     },
     {
       "userID": 22,
       "date": "2019/08/09",
-      "hoursSlept": 10,
-      "sleepQuality": 3.4
+      "numOunces": 53
     },
     {
       "userID": 23,
       "date": "2019/08/09",
-      "hoursSlept": 10.1,
-      "sleepQuality": 4.1
+      "numOunces": 45
     },
     {
       "userID": 24,
       "date": "2019/08/09",
-      "hoursSlept": 7.4,
-      "sleepQuality": 3.2
+      "numOunces": 80
     },
     {
       "userID": 25,
       "date": "2019/08/09",
-      "hoursSlept": 6,
-      "sleepQuality": 1.5
+      "numOunces": 58
     },
     {
       "userID": 26,
       "date": "2019/08/09",
-      "hoursSlept": 9.6,
-      "sleepQuality": 1.9
+      "numOunces": 39
     },
     {
       "userID": 27,
       "date": "2019/08/09",
-      "hoursSlept": 7.1,
-      "sleepQuality": 4.4
+      "numOunces": 61
     },
     {
       "userID": 28,
       "date": "2019/08/09",
-      "hoursSlept": 9.9,
-      "sleepQuality": 2.1
+      "numOunces": 47
     },
     {
       "userID": 29,
       "date": "2019/08/09",
-      "hoursSlept": 4.7,
-      "sleepQuality": 3.9
+      "numOunces": 45
     },
     {
       "userID": 30,
       "date": "2019/08/09",
-      "hoursSlept": 9.7,
-      "sleepQuality": 3.3
+      "numOunces": 33
     },
     {
       "userID": 31,
       "date": "2019/08/09",
-      "hoursSlept": 7.8,
-      "sleepQuality": 1.5
+      "numOunces": 88
     },
     {
       "userID": 32,
       "date": "2019/08/09",
-      "hoursSlept": 8.1,
-      "sleepQuality": 2.9
+      "numOunces": 99
     },
     {
       "userID": 33,
       "date": "2019/08/09",
-      "hoursSlept": 10.7,
-      "sleepQuality": 3.6
+      "numOunces": 50
     },
     {
       "userID": 34,
       "date": "2019/08/09",
-      "hoursSlept": 10.6,
-      "sleepQuality": 1.5
+      "numOunces": 87
     },
     {
       "userID": 35,
       "date": "2019/08/09",
-      "hoursSlept": 7.8,
-      "sleepQuality": 3.3
+      "numOunces": 78
     },
     {
       "userID": 36,
       "date": "2019/08/09",
-      "hoursSlept": 7.8,
-      "sleepQuality": 2.3
+      "numOunces": 33
     },
     {
       "userID": 37,
       "date": "2019/08/09",
-      "hoursSlept": 9.6,
-      "sleepQuality": 3.6
+      "numOunces": 72
     },
     {
       "userID": 38,
       "date": "2019/08/09",
-      "hoursSlept": 7.2,
-      "sleepQuality": 3.6
+      "numOunces": 82
     },
     {
       "userID": 39,
       "date": "2019/08/09",
-      "hoursSlept": 10.7,
-      "sleepQuality": 4.4
+      "numOunces": 78
     },
     {
       "userID": 40,
       "date": "2019/08/09",
-      "hoursSlept": 10.8,
-      "sleepQuality": 2.9
+      "numOunces": 85
     },
     {
       "userID": 41,
       "date": "2019/08/09",
-      "hoursSlept": 4.2,
-      "sleepQuality": 3.4
+      "numOunces": 87
     },
     {
       "userID": 42,
       "date": "2019/08/09",
-      "hoursSlept": 6.3,
-      "sleepQuality": 2.8
+      "numOunces": 74
     },
     {
       "userID": 43,
       "date": "2019/08/09",
-      "hoursSlept": 5.1,
-      "sleepQuality": 3.4
+      "numOunces": 96
     },
     {
       "userID": 44,
       "date": "2019/08/09",
-      "hoursSlept": 5.5,
-      "sleepQuality": 2.6
+      "numOunces": 43
     },
     {
       "userID": 45,
       "date": "2019/08/09",
-      "hoursSlept": 7.7,
-      "sleepQuality": 1.4
+      "numOunces": 88
     },
     {
       "userID": 46,
       "date": "2019/08/09",
-      "hoursSlept": 6.8,
-      "sleepQuality": 2.6
+      "numOunces": 83
     },
     {
       "userID": 47,
       "date": "2019/08/09",
-      "hoursSlept": 9.9,
-      "sleepQuality": 4.4
+      "numOunces": 68
     },
     {
       "userID": 48,
       "date": "2019/08/09",
-      "hoursSlept": 8.4,
-      "sleepQuality": 2.1
+      "numOunces": 46
     },
     {
       "userID": 49,
       "date": "2019/08/09",
-      "hoursSlept": 8.6,
-      "sleepQuality": 4.2
+      "numOunces": 51
     },
     {
       "userID": 50,
       "date": "2019/08/09",
-      "hoursSlept": 5.5,
-      "sleepQuality": 3.3
+      "numOunces": 55
     },
     {
       "userID": 1,
       "date": "2019/08/10",
-      "hoursSlept": 8,
-      "sleepQuality": 2.1
+      "numOunces": 91
     },
     {
       "userID": 2,
       "date": "2019/08/10",
-      "hoursSlept": 6.8,
-      "sleepQuality": 2.2
+      "numOunces": 54
     },
     {
       "userID": 3,
       "date": "2019/08/10",
-      "hoursSlept": 9.9,
-      "sleepQuality": 2.8
+      "numOunces": 81
     },
     {
       "userID": 4,
       "date": "2019/08/10",
-      "hoursSlept": 4.7,
-      "sleepQuality": 3.6
+      "numOunces": 25
     },
     {
       "userID": 5,
       "date": "2019/08/10",
-      "hoursSlept": 6.5,
-      "sleepQuality": 2.7
+      "numOunces": 68
     },
     {
       "userID": 6,
       "date": "2019/08/10",
-      "hoursSlept": 6,
-      "sleepQuality": 1
+      "numOunces": 34
     },
     {
       "userID": 7,
       "date": "2019/08/10",
-      "hoursSlept": 7.6,
-      "sleepQuality": 3
+      "numOunces": 54
     },
     {
       "userID": 8,
       "date": "2019/08/10",
-      "hoursSlept": 11,
-      "sleepQuality": 1.6
+      "numOunces": 32
     },
     {
       "userID": 9,
       "date": "2019/08/10",
-      "hoursSlept": 4.7,
-      "sleepQuality": 3.5
+      "numOunces": 80
     },
     {
       "userID": 10,
       "date": "2019/08/10",
-      "hoursSlept": 10.2,
-      "sleepQuality": 1.7
+      "numOunces": 71
     },
     {
       "userID": 11,
       "date": "2019/08/10",
-      "hoursSlept": 10.4,
-      "sleepQuality": 1.5
+      "numOunces": 62
     },
     {
       "userID": 12,
       "date": "2019/08/10",
-      "hoursSlept": 7,
-      "sleepQuality": 1.1
+      "numOunces": 62
     },
     {
       "userID": 13,
       "date": "2019/08/10",
-      "hoursSlept": 5.8,
-      "sleepQuality": 2.9
+      "numOunces": 77
     },
     {
       "userID": 14,
       "date": "2019/08/10",
-      "hoursSlept": 4.4,
-      "sleepQuality": 4.9
+      "numOunces": 23
     },
     {
       "userID": 15,
       "date": "2019/08/10",
-      "hoursSlept": 8.2,
-      "sleepQuality": 3.7
+      "numOunces": 45
     },
     {
       "userID": 16,
       "date": "2019/08/10",
-      "hoursSlept": 10.9,
-      "sleepQuality": 2.3
+      "numOunces": 94
     },
     {
       "userID": 17,
       "date": "2019/08/10",
-      "hoursSlept": 9.9,
-      "sleepQuality": 3.8
+      "numOunces": 68
     },
     {
       "userID": 18,
       "date": "2019/08/10",
-      "hoursSlept": 4.1,
-      "sleepQuality": 4.1
+      "numOunces": 87
     },
     {
       "userID": 19,
       "date": "2019/08/10",
-      "hoursSlept": 7.3,
-      "sleepQuality": 3.2
+      "numOunces": 42
     },
     {
       "userID": 20,
       "date": "2019/08/10",
-      "hoursSlept": 7.8,
-      "sleepQuality": 2.2
+      "numOunces": 43
     },
     {
       "userID": 21,
       "date": "2019/08/10",
-      "hoursSlept": 9.6,
-      "sleepQuality": 3.1
+      "numOunces": 36
     },
     {
       "userID": 22,
       "date": "2019/08/10",
-      "hoursSlept": 6.6,
-      "sleepQuality": 3
+      "numOunces": 53
     },
     {
       "userID": 23,
       "date": "2019/08/10",
-      "hoursSlept": 4.1,
-      "sleepQuality": 2.7
+      "numOunces": 49
     },
     {
       "userID": 24,
       "date": "2019/08/10",
-      "hoursSlept": 4.1,
-      "sleepQuality": 5
+      "numOunces": 67
     },
     {
       "userID": 25,
       "date": "2019/08/10",
-      "hoursSlept": 9.6,
-      "sleepQuality": 3
+      "numOunces": 91
     },
     {
       "userID": 26,
       "date": "2019/08/10",
-      "hoursSlept": 9.2,
-      "sleepQuality": 3.6
+      "numOunces": 82
     },
     {
       "userID": 27,
       "date": "2019/08/10",
-      "hoursSlept": 9.2,
-      "sleepQuality": 4.9
+      "numOunces": 31
     },
     {
       "userID": 28,
       "date": "2019/08/10",
-      "hoursSlept": 4.4,
-      "sleepQuality": 2.8
+      "numOunces": 89
     },
     {
       "userID": 29,
       "date": "2019/08/10",
-      "hoursSlept": 10.2,
-      "sleepQuality": 1.9
+      "numOunces": 45
     },
     {
       "userID": 30,
       "date": "2019/08/10",
-      "hoursSlept": 6.3,
-      "sleepQuality": 3.7
+      "numOunces": 67
     },
     {
       "userID": 31,
       "date": "2019/08/10",
-      "hoursSlept": 9.6,
-      "sleepQuality": 4.3
+      "numOunces": 74
     },
     {
       "userID": 32,
       "date": "2019/08/10",
-      "hoursSlept": 6.1,
-      "sleepQuality": 3.4
+      "numOunces": 75
     },
     {
       "userID": 33,
       "date": "2019/08/10",
-      "hoursSlept": 4.4,
-      "sleepQuality": 3.3
+      "numOunces": 78
     },
     {
       "userID": 34,
       "date": "2019/08/10",
-      "hoursSlept": 7.5,
-      "sleepQuality": 4.1
+      "numOunces": 72
     },
     {
       "userID": 35,
       "date": "2019/08/10",
-      "hoursSlept": 7.3,
-      "sleepQuality": 3.7
+      "numOunces": 63
     },
     {
       "userID": 36,
       "date": "2019/08/10",
-      "hoursSlept": 7.2,
-      "sleepQuality": 3.7
+      "numOunces": 98
     },
     {
       "userID": 37,
       "date": "2019/08/10",
-      "hoursSlept": 10.7,
-      "sleepQuality": 4.9
+      "numOunces": 82
     },
     {
       "userID": 38,
       "date": "2019/08/10",
-      "hoursSlept": 6.3,
-      "sleepQuality": 3.2
+      "numOunces": 34
     },
     {
       "userID": 39,
       "date": "2019/08/10",
-      "hoursSlept": 4.8,
-      "sleepQuality": 1.4
+      "numOunces": 63
     },
     {
       "userID": 40,
       "date": "2019/08/10",
-      "hoursSlept": 4.1,
-      "sleepQuality": 2.1
+      "numOunces": 44
     },
     {
       "userID": 41,
       "date": "2019/08/10",
-      "hoursSlept": 10.3,
-      "sleepQuality": 3.6
+      "numOunces": 76
     },
     {
       "userID": 42,
       "date": "2019/08/10",
-      "hoursSlept": 6.8,
-      "sleepQuality": 3.8
+      "numOunces": 75
     },
     {
       "userID": 43,
       "date": "2019/08/10",
-      "hoursSlept": 6.5,
-      "sleepQuality": 3.2
+      "numOunces": 26
     },
     {
       "userID": 44,
       "date": "2019/08/10",
-      "hoursSlept": 4.4,
-      "sleepQuality": 2.1
+      "numOunces": 49
     },
     {
       "userID": 45,
       "date": "2019/08/10",
-      "hoursSlept": 10.4,
-      "sleepQuality": 4.1
+      "numOunces": 69
     },
     {
       "userID": 46,
       "date": "2019/08/10",
-      "hoursSlept": 11,
-      "sleepQuality": 3.2
+      "numOunces": 27
     },
     {
       "userID": 47,
       "date": "2019/08/10",
-      "hoursSlept": 9.3,
-      "sleepQuality": 1.6
+      "numOunces": 66
     },
     {
       "userID": 48,
       "date": "2019/08/10",
-      "hoursSlept": 11,
-      "sleepQuality": 1.6
+      "numOunces": 59
     },
     {
       "userID": 49,
       "date": "2019/08/10",
-      "hoursSlept": 6,
-      "sleepQuality": 1.8
+      "numOunces": 41
     },
     {
       "userID": 50,
       "date": "2019/08/10",
-      "hoursSlept": 5.5,
-      "sleepQuality": 2.7
+      "numOunces": 97
     },
     {
       "userID": 1,
       "date": "2019/08/11",
-      "hoursSlept": 4.7,
-      "sleepQuality": 4.5
+      "numOunces": 41
     },
     {
       "userID": 2,
       "date": "2019/08/11",
-      "hoursSlept": 5.3,
-      "sleepQuality": 3.8
+      "numOunces": 58
     },
     {
       "userID": 3,
       "date": "2019/08/11",
-      "hoursSlept": 8,
-      "sleepQuality": 3.3
+      "numOunces": 57
     },
     {
       "userID": 4,
       "date": "2019/08/11",
-      "hoursSlept": 4.1,
-      "sleepQuality": 2.3
+      "numOunces": 76
     },
     {
       "userID": 5,
       "date": "2019/08/11",
-      "hoursSlept": 8.6,
-      "sleepQuality": 2.1
+      "numOunces": 51
     },
     {
       "userID": 6,
       "date": "2019/08/11",
-      "hoursSlept": 7.7,
-      "sleepQuality": 2
+      "numOunces": 24
     },
     {
       "userID": 7,
       "date": "2019/08/11",
-      "hoursSlept": 6.1,
-      "sleepQuality": 4.8
+      "numOunces": 86
     },
     {
       "userID": 8,
       "date": "2019/08/11",
-      "hoursSlept": 5,
-      "sleepQuality": 3.2
+      "numOunces": 64
     },
     {
       "userID": 9,
       "date": "2019/08/11",
-      "hoursSlept": 10.7,
-      "sleepQuality": 1.8
+      "numOunces": 65
     },
     {
       "userID": 10,
       "date": "2019/08/11",
-      "hoursSlept": 9.9,
-      "sleepQuality": 3.7
+      "numOunces": 66
     },
     {
       "userID": 11,
       "date": "2019/08/11",
-      "hoursSlept": 6.7,
-      "sleepQuality": 1.9
+      "numOunces": 29
     },
     {
       "userID": 12,
       "date": "2019/08/11",
-      "hoursSlept": 7.5,
-      "sleepQuality": 4.1
+      "numOunces": 46
     },
     {
       "userID": 13,
       "date": "2019/08/11",
-      "hoursSlept": 10.6,
-      "sleepQuality": 4.7
+      "numOunces": 98
     },
     {
       "userID": 14,
       "date": "2019/08/11",
-      "hoursSlept": 10.8,
-      "sleepQuality": 2.7
+      "numOunces": 91
     },
     {
       "userID": 15,
       "date": "2019/08/11",
-      "hoursSlept": 4,
-      "sleepQuality": 3.7
+      "numOunces": 22
     },
     {
       "userID": 16,
       "date": "2019/08/11",
-      "hoursSlept": 4.8,
-      "sleepQuality": 3.6
+      "numOunces": 71
     },
     {
       "userID": 17,
       "date": "2019/08/11",
-      "hoursSlept": 10.7,
-      "sleepQuality": 2.5
+      "numOunces": 72
     },
     {
       "userID": 18,
       "date": "2019/08/11",
-      "hoursSlept": 10,
-      "sleepQuality": 1.5
+      "numOunces": 96
     },
     {
       "userID": 19,
       "date": "2019/08/11",
-      "hoursSlept": 10.7,
-      "sleepQuality": 3.9
+      "numOunces": 23
     },
     {
       "userID": 20,
       "date": "2019/08/11",
-      "hoursSlept": 9.9,
-      "sleepQuality": 1.9
+      "numOunces": 83
     },
     {
       "userID": 21,
       "date": "2019/08/11",
-      "hoursSlept": 8,
-      "sleepQuality": 4.9
+      "numOunces": 63
     },
     {
       "userID": 22,
       "date": "2019/08/11",
-      "hoursSlept": 10.3,
-      "sleepQuality": 1.4
+      "numOunces": 90
     },
     {
       "userID": 23,
       "date": "2019/08/11",
-      "hoursSlept": 8.8,
-      "sleepQuality": 2
+      "numOunces": 98
     },
     {
       "userID": 24,
       "date": "2019/08/11",
-      "hoursSlept": 5.9,
-      "sleepQuality": 2.6
+      "numOunces": 37
     },
     {
       "userID": 25,
       "date": "2019/08/11",
-      "hoursSlept": 4.4,
-      "sleepQuality": 4
+      "numOunces": 91
     },
     {
       "userID": 26,
       "date": "2019/08/11",
-      "hoursSlept": 4.4,
-      "sleepQuality": 1.1
+      "numOunces": 75
     },
     {
       "userID": 27,
       "date": "2019/08/11",
-      "hoursSlept": 8.2,
-      "sleepQuality": 1.5
+      "numOunces": 51
     },
     {
       "userID": 28,
       "date": "2019/08/11",
-      "hoursSlept": 7,
-      "sleepQuality": 3.2
+      "numOunces": 45
     },
     {
       "userID": 29,
       "date": "2019/08/11",
-      "hoursSlept": 8.1,
-      "sleepQuality": 1
+      "numOunces": 40
     },
     {
       "userID": 30,
       "date": "2019/08/11",
-      "hoursSlept": 4.1,
-      "sleepQuality": 5
+      "numOunces": 64
     },
     {
       "userID": 31,
       "date": "2019/08/11",
-      "hoursSlept": 9.7,
-      "sleepQuality": 2.3
+      "numOunces": 65
     },
     {
       "userID": 32,
       "date": "2019/08/11",
-      "hoursSlept": 5.6,
-      "sleepQuality": 3.1
+      "numOunces": 32
     },
     {
       "userID": 33,
       "date": "2019/08/11",
-      "hoursSlept": 4.4,
-      "sleepQuality": 2.9
+      "numOunces": 42
     },
     {
       "userID": 34,
       "date": "2019/08/11",
-      "hoursSlept": 5.9,
-      "sleepQuality": 1.4
+      "numOunces": 51
     },
     {
       "userID": 35,
       "date": "2019/08/11",
-      "hoursSlept": 8.5,
-      "sleepQuality": 2.3
+      "numOunces": 58
     },
     {
       "userID": 36,
       "date": "2019/08/11",
-      "hoursSlept": 10,
-      "sleepQuality": 2.4
+      "numOunces": 67
     },
     {
       "userID": 37,
       "date": "2019/08/11",
-      "hoursSlept": 10.6,
-      "sleepQuality": 2.3
+      "numOunces": 49
     },
     {
       "userID": 38,
       "date": "2019/08/11",
-      "hoursSlept": 10.5,
-      "sleepQuality": 1.3
+      "numOunces": 64
     },
     {
       "userID": 39,
       "date": "2019/08/11",
-      "hoursSlept": 9.6,
-      "sleepQuality": 2.3
+      "numOunces": 58
     },
     {
       "userID": 40,
       "date": "2019/08/11",
-      "hoursSlept": 4.2,
-      "sleepQuality": 4.4
+      "numOunces": 61
     },
     {
       "userID": 41,
       "date": "2019/08/11",
-      "hoursSlept": 6.4,
-      "sleepQuality": 2
+      "numOunces": 41
     },
     {
       "userID": 42,
       "date": "2019/08/11",
-      "hoursSlept": 8.2,
-      "sleepQuality": 4.6
+      "numOunces": 98
     },
     {
       "userID": 43,
       "date": "2019/08/11",
-      "hoursSlept": 6.2,
-      "sleepQuality": 2.1
+      "numOunces": 32
     },
     {
       "userID": 44,
       "date": "2019/08/11",
-      "hoursSlept": 6.7,
-      "sleepQuality": 4.7
+      "numOunces": 97
     },
     {
       "userID": 45,
       "date": "2019/08/11",
-      "hoursSlept": 9.7,
-      "sleepQuality": 1.3
+      "numOunces": 39
     },
     {
       "userID": 46,
       "date": "2019/08/11",
-      "hoursSlept": 4.5,
-      "sleepQuality": 2.7
+      "numOunces": 91
     },
     {
       "userID": 47,
       "date": "2019/08/11",
-      "hoursSlept": 5.8,
-      "sleepQuality": 3
+      "numOunces": 82
     },
     {
       "userID": 48,
       "date": "2019/08/11",
-      "hoursSlept": 5.7,
-      "sleepQuality": 3.8
+      "numOunces": 60
     },
     {
       "userID": 49,
       "date": "2019/08/11",
-      "hoursSlept": 6.7,
-      "sleepQuality": 1.9
+      "numOunces": 81
     },
     {
       "userID": 50,
       "date": "2019/08/11",
-      "hoursSlept": 7.9,
-      "sleepQuality": 1.3
+      "numOunces": 78
     },
     {
       "userID": 1,
       "date": "2019/08/12",
-      "hoursSlept": 4.1,
-      "sleepQuality": 1
+      "numOunces": 78
     },
     {
       "userID": 2,
       "date": "2019/08/12",
-      "hoursSlept": 5.8,
-      "sleepQuality": 2.1
+      "numOunces": 55
     },
     {
       "userID": 3,
       "date": "2019/08/12",
-      "hoursSlept": 9.3,
-      "sleepQuality": 3.4
+      "numOunces": 64
     },
     {
       "userID": 4,
       "date": "2019/08/12",
-      "hoursSlept": 7.3,
-      "sleepQuality": 3
+      "numOunces": 89
     },
     {
       "userID": 5,
       "date": "2019/08/12",
-      "hoursSlept": 10.5,
-      "sleepQuality": 2
+      "numOunces": 43
     },
     {
       "userID": 6,
       "date": "2019/08/12",
-      "hoursSlept": 8.5,
-      "sleepQuality": 1.5
+      "numOunces": 25
     },
     {
       "userID": 7,
       "date": "2019/08/12",
-      "hoursSlept": 4.6,
-      "sleepQuality": 4.3
+      "numOunces": 30
     },
     {
       "userID": 8,
       "date": "2019/08/12",
-      "hoursSlept": 10,
-      "sleepQuality": 1.2
+      "numOunces": 90
     },
     {
       "userID": 9,
       "date": "2019/08/12",
-      "hoursSlept": 10.9,
-      "sleepQuality": 2.4
+      "numOunces": 72
     },
     {
       "userID": 10,
       "date": "2019/08/12",
-      "hoursSlept": 10.6,
-      "sleepQuality": 3.4
+      "numOunces": 31
     },
     {
       "userID": 11,
       "date": "2019/08/12",
-      "hoursSlept": 9.3,
-      "sleepQuality": 4.4
+      "numOunces": 47
     },
     {
       "userID": 12,
       "date": "2019/08/12",
-      "hoursSlept": 4.7,
-      "sleepQuality": 1.9
+      "numOunces": 52
     },
     {
       "userID": 13,
       "date": "2019/08/12",
-      "hoursSlept": 7.8,
-      "sleepQuality": 1.3
+      "numOunces": 87
     },
     {
       "userID": 14,
       "date": "2019/08/12",
-      "hoursSlept": 5.8,
-      "sleepQuality": 1.5
+      "numOunces": 29
     },
     {
       "userID": 15,
       "date": "2019/08/12",
-      "hoursSlept": 9.3,
-      "sleepQuality": 4.3
+      "numOunces": 29
     },
     {
       "userID": 16,
       "date": "2019/08/12",
-      "hoursSlept": 9.1,
-      "sleepQuality": 2.5
+      "numOunces": 70
     },
     {
       "userID": 17,
       "date": "2019/08/12",
-      "hoursSlept": 8.2,
-      "sleepQuality": 4.8
+      "numOunces": 30
     },
     {
       "userID": 18,
       "date": "2019/08/12",
-      "hoursSlept": 7.9,
-      "sleepQuality": 4.9
+      "numOunces": 88
     },
     {
       "userID": 19,
       "date": "2019/08/12",
-      "hoursSlept": 7.3,
-      "sleepQuality": 2.8
+      "numOunces": 66
     },
     {
       "userID": 20,
       "date": "2019/08/12",
-      "hoursSlept": 7.5,
-      "sleepQuality": 2.8
+      "numOunces": 41
     },
     {
       "userID": 21,
       "date": "2019/08/12",
-      "hoursSlept": 5.6,
-      "sleepQuality": 1.1
+      "numOunces": 56
     },
     {
       "userID": 22,
       "date": "2019/08/12",
-      "hoursSlept": 10.9,
-      "sleepQuality": 2.5
+      "numOunces": 64
     },
     {
       "userID": 23,
       "date": "2019/08/12",
-      "hoursSlept": 9.6,
-      "sleepQuality": 4.2
+      "numOunces": 53
     },
     {
       "userID": 24,
       "date": "2019/08/12",
-      "hoursSlept": 8.2,
-      "sleepQuality": 4.5
+      "numOunces": 49
     },
     {
       "userID": 25,
       "date": "2019/08/12",
-      "hoursSlept": 8.8,
-      "sleepQuality": 1.4
+      "numOunces": 55
     },
     {
       "userID": 26,
       "date": "2019/08/12",
-      "hoursSlept": 9.1,
-      "sleepQuality": 2.9
+      "numOunces": 43
     },
     {
       "userID": 27,
       "date": "2019/08/12",
-      "hoursSlept": 8.1,
-      "sleepQuality": 3.6
+      "numOunces": 100
     },
     {
       "userID": 28,
       "date": "2019/08/12",
-      "hoursSlept": 7.3,
-      "sleepQuality": 2.7
+      "numOunces": 20
     },
     {
       "userID": 29,
       "date": "2019/08/12",
-      "hoursSlept": 6.9,
-      "sleepQuality": 1.3
+      "numOunces": 90
     },
     {
       "userID": 30,
       "date": "2019/08/12",
-      "hoursSlept": 5.5,
-      "sleepQuality": 1.3
+      "numOunces": 65
     },
     {
       "userID": 31,
       "date": "2019/08/12",
-      "hoursSlept": 5.7,
-      "sleepQuality": 3.4
+      "numOunces": 27
     },
     {
       "userID": 32,
       "date": "2019/08/12",
-      "hoursSlept": 10.3,
-      "sleepQuality": 4.5
+      "numOunces": 92
     },
     {
       "userID": 33,
       "date": "2019/08/12",
-      "hoursSlept": 9.7,
-      "sleepQuality": 1.1
+      "numOunces": 70
     },
     {
       "userID": 34,
       "date": "2019/08/12",
-      "hoursSlept": 7.9,
-      "sleepQuality": 2.3
+      "numOunces": 35
     },
     {
       "userID": 35,
       "date": "2019/08/12",
-      "hoursSlept": 9.9,
-      "sleepQuality": 2.6
+      "numOunces": 26
     },
     {
       "userID": 36,
       "date": "2019/08/12",
-      "hoursSlept": 5.7,
-      "sleepQuality": 3.7
+      "numOunces": 79
     },
     {
       "userID": 37,
       "date": "2019/08/12",
-      "hoursSlept": 4.2,
-      "sleepQuality": 4.3
+      "numOunces": 37
     },
     {
       "userID": 38,
       "date": "2019/08/12",
-      "hoursSlept": 9.2,
-      "sleepQuality": 3.9
+      "numOunces": 71
     },
     {
       "userID": 39,
       "date": "2019/08/12",
-      "hoursSlept": 7.9,
-      "sleepQuality": 2.1
+      "numOunces": 58
     },
     {
       "userID": 40,
       "date": "2019/08/12",
-      "hoursSlept": 9.3,
-      "sleepQuality": 1.2
+      "numOunces": 29
     },
     {
       "userID": 41,
       "date": "2019/08/12",
-      "hoursSlept": 9.8,
-      "sleepQuality": 3.2
+      "numOunces": 26
     },
     {
       "userID": 42,
       "date": "2019/08/12",
-      "hoursSlept": 9.4,
-      "sleepQuality": 4
+      "numOunces": 47
     },
     {
       "userID": 43,
       "date": "2019/08/12",
-      "hoursSlept": 8.3,
-      "sleepQuality": 4.2
+      "numOunces": 77
     },
     {
       "userID": 44,
       "date": "2019/08/12",
-      "hoursSlept": 10.4,
-      "sleepQuality": 4.7
+      "numOunces": 65
     },
     {
       "userID": 45,
       "date": "2019/08/12",
-      "hoursSlept": 4.5,
-      "sleepQuality": 1.8
+      "numOunces": 47
     },
     {
       "userID": 46,
       "date": "2019/08/12",
-      "hoursSlept": 8.2,
-      "sleepQuality": 2.1
+      "numOunces": 48
     },
     {
       "userID": 47,
       "date": "2019/08/12",
-      "hoursSlept": 8.5,
-      "sleepQuality": 1
+      "numOunces": 82
     },
     {
       "userID": 48,
       "date": "2019/08/12",
-      "hoursSlept": 6.3,
-      "sleepQuality": 2.3
+      "numOunces": 34
     },
     {
       "userID": 49,
       "date": "2019/08/12",
-      "hoursSlept": 9.3,
-      "sleepQuality": 3.3
+      "numOunces": 55
     },
     {
       "userID": 50,
       "date": "2019/08/12",
-      "hoursSlept": 9.7,
-      "sleepQuality": 3.6
+      "numOunces": 82
     },
     {
       "userID": 1,
       "date": "2019/08/13",
-      "hoursSlept": 9.3,
-      "sleepQuality": 4
+      "numOunces": 60
     },
     {
       "userID": 2,
       "date": "2019/08/13",
-      "hoursSlept": 4.6,
-      "sleepQuality": 4.3
+      "numOunces": 47
     },
     {
       "userID": 3,
       "date": "2019/08/13",
-      "hoursSlept": 6.8,
-      "sleepQuality": 4.1
+      "numOunces": 59
     },
     {
       "userID": 4,
       "date": "2019/08/13",
-      "hoursSlept": 6,
-      "sleepQuality": 2.2
+      "numOunces": 32
     },
     {
       "userID": 5,
       "date": "2019/08/13",
-      "hoursSlept": 4.7,
-      "sleepQuality": 4.8
+      "numOunces": 53
     },
     {
       "userID": 6,
       "date": "2019/08/13",
-      "hoursSlept": 7.9,
-      "sleepQuality": 1.4
+      "numOunces": 25
     },
     {
       "userID": 7,
       "date": "2019/08/13",
-      "hoursSlept": 8.9,
-      "sleepQuality": 3.3
+      "numOunces": 39
     },
     {
       "userID": 8,
       "date": "2019/08/13",
-      "hoursSlept": 6.6,
-      "sleepQuality": 3.4
+      "numOunces": 48
     },
     {
       "userID": 9,
       "date": "2019/08/13",
-      "hoursSlept": 10.3,
-      "sleepQuality": 4.6
+      "numOunces": 26
     },
     {
       "userID": 10,
       "date": "2019/08/13",
-      "hoursSlept": 4,
-      "sleepQuality": 3.9
+      "numOunces": 44
     },
     {
       "userID": 11,
       "date": "2019/08/13",
-      "hoursSlept": 6.4,
-      "sleepQuality": 4.3
+      "numOunces": 25
     },
     {
       "userID": 12,
       "date": "2019/08/13",
-      "hoursSlept": 10.2,
-      "sleepQuality": 2.9
+      "numOunces": 81
     },
     {
       "userID": 13,
       "date": "2019/08/13",
-      "hoursSlept": 5.7,
-      "sleepQuality": 4.4
+      "numOunces": 99
     },
     {
       "userID": 14,
       "date": "2019/08/13",
-      "hoursSlept": 10.5,
-      "sleepQuality": 4.6
+      "numOunces": 51
     },
     {
       "userID": 15,
       "date": "2019/08/13",
-      "hoursSlept": 8.8,
-      "sleepQuality": 3.3
+      "numOunces": 99
     },
     {
       "userID": 16,
       "date": "2019/08/13",
-      "hoursSlept": 8.1,
-      "sleepQuality": 3.1
+      "numOunces": 40
     },
     {
       "userID": 17,
       "date": "2019/08/13",
-      "hoursSlept": 4.7,
-      "sleepQuality": 3.6
+      "numOunces": 42
     },
     {
       "userID": 18,
       "date": "2019/08/13",
-      "hoursSlept": 9.9,
-      "sleepQuality": 4.1
+      "numOunces": 58
     },
     {
       "userID": 19,
       "date": "2019/08/13",
-      "hoursSlept": 4.9,
-      "sleepQuality": 2.1
+      "numOunces": 91
     },
     {
       "userID": 20,
       "date": "2019/08/13",
-      "hoursSlept": 5.9,
-      "sleepQuality": 2.5
+      "numOunces": 73
     },
     {
       "userID": 21,
       "date": "2019/08/13",
-      "hoursSlept": 8.8,
-      "sleepQuality": 4.5
+      "numOunces": 67
     },
     {
       "userID": 22,
       "date": "2019/08/13",
-      "hoursSlept": 5.1,
-      "sleepQuality": 1.4
+      "numOunces": 69
     },
     {
       "userID": 23,
       "date": "2019/08/13",
-      "hoursSlept": 6.2,
-      "sleepQuality": 2.7
+      "numOunces": 35
     },
     {
       "userID": 24,
       "date": "2019/08/13",
-      "hoursSlept": 5.3,
-      "sleepQuality": 2.9
+      "numOunces": 50
     },
     {
       "userID": 25,
       "date": "2019/08/13",
-      "hoursSlept": 10.6,
-      "sleepQuality": 1.1
+      "numOunces": 77
     },
     {
       "userID": 26,
       "date": "2019/08/13",
-      "hoursSlept": 8.8,
-      "sleepQuality": 4.6
+      "numOunces": 71
     },
     {
       "userID": 27,
       "date": "2019/08/13",
-      "hoursSlept": 8.5,
-      "sleepQuality": 2.6
+      "numOunces": 80
     },
     {
       "userID": 28,
       "date": "2019/08/13",
-      "hoursSlept": 4.3,
-      "sleepQuality": 2.9
+      "numOunces": 63
     },
     {
       "userID": 29,
       "date": "2019/08/13",
-      "hoursSlept": 5.5,
-      "sleepQuality": 4.6
+      "numOunces": 26
     },
     {
       "userID": 30,
       "date": "2019/08/13",
-      "hoursSlept": 5.7,
-      "sleepQuality": 4.1
+      "numOunces": 52
     },
     {
       "userID": 31,
       "date": "2019/08/13",
-      "hoursSlept": 8.1,
-      "sleepQuality": 4.2
+      "numOunces": 29
     },
     {
       "userID": 32,
       "date": "2019/08/13",
-      "hoursSlept": 6.5,
-      "sleepQuality": 4
+      "numOunces": 69
     },
     {
       "userID": 33,
       "date": "2019/08/13",
-      "hoursSlept": 8,
-      "sleepQuality": 1.1
+      "numOunces": 46
     },
     {
       "userID": 34,
       "date": "2019/08/13",
-      "hoursSlept": 10.9,
-      "sleepQuality": 2.3
+      "numOunces": 34
     },
     {
       "userID": 35,
       "date": "2019/08/13",
-      "hoursSlept": 8.3,
-      "sleepQuality": 2.5
+      "numOunces": 57
     },
     {
       "userID": 36,
       "date": "2019/08/13",
-      "hoursSlept": 8.8,
-      "sleepQuality": 2.1
+      "numOunces": 42
     },
     {
       "userID": 37,
       "date": "2019/08/13",
-      "hoursSlept": 4.5,
-      "sleepQuality": 2
+      "numOunces": 86
     },
     {
       "userID": 38,
       "date": "2019/08/13",
-      "hoursSlept": 7.5,
-      "sleepQuality": 1.3
+      "numOunces": 43
     },
     {
       "userID": 39,
       "date": "2019/08/13",
-      "hoursSlept": 4.5,
-      "sleepQuality": 2.3
+      "numOunces": 38
     },
     {
       "userID": 40,
       "date": "2019/08/13",
-      "hoursSlept": 5.8,
-      "sleepQuality": 2.9
+      "numOunces": 96
     },
     {
       "userID": 41,
       "date": "2019/08/13",
-      "hoursSlept": 8.8,
-      "sleepQuality": 4.9
+      "numOunces": 98
     },
     {
       "userID": 42,
       "date": "2019/08/13",
-      "hoursSlept": 6.7,
-      "sleepQuality": 4.5
+      "numOunces": 63
     },
     {
       "userID": 43,
       "date": "2019/08/13",
-      "hoursSlept": 6.9,
-      "sleepQuality": 3.3
+      "numOunces": 32
     },
     {
       "userID": 44,
       "date": "2019/08/13",
-      "hoursSlept": 9,
-      "sleepQuality": 2.9
+      "numOunces": 50
     },
     {
       "userID": 45,
       "date": "2019/08/13",
-      "hoursSlept": 4,
-      "sleepQuality": 4.1
+      "numOunces": 69
     },
     {
       "userID": 46,
       "date": "2019/08/13",
-      "hoursSlept": 9.3,
-      "sleepQuality": 3.3
+      "numOunces": 99
     },
     {
       "userID": 47,
       "date": "2019/08/13",
-      "hoursSlept": 4.9,
-      "sleepQuality": 1.5
+      "numOunces": 26
     },
     {
       "userID": 48,
       "date": "2019/08/13",
-      "hoursSlept": 7.1,
-      "sleepQuality": 2.2
+      "numOunces": 73
     },
     {
       "userID": 49,
       "date": "2019/08/13",
-      "hoursSlept": 6.2,
-      "sleepQuality": 2.4
+      "numOunces": 28
     },
     {
       "userID": 50,
       "date": "2019/08/13",
-      "hoursSlept": 5.1,
-      "sleepQuality": 3.9
+      "numOunces": 57
     },
     {
       "userID": 1,
       "date": "2019/08/14",
-      "hoursSlept": 5.8,
-      "sleepQuality": 4.9
+      "numOunces": 28
     },
     {
       "userID": 2,
       "date": "2019/08/14",
-      "hoursSlept": 5.4,
-      "sleepQuality": 3.4
+      "numOunces": 36
     },
     {
       "userID": 3,
       "date": "2019/08/14",
-      "hoursSlept": 9.7,
-      "sleepQuality": 1.4
+      "numOunces": 82
     },
     {
       "userID": 4,
       "date": "2019/08/14",
-      "hoursSlept": 10.3,
-      "sleepQuality": 3.5
+      "numOunces": 77
     },
     {
       "userID": 5,
       "date": "2019/08/14",
-      "hoursSlept": 7.9,
-      "sleepQuality": 3.4
+      "numOunces": 72
     },
     {
       "userID": 6,
       "date": "2019/08/14",
-      "hoursSlept": 4.2,
-      "sleepQuality": 2.5
+      "numOunces": 48
     },
     {
       "userID": 7,
       "date": "2019/08/14",
-      "hoursSlept": 4.9,
-      "sleepQuality": 4.8
+      "numOunces": 49
     },
     {
       "userID": 8,
       "date": "2019/08/14",
-      "hoursSlept": 5.6,
-      "sleepQuality": 1.8
+      "numOunces": 46
     },
     {
       "userID": 9,
       "date": "2019/08/14",
-      "hoursSlept": 8.4,
-      "sleepQuality": 2.6
+      "numOunces": 69
     },
     {
       "userID": 10,
       "date": "2019/08/14",
-      "hoursSlept": 10.3,
-      "sleepQuality": 2.1
+      "numOunces": 56
     },
     {
       "userID": 11,
       "date": "2019/08/14",
-      "hoursSlept": 5.4,
-      "sleepQuality": 1.3
+      "numOunces": 21
     },
     {
       "userID": 12,
       "date": "2019/08/14",
-      "hoursSlept": 5.3,
-      "sleepQuality": 3.5
+      "numOunces": 34
     },
     {
       "userID": 13,
       "date": "2019/08/14",
-      "hoursSlept": 5.7,
-      "sleepQuality": 1.7
+      "numOunces": 58
     },
     {
       "userID": 14,
       "date": "2019/08/14",
-      "hoursSlept": 10.8,
-      "sleepQuality": 3.3
+      "numOunces": 53
     },
     {
       "userID": 15,
       "date": "2019/08/14",
-      "hoursSlept": 6.3,
-      "sleepQuality": 1.1
+      "numOunces": 32
     },
     {
       "userID": 16,
       "date": "2019/08/14",
-      "hoursSlept": 6.5,
-      "sleepQuality": 1.2
+      "numOunces": 91
     },
     {
       "userID": 17,
       "date": "2019/08/14",
-      "hoursSlept": 5.1,
-      "sleepQuality": 1.3
+      "numOunces": 99
     },
     {
       "userID": 18,
       "date": "2019/08/14",
-      "hoursSlept": 9.7,
-      "sleepQuality": 2.2
+      "numOunces": 65
     },
     {
       "userID": 19,
       "date": "2019/08/14",
-      "hoursSlept": 9.9,
-      "sleepQuality": 1.5
+      "numOunces": 22
     },
     {
       "userID": 20,
       "date": "2019/08/14",
-      "hoursSlept": 4.2,
-      "sleepQuality": 3.6
+      "numOunces": 84
     },
     {
       "userID": 21,
       "date": "2019/08/14",
-      "hoursSlept": 6.2,
-      "sleepQuality": 2.3
+      "numOunces": 70
     },
     {
       "userID": 22,
       "date": "2019/08/14",
-      "hoursSlept": 10.1,
-      "sleepQuality": 3.4
+      "numOunces": 64
     },
     {
       "userID": 23,
       "date": "2019/08/14",
-      "hoursSlept": 5.7,
-      "sleepQuality": 2.7
+      "numOunces": 81
     },
     {
       "userID": 24,
       "date": "2019/08/14",
-      "hoursSlept": 7.4,
-      "sleepQuality": 4.2
+      "numOunces": 69
     },
     {
       "userID": 25,
       "date": "2019/08/14",
-      "hoursSlept": 8.2,
-      "sleepQuality": 4
+      "numOunces": 41
     },
     {
       "userID": 26,
       "date": "2019/08/14",
-      "hoursSlept": 10.8,
-      "sleepQuality": 2.3
+      "numOunces": 26
     },
     {
       "userID": 27,
       "date": "2019/08/14",
-      "hoursSlept": 9.9,
-      "sleepQuality": 4
+      "numOunces": 82
     },
     {
       "userID": 28,
       "date": "2019/08/14",
-      "hoursSlept": 4.7,
-      "sleepQuality": 2.2
+      "numOunces": 45
     },
     {
       "userID": 29,
       "date": "2019/08/14",
-      "hoursSlept": 5.2,
-      "sleepQuality": 3.3
+      "numOunces": 50
     },
     {
       "userID": 30,
       "date": "2019/08/14",
-      "hoursSlept": 7.7,
-      "sleepQuality": 4.6
+      "numOunces": 21
     },
     {
       "userID": 31,
       "date": "2019/08/14",
-      "hoursSlept": 9.7,
-      "sleepQuality": 4.4
+      "numOunces": 85
     },
     {
       "userID": 32,
       "date": "2019/08/14",
-      "hoursSlept": 8,
-      "sleepQuality": 2.5
+      "numOunces": 20
     },
     {
       "userID": 33,
       "date": "2019/08/14",
-      "hoursSlept": 11,
-      "sleepQuality": 4.3
+      "numOunces": 68
     },
     {
       "userID": 34,
       "date": "2019/08/14",
-      "hoursSlept": 4.4,
-      "sleepQuality": 1
+      "numOunces": 24
     },
     {
       "userID": 35,
       "date": "2019/08/14",
-      "hoursSlept": 11,
-      "sleepQuality": 3.2
+      "numOunces": 96
     },
     {
       "userID": 36,
       "date": "2019/08/14",
-      "hoursSlept": 6.5,
-      "sleepQuality": 3.2
+      "numOunces": 23
     },
     {
       "userID": 37,
       "date": "2019/08/14",
-      "hoursSlept": 4.8,
-      "sleepQuality": 1.1
+      "numOunces": 95
     },
     {
       "userID": 38,
       "date": "2019/08/14",
-      "hoursSlept": 9.4,
-      "sleepQuality": 2.3
+      "numOunces": 27
     },
     {
       "userID": 39,
       "date": "2019/08/14",
-      "hoursSlept": 6.8,
-      "sleepQuality": 4.3
+      "numOunces": 49
     },
     {
       "userID": 40,
       "date": "2019/08/14",
-      "hoursSlept": 9.9,
-      "sleepQuality": 3.2
+      "numOunces": 33
     },
     {
       "userID": 41,
       "date": "2019/08/14",
-      "hoursSlept": 10.9,
-      "sleepQuality": 4.3
+      "numOunces": 44
     },
     {
       "userID": 42,
       "date": "2019/08/14",
-      "hoursSlept": 8.2,
-      "sleepQuality": 4
+      "numOunces": 56
     },
     {
       "userID": 43,
       "date": "2019/08/14",
-      "hoursSlept": 7.3,
-      "sleepQuality": 3.1
+      "numOunces": 50
     },
     {
       "userID": 44,
       "date": "2019/08/14",
-      "hoursSlept": 9.5,
-      "sleepQuality": 1
+      "numOunces": 72
     },
     {
       "userID": 45,
       "date": "2019/08/14",
-      "hoursSlept": 5.1,
-      "sleepQuality": 3.1
+      "numOunces": 78
     },
     {
       "userID": 46,
       "date": "2019/08/14",
-      "hoursSlept": 5.6,
-      "sleepQuality": 4.9
+      "numOunces": 28
     },
     {
       "userID": 47,
       "date": "2019/08/14",
-      "hoursSlept": 7.5,
-      "sleepQuality": 4
+      "numOunces": 35
     },
     {
       "userID": 48,
       "date": "2019/08/14",
-      "hoursSlept": 8.9,
-      "sleepQuality": 1
+      "numOunces": 20
     },
     {
       "userID": 49,
       "date": "2019/08/14",
-      "hoursSlept": 10,
-      "sleepQuality": 3.4
+      "numOunces": 91
     },
     {
       "userID": 50,
       "date": "2019/08/14",
-      "hoursSlept": 5.7,
-      "sleepQuality": 3.3
+      "numOunces": 71
     },
     {
       "userID": 1,
       "date": "2019/08/15",
-      "hoursSlept": 7.9,
-      "sleepQuality": 2.3
+      "numOunces": 49
     },
     {
       "userID": 2,
       "date": "2019/08/15",
-      "hoursSlept": 10.6,
-      "sleepQuality": 2.6
+      "numOunces": 68
     },
     {
       "userID": 3,
       "date": "2019/08/15",
-      "hoursSlept": 5.7,
-      "sleepQuality": 4.2
+      "numOunces": 60
     },
     {
       "userID": 4,
       "date": "2019/08/15",
-      "hoursSlept": 9.3,
-      "sleepQuality": 1.2
+      "numOunces": 83
     },
     {
       "userID": 5,
       "date": "2019/08/15",
-      "hoursSlept": 7.8,
-      "sleepQuality": 3.7
+      "numOunces": 42
     },
     {
       "userID": 6,
       "date": "2019/08/15",
-      "hoursSlept": 7.4,
-      "sleepQuality": 4.2
+      "numOunces": 34
     },
     {
       "userID": 7,
       "date": "2019/08/15",
-      "hoursSlept": 10.7,
-      "sleepQuality": 5
+      "numOunces": 25
     },
     {
       "userID": 8,
       "date": "2019/08/15",
-      "hoursSlept": 10.5,
-      "sleepQuality": 5
+      "numOunces": 77
     },
     {
       "userID": 9,
       "date": "2019/08/15",
-      "hoursSlept": 4.7,
-      "sleepQuality": 5
+      "numOunces": 76
     },
     {
       "userID": 10,
       "date": "2019/08/15",
-      "hoursSlept": 10.4,
-      "sleepQuality": 2.2
+      "numOunces": 96
     },
     {
       "userID": 11,
       "date": "2019/08/15",
-      "hoursSlept": 4.8,
-      "sleepQuality": 2.5
+      "numOunces": 35
     },
     {
       "userID": 12,
       "date": "2019/08/15",
-      "hoursSlept": 10,
-      "sleepQuality": 2
+      "numOunces": 92
     },
     {
       "userID": 13,
       "date": "2019/08/15",
-      "hoursSlept": 5.5,
-      "sleepQuality": 4.6
+      "numOunces": 40
     },
     {
       "userID": 14,
       "date": "2019/08/15",
-      "hoursSlept": 6.5,
-      "sleepQuality": 4.4
+      "numOunces": 94
     },
     {
       "userID": 15,
       "date": "2019/08/15",
-      "hoursSlept": 8.8,
-      "sleepQuality": 2.7
+      "numOunces": 70
     },
     {
       "userID": 16,
       "date": "2019/08/15",
-      "hoursSlept": 8.8,
-      "sleepQuality": 4
+      "numOunces": 47
     },
     {
       "userID": 17,
       "date": "2019/08/15",
-      "hoursSlept": 5.5,
-      "sleepQuality": 4
+      "numOunces": 43
     },
     {
       "userID": 18,
       "date": "2019/08/15",
-      "hoursSlept": 6.2,
-      "sleepQuality": 3.9
+      "numOunces": 88
     },
     {
       "userID": 19,
       "date": "2019/08/15",
-      "hoursSlept": 5.8,
-      "sleepQuality": 2.1
+      "numOunces": 39
     },
     {
       "userID": 20,
       "date": "2019/08/15",
-      "hoursSlept": 9.9,
-      "sleepQuality": 4.7
+      "numOunces": 30
     },
     {
       "userID": 21,
       "date": "2019/08/15",
-      "hoursSlept": 10.4,
-      "sleepQuality": 3.6
+      "numOunces": 84
     },
     {
       "userID": 22,
       "date": "2019/08/15",
-      "hoursSlept": 6.5,
-      "sleepQuality": 2
+      "numOunces": 99
     },
     {
       "userID": 23,
       "date": "2019/08/15",
-      "hoursSlept": 5.1,
-      "sleepQuality": 5
+      "numOunces": 38
     },
     {
       "userID": 24,
       "date": "2019/08/15",
-      "hoursSlept": 9.8,
-      "sleepQuality": 4.8
+      "numOunces": 71
     },
     {
       "userID": 25,
       "date": "2019/08/15",
-      "hoursSlept": 8.2,
-      "sleepQuality": 3.5
+      "numOunces": 43
     },
     {
       "userID": 26,
       "date": "2019/08/15",
-      "hoursSlept": 8.1,
-      "sleepQuality": 1.3
+      "numOunces": 90
     },
     {
       "userID": 27,
       "date": "2019/08/15",
-      "hoursSlept": 9.5,
-      "sleepQuality": 4.2
+      "numOunces": 97
     },
     {
       "userID": 28,
       "date": "2019/08/15",
-      "hoursSlept": 6.7,
-      "sleepQuality": 1.2
+      "numOunces": 30
     },
     {
       "userID": 29,
       "date": "2019/08/15",
-      "hoursSlept": 9.3,
-      "sleepQuality": 4.1
+      "numOunces": 64
     },
     {
       "userID": 30,
       "date": "2019/08/15",
-      "hoursSlept": 8.2,
-      "sleepQuality": 1.2
+      "numOunces": 77
     },
     {
       "userID": 31,
       "date": "2019/08/15",
-      "hoursSlept": 7.2,
-      "sleepQuality": 1.7
+      "numOunces": 53
     },
     {
       "userID": 32,
       "date": "2019/08/15",
-      "hoursSlept": 9.3,
-      "sleepQuality": 4.1
+      "numOunces": 75
     },
     {
       "userID": 33,
       "date": "2019/08/15",
-      "hoursSlept": 9.2,
-      "sleepQuality": 1.6
+      "numOunces": 49
     },
     {
       "userID": 34,
       "date": "2019/08/15",
-      "hoursSlept": 7,
-      "sleepQuality": 4.5
+      "numOunces": 26
     },
     {
       "userID": 35,
       "date": "2019/08/15",
-      "hoursSlept": 10.9,
-      "sleepQuality": 4.7
+      "numOunces": 93
     },
     {
       "userID": 36,
       "date": "2019/08/15",
-      "hoursSlept": 9.1,
-      "sleepQuality": 4.1
+      "numOunces": 75
     },
     {
       "userID": 37,
       "date": "2019/08/15",
-      "hoursSlept": 8.9,
-      "sleepQuality": 3.6
+      "numOunces": 99
     },
     {
       "userID": 38,
       "date": "2019/08/15",
-      "hoursSlept": 10.9,
-      "sleepQuality": 2.4
+      "numOunces": 62
     },
     {
       "userID": 39,
       "date": "2019/08/15",
-      "hoursSlept": 6.4,
-      "sleepQuality": 2.4
+      "numOunces": 98
     },
     {
       "userID": 40,
       "date": "2019/08/15",
-      "hoursSlept": 9.5,
-      "sleepQuality": 4.3
+      "numOunces": 68
     },
     {
       "userID": 41,
       "date": "2019/08/15",
-      "hoursSlept": 8.7,
-      "sleepQuality": 3.8
+      "numOunces": 64
     },
     {
       "userID": 42,
       "date": "2019/08/15",
-      "hoursSlept": 4.6,
-      "sleepQuality": 4.1
+      "numOunces": 25
     },
     {
       "userID": 43,
       "date": "2019/08/15",
-      "hoursSlept": 4.4,
-      "sleepQuality": 2.9
+      "numOunces": 87
     },
     {
       "userID": 44,
       "date": "2019/08/15",
-      "hoursSlept": 10.4,
-      "sleepQuality": 1.5
+      "numOunces": 27
     },
     {
       "userID": 45,
       "date": "2019/08/15",
-      "hoursSlept": 4.8,
-      "sleepQuality": 4.7
+      "numOunces": 76
     },
     {
       "userID": 46,
       "date": "2019/08/15",
-      "hoursSlept": 4.3,
-      "sleepQuality": 2.5
+      "numOunces": 77
     },
     {
       "userID": 47,
       "date": "2019/08/15",
-      "hoursSlept": 7.5,
-      "sleepQuality": 4.3
+      "numOunces": 96
     },
     {
       "userID": 48,
       "date": "2019/08/15",
-      "hoursSlept": 10.6,
-      "sleepQuality": 3.3
+      "numOunces": 97
     },
     {
       "userID": 49,
       "date": "2019/08/15",
-      "hoursSlept": 9.1,
-      "sleepQuality": 4.1
+      "numOunces": 84
     },
     {
       "userID": 50,
       "date": "2019/08/15",
-      "hoursSlept": 5.1,
-      "sleepQuality": 2.4
+      "numOunces": 37
     },
     {
       "userID": 1,
       "date": "2019/08/16",
-      "hoursSlept": 5.2,
-      "sleepQuality": 1.4
+      "numOunces": 89
     },
     {
       "userID": 2,
       "date": "2019/08/16",
-      "hoursSlept": 5.4,
-      "sleepQuality": 3.3
+      "numOunces": 53
     },
     {
       "userID": 3,
       "date": "2019/08/16",
-      "hoursSlept": 10,
-      "sleepQuality": 1.3
+      "numOunces": 48
     },
     {
       "userID": 4,
       "date": "2019/08/16",
-      "hoursSlept": 7.7,
-      "sleepQuality": 3.4
+      "numOunces": 94
     },
     {
       "userID": 5,
       "date": "2019/08/16",
-      "hoursSlept": 5.7,
-      "sleepQuality": 3.2
+      "numOunces": 86
     },
     {
       "userID": 6,
       "date": "2019/08/16",
-      "hoursSlept": 6.6,
-      "sleepQuality": 1.7
+      "numOunces": 43
     },
     {
       "userID": 7,
       "date": "2019/08/16",
-      "hoursSlept": 8.7,
-      "sleepQuality": 2.4
+      "numOunces": 79
     },
     {
       "userID": 8,
       "date": "2019/08/16",
-      "hoursSlept": 4.4,
-      "sleepQuality": 1.6
+      "numOunces": 81
     },
     {
       "userID": 9,
       "date": "2019/08/16",
-      "hoursSlept": 7.3,
-      "sleepQuality": 2
+      "numOunces": 35
     },
     {
       "userID": 10,
       "date": "2019/08/16",
-      "hoursSlept": 4.5,
-      "sleepQuality": 2.8
+      "numOunces": 56
     },
     {
       "userID": 11,
       "date": "2019/08/16",
-      "hoursSlept": 4.9,
-      "sleepQuality": 3.1
+      "numOunces": 97
     },
     {
       "userID": 12,
       "date": "2019/08/16",
-      "hoursSlept": 6.9,
-      "sleepQuality": 3
+      "numOunces": 49
     },
     {
       "userID": 13,
       "date": "2019/08/16",
-      "hoursSlept": 4.3,
-      "sleepQuality": 4.6
+      "numOunces": 48
     },
     {
       "userID": 14,
       "date": "2019/08/16",
-      "hoursSlept": 8.7,
-      "sleepQuality": 2.3
+      "numOunces": 37
     },
     {
       "userID": 15,
       "date": "2019/08/16",
-      "hoursSlept": 4.4,
-      "sleepQuality": 5
+      "numOunces": 61
     },
     {
       "userID": 16,
       "date": "2019/08/16",
-      "hoursSlept": 4,
-      "sleepQuality": 1
+      "numOunces": 100
     },
     {
       "userID": 17,
       "date": "2019/08/16",
-      "hoursSlept": 6.3,
-      "sleepQuality": 1.9
+      "numOunces": 71
     },
     {
       "userID": 18,
       "date": "2019/08/16",
-      "hoursSlept": 10.6,
-      "sleepQuality": 3.7
+      "numOunces": 44
     },
     {
       "userID": 19,
       "date": "2019/08/16",
-      "hoursSlept": 9,
-      "sleepQuality": 4.8
+      "numOunces": 69
     },
     {
       "userID": 20,
       "date": "2019/08/16",
-      "hoursSlept": 5.8,
-      "sleepQuality": 3
+      "numOunces": 80
     },
     {
       "userID": 21,
       "date": "2019/08/16",
-      "hoursSlept": 9.7,
-      "sleepQuality": 3.3
+      "numOunces": 73
     },
     {
       "userID": 22,
       "date": "2019/08/16",
-      "hoursSlept": 7.7,
-      "sleepQuality": 4.6
+      "numOunces": 39
     },
     {
       "userID": 23,
       "date": "2019/08/16",
-      "hoursSlept": 5.1,
-      "sleepQuality": 2.4
+      "numOunces": 72
     },
     {
       "userID": 24,
       "date": "2019/08/16",
-      "hoursSlept": 9.7,
-      "sleepQuality": 2
+      "numOunces": 47
     },
     {
       "userID": 25,
       "date": "2019/08/16",
-      "hoursSlept": 6.9,
-      "sleepQuality": 3.4
+      "numOunces": 28
     },
     {
       "userID": 26,
       "date": "2019/08/16",
-      "hoursSlept": 5.9,
-      "sleepQuality": 5
+      "numOunces": 25
     },
     {
       "userID": 27,
       "date": "2019/08/16",
-      "hoursSlept": 6.3,
-      "sleepQuality": 4.4
+      "numOunces": 25
     },
     {
       "userID": 28,
       "date": "2019/08/16",
-      "hoursSlept": 9.4,
-      "sleepQuality": 1.7
+      "numOunces": 79
     },
     {
       "userID": 29,
       "date": "2019/08/16",
-      "hoursSlept": 10.6,
-      "sleepQuality": 2.6
+      "numOunces": 25
     },
     {
       "userID": 30,
       "date": "2019/08/16",
-      "hoursSlept": 9.8,
-      "sleepQuality": 1.6
+      "numOunces": 70
     },
     {
       "userID": 31,
       "date": "2019/08/16",
-      "hoursSlept": 7.4,
-      "sleepQuality": 4.7
+      "numOunces": 62
     },
     {
       "userID": 32,
       "date": "2019/08/16",
-      "hoursSlept": 10.1,
-      "sleepQuality": 3.5
+      "numOunces": 42
     },
     {
       "userID": 33,
       "date": "2019/08/16",
-      "hoursSlept": 8.1,
-      "sleepQuality": 4
+      "numOunces": 43
     },
     {
       "userID": 34,
       "date": "2019/08/16",
-      "hoursSlept": 8.1,
-      "sleepQuality": 4.2
+      "numOunces": 79
     },
     {
       "userID": 35,
       "date": "2019/08/16",
-      "hoursSlept": 4.5,
-      "sleepQuality": 2
+      "numOunces": 69
     },
     {
       "userID": 36,
       "date": "2019/08/16",
-      "hoursSlept": 9.6,
-      "sleepQuality": 1.6
+      "numOunces": 84
     },
     {
       "userID": 37,
       "date": "2019/08/16",
-      "hoursSlept": 5.1,
-      "sleepQuality": 1.4
+      "numOunces": 87
     },
     {
       "userID": 38,
       "date": "2019/08/16",
-      "hoursSlept": 8.3,
-      "sleepQuality": 2
+      "numOunces": 59
     },
     {
       "userID": 39,
       "date": "2019/08/16",
-      "hoursSlept": 5,
-      "sleepQuality": 1.4
+      "numOunces": 49
     },
     {
       "userID": 40,
       "date": "2019/08/16",
-      "hoursSlept": 6.4,
-      "sleepQuality": 3.3
+      "numOunces": 96
     },
     {
       "userID": 41,
       "date": "2019/08/16",
-      "hoursSlept": 7.5,
-      "sleepQuality": 4.7
+      "numOunces": 96
     },
     {
       "userID": 42,
       "date": "2019/08/16",
-      "hoursSlept": 9.2,
-      "sleepQuality": 2
+      "numOunces": 39
     },
     {
       "userID": 43,
       "date": "2019/08/16",
-      "hoursSlept": 8.5,
-      "sleepQuality": 2.9
+      "numOunces": 94
     },
     {
       "userID": 44,
       "date": "2019/08/16",
-      "hoursSlept": 6.7,
-      "sleepQuality": 3.5
+      "numOunces": 48
     },
     {
       "userID": 45,
       "date": "2019/08/16",
-      "hoursSlept": 9.9,
-      "sleepQuality": 2.8
+      "numOunces": 76
     },
     {
       "userID": 46,
       "date": "2019/08/16",
-      "hoursSlept": 6.7,
-      "sleepQuality": 4
+      "numOunces": 73
     },
     {
       "userID": 47,
       "date": "2019/08/16",
-      "hoursSlept": 9.1,
-      "sleepQuality": 2.5
+      "numOunces": 31
     },
     {
       "userID": 48,
       "date": "2019/08/16",
-      "hoursSlept": 6.6,
-      "sleepQuality": 2.2
+      "numOunces": 31
     },
     {
       "userID": 49,
       "date": "2019/08/16",
-      "hoursSlept": 7.6,
-      "sleepQuality": 1.6
+      "numOunces": 42
     },
     {
       "userID": 50,
       "date": "2019/08/16",
-      "hoursSlept": 5.8,
-      "sleepQuality": 2.4
+      "numOunces": 42
     },
     {
       "userID": 1,
       "date": "2019/08/17",
-      "hoursSlept": 9.6,
-      "sleepQuality": 2.3
+      "numOunces": 25
     },
     {
       "userID": 2,
       "date": "2019/08/17",
-      "hoursSlept": 4.1,
-      "sleepQuality": 3.3
+      "numOunces": 86
     },
     {
       "userID": 3,
       "date": "2019/08/17",
-      "hoursSlept": 8.7,
-      "sleepQuality": 3.4
+      "numOunces": 85
     },
     {
       "userID": 4,
       "date": "2019/08/17",
-      "hoursSlept": 7.7,
-      "sleepQuality": 2.5
+      "numOunces": 82
     },
     {
       "userID": 5,
       "date": "2019/08/17",
-      "hoursSlept": 5.3,
-      "sleepQuality": 3.5
+      "numOunces": 28
     },
     {
       "userID": 6,
       "date": "2019/08/17",
-      "hoursSlept": 8.1,
-      "sleepQuality": 4.5
+      "numOunces": 32
     },
     {
       "userID": 7,
       "date": "2019/08/17",
-      "hoursSlept": 6.6,
-      "sleepQuality": 1.6
+      "numOunces": 48
     },
     {
       "userID": 8,
       "date": "2019/08/17",
-      "hoursSlept": 6.8,
-      "sleepQuality": 2.6
+      "numOunces": 78
     },
     {
       "userID": 9,
       "date": "2019/08/17",
-      "hoursSlept": 5.9,
-      "sleepQuality": 1.9
+      "numOunces": 82
     },
     {
       "userID": 10,
       "date": "2019/08/17",
-      "hoursSlept": 8.8,
-      "sleepQuality": 2
+      "numOunces": 51
     },
     {
       "userID": 11,
       "date": "2019/08/17",
-      "hoursSlept": 9.8,
-      "sleepQuality": 1.8
+      "numOunces": 58
     },
     {
       "userID": 12,
       "date": "2019/08/17",
-      "hoursSlept": 4.5,
-      "sleepQuality": 4.9
+      "numOunces": 31
     },
     {
       "userID": 13,
       "date": "2019/08/17",
-      "hoursSlept": 6.1,
-      "sleepQuality": 1.5
+      "numOunces": 62
     },
     {
       "userID": 14,
       "date": "2019/08/17",
-      "hoursSlept": 7.1,
-      "sleepQuality": 4.3
+      "numOunces": 73
     },
     {
       "userID": 15,
       "date": "2019/08/17",
-      "hoursSlept": 8.8,
-      "sleepQuality": 2
+      "numOunces": 49
     },
     {
       "userID": 16,
       "date": "2019/08/17",
-      "hoursSlept": 8,
-      "sleepQuality": 1.1
+      "numOunces": 31
     },
     {
       "userID": 17,
       "date": "2019/08/17",
-      "hoursSlept": 5.9,
-      "sleepQuality": 2.4
+      "numOunces": 83
     },
     {
       "userID": 18,
       "date": "2019/08/17",
-      "hoursSlept": 9.9,
-      "sleepQuality": 3.3
+      "numOunces": 61
     },
     {
       "userID": 19,
       "date": "2019/08/17",
-      "hoursSlept": 8.8,
-      "sleepQuality": 4.8
+      "numOunces": 92
     },
     {
       "userID": 20,
       "date": "2019/08/17",
-      "hoursSlept": 6.2,
-      "sleepQuality": 1.3
+      "numOunces": 35
     },
     {
       "userID": 21,
       "date": "2019/08/17",
-      "hoursSlept": 9.4,
-      "sleepQuality": 3
+      "numOunces": 39
     },
     {
       "userID": 22,
       "date": "2019/08/17",
-      "hoursSlept": 4.7,
-      "sleepQuality": 2.5
+      "numOunces": 75
     },
     {
       "userID": 23,
       "date": "2019/08/17",
-      "hoursSlept": 5.4,
-      "sleepQuality": 3.6
+      "numOunces": 71
     },
     {
       "userID": 24,
       "date": "2019/08/17",
-      "hoursSlept": 7.1,
-      "sleepQuality": 2.3
+      "numOunces": 43
     },
     {
       "userID": 25,
       "date": "2019/08/17",
-      "hoursSlept": 8.3,
-      "sleepQuality": 4
+      "numOunces": 97
     },
     {
       "userID": 26,
       "date": "2019/08/17",
-      "hoursSlept": 5.9,
-      "sleepQuality": 1.6
+      "numOunces": 96
     },
     {
       "userID": 27,
       "date": "2019/08/17",
-      "hoursSlept": 7.3,
-      "sleepQuality": 2.7
+      "numOunces": 44
     },
     {
       "userID": 28,
       "date": "2019/08/17",
-      "hoursSlept": 9.9,
-      "sleepQuality": 3.7
+      "numOunces": 82
     },
     {
       "userID": 29,
       "date": "2019/08/17",
-      "hoursSlept": 5.7,
-      "sleepQuality": 3.5
+      "numOunces": 92
     },
     {
       "userID": 30,
       "date": "2019/08/17",
-      "hoursSlept": 8.5,
-      "sleepQuality": 4.6
+      "numOunces": 94
     },
     {
       "userID": 31,
       "date": "2019/08/17",
-      "hoursSlept": 8.1,
-      "sleepQuality": 3.4
+      "numOunces": 87
     },
     {
       "userID": 32,
       "date": "2019/08/17",
-      "hoursSlept": 6.5,
-      "sleepQuality": 2.1
+      "numOunces": 47
     },
     {
       "userID": 33,
       "date": "2019/08/17",
-      "hoursSlept": 8.8,
-      "sleepQuality": 3.2
+      "numOunces": 41
     },
     {
       "userID": 34,
       "date": "2019/08/17",
-      "hoursSlept": 8.1,
-      "sleepQuality": 4.7
+      "numOunces": 32
     },
     {
       "userID": 35,
       "date": "2019/08/17",
-      "hoursSlept": 8.7,
-      "sleepQuality": 2.5
+      "numOunces": 97
     },
     {
       "userID": 36,
       "date": "2019/08/17",
-      "hoursSlept": 5.2,
-      "sleepQuality": 2.4
+      "numOunces": 68
     },
     {
       "userID": 37,
       "date": "2019/08/17",
-      "hoursSlept": 6.4,
-      "sleepQuality": 4.9
+      "numOunces": 76
     },
     {
       "userID": 38,
       "date": "2019/08/17",
-      "hoursSlept": 9.9,
-      "sleepQuality": 3
+      "numOunces": 75
     },
     {
       "userID": 39,
       "date": "2019/08/17",
-      "hoursSlept": 8.2,
-      "sleepQuality": 3.5
+      "numOunces": 100
     },
     {
       "userID": 40,
       "date": "2019/08/17",
-      "hoursSlept": 8,
-      "sleepQuality": 3.2
+      "numOunces": 100
     },
     {
       "userID": 41,
       "date": "2019/08/17",
-      "hoursSlept": 9.3,
-      "sleepQuality": 4.8
+      "numOunces": 31
     },
     {
       "userID": 42,
       "date": "2019/08/17",
-      "hoursSlept": 7.5,
-      "sleepQuality": 1.9
+      "numOunces": 79
     },
     {
       "userID": 43,
       "date": "2019/08/17",
-      "hoursSlept": 9.4,
-      "sleepQuality": 1.2
+      "numOunces": 63
     },
     {
       "userID": 44,
       "date": "2019/08/17",
-      "hoursSlept": 4.1,
-      "sleepQuality": 3
+      "numOunces": 43
     },
     {
       "userID": 45,
       "date": "2019/08/17",
-      "hoursSlept": 6.9,
-      "sleepQuality": 4.5
+      "numOunces": 58
     },
     {
       "userID": 46,
       "date": "2019/08/17",
-      "hoursSlept": 9.3,
-      "sleepQuality": 1.8
+      "numOunces": 23
     },
     {
       "userID": 47,
       "date": "2019/08/17",
-      "hoursSlept": 8,
-      "sleepQuality": 1.1
+      "numOunces": 85
     },
     {
       "userID": 48,
       "date": "2019/08/17",
-      "hoursSlept": 7.1,
-      "sleepQuality": 4.9
+      "numOunces": 84
     },
     {
       "userID": 49,
       "date": "2019/08/17",
-      "hoursSlept": 9,
-      "sleepQuality": 3.8
+      "numOunces": 35
     },
     {
       "userID": 50,
       "date": "2019/08/17",
-      "hoursSlept": 8.9,
-      "sleepQuality": 3.7
+      "numOunces": 96
     },
     {
       "userID": 1,
       "date": "2019/08/18",
-      "hoursSlept": 6.8,
-      "sleepQuality": 2.7
+      "numOunces": 69
     },
     {
       "userID": 2,
       "date": "2019/08/18",
-      "hoursSlept": 4.4,
-      "sleepQuality": 3.6
+      "numOunces": 29
     },
     {
       "userID": 3,
       "date": "2019/08/18",
-      "hoursSlept": 8.7,
-      "sleepQuality": 3.4
+      "numOunces": 88
     },
     {
       "userID": 4,
       "date": "2019/08/18",
-      "hoursSlept": 7.9,
-      "sleepQuality": 4.9
+      "numOunces": 61
     },
     {
       "userID": 5,
       "date": "2019/08/18",
-      "hoursSlept": 8.2,
-      "sleepQuality": 4
+      "numOunces": 66
     },
     {
       "userID": 6,
       "date": "2019/08/18",
-      "hoursSlept": 4,
-      "sleepQuality": 3.9
+      "numOunces": 35
     },
     {
       "userID": 7,
       "date": "2019/08/18",
-      "hoursSlept": 6.6,
-      "sleepQuality": 1.6
+      "numOunces": 27
     },
     {
       "userID": 8,
       "date": "2019/08/18",
-      "hoursSlept": 9.8,
-      "sleepQuality": 4.1
+      "numOunces": 79
     },
     {
       "userID": 9,
       "date": "2019/08/18",
-      "hoursSlept": 6.6,
-      "sleepQuality": 1.9
+      "numOunces": 68
     },
     {
       "userID": 10,
       "date": "2019/08/18",
-      "hoursSlept": 9.2,
-      "sleepQuality": 2.5
+      "numOunces": 38
     },
     {
       "userID": 11,
       "date": "2019/08/18",
-      "hoursSlept": 8.8,
-      "sleepQuality": 3.7
+      "numOunces": 94
     },
     {
       "userID": 12,
       "date": "2019/08/18",
-      "hoursSlept": 9,
-      "sleepQuality": 3
+      "numOunces": 80
     },
     {
       "userID": 13,
       "date": "2019/08/18",
-      "hoursSlept": 4.5,
-      "sleepQuality": 1.3
+      "numOunces": 91
     },
     {
       "userID": 14,
       "date": "2019/08/18",
-      "hoursSlept": 6.6,
-      "sleepQuality": 2.2
+      "numOunces": 22
     },
     {
       "userID": 15,
       "date": "2019/08/18",
-      "hoursSlept": 10.7,
-      "sleepQuality": 4.5
+      "numOunces": 59
     },
     {
       "userID": 16,
       "date": "2019/08/18",
-      "hoursSlept": 4.1,
-      "sleepQuality": 3.8
+      "numOunces": 74
     },
     {
       "userID": 17,
       "date": "2019/08/18",
-      "hoursSlept": 7.4,
-      "sleepQuality": 2.1
+      "numOunces": 25
     },
     {
       "userID": 18,
       "date": "2019/08/18",
-      "hoursSlept": 4.1,
-      "sleepQuality": 1.5
+      "numOunces": 31
     },
     {
       "userID": 19,
       "date": "2019/08/18",
-      "hoursSlept": 7.9,
-      "sleepQuality": 2
+      "numOunces": 49
     },
     {
       "userID": 20,
       "date": "2019/08/18",
-      "hoursSlept": 8.9,
-      "sleepQuality": 3.1
+      "numOunces": 89
     },
     {
       "userID": 21,
       "date": "2019/08/18",
-      "hoursSlept": 7.1,
-      "sleepQuality": 3
+      "numOunces": 94
     },
     {
       "userID": 22,
       "date": "2019/08/18",
-      "hoursSlept": 4.1,
-      "sleepQuality": 3.8
+      "numOunces": 72
     },
     {
       "userID": 23,
       "date": "2019/08/18",
-      "hoursSlept": 5.7,
-      "sleepQuality": 2.4
+      "numOunces": 30
     },
     {
       "userID": 24,
       "date": "2019/08/18",
-      "hoursSlept": 9.4,
-      "sleepQuality": 1.4
+      "numOunces": 33
     },
     {
       "userID": 25,
       "date": "2019/08/18",
-      "hoursSlept": 9.7,
-      "sleepQuality": 1.8
+      "numOunces": 82
     },
     {
       "userID": 26,
       "date": "2019/08/18",
-      "hoursSlept": 8.4,
-      "sleepQuality": 3.5
+      "numOunces": 25
     },
     {
       "userID": 27,
       "date": "2019/08/18",
-      "hoursSlept": 4.4,
-      "sleepQuality": 3
+      "numOunces": 20
     },
     {
       "userID": 28,
       "date": "2019/08/18",
-      "hoursSlept": 5.6,
-      "sleepQuality": 2.8
+      "numOunces": 93
     },
     {
       "userID": 29,
       "date": "2019/08/18",
-      "hoursSlept": 9.9,
-      "sleepQuality": 4.3
+      "numOunces": 73
     },
     {
       "userID": 30,
       "date": "2019/08/18",
-      "hoursSlept": 6.9,
-      "sleepQuality": 3.8
+      "numOunces": 82
     },
     {
       "userID": 31,
       "date": "2019/08/18",
-      "hoursSlept": 8.2,
-      "sleepQuality": 2.1
+      "numOunces": 69
     },
     {
       "userID": 32,
       "date": "2019/08/18",
-      "hoursSlept": 4.9,
-      "sleepQuality": 1.3
+      "numOunces": 64
     },
     {
       "userID": 33,
       "date": "2019/08/18",
-      "hoursSlept": 5.3,
-      "sleepQuality": 4.1
+      "numOunces": 47
     },
     {
       "userID": 34,
       "date": "2019/08/18",
-      "hoursSlept": 4.9,
-      "sleepQuality": 2
+      "numOunces": 64
     },
     {
       "userID": 35,
       "date": "2019/08/18",
-      "hoursSlept": 7.3,
-      "sleepQuality": 2.4
+      "numOunces": 29
     },
     {
       "userID": 36,
       "date": "2019/08/18",
-      "hoursSlept": 6.2,
-      "sleepQuality": 4.9
+      "numOunces": 80
     },
     {
       "userID": 37,
       "date": "2019/08/18",
-      "hoursSlept": 9,
-      "sleepQuality": 3.1
+      "numOunces": 95
     },
     {
       "userID": 38,
       "date": "2019/08/18",
-      "hoursSlept": 5.7,
-      "sleepQuality": 4.2
+      "numOunces": 69
     },
     {
       "userID": 39,
       "date": "2019/08/18",
-      "hoursSlept": 4,
-      "sleepQuality": 3.1
+      "numOunces": 48
     },
     {
       "userID": 40,
       "date": "2019/08/18",
-      "hoursSlept": 5.1,
-      "sleepQuality": 4.7
+      "numOunces": 35
     },
     {
       "userID": 41,
       "date": "2019/08/18",
-      "hoursSlept": 10.7,
-      "sleepQuality": 3.2
+      "numOunces": 74
     },
     {
       "userID": 42,
       "date": "2019/08/18",
-      "hoursSlept": 9.7,
-      "sleepQuality": 1.4
+      "numOunces": 59
     },
     {
       "userID": 43,
       "date": "2019/08/18",
-      "hoursSlept": 10.4,
-      "sleepQuality": 1.3
+      "numOunces": 68
     },
     {
       "userID": 44,
       "date": "2019/08/18",
-      "hoursSlept": 4.9,
-      "sleepQuality": 4.7
+      "numOunces": 97
     },
     {
       "userID": 45,
       "date": "2019/08/18",
-      "hoursSlept": 7.3,
-      "sleepQuality": 2.1
+      "numOunces": 73
     },
     {
       "userID": 46,
       "date": "2019/08/18",
-      "hoursSlept": 9.2,
-      "sleepQuality": 1.5
+      "numOunces": 81
     },
     {
       "userID": 47,
       "date": "2019/08/18",
-      "hoursSlept": 4.6,
-      "sleepQuality": 4.1
+      "numOunces": 61
     },
     {
       "userID": 48,
       "date": "2019/08/18",
-      "hoursSlept": 4.9,
-      "sleepQuality": 2
+      "numOunces": 73
     },
     {
       "userID": 49,
       "date": "2019/08/18",
-      "hoursSlept": 8.9,
-      "sleepQuality": 2.7
+      "numOunces": 61
     },
     {
       "userID": 50,
       "date": "2019/08/18",
-      "hoursSlept": 4.5,
-      "sleepQuality": 3.8
+      "numOunces": 68
     },
     {
       "userID": 1,
       "date": "2019/08/19",
-      "hoursSlept": 5.6,
-      "sleepQuality": 3.1
+      "numOunces": 22
     },
     {
       "userID": 2,
       "date": "2019/08/19",
-      "hoursSlept": 8.2,
-      "sleepQuality": 2.1
+      "numOunces": 44
     },
     {
       "userID": 3,
       "date": "2019/08/19",
-      "hoursSlept": 5.8,
-      "sleepQuality": 1.1
+      "numOunces": 53
     },
     {
       "userID": 4,
       "date": "2019/08/19",
-      "hoursSlept": 4.1,
-      "sleepQuality": 4.5
+      "numOunces": 42
     },
     {
       "userID": 5,
       "date": "2019/08/19",
-      "hoursSlept": 7.9,
-      "sleepQuality": 4
+      "numOunces": 77
     },
     {
       "userID": 6,
       "date": "2019/08/19",
-      "hoursSlept": 6.7,
-      "sleepQuality": 1.5
+      "numOunces": 89
     },
     {
       "userID": 7,
       "date": "2019/08/19",
-      "hoursSlept": 4.6,
-      "sleepQuality": 2.8
+      "numOunces": 32
     },
     {
       "userID": 8,
       "date": "2019/08/19",
-      "hoursSlept": 5.6,
-      "sleepQuality": 3.3
+      "numOunces": 43
     },
     {
       "userID": 9,
       "date": "2019/08/19",
-      "hoursSlept": 6.7,
-      "sleepQuality": 1.1
+      "numOunces": 96
     },
     {
       "userID": 10,
       "date": "2019/08/19",
-      "hoursSlept": 7.9,
-      "sleepQuality": 3.6
+      "numOunces": 76
     },
     {
       "userID": 11,
       "date": "2019/08/19",
-      "hoursSlept": 9.5,
-      "sleepQuality": 1.2
+      "numOunces": 41
     },
     {
       "userID": 12,
       "date": "2019/08/19",
-      "hoursSlept": 7.2,
-      "sleepQuality": 1.9
+      "numOunces": 35
     },
     {
       "userID": 13,
       "date": "2019/08/19",
-      "hoursSlept": 6.3,
-      "sleepQuality": 4.3
+      "numOunces": 46
     },
     {
       "userID": 14,
       "date": "2019/08/19",
-      "hoursSlept": 10,
-      "sleepQuality": 3.1
+      "numOunces": 92
     },
     {
       "userID": 15,
       "date": "2019/08/19",
-      "hoursSlept": 4.5,
-      "sleepQuality": 1
+      "numOunces": 87
     },
     {
       "userID": 16,
       "date": "2019/08/19",
-      "hoursSlept": 7.1,
-      "sleepQuality": 4.1
+      "numOunces": 90
     },
     {
       "userID": 17,
       "date": "2019/08/19",
-      "hoursSlept": 8.8,
-      "sleepQuality": 3.5
+      "numOunces": 83
     },
     {
       "userID": 18,
       "date": "2019/08/19",
-      "hoursSlept": 7.5,
-      "sleepQuality": 3.2
+      "numOunces": 45
     },
     {
       "userID": 19,
       "date": "2019/08/19",
-      "hoursSlept": 4.9,
-      "sleepQuality": 2.7
+      "numOunces": 64
     },
     {
       "userID": 20,
       "date": "2019/08/19",
-      "hoursSlept": 9.7,
-      "sleepQuality": 1.2
+      "numOunces": 36
     },
     {
       "userID": 21,
       "date": "2019/08/19",
-      "hoursSlept": 9.5,
-      "sleepQuality": 2.7
+      "numOunces": 81
     },
     {
       "userID": 22,
       "date": "2019/08/19",
-      "hoursSlept": 10.5,
-      "sleepQuality": 3.5
+      "numOunces": 99
     },
     {
       "userID": 23,
       "date": "2019/08/19",
-      "hoursSlept": 7.1,
-      "sleepQuality": 3.9
+      "numOunces": 30
     },
     {
       "userID": 24,
       "date": "2019/08/19",
-      "hoursSlept": 9,
-      "sleepQuality": 3.5
+      "numOunces": 53
     },
     {
       "userID": 25,
       "date": "2019/08/19",
-      "hoursSlept": 7.3,
-      "sleepQuality": 1.8
+      "numOunces": 85
     },
     {
       "userID": 26,
       "date": "2019/08/19",
-      "hoursSlept": 9.5,
-      "sleepQuality": 2.7
+      "numOunces": 89
     },
     {
       "userID": 27,
       "date": "2019/08/19",
-      "hoursSlept": 4.2,
-      "sleepQuality": 2.8
+      "numOunces": 77
     },
     {
       "userID": 28,
       "date": "2019/08/19",
-      "hoursSlept": 9.1,
-      "sleepQuality": 2.7
+      "numOunces": 20
     },
     {
       "userID": 29,
       "date": "2019/08/19",
-      "hoursSlept": 5.1,
-      "sleepQuality": 1.2
+      "numOunces": 58
     },
     {
       "userID": 30,
       "date": "2019/08/19",
-      "hoursSlept": 7.5,
-      "sleepQuality": 1.5
+      "numOunces": 96
     },
     {
       "userID": 31,
       "date": "2019/08/19",
-      "hoursSlept": 5.5,
-      "sleepQuality": 2.1
+      "numOunces": 46
     },
     {
       "userID": 32,
       "date": "2019/08/19",
-      "hoursSlept": 9.5,
-      "sleepQuality": 1.1
+      "numOunces": 88
     },
     {
       "userID": 33,
       "date": "2019/08/19",
-      "hoursSlept": 10.5,
-      "sleepQuality": 1.2
+      "numOunces": 46
     },
     {
       "userID": 34,
       "date": "2019/08/19",
-      "hoursSlept": 7.2,
-      "sleepQuality": 4.2
+      "numOunces": 42
     },
     {
       "userID": 35,
       "date": "2019/08/19",
-      "hoursSlept": 5,
-      "sleepQuality": 4
+      "numOunces": 32
     },
     {
       "userID": 36,
       "date": "2019/08/19",
-      "hoursSlept": 10.6,
-      "sleepQuality": 2.1
+      "numOunces": 42
     },
     {
       "userID": 37,
       "date": "2019/08/19",
-      "hoursSlept": 4.9,
-      "sleepQuality": 2.7
+      "numOunces": 63
     },
     {
       "userID": 38,
       "date": "2019/08/19",
-      "hoursSlept": 6.2,
-      "sleepQuality": 3
+      "numOunces": 35
     },
     {
       "userID": 39,
       "date": "2019/08/19",
-      "hoursSlept": 5.1,
-      "sleepQuality": 4.6
+      "numOunces": 83
     },
     {
       "userID": 40,
       "date": "2019/08/19",
-      "hoursSlept": 10.1,
-      "sleepQuality": 3.7
+      "numOunces": 22
     },
     {
       "userID": 41,
       "date": "2019/08/19",
-      "hoursSlept": 8.7,
-      "sleepQuality": 2.3
+      "numOunces": 69
     },
     {
       "userID": 42,
       "date": "2019/08/19",
-      "hoursSlept": 8.7,
-      "sleepQuality": 1.5
+      "numOunces": 69
     },
     {
       "userID": 43,
       "date": "2019/08/19",
-      "hoursSlept": 6.7,
-      "sleepQuality": 2.9
+      "numOunces": 24
     },
     {
       "userID": 44,
       "date": "2019/08/19",
-      "hoursSlept": 6,
-      "sleepQuality": 4.2
+      "numOunces": 62
     },
     {
       "userID": 45,
       "date": "2019/08/19",
-      "hoursSlept": 7,
-      "sleepQuality": 4.2
+      "numOunces": 87
     },
     {
       "userID": 46,
       "date": "2019/08/19",
-      "hoursSlept": 10.7,
-      "sleepQuality": 1.6
+      "numOunces": 65
     },
     {
       "userID": 47,
       "date": "2019/08/19",
-      "hoursSlept": 6.1,
-      "sleepQuality": 2.3
+      "numOunces": 93
     },
     {
       "userID": 48,
       "date": "2019/08/19",
-      "hoursSlept": 7.5,
-      "sleepQuality": 4.4
+      "numOunces": 91
     },
     {
       "userID": 49,
       "date": "2019/08/19",
-      "hoursSlept": 6.1,
-      "sleepQuality": 2.7
+      "numOunces": 44
     },
     {
       "userID": 50,
       "date": "2019/08/19",
-      "hoursSlept": 7.1,
-      "sleepQuality": 4.7
+      "numOunces": 46
     },
     {
       "userID": 1,
       "date": "2019/08/20",
-      "hoursSlept": 10.2,
-      "sleepQuality": 4.8
+      "numOunces": 52
     },
     {
       "userID": 2,
       "date": "2019/08/20",
-      "hoursSlept": 9.6,
-      "sleepQuality": 1.8
+      "numOunces": 77
     },
     {
       "userID": 3,
       "date": "2019/08/20",
-      "hoursSlept": 10.7,
-      "sleepQuality": 3.7
+      "numOunces": 62
     },
     {
       "userID": 4,
       "date": "2019/08/20",
-      "hoursSlept": 9.2,
-      "sleepQuality": 4.2
+      "numOunces": 97
     },
     {
       "userID": 5,
       "date": "2019/08/20",
-      "hoursSlept": 8.3,
-      "sleepQuality": 1.9
+      "numOunces": 96
     },
     {
       "userID": 6,
       "date": "2019/08/20",
-      "hoursSlept": 10.7,
-      "sleepQuality": 3.2
+      "numOunces": 66
     },
     {
       "userID": 7,
       "date": "2019/08/20",
-      "hoursSlept": 6.8,
-      "sleepQuality": 2.2
+      "numOunces": 61
     },
     {
       "userID": 8,
       "date": "2019/08/20",
-      "hoursSlept": 7.8,
-      "sleepQuality": 2.2
+      "numOunces": 57
     },
     {
       "userID": 9,
       "date": "2019/08/20",
-      "hoursSlept": 6.8,
-      "sleepQuality": 3.9
+      "numOunces": 33
     },
     {
       "userID": 10,
       "date": "2019/08/20",
-      "hoursSlept": 6.5,
-      "sleepQuality": 3.4
+      "numOunces": 38
     },
     {
       "userID": 11,
       "date": "2019/08/20",
-      "hoursSlept": 7.9,
-      "sleepQuality": 3.3
+      "numOunces": 56
     },
     {
       "userID": 12,
       "date": "2019/08/20",
-      "hoursSlept": 5.7,
-      "sleepQuality": 2.6
+      "numOunces": 45
     },
     {
       "userID": 13,
       "date": "2019/08/20",
-      "hoursSlept": 6,
-      "sleepQuality": 4.5
+      "numOunces": 60
     },
     {
       "userID": 14,
       "date": "2019/08/20",
-      "hoursSlept": 6.4,
-      "sleepQuality": 3.5
+      "numOunces": 84
     },
     {
       "userID": 15,
       "date": "2019/08/20",
-      "hoursSlept": 7.2,
-      "sleepQuality": 3.8
+      "numOunces": 81
     },
     {
       "userID": 16,
       "date": "2019/08/20",
-      "hoursSlept": 4.1,
-      "sleepQuality": 3.1
+      "numOunces": 26
     },
     {
       "userID": 17,
       "date": "2019/08/20",
-      "hoursSlept": 8.4,
-      "sleepQuality": 1.7
+      "numOunces": 36
     },
     {
       "userID": 18,
       "date": "2019/08/20",
-      "hoursSlept": 7.7,
-      "sleepQuality": 4.4
+      "numOunces": 35
     },
     {
       "userID": 19,
       "date": "2019/08/20",
-      "hoursSlept": 10.1,
-      "sleepQuality": 1.7
+      "numOunces": 88
     },
     {
       "userID": 20,
       "date": "2019/08/20",
-      "hoursSlept": 6.6,
-      "sleepQuality": 3.2
+      "numOunces": 54
     },
     {
       "userID": 21,
       "date": "2019/08/20",
-      "hoursSlept": 8.6,
-      "sleepQuality": 2.2
+      "numOunces": 74
     },
     {
       "userID": 22,
       "date": "2019/08/20",
-      "hoursSlept": 5.8,
-      "sleepQuality": 3
+      "numOunces": 58
     },
     {
       "userID": 23,
       "date": "2019/08/20",
-      "hoursSlept": 5,
-      "sleepQuality": 2.9
+      "numOunces": 53
     },
     {
       "userID": 24,
       "date": "2019/08/20",
-      "hoursSlept": 9.3,
-      "sleepQuality": 4
+      "numOunces": 48
     },
     {
       "userID": 25,
       "date": "2019/08/20",
-      "hoursSlept": 6.1,
-      "sleepQuality": 3.7
+      "numOunces": 73
     },
     {
       "userID": 26,
       "date": "2019/08/20",
-      "hoursSlept": 7.4,
-      "sleepQuality": 2.9
+      "numOunces": 76
     },
     {
       "userID": 27,
       "date": "2019/08/20",
-      "hoursSlept": 4.2,
-      "sleepQuality": 3.8
+      "numOunces": 48
     },
     {
       "userID": 28,
       "date": "2019/08/20",
-      "hoursSlept": 5.8,
-      "sleepQuality": 2.1
+      "numOunces": 63
     },
     {
       "userID": 29,
       "date": "2019/08/20",
-      "hoursSlept": 8.2,
-      "sleepQuality": 2.6
+      "numOunces": 80
     },
     {
       "userID": 30,
       "date": "2019/08/20",
-      "hoursSlept": 8.9,
-      "sleepQuality": 1.5
+      "numOunces": 92
     },
     {
       "userID": 31,
       "date": "2019/08/20",
-      "hoursSlept": 7.5,
-      "sleepQuality": 2.3
+      "numOunces": 40
     },
     {
       "userID": 32,
       "date": "2019/08/20",
-      "hoursSlept": 6.6,
-      "sleepQuality": 4.2
+      "numOunces": 38
     },
     {
       "userID": 33,
       "date": "2019/08/20",
-      "hoursSlept": 6.9,
-      "sleepQuality": 4.8
+      "numOunces": 52
     },
     {
       "userID": 34,
       "date": "2019/08/20",
-      "hoursSlept": 7.6,
-      "sleepQuality": 2.4
+      "numOunces": 57
     },
     {
       "userID": 35,
       "date": "2019/08/20",
-      "hoursSlept": 7.5,
-      "sleepQuality": 2.4
+      "numOunces": 90
     },
     {
       "userID": 36,
       "date": "2019/08/20",
-      "hoursSlept": 10.5,
-      "sleepQuality": 3.3
+      "numOunces": 70
     },
     {
       "userID": 37,
       "date": "2019/08/20",
-      "hoursSlept": 5.6,
-      "sleepQuality": 4.8
+      "numOunces": 45
     },
     {
       "userID": 38,
       "date": "2019/08/20",
-      "hoursSlept": 5.7,
-      "sleepQuality": 3.3
+      "numOunces": 61
     },
     {
       "userID": 39,
       "date": "2019/08/20",
-      "hoursSlept": 8.6,
-      "sleepQuality": 2.6
+      "numOunces": 95
     },
     {
       "userID": 40,
       "date": "2019/08/20",
-      "hoursSlept": 8.2,
-      "sleepQuality": 2.6
+      "numOunces": 68
     },
     {
       "userID": 41,
       "date": "2019/08/20",
-      "hoursSlept": 6.8,
-      "sleepQuality": 3
+      "numOunces": 67
     },
     {
       "userID": 42,
       "date": "2019/08/20",
-      "hoursSlept": 7,
-      "sleepQuality": 2.7
+      "numOunces": 62
     },
     {
       "userID": 43,
       "date": "2019/08/20",
-      "hoursSlept": 7.3,
-      "sleepQuality": 2.6
+      "numOunces": 92
     },
     {
       "userID": 44,
       "date": "2019/08/20",
-      "hoursSlept": 7.9,
-      "sleepQuality": 3.6
+      "numOunces": 26
     },
     {
       "userID": 45,
       "date": "2019/08/20",
-      "hoursSlept": 10.4,
-      "sleepQuality": 4.3
+      "numOunces": 75
     },
     {
       "userID": 46,
       "date": "2019/08/20",
-      "hoursSlept": 8.8,
-      "sleepQuality": 3.2
+      "numOunces": 81
     },
     {
       "userID": 47,
       "date": "2019/08/20",
-      "hoursSlept": 6.9,
-      "sleepQuality": 3.8
+      "numOunces": 95
     },
     {
       "userID": 48,
       "date": "2019/08/20",
-      "hoursSlept": 6.6,
-      "sleepQuality": 1.8
+      "numOunces": 23
     },
     {
       "userID": 49,
       "date": "2019/08/20",
-      "hoursSlept": 6,
-      "sleepQuality": 5
+      "numOunces": 86
     },
     {
       "userID": 50,
       "date": "2019/08/20",
-      "hoursSlept": 4.7,
-      "sleepQuality": 2.2
+      "numOunces": 34
     },
     {
       "userID": 1,
       "date": "2019/08/21",
-      "hoursSlept": 6.2,
-      "sleepQuality": 2.9
+      "numOunces": 48
     },
     {
       "userID": 2,
       "date": "2019/08/21",
-      "hoursSlept": 7,
-      "sleepQuality": 1.5
+      "numOunces": 96
     },
     {
       "userID": 3,
       "date": "2019/08/21",
-      "hoursSlept": 5.4,
-      "sleepQuality": 3.4
+      "numOunces": 70
     },
     {
       "userID": 4,
       "date": "2019/08/21",
-      "hoursSlept": 8.9,
-      "sleepQuality": 1.8
+      "numOunces": 76
     },
     {
       "userID": 5,
       "date": "2019/08/21",
-      "hoursSlept": 7.7,
-      "sleepQuality": 3.4
+      "numOunces": 73
     },
     {
       "userID": 6,
       "date": "2019/08/21",
-      "hoursSlept": 4.9,
-      "sleepQuality": 3.7
+      "numOunces": 21
     },
     {
       "userID": 7,
       "date": "2019/08/21",
-      "hoursSlept": 7.5,
-      "sleepQuality": 4.3
+      "numOunces": 40
     },
     {
       "userID": 8,
       "date": "2019/08/21",
-      "hoursSlept": 9.8,
-      "sleepQuality": 2.1
+      "numOunces": 70
     },
     {
       "userID": 9,
       "date": "2019/08/21",
-      "hoursSlept": 7,
-      "sleepQuality": 2.7
+      "numOunces": 36
     },
     {
       "userID": 10,
       "date": "2019/08/21",
-      "hoursSlept": 5.3,
-      "sleepQuality": 2.5
+      "numOunces": 99
     },
     {
       "userID": 11,
       "date": "2019/08/21",
-      "hoursSlept": 5.7,
-      "sleepQuality": 3
+      "numOunces": 94
     },
     {
       "userID": 12,
       "date": "2019/08/21",
-      "hoursSlept": 5.2,
-      "sleepQuality": 4.8
+      "numOunces": 91
     },
     {
       "userID": 13,
       "date": "2019/08/21",
-      "hoursSlept": 5.2,
-      "sleepQuality": 2.2
+      "numOunces": 22
     },
     {
       "userID": 14,
       "date": "2019/08/21",
-      "hoursSlept": 7.2,
-      "sleepQuality": 2.7
+      "numOunces": 76
     },
     {
       "userID": 15,
       "date": "2019/08/21",
-      "hoursSlept": 8.3,
-      "sleepQuality": 4.1
+      "numOunces": 56
     },
     {
       "userID": 16,
       "date": "2019/08/21",
-      "hoursSlept": 7.1,
-      "sleepQuality": 2.6
+      "numOunces": 43
     },
     {
       "userID": 17,
       "date": "2019/08/21",
-      "hoursSlept": 7.8,
-      "sleepQuality": 2.4
+      "numOunces": 37
     },
     {
       "userID": 18,
       "date": "2019/08/21",
-      "hoursSlept": 9.3,
-      "sleepQuality": 2.4
+      "numOunces": 38
     },
     {
       "userID": 19,
       "date": "2019/08/21",
-      "hoursSlept": 10.1,
-      "sleepQuality": 1.6
+      "numOunces": 47
     },
     {
       "userID": 20,
       "date": "2019/08/21",
-      "hoursSlept": 10.7,
-      "sleepQuality": 3.1
+      "numOunces": 47
     },
     {
       "userID": 21,
       "date": "2019/08/21",
-      "hoursSlept": 4.9,
-      "sleepQuality": 4.2
+      "numOunces": 35
     },
     {
       "userID": 22,
       "date": "2019/08/21",
-      "hoursSlept": 8.8,
-      "sleepQuality": 2.8
+      "numOunces": 53
     },
     {
       "userID": 23,
       "date": "2019/08/21",
-      "hoursSlept": 4.1,
-      "sleepQuality": 2.5
+      "numOunces": 92
     },
     {
       "userID": 24,
       "date": "2019/08/21",
-      "hoursSlept": 9.4,
-      "sleepQuality": 3.3
+      "numOunces": 63
     },
     {
       "userID": 25,
       "date": "2019/08/21",
-      "hoursSlept": 8.5,
-      "sleepQuality": 5
+      "numOunces": 46
     },
     {
       "userID": 26,
       "date": "2019/08/21",
-      "hoursSlept": 5.8,
-      "sleepQuality": 4.9
+      "numOunces": 60
     },
     {
       "userID": 27,
       "date": "2019/08/21",
-      "hoursSlept": 4.7,
-      "sleepQuality": 4.3
+      "numOunces": 93
     },
     {
       "userID": 28,
       "date": "2019/08/21",
-      "hoursSlept": 6.2,
-      "sleepQuality": 4.5
+      "numOunces": 48
     },
     {
       "userID": 29,
       "date": "2019/08/21",
-      "hoursSlept": 8.5,
-      "sleepQuality": 4
+      "numOunces": 88
     },
     {
       "userID": 30,
       "date": "2019/08/21",
-      "hoursSlept": 5.2,
-      "sleepQuality": 1.4
+      "numOunces": 86
     },
     {
       "userID": 31,
       "date": "2019/08/21",
-      "hoursSlept": 8.4,
-      "sleepQuality": 3.5
+      "numOunces": 26
     },
     {
       "userID": 32,
       "date": "2019/08/21",
-      "hoursSlept": 5,
-      "sleepQuality": 2.6
+      "numOunces": 43
     },
     {
       "userID": 33,
       "date": "2019/08/21",
-      "hoursSlept": 9.9,
-      "sleepQuality": 3.1
+      "numOunces": 33
     },
     {
       "userID": 34,
       "date": "2019/08/21",
-      "hoursSlept": 8.1,
-      "sleepQuality": 2.2
+      "numOunces": 45
     },
     {
       "userID": 35,
       "date": "2019/08/21",
-      "hoursSlept": 10.6,
-      "sleepQuality": 3.7
+      "numOunces": 81
     },
     {
       "userID": 36,
       "date": "2019/08/21",
-      "hoursSlept": 6.7,
-      "sleepQuality": 3.1
+      "numOunces": 46
     },
     {
       "userID": 37,
       "date": "2019/08/21",
-      "hoursSlept": 10.5,
-      "sleepQuality": 3.2
+      "numOunces": 80
     },
     {
       "userID": 38,
       "date": "2019/08/21",
-      "hoursSlept": 10.3,
-      "sleepQuality": 2.5
+      "numOunces": 50
     },
     {
       "userID": 39,
       "date": "2019/08/21",
-      "hoursSlept": 6.6,
-      "sleepQuality": 1.1
+      "numOunces": 48
     },
     {
       "userID": 40,
       "date": "2019/08/21",
-      "hoursSlept": 4.9,
-      "sleepQuality": 2.1
+      "numOunces": 60
     },
     {
       "userID": 41,
       "date": "2019/08/21",
-      "hoursSlept": 6.2,
-      "sleepQuality": 4
+      "numOunces": 37
     },
     {
       "userID": 42,
       "date": "2019/08/21",
-      "hoursSlept": 4.1,
-      "sleepQuality": 4.5
+      "numOunces": 56
     },
     {
       "userID": 43,
       "date": "2019/08/21",
-      "hoursSlept": 7.4,
-      "sleepQuality": 2.1
+      "numOunces": 61
     },
     {
       "userID": 44,
       "date": "2019/08/21",
-      "hoursSlept": 7.2,
-      "sleepQuality": 4.6
+      "numOunces": 61
     },
     {
       "userID": 45,
       "date": "2019/08/21",
-      "hoursSlept": 7.8,
-      "sleepQuality": 1.7
+      "numOunces": 46
     },
     {
       "userID": 46,
       "date": "2019/08/21",
-      "hoursSlept": 4.2,
-      "sleepQuality": 1.6
+      "numOunces": 50
     },
     {
       "userID": 47,
       "date": "2019/08/21",
-      "hoursSlept": 9.9,
-      "sleepQuality": 3.9
+      "numOunces": 79
     },
     {
       "userID": 48,
       "date": "2019/08/21",
-      "hoursSlept": 10.9,
-      "sleepQuality": 4.3
+      "numOunces": 64
     },
     {
       "userID": 49,
       "date": "2019/08/21",
-      "hoursSlept": 9.3,
-      "sleepQuality": 4.4
+      "numOunces": 42
     },
     {
       "userID": 50,
       "date": "2019/08/21",
-      "hoursSlept": 6.4,
-      "sleepQuality": 1.4
+      "numOunces": 20
     },
     {
       "userID": 1,
       "date": "2019/08/22",
-      "hoursSlept": 6.4,
-      "sleepQuality": 4.6
+      "numOunces": 80
     },
     {
       "userID": 2,
       "date": "2019/08/22",
-      "hoursSlept": 5.8,
-      "sleepQuality": 3.4
+      "numOunces": 47
     },
     {
       "userID": 3,
       "date": "2019/08/22",
-      "hoursSlept": 5.5,
-      "sleepQuality": 1.8
+      "numOunces": 32
     },
     {
       "userID": 4,
       "date": "2019/08/22",
-      "hoursSlept": 4.7,
-      "sleepQuality": 4.1
+      "numOunces": 85
     },
     {
       "userID": 5,
       "date": "2019/08/22",
-      "hoursSlept": 10.7,
-      "sleepQuality": 1.8
+      "numOunces": 42
     },
     {
       "userID": 6,
       "date": "2019/08/22",
-      "hoursSlept": 8.8,
-      "sleepQuality": 4.1
+      "numOunces": 43
     },
     {
       "userID": 7,
       "date": "2019/08/22",
-      "hoursSlept": 7.9,
-      "sleepQuality": 3.3
+      "numOunces": 45
     },
     {
       "userID": 8,
       "date": "2019/08/22",
-      "hoursSlept": 5.9,
-      "sleepQuality": 2.6
+      "numOunces": 78
     },
     {
       "userID": 9,
       "date": "2019/08/22",
-      "hoursSlept": 10.9,
-      "sleepQuality": 2.3
+      "numOunces": 68
     },
     {
       "userID": 10,
       "date": "2019/08/22",
-      "hoursSlept": 7.7,
-      "sleepQuality": 2.8
+      "numOunces": 27
     },
     {
       "userID": 11,
       "date": "2019/08/22",
-      "hoursSlept": 10.9,
-      "sleepQuality": 2.7
+      "numOunces": 46
     },
     {
       "userID": 12,
       "date": "2019/08/22",
-      "hoursSlept": 10.1,
-      "sleepQuality": 2.4
+      "numOunces": 82
     },
     {
       "userID": 13,
       "date": "2019/08/22",
-      "hoursSlept": 5.8,
-      "sleepQuality": 3.5
+      "numOunces": 95
     },
     {
       "userID": 14,
       "date": "2019/08/22",
-      "hoursSlept": 10.5,
-      "sleepQuality": 3.8
+      "numOunces": 80
     },
     {
       "userID": 15,
       "date": "2019/08/22",
-      "hoursSlept": 10.4,
-      "sleepQuality": 3
+      "numOunces": 49
     },
     {
       "userID": 16,
       "date": "2019/08/22",
-      "hoursSlept": 5.9,
-      "sleepQuality": 4.1
+      "numOunces": 79
     },
     {
       "userID": 17,
       "date": "2019/08/22",
-      "hoursSlept": 9.5,
-      "sleepQuality": 4
+      "numOunces": 89
     },
     {
       "userID": 18,
       "date": "2019/08/22",
-      "hoursSlept": 6.4,
-      "sleepQuality": 2.6
+      "numOunces": 93
     },
     {
       "userID": 19,
       "date": "2019/08/22",
-      "hoursSlept": 10.3,
-      "sleepQuality": 2.1
+      "numOunces": 83
     },
     {
       "userID": 20,
       "date": "2019/08/22",
-      "hoursSlept": 8.4,
-      "sleepQuality": 3.2
+      "numOunces": 26
     },
     {
       "userID": 21,
       "date": "2019/08/22",
-      "hoursSlept": 5.6,
-      "sleepQuality": 2.9
+      "numOunces": 99
     },
     {
       "userID": 22,
       "date": "2019/08/22",
-      "hoursSlept": 6.3,
-      "sleepQuality": 1.8
+      "numOunces": 21
     },
     {
       "userID": 23,
       "date": "2019/08/22",
-      "hoursSlept": 5.7,
-      "sleepQuality": 2.7
+      "numOunces": 26
     },
     {
       "userID": 24,
       "date": "2019/08/22",
-      "hoursSlept": 8.5,
-      "sleepQuality": 4.6
+      "numOunces": 79
     },
     {
       "userID": 25,
       "date": "2019/08/22",
-      "hoursSlept": 8.8,
-      "sleepQuality": 2.8
+      "numOunces": 62
     },
     {
       "userID": 26,
       "date": "2019/08/22",
-      "hoursSlept": 10.6,
-      "sleepQuality": 4.2
+      "numOunces": 63
     },
     {
       "userID": 27,
       "date": "2019/08/22",
-      "hoursSlept": 6.6,
-      "sleepQuality": 1.1
+      "numOunces": 24
     },
     {
       "userID": 28,
       "date": "2019/08/22",
-      "hoursSlept": 4.7,
-      "sleepQuality": 3.2
+      "numOunces": 65
     },
     {
       "userID": 29,
       "date": "2019/08/22",
-      "hoursSlept": 5.3,
-      "sleepQuality": 2.5
+      "numOunces": 98
     },
     {
       "userID": 30,
       "date": "2019/08/22",
-      "hoursSlept": 8.6,
-      "sleepQuality": 1.7
+      "numOunces": 73
     },
     {
       "userID": 31,
       "date": "2019/08/22",
-      "hoursSlept": 8.9,
-      "sleepQuality": 4.4
+      "numOunces": 92
     },
     {
       "userID": 32,
       "date": "2019/08/22",
-      "hoursSlept": 7.4,
-      "sleepQuality": 2.4
+      "numOunces": 85
     },
     {
       "userID": 33,
       "date": "2019/08/22",
-      "hoursSlept": 10.8,
-      "sleepQuality": 4.8
+      "numOunces": 66
     },
     {
       "userID": 34,
       "date": "2019/08/22",
-      "hoursSlept": 9.6,
-      "sleepQuality": 4.4
+      "numOunces": 85
     },
     {
       "userID": 35,
       "date": "2019/08/22",
-      "hoursSlept": 9.1,
-      "sleepQuality": 4.9
+      "numOunces": 57
     },
     {
       "userID": 36,
       "date": "2019/08/22",
-      "hoursSlept": 9.3,
-      "sleepQuality": 3.4
+      "numOunces": 40
     },
     {
       "userID": 37,
       "date": "2019/08/22",
-      "hoursSlept": 9.6,
-      "sleepQuality": 2.6
+      "numOunces": 32
     },
     {
       "userID": 38,
       "date": "2019/08/22",
-      "hoursSlept": 8.9,
-      "sleepQuality": 3
+      "numOunces": 71
     },
     {
       "userID": 39,
       "date": "2019/08/22",
-      "hoursSlept": 4.7,
-      "sleepQuality": 3.2
+      "numOunces": 41
     },
     {
       "userID": 40,
       "date": "2019/08/22",
-      "hoursSlept": 5.2,
-      "sleepQuality": 1.5
+      "numOunces": 47
     },
     {
       "userID": 41,
       "date": "2019/08/22",
-      "hoursSlept": 4.8,
-      "sleepQuality": 2.9
+      "numOunces": 44
     },
     {
       "userID": 42,
       "date": "2019/08/22",
-      "hoursSlept": 7.3,
-      "sleepQuality": 2.5
+      "numOunces": 29
     },
     {
       "userID": 43,
       "date": "2019/08/22",
-      "hoursSlept": 7.7,
-      "sleepQuality": 2
+      "numOunces": 44
     },
     {
       "userID": 44,
       "date": "2019/08/22",
-      "hoursSlept": 8.6,
-      "sleepQuality": 3.7
+      "numOunces": 26
     },
     {
       "userID": 45,
       "date": "2019/08/22",
-      "hoursSlept": 8.5,
-      "sleepQuality": 2.3
+      "numOunces": 33
     },
     {
       "userID": 46,
       "date": "2019/08/22",
-      "hoursSlept": 10.3,
-      "sleepQuality": 2.4
+      "numOunces": 29
     },
     {
       "userID": 47,
       "date": "2019/08/22",
-      "hoursSlept": 10.7,
-      "sleepQuality": 2.7
+      "numOunces": 28
     },
     {
       "userID": 48,
       "date": "2019/08/22",
-      "hoursSlept": 8,
-      "sleepQuality": 2
+      "numOunces": 25
     },
     {
       "userID": 49,
       "date": "2019/08/22",
-      "hoursSlept": 5,
-      "sleepQuality": 4.2
+      "numOunces": 56
     },
     {
       "userID": 50,
       "date": "2019/08/22",
-      "hoursSlept": 8.7,
-      "sleepQuality": 3
+      "numOunces": 62
     },
     {
       "userID": 1,
       "date": "2019/08/23",
-      "hoursSlept": 4.6,
-      "sleepQuality": 3.1
+      "numOunces": 68
     },
     {
       "userID": 2,
       "date": "2019/08/23",
-      "hoursSlept": 10.9,
-      "sleepQuality": 1.7
+      "numOunces": 60
     },
     {
       "userID": 3,
       "date": "2019/08/23",
-      "hoursSlept": 8.3,
-      "sleepQuality": 2.3
+      "numOunces": 98
     },
     {
       "userID": 4,
       "date": "2019/08/23",
-      "hoursSlept": 5.3,
-      "sleepQuality": 1.9
+      "numOunces": 91
     },
     {
       "userID": 5,
       "date": "2019/08/23",
-      "hoursSlept": 6.2,
-      "sleepQuality": 1.8
+      "numOunces": 34
     },
     {
       "userID": 6,
       "date": "2019/08/23",
-      "hoursSlept": 6.8,
-      "sleepQuality": 4.5
+      "numOunces": 63
     },
     {
       "userID": 7,
       "date": "2019/08/23",
-      "hoursSlept": 9.3,
-      "sleepQuality": 3.2
+      "numOunces": 85
     },
     {
       "userID": 8,
       "date": "2019/08/23",
-      "hoursSlept": 8,
-      "sleepQuality": 1.4
+      "numOunces": 68
     },
     {
       "userID": 9,
       "date": "2019/08/23",
-      "hoursSlept": 9.8,
-      "sleepQuality": 1.7
+      "numOunces": 73
     },
     {
       "userID": 10,
       "date": "2019/08/23",
-      "hoursSlept": 4.1,
-      "sleepQuality": 1.7
+      "numOunces": 20
     },
     {
       "userID": 11,
       "date": "2019/08/23",
-      "hoursSlept": 10.2,
-      "sleepQuality": 1.3
+      "numOunces": 37
     },
     {
       "userID": 12,
       "date": "2019/08/23",
-      "hoursSlept": 6.5,
-      "sleepQuality": 2.3
+      "numOunces": 96
     },
     {
       "userID": 13,
       "date": "2019/08/23",
-      "hoursSlept": 6.6,
-      "sleepQuality": 3.4
+      "numOunces": 63
     },
     {
       "userID": 14,
       "date": "2019/08/23",
-      "hoursSlept": 7.6,
-      "sleepQuality": 3.3
+      "numOunces": 76
     },
     {
       "userID": 15,
       "date": "2019/08/23",
-      "hoursSlept": 6.9,
-      "sleepQuality": 4.9
+      "numOunces": 90
     },
     {
       "userID": 16,
       "date": "2019/08/23",
-      "hoursSlept": 5.4,
-      "sleepQuality": 1.8
+      "numOunces": 89
     },
     {
       "userID": 17,
       "date": "2019/08/23",
-      "hoursSlept": 9.3,
-      "sleepQuality": 1.1
+      "numOunces": 38
     },
     {
       "userID": 18,
       "date": "2019/08/23",
-      "hoursSlept": 4.6,
-      "sleepQuality": 1.9
+      "numOunces": 53
     },
     {
       "userID": 19,
       "date": "2019/08/23",
-      "hoursSlept": 4,
-      "sleepQuality": 1.3
+      "numOunces": 23
     },
     {
       "userID": 20,
       "date": "2019/08/23",
-      "hoursSlept": 9.9,
-      "sleepQuality": 1.8
+      "numOunces": 93
     },
     {
       "userID": 21,
       "date": "2019/08/23",
-      "hoursSlept": 8.8,
-      "sleepQuality": 2.5
+      "numOunces": 80
     },
     {
       "userID": 22,
       "date": "2019/08/23",
-      "hoursSlept": 9,
-      "sleepQuality": 4.1
+      "numOunces": 84
     },
     {
       "userID": 23,
       "date": "2019/08/23",
-      "hoursSlept": 6.1,
-      "sleepQuality": 1.9
+      "numOunces": 22
     },
     {
       "userID": 24,
       "date": "2019/08/23",
-      "hoursSlept": 9.8,
-      "sleepQuality": 1.6
+      "numOunces": 75
     },
     {
       "userID": 25,
       "date": "2019/08/23",
-      "hoursSlept": 7.5,
-      "sleepQuality": 4.5
+      "numOunces": 91
     },
     {
       "userID": 26,
       "date": "2019/08/23",
-      "hoursSlept": 8.7,
-      "sleepQuality": 2.7
+      "numOunces": 83
     },
     {
       "userID": 27,
       "date": "2019/08/23",
-      "hoursSlept": 10,
-      "sleepQuality": 1.1
+      "numOunces": 22
     },
     {
       "userID": 28,
       "date": "2019/08/23",
-      "hoursSlept": 10.4,
-      "sleepQuality": 3.1
+      "numOunces": 94
     },
     {
       "userID": 29,
       "date": "2019/08/23",
-      "hoursSlept": 6.8,
-      "sleepQuality": 3.6
+      "numOunces": 82
     },
     {
       "userID": 30,
       "date": "2019/08/23",
-      "hoursSlept": 8.7,
-      "sleepQuality": 4.9
+      "numOunces": 84
     },
     {
       "userID": 31,
       "date": "2019/08/23",
-      "hoursSlept": 7.3,
-      "sleepQuality": 2.7
+      "numOunces": 69
     },
     {
       "userID": 32,
       "date": "2019/08/23",
-      "hoursSlept": 7.7,
-      "sleepQuality": 4.3
+      "numOunces": 76
     },
     {
       "userID": 33,
       "date": "2019/08/23",
-      "hoursSlept": 7.9,
-      "sleepQuality": 3.1
+      "numOunces": 81
     },
     {
       "userID": 34,
       "date": "2019/08/23",
-      "hoursSlept": 9,
-      "sleepQuality": 4.5
+      "numOunces": 95
     },
     {
       "userID": 35,
       "date": "2019/08/23",
-      "hoursSlept": 4.9,
-      "sleepQuality": 2.9
+      "numOunces": 60
     },
     {
       "userID": 36,
       "date": "2019/08/23",
-      "hoursSlept": 10.6,
-      "sleepQuality": 4.4
+      "numOunces": 65
     },
     {
       "userID": 37,
       "date": "2019/08/23",
-      "hoursSlept": 5.8,
-      "sleepQuality": 4.4
+      "numOunces": 91
     },
     {
       "userID": 38,
       "date": "2019/08/23",
-      "hoursSlept": 6.5,
-      "sleepQuality": 4
+      "numOunces": 91
     },
     {
       "userID": 39,
       "date": "2019/08/23",
-      "hoursSlept": 7.8,
-      "sleepQuality": 4.3
+      "numOunces": 38
     },
     {
       "userID": 40,
       "date": "2019/08/23",
-      "hoursSlept": 5.5,
-      "sleepQuality": 4.9
+      "numOunces": 28
     },
     {
       "userID": 41,
       "date": "2019/08/23",
-      "hoursSlept": 5.4,
-      "sleepQuality": 1.8
+      "numOunces": 43
     },
     {
       "userID": 42,
       "date": "2019/08/23",
-      "hoursSlept": 10.4,
-      "sleepQuality": 4.6
+      "numOunces": 51
     },
     {
       "userID": 43,
       "date": "2019/08/23",
-      "hoursSlept": 4.8,
-      "sleepQuality": 3.8
+      "numOunces": 63
     },
     {
       "userID": 44,
       "date": "2019/08/23",
-      "hoursSlept": 6.4,
-      "sleepQuality": 2
+      "numOunces": 47
     },
     {
       "userID": 45,
       "date": "2019/08/23",
-      "hoursSlept": 10.9,
-      "sleepQuality": 2.3
+      "numOunces": 56
     },
     {
       "userID": 46,
       "date": "2019/08/23",
-      "hoursSlept": 6.9,
-      "sleepQuality": 1.8
+      "numOunces": 84
     },
     {
       "userID": 47,
       "date": "2019/08/23",
-      "hoursSlept": 6.5,
-      "sleepQuality": 1.2
+      "numOunces": 37
     },
     {
       "userID": 48,
       "date": "2019/08/23",
-      "hoursSlept": 5.2,
-      "sleepQuality": 2.6
+      "numOunces": 95
     },
     {
       "userID": 49,
       "date": "2019/08/23",
-      "hoursSlept": 9.4,
-      "sleepQuality": 4
+      "numOunces": 53
     },
     {
       "userID": 50,
       "date": "2019/08/23",
-      "hoursSlept": 5.2,
-      "sleepQuality": 4.2
+      "numOunces": 92
     },
     {
       "userID": 1,
       "date": "2019/08/24",
-      "hoursSlept": 9.3,
-      "sleepQuality": 2.6
+      "numOunces": 93
     },
     {
       "userID": 2,
       "date": "2019/08/24",
-      "hoursSlept": 8.3,
-      "sleepQuality": 3.2
+      "numOunces": 23
     },
     {
       "userID": 3,
       "date": "2019/08/24",
-      "hoursSlept": 8.7,
-      "sleepQuality": 4.2
+      "numOunces": 23
     },
     {
       "userID": 4,
       "date": "2019/08/24",
-      "hoursSlept": 4.9,
-      "sleepQuality": 2.7
+      "numOunces": 68
     },
     {
       "userID": 5,
       "date": "2019/08/24",
-      "hoursSlept": 10.7,
-      "sleepQuality": 2.6
+      "numOunces": 95
     },
     {
       "userID": 6,
       "date": "2019/08/24",
-      "hoursSlept": 4.4,
-      "sleepQuality": 2.1
+      "numOunces": 90
     },
     {
       "userID": 7,
       "date": "2019/08/24",
-      "hoursSlept": 8.5,
-      "sleepQuality": 2
+      "numOunces": 37
     },
     {
       "userID": 8,
       "date": "2019/08/24",
-      "hoursSlept": 4.3,
-      "sleepQuality": 4.7
+      "numOunces": 48
     },
     {
       "userID": 9,
       "date": "2019/08/24",
-      "hoursSlept": 6.2,
-      "sleepQuality": 4.2
+      "numOunces": 90
     },
     {
       "userID": 10,
       "date": "2019/08/24",
-      "hoursSlept": 6.1,
-      "sleepQuality": 2.1
+      "numOunces": 54
     },
     {
       "userID": 11,
       "date": "2019/08/24",
-      "hoursSlept": 5.5,
-      "sleepQuality": 3.8
+      "numOunces": 61
     },
     {
       "userID": 12,
       "date": "2019/08/24",
-      "hoursSlept": 7.4,
-      "sleepQuality": 3.1
+      "numOunces": 25
     },
     {
       "userID": 13,
       "date": "2019/08/24",
-      "hoursSlept": 7.6,
-      "sleepQuality": 5
+      "numOunces": 99
     },
     {
       "userID": 14,
       "date": "2019/08/24",
-      "hoursSlept": 4.1,
-      "sleepQuality": 4.9
+      "numOunces": 96
     },
     {
       "userID": 15,
       "date": "2019/08/24",
-      "hoursSlept": 6,
-      "sleepQuality": 1.9
+      "numOunces": 44
     },
     {
       "userID": 16,
       "date": "2019/08/24",
-      "hoursSlept": 7.9,
-      "sleepQuality": 4.5
+      "numOunces": 80
     },
     {
       "userID": 17,
       "date": "2019/08/24",
-      "hoursSlept": 6,
-      "sleepQuality": 2.8
+      "numOunces": 67
     },
     {
       "userID": 18,
       "date": "2019/08/24",
-      "hoursSlept": 8.4,
-      "sleepQuality": 3.6
+      "numOunces": 66
     },
     {
       "userID": 19,
       "date": "2019/08/24",
-      "hoursSlept": 10.5,
-      "sleepQuality": 2.9
+      "numOunces": 40
     },
     {
       "userID": 20,
       "date": "2019/08/24",
-      "hoursSlept": 7.4,
-      "sleepQuality": 1.2
+      "numOunces": 50
     },
     {
       "userID": 21,
       "date": "2019/08/24",
-      "hoursSlept": 9.9,
-      "sleepQuality": 1.5
+      "numOunces": 26
     },
     {
       "userID": 22,
       "date": "2019/08/24",
-      "hoursSlept": 10.9,
-      "sleepQuality": 2.2
+      "numOunces": 20
     },
     {
       "userID": 23,
       "date": "2019/08/24",
-      "hoursSlept": 9.4,
-      "sleepQuality": 2.6
+      "numOunces": 86
     },
     {
       "userID": 24,
       "date": "2019/08/24",
-      "hoursSlept": 5.4,
-      "sleepQuality": 4.3
+      "numOunces": 74
     },
     {
       "userID": 25,
       "date": "2019/08/24",
-      "hoursSlept": 7.8,
-      "sleepQuality": 3.8
+      "numOunces": 38
     },
     {
       "userID": 26,
       "date": "2019/08/24",
-      "hoursSlept": 4.9,
-      "sleepQuality": 1.2
+      "numOunces": 96
     },
     {
       "userID": 27,
       "date": "2019/08/24",
-      "hoursSlept": 8.8,
-      "sleepQuality": 3.9
+      "numOunces": 65
     },
     {
       "userID": 28,
       "date": "2019/08/24",
-      "hoursSlept": 8.9,
-      "sleepQuality": 3.1
+      "numOunces": 94
     },
     {
       "userID": 29,
       "date": "2019/08/24",
-      "hoursSlept": 10.8,
-      "sleepQuality": 2.9
+      "numOunces": 40
     },
     {
       "userID": 30,
       "date": "2019/08/24",
-      "hoursSlept": 8.8,
-      "sleepQuality": 4.7
+      "numOunces": 42
     },
     {
       "userID": 31,
       "date": "2019/08/24",
-      "hoursSlept": 10.2,
-      "sleepQuality": 4.9
+      "numOunces": 74
     },
     {
       "userID": 32,
       "date": "2019/08/24",
-      "hoursSlept": 4.4,
-      "sleepQuality": 4.5
+      "numOunces": 69
     },
     {
       "userID": 33,
       "date": "2019/08/24",
-      "hoursSlept": 9.7,
-      "sleepQuality": 1.2
+      "numOunces": 21
     },
     {
       "userID": 34,
       "date": "2019/08/24",
-      "hoursSlept": 8.2,
-      "sleepQuality": 1.5
+      "numOunces": 81
     },
     {
       "userID": 35,
       "date": "2019/08/24",
-      "hoursSlept": 7.9,
-      "sleepQuality": 3.1
+      "numOunces": 79
     },
     {
       "userID": 36,
       "date": "2019/08/24",
-      "hoursSlept": 4.2,
-      "sleepQuality": 2.2
+      "numOunces": 23
     },
     {
       "userID": 37,
       "date": "2019/08/24",
-      "hoursSlept": 4.4,
-      "sleepQuality": 2.3
+      "numOunces": 78
     },
     {
       "userID": 38,
       "date": "2019/08/24",
-      "hoursSlept": 8.8,
-      "sleepQuality": 1.3
+      "numOunces": 62
     },
     {
       "userID": 39,
       "date": "2019/08/24",
-      "hoursSlept": 4.7,
-      "sleepQuality": 3.8
+      "numOunces": 96
     },
     {
       "userID": 40,
       "date": "2019/08/24",
-      "hoursSlept": 9.3,
-      "sleepQuality": 3.3
+      "numOunces": 92
     },
     {
       "userID": 41,
       "date": "2019/08/24",
-      "hoursSlept": 10.2,
-      "sleepQuality": 3.7
+      "numOunces": 41
     },
     {
       "userID": 42,
       "date": "2019/08/24",
-      "hoursSlept": 10.4,
-      "sleepQuality": 3
+      "numOunces": 38
     },
     {
       "userID": 43,
       "date": "2019/08/24",
-      "hoursSlept": 6.5,
-      "sleepQuality": 2.3
+      "numOunces": 93
     },
     {
       "userID": 44,
       "date": "2019/08/24",
-      "hoursSlept": 8.2,
-      "sleepQuality": 1.1
+      "numOunces": 61
     },
     {
       "userID": 45,
       "date": "2019/08/24",
-      "hoursSlept": 8.3,
-      "sleepQuality": 1.5
+      "numOunces": 63
     },
     {
       "userID": 46,
       "date": "2019/08/24",
-      "hoursSlept": 5.2,
-      "sleepQuality": 1.2
+      "numOunces": 23
     },
     {
       "userID": 47,
       "date": "2019/08/24",
-      "hoursSlept": 10.1,
-      "sleepQuality": 3.2
+      "numOunces": 73
     },
     {
       "userID": 48,
       "date": "2019/08/24",
-      "hoursSlept": 8.7,
-      "sleepQuality": 4.4
+      "numOunces": 50
     },
     {
       "userID": 49,
       "date": "2019/08/24",
-      "hoursSlept": 6.4,
-      "sleepQuality": 2.7
+      "numOunces": 90
     },
     {
       "userID": 50,
       "date": "2019/08/24",
-      "hoursSlept": 7,
-      "sleepQuality": 4.9
+      "numOunces": 62
     },
     {
       "userID": 1,
       "date": "2019/08/25",
-      "hoursSlept": 10.4,
-      "sleepQuality": 1.9
+      "numOunces": 33
     },
     {
       "userID": 2,
       "date": "2019/08/25",
-      "hoursSlept": 11,
-      "sleepQuality": 3
+      "numOunces": 88
     },
     {
       "userID": 3,
       "date": "2019/08/25",
-      "hoursSlept": 7.8,
-      "sleepQuality": 3.8
+      "numOunces": 37
     },
     {
       "userID": 4,
       "date": "2019/08/25",
-      "hoursSlept": 7.6,
-      "sleepQuality": 3.3
+      "numOunces": 94
     },
     {
       "userID": 5,
       "date": "2019/08/25",
-      "hoursSlept": 4.2,
-      "sleepQuality": 2.1
+      "numOunces": 87
     },
     {
       "userID": 6,
       "date": "2019/08/25",
-      "hoursSlept": 4.7,
-      "sleepQuality": 3.4
+      "numOunces": 38
     },
     {
       "userID": 7,
       "date": "2019/08/25",
-      "hoursSlept": 8.4,
-      "sleepQuality": 3.2
+      "numOunces": 30
     },
     {
       "userID": 8,
       "date": "2019/08/25",
-      "hoursSlept": 10.7,
-      "sleepQuality": 4
+      "numOunces": 70
     },
     {
       "userID": 9,
       "date": "2019/08/25",
-      "hoursSlept": 6.7,
-      "sleepQuality": 3.8
+      "numOunces": 25
     },
     {
       "userID": 10,
       "date": "2019/08/25",
-      "hoursSlept": 8.4,
-      "sleepQuality": 3.4
+      "numOunces": 33
     },
     {
       "userID": 11,
       "date": "2019/08/25",
-      "hoursSlept": 4.2,
-      "sleepQuality": 4.6
+      "numOunces": 24
     },
     {
       "userID": 12,
       "date": "2019/08/25",
-      "hoursSlept": 5.1,
-      "sleepQuality": 2.2
+      "numOunces": 27
     },
     {
       "userID": 13,
       "date": "2019/08/25",
-      "hoursSlept": 10,
-      "sleepQuality": 1.2
+      "numOunces": 68
     },
     {
       "userID": 14,
       "date": "2019/08/25",
-      "hoursSlept": 11,
-      "sleepQuality": 1.1
+      "numOunces": 61
     },
     {
       "userID": 15,
       "date": "2019/08/25",
-      "hoursSlept": 5.9,
-      "sleepQuality": 4.6
+      "numOunces": 46
     },
     {
       "userID": 16,
       "date": "2019/08/25",
-      "hoursSlept": 9,
-      "sleepQuality": 4.5
+      "numOunces": 65
     },
     {
       "userID": 17,
       "date": "2019/08/25",
-      "hoursSlept": 9.8,
-      "sleepQuality": 1.5
+      "numOunces": 92
     },
     {
       "userID": 18,
       "date": "2019/08/25",
-      "hoursSlept": 7.5,
-      "sleepQuality": 4.5
+      "numOunces": 87
     },
     {
       "userID": 19,
       "date": "2019/08/25",
-      "hoursSlept": 4.1,
-      "sleepQuality": 2.7
+      "numOunces": 80
     },
     {
       "userID": 20,
       "date": "2019/08/25",
-      "hoursSlept": 7.4,
-      "sleepQuality": 1.9
+      "numOunces": 88
     },
     {
       "userID": 21,
       "date": "2019/08/25",
-      "hoursSlept": 7.9,
-      "sleepQuality": 1.9
+      "numOunces": 36
     },
     {
       "userID": 22,
       "date": "2019/08/25",
-      "hoursSlept": 10.3,
-      "sleepQuality": 1.2
+      "numOunces": 71
     },
     {
       "userID": 23,
       "date": "2019/08/25",
-      "hoursSlept": 5.3,
-      "sleepQuality": 2.5
+      "numOunces": 81
     },
     {
       "userID": 24,
       "date": "2019/08/25",
-      "hoursSlept": 8.2,
-      "sleepQuality": 2.9
+      "numOunces": 43
     },
     {
       "userID": 25,
       "date": "2019/08/25",
-      "hoursSlept": 10.7,
-      "sleepQuality": 4
+      "numOunces": 84
     },
     {
       "userID": 26,
       "date": "2019/08/25",
-      "hoursSlept": 6,
-      "sleepQuality": 2.8
+      "numOunces": 46
     },
     {
       "userID": 27,
       "date": "2019/08/25",
-      "hoursSlept": 10.9,
-      "sleepQuality": 1.3
+      "numOunces": 63
     },
     {
       "userID": 28,
       "date": "2019/08/25",
-      "hoursSlept": 6.2,
-      "sleepQuality": 1.3
+      "numOunces": 22
     },
     {
       "userID": 29,
       "date": "2019/08/25",
-      "hoursSlept": 9.1,
-      "sleepQuality": 3
+      "numOunces": 69
     },
     {
       "userID": 30,
       "date": "2019/08/25",
-      "hoursSlept": 6.2,
-      "sleepQuality": 1.6
+      "numOunces": 71
     },
     {
       "userID": 31,
       "date": "2019/08/25",
-      "hoursSlept": 6.6,
-      "sleepQuality": 3.7
+      "numOunces": 38
     },
     {
       "userID": 32,
       "date": "2019/08/25",
-      "hoursSlept": 7.3,
-      "sleepQuality": 2.8
+      "numOunces": 77
     },
     {
       "userID": 33,
       "date": "2019/08/25",
-      "hoursSlept": 4.2,
-      "sleepQuality": 2.9
+      "numOunces": 45
     },
     {
       "userID": 34,
       "date": "2019/08/25",
-      "hoursSlept": 4.2,
-      "sleepQuality": 2.6
+      "numOunces": 27
     },
     {
       "userID": 35,
       "date": "2019/08/25",
-      "hoursSlept": 8,
-      "sleepQuality": 2.1
+      "numOunces": 21
     },
     {
       "userID": 36,
       "date": "2019/08/25",
-      "hoursSlept": 4.1,
-      "sleepQuality": 3
+      "numOunces": 44
     },
     {
       "userID": 37,
       "date": "2019/08/25",
-      "hoursSlept": 7.1,
-      "sleepQuality": 4.8
+      "numOunces": 58
     },
     {
       "userID": 38,
       "date": "2019/08/25",
-      "hoursSlept": 8.4,
-      "sleepQuality": 1.4
+      "numOunces": 34
     },
     {
       "userID": 39,
       "date": "2019/08/25",
-      "hoursSlept": 9.2,
-      "sleepQuality": 4.3
+      "numOunces": 39
     },
     {
       "userID": 40,
       "date": "2019/08/25",
-      "hoursSlept": 10.8,
-      "sleepQuality": 1.3
+      "numOunces": 85
     },
     {
       "userID": 41,
       "date": "2019/08/25",
-      "hoursSlept": 10.9,
-      "sleepQuality": 5
+      "numOunces": 50
     },
     {
       "userID": 42,
       "date": "2019/08/25",
-      "hoursSlept": 9.4,
-      "sleepQuality": 1.4
+      "numOunces": 89
     },
     {
       "userID": 43,
       "date": "2019/08/25",
-      "hoursSlept": 7.8,
-      "sleepQuality": 4.5
+      "numOunces": 88
     },
     {
       "userID": 44,
       "date": "2019/08/25",
-      "hoursSlept": 9.2,
-      "sleepQuality": 2.3
+      "numOunces": 23
     },
     {
       "userID": 45,
       "date": "2019/08/25",
-      "hoursSlept": 6.8,
-      "sleepQuality": 2.9
+      "numOunces": 38
     },
     {
       "userID": 46,
       "date": "2019/08/25",
-      "hoursSlept": 10.4,
-      "sleepQuality": 4.5
+      "numOunces": 97
     },
     {
       "userID": 47,
       "date": "2019/08/25",
-      "hoursSlept": 7.2,
-      "sleepQuality": 3
+      "numOunces": 28
     },
     {
       "userID": 48,
       "date": "2019/08/25",
-      "hoursSlept": 7.4,
-      "sleepQuality": 3.4
+      "numOunces": 83
     },
     {
       "userID": 49,
       "date": "2019/08/25",
-      "hoursSlept": 10.6,
-      "sleepQuality": 1.7
+      "numOunces": 34
     },
     {
       "userID": 50,
       "date": "2019/08/25",
-      "hoursSlept": 10.8,
-      "sleepQuality": 1.1
+      "numOunces": 27
     },
     {
       "userID": 1,
       "date": "2019/08/26",
-      "hoursSlept": 9.9,
-      "sleepQuality": 3.8
+      "numOunces": 76
     },
     {
       "userID": 2,
       "date": "2019/08/26",
-      "hoursSlept": 10.8,
-      "sleepQuality": 3.7
+      "numOunces": 21
     },
     {
       "userID": 3,
       "date": "2019/08/26",
-      "hoursSlept": 8.2,
-      "sleepQuality": 4.8
+      "numOunces": 82
     },
     {
       "userID": 4,
       "date": "2019/08/26",
-      "hoursSlept": 9.4,
-      "sleepQuality": 3.1
+      "numOunces": 31
     },
     {
       "userID": 5,
       "date": "2019/08/26",
-      "hoursSlept": 10.5,
-      "sleepQuality": 4.2
+      "numOunces": 73
     },
     {
       "userID": 6,
       "date": "2019/08/26",
-      "hoursSlept": 10.7,
-      "sleepQuality": 3.6
+      "numOunces": 59
     },
     {
       "userID": 7,
       "date": "2019/08/26",
-      "hoursSlept": 9.6,
-      "sleepQuality": 4.6
+      "numOunces": 93
     },
     {
       "userID": 8,
       "date": "2019/08/26",
-      "hoursSlept": 6.3,
-      "sleepQuality": 3.4
+      "numOunces": 89
     },
     {
       "userID": 9,
       "date": "2019/08/26",
-      "hoursSlept": 4.4,
-      "sleepQuality": 3.6
+      "numOunces": 99
     },
     {
       "userID": 10,
       "date": "2019/08/26",
-      "hoursSlept": 10.1,
-      "sleepQuality": 4
+      "numOunces": 27
     },
     {
       "userID": 11,
       "date": "2019/08/26",
-      "hoursSlept": 10.4,
-      "sleepQuality": 2.4
+      "numOunces": 87
     },
     {
       "userID": 12,
       "date": "2019/08/26",
-      "hoursSlept": 4.7,
-      "sleepQuality": 4.1
+      "numOunces": 39
     },
     {
       "userID": 13,
       "date": "2019/08/26",
-      "hoursSlept": 5.2,
-      "sleepQuality": 2.8
+      "numOunces": 45
     },
     {
       "userID": 14,
       "date": "2019/08/26",
-      "hoursSlept": 6.5,
-      "sleepQuality": 4.6
+      "numOunces": 52
     },
     {
       "userID": 15,
       "date": "2019/08/26",
-      "hoursSlept": 9.8,
-      "sleepQuality": 2.4
+      "numOunces": 76
     },
     {
       "userID": 16,
       "date": "2019/08/26",
-      "hoursSlept": 9.8,
-      "sleepQuality": 3.8
+      "numOunces": 77
     },
     {
       "userID": 17,
       "date": "2019/08/26",
-      "hoursSlept": 7.6,
-      "sleepQuality": 1.1
+      "numOunces": 99
     },
     {
       "userID": 18,
       "date": "2019/08/26",
-      "hoursSlept": 7.5,
-      "sleepQuality": 1.4
+      "numOunces": 47
     },
     {
       "userID": 19,
       "date": "2019/08/26",
-      "hoursSlept": 8.6,
-      "sleepQuality": 4.5
+      "numOunces": 43
     },
     {
       "userID": 20,
       "date": "2019/08/26",
-      "hoursSlept": 9.7,
-      "sleepQuality": 2
+      "numOunces": 23
     },
     {
       "userID": 21,
       "date": "2019/08/26",
-      "hoursSlept": 5.9,
-      "sleepQuality": 1.2
+      "numOunces": 53
     },
     {
       "userID": 22,
       "date": "2019/08/26",
-      "hoursSlept": 4.3,
-      "sleepQuality": 2.5
+      "numOunces": 62
     },
     {
       "userID": 23,
       "date": "2019/08/26",
-      "hoursSlept": 9.9,
-      "sleepQuality": 2.2
+      "numOunces": 90
     },
     {
       "userID": 24,
       "date": "2019/08/26",
-      "hoursSlept": 4.5,
-      "sleepQuality": 4.2
+      "numOunces": 56
     },
     {
       "userID": 25,
       "date": "2019/08/26",
-      "hoursSlept": 10.1,
-      "sleepQuality": 4.3
+      "numOunces": 93
     },
     {
       "userID": 26,
       "date": "2019/08/26",
-      "hoursSlept": 5.2,
-      "sleepQuality": 2.7
+      "numOunces": 50
     },
     {
       "userID": 27,
       "date": "2019/08/26",
-      "hoursSlept": 6.7,
-      "sleepQuality": 3.6
+      "numOunces": 30
     },
     {
       "userID": 28,
       "date": "2019/08/26",
-      "hoursSlept": 9.9,
-      "sleepQuality": 1.4
+      "numOunces": 31
     },
     {
       "userID": 29,
       "date": "2019/08/26",
-      "hoursSlept": 6.3,
-      "sleepQuality": 4.6
+      "numOunces": 95
     },
     {
       "userID": 30,
       "date": "2019/08/26",
-      "hoursSlept": 8.8,
-      "sleepQuality": 2.6
+      "numOunces": 40
     },
     {
       "userID": 31,
       "date": "2019/08/26",
-      "hoursSlept": 6.2,
-      "sleepQuality": 1.4
+      "numOunces": 87
     },
     {
       "userID": 32,
       "date": "2019/08/26",
-      "hoursSlept": 5.4,
-      "sleepQuality": 3.2
+      "numOunces": 80
     },
     {
       "userID": 33,
       "date": "2019/08/26",
-      "hoursSlept": 6.5,
-      "sleepQuality": 2
+      "numOunces": 72
     },
     {
       "userID": 34,
       "date": "2019/08/26",
-      "hoursSlept": 10.2,
-      "sleepQuality": 1.2
+      "numOunces": 37
     },
     {
       "userID": 35,
       "date": "2019/08/26",
-      "hoursSlept": 7,
-      "sleepQuality": 3.9
+      "numOunces": 66
     },
     {
       "userID": 36,
       "date": "2019/08/26",
-      "hoursSlept": 4.5,
-      "sleepQuality": 2.9
+      "numOunces": 63
     },
     {
       "userID": 37,
       "date": "2019/08/26",
-      "hoursSlept": 6,
-      "sleepQuality": 4.4
+      "numOunces": 96
     },
     {
       "userID": 38,
       "date": "2019/08/26",
-      "hoursSlept": 9.3,
-      "sleepQuality": 5
+      "numOunces": 60
     },
     {
       "userID": 39,
       "date": "2019/08/26",
-      "hoursSlept": 7.1,
-      "sleepQuality": 1.8
+      "numOunces": 71
     },
     {
       "userID": 40,
       "date": "2019/08/26",
-      "hoursSlept": 7.6,
-      "sleepQuality": 4.8
+      "numOunces": 89
     },
     {
       "userID": 41,
       "date": "2019/08/26",
-      "hoursSlept": 5.6,
-      "sleepQuality": 1.9
+      "numOunces": 95
     },
     {
       "userID": 42,
       "date": "2019/08/26",
-      "hoursSlept": 6.9,
-      "sleepQuality": 2.3
+      "numOunces": 70
     },
     {
       "userID": 43,
       "date": "2019/08/26",
-      "hoursSlept": 10.9,
-      "sleepQuality": 4.9
+      "numOunces": 21
     },
     {
       "userID": 44,
       "date": "2019/08/26",
-      "hoursSlept": 5.1,
-      "sleepQuality": 4.3
+      "numOunces": 29
     },
     {
       "userID": 45,
       "date": "2019/08/26",
-      "hoursSlept": 7.7,
-      "sleepQuality": 1.8
+      "numOunces": 95
     },
     {
       "userID": 46,
       "date": "2019/08/26",
-      "hoursSlept": 10.2,
-      "sleepQuality": 1.1
+      "numOunces": 24
     },
     {
       "userID": 47,
       "date": "2019/08/26",
-      "hoursSlept": 10.3,
-      "sleepQuality": 3
+      "numOunces": 83
     },
     {
       "userID": 48,
       "date": "2019/08/26",
-      "hoursSlept": 10.3,
-      "sleepQuality": 4.2
+      "numOunces": 74
     },
     {
       "userID": 49,
       "date": "2019/08/26",
-      "hoursSlept": 5,
-      "sleepQuality": 2.6
+      "numOunces": 89
     },
     {
       "userID": 50,
       "date": "2019/08/26",
-      "hoursSlept": 8.5,
-      "sleepQuality": 2.3
+      "numOunces": 80
     },
     {
       "userID": 1,
       "date": "2019/08/27",
-      "hoursSlept": 5.4,
-      "sleepQuality": 1.4
+      "numOunces": 35
     },
     {
       "userID": 2,
       "date": "2019/08/27",
-      "hoursSlept": 9.2,
-      "sleepQuality": 2.1
+      "numOunces": 46
     },
     {
       "userID": 3,
       "date": "2019/08/27",
-      "hoursSlept": 8.2,
-      "sleepQuality": 3.5
+      "numOunces": 29
     },
     {
       "userID": 4,
       "date": "2019/08/27",
-      "hoursSlept": 6.1,
-      "sleepQuality": 4.7
+      "numOunces": 64
     },
     {
       "userID": 5,
       "date": "2019/08/27",
-      "hoursSlept": 6.1,
-      "sleepQuality": 4.7
+      "numOunces": 61
     },
     {
       "userID": 6,
       "date": "2019/08/27",
-      "hoursSlept": 5.3,
-      "sleepQuality": 2.7
+      "numOunces": 99
     },
     {
       "userID": 7,
       "date": "2019/08/27",
-      "hoursSlept": 7.5,
-      "sleepQuality": 4.8
+      "numOunces": 86
     },
     {
       "userID": 8,
       "date": "2019/08/27",
-      "hoursSlept": 8.4,
-      "sleepQuality": 1.8
+      "numOunces": 59
     },
     {
       "userID": 9,
       "date": "2019/08/27",
-      "hoursSlept": 8.6,
-      "sleepQuality": 2.7
+      "numOunces": 85
     },
     {
       "userID": 10,
       "date": "2019/08/27",
-      "hoursSlept": 8.4,
-      "sleepQuality": 1.3
+      "numOunces": 80
     },
     {
       "userID": 11,
       "date": "2019/08/27",
-      "hoursSlept": 10.7,
-      "sleepQuality": 3.9
+      "numOunces": 52
     },
     {
       "userID": 12,
       "date": "2019/08/27",
-      "hoursSlept": 5.1,
-      "sleepQuality": 2.9
+      "numOunces": 63
     },
     {
       "userID": 13,
       "date": "2019/08/27",
-      "hoursSlept": 8.7,
-      "sleepQuality": 4.2
+      "numOunces": 91
     },
     {
       "userID": 14,
       "date": "2019/08/27",
-      "hoursSlept": 6.1,
-      "sleepQuality": 4
+      "numOunces": 74
     },
     {
       "userID": 15,
       "date": "2019/08/27",
-      "hoursSlept": 5.4,
-      "sleepQuality": 1.2
+      "numOunces": 36
     },
     {
       "userID": 16,
       "date": "2019/08/27",
-      "hoursSlept": 5,
-      "sleepQuality": 1.3
+      "numOunces": 97
     },
     {
       "userID": 17,
       "date": "2019/08/27",
-      "hoursSlept": 6.8,
-      "sleepQuality": 3.9
+      "numOunces": 93
     },
     {
       "userID": 18,
       "date": "2019/08/27",
-      "hoursSlept": 6.2,
-      "sleepQuality": 3.3
+      "numOunces": 65
     },
     {
       "userID": 19,
       "date": "2019/08/27",
-      "hoursSlept": 5.6,
-      "sleepQuality": 3.3
+      "numOunces": 47
     },
     {
       "userID": 20,
       "date": "2019/08/27",
-      "hoursSlept": 9.8,
-      "sleepQuality": 1.8
+      "numOunces": 44
     },
     {
       "userID": 21,
       "date": "2019/08/27",
-      "hoursSlept": 4.6,
-      "sleepQuality": 4.3
+      "numOunces": 52
     },
     {
       "userID": 22,
       "date": "2019/08/27",
-      "hoursSlept": 5.3,
-      "sleepQuality": 2
+      "numOunces": 28
     },
     {
       "userID": 23,
       "date": "2019/08/27",
-      "hoursSlept": 5.5,
-      "sleepQuality": 2.5
+      "numOunces": 89
     },
     {
       "userID": 24,
       "date": "2019/08/27",
-      "hoursSlept": 5.7,
-      "sleepQuality": 3.6
+      "numOunces": 45
     },
     {
       "userID": 25,
       "date": "2019/08/27",
-      "hoursSlept": 8.3,
-      "sleepQuality": 3.1
+      "numOunces": 91
     },
     {
       "userID": 26,
       "date": "2019/08/27",
-      "hoursSlept": 9,
-      "sleepQuality": 2.1
+      "numOunces": 97
     },
     {
       "userID": 27,
       "date": "2019/08/27",
-      "hoursSlept": 4.3,
-      "sleepQuality": 1.2
+      "numOunces": 39
     },
     {
       "userID": 28,
       "date": "2019/08/27",
-      "hoursSlept": 7.4,
-      "sleepQuality": 2.8
+      "numOunces": 93
     },
     {
       "userID": 29,
       "date": "2019/08/27",
-      "hoursSlept": 8.7,
-      "sleepQuality": 2.9
+      "numOunces": 37
     },
     {
       "userID": 30,
       "date": "2019/08/27",
-      "hoursSlept": 9.1,
-      "sleepQuality": 1.6
+      "numOunces": 82
     },
     {
       "userID": 31,
       "date": "2019/08/27",
-      "hoursSlept": 11,
-      "sleepQuality": 4.3
+      "numOunces": 42
     },
     {
       "userID": 32,
       "date": "2019/08/27",
-      "hoursSlept": 10.3,
-      "sleepQuality": 4.9
+      "numOunces": 34
     },
     {
       "userID": 33,
       "date": "2019/08/27",
-      "hoursSlept": 8.4,
-      "sleepQuality": 4.6
+      "numOunces": 57
     },
     {
       "userID": 34,
       "date": "2019/08/27",
-      "hoursSlept": 7.1,
-      "sleepQuality": 4.4
+      "numOunces": 52
     },
     {
       "userID": 35,
       "date": "2019/08/27",
-      "hoursSlept": 7.1,
-      "sleepQuality": 2.7
+      "numOunces": 86
     },
     {
       "userID": 36,
       "date": "2019/08/27",
-      "hoursSlept": 4.5,
-      "sleepQuality": 2.2
+      "numOunces": 81
     },
     {
       "userID": 37,
       "date": "2019/08/27",
-      "hoursSlept": 4.8,
-      "sleepQuality": 4
+      "numOunces": 95
     },
     {
       "userID": 38,
       "date": "2019/08/27",
-      "hoursSlept": 8.6,
-      "sleepQuality": 1.1
+      "numOunces": 98
     },
     {
       "userID": 39,
       "date": "2019/08/27",
-      "hoursSlept": 10.4,
-      "sleepQuality": 4.4
+      "numOunces": 21
     },
     {
       "userID": 40,
       "date": "2019/08/27",
-      "hoursSlept": 6.4,
-      "sleepQuality": 3.6
+      "numOunces": 39
     },
     {
       "userID": 41,
       "date": "2019/08/27",
-      "hoursSlept": 4.8,
-      "sleepQuality": 3.7
+      "numOunces": 27
     },
     {
       "userID": 42,
       "date": "2019/08/27",
-      "hoursSlept": 5,
-      "sleepQuality": 3.2
+      "numOunces": 35
     },
     {
       "userID": 43,
       "date": "2019/08/27",
-      "hoursSlept": 4.8,
-      "sleepQuality": 1.1
+      "numOunces": 45
     },
     {
       "userID": 44,
       "date": "2019/08/27",
-      "hoursSlept": 4.6,
-      "sleepQuality": 4.1
+      "numOunces": 22
     },
     {
       "userID": 45,
       "date": "2019/08/27",
-      "hoursSlept": 7.4,
-      "sleepQuality": 3.5
+      "numOunces": 47
     },
     {
       "userID": 46,
       "date": "2019/08/27",
-      "hoursSlept": 5.7,
-      "sleepQuality": 1.8
+      "numOunces": 32
     },
     {
       "userID": 47,
       "date": "2019/08/27",
-      "hoursSlept": 7.8,
-      "sleepQuality": 2.8
+      "numOunces": 55
     },
     {
       "userID": 48,
       "date": "2019/08/27",
-      "hoursSlept": 9.5,
-      "sleepQuality": 4
+      "numOunces": 47
     },
     {
       "userID": 49,
       "date": "2019/08/27",
-      "hoursSlept": 9.1,
-      "sleepQuality": 1.9
+      "numOunces": 39
     },
     {
       "userID": 50,
       "date": "2019/08/27",
-      "hoursSlept": 7.2,
-      "sleepQuality": 4.4
+      "numOunces": 74
     },
     {
       "userID": 1,
       "date": "2019/08/28",
-      "hoursSlept": 7.9,
-      "sleepQuality": 1.6
+      "numOunces": 37
     },
     {
       "userID": 2,
       "date": "2019/08/28",
-      "hoursSlept": 4.5,
-      "sleepQuality": 3.8
+      "numOunces": 40
     },
     {
       "userID": 3,
       "date": "2019/08/28",
-      "hoursSlept": 10.8,
-      "sleepQuality": 5
+      "numOunces": 35
     },
     {
       "userID": 4,
       "date": "2019/08/28",
-      "hoursSlept": 10.1,
-      "sleepQuality": 1.7
+      "numOunces": 26
     },
     {
       "userID": 5,
       "date": "2019/08/28",
-      "hoursSlept": 5.7,
-      "sleepQuality": 2.3
+      "numOunces": 49
     },
     {
       "userID": 6,
       "date": "2019/08/28",
-      "hoursSlept": 4.5,
-      "sleepQuality": 3.6
+      "numOunces": 24
     },
     {
       "userID": 7,
       "date": "2019/08/28",
-      "hoursSlept": 7.2,
-      "sleepQuality": 4.6
+      "numOunces": 60
     },
     {
       "userID": 8,
       "date": "2019/08/28",
-      "hoursSlept": 7.3,
-      "sleepQuality": 1.2
+      "numOunces": 68
     },
     {
       "userID": 9,
       "date": "2019/08/28",
-      "hoursSlept": 9.9,
-      "sleepQuality": 1.4
+      "numOunces": 94
     },
     {
       "userID": 10,
       "date": "2019/08/28",
-      "hoursSlept": 6,
-      "sleepQuality": 4.5
+      "numOunces": 34
     },
     {
       "userID": 11,
       "date": "2019/08/28",
-      "hoursSlept": 5.9,
-      "sleepQuality": 4.6
+      "numOunces": 95
     },
     {
       "userID": 12,
       "date": "2019/08/28",
-      "hoursSlept": 10,
-      "sleepQuality": 4.6
+      "numOunces": 38
     },
     {
       "userID": 13,
       "date": "2019/08/28",
-      "hoursSlept": 6.5,
-      "sleepQuality": 2.4
+      "numOunces": 77
     },
     {
       "userID": 14,
       "date": "2019/08/28",
-      "hoursSlept": 7.9,
-      "sleepQuality": 5
+      "numOunces": 48
     },
     {
       "userID": 15,
       "date": "2019/08/28",
-      "hoursSlept": 8.5,
-      "sleepQuality": 2.2
+      "numOunces": 78
     },
     {
       "userID": 16,
       "date": "2019/08/28",
-      "hoursSlept": 7,
-      "sleepQuality": 3.3
+      "numOunces": 56
     },
     {
       "userID": 17,
       "date": "2019/08/28",
-      "hoursSlept": 8.4,
-      "sleepQuality": 3.8
+      "numOunces": 92
     },
     {
       "userID": 18,
       "date": "2019/08/28",
-      "hoursSlept": 6,
-      "sleepQuality": 1.7
+      "numOunces": 66
     },
     {
       "userID": 19,
       "date": "2019/08/28",
-      "hoursSlept": 6.3,
-      "sleepQuality": 1.6
+      "numOunces": 32
     },
     {
       "userID": 20,
       "date": "2019/08/28",
-      "hoursSlept": 5.6,
-      "sleepQuality": 3.5
+      "numOunces": 63
     },
     {
       "userID": 21,
       "date": "2019/08/28",
-      "hoursSlept": 10.2,
-      "sleepQuality": 2.9
+      "numOunces": 61
     },
     {
       "userID": 22,
       "date": "2019/08/28",
-      "hoursSlept": 10.5,
-      "sleepQuality": 4.4
+      "numOunces": 50
     },
     {
       "userID": 23,
       "date": "2019/08/28",
-      "hoursSlept": 7.1,
-      "sleepQuality": 3.8
+      "numOunces": 28
     },
     {
       "userID": 24,
       "date": "2019/08/28",
-      "hoursSlept": 7.5,
-      "sleepQuality": 3.3
+      "numOunces": 87
     },
     {
       "userID": 25,
       "date": "2019/08/28",
-      "hoursSlept": 9.4,
-      "sleepQuality": 4.8
+      "numOunces": 65
     },
     {
       "userID": 26,
       "date": "2019/08/28",
-      "hoursSlept": 8.8,
-      "sleepQuality": 2
+      "numOunces": 43
     },
     {
       "userID": 27,
       "date": "2019/08/28",
-      "hoursSlept": 7.6,
-      "sleepQuality": 4.4
+      "numOunces": 99
     },
     {
       "userID": 28,
       "date": "2019/08/28",
-      "hoursSlept": 10.1,
-      "sleepQuality": 4.6
+      "numOunces": 64
     },
     {
       "userID": 29,
       "date": "2019/08/28",
-      "hoursSlept": 9.2,
-      "sleepQuality": 1.9
+      "numOunces": 61
     },
     {
       "userID": 30,
       "date": "2019/08/28",
-      "hoursSlept": 4.2,
-      "sleepQuality": 2.8
+      "numOunces": 63
     },
     {
       "userID": 31,
       "date": "2019/08/28",
-      "hoursSlept": 10,
-      "sleepQuality": 3.6
+      "numOunces": 25
     },
     {
       "userID": 32,
       "date": "2019/08/28",
-      "hoursSlept": 7.4,
-      "sleepQuality": 2.6
+      "numOunces": 76
     },
     {
       "userID": 33,
       "date": "2019/08/28",
-      "hoursSlept": 6,
-      "sleepQuality": 3.6
+      "numOunces": 79
     },
     {
       "userID": 34,
       "date": "2019/08/28",
-      "hoursSlept": 5.2,
-      "sleepQuality": 2.1
+      "numOunces": 76
     },
     {
       "userID": 35,
       "date": "2019/08/28",
-      "hoursSlept": 7.6,
-      "sleepQuality": 4.3
+      "numOunces": 37
     },
     {
       "userID": 36,
       "date": "2019/08/28",
-      "hoursSlept": 4.1,
-      "sleepQuality": 3
+      "numOunces": 32
     },
     {
       "userID": 37,
       "date": "2019/08/28",
-      "hoursSlept": 9.6,
-      "sleepQuality": 4.7
+      "numOunces": 64
     },
     {
       "userID": 38,
       "date": "2019/08/28",
-      "hoursSlept": 5.1,
-      "sleepQuality": 4.5
+      "numOunces": 65
     },
     {
       "userID": 39,
       "date": "2019/08/28",
-      "hoursSlept": 6.3,
-      "sleepQuality": 3.9
+      "numOunces": 59
     },
     {
       "userID": 40,
       "date": "2019/08/28",
-      "hoursSlept": 8.7,
-      "sleepQuality": 4.5
+      "numOunces": 89
     },
     {
       "userID": 41,
       "date": "2019/08/28",
-      "hoursSlept": 9.1,
-      "sleepQuality": 3.3
+      "numOunces": 76
     },
     {
       "userID": 42,
       "date": "2019/08/28",
-      "hoursSlept": 8.1,
-      "sleepQuality": 3.6
+      "numOunces": 28
     },
     {
       "userID": 43,
       "date": "2019/08/28",
-      "hoursSlept": 5.7,
-      "sleepQuality": 4.7
+      "numOunces": 97
     },
     {
       "userID": 44,
       "date": "2019/08/28",
-      "hoursSlept": 6.6,
-      "sleepQuality": 4.4
+      "numOunces": 90
     },
     {
       "userID": 45,
       "date": "2019/08/28",
-      "hoursSlept": 7.7,
-      "sleepQuality": 3.7
+      "numOunces": 37
     },
     {
       "userID": 46,
       "date": "2019/08/28",
-      "hoursSlept": 5.7,
-      "sleepQuality": 2.5
+      "numOunces": 55
     },
     {
       "userID": 47,
       "date": "2019/08/28",
-      "hoursSlept": 6.1,
-      "sleepQuality": 2.1
+      "numOunces": 64
     },
     {
       "userID": 48,
       "date": "2019/08/28",
-      "hoursSlept": 9.8,
-      "sleepQuality": 2.8
+      "numOunces": 65
     },
     {
       "userID": 49,
       "date": "2019/08/28",
-      "hoursSlept": 9,
-      "sleepQuality": 1.3
+      "numOunces": 77
     },
     {
       "userID": 50,
       "date": "2019/08/28",
-      "hoursSlept": 6.2,
-      "sleepQuality": 1
+      "numOunces": 86
     },
     {
       "userID": 1,
       "date": "2019/08/29",
-      "hoursSlept": 9.9,
-      "sleepQuality": 1.6
+      "numOunces": 70
     },
     {
       "userID": 2,
       "date": "2019/08/29",
-      "hoursSlept": 8.8,
-      "sleepQuality": 3.4
+      "numOunces": 75
     },
     {
       "userID": 3,
       "date": "2019/08/29",
-      "hoursSlept": 10.3,
-      "sleepQuality": 1.4
+      "numOunces": 47
     },
     {
       "userID": 4,
       "date": "2019/08/29",
-      "hoursSlept": 6.6,
-      "sleepQuality": 3.2
+      "numOunces": 93
     },
     {
       "userID": 5,
       "date": "2019/08/29",
-      "hoursSlept": 7.9,
-      "sleepQuality": 2.9
+      "numOunces": 87
     },
     {
       "userID": 6,
       "date": "2019/08/29",
-      "hoursSlept": 7,
-      "sleepQuality": 4.9
+      "numOunces": 70
     },
     {
       "userID": 7,
       "date": "2019/08/29",
-      "hoursSlept": 7.2,
-      "sleepQuality": 4.3
+      "numOunces": 72
     },
     {
       "userID": 8,
       "date": "2019/08/29",
-      "hoursSlept": 4.5,
-      "sleepQuality": 4.8
+      "numOunces": 66
     },
     {
       "userID": 9,
       "date": "2019/08/29",
-      "hoursSlept": 4.9,
-      "sleepQuality": 1.3
+      "numOunces": 78
     },
     {
       "userID": 10,
       "date": "2019/08/29",
-      "hoursSlept": 10.2,
-      "sleepQuality": 2
+      "numOunces": 27
     },
     {
       "userID": 11,
       "date": "2019/08/29",
-      "hoursSlept": 7.2,
-      "sleepQuality": 2
+      "numOunces": 45
     },
     {
       "userID": 12,
       "date": "2019/08/29",
-      "hoursSlept": 8.1,
-      "sleepQuality": 2.4
+      "numOunces": 81
     },
     {
       "userID": 13,
       "date": "2019/08/29",
-      "hoursSlept": 4.4,
-      "sleepQuality": 4.5
+      "numOunces": 86
     },
     {
       "userID": 14,
       "date": "2019/08/29",
-      "hoursSlept": 10.6,
-      "sleepQuality": 3.2
+      "numOunces": 63
     },
     {
       "userID": 15,
       "date": "2019/08/29",
-      "hoursSlept": 10.6,
-      "sleepQuality": 3.1
+      "numOunces": 38
     },
     {
       "userID": 16,
       "date": "2019/08/29",
-      "hoursSlept": 9,
-      "sleepQuality": 3.2
+      "numOunces": 69
     },
     {
       "userID": 17,
       "date": "2019/08/29",
-      "hoursSlept": 9,
-      "sleepQuality": 4.4
+      "numOunces": 31
     },
     {
       "userID": 18,
       "date": "2019/08/29",
-      "hoursSlept": 5.3,
-      "sleepQuality": 3.1
+      "numOunces": 91
     },
     {
       "userID": 19,
       "date": "2019/08/29",
-      "hoursSlept": 7,
-      "sleepQuality": 3.3
+      "numOunces": 32
     },
     {
       "userID": 20,
       "date": "2019/08/29",
-      "hoursSlept": 7.3,
-      "sleepQuality": 4
+      "numOunces": 95
     },
     {
       "userID": 21,
       "date": "2019/08/29",
-      "hoursSlept": 5.4,
-      "sleepQuality": 2.6
+      "numOunces": 67
     },
     {
       "userID": 22,
       "date": "2019/08/29",
-      "hoursSlept": 6.4,
-      "sleepQuality": 2.7
+      "numOunces": 61
     },
     {
       "userID": 23,
       "date": "2019/08/29",
-      "hoursSlept": 10.2,
-      "sleepQuality": 3
+      "numOunces": 43
     },
     {
       "userID": 24,
       "date": "2019/08/29",
-      "hoursSlept": 9.8,
-      "sleepQuality": 2
+      "numOunces": 55
     },
     {
       "userID": 25,
       "date": "2019/08/29",
-      "hoursSlept": 5.8,
-      "sleepQuality": 1.1
+      "numOunces": 84
     },
     {
       "userID": 26,
       "date": "2019/08/29",
-      "hoursSlept": 10.6,
-      "sleepQuality": 1.7
+      "numOunces": 63
     },
     {
       "userID": 27,
       "date": "2019/08/29",
-      "hoursSlept": 5.7,
-      "sleepQuality": 1.3
+      "numOunces": 31
     },
     {
       "userID": 28,
       "date": "2019/08/29",
-      "hoursSlept": 7,
-      "sleepQuality": 3
+      "numOunces": 81
     },
     {
       "userID": 29,
       "date": "2019/08/29",
-      "hoursSlept": 5.2,
-      "sleepQuality": 2.2
+      "numOunces": 54
     },
     {
       "userID": 30,
       "date": "2019/08/29",
-      "hoursSlept": 6.1,
-      "sleepQuality": 1
+      "numOunces": 66
     },
     {
       "userID": 31,
       "date": "2019/08/29",
-      "hoursSlept": 5.2,
-      "sleepQuality": 1.3
+      "numOunces": 61
     },
     {
       "userID": 32,
       "date": "2019/08/29",
-      "hoursSlept": 10.4,
-      "sleepQuality": 4.8
+      "numOunces": 38
     },
     {
       "userID": 33,
       "date": "2019/08/29",
-      "hoursSlept": 10.5,
-      "sleepQuality": 3.2
+      "numOunces": 33
     },
     {
       "userID": 34,
       "date": "2019/08/29",
-      "hoursSlept": 8.2,
-      "sleepQuality": 2.6
+      "numOunces": 86
     },
     {
       "userID": 35,
       "date": "2019/08/29",
-      "hoursSlept": 6.3,
-      "sleepQuality": 1.7
+      "numOunces": 68
     },
     {
       "userID": 36,
       "date": "2019/08/29",
-      "hoursSlept": 5.2,
-      "sleepQuality": 3.3
+      "numOunces": 98
     },
     {
       "userID": 37,
       "date": "2019/08/29",
-      "hoursSlept": 6.2,
-      "sleepQuality": 3
+      "numOunces": 67
     },
     {
       "userID": 38,
       "date": "2019/08/29",
-      "hoursSlept": 6.3,
-      "sleepQuality": 3.2
+      "numOunces": 36
     },
     {
       "userID": 39,
       "date": "2019/08/29",
-      "hoursSlept": 5.7,
-      "sleepQuality": 2.6
+      "numOunces": 32
     },
     {
       "userID": 40,
       "date": "2019/08/29",
-      "hoursSlept": 5.8,
-      "sleepQuality": 2.6
+      "numOunces": 64
     },
     {
       "userID": 41,
       "date": "2019/08/29",
-      "hoursSlept": 8.5,
-      "sleepQuality": 4.1
+      "numOunces": 43
     },
     {
       "userID": 42,
       "date": "2019/08/29",
-      "hoursSlept": 4.7,
-      "sleepQuality": 4.7
+      "numOunces": 59
     },
     {
       "userID": 43,
       "date": "2019/08/29",
-      "hoursSlept": 5.6,
-      "sleepQuality": 1.9
+      "numOunces": 38
     },
     {
       "userID": 44,
       "date": "2019/08/29",
-      "hoursSlept": 8,
-      "sleepQuality": 1.6
+      "numOunces": 61
     },
     {
       "userID": 45,
       "date": "2019/08/29",
-      "hoursSlept": 9.2,
-      "sleepQuality": 4.6
+      "numOunces": 80
     },
     {
       "userID": 46,
       "date": "2019/08/29",
-      "hoursSlept": 8.2,
-      "sleepQuality": 4.6
+      "numOunces": 93
     },
     {
       "userID": 47,
       "date": "2019/08/29",
-      "hoursSlept": 7.1,
-      "sleepQuality": 4.2
+      "numOunces": 37
     },
     {
       "userID": 48,
       "date": "2019/08/29",
-      "hoursSlept": 7,
-      "sleepQuality": 1.2
+      "numOunces": 70
     },
     {
       "userID": 49,
       "date": "2019/08/29",
-      "hoursSlept": 6.7,
-      "sleepQuality": 3.7
+      "numOunces": 36
     },
     {
       "userID": 50,
       "date": "2019/08/29",
-      "hoursSlept": 10.3,
-      "sleepQuality": 1.6
+      "numOunces": 48
     },
     {
       "userID": 1,
       "date": "2019/08/30",
-      "hoursSlept": 4.3,
-      "sleepQuality": 1.6
+      "numOunces": 26
     },
     {
       "userID": 2,
       "date": "2019/08/30",
-      "hoursSlept": 7.5,
-      "sleepQuality": 3.3
+      "numOunces": 83
     },
     {
       "userID": 3,
       "date": "2019/08/30",
-      "hoursSlept": 8,
-      "sleepQuality": 3.5
+      "numOunces": 87
     },
     {
       "userID": 4,
       "date": "2019/08/30",
-      "hoursSlept": 9.1,
-      "sleepQuality": 2.9
+      "numOunces": 41
     },
     {
       "userID": 5,
       "date": "2019/08/30",
-      "hoursSlept": 6.2,
-      "sleepQuality": 1.9
+      "numOunces": 97
     },
     {
       "userID": 6,
       "date": "2019/08/30",
-      "hoursSlept": 10,
-      "sleepQuality": 4.6
+      "numOunces": 98
     },
     {
       "userID": 7,
       "date": "2019/08/30",
-      "hoursSlept": 5.5,
-      "sleepQuality": 1.1
+      "numOunces": 35
     },
     {
       "userID": 8,
       "date": "2019/08/30",
-      "hoursSlept": 4,
-      "sleepQuality": 1.1
+      "numOunces": 62
     },
     {
       "userID": 9,
       "date": "2019/08/30",
-      "hoursSlept": 8,
-      "sleepQuality": 1.5
+      "numOunces": 40
     },
     {
       "userID": 10,
       "date": "2019/08/30",
-      "hoursSlept": 5.8,
-      "sleepQuality": 3.5
+      "numOunces": 30
     },
     {
       "userID": 11,
       "date": "2019/08/30",
-      "hoursSlept": 10.2,
-      "sleepQuality": 2.1
+      "numOunces": 85
     },
     {
       "userID": 12,
       "date": "2019/08/30",
-      "hoursSlept": 4.8,
-      "sleepQuality": 1.7
+      "numOunces": 99
     },
     {
       "userID": 13,
       "date": "2019/08/30",
-      "hoursSlept": 4.8,
-      "sleepQuality": 1
+      "numOunces": 92
     },
     {
       "userID": 14,
       "date": "2019/08/30",
-      "hoursSlept": 6.1,
-      "sleepQuality": 2.2
+      "numOunces": 24
     },
     {
       "userID": 15,
       "date": "2019/08/30",
-      "hoursSlept": 8.8,
-      "sleepQuality": 3.8
+      "numOunces": 34
     },
     {
       "userID": 16,
       "date": "2019/08/30",
-      "hoursSlept": 8.9,
-      "sleepQuality": 2.6
+      "numOunces": 77
     },
     {
       "userID": 17,
       "date": "2019/08/30",
-      "hoursSlept": 7.6,
-      "sleepQuality": 2.7
+      "numOunces": 89
     },
     {
       "userID": 18,
       "date": "2019/08/30",
-      "hoursSlept": 10.6,
-      "sleepQuality": 1.8
+      "numOunces": 66
     },
     {
       "userID": 19,
       "date": "2019/08/30",
-      "hoursSlept": 9,
-      "sleepQuality": 3.5
+      "numOunces": 41
     },
     {
       "userID": 20,
       "date": "2019/08/30",
-      "hoursSlept": 7.9,
-      "sleepQuality": 2.5
+      "numOunces": 64
     },
     {
       "userID": 21,
       "date": "2019/08/30",
-      "hoursSlept": 8.9,
-      "sleepQuality": 3
+      "numOunces": 81
     },
     {
       "userID": 22,
       "date": "2019/08/30",
-      "hoursSlept": 5.9,
-      "sleepQuality": 4.9
+      "numOunces": 31
     },
     {
       "userID": 23,
       "date": "2019/08/30",
-      "hoursSlept": 9,
-      "sleepQuality": 4.1
+      "numOunces": 74
     },
     {
       "userID": 24,
       "date": "2019/08/30",
-      "hoursSlept": 5.3,
-      "sleepQuality": 3.2
+      "numOunces": 57
     },
     {
       "userID": 25,
       "date": "2019/08/30",
-      "hoursSlept": 4.2,
-      "sleepQuality": 1.4
+      "numOunces": 87
     },
     {
       "userID": 26,
       "date": "2019/08/30",
-      "hoursSlept": 9.8,
-      "sleepQuality": 4.5
+      "numOunces": 23
     },
     {
       "userID": 27,
       "date": "2019/08/30",
-      "hoursSlept": 7.5,
-      "sleepQuality": 4.2
+      "numOunces": 40
     },
     {
       "userID": 28,
       "date": "2019/08/30",
-      "hoursSlept": 8.2,
-      "sleepQuality": 2
+      "numOunces": 78
     },
     {
       "userID": 29,
       "date": "2019/08/30",
-      "hoursSlept": 5.2,
-      "sleepQuality": 1.4
+      "numOunces": 28
     },
     {
       "userID": 30,
       "date": "2019/08/30",
-      "hoursSlept": 6.4,
-      "sleepQuality": 2.6
+      "numOunces": 81
     },
     {
       "userID": 31,
       "date": "2019/08/30",
-      "hoursSlept": 4.8,
-      "sleepQuality": 1.3
+      "numOunces": 38
     },
     {
       "userID": 32,
       "date": "2019/08/30",
-      "hoursSlept": 7.9,
-      "sleepQuality": 2.4
+      "numOunces": 73
     },
     {
       "userID": 33,
       "date": "2019/08/30",
-      "hoursSlept": 8.3,
-      "sleepQuality": 3.6
+      "numOunces": 100
     },
     {
       "userID": 34,
       "date": "2019/08/30",
-      "hoursSlept": 6.6,
-      "sleepQuality": 3.1
+      "numOunces": 87
     },
     {
       "userID": 35,
       "date": "2019/08/30",
-      "hoursSlept": 10.5,
-      "sleepQuality": 1.9
+      "numOunces": 78
     },
     {
       "userID": 36,
       "date": "2019/08/30",
-      "hoursSlept": 7.5,
-      "sleepQuality": 1.1
+      "numOunces": 83
     },
     {
       "userID": 37,
       "date": "2019/08/30",
-      "hoursSlept": 5.5,
-      "sleepQuality": 1.7
+      "numOunces": 73
     },
     {
       "userID": 38,
       "date": "2019/08/30",
-      "hoursSlept": 4.5,
-      "sleepQuality": 1.7
+      "numOunces": 82
     },
     {
       "userID": 39,
       "date": "2019/08/30",
-      "hoursSlept": 9,
-      "sleepQuality": 1.3
+      "numOunces": 85
     },
     {
       "userID": 40,
       "date": "2019/08/30",
-      "hoursSlept": 9.1,
-      "sleepQuality": 1.7
+      "numOunces": 98
     },
     {
       "userID": 41,
       "date": "2019/08/30",
-      "hoursSlept": 8.9,
-      "sleepQuality": 2.9
+      "numOunces": 88
     },
     {
       "userID": 42,
       "date": "2019/08/30",
-      "hoursSlept": 6.3,
-      "sleepQuality": 4.8
+      "numOunces": 49
     },
     {
       "userID": 43,
       "date": "2019/08/30",
-      "hoursSlept": 10.4,
-      "sleepQuality": 3.3
+      "numOunces": 72
     },
     {
       "userID": 44,
       "date": "2019/08/30",
-      "hoursSlept": 10.1,
-      "sleepQuality": 4.5
+      "numOunces": 57
     },
     {
       "userID": 45,
       "date": "2019/08/30",
-      "hoursSlept": 6.4,
-      "sleepQuality": 3.9
+      "numOunces": 80
     },
     {
       "userID": 46,
       "date": "2019/08/30",
-      "hoursSlept": 6.8,
-      "sleepQuality": 4.2
+      "numOunces": 61
     },
     {
       "userID": 47,
       "date": "2019/08/30",
-      "hoursSlept": 4.6,
-      "sleepQuality": 2.1
+      "numOunces": 84
     },
     {
       "userID": 48,
       "date": "2019/08/30",
-      "hoursSlept": 7.9,
-      "sleepQuality": 3.9
+      "numOunces": 95
     },
     {
       "userID": 49,
       "date": "2019/08/30",
-      "hoursSlept": 10,
-      "sleepQuality": 1.6
+      "numOunces": 82
     },
     {
       "userID": 50,
       "date": "2019/08/30",
-      "hoursSlept": 7.8,
-      "sleepQuality": 3.6
+      "numOunces": 62
     },
     {
       "userID": 1,
       "date": "2019/08/31",
-      "hoursSlept": 7.1,
-      "sleepQuality": 1.9
+      "numOunces": 37
     },
     {
       "userID": 2,
       "date": "2019/08/31",
-      "hoursSlept": 4.9,
-      "sleepQuality": 3.9
+      "numOunces": 64
     },
     {
       "userID": 3,
       "date": "2019/08/31",
-      "hoursSlept": 4.1,
-      "sleepQuality": 1.9
+      "numOunces": 80
     },
     {
       "userID": 4,
       "date": "2019/08/31",
-      "hoursSlept": 10.9,
-      "sleepQuality": 3
+      "numOunces": 91
     },
     {
       "userID": 5,
       "date": "2019/08/31",
-      "hoursSlept": 9.4,
-      "sleepQuality": 4.7
+      "numOunces": 90
     },
     {
       "userID": 6,
       "date": "2019/08/31",
-      "hoursSlept": 10.8,
-      "sleepQuality": 3.6
+      "numOunces": 74
     },
     {
       "userID": 7,
       "date": "2019/08/31",
-      "hoursSlept": 5,
-      "sleepQuality": 3.5
+      "numOunces": 29
     },
     {
       "userID": 8,
       "date": "2019/08/31",
-      "hoursSlept": 8.8,
-      "sleepQuality": 2
+      "numOunces": 84
     },
     {
       "userID": 9,
       "date": "2019/08/31",
-      "hoursSlept": 4.3,
-      "sleepQuality": 4.5
+      "numOunces": 46
     },
     {
       "userID": 10,
       "date": "2019/08/31",
-      "hoursSlept": 10.7,
-      "sleepQuality": 2.3
+      "numOunces": 64
     },
     {
       "userID": 11,
       "date": "2019/08/31",
-      "hoursSlept": 9.9,
-      "sleepQuality": 4.5
+      "numOunces": 91
     },
     {
       "userID": 12,
       "date": "2019/08/31",
-      "hoursSlept": 4.7,
-      "sleepQuality": 3.9
+      "numOunces": 84
     },
     {
       "userID": 13,
       "date": "2019/08/31",
-      "hoursSlept": 4.3,
-      "sleepQuality": 4
+      "numOunces": 85
     },
     {
       "userID": 14,
       "date": "2019/08/31",
-      "hoursSlept": 8,
-      "sleepQuality": 2
+      "numOunces": 55
     },
     {
       "userID": 15,
       "date": "2019/08/31",
-      "hoursSlept": 4.8,
-      "sleepQuality": 3.1
+      "numOunces": 62
     },
     {
       "userID": 16,
       "date": "2019/08/31",
-      "hoursSlept": 4.5,
-      "sleepQuality": 2.7
+      "numOunces": 31
     },
     {
       "userID": 17,
       "date": "2019/08/31",
-      "hoursSlept": 6.7,
-      "sleepQuality": 1.2
+      "numOunces": 74
     },
     {
       "userID": 18,
       "date": "2019/08/31",
-      "hoursSlept": 9.9,
-      "sleepQuality": 4.1
+      "numOunces": 85
     },
     {
       "userID": 19,
       "date": "2019/08/31",
-      "hoursSlept": 7.2,
-      "sleepQuality": 3.9
+      "numOunces": 81
     },
     {
       "userID": 20,
       "date": "2019/08/31",
-      "hoursSlept": 8.3,
-      "sleepQuality": 2.9
+      "numOunces": 42
     },
     {
       "userID": 21,
       "date": "2019/08/31",
-      "hoursSlept": 8.2,
-      "sleepQuality": 2.5
+      "numOunces": 69
     },
     {
       "userID": 22,
       "date": "2019/08/31",
-      "hoursSlept": 4.5,
-      "sleepQuality": 1.2
+      "numOunces": 67
     },
     {
       "userID": 23,
       "date": "2019/08/31",
-      "hoursSlept": 6.2,
-      "sleepQuality": 1.6
+      "numOunces": 98
     },
     {
       "userID": 24,
       "date": "2019/08/31",
-      "hoursSlept": 10.5,
-      "sleepQuality": 3.9
+      "numOunces": 88
     },
     {
       "userID": 25,
       "date": "2019/08/31",
-      "hoursSlept": 9.6,
-      "sleepQuality": 2.8
+      "numOunces": 25
     },
     {
       "userID": 26,
       "date": "2019/08/31",
-      "hoursSlept": 6.6,
-      "sleepQuality": 4.6
+      "numOunces": 77
     },
     {
       "userID": 27,
       "date": "2019/08/31",
-      "hoursSlept": 5.4,
-      "sleepQuality": 1.4
+      "numOunces": 42
     },
     {
       "userID": 28,
       "date": "2019/08/31",
-      "hoursSlept": 10.8,
-      "sleepQuality": 1.2
+      "numOunces": 70
     },
     {
       "userID": 29,
       "date": "2019/08/31",
-      "hoursSlept": 4.7,
-      "sleepQuality": 2.7
+      "numOunces": 79
     },
     {
       "userID": 30,
       "date": "2019/08/31",
-      "hoursSlept": 5.2,
-      "sleepQuality": 1
+      "numOunces": 69
     },
     {
       "userID": 31,
       "date": "2019/08/31",
-      "hoursSlept": 4.6,
-      "sleepQuality": 4.5
+      "numOunces": 52
     },
     {
       "userID": 32,
       "date": "2019/08/31",
-      "hoursSlept": 6.4,
-      "sleepQuality": 4
+      "numOunces": 64
     },
     {
       "userID": 33,
       "date": "2019/08/31",
-      "hoursSlept": 5.1,
-      "sleepQuality": 3.7
+      "numOunces": 98
     },
     {
       "userID": 34,
       "date": "2019/08/31",
-      "hoursSlept": 4.5,
-      "sleepQuality": 1.8
+      "numOunces": 48
     },
     {
       "userID": 35,
       "date": "2019/08/31",
-      "hoursSlept": 7.9,
-      "sleepQuality": 2.4
+      "numOunces": 36
     },
     {
       "userID": 36,
       "date": "2019/08/31",
-      "hoursSlept": 5.2,
-      "sleepQuality": 3.5
+      "numOunces": 33
     },
     {
       "userID": 37,
       "date": "2019/08/31",
-      "hoursSlept": 6.3,
-      "sleepQuality": 1.7
+      "numOunces": 67
     },
     {
       "userID": 38,
       "date": "2019/08/31",
-      "hoursSlept": 9.9,
-      "sleepQuality": 2.6
+      "numOunces": 43
     },
     {
       "userID": 39,
       "date": "2019/08/31",
-      "hoursSlept": 7.4,
-      "sleepQuality": 3.1
+      "numOunces": 69
     },
     {
       "userID": 40,
       "date": "2019/08/31",
-      "hoursSlept": 7.8,
-      "sleepQuality": 4.3
+      "numOunces": 40
     },
     {
       "userID": 41,
       "date": "2019/08/31",
-      "hoursSlept": 9.5,
-      "sleepQuality": 3.4
+      "numOunces": 31
     },
     {
       "userID": 42,
       "date": "2019/08/31",
-      "hoursSlept": 7.3,
-      "sleepQuality": 2.5
+      "numOunces": 36
     },
     {
       "userID": 43,
       "date": "2019/08/31",
-      "hoursSlept": 8.9,
-      "sleepQuality": 4.8
+      "numOunces": 84
     },
     {
       "userID": 44,
       "date": "2019/08/31",
-      "hoursSlept": 10.4,
-      "sleepQuality": 4
+      "numOunces": 74
     },
     {
       "userID": 45,
       "date": "2019/08/31",
-      "hoursSlept": 9.4,
-      "sleepQuality": 4.5
+      "numOunces": 38
     },
     {
       "userID": 46,
       "date": "2019/08/31",
-      "hoursSlept": 5.8,
-      "sleepQuality": 1.7
+      "numOunces": 79
     },
     {
       "userID": 47,
       "date": "2019/08/31",
-      "hoursSlept": 10.9,
-      "sleepQuality": 3.6
+      "numOunces": 49
     },
     {
       "userID": 48,
       "date": "2019/08/31",
-      "hoursSlept": 5.5,
-      "sleepQuality": 4.6
+      "numOunces": 96
     },
     {
       "userID": 49,
       "date": "2019/08/31",
-      "hoursSlept": 10.9,
-      "sleepQuality": 2.4
+      "numOunces": 78
     },
     {
       "userID": 50,
       "date": "2019/08/31",
-      "hoursSlept": 10.1,
-      "sleepQuality": 2.6
+      "numOunces": 62
     },
     {
       "userID": 1,
       "date": "2019/09/01",
-      "hoursSlept": 4.4,
-      "sleepQuality": 2.7
+      "numOunces": 46
     },
     {
       "userID": 2,
       "date": "2019/09/01",
-      "hoursSlept": 7.9,
-      "sleepQuality": 4.7
+      "numOunces": 74
     },
     {
       "userID": 3,
       "date": "2019/09/01",
-      "hoursSlept": 6,
-      "sleepQuality": 2.7
+      "numOunces": 65
     },
     {
       "userID": 4,
       "date": "2019/09/01",
-      "hoursSlept": 9.6,
-      "sleepQuality": 1.3
+      "numOunces": 71
     },
     {
       "userID": 5,
       "date": "2019/09/01",
-      "hoursSlept": 7.2,
-      "sleepQuality": 2.2
+      "numOunces": 50
     },
     {
       "userID": 6,
       "date": "2019/09/01",
-      "hoursSlept": 4.9,
-      "sleepQuality": 4.8
+      "numOunces": 21
     },
     {
       "userID": 7,
       "date": "2019/09/01",
-      "hoursSlept": 6.1,
-      "sleepQuality": 1.1
+      "numOunces": 80
     },
     {
       "userID": 8,
       "date": "2019/09/01",
-      "hoursSlept": 10.7,
-      "sleepQuality": 2.7
+      "numOunces": 26
     },
     {
       "userID": 9,
       "date": "2019/09/01",
-      "hoursSlept": 7.4,
-      "sleepQuality": 4
+      "numOunces": 45
     },
     {
       "userID": 10,
       "date": "2019/09/01",
-      "hoursSlept": 8.9,
-      "sleepQuality": 1.5
+      "numOunces": 92
     },
     {
       "userID": 11,
       "date": "2019/09/01",
-      "hoursSlept": 5.1,
-      "sleepQuality": 5
+      "numOunces": 73
     },
     {
       "userID": 12,
       "date": "2019/09/01",
-      "hoursSlept": 5.2,
-      "sleepQuality": 3.9
+      "numOunces": 86
     },
     {
       "userID": 13,
       "date": "2019/09/01",
-      "hoursSlept": 5.8,
-      "sleepQuality": 2.1
+      "numOunces": 46
     },
     {
       "userID": 14,
       "date": "2019/09/01",
-      "hoursSlept": 10.3,
-      "sleepQuality": 1.2
+      "numOunces": 69
     },
     {
       "userID": 15,
       "date": "2019/09/01",
-      "hoursSlept": 6.9,
-      "sleepQuality": 1.1
+      "numOunces": 97
     },
     {
       "userID": 16,
       "date": "2019/09/01",
-      "hoursSlept": 7.9,
-      "sleepQuality": 4.5
+      "numOunces": 21
     },
     {
       "userID": 17,
       "date": "2019/09/01",
-      "hoursSlept": 9.8,
-      "sleepQuality": 2.3
+      "numOunces": 79
     },
     {
       "userID": 18,
       "date": "2019/09/01",
-      "hoursSlept": 4.1,
-      "sleepQuality": 4.7
+      "numOunces": 42
     },
     {
       "userID": 19,
       "date": "2019/09/01",
-      "hoursSlept": 6.7,
-      "sleepQuality": 2.6
+      "numOunces": 33
     },
     {
       "userID": 20,
       "date": "2019/09/01",
-      "hoursSlept": 5.4,
-      "sleepQuality": 2.9
+      "numOunces": 31
     },
     {
       "userID": 21,
       "date": "2019/09/01",
-      "hoursSlept": 4.2,
-      "sleepQuality": 1.5
+      "numOunces": 89
     },
     {
       "userID": 22,
       "date": "2019/09/01",
-      "hoursSlept": 9.3,
-      "sleepQuality": 3.4
+      "numOunces": 77
     },
     {
       "userID": 23,
       "date": "2019/09/01",
-      "hoursSlept": 8.9,
-      "sleepQuality": 3.6
+      "numOunces": 86
     },
     {
       "userID": 24,
       "date": "2019/09/01",
-      "hoursSlept": 6.2,
-      "sleepQuality": 3.3
+      "numOunces": 98
     },
     {
       "userID": 25,
       "date": "2019/09/01",
-      "hoursSlept": 4.6,
-      "sleepQuality": 4.3
+      "numOunces": 25
     },
     {
       "userID": 26,
       "date": "2019/09/01",
-      "hoursSlept": 8.7,
-      "sleepQuality": 4
+      "numOunces": 88
     },
     {
       "userID": 27,
       "date": "2019/09/01",
-      "hoursSlept": 9.3,
-      "sleepQuality": 3.9
+      "numOunces": 84
     },
     {
       "userID": 28,
       "date": "2019/09/01",
-      "hoursSlept": 6.8,
-      "sleepQuality": 1.5
+      "numOunces": 90
     },
     {
       "userID": 29,
       "date": "2019/09/01",
-      "hoursSlept": 7.5,
-      "sleepQuality": 2.1
+      "numOunces": 27
     },
     {
       "userID": 30,
       "date": "2019/09/01",
-      "hoursSlept": 6.9,
-      "sleepQuality": 5
+      "numOunces": 90
     },
     {
       "userID": 31,
       "date": "2019/09/01",
-      "hoursSlept": 6.9,
-      "sleepQuality": 4.7
+      "numOunces": 60
     },
     {
       "userID": 32,
       "date": "2019/09/01",
-      "hoursSlept": 9.9,
-      "sleepQuality": 2.2
+      "numOunces": 91
     },
     {
       "userID": 33,
       "date": "2019/09/01",
-      "hoursSlept": 10.1,
-      "sleepQuality": 1.4
+      "numOunces": 37
     },
     {
       "userID": 34,
       "date": "2019/09/01",
-      "hoursSlept": 6.4,
-      "sleepQuality": 2
+      "numOunces": 38
     },
     {
       "userID": 35,
       "date": "2019/09/01",
-      "hoursSlept": 10.5,
-      "sleepQuality": 1.5
+      "numOunces": 44
     },
     {
       "userID": 36,
       "date": "2019/09/01",
-      "hoursSlept": 8.7,
-      "sleepQuality": 1.8
+      "numOunces": 61
     },
     {
       "userID": 37,
       "date": "2019/09/01",
-      "hoursSlept": 10.9,
-      "sleepQuality": 2.7
+      "numOunces": 83
     },
     {
       "userID": 38,
       "date": "2019/09/01",
-      "hoursSlept": 8.6,
-      "sleepQuality": 4
+      "numOunces": 36
     },
     {
       "userID": 39,
       "date": "2019/09/01",
-      "hoursSlept": 4.2,
-      "sleepQuality": 1.7
+      "numOunces": 54
     },
     {
       "userID": 40,
       "date": "2019/09/01",
-      "hoursSlept": 10.2,
-      "sleepQuality": 3.3
+      "numOunces": 38
     },
     {
       "userID": 41,
       "date": "2019/09/01",
-      "hoursSlept": 4.1,
-      "sleepQuality": 2.8
+      "numOunces": 23
     },
     {
       "userID": 42,
       "date": "2019/09/01",
-      "hoursSlept": 10.9,
-      "sleepQuality": 2.4
+      "numOunces": 24
     },
     {
       "userID": 43,
       "date": "2019/09/01",
-      "hoursSlept": 10.3,
-      "sleepQuality": 2
+      "numOunces": 51
     },
     {
       "userID": 44,
       "date": "2019/09/01",
-      "hoursSlept": 4.4,
-      "sleepQuality": 4.3
+      "numOunces": 21
     },
     {
       "userID": 45,
       "date": "2019/09/01",
-      "hoursSlept": 6.4,
-      "sleepQuality": 4.2
+      "numOunces": 72
     },
     {
       "userID": 46,
       "date": "2019/09/01",
-      "hoursSlept": 8.7,
-      "sleepQuality": 2
+      "numOunces": 86
     },
     {
       "userID": 47,
       "date": "2019/09/01",
-      "hoursSlept": 8.1,
-      "sleepQuality": 3.5
+      "numOunces": 71
     },
     {
       "userID": 48,
       "date": "2019/09/01",
-      "hoursSlept": 6.7,
-      "sleepQuality": 2.3
+      "numOunces": 60
     },
     {
       "userID": 49,
       "date": "2019/09/01",
-      "hoursSlept": 4.7,
-      "sleepQuality": 2.5
+      "numOunces": 76
     },
     {
       "userID": 50,
       "date": "2019/09/01",
-      "hoursSlept": 10.4,
-      "sleepQuality": 4.9
+      "numOunces": 68
     },
     {
       "userID": 1,
       "date": "2019/09/02",
-      "hoursSlept": 7.7,
-      "sleepQuality": 4.4
+      "numOunces": 64
     },
     {
       "userID": 2,
       "date": "2019/09/02",
-      "hoursSlept": 8.3,
-      "sleepQuality": 3
+      "numOunces": 36
     },
     {
       "userID": 3,
       "date": "2019/09/02",
-      "hoursSlept": 4.3,
-      "sleepQuality": 4.7
+      "numOunces": 28
     },
     {
       "userID": 4,
       "date": "2019/09/02",
-      "hoursSlept": 6.9,
-      "sleepQuality": 1.4
+      "numOunces": 82
     },
     {
       "userID": 5,
       "date": "2019/09/02",
-      "hoursSlept": 4.8,
-      "sleepQuality": 3.3
+      "numOunces": 83
     },
     {
       "userID": 6,
       "date": "2019/09/02",
-      "hoursSlept": 5.9,
-      "sleepQuality": 3.8
+      "numOunces": 75
     },
     {
       "userID": 7,
       "date": "2019/09/02",
-      "hoursSlept": 5.8,
-      "sleepQuality": 3.7
+      "numOunces": 31
     },
     {
       "userID": 8,
       "date": "2019/09/02",
-      "hoursSlept": 10.8,
-      "sleepQuality": 3.9
+      "numOunces": 23
     },
     {
       "userID": 9,
       "date": "2019/09/02",
-      "hoursSlept": 6.1,
-      "sleepQuality": 1.7
+      "numOunces": 48
     },
     {
       "userID": 10,
       "date": "2019/09/02",
-      "hoursSlept": 6.4,
-      "sleepQuality": 1.4
+      "numOunces": 35
     },
     {
       "userID": 11,
       "date": "2019/09/02",
-      "hoursSlept": 9.3,
-      "sleepQuality": 3.3
+      "numOunces": 83
     },
     {
       "userID": 12,
       "date": "2019/09/02",
-      "hoursSlept": 9.2,
-      "sleepQuality": 3.8
+      "numOunces": 83
     },
     {
       "userID": 13,
       "date": "2019/09/02",
-      "hoursSlept": 4.1,
-      "sleepQuality": 2.2
+      "numOunces": 56
     },
     {
       "userID": 14,
       "date": "2019/09/02",
-      "hoursSlept": 7.1,
-      "sleepQuality": 1.7
+      "numOunces": 39
     },
     {
       "userID": 15,
       "date": "2019/09/02",
-      "hoursSlept": 6.5,
-      "sleepQuality": 1.8
+      "numOunces": 29
     },
     {
       "userID": 16,
       "date": "2019/09/02",
-      "hoursSlept": 8,
-      "sleepQuality": 3.6
+      "numOunces": 36
     },
     {
       "userID": 17,
       "date": "2019/09/02",
-      "hoursSlept": 8.5,
-      "sleepQuality": 3.2
+      "numOunces": 64
     },
     {
       "userID": 18,
       "date": "2019/09/02",
-      "hoursSlept": 6.8,
-      "sleepQuality": 3.5
+      "numOunces": 83
     },
     {
       "userID": 19,
       "date": "2019/09/02",
-      "hoursSlept": 7.1,
-      "sleepQuality": 1.5
+      "numOunces": 51
     },
     {
       "userID": 20,
       "date": "2019/09/02",
-      "hoursSlept": 4.1,
-      "sleepQuality": 2.9
+      "numOunces": 33
     },
     {
       "userID": 21,
       "date": "2019/09/02",
-      "hoursSlept": 6.9,
-      "sleepQuality": 2.5
+      "numOunces": 97
     },
     {
       "userID": 22,
       "date": "2019/09/02",
-      "hoursSlept": 10.9,
-      "sleepQuality": 4.3
+      "numOunces": 76
     },
     {
       "userID": 23,
       "date": "2019/09/02",
-      "hoursSlept": 4.1,
-      "sleepQuality": 2.2
+      "numOunces": 57
     },
     {
       "userID": 24,
       "date": "2019/09/02",
-      "hoursSlept": 9.3,
-      "sleepQuality": 2.6
+      "numOunces": 75
     },
     {
       "userID": 25,
       "date": "2019/09/02",
-      "hoursSlept": 7.3,
-      "sleepQuality": 1.1
+      "numOunces": 53
     },
     {
       "userID": 26,
       "date": "2019/09/02",
-      "hoursSlept": 10,
-      "sleepQuality": 2.7
+      "numOunces": 45
     },
     {
       "userID": 27,
       "date": "2019/09/02",
-      "hoursSlept": 6.2,
-      "sleepQuality": 2.2
+      "numOunces": 72
     },
     {
       "userID": 28,
       "date": "2019/09/02",
-      "hoursSlept": 8.1,
-      "sleepQuality": 3.1
+      "numOunces": 53
     },
     {
       "userID": 29,
       "date": "2019/09/02",
-      "hoursSlept": 4.3,
-      "sleepQuality": 1.4
+      "numOunces": 30
     },
     {
       "userID": 30,
       "date": "2019/09/02",
-      "hoursSlept": 10.6,
-      "sleepQuality": 2.5
+      "numOunces": 28
     },
     {
       "userID": 31,
       "date": "2019/09/02",
-      "hoursSlept": 9.8,
-      "sleepQuality": 2.8
+      "numOunces": 93
     },
     {
       "userID": 32,
       "date": "2019/09/02",
-      "hoursSlept": 9.1,
-      "sleepQuality": 1.8
+      "numOunces": 73
     },
     {
       "userID": 33,
       "date": "2019/09/02",
-      "hoursSlept": 7,
-      "sleepQuality": 2.6
+      "numOunces": 21
     },
     {
       "userID": 34,
       "date": "2019/09/02",
-      "hoursSlept": 6.9,
-      "sleepQuality": 4.9
+      "numOunces": 92
     },
     {
       "userID": 35,
       "date": "2019/09/02",
-      "hoursSlept": 6.9,
-      "sleepQuality": 4.7
+      "numOunces": 58
     },
     {
       "userID": 36,
       "date": "2019/09/02",
-      "hoursSlept": 8.8,
-      "sleepQuality": 4
+      "numOunces": 100
     },
     {
       "userID": 37,
       "date": "2019/09/02",
-      "hoursSlept": 6.9,
-      "sleepQuality": 3.3
+      "numOunces": 50
     },
     {
       "userID": 38,
       "date": "2019/09/02",
-      "hoursSlept": 7.3,
-      "sleepQuality": 4.4
+      "numOunces": 72
     },
     {
       "userID": 39,
       "date": "2019/09/02",
-      "hoursSlept": 9.2,
-      "sleepQuality": 2.9
+      "numOunces": 77
     },
     {
       "userID": 40,
       "date": "2019/09/02",
-      "hoursSlept": 9.5,
-      "sleepQuality": 3.6
+      "numOunces": 21
     },
     {
       "userID": 41,
       "date": "2019/09/02",
-      "hoursSlept": 4.9,
-      "sleepQuality": 1.2
+      "numOunces": 50
     },
     {
       "userID": 42,
       "date": "2019/09/02",
-      "hoursSlept": 7.3,
-      "sleepQuality": 4.2
+      "numOunces": 32
     },
     {
       "userID": 43,
       "date": "2019/09/02",
-      "hoursSlept": 5.5,
-      "sleepQuality": 1.1
+      "numOunces": 77
     },
     {
       "userID": 44,
       "date": "2019/09/02",
-      "hoursSlept": 8.3,
-      "sleepQuality": 1
+      "numOunces": 36
     },
     {
       "userID": 45,
       "date": "2019/09/02",
-      "hoursSlept": 7.5,
-      "sleepQuality": 3.9
+      "numOunces": 51
     },
     {
       "userID": 46,
       "date": "2019/09/02",
-      "hoursSlept": 7.5,
-      "sleepQuality": 3.8
+      "numOunces": 75
     },
     {
       "userID": 47,
       "date": "2019/09/02",
-      "hoursSlept": 10.2,
-      "sleepQuality": 2
+      "numOunces": 79
     },
     {
       "userID": 48,
       "date": "2019/09/02",
-      "hoursSlept": 5.8,
-      "sleepQuality": 4.8
+      "numOunces": 98
     },
     {
       "userID": 49,
       "date": "2019/09/02",
-      "hoursSlept": 8.7,
-      "sleepQuality": 1.7
+      "numOunces": 94
     },
     {
       "userID": 50,
       "date": "2019/09/02",
-      "hoursSlept": 10.3,
-      "sleepQuality": 3.6
+      "numOunces": 34
     },
     {
       "userID": 1,
       "date": "2019/09/03",
-      "hoursSlept": 8.3,
-      "sleepQuality": 1.3
+      "numOunces": 28
     },
     {
       "userID": 2,
       "date": "2019/09/03",
-      "hoursSlept": 9.9,
-      "sleepQuality": 3.6
+      "numOunces": 66
     },
     {
       "userID": 3,
       "date": "2019/09/03",
-      "hoursSlept": 9.4,
-      "sleepQuality": 3
+      "numOunces": 60
     },
     {
       "userID": 4,
       "date": "2019/09/03",
-      "hoursSlept": 10.8,
-      "sleepQuality": 1.3
+      "numOunces": 69
     },
     {
       "userID": 5,
       "date": "2019/09/03",
-      "hoursSlept": 10.4,
-      "sleepQuality": 1.1
+      "numOunces": 90
     },
     {
       "userID": 6,
       "date": "2019/09/03",
-      "hoursSlept": 6.7,
-      "sleepQuality": 3.6
+      "numOunces": 38
     },
     {
       "userID": 7,
       "date": "2019/09/03",
-      "hoursSlept": 4.9,
-      "sleepQuality": 4.5
+      "numOunces": 62
     },
     {
       "userID": 8,
       "date": "2019/09/03",
-      "hoursSlept": 7.5,
-      "sleepQuality": 1.5
+      "numOunces": 64
     },
     {
       "userID": 9,
       "date": "2019/09/03",
-      "hoursSlept": 6,
-      "sleepQuality": 4.5
+      "numOunces": 26
     },
     {
       "userID": 10,
       "date": "2019/09/03",
-      "hoursSlept": 9,
-      "sleepQuality": 1.2
+      "numOunces": 53
     },
     {
       "userID": 11,
       "date": "2019/09/03",
-      "hoursSlept": 6.7,
-      "sleepQuality": 2.7
+      "numOunces": 35
     },
     {
       "userID": 12,
       "date": "2019/09/03",
-      "hoursSlept": 6.8,
-      "sleepQuality": 4.1
+      "numOunces": 62
     },
     {
       "userID": 13,
       "date": "2019/09/03",
-      "hoursSlept": 10.3,
-      "sleepQuality": 3.3
+      "numOunces": 76
     },
     {
       "userID": 14,
       "date": "2019/09/03",
-      "hoursSlept": 4.5,
-      "sleepQuality": 3.9
+      "numOunces": 97
     },
     {
       "userID": 15,
       "date": "2019/09/03",
-      "hoursSlept": 5.6,
-      "sleepQuality": 3
+      "numOunces": 88
     },
     {
       "userID": 16,
       "date": "2019/09/03",
-      "hoursSlept": 10.6,
-      "sleepQuality": 4.4
+      "numOunces": 84
     },
     {
       "userID": 17,
       "date": "2019/09/03",
-      "hoursSlept": 7.9,
-      "sleepQuality": 4.9
+      "numOunces": 100
     },
     {
       "userID": 18,
       "date": "2019/09/03",
-      "hoursSlept": 10.6,
-      "sleepQuality": 3.6
+      "numOunces": 84
     },
     {
       "userID": 19,
       "date": "2019/09/03",
-      "hoursSlept": 9.9,
-      "sleepQuality": 3.1
+      "numOunces": 73
     },
     {
       "userID": 20,
       "date": "2019/09/03",
-      "hoursSlept": 9.8,
-      "sleepQuality": 1.6
+      "numOunces": 28
     },
     {
       "userID": 21,
       "date": "2019/09/03",
-      "hoursSlept": 6,
-      "sleepQuality": 2.2
+      "numOunces": 37
     },
     {
       "userID": 22,
       "date": "2019/09/03",
-      "hoursSlept": 5.3,
-      "sleepQuality": 2.5
+      "numOunces": 51
     },
     {
       "userID": 23,
       "date": "2019/09/03",
-      "hoursSlept": 7.7,
-      "sleepQuality": 2.1
+      "numOunces": 31
     },
     {
       "userID": 24,
       "date": "2019/09/03",
-      "hoursSlept": 9.1,
-      "sleepQuality": 3.5
+      "numOunces": 68
     },
     {
       "userID": 25,
       "date": "2019/09/03",
-      "hoursSlept": 8,
-      "sleepQuality": 4.2
+      "numOunces": 29
     },
     {
       "userID": 26,
       "date": "2019/09/03",
-      "hoursSlept": 8.7,
-      "sleepQuality": 3.6
+      "numOunces": 20
     },
     {
       "userID": 27,
       "date": "2019/09/03",
-      "hoursSlept": 9.3,
-      "sleepQuality": 2.6
+      "numOunces": 83
     },
     {
       "userID": 28,
       "date": "2019/09/03",
-      "hoursSlept": 8.4,
-      "sleepQuality": 1.6
+      "numOunces": 54
     },
     {
       "userID": 29,
       "date": "2019/09/03",
-      "hoursSlept": 6,
-      "sleepQuality": 2.2
+      "numOunces": 52
     },
     {
       "userID": 30,
       "date": "2019/09/03",
-      "hoursSlept": 8.7,
-      "sleepQuality": 2.3
+      "numOunces": 68
     },
     {
       "userID": 31,
       "date": "2019/09/03",
-      "hoursSlept": 10,
-      "sleepQuality": 4.5
+      "numOunces": 61
     },
     {
       "userID": 32,
       "date": "2019/09/03",
-      "hoursSlept": 6.3,
-      "sleepQuality": 2.6
+      "numOunces": 59
     },
     {
       "userID": 33,
       "date": "2019/09/03",
-      "hoursSlept": 4.8,
-      "sleepQuality": 4.3
+      "numOunces": 22
     },
     {
       "userID": 34,
       "date": "2019/09/03",
-      "hoursSlept": 6.6,
-      "sleepQuality": 1.1
+      "numOunces": 95
     },
     {
       "userID": 35,
       "date": "2019/09/03",
-      "hoursSlept": 8.3,
-      "sleepQuality": 4.5
+      "numOunces": 71
     },
     {
       "userID": 36,
       "date": "2019/09/03",
-      "hoursSlept": 10.8,
-      "sleepQuality": 4.9
+      "numOunces": 87
     },
     {
       "userID": 37,
       "date": "2019/09/03",
-      "hoursSlept": 8.3,
-      "sleepQuality": 1.7
+      "numOunces": 52
     },
     {
       "userID": 38,
       "date": "2019/09/03",
-      "hoursSlept": 9.5,
-      "sleepQuality": 2
+      "numOunces": 58
     },
     {
       "userID": 39,
       "date": "2019/09/03",
-      "hoursSlept": 6.9,
-      "sleepQuality": 4.2
+      "numOunces": 30
     },
     {
       "userID": 40,
       "date": "2019/09/03",
-      "hoursSlept": 7.9,
-      "sleepQuality": 1.3
+      "numOunces": 31
     },
     {
       "userID": 41,
       "date": "2019/09/03",
-      "hoursSlept": 7,
-      "sleepQuality": 4.9
+      "numOunces": 86
     },
     {
       "userID": 42,
       "date": "2019/09/03",
-      "hoursSlept": 6.5,
-      "sleepQuality": 2.4
+      "numOunces": 61
     },
     {
       "userID": 43,
       "date": "2019/09/03",
-      "hoursSlept": 8.1,
-      "sleepQuality": 1.1
+      "numOunces": 51
     },
     {
       "userID": 44,
       "date": "2019/09/03",
-      "hoursSlept": 10.3,
-      "sleepQuality": 3.2
+      "numOunces": 78
     },
     {
       "userID": 45,
       "date": "2019/09/03",
-      "hoursSlept": 7.3,
-      "sleepQuality": 1.1
+      "numOunces": 62
     },
     {
       "userID": 46,
       "date": "2019/09/03",
-      "hoursSlept": 5.8,
-      "sleepQuality": 1.8
+      "numOunces": 52
     },
     {
       "userID": 47,
       "date": "2019/09/03",
-      "hoursSlept": 6.7,
-      "sleepQuality": 2.8
+      "numOunces": 73
     },
     {
       "userID": 48,
       "date": "2019/09/03",
-      "hoursSlept": 7.4,
-      "sleepQuality": 4.9
+      "numOunces": 61
     },
     {
       "userID": 49,
       "date": "2019/09/03",
-      "hoursSlept": 9.5,
-      "sleepQuality": 2.3
+      "numOunces": 97
     },
     {
       "userID": 50,
       "date": "2019/09/03",
-      "hoursSlept": 9.2,
-      "sleepQuality": 4.4
+      "numOunces": 29
     },
     {
       "userID": 1,
       "date": "2019/09/04",
-      "hoursSlept": 10,
-      "sleepQuality": 4.7
+      "numOunces": 69
     },
     {
       "userID": 2,
       "date": "2019/09/04",
-      "hoursSlept": 6.1,
-      "sleepQuality": 3.8
+      "numOunces": 83
     },
     {
       "userID": 3,
       "date": "2019/09/04",
-      "hoursSlept": 9,
-      "sleepQuality": 2.1
+      "numOunces": 73
     },
     {
       "userID": 4,
       "date": "2019/09/04",
-      "hoursSlept": 4.6,
-      "sleepQuality": 4.3
+      "numOunces": 49
     },
     {
       "userID": 5,
       "date": "2019/09/04",
-      "hoursSlept": 8,
-      "sleepQuality": 3.3
+      "numOunces": 51
     },
     {
       "userID": 6,
       "date": "2019/09/04",
-      "hoursSlept": 6.5,
-      "sleepQuality": 2
+      "numOunces": 34
     },
     {
       "userID": 7,
       "date": "2019/09/04",
-      "hoursSlept": 4.4,
-      "sleepQuality": 4.8
+      "numOunces": 36
     },
     {
       "userID": 8,
       "date": "2019/09/04",
-      "hoursSlept": 5.4,
-      "sleepQuality": 3.1
+      "numOunces": 55
     },
     {
       "userID": 9,
       "date": "2019/09/04",
-      "hoursSlept": 8.1,
-      "sleepQuality": 2.3
+      "numOunces": 59
     },
     {
       "userID": 10,
       "date": "2019/09/04",
-      "hoursSlept": 8.1,
-      "sleepQuality": 4
+      "numOunces": 85
     },
     {
       "userID": 11,
       "date": "2019/09/04",
-      "hoursSlept": 6,
-      "sleepQuality": 2.5
+      "numOunces": 61
     },
     {
       "userID": 12,
       "date": "2019/09/04",
-      "hoursSlept": 9.3,
-      "sleepQuality": 4.3
+      "numOunces": 30
     },
     {
       "userID": 13,
       "date": "2019/09/04",
-      "hoursSlept": 5.4,
-      "sleepQuality": 4.2
+      "numOunces": 43
     },
     {
       "userID": 14,
       "date": "2019/09/04",
-      "hoursSlept": 9.4,
-      "sleepQuality": 1.7
+      "numOunces": 92
     },
     {
       "userID": 15,
       "date": "2019/09/04",
-      "hoursSlept": 10.8,
-      "sleepQuality": 2.4
+      "numOunces": 30
     },
     {
       "userID": 16,
       "date": "2019/09/04",
-      "hoursSlept": 4.4,
-      "sleepQuality": 4
+      "numOunces": 25
     },
     {
       "userID": 17,
       "date": "2019/09/04",
-      "hoursSlept": 9.9,
-      "sleepQuality": 3.3
+      "numOunces": 52
     },
     {
       "userID": 18,
       "date": "2019/09/04",
-      "hoursSlept": 4.5,
-      "sleepQuality": 4.3
+      "numOunces": 100
     },
     {
       "userID": 19,
       "date": "2019/09/04",
-      "hoursSlept": 6.5,
-      "sleepQuality": 2.5
+      "numOunces": 93
     },
     {
       "userID": 20,
       "date": "2019/09/04",
-      "hoursSlept": 10.1,
-      "sleepQuality": 2.1
+      "numOunces": 89
     },
     {
       "userID": 21,
       "date": "2019/09/04",
-      "hoursSlept": 7.4,
-      "sleepQuality": 1.4
+      "numOunces": 71
     },
     {
       "userID": 22,
       "date": "2019/09/04",
-      "hoursSlept": 10.3,
-      "sleepQuality": 1.6
+      "numOunces": 66
     },
     {
       "userID": 23,
       "date": "2019/09/04",
-      "hoursSlept": 10.9,
-      "sleepQuality": 1.7
+      "numOunces": 38
     },
     {
       "userID": 24,
       "date": "2019/09/04",
-      "hoursSlept": 7.6,
-      "sleepQuality": 2.2
+      "numOunces": 45
     },
     {
       "userID": 25,
       "date": "2019/09/04",
-      "hoursSlept": 8.4,
-      "sleepQuality": 1.6
+      "numOunces": 72
     },
     {
       "userID": 26,
       "date": "2019/09/04",
-      "hoursSlept": 8.6,
-      "sleepQuality": 1.4
+      "numOunces": 48
     },
     {
       "userID": 27,
       "date": "2019/09/04",
-      "hoursSlept": 6,
-      "sleepQuality": 4.1
+      "numOunces": 39
     },
     {
       "userID": 28,
       "date": "2019/09/04",
-      "hoursSlept": 7.7,
-      "sleepQuality": 4.7
+      "numOunces": 85
     },
     {
       "userID": 29,
       "date": "2019/09/04",
-      "hoursSlept": 6.1,
-      "sleepQuality": 4.7
+      "numOunces": 68
     },
     {
       "userID": 30,
       "date": "2019/09/04",
-      "hoursSlept": 8.6,
-      "sleepQuality": 1.3
+      "numOunces": 82
     },
     {
       "userID": 31,
       "date": "2019/09/04",
-      "hoursSlept": 5.1,
-      "sleepQuality": 4.5
+      "numOunces": 52
     },
     {
       "userID": 32,
       "date": "2019/09/04",
-      "hoursSlept": 5.1,
-      "sleepQuality": 3.5
+      "numOunces": 86
     },
     {
       "userID": 33,
       "date": "2019/09/04",
-      "hoursSlept": 8.2,
-      "sleepQuality": 1.7
+      "numOunces": 56
     },
     {
       "userID": 34,
       "date": "2019/09/04",
-      "hoursSlept": 5.9,
-      "sleepQuality": 1.3
+      "numOunces": 55
     },
     {
       "userID": 35,
       "date": "2019/09/04",
-      "hoursSlept": 6.5,
-      "sleepQuality": 2.1
+      "numOunces": 28
     },
     {
       "userID": 36,
       "date": "2019/09/04",
-      "hoursSlept": 6.9,
-      "sleepQuality": 2.7
+      "numOunces": 52
     },
     {
       "userID": 37,
       "date": "2019/09/04",
-      "hoursSlept": 5.9,
-      "sleepQuality": 2.5
+      "numOunces": 36
     },
     {
       "userID": 38,
       "date": "2019/09/04",
-      "hoursSlept": 10.3,
-      "sleepQuality": 2.5
+      "numOunces": 94
     },
     {
       "userID": 39,
       "date": "2019/09/04",
-      "hoursSlept": 9.7,
-      "sleepQuality": 4.3
+      "numOunces": 54
     },
     {
       "userID": 40,
       "date": "2019/09/04",
-      "hoursSlept": 4.6,
-      "sleepQuality": 4.6
+      "numOunces": 44
     },
     {
       "userID": 41,
       "date": "2019/09/04",
-      "hoursSlept": 4.4,
-      "sleepQuality": 1.9
+      "numOunces": 82
     },
     {
       "userID": 42,
       "date": "2019/09/04",
-      "hoursSlept": 8.6,
-      "sleepQuality": 2.4
+      "numOunces": 55
     },
     {
       "userID": 43,
       "date": "2019/09/04",
-      "hoursSlept": 9.2,
-      "sleepQuality": 2.3
+      "numOunces": 55
     },
     {
       "userID": 44,
       "date": "2019/09/04",
-      "hoursSlept": 8.7,
-      "sleepQuality": 4.3
+      "numOunces": 51
     },
     {
       "userID": 45,
       "date": "2019/09/04",
-      "hoursSlept": 9.6,
-      "sleepQuality": 3.4
+      "numOunces": 32
     },
     {
       "userID": 46,
       "date": "2019/09/04",
-      "hoursSlept": 9.6,
-      "sleepQuality": 4.6
+      "numOunces": 66
     },
     {
       "userID": 47,
       "date": "2019/09/04",
-      "hoursSlept": 9.5,
-      "sleepQuality": 3.2
+      "numOunces": 41
     },
     {
       "userID": 48,
       "date": "2019/09/04",
-      "hoursSlept": 8.7,
-      "sleepQuality": 3.8
+      "numOunces": 48
     },
     {
       "userID": 49,
       "date": "2019/09/04",
-      "hoursSlept": 8.2,
-      "sleepQuality": 2.4
+      "numOunces": 35
     },
     {
       "userID": 50,
       "date": "2019/09/04",
-      "hoursSlept": 10.8,
-      "sleepQuality": 4.2
+      "numOunces": 77
     },
     {
       "userID": 1,
       "date": "2019/09/05",
-      "hoursSlept": 9.8,
-      "sleepQuality": 3.2
+      "numOunces": 63
     },
     {
       "userID": 2,
       "date": "2019/09/05",
-      "hoursSlept": 5.2,
-      "sleepQuality": 2.8
+      "numOunces": 39
     },
     {
       "userID": 3,
       "date": "2019/09/05",
-      "hoursSlept": 6.1,
-      "sleepQuality": 4.1
+      "numOunces": 39
     },
     {
       "userID": 4,
       "date": "2019/09/05",
-      "hoursSlept": 9.7,
-      "sleepQuality": 4.9
+      "numOunces": 37
     },
     {
       "userID": 5,
       "date": "2019/09/05",
-      "hoursSlept": 7.6,
-      "sleepQuality": 1.2
+      "numOunces": 85
     },
     {
       "userID": 6,
       "date": "2019/09/05",
-      "hoursSlept": 7,
-      "sleepQuality": 2.8
+      "numOunces": 93
     },
     {
       "userID": 7,
       "date": "2019/09/05",
-      "hoursSlept": 9,
-      "sleepQuality": 2.6
+      "numOunces": 35
     },
     {
       "userID": 8,
       "date": "2019/09/05",
-      "hoursSlept": 9.2,
-      "sleepQuality": 2.9
+      "numOunces": 84
     },
     {
       "userID": 9,
       "date": "2019/09/05",
-      "hoursSlept": 8.5,
-      "sleepQuality": 2.3
+      "numOunces": 37
     },
     {
       "userID": 10,
       "date": "2019/09/05",
-      "hoursSlept": 10,
-      "sleepQuality": 1.9
+      "numOunces": 51
     },
     {
       "userID": 11,
       "date": "2019/09/05",
-      "hoursSlept": 6.6,
-      "sleepQuality": 2.9
+      "numOunces": 31
     },
     {
       "userID": 12,
       "date": "2019/09/05",
-      "hoursSlept": 9.2,
-      "sleepQuality": 4.8
+      "numOunces": 27
     },
     {
       "userID": 13,
       "date": "2019/09/05",
-      "hoursSlept": 9.2,
-      "sleepQuality": 2.5
+      "numOunces": 22
     },
     {
       "userID": 14,
       "date": "2019/09/05",
-      "hoursSlept": 7.1,
-      "sleepQuality": 2.8
+      "numOunces": 98
     },
     {
       "userID": 15,
       "date": "2019/09/05",
-      "hoursSlept": 5.8,
-      "sleepQuality": 1.2
+      "numOunces": 29
     },
     {
       "userID": 16,
       "date": "2019/09/05",
-      "hoursSlept": 10.7,
-      "sleepQuality": 2.2
+      "numOunces": 63
     },
     {
       "userID": 17,
       "date": "2019/09/05",
-      "hoursSlept": 10.2,
-      "sleepQuality": 1.5
+      "numOunces": 74
     },
     {
       "userID": 18,
       "date": "2019/09/05",
-      "hoursSlept": 6.7,
-      "sleepQuality": 3.6
+      "numOunces": 95
     },
     {
       "userID": 19,
       "date": "2019/09/05",
-      "hoursSlept": 4,
-      "sleepQuality": 1.6
+      "numOunces": 92
     },
     {
       "userID": 20,
       "date": "2019/09/05",
-      "hoursSlept": 4.4,
-      "sleepQuality": 1.1
+      "numOunces": 78
     },
     {
       "userID": 21,
       "date": "2019/09/05",
-      "hoursSlept": 4.8,
-      "sleepQuality": 3.2
+      "numOunces": 35
     },
     {
       "userID": 22,
       "date": "2019/09/05",
-      "hoursSlept": 6.2,
-      "sleepQuality": 1.7
+      "numOunces": 81
     },
     {
       "userID": 23,
       "date": "2019/09/05",
-      "hoursSlept": 6.3,
-      "sleepQuality": 3.6
+      "numOunces": 41
     },
     {
       "userID": 24,
       "date": "2019/09/05",
-      "hoursSlept": 8.3,
-      "sleepQuality": 2
+      "numOunces": 90
     },
     {
       "userID": 25,
       "date": "2019/09/05",
-      "hoursSlept": 4.8,
-      "sleepQuality": 1.7
+      "numOunces": 78
     },
     {
       "userID": 26,
       "date": "2019/09/05",
-      "hoursSlept": 7.6,
-      "sleepQuality": 2.1
+      "numOunces": 82
     },
     {
       "userID": 27,
       "date": "2019/09/05",
-      "hoursSlept": 10.8,
-      "sleepQuality": 4.5
+      "numOunces": 43
     },
     {
       "userID": 28,
       "date": "2019/09/05",
-      "hoursSlept": 5.3,
-      "sleepQuality": 3.3
+      "numOunces": 80
     },
     {
       "userID": 29,
       "date": "2019/09/05",
-      "hoursSlept": 8.4,
-      "sleepQuality": 1.7
+      "numOunces": 47
     },
     {
       "userID": 30,
       "date": "2019/09/05",
-      "hoursSlept": 6.4,
-      "sleepQuality": 3.8
+      "numOunces": 37
     },
     {
       "userID": 31,
       "date": "2019/09/05",
-      "hoursSlept": 8.4,
-      "sleepQuality": 2.3
+      "numOunces": 21
     },
     {
       "userID": 32,
       "date": "2019/09/05",
-      "hoursSlept": 9.7,
-      "sleepQuality": 3.8
+      "numOunces": 22
     },
     {
       "userID": 33,
       "date": "2019/09/05",
-      "hoursSlept": 4,
-      "sleepQuality": 2.3
+      "numOunces": 40
     },
     {
       "userID": 34,
       "date": "2019/09/05",
-      "hoursSlept": 10.6,
-      "sleepQuality": 4.8
+      "numOunces": 48
     },
     {
       "userID": 35,
       "date": "2019/09/05",
-      "hoursSlept": 8.7,
-      "sleepQuality": 3.3
+      "numOunces": 29
     },
     {
       "userID": 36,
       "date": "2019/09/05",
-      "hoursSlept": 6.2,
-      "sleepQuality": 4.9
+      "numOunces": 24
     },
     {
       "userID": 37,
       "date": "2019/09/05",
-      "hoursSlept": 7.5,
-      "sleepQuality": 4.7
+      "numOunces": 87
     },
     {
       "userID": 38,
       "date": "2019/09/05",
-      "hoursSlept": 10.2,
-      "sleepQuality": 1.2
+      "numOunces": 80
     },
     {
       "userID": 39,
       "date": "2019/09/05",
-      "hoursSlept": 4.7,
-      "sleepQuality": 2.4
+      "numOunces": 51
     },
     {
       "userID": 40,
       "date": "2019/09/05",
-      "hoursSlept": 10.4,
-      "sleepQuality": 3
+      "numOunces": 24
     },
     {
       "userID": 41,
       "date": "2019/09/05",
-      "hoursSlept": 11,
-      "sleepQuality": 3.5
+      "numOunces": 54
     },
     {
       "userID": 42,
       "date": "2019/09/05",
-      "hoursSlept": 9.9,
-      "sleepQuality": 1
+      "numOunces": 47
     },
     {
       "userID": 43,
       "date": "2019/09/05",
-      "hoursSlept": 5,
-      "sleepQuality": 2.9
+      "numOunces": 50
     },
     {
       "userID": 44,
       "date": "2019/09/05",
-      "hoursSlept": 7.8,
-      "sleepQuality": 1.3
+      "numOunces": 39
     },
     {
       "userID": 45,
       "date": "2019/09/05",
-      "hoursSlept": 6.1,
-      "sleepQuality": 2.7
+      "numOunces": 28
     },
     {
       "userID": 46,
       "date": "2019/09/05",
-      "hoursSlept": 11,
-      "sleepQuality": 3.6
+      "numOunces": 89
     },
     {
       "userID": 47,
       "date": "2019/09/05",
-      "hoursSlept": 10.5,
-      "sleepQuality": 2.7
+      "numOunces": 52
     },
     {
       "userID": 48,
       "date": "2019/09/05",
-      "hoursSlept": 10.3,
-      "sleepQuality": 3.6
+      "numOunces": 96
     },
     {
       "userID": 49,
       "date": "2019/09/05",
-      "hoursSlept": 4.6,
-      "sleepQuality": 3.3
+      "numOunces": 59
     },
     {
       "userID": 50,
       "date": "2019/09/05",
-      "hoursSlept": 5.8,
-      "sleepQuality": 2.4
+      "numOunces": 45
     },
     {
       "userID": 1,
       "date": "2019/09/06",
-      "hoursSlept": 9.6,
-      "sleepQuality": 4.7
+      "numOunces": 93
     },
     {
       "userID": 2,
       "date": "2019/09/06",
-      "hoursSlept": 8.1,
-      "sleepQuality": 2
+      "numOunces": 95
     },
     {
       "userID": 3,
       "date": "2019/09/06",
-      "hoursSlept": 10.6,
-      "sleepQuality": 1.7
+      "numOunces": 27
     },
     {
       "userID": 4,
       "date": "2019/09/06",
-      "hoursSlept": 5,
-      "sleepQuality": 3.6
+      "numOunces": 55
     },
     {
       "userID": 5,
       "date": "2019/09/06",
-      "hoursSlept": 9.7,
-      "sleepQuality": 4.7
+      "numOunces": 83
     },
     {
       "userID": 6,
       "date": "2019/09/06",
-      "hoursSlept": 6.8,
-      "sleepQuality": 4
+      "numOunces": 51
     },
     {
       "userID": 7,
       "date": "2019/09/06",
-      "hoursSlept": 6.9,
-      "sleepQuality": 3.1
+      "numOunces": 70
     },
     {
       "userID": 8,
       "date": "2019/09/06",
-      "hoursSlept": 6.5,
-      "sleepQuality": 2.5
+      "numOunces": 67
     },
     {
       "userID": 9,
       "date": "2019/09/06",
-      "hoursSlept": 8.7,
-      "sleepQuality": 2.6
+      "numOunces": 51
     },
     {
       "userID": 10,
       "date": "2019/09/06",
-      "hoursSlept": 9.9,
-      "sleepQuality": 4.7
+      "numOunces": 46
     },
     {
       "userID": 11,
       "date": "2019/09/06",
-      "hoursSlept": 5.6,
-      "sleepQuality": 3.4
+      "numOunces": 60
     },
     {
       "userID": 12,
       "date": "2019/09/06",
-      "hoursSlept": 6.3,
-      "sleepQuality": 1.3
+      "numOunces": 42
     },
     {
       "userID": 13,
       "date": "2019/09/06",
-      "hoursSlept": 10,
-      "sleepQuality": 1.4
+      "numOunces": 39
     },
     {
       "userID": 14,
       "date": "2019/09/06",
-      "hoursSlept": 7.5,
-      "sleepQuality": 2.9
+      "numOunces": 79
     },
     {
       "userID": 15,
       "date": "2019/09/06",
-      "hoursSlept": 9,
-      "sleepQuality": 4.7
+      "numOunces": 29
     },
     {
       "userID": 16,
       "date": "2019/09/06",
-      "hoursSlept": 8.7,
-      "sleepQuality": 2.3
+      "numOunces": 63
     },
     {
       "userID": 17,
       "date": "2019/09/06",
-      "hoursSlept": 4.7,
-      "sleepQuality": 3.2
+      "numOunces": 54
     },
     {
       "userID": 18,
       "date": "2019/09/06",
-      "hoursSlept": 7.4,
-      "sleepQuality": 3.7
+      "numOunces": 88
     },
     {
       "userID": 19,
       "date": "2019/09/06",
-      "hoursSlept": 6.8,
-      "sleepQuality": 2.9
+      "numOunces": 53
     },
     {
       "userID": 20,
       "date": "2019/09/06",
-      "hoursSlept": 4.4,
-      "sleepQuality": 4.5
+      "numOunces": 82
     },
     {
       "userID": 21,
       "date": "2019/09/06",
-      "hoursSlept": 6.8,
-      "sleepQuality": 3.5
+      "numOunces": 93
     },
     {
       "userID": 22,
       "date": "2019/09/06",
-      "hoursSlept": 7.2,
-      "sleepQuality": 2.6
+      "numOunces": 36
     },
     {
       "userID": 23,
       "date": "2019/09/06",
-      "hoursSlept": 8.5,
-      "sleepQuality": 1.4
+      "numOunces": 93
     },
     {
       "userID": 24,
       "date": "2019/09/06",
-      "hoursSlept": 10.1,
-      "sleepQuality": 3.9
+      "numOunces": 25
     },
     {
       "userID": 25,
       "date": "2019/09/06",
-      "hoursSlept": 8,
-      "sleepQuality": 2.1
+      "numOunces": 64
     },
     {
       "userID": 26,
       "date": "2019/09/06",
-      "hoursSlept": 7.1,
-      "sleepQuality": 3.1
+      "numOunces": 70
     },
     {
       "userID": 27,
       "date": "2019/09/06",
-      "hoursSlept": 4.4,
-      "sleepQuality": 3.5
+      "numOunces": 78
     },
     {
       "userID": 28,
       "date": "2019/09/06",
-      "hoursSlept": 6.6,
-      "sleepQuality": 4.7
+      "numOunces": 42
     },
     {
       "userID": 29,
       "date": "2019/09/06",
-      "hoursSlept": 11,
-      "sleepQuality": 3.1
+      "numOunces": 41
     },
     {
       "userID": 30,
       "date": "2019/09/06",
-      "hoursSlept": 6.5,
-      "sleepQuality": 4.6
+      "numOunces": 64
     },
     {
       "userID": 31,
       "date": "2019/09/06",
-      "hoursSlept": 5.7,
-      "sleepQuality": 2.2
+      "numOunces": 59
     },
     {
       "userID": 32,
       "date": "2019/09/06",
-      "hoursSlept": 7.4,
-      "sleepQuality": 3.5
+      "numOunces": 87
     },
     {
       "userID": 33,
       "date": "2019/09/06",
-      "hoursSlept": 6.6,
-      "sleepQuality": 2.4
+      "numOunces": 28
     },
     {
       "userID": 34,
       "date": "2019/09/06",
-      "hoursSlept": 7.7,
-      "sleepQuality": 3.5
+      "numOunces": 26
     },
     {
       "userID": 35,
       "date": "2019/09/06",
-      "hoursSlept": 8,
-      "sleepQuality": 1.6
+      "numOunces": 47
     },
     {
       "userID": 36,
       "date": "2019/09/06",
-      "hoursSlept": 4.5,
-      "sleepQuality": 2.9
+      "numOunces": 95
     },
     {
       "userID": 37,
       "date": "2019/09/06",
-      "hoursSlept": 6.1,
-      "sleepQuality": 3.2
+      "numOunces": 86
     },
     {
       "userID": 38,
       "date": "2019/09/06",
-      "hoursSlept": 6.4,
-      "sleepQuality": 2.1
+      "numOunces": 57
     },
     {
       "userID": 39,
       "date": "2019/09/06",
-      "hoursSlept": 6.1,
-      "sleepQuality": 3.7
+      "numOunces": 94
     },
     {
       "userID": 40,
       "date": "2019/09/06",
-      "hoursSlept": 6.7,
-      "sleepQuality": 3.9
+      "numOunces": 86
     },
     {
       "userID": 41,
       "date": "2019/09/06",
-      "hoursSlept": 6.3,
-      "sleepQuality": 3.7
+      "numOunces": 66
     },
     {
       "userID": 42,
       "date": "2019/09/06",
-      "hoursSlept": 6.4,
-      "sleepQuality": 3.3
+      "numOunces": 47
     },
     {
       "userID": 43,
       "date": "2019/09/06",
-      "hoursSlept": 5.1,
-      "sleepQuality": 2.8
+      "numOunces": 57
     },
     {
       "userID": 44,
       "date": "2019/09/06",
-      "hoursSlept": 8.5,
-      "sleepQuality": 4.4
+      "numOunces": 88
     },
     {
       "userID": 45,
       "date": "2019/09/06",
-      "hoursSlept": 5.8,
-      "sleepQuality": 3.7
+      "numOunces": 65
     },
     {
       "userID": 46,
       "date": "2019/09/06",
-      "hoursSlept": 10.6,
-      "sleepQuality": 1.2
+      "numOunces": 28
     },
     {
       "userID": 47,
       "date": "2019/09/06",
-      "hoursSlept": 5.8,
-      "sleepQuality": 2.5
+      "numOunces": 82
     },
     {
       "userID": 48,
       "date": "2019/09/06",
-      "hoursSlept": 7.5,
-      "sleepQuality": 4.4
+      "numOunces": 23
     },
     {
       "userID": 49,
       "date": "2019/09/06",
-      "hoursSlept": 4.7,
-      "sleepQuality": 3
+      "numOunces": 94
     },
     {
       "userID": 50,
       "date": "2019/09/06",
-      "hoursSlept": 5.2,
-      "sleepQuality": 1.7
+      "numOunces": 21
     },
     {
       "userID": 1,
       "date": "2019/09/07",
-      "hoursSlept": 8.6,
-      "sleepQuality": 3
+      "numOunces": 47
     },
     {
       "userID": 2,
       "date": "2019/09/07",
-      "hoursSlept": 5.7,
-      "sleepQuality": 1.9
+      "numOunces": 84
     },
     {
       "userID": 3,
       "date": "2019/09/07",
-      "hoursSlept": 8.6,
-      "sleepQuality": 2.8
+      "numOunces": 47
     },
     {
       "userID": 4,
       "date": "2019/09/07",
-      "hoursSlept": 4.6,
-      "sleepQuality": 2.9
+      "numOunces": 54
     },
     {
       "userID": 5,
       "date": "2019/09/07",
-      "hoursSlept": 4.6,
-      "sleepQuality": 1.2
+      "numOunces": 93
     },
     {
       "userID": 6,
       "date": "2019/09/07",
-      "hoursSlept": 4.3,
-      "sleepQuality": 1.3
+      "numOunces": 38
     },
     {
       "userID": 7,
       "date": "2019/09/07",
-      "hoursSlept": 5.3,
-      "sleepQuality": 5
+      "numOunces": 96
     },
     {
       "userID": 8,
       "date": "2019/09/07",
-      "hoursSlept": 10.8,
-      "sleepQuality": 3.1
+      "numOunces": 77
     },
     {
       "userID": 9,
       "date": "2019/09/07",
-      "hoursSlept": 6.6,
-      "sleepQuality": 2.6
+      "numOunces": 88
     },
     {
       "userID": 10,
       "date": "2019/09/07",
-      "hoursSlept": 10.6,
-      "sleepQuality": 4.4
+      "numOunces": 100
     },
     {
       "userID": 11,
       "date": "2019/09/07",
-      "hoursSlept": 7.9,
-      "sleepQuality": 2.4
+      "numOunces": 29
     },
     {
       "userID": 12,
       "date": "2019/09/07",
-      "hoursSlept": 10.1,
-      "sleepQuality": 1.1
+      "numOunces": 28
     },
     {
       "userID": 13,
       "date": "2019/09/07",
-      "hoursSlept": 6.1,
-      "sleepQuality": 2.2
+      "numOunces": 67
     },
     {
       "userID": 14,
       "date": "2019/09/07",
-      "hoursSlept": 6.8,
-      "sleepQuality": 1.7
+      "numOunces": 41
     },
     {
       "userID": 15,
       "date": "2019/09/07",
-      "hoursSlept": 5.7,
-      "sleepQuality": 3.5
+      "numOunces": 55
     },
     {
       "userID": 16,
       "date": "2019/09/07",
-      "hoursSlept": 5.5,
-      "sleepQuality": 4
+      "numOunces": 46
     },
     {
       "userID": 17,
       "date": "2019/09/07",
-      "hoursSlept": 7.5,
-      "sleepQuality": 2.3
+      "numOunces": 61
     },
     {
       "userID": 18,
       "date": "2019/09/07",
-      "hoursSlept": 5.9,
-      "sleepQuality": 2.7
+      "numOunces": 34
     },
     {
       "userID": 19,
       "date": "2019/09/07",
-      "hoursSlept": 10.6,
-      "sleepQuality": 2.8
+      "numOunces": 62
     },
     {
       "userID": 20,
       "date": "2019/09/07",
-      "hoursSlept": 9.2,
-      "sleepQuality": 2
+      "numOunces": 75
     },
     {
       "userID": 21,
       "date": "2019/09/07",
-      "hoursSlept": 5.3,
-      "sleepQuality": 3.2
+      "numOunces": 67
     },
     {
       "userID": 22,
       "date": "2019/09/07",
-      "hoursSlept": 10.1,
-      "sleepQuality": 2.9
+      "numOunces": 45
     },
     {
       "userID": 23,
       "date": "2019/09/07",
-      "hoursSlept": 9.7,
-      "sleepQuality": 3.7
+      "numOunces": 45
     },
     {
       "userID": 24,
       "date": "2019/09/07",
-      "hoursSlept": 8.6,
-      "sleepQuality": 3
+      "numOunces": 63
     },
     {
       "userID": 25,
       "date": "2019/09/07",
-      "hoursSlept": 7,
-      "sleepQuality": 3.1
+      "numOunces": 62
     },
     {
       "userID": 26,
       "date": "2019/09/07",
-      "hoursSlept": 8.9,
-      "sleepQuality": 3.3
+      "numOunces": 85
     },
     {
       "userID": 27,
       "date": "2019/09/07",
-      "hoursSlept": 8.2,
-      "sleepQuality": 1.2
+      "numOunces": 81
     },
     {
       "userID": 28,
       "date": "2019/09/07",
-      "hoursSlept": 7.8,
-      "sleepQuality": 3
+      "numOunces": 92
     },
     {
       "userID": 29,
       "date": "2019/09/07",
-      "hoursSlept": 9.8,
-      "sleepQuality": 2.3
+      "numOunces": 73
     },
     {
       "userID": 30,
       "date": "2019/09/07",
-      "hoursSlept": 8.8,
-      "sleepQuality": 4.5
+      "numOunces": 73
     },
     {
       "userID": 31,
       "date": "2019/09/07",
-      "hoursSlept": 5.1,
-      "sleepQuality": 4.5
+      "numOunces": 64
     },
     {
       "userID": 32,
       "date": "2019/09/07",
-      "hoursSlept": 7.8,
-      "sleepQuality": 1.8
+      "numOunces": 55
     },
     {
       "userID": 33,
       "date": "2019/09/07",
-      "hoursSlept": 7.5,
-      "sleepQuality": 4.8
+      "numOunces": 77
     },
     {
       "userID": 34,
       "date": "2019/09/07",
-      "hoursSlept": 4.9,
-      "sleepQuality": 3.8
+      "numOunces": 87
     },
     {
       "userID": 35,
       "date": "2019/09/07",
-      "hoursSlept": 4,
-      "sleepQuality": 3
+      "numOunces": 52
     },
     {
       "userID": 36,
       "date": "2019/09/07",
-      "hoursSlept": 10.3,
-      "sleepQuality": 1.1
+      "numOunces": 56
     },
     {
       "userID": 37,
       "date": "2019/09/07",
-      "hoursSlept": 9,
-      "sleepQuality": 4.4
+      "numOunces": 79
     },
     {
       "userID": 38,
       "date": "2019/09/07",
-      "hoursSlept": 4.7,
-      "sleepQuality": 1.3
+      "numOunces": 91
     },
     {
       "userID": 39,
       "date": "2019/09/07",
-      "hoursSlept": 10.5,
-      "sleepQuality": 2
+      "numOunces": 99
     },
     {
       "userID": 40,
       "date": "2019/09/07",
-      "hoursSlept": 8.2,
-      "sleepQuality": 2.3
+      "numOunces": 95
     },
     {
       "userID": 41,
       "date": "2019/09/07",
-      "hoursSlept": 4,
-      "sleepQuality": 4.7
+      "numOunces": 47
     },
     {
       "userID": 42,
       "date": "2019/09/07",
-      "hoursSlept": 5.3,
-      "sleepQuality": 4.2
+      "numOunces": 26
     },
     {
       "userID": 43,
       "date": "2019/09/07",
-      "hoursSlept": 4.8,
-      "sleepQuality": 2.9
+      "numOunces": 77
     },
     {
       "userID": 44,
       "date": "2019/09/07",
-      "hoursSlept": 8,
-      "sleepQuality": 1.7
+      "numOunces": 65
     },
     {
       "userID": 45,
       "date": "2019/09/07",
-      "hoursSlept": 4.6,
-      "sleepQuality": 1.3
+      "numOunces": 82
     },
     {
       "userID": 46,
       "date": "2019/09/07",
-      "hoursSlept": 9,
-      "sleepQuality": 2.6
+      "numOunces": 93
     },
     {
       "userID": 47,
       "date": "2019/09/07",
-      "hoursSlept": 10.4,
-      "sleepQuality": 4
+      "numOunces": 49
     },
     {
       "userID": 48,
       "date": "2019/09/07",
-      "hoursSlept": 6.9,
-      "sleepQuality": 3.2
+      "numOunces": 74
     },
     {
       "userID": 49,
       "date": "2019/09/07",
-      "hoursSlept": 10.6,
-      "sleepQuality": 4.1
+      "numOunces": 51
     },
     {
       "userID": 50,
       "date": "2019/09/07",
-      "hoursSlept": 8.1,
-      "sleepQuality": 2.6
+      "numOunces": 95
     },
     {
       "userID": 1,
       "date": "2019/09/08",
-      "hoursSlept": 10.1,
-      "sleepQuality": 2.8
+      "numOunces": 83
     },
     {
       "userID": 2,
       "date": "2019/09/08",
-      "hoursSlept": 5.7,
-      "sleepQuality": 4.9
+      "numOunces": 25
     },
     {
       "userID": 3,
       "date": "2019/09/08",
-      "hoursSlept": 7.9,
-      "sleepQuality": 4.5
+      "numOunces": 64
     },
     {
       "userID": 4,
       "date": "2019/09/08",
-      "hoursSlept": 9.9,
-      "sleepQuality": 4.7
+      "numOunces": 76
     },
     {
       "userID": 5,
       "date": "2019/09/08",
-      "hoursSlept": 7.2,
-      "sleepQuality": 3.8
+      "numOunces": 51
     },
     {
       "userID": 6,
       "date": "2019/09/08",
-      "hoursSlept": 4.7,
-      "sleepQuality": 4.5
+      "numOunces": 23
     },
     {
       "userID": 7,
       "date": "2019/09/08",
-      "hoursSlept": 5,
-      "sleepQuality": 4.8
+      "numOunces": 74
     },
     {
       "userID": 8,
       "date": "2019/09/08",
-      "hoursSlept": 8.3,
-      "sleepQuality": 4.6
+      "numOunces": 23
     },
     {
       "userID": 9,
       "date": "2019/09/08",
-      "hoursSlept": 5.2,
-      "sleepQuality": 4.2
+      "numOunces": 74
     },
     {
       "userID": 10,
       "date": "2019/09/08",
-      "hoursSlept": 7.7,
-      "sleepQuality": 3.9
+      "numOunces": 89
     },
     {
       "userID": 11,
       "date": "2019/09/08",
-      "hoursSlept": 4.8,
-      "sleepQuality": 3.3
+      "numOunces": 44
     },
     {
       "userID": 12,
       "date": "2019/09/08",
-      "hoursSlept": 7,
-      "sleepQuality": 1.7
+      "numOunces": 51
     },
     {
       "userID": 13,
       "date": "2019/09/08",
-      "hoursSlept": 10.9,
-      "sleepQuality": 2.2
+      "numOunces": 61
     },
     {
       "userID": 14,
       "date": "2019/09/08",
-      "hoursSlept": 8.6,
-      "sleepQuality": 2.7
+      "numOunces": 42
     },
     {
       "userID": 15,
       "date": "2019/09/08",
-      "hoursSlept": 5.3,
-      "sleepQuality": 3.9
+      "numOunces": 38
     },
     {
       "userID": 16,
       "date": "2019/09/08",
-      "hoursSlept": 10.8,
-      "sleepQuality": 1.2
+      "numOunces": 46
     },
     {
       "userID": 17,
       "date": "2019/09/08",
-      "hoursSlept": 6.4,
-      "sleepQuality": 4.2
+      "numOunces": 45
     },
     {
       "userID": 18,
       "date": "2019/09/08",
-      "hoursSlept": 7.2,
-      "sleepQuality": 2.5
+      "numOunces": 42
     },
     {
       "userID": 19,
       "date": "2019/09/08",
-      "hoursSlept": 7.1,
-      "sleepQuality": 3.8
+      "numOunces": 84
     },
     {
       "userID": 20,
       "date": "2019/09/08",
-      "hoursSlept": 8,
-      "sleepQuality": 2.2
+      "numOunces": 89
     },
     {
       "userID": 21,
       "date": "2019/09/08",
-      "hoursSlept": 9.2,
-      "sleepQuality": 3
+      "numOunces": 39
     },
     {
       "userID": 22,
       "date": "2019/09/08",
-      "hoursSlept": 9.6,
-      "sleepQuality": 2.7
+      "numOunces": 75
     },
     {
       "userID": 23,
       "date": "2019/09/08",
-      "hoursSlept": 8.4,
-      "sleepQuality": 2.5
+      "numOunces": 49
     },
     {
       "userID": 24,
       "date": "2019/09/08",
-      "hoursSlept": 10.8,
-      "sleepQuality": 1.3
+      "numOunces": 36
     },
     {
       "userID": 25,
       "date": "2019/09/08",
-      "hoursSlept": 6,
-      "sleepQuality": 3.8
+      "numOunces": 27
     },
     {
       "userID": 26,
       "date": "2019/09/08",
-      "hoursSlept": 7.8,
-      "sleepQuality": 1
+      "numOunces": 85
     },
     {
       "userID": 27,
       "date": "2019/09/08",
-      "hoursSlept": 7.5,
-      "sleepQuality": 1.3
+      "numOunces": 55
     },
     {
       "userID": 28,
       "date": "2019/09/08",
-      "hoursSlept": 5.8,
-      "sleepQuality": 2.3
+      "numOunces": 77
     },
     {
       "userID": 29,
       "date": "2019/09/08",
-      "hoursSlept": 6.7,
-      "sleepQuality": 2.2
+      "numOunces": 20
     },
     {
       "userID": 30,
       "date": "2019/09/08",
-      "hoursSlept": 9.3,
-      "sleepQuality": 3.9
+      "numOunces": 61
     },
     {
       "userID": 31,
       "date": "2019/09/08",
-      "hoursSlept": 7.8,
-      "sleepQuality": 4.1
+      "numOunces": 23
     },
     {
       "userID": 32,
       "date": "2019/09/08",
-      "hoursSlept": 8.6,
-      "sleepQuality": 3.6
+      "numOunces": 83
     },
     {
       "userID": 33,
       "date": "2019/09/08",
-      "hoursSlept": 5.6,
-      "sleepQuality": 3.4
+      "numOunces": 98
     },
     {
       "userID": 34,
       "date": "2019/09/08",
-      "hoursSlept": 6.8,
-      "sleepQuality": 1.1
+      "numOunces": 77
     },
     {
       "userID": 35,
       "date": "2019/09/08",
-      "hoursSlept": 8.2,
-      "sleepQuality": 3.3
+      "numOunces": 74
     },
     {
       "userID": 36,
       "date": "2019/09/08",
-      "hoursSlept": 4.7,
-      "sleepQuality": 3.5
+      "numOunces": 75
     },
     {
       "userID": 37,
       "date": "2019/09/08",
-      "hoursSlept": 5.4,
-      "sleepQuality": 4.3
+      "numOunces": 26
     },
     {
       "userID": 38,
       "date": "2019/09/08",
-      "hoursSlept": 8.3,
-      "sleepQuality": 3.3
+      "numOunces": 82
     },
     {
       "userID": 39,
       "date": "2019/09/08",
-      "hoursSlept": 8.6,
-      "sleepQuality": 3.3
+      "numOunces": 90
     },
     {
       "userID": 40,
       "date": "2019/09/08",
-      "hoursSlept": 9.4,
-      "sleepQuality": 1.2
+      "numOunces": 73
     },
     {
       "userID": 41,
       "date": "2019/09/08",
-      "hoursSlept": 10.6,
-      "sleepQuality": 3.1
+      "numOunces": 63
     },
     {
       "userID": 42,
       "date": "2019/09/08",
-      "hoursSlept": 8.2,
-      "sleepQuality": 1.4
+      "numOunces": 37
     },
     {
       "userID": 43,
       "date": "2019/09/08",
-      "hoursSlept": 9.4,
-      "sleepQuality": 4.3
+      "numOunces": 76
     },
     {
       "userID": 44,
       "date": "2019/09/08",
-      "hoursSlept": 8.9,
-      "sleepQuality": 1.7
+      "numOunces": 90
     },
     {
       "userID": 45,
       "date": "2019/09/08",
-      "hoursSlept": 4.5,
-      "sleepQuality": 1.7
+      "numOunces": 44
     },
     {
       "userID": 46,
       "date": "2019/09/08",
-      "hoursSlept": 9.8,
-      "sleepQuality": 2.4
+      "numOunces": 24
     },
     {
       "userID": 47,
       "date": "2019/09/08",
-      "hoursSlept": 9.8,
-      "sleepQuality": 3.9
+      "numOunces": 90
     },
     {
       "userID": 48,
       "date": "2019/09/08",
-      "hoursSlept": 9.8,
-      "sleepQuality": 3.7
+      "numOunces": 92
     },
     {
       "userID": 49,
       "date": "2019/09/08",
-      "hoursSlept": 5.9,
-      "sleepQuality": 2.9
+      "numOunces": 71
     },
     {
       "userID": 50,
       "date": "2019/09/08",
-      "hoursSlept": 4.7,
-      "sleepQuality": 4.5
+      "numOunces": 39
     },
     {
       "userID": 1,
       "date": "2019/09/09",
-      "hoursSlept": 7.3,
-      "sleepQuality": 4.8
+      "numOunces": 92
     },
     {
       "userID": 2,
       "date": "2019/09/09",
-      "hoursSlept": 7.8,
-      "sleepQuality": 3.7
+      "numOunces": 96
     },
     {
       "userID": 3,
       "date": "2019/09/09",
-      "hoursSlept": 5.5,
-      "sleepQuality": 2.9
+      "numOunces": 63
     },
     {
       "userID": 4,
       "date": "2019/09/09",
-      "hoursSlept": 6.5,
-      "sleepQuality": 2
+      "numOunces": 81
     },
     {
       "userID": 5,
       "date": "2019/09/09",
-      "hoursSlept": 8.1,
-      "sleepQuality": 3.2
+      "numOunces": 82
     },
     {
       "userID": 6,
       "date": "2019/09/09",
-      "hoursSlept": 9.5,
-      "sleepQuality": 3.4
+      "numOunces": 64
     },
     {
       "userID": 7,
       "date": "2019/09/09",
-      "hoursSlept": 8.2,
-      "sleepQuality": 3.7
+      "numOunces": 74
     },
     {
       "userID": 8,
       "date": "2019/09/09",
-      "hoursSlept": 6.7,
-      "sleepQuality": 3.5
+      "numOunces": 97
     },
     {
       "userID": 9,
       "date": "2019/09/09",
-      "hoursSlept": 6.1,
-      "sleepQuality": 2.7
+      "numOunces": 100
     },
     {
       "userID": 10,
       "date": "2019/09/09",
-      "hoursSlept": 9.6,
-      "sleepQuality": 2.5
+      "numOunces": 66
     },
     {
       "userID": 11,
       "date": "2019/09/09",
-      "hoursSlept": 7.1,
-      "sleepQuality": 1.6
+      "numOunces": 51
     },
     {
       "userID": 12,
       "date": "2019/09/09",
-      "hoursSlept": 10.6,
-      "sleepQuality": 4.5
+      "numOunces": 48
     },
     {
       "userID": 13,
       "date": "2019/09/09",
-      "hoursSlept": 8,
-      "sleepQuality": 3.9
+      "numOunces": 37
     },
     {
       "userID": 14,
       "date": "2019/09/09",
-      "hoursSlept": 10.3,
-      "sleepQuality": 2.6
+      "numOunces": 48
     },
     {
       "userID": 15,
       "date": "2019/09/09",
-      "hoursSlept": 7.9,
-      "sleepQuality": 1.4
+      "numOunces": 100
     },
     {
       "userID": 16,
       "date": "2019/09/09",
-      "hoursSlept": 7.3,
-      "sleepQuality": 1.4
+      "numOunces": 31
     },
     {
       "userID": 17,
       "date": "2019/09/09",
-      "hoursSlept": 10.5,
-      "sleepQuality": 2
+      "numOunces": 41
     },
     {
       "userID": 18,
       "date": "2019/09/09",
-      "hoursSlept": 5.3,
-      "sleepQuality": 4.5
+      "numOunces": 47
     },
     {
       "userID": 19,
       "date": "2019/09/09",
-      "hoursSlept": 4.3,
-      "sleepQuality": 1.1
+      "numOunces": 97
     },
     {
       "userID": 20,
       "date": "2019/09/09",
-      "hoursSlept": 9,
-      "sleepQuality": 3.7
+      "numOunces": 43
     },
     {
       "userID": 21,
       "date": "2019/09/09",
-      "hoursSlept": 7.6,
-      "sleepQuality": 2.9
+      "numOunces": 40
     },
     {
       "userID": 22,
       "date": "2019/09/09",
-      "hoursSlept": 6.8,
-      "sleepQuality": 4.8
+      "numOunces": 29
     },
     {
       "userID": 23,
       "date": "2019/09/09",
-      "hoursSlept": 5.5,
-      "sleepQuality": 1.9
+      "numOunces": 22
     },
     {
       "userID": 24,
       "date": "2019/09/09",
-      "hoursSlept": 8.5,
-      "sleepQuality": 4.3
+      "numOunces": 41
     },
     {
       "userID": 25,
       "date": "2019/09/09",
-      "hoursSlept": 10.4,
-      "sleepQuality": 4.7
+      "numOunces": 28
     },
     {
       "userID": 26,
       "date": "2019/09/09",
-      "hoursSlept": 8.9,
-      "sleepQuality": 3.3
+      "numOunces": 72
     },
     {
       "userID": 27,
       "date": "2019/09/09",
-      "hoursSlept": 8.2,
-      "sleepQuality": 4.8
+      "numOunces": 45
     },
     {
       "userID": 28,
       "date": "2019/09/09",
-      "hoursSlept": 8.5,
-      "sleepQuality": 3.4
+      "numOunces": 96
     },
     {
       "userID": 29,
       "date": "2019/09/09",
-      "hoursSlept": 8.4,
-      "sleepQuality": 3.9
+      "numOunces": 98
     },
     {
       "userID": 30,
       "date": "2019/09/09",
-      "hoursSlept": 5.7,
-      "sleepQuality": 4.8
+      "numOunces": 57
     },
     {
       "userID": 31,
       "date": "2019/09/09",
-      "hoursSlept": 8,
-      "sleepQuality": 2.9
+      "numOunces": 22
     },
     {
       "userID": 32,
       "date": "2019/09/09",
-      "hoursSlept": 6.4,
-      "sleepQuality": 3.1
+      "numOunces": 43
     },
     {
       "userID": 33,
       "date": "2019/09/09",
-      "hoursSlept": 4.1,
-      "sleepQuality": 2.3
+      "numOunces": 50
     },
     {
       "userID": 34,
       "date": "2019/09/09",
-      "hoursSlept": 5.5,
-      "sleepQuality": 1
+      "numOunces": 29
     },
     {
       "userID": 35,
       "date": "2019/09/09",
-      "hoursSlept": 7.7,
-      "sleepQuality": 1.4
+      "numOunces": 94
     },
     {
       "userID": 36,
       "date": "2019/09/09",
-      "hoursSlept": 6.3,
-      "sleepQuality": 3.5
+      "numOunces": 62
     },
     {
       "userID": 37,
       "date": "2019/09/09",
-      "hoursSlept": 10.5,
-      "sleepQuality": 1.5
+      "numOunces": 83
     },
     {
       "userID": 38,
       "date": "2019/09/09",
-      "hoursSlept": 6.5,
-      "sleepQuality": 2.9
+      "numOunces": 37
     },
     {
       "userID": 39,
       "date": "2019/09/09",
-      "hoursSlept": 9.8,
-      "sleepQuality": 2.9
+      "numOunces": 42
     },
     {
       "userID": 40,
       "date": "2019/09/09",
-      "hoursSlept": 5.5,
-      "sleepQuality": 3.6
+      "numOunces": 33
     },
     {
       "userID": 41,
       "date": "2019/09/09",
-      "hoursSlept": 5.2,
-      "sleepQuality": 1.2
+      "numOunces": 32
     },
     {
       "userID": 42,
       "date": "2019/09/09",
-      "hoursSlept": 8.1,
-      "sleepQuality": 3.4
+      "numOunces": 37
     },
     {
       "userID": 43,
       "date": "2019/09/09",
-      "hoursSlept": 8.1,
-      "sleepQuality": 2.5
+      "numOunces": 68
     },
     {
       "userID": 44,
       "date": "2019/09/09",
-      "hoursSlept": 8.9,
-      "sleepQuality": 3.1
+      "numOunces": 56
     },
     {
       "userID": 45,
       "date": "2019/09/09",
-      "hoursSlept": 4.5,
-      "sleepQuality": 2
+      "numOunces": 56
     },
     {
       "userID": 46,
       "date": "2019/09/09",
-      "hoursSlept": 5.1,
-      "sleepQuality": 1.1
+      "numOunces": 37
     },
     {
       "userID": 47,
       "date": "2019/09/09",
-      "hoursSlept": 5.2,
-      "sleepQuality": 4.2
+      "numOunces": 33
     },
     {
       "userID": 48,
       "date": "2019/09/09",
-      "hoursSlept": 6,
-      "sleepQuality": 4.1
+      "numOunces": 94
     },
     {
       "userID": 49,
       "date": "2019/09/09",
-      "hoursSlept": 7.7,
-      "sleepQuality": 4.7
+      "numOunces": 27
     },
     {
       "userID": 50,
       "date": "2019/09/09",
-      "hoursSlept": 4.5,
-      "sleepQuality": 4.6
+      "numOunces": 40
     },
     {
       "userID": 1,
       "date": "2019/09/10",
-      "hoursSlept": 5.1,
-      "sleepQuality": 4.7
+      "numOunces": 96
     },
     {
       "userID": 2,
       "date": "2019/09/10",
-      "hoursSlept": 9.4,
-      "sleepQuality": 1.7
+      "numOunces": 80
     },
     {
       "userID": 3,
       "date": "2019/09/10",
-      "hoursSlept": 7.8,
-      "sleepQuality": 2.7
+      "numOunces": 41
     },
     {
       "userID": 4,
       "date": "2019/09/10",
-      "hoursSlept": 7.3,
-      "sleepQuality": 3.5
+      "numOunces": 56
     },
     {
       "userID": 5,
       "date": "2019/09/10",
-      "hoursSlept": 6.4,
-      "sleepQuality": 3.5
+      "numOunces": 98
     },
     {
       "userID": 6,
       "date": "2019/09/10",
-      "hoursSlept": 8.8,
-      "sleepQuality": 1.8
+      "numOunces": 38
     },
     {
       "userID": 7,
       "date": "2019/09/10",
-      "hoursSlept": 5.8,
-      "sleepQuality": 3.6
+      "numOunces": 85
     },
     {
       "userID": 8,
       "date": "2019/09/10",
-      "hoursSlept": 6.9,
-      "sleepQuality": 3
+      "numOunces": 49
     },
     {
       "userID": 9,
       "date": "2019/09/10",
-      "hoursSlept": 6.7,
-      "sleepQuality": 1
+      "numOunces": 79
     },
     {
       "userID": 10,
       "date": "2019/09/10",
-      "hoursSlept": 5.4,
-      "sleepQuality": 2.5
+      "numOunces": 80
     },
     {
       "userID": 11,
       "date": "2019/09/10",
-      "hoursSlept": 7.9,
-      "sleepQuality": 4
+      "numOunces": 31
     },
     {
       "userID": 12,
       "date": "2019/09/10",
-      "hoursSlept": 8.3,
-      "sleepQuality": 3.1
+      "numOunces": 98
     },
     {
       "userID": 13,
       "date": "2019/09/10",
-      "hoursSlept": 7.9,
-      "sleepQuality": 3.2
+      "numOunces": 85
     },
     {
       "userID": 14,
       "date": "2019/09/10",
-      "hoursSlept": 8.4,
-      "sleepQuality": 3.5
+      "numOunces": 29
     },
     {
       "userID": 15,
       "date": "2019/09/10",
-      "hoursSlept": 7.2,
-      "sleepQuality": 4.9
+      "numOunces": 45
     },
     {
       "userID": 16,
       "date": "2019/09/10",
-      "hoursSlept": 7.9,
-      "sleepQuality": 2.3
+      "numOunces": 100
     },
     {
       "userID": 17,
       "date": "2019/09/10",
-      "hoursSlept": 4.8,
-      "sleepQuality": 3.3
+      "numOunces": 72
     },
     {
       "userID": 18,
       "date": "2019/09/10",
-      "hoursSlept": 6.2,
-      "sleepQuality": 4.7
+      "numOunces": 97
     },
     {
       "userID": 19,
       "date": "2019/09/10",
-      "hoursSlept": 6.8,
-      "sleepQuality": 2.5
+      "numOunces": 99
     },
     {
       "userID": 20,
       "date": "2019/09/10",
-      "hoursSlept": 8.3,
-      "sleepQuality": 4.3
+      "numOunces": 86
     },
     {
       "userID": 21,
       "date": "2019/09/10",
-      "hoursSlept": 9.6,
-      "sleepQuality": 1.1
+      "numOunces": 77
     },
     {
       "userID": 22,
       "date": "2019/09/10",
-      "hoursSlept": 6.4,
-      "sleepQuality": 2.7
+      "numOunces": 72
     },
     {
       "userID": 23,
       "date": "2019/09/10",
-      "hoursSlept": 6.1,
-      "sleepQuality": 1.6
+      "numOunces": 62
     },
     {
       "userID": 24,
       "date": "2019/09/10",
-      "hoursSlept": 9.6,
-      "sleepQuality": 1.4
+      "numOunces": 80
     },
     {
       "userID": 25,
       "date": "2019/09/10",
-      "hoursSlept": 6.2,
-      "sleepQuality": 2.7
+      "numOunces": 92
     },
     {
       "userID": 26,
       "date": "2019/09/10",
-      "hoursSlept": 4.5,
-      "sleepQuality": 4.3
+      "numOunces": 63
     },
     {
       "userID": 27,
       "date": "2019/09/10",
-      "hoursSlept": 4.8,
-      "sleepQuality": 1.2
+      "numOunces": 50
     },
     {
       "userID": 28,
       "date": "2019/09/10",
-      "hoursSlept": 5.5,
-      "sleepQuality": 2.2
+      "numOunces": 89
     },
     {
       "userID": 29,
       "date": "2019/09/10",
-      "hoursSlept": 6.1,
-      "sleepQuality": 2.4
+      "numOunces": 94
     },
     {
       "userID": 30,
       "date": "2019/09/10",
-      "hoursSlept": 7.6,
-      "sleepQuality": 2.5
+      "numOunces": 27
     },
     {
       "userID": 31,
       "date": "2019/09/10",
-      "hoursSlept": 6.2,
-      "sleepQuality": 4.5
+      "numOunces": 73
     },
     {
       "userID": 32,
       "date": "2019/09/10",
-      "hoursSlept": 9.2,
-      "sleepQuality": 1.5
+      "numOunces": 25
     },
     {
       "userID": 33,
       "date": "2019/09/10",
-      "hoursSlept": 9.4,
-      "sleepQuality": 1.6
+      "numOunces": 58
     },
     {
       "userID": 34,
       "date": "2019/09/10",
-      "hoursSlept": 5.2,
-      "sleepQuality": 1
+      "numOunces": 79
     },
     {
       "userID": 35,
       "date": "2019/09/10",
-      "hoursSlept": 9.7,
-      "sleepQuality": 2
+      "numOunces": 49
     },
     {
       "userID": 36,
       "date": "2019/09/10",
-      "hoursSlept": 9.4,
-      "sleepQuality": 4.7
+      "numOunces": 69
     },
     {
       "userID": 37,
       "date": "2019/09/10",
-      "hoursSlept": 6.3,
-      "sleepQuality": 4.8
+      "numOunces": 46
     },
     {
       "userID": 38,
       "date": "2019/09/10",
-      "hoursSlept": 9.7,
-      "sleepQuality": 2.8
+      "numOunces": 34
     },
     {
       "userID": 39,
       "date": "2019/09/10",
-      "hoursSlept": 6.4,
-      "sleepQuality": 3.5
+      "numOunces": 29
     },
     {
       "userID": 40,
       "date": "2019/09/10",
-      "hoursSlept": 9.9,
-      "sleepQuality": 2.4
+      "numOunces": 69
     },
     {
       "userID": 41,
       "date": "2019/09/10",
-      "hoursSlept": 9.7,
-      "sleepQuality": 4.8
+      "numOunces": 37
     },
     {
       "userID": 42,
       "date": "2019/09/10",
-      "hoursSlept": 4.3,
-      "sleepQuality": 2.7
+      "numOunces": 56
     },
     {
       "userID": 43,
       "date": "2019/09/10",
-      "hoursSlept": 4.2,
-      "sleepQuality": 2.6
+      "numOunces": 20
     },
     {
       "userID": 44,
       "date": "2019/09/10",
-      "hoursSlept": 5.8,
-      "sleepQuality": 1.8
+      "numOunces": 24
     },
     {
       "userID": 45,
       "date": "2019/09/10",
-      "hoursSlept": 4.8,
-      "sleepQuality": 1.4
+      "numOunces": 86
     },
     {
       "userID": 46,
       "date": "2019/09/10",
-      "hoursSlept": 7.9,
-      "sleepQuality": 2.9
+      "numOunces": 52
     },
     {
       "userID": 47,
       "date": "2019/09/10",
-      "hoursSlept": 4.6,
-      "sleepQuality": 1.3
+      "numOunces": 46
     },
     {
       "userID": 48,
       "date": "2019/09/10",
-      "hoursSlept": 7.7,
-      "sleepQuality": 2.4
+      "numOunces": 50
     },
     {
       "userID": 49,
       "date": "2019/09/10",
-      "hoursSlept": 9.5,
-      "sleepQuality": 1.3
+      "numOunces": 95
     },
     {
       "userID": 50,
       "date": "2019/09/10",
-      "hoursSlept": 8.2,
-      "sleepQuality": 4.9
+      "numOunces": 34
     },
     {
       "userID": 1,
       "date": "2019/09/11",
-      "hoursSlept": 8.6,
-      "sleepQuality": 3.7
+      "numOunces": 100
     },
     {
       "userID": 2,
       "date": "2019/09/11",
-      "hoursSlept": 9.4,
-      "sleepQuality": 4.1
+      "numOunces": 99
     },
     {
       "userID": 3,
       "date": "2019/09/11",
-      "hoursSlept": 7.6,
-      "sleepQuality": 4.5
+      "numOunces": 22
     },
     {
       "userID": 4,
       "date": "2019/09/11",
-      "hoursSlept": 4.8,
-      "sleepQuality": 3.7
+      "numOunces": 90
     },
     {
       "userID": 5,
       "date": "2019/09/11",
-      "hoursSlept": 9.6,
-      "sleepQuality": 3.9
+      "numOunces": 21
     },
     {
       "userID": 6,
       "date": "2019/09/11",
-      "hoursSlept": 5.7,
-      "sleepQuality": 4.8
+      "numOunces": 22
     },
     {
       "userID": 7,
       "date": "2019/09/11",
-      "hoursSlept": 9.2,
-      "sleepQuality": 4.3
+      "numOunces": 80
     },
     {
       "userID": 8,
       "date": "2019/09/11",
-      "hoursSlept": 6.3,
-      "sleepQuality": 3.3
+      "numOunces": 22
     },
     {
       "userID": 9,
       "date": "2019/09/11",
-      "hoursSlept": 5.3,
-      "sleepQuality": 2.3
+      "numOunces": 81
     },
     {
       "userID": 10,
       "date": "2019/09/11",
-      "hoursSlept": 5.9,
-      "sleepQuality": 3.1
+      "numOunces": 69
     },
     {
       "userID": 11,
       "date": "2019/09/11",
-      "hoursSlept": 10,
-      "sleepQuality": 1.6
+      "numOunces": 73
     },
     {
       "userID": 12,
       "date": "2019/09/11",
-      "hoursSlept": 7.3,
-      "sleepQuality": 1
+      "numOunces": 81
     },
     {
       "userID": 13,
       "date": "2019/09/11",
-      "hoursSlept": 7,
-      "sleepQuality": 2.8
+      "numOunces": 26
     },
     {
       "userID": 14,
       "date": "2019/09/11",
-      "hoursSlept": 10.1,
-      "sleepQuality": 1.5
+      "numOunces": 53
     },
     {
       "userID": 15,
       "date": "2019/09/11",
-      "hoursSlept": 5.3,
-      "sleepQuality": 3.6
+      "numOunces": 75
     },
     {
       "userID": 16,
       "date": "2019/09/11",
-      "hoursSlept": 6.8,
-      "sleepQuality": 1.6
+      "numOunces": 47
     },
     {
       "userID": 17,
       "date": "2019/09/11",
-      "hoursSlept": 5.7,
-      "sleepQuality": 1
+      "numOunces": 80
     },
     {
       "userID": 18,
       "date": "2019/09/11",
-      "hoursSlept": 10.9,
-      "sleepQuality": 2.6
+      "numOunces": 66
     },
     {
       "userID": 19,
       "date": "2019/09/11",
-      "hoursSlept": 4.2,
-      "sleepQuality": 1.3
+      "numOunces": 27
     },
     {
       "userID": 20,
       "date": "2019/09/11",
-      "hoursSlept": 5.4,
-      "sleepQuality": 1.8
+      "numOunces": 57
     },
     {
       "userID": 21,
       "date": "2019/09/11",
-      "hoursSlept": 9.1,
-      "sleepQuality": 2
+      "numOunces": 82
     },
     {
       "userID": 22,
       "date": "2019/09/11",
-      "hoursSlept": 4.4,
-      "sleepQuality": 1.5
+      "numOunces": 74
     },
     {
       "userID": 23,
       "date": "2019/09/11",
-      "hoursSlept": 5.2,
-      "sleepQuality": 2.3
+      "numOunces": 48
     },
     {
       "userID": 24,
       "date": "2019/09/11",
-      "hoursSlept": 4,
-      "sleepQuality": 5
+      "numOunces": 32
     },
     {
       "userID": 25,
       "date": "2019/09/11",
-      "hoursSlept": 9.1,
-      "sleepQuality": 2.3
+      "numOunces": 63
     },
     {
       "userID": 26,
       "date": "2019/09/11",
-      "hoursSlept": 9.8,
-      "sleepQuality": 2.2
+      "numOunces": 60
     },
     {
       "userID": 27,
       "date": "2019/09/11",
-      "hoursSlept": 4.1,
-      "sleepQuality": 1.7
+      "numOunces": 39
     },
     {
       "userID": 28,
       "date": "2019/09/11",
-      "hoursSlept": 10.6,
-      "sleepQuality": 4.9
+      "numOunces": 90
     },
     {
       "userID": 29,
       "date": "2019/09/11",
-      "hoursSlept": 5.8,
-      "sleepQuality": 2.1
+      "numOunces": 23
     },
     {
       "userID": 30,
       "date": "2019/09/11",
-      "hoursSlept": 6.1,
-      "sleepQuality": 3.3
+      "numOunces": 21
     },
     {
       "userID": 31,
       "date": "2019/09/11",
-      "hoursSlept": 10.5,
-      "sleepQuality": 3
+      "numOunces": 31
     },
     {
       "userID": 32,
       "date": "2019/09/11",
-      "hoursSlept": 5.5,
-      "sleepQuality": 1.2
+      "numOunces": 99
     },
     {
       "userID": 33,
       "date": "2019/09/11",
-      "hoursSlept": 7.5,
-      "sleepQuality": 3.2
+      "numOunces": 99
     },
     {
       "userID": 34,
       "date": "2019/09/11",
-      "hoursSlept": 7,
-      "sleepQuality": 2.4
+      "numOunces": 68
     },
     {
       "userID": 35,
       "date": "2019/09/11",
-      "hoursSlept": 8.8,
-      "sleepQuality": 4.5
+      "numOunces": 20
     },
     {
       "userID": 36,
       "date": "2019/09/11",
-      "hoursSlept": 4.6,
-      "sleepQuality": 4.7
+      "numOunces": 22
     },
     {
       "userID": 37,
       "date": "2019/09/11",
-      "hoursSlept": 4.5,
-      "sleepQuality": 2.3
+      "numOunces": 38
     },
     {
       "userID": 38,
       "date": "2019/09/11",
-      "hoursSlept": 9.3,
-      "sleepQuality": 4.2
+      "numOunces": 53
     },
     {
       "userID": 39,
       "date": "2019/09/11",
-      "hoursSlept": 6.7,
-      "sleepQuality": 3.4
+      "numOunces": 72
     },
     {
       "userID": 40,
       "date": "2019/09/11",
-      "hoursSlept": 8.8,
-      "sleepQuality": 1.2
+      "numOunces": 67
     },
     {
       "userID": 41,
       "date": "2019/09/11",
-      "hoursSlept": 7,
-      "sleepQuality": 4.7
+      "numOunces": 59
     },
     {
       "userID": 42,
       "date": "2019/09/11",
-      "hoursSlept": 6.1,
-      "sleepQuality": 3.8
+      "numOunces": 98
     },
     {
       "userID": 43,
       "date": "2019/09/11",
-      "hoursSlept": 4.8,
-      "sleepQuality": 4.7
+      "numOunces": 69
     },
     {
       "userID": 44,
       "date": "2019/09/11",
-      "hoursSlept": 9.3,
-      "sleepQuality": 3.8
+      "numOunces": 67
     },
     {
       "userID": 45,
       "date": "2019/09/11",
-      "hoursSlept": 8.3,
-      "sleepQuality": 4.7
+      "numOunces": 68
     },
     {
       "userID": 46,
       "date": "2019/09/11",
-      "hoursSlept": 6.7,
-      "sleepQuality": 1.1
+      "numOunces": 55
     },
     {
       "userID": 47,
       "date": "2019/09/11",
-      "hoursSlept": 4.1,
-      "sleepQuality": 2.6
+      "numOunces": 67
     },
     {
       "userID": 48,
       "date": "2019/09/11",
-      "hoursSlept": 9.3,
-      "sleepQuality": 4
+      "numOunces": 68
     },
     {
       "userID": 49,
       "date": "2019/09/11",
-      "hoursSlept": 7,
-      "sleepQuality": 2.9
+      "numOunces": 83
     },
     {
       "userID": 50,
       "date": "2019/09/11",
-      "hoursSlept": 7.5,
-      "sleepQuality": 1.9
+      "numOunces": 80
     },
     {
       "userID": 1,
       "date": "2019/09/12",
-      "hoursSlept": 10.5,
-      "sleepQuality": 1.8
+      "numOunces": 60
     },
     {
       "userID": 2,
       "date": "2019/09/12",
-      "hoursSlept": 6.9,
-      "sleepQuality": 4.8
+      "numOunces": 66
     },
     {
       "userID": 3,
       "date": "2019/09/12",
-      "hoursSlept": 5,
-      "sleepQuality": 1.7
+      "numOunces": 32
     },
     {
       "userID": 4,
       "date": "2019/09/12",
-      "hoursSlept": 5.3,
-      "sleepQuality": 3.1
+      "numOunces": 35
     },
     {
       "userID": 5,
       "date": "2019/09/12",
-      "hoursSlept": 8.4,
-      "sleepQuality": 3.2
+      "numOunces": 65
     },
     {
       "userID": 6,
       "date": "2019/09/12",
-      "hoursSlept": 7.9,
-      "sleepQuality": 2.5
+      "numOunces": 46
     },
     {
       "userID": 7,
       "date": "2019/09/12",
-      "hoursSlept": 5.2,
-      "sleepQuality": 1.7
+      "numOunces": 88
     },
     {
       "userID": 8,
       "date": "2019/09/12",
-      "hoursSlept": 6.9,
-      "sleepQuality": 2.5
+      "numOunces": 78
     },
     {
       "userID": 9,
       "date": "2019/09/12",
-      "hoursSlept": 4.4,
-      "sleepQuality": 3.7
+      "numOunces": 42
     },
     {
       "userID": 10,
       "date": "2019/09/12",
-      "hoursSlept": 7.4,
-      "sleepQuality": 1.4
+      "numOunces": 55
     },
     {
       "userID": 11,
       "date": "2019/09/12",
-      "hoursSlept": 8.8,
-      "sleepQuality": 3.4
+      "numOunces": 73
     },
     {
       "userID": 12,
       "date": "2019/09/12",
-      "hoursSlept": 5.2,
-      "sleepQuality": 3.6
+      "numOunces": 50
     },
     {
       "userID": 13,
       "date": "2019/09/12",
-      "hoursSlept": 10.2,
-      "sleepQuality": 4.4
+      "numOunces": 73
     },
     {
       "userID": 14,
       "date": "2019/09/12",
-      "hoursSlept": 6.1,
-      "sleepQuality": 1.5
+      "numOunces": 81
     },
     {
       "userID": 15,
       "date": "2019/09/12",
-      "hoursSlept": 10.3,
-      "sleepQuality": 4
+      "numOunces": 56
     },
     {
       "userID": 16,
       "date": "2019/09/12",
-      "hoursSlept": 5.4,
-      "sleepQuality": 1
+      "numOunces": 92
     },
     {
       "userID": 17,
       "date": "2019/09/12",
-      "hoursSlept": 9.1,
-      "sleepQuality": 3.5
+      "numOunces": 95
     },
     {
       "userID": 18,
       "date": "2019/09/12",
-      "hoursSlept": 9.8,
-      "sleepQuality": 4.7
+      "numOunces": 77
     },
     {
       "userID": 19,
       "date": "2019/09/12",
-      "hoursSlept": 9,
-      "sleepQuality": 3.4
+      "numOunces": 29
     },
     {
       "userID": 20,
       "date": "2019/09/12",
-      "hoursSlept": 8.6,
-      "sleepQuality": 2.5
+      "numOunces": 26
     },
     {
       "userID": 21,
       "date": "2019/09/12",
-      "hoursSlept": 9,
-      "sleepQuality": 4.6
+      "numOunces": 35
     },
     {
       "userID": 22,
       "date": "2019/09/12",
-      "hoursSlept": 8.2,
-      "sleepQuality": 1.6
+      "numOunces": 50
     },
     {
       "userID": 23,
       "date": "2019/09/12",
-      "hoursSlept": 9,
-      "sleepQuality": 1.9
+      "numOunces": 79
     },
     {
       "userID": 24,
       "date": "2019/09/12",
-      "hoursSlept": 7.7,
-      "sleepQuality": 1.1
+      "numOunces": 78
     },
     {
       "userID": 25,
       "date": "2019/09/12",
-      "hoursSlept": 9.3,
-      "sleepQuality": 2.4
+      "numOunces": 59
     },
     {
       "userID": 26,
       "date": "2019/09/12",
-      "hoursSlept": 9.6,
-      "sleepQuality": 4.2
+      "numOunces": 90
     },
     {
       "userID": 27,
       "date": "2019/09/12",
-      "hoursSlept": 9.3,
-      "sleepQuality": 1.3
+      "numOunces": 40
     },
     {
       "userID": 28,
       "date": "2019/09/12",
-      "hoursSlept": 4.3,
-      "sleepQuality": 1.2
+      "numOunces": 77
     },
     {
       "userID": 29,
       "date": "2019/09/12",
-      "hoursSlept": 4.5,
-      "sleepQuality": 3.5
+      "numOunces": 71
     },
     {
       "userID": 30,
       "date": "2019/09/12",
-      "hoursSlept": 9.3,
-      "sleepQuality": 1.7
+      "numOunces": 29
     },
     {
       "userID": 31,
       "date": "2019/09/12",
-      "hoursSlept": 7.5,
-      "sleepQuality": 3
+      "numOunces": 59
     },
     {
       "userID": 32,
       "date": "2019/09/12",
-      "hoursSlept": 9.2,
-      "sleepQuality": 1.6
+      "numOunces": 39
     },
     {
       "userID": 33,
       "date": "2019/09/12",
-      "hoursSlept": 5.2,
-      "sleepQuality": 3.4
+      "numOunces": 46
     },
     {
       "userID": 34,
       "date": "2019/09/12",
-      "hoursSlept": 8.6,
-      "sleepQuality": 1.7
+      "numOunces": 86
     },
     {
       "userID": 35,
       "date": "2019/09/12",
-      "hoursSlept": 6.4,
-      "sleepQuality": 1.5
+      "numOunces": 63
     },
     {
       "userID": 36,
       "date": "2019/09/12",
-      "hoursSlept": 9.9,
-      "sleepQuality": 1
+      "numOunces": 27
     },
     {
       "userID": 37,
       "date": "2019/09/12",
-      "hoursSlept": 7.4,
-      "sleepQuality": 2.2
+      "numOunces": 54
     },
     {
       "userID": 38,
       "date": "2019/09/12",
-      "hoursSlept": 8,
-      "sleepQuality": 5
+      "numOunces": 26
     },
     {
       "userID": 39,
       "date": "2019/09/12",
-      "hoursSlept": 9.7,
-      "sleepQuality": 2
+      "numOunces": 47
     },
     {
       "userID": 40,
       "date": "2019/09/12",
-      "hoursSlept": 10.8,
-      "sleepQuality": 4.4
+      "numOunces": 83
     },
     {
       "userID": 41,
       "date": "2019/09/12",
-      "hoursSlept": 5.1,
-      "sleepQuality": 4.1
+      "numOunces": 39
     },
     {
       "userID": 42,
       "date": "2019/09/12",
-      "hoursSlept": 7.5,
-      "sleepQuality": 3.5
+      "numOunces": 51
     },
     {
       "userID": 43,
       "date": "2019/09/12",
-      "hoursSlept": 8.3,
-      "sleepQuality": 2.2
+      "numOunces": 37
     },
     {
       "userID": 44,
       "date": "2019/09/12",
-      "hoursSlept": 7.1,
-      "sleepQuality": 4.8
+      "numOunces": 65
     },
     {
       "userID": 45,
       "date": "2019/09/12",
-      "hoursSlept": 4.1,
-      "sleepQuality": 3.3
+      "numOunces": 82
     },
     {
       "userID": 46,
       "date": "2019/09/12",
-      "hoursSlept": 10.9,
-      "sleepQuality": 3
+      "numOunces": 97
     },
     {
       "userID": 47,
       "date": "2019/09/12",
-      "hoursSlept": 6.6,
-      "sleepQuality": 1.7
+      "numOunces": 51
     },
     {
       "userID": 48,
       "date": "2019/09/12",
-      "hoursSlept": 4.9,
-      "sleepQuality": 1.7
+      "numOunces": 47
     },
     {
       "userID": 49,
       "date": "2019/09/12",
-      "hoursSlept": 5,
-      "sleepQuality": 1.8
+      "numOunces": 72
     },
     {
       "userID": 50,
       "date": "2019/09/12",
-      "hoursSlept": 6.5,
-      "sleepQuality": 2.9
+      "numOunces": 31
     },
     {
       "userID": 1,
       "date": "2019/09/13",
-      "hoursSlept": 9.1,
-      "sleepQuality": 1.5
+      "numOunces": 41
     },
     {
       "userID": 2,
       "date": "2019/09/13",
-      "hoursSlept": 9.6,
-      "sleepQuality": 1.9
+      "numOunces": 32
     },
     {
       "userID": 3,
       "date": "2019/09/13",
-      "hoursSlept": 10.9,
-      "sleepQuality": 3
+      "numOunces": 69
     },
     {
       "userID": 4,
       "date": "2019/09/13",
-      "hoursSlept": 4.6,
-      "sleepQuality": 1
+      "numOunces": 43
     },
     {
       "userID": 5,
       "date": "2019/09/13",
-      "hoursSlept": 6.4,
-      "sleepQuality": 3
+      "numOunces": 61
     },
     {
       "userID": 6,
       "date": "2019/09/13",
-      "hoursSlept": 10.7,
-      "sleepQuality": 4.6
+      "numOunces": 23
     },
     {
       "userID": 7,
       "date": "2019/09/13",
-      "hoursSlept": 10.8,
-      "sleepQuality": 2.7
+      "numOunces": 96
     },
     {
       "userID": 8,
       "date": "2019/09/13",
-      "hoursSlept": 6.4,
-      "sleepQuality": 4.3
+      "numOunces": 91
     },
     {
       "userID": 9,
       "date": "2019/09/13",
-      "hoursSlept": 9.4,
-      "sleepQuality": 4.7
+      "numOunces": 66
     },
     {
       "userID": 10,
       "date": "2019/09/13",
-      "hoursSlept": 6.6,
-      "sleepQuality": 4.2
+      "numOunces": 41
     },
     {
       "userID": 11,
       "date": "2019/09/13",
-      "hoursSlept": 7.5,
-      "sleepQuality": 3.1
+      "numOunces": 84
     },
     {
       "userID": 12,
       "date": "2019/09/13",
-      "hoursSlept": 9.7,
-      "sleepQuality": 1.9
+      "numOunces": 76
     },
     {
       "userID": 13,
       "date": "2019/09/13",
-      "hoursSlept": 7.9,
-      "sleepQuality": 4.5
+      "numOunces": 72
     },
     {
       "userID": 14,
       "date": "2019/09/13",
-      "hoursSlept": 7.3,
-      "sleepQuality": 4.3
+      "numOunces": 29
     },
     {
       "userID": 15,
       "date": "2019/09/13",
-      "hoursSlept": 10.1,
-      "sleepQuality": 2.7
+      "numOunces": 30
     },
     {
       "userID": 16,
       "date": "2019/09/13",
-      "hoursSlept": 4.6,
-      "sleepQuality": 1.7
+      "numOunces": 96
     },
     {
       "userID": 17,
       "date": "2019/09/13",
-      "hoursSlept": 10.6,
-      "sleepQuality": 3.6
+      "numOunces": 74
     },
     {
       "userID": 18,
       "date": "2019/09/13",
-      "hoursSlept": 10.6,
-      "sleepQuality": 1.5
+      "numOunces": 77
     },
     {
       "userID": 19,
       "date": "2019/09/13",
-      "hoursSlept": 6,
-      "sleepQuality": 1.5
+      "numOunces": 32
     },
     {
       "userID": 20,
       "date": "2019/09/13",
-      "hoursSlept": 10.4,
-      "sleepQuality": 3.4
+      "numOunces": 77
     },
     {
       "userID": 21,
       "date": "2019/09/13",
-      "hoursSlept": 10.9,
-      "sleepQuality": 1.5
+      "numOunces": 79
     },
     {
       "userID": 22,
       "date": "2019/09/13",
-      "hoursSlept": 4.6,
-      "sleepQuality": 3.3
+      "numOunces": 65
     },
     {
       "userID": 23,
       "date": "2019/09/13",
-      "hoursSlept": 7.8,
-      "sleepQuality": 2.6
+      "numOunces": 68
     },
     {
       "userID": 24,
       "date": "2019/09/13",
-      "hoursSlept": 8.9,
-      "sleepQuality": 3.1
+      "numOunces": 96
     },
     {
       "userID": 25,
       "date": "2019/09/13",
-      "hoursSlept": 6.8,
-      "sleepQuality": 1.4
+      "numOunces": 69
     },
     {
       "userID": 26,
       "date": "2019/09/13",
-      "hoursSlept": 10.1,
-      "sleepQuality": 3
+      "numOunces": 22
     },
     {
       "userID": 27,
       "date": "2019/09/13",
-      "hoursSlept": 6.6,
-      "sleepQuality": 3.8
+      "numOunces": 32
     },
     {
       "userID": 28,
       "date": "2019/09/13",
-      "hoursSlept": 4.5,
-      "sleepQuality": 1.2
+      "numOunces": 57
     },
     {
       "userID": 29,
       "date": "2019/09/13",
-      "hoursSlept": 5.6,
-      "sleepQuality": 2.1
+      "numOunces": 100
     },
     {
       "userID": 30,
       "date": "2019/09/13",
-      "hoursSlept": 9.1,
-      "sleepQuality": 3.2
+      "numOunces": 30
     },
     {
       "userID": 31,
       "date": "2019/09/13",
-      "hoursSlept": 7.5,
-      "sleepQuality": 2.8
+      "numOunces": 88
     },
     {
       "userID": 32,
       "date": "2019/09/13",
-      "hoursSlept": 5.1,
-      "sleepQuality": 1.5
+      "numOunces": 21
     },
     {
       "userID": 33,
       "date": "2019/09/13",
-      "hoursSlept": 6.7,
-      "sleepQuality": 4
+      "numOunces": 43
     },
     {
       "userID": 34,
       "date": "2019/09/13",
-      "hoursSlept": 5,
-      "sleepQuality": 4.2
+      "numOunces": 62
     },
     {
       "userID": 35,
       "date": "2019/09/13",
-      "hoursSlept": 6.9,
-      "sleepQuality": 2.5
+      "numOunces": 79
     },
     {
       "userID": 36,
       "date": "2019/09/13",
-      "hoursSlept": 5,
-      "sleepQuality": 3.6
+      "numOunces": 53
     },
     {
       "userID": 37,
       "date": "2019/09/13",
-      "hoursSlept": 6.9,
-      "sleepQuality": 1.3
+      "numOunces": 82
     },
     {
       "userID": 38,
       "date": "2019/09/13",
-      "hoursSlept": 6.1,
-      "sleepQuality": 4.6
+      "numOunces": 79
     },
     {
       "userID": 39,
       "date": "2019/09/13",
-      "hoursSlept": 4.3,
-      "sleepQuality": 3.6
+      "numOunces": 21
     },
     {
       "userID": 40,
       "date": "2019/09/13",
-      "hoursSlept": 10.2,
-      "sleepQuality": 1.4
+      "numOunces": 66
     },
     {
       "userID": 41,
       "date": "2019/09/13",
-      "hoursSlept": 10.6,
-      "sleepQuality": 4.9
+      "numOunces": 47
     },
     {
       "userID": 42,
       "date": "2019/09/13",
-      "hoursSlept": 5.2,
-      "sleepQuality": 4.8
+      "numOunces": 30
     },
     {
       "userID": 43,
       "date": "2019/09/13",
-      "hoursSlept": 9.4,
-      "sleepQuality": 4.9
+      "numOunces": 85
     },
     {
       "userID": 44,
       "date": "2019/09/13",
-      "hoursSlept": 6.7,
-      "sleepQuality": 2.2
+      "numOunces": 55
     },
     {
       "userID": 45,
       "date": "2019/09/13",
-      "hoursSlept": 5.3,
-      "sleepQuality": 4.2
+      "numOunces": 41
     },
     {
       "userID": 46,
       "date": "2019/09/13",
-      "hoursSlept": 9,
-      "sleepQuality": 2.3
+      "numOunces": 57
     },
     {
       "userID": 47,
       "date": "2019/09/13",
-      "hoursSlept": 10,
-      "sleepQuality": 4
+      "numOunces": 51
     },
     {
       "userID": 48,
       "date": "2019/09/13",
-      "hoursSlept": 4.4,
-      "sleepQuality": 1.5
+      "numOunces": 99
     },
     {
       "userID": 49,
       "date": "2019/09/13",
-      "hoursSlept": 4.4,
-      "sleepQuality": 3.8
+      "numOunces": 67
     },
     {
       "userID": 50,
       "date": "2019/09/13",
-      "hoursSlept": 5.2,
-      "sleepQuality": 1.4
+      "numOunces": 78
     },
     {
       "userID": 1,
       "date": "2019/09/14",
-      "hoursSlept": 6.5,
-      "sleepQuality": 4.2
+      "numOunces": 88
     },
     {
       "userID": 2,
       "date": "2019/09/14",
-      "hoursSlept": 8.7,
-      "sleepQuality": 1.6
+      "numOunces": 94
     },
     {
       "userID": 3,
       "date": "2019/09/14",
-      "hoursSlept": 4.8,
-      "sleepQuality": 2.2
+      "numOunces": 22
     },
     {
       "userID": 4,
       "date": "2019/09/14",
-      "hoursSlept": 8.8,
-      "sleepQuality": 3.3
+      "numOunces": 61
     },
     {
       "userID": 5,
       "date": "2019/09/14",
-      "hoursSlept": 4.3,
-      "sleepQuality": 4.4
+      "numOunces": 86
     },
     {
       "userID": 6,
       "date": "2019/09/14",
-      "hoursSlept": 5.7,
-      "sleepQuality": 1.7
+      "numOunces": 94
     },
     {
       "userID": 7,
       "date": "2019/09/14",
-      "hoursSlept": 7,
-      "sleepQuality": 3.7
+      "numOunces": 89
     },
     {
       "userID": 8,
       "date": "2019/09/14",
-      "hoursSlept": 4.1,
-      "sleepQuality": 3.9
+      "numOunces": 89
     },
     {
       "userID": 9,
       "date": "2019/09/14",
-      "hoursSlept": 6.1,
-      "sleepQuality": 4.2
+      "numOunces": 71
     },
     {
       "userID": 10,
       "date": "2019/09/14",
-      "hoursSlept": 9.8,
-      "sleepQuality": 3.1
+      "numOunces": 29
     },
     {
       "userID": 11,
       "date": "2019/09/14",
-      "hoursSlept": 10,
-      "sleepQuality": 3.9
+      "numOunces": 97
     },
     {
       "userID": 12,
       "date": "2019/09/14",
-      "hoursSlept": 5.4,
-      "sleepQuality": 2.8
+      "numOunces": 81
     },
     {
       "userID": 13,
       "date": "2019/09/14",
-      "hoursSlept": 8.7,
-      "sleepQuality": 1.9
+      "numOunces": 86
     },
     {
       "userID": 14,
       "date": "2019/09/14",
-      "hoursSlept": 9.3,
-      "sleepQuality": 3.9
+      "numOunces": 23
     },
     {
       "userID": 15,
       "date": "2019/09/14",
-      "hoursSlept": 9.8,
-      "sleepQuality": 1.9
+      "numOunces": 68
     },
     {
       "userID": 16,
       "date": "2019/09/14",
-      "hoursSlept": 6.8,
-      "sleepQuality": 1.3
+      "numOunces": 77
     },
     {
       "userID": 17,
       "date": "2019/09/14",
-      "hoursSlept": 8.7,
-      "sleepQuality": 3.8
+      "numOunces": 44
     },
     {
       "userID": 18,
       "date": "2019/09/14",
-      "hoursSlept": 9.4,
-      "sleepQuality": 4.5
+      "numOunces": 52
     },
     {
       "userID": 19,
       "date": "2019/09/14",
-      "hoursSlept": 10.1,
-      "sleepQuality": 3.9
+      "numOunces": 53
     },
     {
       "userID": 20,
       "date": "2019/09/14",
-      "hoursSlept": 7,
-      "sleepQuality": 1.7
+      "numOunces": 68
     },
     {
       "userID": 21,
       "date": "2019/09/14",
-      "hoursSlept": 6.6,
-      "sleepQuality": 1.5
+      "numOunces": 93
     },
     {
       "userID": 22,
       "date": "2019/09/14",
-      "hoursSlept": 4.2,
-      "sleepQuality": 3
+      "numOunces": 63
     },
     {
       "userID": 23,
       "date": "2019/09/14",
-      "hoursSlept": 7.6,
-      "sleepQuality": 2.3
+      "numOunces": 84
     },
     {
       "userID": 24,
       "date": "2019/09/14",
-      "hoursSlept": 10.4,
-      "sleepQuality": 2.4
+      "numOunces": 71
     },
     {
       "userID": 25,
       "date": "2019/09/14",
-      "hoursSlept": 4.9,
-      "sleepQuality": 3.3
+      "numOunces": 61
     },
     {
       "userID": 26,
       "date": "2019/09/14",
-      "hoursSlept": 5.2,
-      "sleepQuality": 2.4
+      "numOunces": 72
     },
     {
       "userID": 27,
       "date": "2019/09/14",
-      "hoursSlept": 5.4,
-      "sleepQuality": 5
+      "numOunces": 74
     },
     {
       "userID": 28,
       "date": "2019/09/14",
-      "hoursSlept": 7.8,
-      "sleepQuality": 1
+      "numOunces": 38
     },
     {
       "userID": 29,
       "date": "2019/09/14",
-      "hoursSlept": 4.6,
-      "sleepQuality": 2.2
+      "numOunces": 88
     },
     {
       "userID": 30,
       "date": "2019/09/14",
-      "hoursSlept": 7.7,
-      "sleepQuality": 4.5
+      "numOunces": 98
     },
     {
       "userID": 31,
       "date": "2019/09/14",
-      "hoursSlept": 10.3,
-      "sleepQuality": 1.8
+      "numOunces": 30
     },
     {
       "userID": 32,
       "date": "2019/09/14",
-      "hoursSlept": 5.8,
-      "sleepQuality": 3.5
+      "numOunces": 71
     },
     {
       "userID": 33,
       "date": "2019/09/14",
-      "hoursSlept": 7.1,
-      "sleepQuality": 4.7
+      "numOunces": 63
     },
     {
       "userID": 34,
       "date": "2019/09/14",
-      "hoursSlept": 10.1,
-      "sleepQuality": 2
+      "numOunces": 48
     },
     {
       "userID": 35,
       "date": "2019/09/14",
-      "hoursSlept": 9.1,
-      "sleepQuality": 3.4
+      "numOunces": 50
     },
     {
       "userID": 36,
       "date": "2019/09/14",
-      "hoursSlept": 7.6,
-      "sleepQuality": 4.6
+      "numOunces": 69
     },
     {
       "userID": 37,
       "date": "2019/09/14",
-      "hoursSlept": 9.2,
-      "sleepQuality": 4.4
+      "numOunces": 23
     },
     {
       "userID": 38,
       "date": "2019/09/14",
-      "hoursSlept": 8.7,
-      "sleepQuality": 2.8
+      "numOunces": 64
     },
     {
       "userID": 39,
       "date": "2019/09/14",
-      "hoursSlept": 10,
-      "sleepQuality": 3.3
+      "numOunces": 84
     },
     {
       "userID": 40,
       "date": "2019/09/14",
-      "hoursSlept": 5.3,
-      "sleepQuality": 3.3
+      "numOunces": 27
     },
     {
       "userID": 41,
       "date": "2019/09/14",
-      "hoursSlept": 5.3,
-      "sleepQuality": 3.8
+      "numOunces": 69
     },
     {
       "userID": 42,
       "date": "2019/09/14",
-      "hoursSlept": 10.8,
-      "sleepQuality": 3.4
+      "numOunces": 98
     },
     {
       "userID": 43,
       "date": "2019/09/14",
-      "hoursSlept": 4.4,
-      "sleepQuality": 1.2
+      "numOunces": 38
     },
     {
       "userID": 44,
       "date": "2019/09/14",
-      "hoursSlept": 10.3,
-      "sleepQuality": 2.5
+      "numOunces": 67
     },
     {
       "userID": 45,
       "date": "2019/09/14",
-      "hoursSlept": 5.2,
-      "sleepQuality": 2.2
+      "numOunces": 75
     },
     {
       "userID": 46,
       "date": "2019/09/14",
-      "hoursSlept": 11,
-      "sleepQuality": 3.3
+      "numOunces": 56
     },
     {
       "userID": 47,
       "date": "2019/09/14",
-      "hoursSlept": 9.9,
-      "sleepQuality": 1.6
+      "numOunces": 68
     },
     {
       "userID": 48,
       "date": "2019/09/14",
-      "hoursSlept": 5.4,
-      "sleepQuality": 1.1
+      "numOunces": 25
     },
     {
       "userID": 49,
       "date": "2019/09/14",
-      "hoursSlept": 8.4,
-      "sleepQuality": 3.8
+      "numOunces": 67
     },
     {
       "userID": 50,
       "date": "2019/09/14",
-      "hoursSlept": 5.2,
-      "sleepQuality": 1.3
+      "numOunces": 64
     },
     {
       "userID": 1,
       "date": "2019/09/15",
-      "hoursSlept": 6.8,
-      "sleepQuality": 2
+      "numOunces": 25
     },
     {
       "userID": 2,
       "date": "2019/09/15",
-      "hoursSlept": 10.7,
-      "sleepQuality": 3.3
+      "numOunces": 31
     },
     {
       "userID": 3,
       "date": "2019/09/15",
-      "hoursSlept": 8.2,
-      "sleepQuality": 1.5
+      "numOunces": 58
     },
     {
       "userID": 4,
       "date": "2019/09/15",
-      "hoursSlept": 5.7,
-      "sleepQuality": 3.5
+      "numOunces": 37
     },
     {
       "userID": 5,
       "date": "2019/09/15",
-      "hoursSlept": 8.9,
-      "sleepQuality": 3.9
+      "numOunces": 36
     },
     {
       "userID": 6,
       "date": "2019/09/15",
-      "hoursSlept": 4.3,
-      "sleepQuality": 1.3
+      "numOunces": 62
     },
     {
       "userID": 7,
       "date": "2019/09/15",
-      "hoursSlept": 8.4,
-      "sleepQuality": 4.1
+      "numOunces": 24
     },
     {
       "userID": 8,
       "date": "2019/09/15",
-      "hoursSlept": 9.8,
-      "sleepQuality": 1.3
+      "numOunces": 21
     },
     {
       "userID": 9,
       "date": "2019/09/15",
-      "hoursSlept": 4.4,
-      "sleepQuality": 1.7
+      "numOunces": 65
     },
     {
       "userID": 10,
       "date": "2019/09/15",
-      "hoursSlept": 7.1,
-      "sleepQuality": 1.7
+      "numOunces": 75
     },
     {
       "userID": 11,
       "date": "2019/09/15",
-      "hoursSlept": 7.7,
-      "sleepQuality": 3.2
+      "numOunces": 66
     },
     {
       "userID": 12,
       "date": "2019/09/15",
-      "hoursSlept": 4.1,
-      "sleepQuality": 3.9
+      "numOunces": 61
     },
     {
       "userID": 13,
       "date": "2019/09/15",
-      "hoursSlept": 4.2,
-      "sleepQuality": 4.2
+      "numOunces": 46
     },
     {
       "userID": 14,
       "date": "2019/09/15",
-      "hoursSlept": 10.7,
-      "sleepQuality": 4.9
+      "numOunces": 49
     },
     {
       "userID": 15,
       "date": "2019/09/15",
-      "hoursSlept": 4.5,
-      "sleepQuality": 4.2
+      "numOunces": 78
     },
     {
       "userID": 16,
       "date": "2019/09/15",
-      "hoursSlept": 6.3,
-      "sleepQuality": 1.6
+      "numOunces": 95
     },
     {
       "userID": 17,
       "date": "2019/09/15",
-      "hoursSlept": 8.4,
-      "sleepQuality": 3.6
+      "numOunces": 23
     },
     {
       "userID": 18,
       "date": "2019/09/15",
-      "hoursSlept": 8.5,
-      "sleepQuality": 2.5
+      "numOunces": 28
     },
     {
       "userID": 19,
       "date": "2019/09/15",
-      "hoursSlept": 8.4,
-      "sleepQuality": 2.6
+      "numOunces": 82
     },
     {
       "userID": 20,
       "date": "2019/09/15",
-      "hoursSlept": 9.3,
-      "sleepQuality": 1.3
+      "numOunces": 31
     },
     {
       "userID": 21,
       "date": "2019/09/15",
-      "hoursSlept": 9.5,
-      "sleepQuality": 3.2
+      "numOunces": 83
     },
     {
       "userID": 22,
       "date": "2019/09/15",
-      "hoursSlept": 5.8,
-      "sleepQuality": 2.6
+      "numOunces": 95
     },
     {
       "userID": 23,
       "date": "2019/09/15",
-      "hoursSlept": 6.2,
-      "sleepQuality": 2.4
+      "numOunces": 27
     },
     {
       "userID": 24,
       "date": "2019/09/15",
-      "hoursSlept": 10.7,
-      "sleepQuality": 2.7
+      "numOunces": 89
     },
     {
       "userID": 25,
       "date": "2019/09/15",
-      "hoursSlept": 7.9,
-      "sleepQuality": 3.4
+      "numOunces": 71
     },
     {
       "userID": 26,
       "date": "2019/09/15",
-      "hoursSlept": 6.8,
-      "sleepQuality": 2
+      "numOunces": 42
     },
     {
       "userID": 27,
       "date": "2019/09/15",
-      "hoursSlept": 4.8,
-      "sleepQuality": 3.7
+      "numOunces": 47
     },
     {
       "userID": 28,
       "date": "2019/09/15",
-      "hoursSlept": 8.9,
-      "sleepQuality": 4
+      "numOunces": 93
     },
     {
       "userID": 29,
       "date": "2019/09/15",
-      "hoursSlept": 7.4,
-      "sleepQuality": 2.7
+      "numOunces": 97
     },
     {
       "userID": 30,
       "date": "2019/09/15",
-      "hoursSlept": 5.3,
-      "sleepQuality": 1.2
+      "numOunces": 37
     },
     {
       "userID": 31,
       "date": "2019/09/15",
-      "hoursSlept": 7,
-      "sleepQuality": 5
+      "numOunces": 57
     },
     {
       "userID": 32,
       "date": "2019/09/15",
-      "hoursSlept": 9.4,
-      "sleepQuality": 2.7
+      "numOunces": 46
     },
     {
       "userID": 33,
       "date": "2019/09/15",
-      "hoursSlept": 6.3,
-      "sleepQuality": 3.5
+      "numOunces": 87
     },
     {
       "userID": 34,
       "date": "2019/09/15",
-      "hoursSlept": 9.9,
-      "sleepQuality": 1.6
+      "numOunces": 34
     },
     {
       "userID": 35,
       "date": "2019/09/15",
-      "hoursSlept": 9.5,
-      "sleepQuality": 2
+      "numOunces": 66
     },
     {
       "userID": 36,
       "date": "2019/09/15",
-      "hoursSlept": 6.9,
-      "sleepQuality": 4.5
+      "numOunces": 72
     },
     {
       "userID": 37,
       "date": "2019/09/15",
-      "hoursSlept": 8.9,
-      "sleepQuality": 1.3
+      "numOunces": 68
     },
     {
       "userID": 38,
       "date": "2019/09/15",
-      "hoursSlept": 5.5,
-      "sleepQuality": 2
+      "numOunces": 55
     },
     {
       "userID": 39,
       "date": "2019/09/15",
-      "hoursSlept": 4.5,
-      "sleepQuality": 1.2
+      "numOunces": 57
     },
     {
       "userID": 40,
       "date": "2019/09/15",
-      "hoursSlept": 5.5,
-      "sleepQuality": 2.7
+      "numOunces": 58
     },
     {
       "userID": 41,
       "date": "2019/09/15",
-      "hoursSlept": 8.8,
-      "sleepQuality": 4.8
+      "numOunces": 73
     },
     {
       "userID": 42,
       "date": "2019/09/15",
-      "hoursSlept": 6.9,
-      "sleepQuality": 1.2
+      "numOunces": 65
     },
     {
       "userID": 43,
       "date": "2019/09/15",
-      "hoursSlept": 9.8,
-      "sleepQuality": 2.2
+      "numOunces": 74
     },
     {
       "userID": 44,
       "date": "2019/09/15",
-      "hoursSlept": 8.6,
-      "sleepQuality": 4.9
+      "numOunces": 54
     },
     {
       "userID": 45,
       "date": "2019/09/15",
-      "hoursSlept": 9.3,
-      "sleepQuality": 5
+      "numOunces": 98
     },
     {
       "userID": 46,
       "date": "2019/09/15",
-      "hoursSlept": 8.8,
-      "sleepQuality": 2
+      "numOunces": 76
     },
     {
       "userID": 47,
       "date": "2019/09/15",
-      "hoursSlept": 6.1,
-      "sleepQuality": 1.3
+      "numOunces": 37
     },
     {
       "userID": 48,
       "date": "2019/09/15",
-      "hoursSlept": 10.6,
-      "sleepQuality": 4.1
+      "numOunces": 46
     },
     {
       "userID": 49,
       "date": "2019/09/15",
-      "hoursSlept": 5,
-      "sleepQuality": 4.2
+      "numOunces": 31
     },
     {
       "userID": 50,
       "date": "2019/09/15",
-      "hoursSlept": 4.2,
-      "sleepQuality": 4.2
+      "numOunces": 30
     },
     {
       "userID": 1,
       "date": "2019/09/16",
-      "hoursSlept": 8.8,
-      "sleepQuality": 1.8
+      "numOunces": 82
     },
     {
       "userID": 2,
       "date": "2019/09/16",
-      "hoursSlept": 7.4,
-      "sleepQuality": 2.7
+      "numOunces": 31
     },
     {
       "userID": 3,
       "date": "2019/09/16",
-      "hoursSlept": 9.9,
-      "sleepQuality": 4.6
+      "numOunces": 87
     },
     {
       "userID": 4,
       "date": "2019/09/16",
-      "hoursSlept": 10.2,
-      "sleepQuality": 4.2
+      "numOunces": 65
     },
     {
       "userID": 5,
       "date": "2019/09/16",
-      "hoursSlept": 8.7,
-      "sleepQuality": 3.7
+      "numOunces": 50
     },
     {
       "userID": 6,
       "date": "2019/09/16",
-      "hoursSlept": 6.5,
-      "sleepQuality": 1.8
+      "numOunces": 26
     },
     {
       "userID": 7,
       "date": "2019/09/16",
-      "hoursSlept": 6.9,
-      "sleepQuality": 3.4
+      "numOunces": 63
     },
     {
       "userID": 8,
       "date": "2019/09/16",
-      "hoursSlept": 5.3,
-      "sleepQuality": 2.1
+      "numOunces": 87
     },
     {
       "userID": 9,
       "date": "2019/09/16",
-      "hoursSlept": 10.9,
-      "sleepQuality": 2.2
+      "numOunces": 56
     },
     {
       "userID": 10,
       "date": "2019/09/16",
-      "hoursSlept": 6.1,
-      "sleepQuality": 4.1
+      "numOunces": 49
     },
     {
       "userID": 11,
       "date": "2019/09/16",
-      "hoursSlept": 4.9,
-      "sleepQuality": 3.1
+      "numOunces": 80
     },
     {
       "userID": 12,
       "date": "2019/09/16",
-      "hoursSlept": 5.4,
-      "sleepQuality": 2.4
+      "numOunces": 48
     },
     {
       "userID": 13,
       "date": "2019/09/16",
-      "hoursSlept": 5.8,
-      "sleepQuality": 2.8
+      "numOunces": 84
     },
     {
       "userID": 14,
       "date": "2019/09/16",
-      "hoursSlept": 9.5,
-      "sleepQuality": 1.2
+      "numOunces": 73
     },
     {
       "userID": 15,
       "date": "2019/09/16",
-      "hoursSlept": 5.2,
-      "sleepQuality": 2.8
+      "numOunces": 49
     },
     {
       "userID": 16,
       "date": "2019/09/16",
-      "hoursSlept": 8,
-      "sleepQuality": 3.1
+      "numOunces": 100
     },
     {
       "userID": 17,
       "date": "2019/09/16",
-      "hoursSlept": 4.8,
-      "sleepQuality": 2.2
+      "numOunces": 72
     },
     {
       "userID": 18,
       "date": "2019/09/16",
-      "hoursSlept": 9.9,
-      "sleepQuality": 2.7
+      "numOunces": 94
     },
     {
       "userID": 19,
       "date": "2019/09/16",
-      "hoursSlept": 4.6,
-      "sleepQuality": 4.8
+      "numOunces": 32
     },
     {
       "userID": 20,
       "date": "2019/09/16",
-      "hoursSlept": 6.1,
-      "sleepQuality": 2.2
+      "numOunces": 23
     },
     {
       "userID": 21,
       "date": "2019/09/16",
-      "hoursSlept": 7.9,
-      "sleepQuality": 1.7
+      "numOunces": 88
     },
     {
       "userID": 22,
       "date": "2019/09/16",
-      "hoursSlept": 9.3,
-      "sleepQuality": 4
+      "numOunces": 61
     },
     {
       "userID": 23,
       "date": "2019/09/16",
-      "hoursSlept": 7.1,
-      "sleepQuality": 2.5
+      "numOunces": 39
     },
     {
       "userID": 24,
       "date": "2019/09/16",
-      "hoursSlept": 10.4,
-      "sleepQuality": 3.3
+      "numOunces": 66
     },
     {
       "userID": 25,
       "date": "2019/09/16",
-      "hoursSlept": 7.9,
-      "sleepQuality": 4.7
+      "numOunces": 41
     },
     {
       "userID": 26,
       "date": "2019/09/16",
-      "hoursSlept": 10,
-      "sleepQuality": 4.9
+      "numOunces": 75
     },
     {
       "userID": 27,
       "date": "2019/09/16",
-      "hoursSlept": 4.5,
-      "sleepQuality": 1.4
+      "numOunces": 44
     },
     {
       "userID": 28,
       "date": "2019/09/16",
-      "hoursSlept": 4.6,
-      "sleepQuality": 1
+      "numOunces": 38
     },
     {
       "userID": 29,
       "date": "2019/09/16",
-      "hoursSlept": 8.4,
-      "sleepQuality": 3.6
+      "numOunces": 75
     },
     {
       "userID": 30,
       "date": "2019/09/16",
-      "hoursSlept": 8.3,
-      "sleepQuality": 2
+      "numOunces": 56
     },
     {
       "userID": 31,
       "date": "2019/09/16",
-      "hoursSlept": 8.2,
-      "sleepQuality": 3
+      "numOunces": 26
     },
     {
       "userID": 32,
       "date": "2019/09/16",
-      "hoursSlept": 5.3,
-      "sleepQuality": 3.5
+      "numOunces": 42
     },
     {
       "userID": 33,
       "date": "2019/09/16",
-      "hoursSlept": 10,
-      "sleepQuality": 3.1
+      "numOunces": 94
     },
     {
       "userID": 34,
       "date": "2019/09/16",
-      "hoursSlept": 10.9,
-      "sleepQuality": 4.5
+      "numOunces": 87
     },
     {
       "userID": 35,
       "date": "2019/09/16",
-      "hoursSlept": 7.6,
-      "sleepQuality": 3.6
+      "numOunces": 95
     },
     {
       "userID": 36,
       "date": "2019/09/16",
-      "hoursSlept": 7.3,
-      "sleepQuality": 4.5
+      "numOunces": 62
     },
     {
       "userID": 37,
       "date": "2019/09/16",
-      "hoursSlept": 10.9,
-      "sleepQuality": 3.4
+      "numOunces": 91
     },
     {
       "userID": 38,
       "date": "2019/09/16",
-      "hoursSlept": 5.8,
-      "sleepQuality": 2.3
+      "numOunces": 25
     },
     {
       "userID": 39,
       "date": "2019/09/16",
-      "hoursSlept": 6.2,
-      "sleepQuality": 2.2
+      "numOunces": 76
     },
     {
       "userID": 40,
       "date": "2019/09/16",
-      "hoursSlept": 6.5,
-      "sleepQuality": 2.4
+      "numOunces": 46
     },
     {
       "userID": 41,
       "date": "2019/09/16",
-      "hoursSlept": 7.7,
-      "sleepQuality": 2.3
+      "numOunces": 45
     },
     {
       "userID": 42,
       "date": "2019/09/16",
-      "hoursSlept": 4.8,
-      "sleepQuality": 3
+      "numOunces": 32
     },
     {
       "userID": 43,
       "date": "2019/09/16",
-      "hoursSlept": 7.1,
-      "sleepQuality": 1.9
+      "numOunces": 40
     },
     {
       "userID": 44,
       "date": "2019/09/16",
-      "hoursSlept": 8.8,
-      "sleepQuality": 1.7
+      "numOunces": 27
     },
     {
       "userID": 45,
       "date": "2019/09/16",
-      "hoursSlept": 11,
-      "sleepQuality": 4.3
+      "numOunces": 48
     },
     {
       "userID": 46,
       "date": "2019/09/16",
-      "hoursSlept": 5,
-      "sleepQuality": 3.2
+      "numOunces": 27
     },
     {
       "userID": 47,
       "date": "2019/09/16",
-      "hoursSlept": 10.9,
-      "sleepQuality": 4.5
+      "numOunces": 75
     },
     {
       "userID": 48,
       "date": "2019/09/16",
-      "hoursSlept": 8.9,
-      "sleepQuality": 4.5
+      "numOunces": 27
     },
     {
       "userID": 49,
       "date": "2019/09/16",
-      "hoursSlept": 5.4,
-      "sleepQuality": 3.8
+      "numOunces": 60
     },
     {
       "userID": 50,
       "date": "2019/09/16",
-      "hoursSlept": 10,
-      "sleepQuality": 4
+      "numOunces": 94
     },
     {
       "userID": 1,
       "date": "2019/09/17",
-      "hoursSlept": 6.3,
-      "sleepQuality": 3.2
+      "numOunces": 72
     },
     {
       "userID": 2,
       "date": "2019/09/17",
-      "hoursSlept": 9.5,
-      "sleepQuality": 1.7
+      "numOunces": 58
     },
     {
       "userID": 3,
       "date": "2019/09/17",
-      "hoursSlept": 8.4,
-      "sleepQuality": 1.8
+      "numOunces": 38
     },
     {
       "userID": 4,
       "date": "2019/09/17",
-      "hoursSlept": 7.8,
-      "sleepQuality": 4.5
+      "numOunces": 93
     },
     {
       "userID": 5,
       "date": "2019/09/17",
-      "hoursSlept": 10.3,
-      "sleepQuality": 4.9
+      "numOunces": 82
     },
     {
       "userID": 6,
       "date": "2019/09/17",
-      "hoursSlept": 9.4,
-      "sleepQuality": 2.8
+      "numOunces": 35
     },
     {
       "userID": 7,
       "date": "2019/09/17",
-      "hoursSlept": 6.9,
-      "sleepQuality": 1.3
+      "numOunces": 100
     },
     {
       "userID": 8,
       "date": "2019/09/17",
-      "hoursSlept": 6.5,
-      "sleepQuality": 2
+      "numOunces": 21
     },
     {
       "userID": 9,
       "date": "2019/09/17",
-      "hoursSlept": 9.8,
-      "sleepQuality": 2.5
+      "numOunces": 64
     },
     {
       "userID": 10,
       "date": "2019/09/17",
-      "hoursSlept": 4,
-      "sleepQuality": 3.6
+      "numOunces": 55
     },
     {
       "userID": 11,
       "date": "2019/09/17",
-      "hoursSlept": 8.2,
-      "sleepQuality": 2.3
+      "numOunces": 78
     },
     {
       "userID": 12,
       "date": "2019/09/17",
-      "hoursSlept": 4.7,
-      "sleepQuality": 3.2
+      "numOunces": 87
     },
     {
       "userID": 13,
       "date": "2019/09/17",
-      "hoursSlept": 10.6,
-      "sleepQuality": 3.5
+      "numOunces": 54
     },
     {
       "userID": 14,
       "date": "2019/09/17",
-      "hoursSlept": 8.1,
-      "sleepQuality": 1.3
+      "numOunces": 42
     },
     {
       "userID": 15,
       "date": "2019/09/17",
-      "hoursSlept": 4.8,
-      "sleepQuality": 5
+      "numOunces": 74
     },
     {
       "userID": 16,
       "date": "2019/09/17",
-      "hoursSlept": 5.3,
-      "sleepQuality": 3.9
+      "numOunces": 92
     },
     {
       "userID": 17,
       "date": "2019/09/17",
-      "hoursSlept": 10.3,
-      "sleepQuality": 1.4
+      "numOunces": 63
     },
     {
       "userID": 18,
       "date": "2019/09/17",
-      "hoursSlept": 10.5,
-      "sleepQuality": 1.5
+      "numOunces": 64
     },
     {
       "userID": 19,
       "date": "2019/09/17",
-      "hoursSlept": 10.8,
-      "sleepQuality": 2.3
+      "numOunces": 21
     },
     {
       "userID": 20,
       "date": "2019/09/17",
-      "hoursSlept": 5.3,
-      "sleepQuality": 3.4
+      "numOunces": 75
     },
     {
       "userID": 21,
       "date": "2019/09/17",
-      "hoursSlept": 6.4,
-      "sleepQuality": 4.5
+      "numOunces": 29
     },
     {
       "userID": 22,
       "date": "2019/09/17",
-      "hoursSlept": 9.2,
-      "sleepQuality": 4.8
+      "numOunces": 74
     },
     {
       "userID": 23,
       "date": "2019/09/17",
-      "hoursSlept": 6.9,
-      "sleepQuality": 3.6
+      "numOunces": 85
     },
     {
       "userID": 24,
       "date": "2019/09/17",
-      "hoursSlept": 5.8,
-      "sleepQuality": 1.1
+      "numOunces": 69
     },
     {
       "userID": 25,
       "date": "2019/09/17",
-      "hoursSlept": 8,
-      "sleepQuality": 2.1
+      "numOunces": 77
     },
     {
       "userID": 26,
       "date": "2019/09/17",
-      "hoursSlept": 10.8,
-      "sleepQuality": 4
+      "numOunces": 98
     },
     {
       "userID": 27,
       "date": "2019/09/17",
-      "hoursSlept": 5.1,
-      "sleepQuality": 1.9
+      "numOunces": 95
     },
     {
       "userID": 28,
       "date": "2019/09/17",
-      "hoursSlept": 10.8,
-      "sleepQuality": 3.7
+      "numOunces": 59
     },
     {
       "userID": 29,
       "date": "2019/09/17",
-      "hoursSlept": 6.6,
-      "sleepQuality": 1.8
+      "numOunces": 62
     },
     {
       "userID": 30,
       "date": "2019/09/17",
-      "hoursSlept": 7.7,
-      "sleepQuality": 2.6
+      "numOunces": 79
     },
     {
       "userID": 31,
       "date": "2019/09/17",
-      "hoursSlept": 4.5,
-      "sleepQuality": 4.2
+      "numOunces": 57
     },
     {
       "userID": 32,
       "date": "2019/09/17",
-      "hoursSlept": 10.8,
-      "sleepQuality": 4.1
+      "numOunces": 63
     },
     {
       "userID": 33,
       "date": "2019/09/17",
-      "hoursSlept": 6.9,
-      "sleepQuality": 1.4
+      "numOunces": 45
     },
     {
       "userID": 34,
       "date": "2019/09/17",
-      "hoursSlept": 7.2,
-      "sleepQuality": 3.9
+      "numOunces": 69
     },
     {
       "userID": 35,
       "date": "2019/09/17",
-      "hoursSlept": 9.6,
-      "sleepQuality": 3.9
+      "numOunces": 95
     },
     {
       "userID": 36,
       "date": "2019/09/17",
-      "hoursSlept": 9.7,
-      "sleepQuality": 4.6
+      "numOunces": 32
     },
     {
       "userID": 37,
       "date": "2019/09/17",
-      "hoursSlept": 9,
-      "sleepQuality": 2.5
+      "numOunces": 95
     },
     {
       "userID": 38,
       "date": "2019/09/17",
-      "hoursSlept": 4,
-      "sleepQuality": 4.7
+      "numOunces": 23
     },
     {
       "userID": 39,
       "date": "2019/09/17",
-      "hoursSlept": 4.7,
-      "sleepQuality": 3.2
+      "numOunces": 28
     },
     {
       "userID": 40,
       "date": "2019/09/17",
-      "hoursSlept": 9,
-      "sleepQuality": 3
+      "numOunces": 41
     },
     {
       "userID": 41,
       "date": "2019/09/17",
-      "hoursSlept": 10.5,
-      "sleepQuality": 2
+      "numOunces": 90
     },
     {
       "userID": 42,
       "date": "2019/09/17",
-      "hoursSlept": 4.7,
-      "sleepQuality": 1.9
+      "numOunces": 63
     },
     {
       "userID": 43,
       "date": "2019/09/17",
-      "hoursSlept": 7.5,
-      "sleepQuality": 1.9
+      "numOunces": 48
     },
     {
       "userID": 44,
       "date": "2019/09/17",
-      "hoursSlept": 9.5,
-      "sleepQuality": 3.2
+      "numOunces": 58
     },
     {
       "userID": 45,
       "date": "2019/09/17",
-      "hoursSlept": 11,
-      "sleepQuality": 2.6
+      "numOunces": 85
     },
     {
       "userID": 46,
       "date": "2019/09/17",
-      "hoursSlept": 5.2,
-      "sleepQuality": 2.6
+      "numOunces": 75
     },
     {
       "userID": 47,
       "date": "2019/09/17",
-      "hoursSlept": 6.5,
-      "sleepQuality": 3.7
+      "numOunces": 47
     },
     {
       "userID": 48,
       "date": "2019/09/17",
-      "hoursSlept": 5,
-      "sleepQuality": 4
+      "numOunces": 61
     },
     {
       "userID": 49,
       "date": "2019/09/17",
-      "hoursSlept": 5.3,
-      "sleepQuality": 2.2
+      "numOunces": 61
     },
     {
       "userID": 50,
       "date": "2019/09/17",
-      "hoursSlept": 4.4,
-      "sleepQuality": 2
+      "numOunces": 35
     },
     {
       "userID": 1,
       "date": "2019/09/18",
-      "hoursSlept": 4.1,
-      "sleepQuality": 2.2
+      "numOunces": 86
     },
     {
       "userID": 2,
       "date": "2019/09/18",
-      "hoursSlept": 4.8,
-      "sleepQuality": 3.8
+      "numOunces": 67
     },
     {
       "userID": 3,
       "date": "2019/09/18",
-      "hoursSlept": 4.7,
-      "sleepQuality": 3.8
+      "numOunces": 64
     },
     {
       "userID": 4,
       "date": "2019/09/18",
-      "hoursSlept": 9.5,
-      "sleepQuality": 3.2
+      "numOunces": 56
     },
     {
       "userID": 5,
       "date": "2019/09/18",
-      "hoursSlept": 7.2,
-      "sleepQuality": 3.3
+      "numOunces": 54
     },
     {
       "userID": 6,
       "date": "2019/09/18",
-      "hoursSlept": 9.6,
-      "sleepQuality": 1.4
+      "numOunces": 37
     },
     {
       "userID": 7,
       "date": "2019/09/18",
-      "hoursSlept": 8.7,
-      "sleepQuality": 1.1
+      "numOunces": 54
     },
     {
       "userID": 8,
       "date": "2019/09/18",
-      "hoursSlept": 7.8,
-      "sleepQuality": 3.4
+      "numOunces": 97
     },
     {
       "userID": 9,
       "date": "2019/09/18",
-      "hoursSlept": 5.5,
-      "sleepQuality": 1.1
+      "numOunces": 31
     },
     {
       "userID": 10,
       "date": "2019/09/18",
-      "hoursSlept": 6.4,
-      "sleepQuality": 2.1
+      "numOunces": 43
     },
     {
       "userID": 11,
       "date": "2019/09/18",
-      "hoursSlept": 5.6,
-      "sleepQuality": 1.9
+      "numOunces": 35
     },
     {
       "userID": 12,
       "date": "2019/09/18",
-      "hoursSlept": 6.2,
-      "sleepQuality": 1.7
+      "numOunces": 21
     },
     {
       "userID": 13,
       "date": "2019/09/18",
-      "hoursSlept": 8.7,
-      "sleepQuality": 4.8
+      "numOunces": 46
     },
     {
       "userID": 14,
       "date": "2019/09/18",
-      "hoursSlept": 9.9,
-      "sleepQuality": 1.8
+      "numOunces": 70
     },
     {
       "userID": 15,
       "date": "2019/09/18",
-      "hoursSlept": 10.3,
-      "sleepQuality": 1.9
+      "numOunces": 37
     },
     {
       "userID": 16,
       "date": "2019/09/18",
-      "hoursSlept": 8,
-      "sleepQuality": 3.4
+      "numOunces": 84
     },
     {
       "userID": 17,
       "date": "2019/09/18",
-      "hoursSlept": 9.1,
-      "sleepQuality": 2.6
+      "numOunces": 58
     },
     {
       "userID": 18,
       "date": "2019/09/18",
-      "hoursSlept": 4.6,
-      "sleepQuality": 3.6
+      "numOunces": 58
     },
     {
       "userID": 19,
       "date": "2019/09/18",
-      "hoursSlept": 8.7,
-      "sleepQuality": 2.1
+      "numOunces": 39
     },
     {
       "userID": 20,
       "date": "2019/09/18",
-      "hoursSlept": 4.2,
-      "sleepQuality": 2.6
+      "numOunces": 22
     },
     {
       "userID": 21,
       "date": "2019/09/18",
-      "hoursSlept": 7.4,
-      "sleepQuality": 2.9
+      "numOunces": 96
     },
     {
       "userID": 22,
       "date": "2019/09/18",
-      "hoursSlept": 9.5,
-      "sleepQuality": 4.7
+      "numOunces": 59
     },
     {
       "userID": 23,
       "date": "2019/09/18",
-      "hoursSlept": 5.2,
-      "sleepQuality": 1.8
+      "numOunces": 75
     },
     {
       "userID": 24,
       "date": "2019/09/18",
-      "hoursSlept": 10.4,
-      "sleepQuality": 2
+      "numOunces": 89
     },
     {
       "userID": 25,
       "date": "2019/09/18",
-      "hoursSlept": 9.4,
-      "sleepQuality": 1.1
+      "numOunces": 37
     },
     {
       "userID": 26,
       "date": "2019/09/18",
-      "hoursSlept": 7.8,
-      "sleepQuality": 4.8
+      "numOunces": 71
     },
     {
       "userID": 27,
       "date": "2019/09/18",
-      "hoursSlept": 5,
-      "sleepQuality": 1.8
+      "numOunces": 31
     },
     {
       "userID": 28,
       "date": "2019/09/18",
-      "hoursSlept": 6.2,
-      "sleepQuality": 3.3
+      "numOunces": 28
     },
     {
       "userID": 29,
       "date": "2019/09/18",
-      "hoursSlept": 10.7,
-      "sleepQuality": 2.1
+      "numOunces": 94
     },
     {
       "userID": 30,
       "date": "2019/09/18",
-      "hoursSlept": 9.1,
-      "sleepQuality": 1.1
+      "numOunces": 35
     },
     {
       "userID": 31,
       "date": "2019/09/18",
-      "hoursSlept": 7.6,
-      "sleepQuality": 1.4
+      "numOunces": 91
     },
     {
       "userID": 32,
       "date": "2019/09/18",
-      "hoursSlept": 7.3,
-      "sleepQuality": 2.3
+      "numOunces": 47
     },
     {
       "userID": 33,
       "date": "2019/09/18",
-      "hoursSlept": 9.2,
-      "sleepQuality": 2.5
+      "numOunces": 85
     },
     {
       "userID": 34,
       "date": "2019/09/18",
-      "hoursSlept": 5.4,
-      "sleepQuality": 4.3
+      "numOunces": 98
     },
     {
       "userID": 35,
       "date": "2019/09/18",
-      "hoursSlept": 5.7,
-      "sleepQuality": 1.9
+      "numOunces": 58
     },
     {
       "userID": 36,
       "date": "2019/09/18",
-      "hoursSlept": 5.5,
-      "sleepQuality": 3.7
+      "numOunces": 94
     },
     {
       "userID": 37,
       "date": "2019/09/18",
-      "hoursSlept": 7.3,
-      "sleepQuality": 2.6
+      "numOunces": 34
     },
     {
       "userID": 38,
       "date": "2019/09/18",
-      "hoursSlept": 6.6,
-      "sleepQuality": 4.6
+      "numOunces": 66
     },
     {
       "userID": 39,
       "date": "2019/09/18",
-      "hoursSlept": 10.3,
-      "sleepQuality": 3.3
+      "numOunces": 86
     },
     {
       "userID": 40,
       "date": "2019/09/18",
-      "hoursSlept": 7.7,
-      "sleepQuality": 3.6
+      "numOunces": 77
     },
     {
       "userID": 41,
       "date": "2019/09/18",
-      "hoursSlept": 6.9,
-      "sleepQuality": 1.2
+      "numOunces": 74
     },
     {
       "userID": 42,
       "date": "2019/09/18",
-      "hoursSlept": 8.7,
-      "sleepQuality": 2.5
+      "numOunces": 51
     },
     {
       "userID": 43,
       "date": "2019/09/18",
-      "hoursSlept": 9.4,
-      "sleepQuality": 1.9
+      "numOunces": 84
     },
     {
       "userID": 44,
       "date": "2019/09/18",
-      "hoursSlept": 8.4,
-      "sleepQuality": 1.8
+      "numOunces": 83
     },
     {
       "userID": 45,
       "date": "2019/09/18",
-      "hoursSlept": 10.3,
-      "sleepQuality": 4.2
+      "numOunces": 85
     },
     {
       "userID": 46,
       "date": "2019/09/18",
-      "hoursSlept": 4.8,
-      "sleepQuality": 3.9
+      "numOunces": 66
     },
     {
       "userID": 47,
       "date": "2019/09/18",
-      "hoursSlept": 7.5,
-      "sleepQuality": 4.7
+      "numOunces": 57
     },
     {
       "userID": 48,
       "date": "2019/09/18",
-      "hoursSlept": 7.4,
-      "sleepQuality": 4.3
+      "numOunces": 21
     },
     {
       "userID": 49,
       "date": "2019/09/18",
-      "hoursSlept": 9.5,
-      "sleepQuality": 3.4
+      "numOunces": 63
     },
     {
       "userID": 50,
       "date": "2019/09/18",
-      "hoursSlept": 8.9,
-      "sleepQuality": 4.5
+      "numOunces": 69
     },
     {
       "userID": 1,
       "date": "2019/09/19",
-      "hoursSlept": 9.9,
-      "sleepQuality": 1.7
+      "numOunces": 53
     },
     {
       "userID": 2,
       "date": "2019/09/19",
-      "hoursSlept": 10.6,
-      "sleepQuality": 1.6
+      "numOunces": 27
     },
     {
       "userID": 3,
       "date": "2019/09/19",
-      "hoursSlept": 7.4,
-      "sleepQuality": 1.7
+      "numOunces": 77
     },
     {
       "userID": 4,
       "date": "2019/09/19",
-      "hoursSlept": 4.2,
-      "sleepQuality": 1
+      "numOunces": 73
     },
     {
       "userID": 5,
       "date": "2019/09/19",
-      "hoursSlept": 7.4,
-      "sleepQuality": 4.1
+      "numOunces": 73
     },
     {
       "userID": 6,
       "date": "2019/09/19",
-      "hoursSlept": 10.1,
-      "sleepQuality": 1.2
+      "numOunces": 93
     },
     {
       "userID": 7,
       "date": "2019/09/19",
-      "hoursSlept": 11,
-      "sleepQuality": 1.8
+      "numOunces": 47
     },
     {
       "userID": 8,
       "date": "2019/09/19",
-      "hoursSlept": 10.8,
-      "sleepQuality": 3.1
+      "numOunces": 71
     },
     {
       "userID": 9,
       "date": "2019/09/19",
-      "hoursSlept": 6.2,
-      "sleepQuality": 4.3
+      "numOunces": 99
     },
     {
       "userID": 10,
       "date": "2019/09/19",
-      "hoursSlept": 5.9,
-      "sleepQuality": 3.1
+      "numOunces": 52
     },
     {
       "userID": 11,
       "date": "2019/09/19",
-      "hoursSlept": 5.5,
-      "sleepQuality": 3.7
+      "numOunces": 65
     },
     {
       "userID": 12,
       "date": "2019/09/19",
-      "hoursSlept": 9.9,
-      "sleepQuality": 4.7
+      "numOunces": 32
     },
     {
       "userID": 13,
       "date": "2019/09/19",
-      "hoursSlept": 4.4,
-      "sleepQuality": 1.1
+      "numOunces": 62
     },
     {
       "userID": 14,
       "date": "2019/09/19",
-      "hoursSlept": 9.1,
-      "sleepQuality": 4.4
+      "numOunces": 65
     },
     {
       "userID": 15,
       "date": "2019/09/19",
-      "hoursSlept": 10.7,
-      "sleepQuality": 3.4
+      "numOunces": 72
     },
     {
       "userID": 16,
       "date": "2019/09/19",
-      "hoursSlept": 7.5,
-      "sleepQuality": 1.3
+      "numOunces": 62
     },
     {
       "userID": 17,
       "date": "2019/09/19",
-      "hoursSlept": 8.6,
-      "sleepQuality": 4.1
+      "numOunces": 64
     },
     {
       "userID": 18,
       "date": "2019/09/19",
-      "hoursSlept": 4.6,
-      "sleepQuality": 2.9
+      "numOunces": 47
     },
     {
       "userID": 19,
       "date": "2019/09/19",
-      "hoursSlept": 7.2,
-      "sleepQuality": 4.5
+      "numOunces": 29
     },
     {
       "userID": 20,
       "date": "2019/09/19",
-      "hoursSlept": 6.7,
-      "sleepQuality": 3.4
+      "numOunces": 60
     },
     {
       "userID": 21,
       "date": "2019/09/19",
-      "hoursSlept": 6.9,
-      "sleepQuality": 4.6
+      "numOunces": 93
     },
     {
       "userID": 22,
       "date": "2019/09/19",
-      "hoursSlept": 7.5,
-      "sleepQuality": 4.6
+      "numOunces": 75
     },
     {
       "userID": 23,
       "date": "2019/09/19",
-      "hoursSlept": 6.2,
-      "sleepQuality": 1.5
+      "numOunces": 88
     },
     {
       "userID": 24,
       "date": "2019/09/19",
-      "hoursSlept": 9.3,
-      "sleepQuality": 2.8
+      "numOunces": 72
     },
     {
       "userID": 25,
       "date": "2019/09/19",
-      "hoursSlept": 4.2,
-      "sleepQuality": 4.8
+      "numOunces": 86
     },
     {
       "userID": 26,
       "date": "2019/09/19",
-      "hoursSlept": 5,
-      "sleepQuality": 3.6
+      "numOunces": 72
     },
     {
       "userID": 27,
       "date": "2019/09/19",
-      "hoursSlept": 6.5,
-      "sleepQuality": 3.7
+      "numOunces": 75
     },
     {
       "userID": 28,
       "date": "2019/09/19",
-      "hoursSlept": 6.3,
-      "sleepQuality": 4.3
+      "numOunces": 82
     },
     {
       "userID": 29,
       "date": "2019/09/19",
-      "hoursSlept": 6.5,
-      "sleepQuality": 3.1
+      "numOunces": 45
     },
     {
       "userID": 30,
       "date": "2019/09/19",
-      "hoursSlept": 9.6,
-      "sleepQuality": 1.6
+      "numOunces": 70
     },
     {
       "userID": 31,
       "date": "2019/09/19",
-      "hoursSlept": 4.6,
-      "sleepQuality": 4.8
+      "numOunces": 50
     },
     {
       "userID": 32,
       "date": "2019/09/19",
-      "hoursSlept": 9.5,
-      "sleepQuality": 1.7
+      "numOunces": 36
     },
     {
       "userID": 33,
       "date": "2019/09/19",
-      "hoursSlept": 7,
-      "sleepQuality": 1.7
+      "numOunces": 50
     },
     {
       "userID": 34,
       "date": "2019/09/19",
-      "hoursSlept": 6.7,
-      "sleepQuality": 1.6
+      "numOunces": 20
     },
     {
       "userID": 35,
       "date": "2019/09/19",
-      "hoursSlept": 5.6,
-      "sleepQuality": 1.8
+      "numOunces": 75
     },
     {
       "userID": 36,
       "date": "2019/09/19",
-      "hoursSlept": 7.9,
-      "sleepQuality": 2.3
+      "numOunces": 62
     },
     {
       "userID": 37,
       "date": "2019/09/19",
-      "hoursSlept": 5,
-      "sleepQuality": 3.2
+      "numOunces": 24
     },
     {
       "userID": 38,
       "date": "2019/09/19",
-      "hoursSlept": 6.3,
-      "sleepQuality": 1.5
+      "numOunces": 49
     },
     {
       "userID": 39,
       "date": "2019/09/19",
-      "hoursSlept": 8.4,
-      "sleepQuality": 4.4
+      "numOunces": 34
     },
     {
       "userID": 40,
       "date": "2019/09/19",
-      "hoursSlept": 9.1,
-      "sleepQuality": 1.5
+      "numOunces": 88
     },
     {
       "userID": 41,
       "date": "2019/09/19",
-      "hoursSlept": 10,
-      "sleepQuality": 2.4
+      "numOunces": 32
     },
     {
       "userID": 42,
       "date": "2019/09/19",
-      "hoursSlept": 9.7,
-      "sleepQuality": 3.6
+      "numOunces": 58
     },
     {
       "userID": 43,
       "date": "2019/09/19",
-      "hoursSlept": 9.7,
-      "sleepQuality": 3.5
+      "numOunces": 91
     },
     {
       "userID": 44,
       "date": "2019/09/19",
-      "hoursSlept": 5.7,
-      "sleepQuality": 4.7
+      "numOunces": 47
     },
     {
       "userID": 45,
       "date": "2019/09/19",
-      "hoursSlept": 8.4,
-      "sleepQuality": 3.5
+      "numOunces": 29
     },
     {
       "userID": 46,
       "date": "2019/09/19",
-      "hoursSlept": 6.7,
-      "sleepQuality": 4.9
+      "numOunces": 70
     },
     {
       "userID": 47,
       "date": "2019/09/19",
-      "hoursSlept": 8.7,
-      "sleepQuality": 1.4
+      "numOunces": 93
     },
     {
       "userID": 48,
       "date": "2019/09/19",
-      "hoursSlept": 4.3,
-      "sleepQuality": 1.4
+      "numOunces": 90
     },
     {
       "userID": 49,
       "date": "2019/09/19",
-      "hoursSlept": 8.4,
-      "sleepQuality": 4.7
+      "numOunces": 68
     },
     {
       "userID": 50,
       "date": "2019/09/19",
-      "hoursSlept": 8.8,
-      "sleepQuality": 3
+      "numOunces": 20
     },
     {
       "userID": 1,
       "date": "2019/09/20",
-      "hoursSlept": 8.6,
-      "sleepQuality": 2.6
+      "numOunces": 23
     },
     {
       "userID": 2,
       "date": "2019/09/20",
-      "hoursSlept": 8.5,
-      "sleepQuality": 4.3
+      "numOunces": 86
     },
     {
       "userID": 3,
       "date": "2019/09/20",
-      "hoursSlept": 4.5,
-      "sleepQuality": 1.7
+      "numOunces": 73
     },
     {
       "userID": 4,
       "date": "2019/09/20",
-      "hoursSlept": 9.9,
-      "sleepQuality": 1.6
+      "numOunces": 60
     },
     {
       "userID": 5,
       "date": "2019/09/20",
-      "hoursSlept": 5.9,
-      "sleepQuality": 3.8
+      "numOunces": 89
     },
     {
       "userID": 6,
       "date": "2019/09/20",
-      "hoursSlept": 4.7,
-      "sleepQuality": 2.3
+      "numOunces": 25
     },
     {
       "userID": 7,
       "date": "2019/09/20",
-      "hoursSlept": 8.2,
-      "sleepQuality": 2.9
+      "numOunces": 79
     },
     {
       "userID": 8,
       "date": "2019/09/20",
-      "hoursSlept": 5.3,
-      "sleepQuality": 4.3
+      "numOunces": 49
     },
     {
       "userID": 9,
       "date": "2019/09/20",
-      "hoursSlept": 4.5,
-      "sleepQuality": 3.6
+      "numOunces": 81
     },
     {
       "userID": 10,
       "date": "2019/09/20",
-      "hoursSlept": 10.2,
-      "sleepQuality": 1.9
+      "numOunces": 77
     },
     {
       "userID": 11,
       "date": "2019/09/20",
-      "hoursSlept": 5.8,
-      "sleepQuality": 3.2
+      "numOunces": 89
     },
     {
       "userID": 12,
       "date": "2019/09/20",
-      "hoursSlept": 5.3,
-      "sleepQuality": 2.4
+      "numOunces": 92
     },
     {
       "userID": 13,
       "date": "2019/09/20",
-      "hoursSlept": 9.1,
-      "sleepQuality": 3.7
+      "numOunces": 65
     },
     {
       "userID": 14,
       "date": "2019/09/20",
-      "hoursSlept": 9.8,
-      "sleepQuality": 1.7
+      "numOunces": 82
     },
     {
       "userID": 15,
       "date": "2019/09/20",
-      "hoursSlept": 10.6,
-      "sleepQuality": 3.9
+      "numOunces": 39
     },
     {
       "userID": 16,
       "date": "2019/09/20",
-      "hoursSlept": 5.5,
-      "sleepQuality": 3.5
+      "numOunces": 64
     },
     {
       "userID": 17,
       "date": "2019/09/20",
-      "hoursSlept": 8.6,
-      "sleepQuality": 2.2
+      "numOunces": 28
     },
     {
       "userID": 18,
       "date": "2019/09/20",
-      "hoursSlept": 4.7,
-      "sleepQuality": 2.2
+      "numOunces": 48
     },
     {
       "userID": 19,
       "date": "2019/09/20",
-      "hoursSlept": 10.6,
-      "sleepQuality": 2.2
+      "numOunces": 76
     },
     {
       "userID": 20,
       "date": "2019/09/20",
-      "hoursSlept": 10.5,
-      "sleepQuality": 2.2
+      "numOunces": 66
     },
     {
       "userID": 21,
       "date": "2019/09/20",
-      "hoursSlept": 5.8,
-      "sleepQuality": 1
+      "numOunces": 42
     },
     {
       "userID": 22,
       "date": "2019/09/20",
-      "hoursSlept": 5.1,
-      "sleepQuality": 1.4
+      "numOunces": 53
     },
     {
       "userID": 23,
       "date": "2019/09/20",
-      "hoursSlept": 9.6,
-      "sleepQuality": 1.2
+      "numOunces": 95
     },
     {
       "userID": 24,
       "date": "2019/09/20",
-      "hoursSlept": 8,
-      "sleepQuality": 2.7
+      "numOunces": 42
     },
     {
       "userID": 25,
       "date": "2019/09/20",
-      "hoursSlept": 10,
-      "sleepQuality": 1.5
+      "numOunces": 94
     },
     {
       "userID": 26,
       "date": "2019/09/20",
-      "hoursSlept": 7.7,
-      "sleepQuality": 4.8
+      "numOunces": 65
     },
     {
       "userID": 27,
       "date": "2019/09/20",
-      "hoursSlept": 9.6,
-      "sleepQuality": 3.2
+      "numOunces": 88
     },
     {
       "userID": 28,
       "date": "2019/09/20",
-      "hoursSlept": 6.2,
-      "sleepQuality": 2.3
+      "numOunces": 35
     },
     {
       "userID": 29,
       "date": "2019/09/20",
-      "hoursSlept": 7.1,
-      "sleepQuality": 1.1
+      "numOunces": 68
     },
     {
       "userID": 30,
       "date": "2019/09/20",
-      "hoursSlept": 9.3,
-      "sleepQuality": 2
+      "numOunces": 44
     },
     {
       "userID": 31,
       "date": "2019/09/20",
-      "hoursSlept": 10.8,
-      "sleepQuality": 4.1
+      "numOunces": 44
     },
     {
       "userID": 32,
       "date": "2019/09/20",
-      "hoursSlept": 7.2,
-      "sleepQuality": 3.5
+      "numOunces": 35
     },
     {
       "userID": 33,
       "date": "2019/09/20",
-      "hoursSlept": 10.5,
-      "sleepQuality": 4.1
+      "numOunces": 23
     },
     {
       "userID": 34,
       "date": "2019/09/20",
-      "hoursSlept": 7.6,
-      "sleepQuality": 3.2
+      "numOunces": 26
     },
     {
       "userID": 35,
       "date": "2019/09/20",
-      "hoursSlept": 9.2,
-      "sleepQuality": 3.1
+      "numOunces": 81
     },
     {
       "userID": 36,
       "date": "2019/09/20",
-      "hoursSlept": 8.2,
-      "sleepQuality": 1.1
+      "numOunces": 46
     },
     {
       "userID": 37,
       "date": "2019/09/20",
-      "hoursSlept": 9.5,
-      "sleepQuality": 4.7
+      "numOunces": 53
     },
     {
       "userID": 38,
       "date": "2019/09/20",
-      "hoursSlept": 6.6,
-      "sleepQuality": 1.3
+      "numOunces": 62
     },
     {
       "userID": 39,
       "date": "2019/09/20",
-      "hoursSlept": 7.5,
-      "sleepQuality": 4.8
+      "numOunces": 30
     },
     {
       "userID": 40,
       "date": "2019/09/20",
-      "hoursSlept": 9.2,
-      "sleepQuality": 3.2
+      "numOunces": 43
     },
     {
       "userID": 41,
       "date": "2019/09/20",
-      "hoursSlept": 10,
-      "sleepQuality": 2.5
+      "numOunces": 45
     },
     {
       "userID": 42,
       "date": "2019/09/20",
-      "hoursSlept": 7.2,
-      "sleepQuality": 2.9
+      "numOunces": 27
     },
     {
       "userID": 43,
       "date": "2019/09/20",
-      "hoursSlept": 7.6,
-      "sleepQuality": 4.8
+      "numOunces": 70
     },
     {
       "userID": 44,
       "date": "2019/09/20",
-      "hoursSlept": 9.9,
-      "sleepQuality": 3.1
+      "numOunces": 43
     },
     {
       "userID": 45,
       "date": "2019/09/20",
-      "hoursSlept": 9.8,
-      "sleepQuality": 1.7
+      "numOunces": 98
     },
     {
       "userID": 46,
       "date": "2019/09/20",
-      "hoursSlept": 5,
-      "sleepQuality": 3
+      "numOunces": 77
     },
     {
       "userID": 47,
       "date": "2019/09/20",
-      "hoursSlept": 9.4,
-      "sleepQuality": 2.9
+      "numOunces": 41
     },
     {
       "userID": 48,
       "date": "2019/09/20",
-      "hoursSlept": 7.3,
-      "sleepQuality": 2.9
+      "numOunces": 73
     },
     {
       "userID": 49,
       "date": "2019/09/20",
-      "hoursSlept": 6.8,
-      "sleepQuality": 4.2
+      "numOunces": 59
     },
     {
       "userID": 50,
       "date": "2019/09/20",
-      "hoursSlept": 9.4,
-      "sleepQuality": 4.1
+      "numOunces": 28
     },
     {
       "userID": 1,
       "date": "2019/09/21",
-      "hoursSlept": 10.7,
-      "sleepQuality": 4
+      "numOunces": 48
     },
     {
       "userID": 2,
       "date": "2019/09/21",
-      "hoursSlept": 8.2,
-      "sleepQuality": 1.9
+      "numOunces": 71
     },
     {
       "userID": 3,
       "date": "2019/09/21",
-      "hoursSlept": 6.1,
-      "sleepQuality": 2.5
+      "numOunces": 42
     },
     {
       "userID": 4,
       "date": "2019/09/21",
-      "hoursSlept": 8.2,
-      "sleepQuality": 3.9
+      "numOunces": 61
     },
     {
       "userID": 5,
       "date": "2019/09/21",
-      "hoursSlept": 6.7,
-      "sleepQuality": 2.4
+      "numOunces": 59
     },
     {
       "userID": 6,
       "date": "2019/09/21",
-      "hoursSlept": 6.7,
-      "sleepQuality": 4.6
+      "numOunces": 69
     },
     {
       "userID": 7,
       "date": "2019/09/21",
-      "hoursSlept": 9.1,
-      "sleepQuality": 4.5
+      "numOunces": 95
     },
     {
       "userID": 8,
       "date": "2019/09/21",
-      "hoursSlept": 6.2,
-      "sleepQuality": 4.5
+      "numOunces": 74
     },
     {
       "userID": 9,
       "date": "2019/09/21",
-      "hoursSlept": 8.5,
-      "sleepQuality": 1.5
+      "numOunces": 76
     },
     {
       "userID": 10,
       "date": "2019/09/21",
-      "hoursSlept": 7.3,
-      "sleepQuality": 1.5
+      "numOunces": 85
     },
     {
       "userID": 11,
       "date": "2019/09/21",
-      "hoursSlept": 7.5,
-      "sleepQuality": 3.7
+      "numOunces": 49
     },
     {
       "userID": 12,
       "date": "2019/09/21",
-      "hoursSlept": 4.9,
-      "sleepQuality": 1.6
+      "numOunces": 49
     },
     {
       "userID": 13,
       "date": "2019/09/21",
-      "hoursSlept": 6.5,
-      "sleepQuality": 5
+      "numOunces": 90
     },
     {
       "userID": 14,
       "date": "2019/09/21",
-      "hoursSlept": 8.3,
-      "sleepQuality": 3.5
+      "numOunces": 99
     },
     {
       "userID": 15,
       "date": "2019/09/21",
-      "hoursSlept": 4.7,
-      "sleepQuality": 4.6
+      "numOunces": 86
     },
     {
       "userID": 16,
       "date": "2019/09/21",
-      "hoursSlept": 8.7,
-      "sleepQuality": 3.2
+      "numOunces": 54
     },
     {
       "userID": 17,
       "date": "2019/09/21",
-      "hoursSlept": 6.1,
-      "sleepQuality": 2.9
+      "numOunces": 52
     },
     {
       "userID": 18,
       "date": "2019/09/21",
-      "hoursSlept": 5.2,
-      "sleepQuality": 3.3
+      "numOunces": 95
     },
     {
       "userID": 19,
       "date": "2019/09/21",
-      "hoursSlept": 9,
-      "sleepQuality": 2.1
+      "numOunces": 36
     },
     {
       "userID": 20,
       "date": "2019/09/21",
-      "hoursSlept": 7.7,
-      "sleepQuality": 1.4
+      "numOunces": 34
     },
     {
       "userID": 21,
       "date": "2019/09/21",
-      "hoursSlept": 9.5,
-      "sleepQuality": 3.7
+      "numOunces": 73
     },
     {
       "userID": 22,
       "date": "2019/09/21",
-      "hoursSlept": 11,
-      "sleepQuality": 1.7
+      "numOunces": 71
     },
     {
       "userID": 23,
       "date": "2019/09/21",
-      "hoursSlept": 5.3,
-      "sleepQuality": 1.4
+      "numOunces": 78
     },
     {
       "userID": 24,
       "date": "2019/09/21",
-      "hoursSlept": 9.7,
-      "sleepQuality": 4.9
+      "numOunces": 48
     },
     {
       "userID": 25,
       "date": "2019/09/21",
-      "hoursSlept": 6.3,
-      "sleepQuality": 4
+      "numOunces": 35
     },
     {
       "userID": 26,
       "date": "2019/09/21",
-      "hoursSlept": 5.7,
-      "sleepQuality": 2.3
+      "numOunces": 86
     },
     {
       "userID": 27,
       "date": "2019/09/21",
-      "hoursSlept": 8,
-      "sleepQuality": 3.6
+      "numOunces": 96
     },
     {
       "userID": 28,
       "date": "2019/09/21",
-      "hoursSlept": 5.1,
-      "sleepQuality": 2.2
+      "numOunces": 58
     },
     {
       "userID": 29,
       "date": "2019/09/21",
-      "hoursSlept": 9.2,
-      "sleepQuality": 4.9
+      "numOunces": 43
     },
     {
       "userID": 30,
       "date": "2019/09/21",
-      "hoursSlept": 6.6,
-      "sleepQuality": 4.1
+      "numOunces": 59
     },
     {
       "userID": 31,
       "date": "2019/09/21",
-      "hoursSlept": 8.6,
-      "sleepQuality": 3.4
+      "numOunces": 84
     },
     {
       "userID": 32,
       "date": "2019/09/21",
-      "hoursSlept": 4.3,
-      "sleepQuality": 3.3
+      "numOunces": 93
     },
     {
       "userID": 33,
       "date": "2019/09/21",
-      "hoursSlept": 10.2,
-      "sleepQuality": 1.9
+      "numOunces": 21
     },
     {
       "userID": 34,
       "date": "2019/09/21",
-      "hoursSlept": 5.2,
-      "sleepQuality": 1.6
+      "numOunces": 50
     },
     {
       "userID": 35,
       "date": "2019/09/21",
-      "hoursSlept": 6.9,
-      "sleepQuality": 4.8
+      "numOunces": 96
     },
     {
       "userID": 36,
       "date": "2019/09/21",
-      "hoursSlept": 5.9,
-      "sleepQuality": 2.6
+      "numOunces": 52
     },
     {
       "userID": 37,
       "date": "2019/09/21",
-      "hoursSlept": 8.6,
-      "sleepQuality": 4.2
+      "numOunces": 88
     },
     {
       "userID": 38,
       "date": "2019/09/21",
-      "hoursSlept": 8.6,
-      "sleepQuality": 4
+      "numOunces": 42
     },
     {
       "userID": 39,
       "date": "2019/09/21",
-      "hoursSlept": 5.4,
-      "sleepQuality": 3.9
+      "numOunces": 94
     },
     {
       "userID": 40,
       "date": "2019/09/21",
-      "hoursSlept": 5.9,
-      "sleepQuality": 1
+      "numOunces": 46
     },
     {
       "userID": 41,
       "date": "2019/09/21",
-      "hoursSlept": 8.4,
-      "sleepQuality": 1.3
+      "numOunces": 28
     },
     {
       "userID": 42,
       "date": "2019/09/21",
-      "hoursSlept": 6,
-      "sleepQuality": 1.1
+      "numOunces": 78
     },
     {
       "userID": 43,
       "date": "2019/09/21",
-      "hoursSlept": 4.7,
-      "sleepQuality": 3.5
+      "numOunces": 66
     },
     {
       "userID": 44,
       "date": "2019/09/21",
-      "hoursSlept": 6.2,
-      "sleepQuality": 1
+      "numOunces": 22
     },
     {
       "userID": 45,
       "date": "2019/09/21",
-      "hoursSlept": 10.3,
-      "sleepQuality": 1.6
+      "numOunces": 44
     },
     {
       "userID": 46,
       "date": "2019/09/21",
-      "hoursSlept": 9.9,
-      "sleepQuality": 1.5
+      "numOunces": 87
     },
     {
       "userID": 47,
       "date": "2019/09/21",
-      "hoursSlept": 8.9,
-      "sleepQuality": 2
+      "numOunces": 57
     },
     {
       "userID": 48,
       "date": "2019/09/21",
-      "hoursSlept": 9.6,
-      "sleepQuality": 3.9
+      "numOunces": 98
     },
     {
       "userID": 49,
       "date": "2019/09/21",
-      "hoursSlept": 9.1,
-      "sleepQuality": 1.6
+      "numOunces": 41
     },
     {
       "userID": 50,
       "date": "2019/09/21",
-      "hoursSlept": 6.5,
-      "sleepQuality": 2.7
+      "numOunces": 35
     },
     {
       "userID": 1,
       "date": "2019/09/22",
-      "hoursSlept": 4.6,
-      "sleepQuality": 1.4
+      "numOunces": 68
     },
     {
       "userID": 2,
       "date": "2019/09/22",
-      "hoursSlept": 5.1,
-      "sleepQuality": 4.6
+      "numOunces": 64
     },
     {
       "userID": 3,
       "date": "2019/09/22",
-      "hoursSlept": 5.3,
-      "sleepQuality": 4.4
+      "numOunces": 38
     },
     {
       "userID": 4,
       "date": "2019/09/22",
-      "hoursSlept": 9.6,
-      "sleepQuality": 2
+      "numOunces": 68
     },
     {
       "userID": 5,
       "date": "2019/09/22",
-      "hoursSlept": 6.9,
-      "sleepQuality": 2
+      "numOunces": 37
     },
     {
       "userID": 6,
       "date": "2019/09/22",
-      "hoursSlept": 6.3,
-      "sleepQuality": 3.8
+      "numOunces": 87
     },
     {
       "userID": 7,
       "date": "2019/09/22",
-      "hoursSlept": 10.9,
-      "sleepQuality": 4.7
+      "numOunces": 47
     },
     {
       "userID": 8,
       "date": "2019/09/22",
-      "hoursSlept": 10.1,
-      "sleepQuality": 2.9
+      "numOunces": 75
     },
     {
       "userID": 9,
       "date": "2019/09/22",
-      "hoursSlept": 4.2,
-      "sleepQuality": 3.1
+      "numOunces": 46
     },
     {
       "userID": 10,
       "date": "2019/09/22",
-      "hoursSlept": 9.7,
-      "sleepQuality": 1.4
+      "numOunces": 74
     },
     {
       "userID": 11,
       "date": "2019/09/22",
-      "hoursSlept": 7.9,
-      "sleepQuality": 1.5
+      "numOunces": 30
     },
     {
       "userID": 12,
       "date": "2019/09/22",
-      "hoursSlept": 6,
-      "sleepQuality": 4.6
+      "numOunces": 60
     },
     {
       "userID": 13,
       "date": "2019/09/22",
-      "hoursSlept": 7.1,
-      "sleepQuality": 4.8
+      "numOunces": 27
     },
     {
       "userID": 14,
       "date": "2019/09/22",
-      "hoursSlept": 7.1,
-      "sleepQuality": 1.9
+      "numOunces": 62
     },
     {
       "userID": 15,
       "date": "2019/09/22",
-      "hoursSlept": 9.4,
-      "sleepQuality": 1.4
+      "numOunces": 39
     },
     {
       "userID": 16,
       "date": "2019/09/22",
-      "hoursSlept": 6.9,
-      "sleepQuality": 1.5
+      "numOunces": 93
     },
     {
       "userID": 17,
       "date": "2019/09/22",
-      "hoursSlept": 9.1,
-      "sleepQuality": 4.4
+      "numOunces": 60
     },
     {
       "userID": 18,
       "date": "2019/09/22",
-      "hoursSlept": 4.4,
-      "sleepQuality": 2.8
+      "numOunces": 98
     },
     {
       "userID": 19,
       "date": "2019/09/22",
-      "hoursSlept": 4.1,
-      "sleepQuality": 4.5
+      "numOunces": 57
     },
     {
       "userID": 20,
       "date": "2019/09/22",
-      "hoursSlept": 10.9,
-      "sleepQuality": 3.8
+      "numOunces": 96
     },
     {
       "userID": 21,
       "date": "2019/09/22",
-      "hoursSlept": 5.9,
-      "sleepQuality": 4.7
+      "numOunces": 51
     },
     {
       "userID": 22,
       "date": "2019/09/22",
-      "hoursSlept": 6,
-      "sleepQuality": 3.2
+      "numOunces": 90
     },
     {
       "userID": 23,
       "date": "2019/09/22",
-      "hoursSlept": 5.4,
-      "sleepQuality": 3
+      "numOunces": 79
     },
     {
       "userID": 24,
       "date": "2019/09/22",
-      "hoursSlept": 8.8,
-      "sleepQuality": 3.3
+      "numOunces": 93
     },
     {
       "userID": 25,
       "date": "2019/09/22",
-      "hoursSlept": 7.6,
-      "sleepQuality": 2.4
+      "numOunces": 25
     },
     {
       "userID": 26,
       "date": "2019/09/22",
-      "hoursSlept": 10.1,
-      "sleepQuality": 1.5
+      "numOunces": 71
     },
     {
       "userID": 27,
       "date": "2019/09/22",
-      "hoursSlept": 9,
-      "sleepQuality": 4.3
+      "numOunces": 65
     },
     {
       "userID": 28,
       "date": "2019/09/22",
-      "hoursSlept": 9.3,
-      "sleepQuality": 4.7
+      "numOunces": 88
     },
     {
       "userID": 29,
       "date": "2019/09/22",
-      "hoursSlept": 7.2,
-      "sleepQuality": 1.5
+      "numOunces": 67
     },
     {
       "userID": 30,
       "date": "2019/09/22",
-      "hoursSlept": 5.2,
-      "sleepQuality": 2.5
+      "numOunces": 61
     },
     {
       "userID": 31,
       "date": "2019/09/22",
-      "hoursSlept": 6.2,
-      "sleepQuality": 3.8
+      "numOunces": 68
     },
     {
       "userID": 32,
       "date": "2019/09/22",
-      "hoursSlept": 10.6,
-      "sleepQuality": 4.6
+      "numOunces": 64
     },
     {
       "userID": 33,
       "date": "2019/09/22",
-      "hoursSlept": 4.3,
-      "sleepQuality": 2.7
+      "numOunces": 60
     },
     {
       "userID": 34,
       "date": "2019/09/22",
-      "hoursSlept": 10.2,
-      "sleepQuality": 4
+      "numOunces": 45
     },
     {
       "userID": 35,
       "date": "2019/09/22",
-      "hoursSlept": 5.7,
-      "sleepQuality": 5
+      "numOunces": 91
     },
     {
       "userID": 36,
       "date": "2019/09/22",
-      "hoursSlept": 6.2,
-      "sleepQuality": 1.1
+      "numOunces": 71
     },
     {
       "userID": 37,
       "date": "2019/09/22",
-      "hoursSlept": 9,
-      "sleepQuality": 3.9
+      "numOunces": 31
     },
     {
       "userID": 38,
       "date": "2019/09/22",
-      "hoursSlept": 8.1,
-      "sleepQuality": 2.6
+      "numOunces": 91
     },
     {
       "userID": 39,
       "date": "2019/09/22",
-      "hoursSlept": 5.1,
-      "sleepQuality": 1.6
+      "numOunces": 62
     },
     {
       "userID": 40,
       "date": "2019/09/22",
-      "hoursSlept": 7.6,
-      "sleepQuality": 2
+      "numOunces": 52
     },
     {
       "userID": 41,
       "date": "2019/09/22",
-      "hoursSlept": 8.8,
-      "sleepQuality": 2.3
+      "numOunces": 45
     },
     {
       "userID": 42,
       "date": "2019/09/22",
-      "hoursSlept": 4.2,
-      "sleepQuality": 4.7
+      "numOunces": 81
     },
     {
       "userID": 43,
       "date": "2019/09/22",
-      "hoursSlept": 6.6,
-      "sleepQuality": 3.9
+      "numOunces": 42
     },
     {
       "userID": 44,
       "date": "2019/09/22",
-      "hoursSlept": 9.7,
-      "sleepQuality": 2.5
+      "numOunces": 97
     },
     {
       "userID": 45,
       "date": "2019/09/22",
-      "hoursSlept": 4.8,
-      "sleepQuality": 4.9
+      "numOunces": 65
     },
     {
       "userID": 46,
       "date": "2019/09/22",
-      "hoursSlept": 5.4,
-      "sleepQuality": 2.4
+      "numOunces": 25
     },
     {
       "userID": 47,
       "date": "2019/09/22",
-      "hoursSlept": 5.4,
-      "sleepQuality": 3.9
+      "numOunces": 22
     },
     {
       "userID": 48,
       "date": "2019/09/22",
-      "hoursSlept": 5.5,
-      "sleepQuality": 4.6
+      "numOunces": 90
     },
     {
       "userID": 49,
       "date": "2019/09/22",
-      "hoursSlept": 8.7,
-      "sleepQuality": 1.9
+      "numOunces": 81
     },
     {
       "userID": 50,
       "date": "2019/09/22",
-      "hoursSlept": 9.2,
-      "sleepQuality": 4.6
+      "numOunces": 87
     }
-  ];
-  
-  module.exports = sleepData;
-  
+];
+
+module.exports = hydrationData;
