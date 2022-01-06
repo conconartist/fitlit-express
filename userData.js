@@ -673,6 +673,6 @@ const userData = [
         13
         ]
     }
-    ];
+];
 
 module.exports = userData;
